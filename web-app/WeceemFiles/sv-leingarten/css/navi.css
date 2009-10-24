@@ -1,0 +1,132 @@
+.navi a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000066;
+	border: #FFFFFF;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	background-color: #D2DFFF;
+	text-align: right;
+	height: 20px;
+	width: 110px;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 20px;
+	right: 5px;
+}
+.navi a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000066;
+	border: #FFFFFF;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	background-color: #D2DFFF;
+	text-align: right;
+	height: 20px;
+	width: 110px;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 20px;
+	right: 5px;
+}
+.navi a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000066;
+	border: #FFFFFF;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	background-color: #93BEEE;
+	text-align: right;
+	height: 20px;
+	width: 110px;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+.unavi a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000066;
+	background-color: #D2DFFF;
+	text-align: left;
+	height: 20px;
+	width: 110px;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 20px;
+	right: 5px;
+	border: #FFFFFF;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+}
+.unavi a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000066;
+	background-color: #D2DFFF;
+	text-align: left;
+	height: 20px;
+	width: 110px;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 20px;
+	right: 5px;
+	border: #FFFFFF;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+}
+.unavi a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000066;
+	background-color: #93BEEE;
+	text-align: left;
+	height: 20px;
+	width: 110px;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+	border: #FFFFFF;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+}
+.marker {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 4px;
+	border: #93BEEE;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+.svl {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000066;
+}

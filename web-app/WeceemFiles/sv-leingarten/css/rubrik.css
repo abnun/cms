@@ -1,0 +1,55 @@
+.rubrik {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.rubrik .unten {
+	vertical-align:bottom;
+}
+
+.rubrik .mitte {
+	padding-top:2.5cm;
+}
+
+.rubrik a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-align: right;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 20px;
+	font-weight: normal;
+}
+.rubrik a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-align: right;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+.rubrik a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #93BEEE;
+	text-align: right;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.rubrikactiv {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #93BEEE;
+	text-align: right;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
