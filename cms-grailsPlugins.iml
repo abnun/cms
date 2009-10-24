@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="false" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="GrailsWeb">
+      <configuration>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/fckeditor-0.9.4/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/quartz-0.4.1/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/navigation-1.1/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/searchable-0.5.5/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/weceem-0.2/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/weceem-0.3/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/pdf-0.4/web-app" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/acegi-0.5.2">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/acegi-0.5.2/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/acegi-0.5.2/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/acegi-0.5.2/grails-app/taglib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/acegi-0.5.2/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/acegi-0.5.2/src/java" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/bean-fields-0.3">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/bean-fields-0.3/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/fckeditor-0.9.4">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/fckeditor-0.9.4/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/fckeditor-0.9.4/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/fckeditor-0.9.4/grails-app/taglib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/fckeditor-0.9.4/src/groovy" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/navigation-1.1">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/navigation-1.1/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/navigation-1.1/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/pdf-0.4">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/pdf-0.4/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/pdf-0.4/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/pdf-0.4/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/quartz-0.4.1">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/quartz-0.4.1/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/quartz-0.4.1/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/quartz-0.4.1/src/java" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/searchable-0.5.5">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/searchable-0.5.5/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/searchable-0.5.5/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/searchable-0.5.5/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/searchable-0.5.5/src/java" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/tomcat-1.2-M3">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/tomcat-1.2-M3/src/groovy" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="grails-1.2-M3" level="application" />
+    <orderEntry type="library" name="grails-1.2-M3" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library name="Grails User Library">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/quartz-0.4.1/lib" />
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/acegi-0.5.2/lib" />
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/searchable-0.5.5/lib" />
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/tomcat-1.2-M3/lib" />
+          <root url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/pdf-0.4/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/acegi-0.5.2/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/pdf-0.4/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/quartz-0.4.1/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/searchable-0.5.5/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../../../../.grails/1.2-M3/projects/cms/plugins/tomcat-1.2-M3/lib" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+
