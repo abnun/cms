@@ -107,7 +107,7 @@
 				<gui:tab label="Import">
 					<div>
 						<span>
-							<g:uploadForm action="excelImport" name="ExcelUploadForm">
+							<g:uploadForm controller="import" action="excelImport" name="ExcelUploadForm">
 								<input type="file" name="file"/>
 								<g:link controller="import" action="uploadExcel" class="excel_link" onclick="document.forms.ExcelUploadForm.submit();">Excel-File einlesen</g:link>
 							</g:uploadForm>
