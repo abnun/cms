@@ -80,10 +80,11 @@
             %{--<div class="paginateButtons">
                 <g:paginate total="${personInstanceTotal}" />
             </div>--}%
-			<g:if test="${personInstanceTotal > 0}">
-				<br />
-				<h2>Funktionen:</h2>
-				<gui:tabView id="tabView">
+
+			<br/>
+			<h2>Funktionen:</h2>
+			<gui:tabView id="tabView">
+				<g:if test="${personInstanceTotal > 0}">
 					<gui:tab label="Export">
 						<div>
 							<span>
@@ -102,22 +103,18 @@
 							</span>
 						</div>
 					</gui:tab>
-					<gui:tab label="Import">
-						<div>
-							<span>
-								<g:uploadForm action="excelImport" name="ExcelUploadForm">
-									<input type="file" name="file"/>
-									<g:link controller="import" action="uploadExcel" class="excel_link" onclick="document.forms.ExcelUploadForm.submit();">Excel-File einlesen</g:link>
-								</g:uploadForm>
-							</span>
-						</div>
-					</gui:tab>
-				</gui:tabView>
-				<div>
-					<span></span>
-				</div>
-
-			</g:if>
+				</g:if>
+				<gui:tab label="Import">
+					<div>
+						<span>
+							<g:uploadForm action="excelImport" name="ExcelUploadForm">
+								<input type="file" name="file"/>
+								<g:link controller="import" action="uploadExcel" class="excel_link" onclick="document.forms.ExcelUploadForm.submit();">Excel-File einlesen</g:link>
+							</g:uploadForm>
+						</span>
+					</div>
+				</gui:tab>
+			</gui:tabView>
         </div>
     </body>
 </html>
