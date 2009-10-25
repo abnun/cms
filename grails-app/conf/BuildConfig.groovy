@@ -20,5 +20,7 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
         // runtime 'com.mysql:mysql-connector-java:5.1.5'
     }
-
 }
+
+// So heisst das WAR-File nachher
+grails.war.destFile = "sv-leingarten.war"
