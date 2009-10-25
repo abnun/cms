@@ -39,7 +39,12 @@ class ImportController
 			{
 				importService.importExcel(file)
 			}
+
+			redirect(uri: '/')
+			return false
 		}
+		redirect(uri: '/')
+		return false
 	}
 
 	def uploadExcel =

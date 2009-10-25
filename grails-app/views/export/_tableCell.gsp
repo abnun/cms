@@ -2,7 +2,7 @@
 <%
     Person tmpPerson = person
 %>
-<g:if test="${tmpPerson && funktion}">
+<g:if test="${tmpPerson}">
 	<tr class="${tableClass}">
 		<td>
 			${tmpPerson.nachname?.encodeAsUnicode()}
@@ -29,7 +29,12 @@
 			${tmpPerson.email?.encodeAsUnicode()}
 		</td>
 		<td>
-			<b>${funktion.encodeAsUnicode()}</b>
+			<g:if test="${funktion}">
+				<b>${funktion.encodeAsUnicode()}</b>
+			</g:if>
+			<g:else>
+				&nbsp;
+			</g:else>
 		</td>
 	</tr>
 </g:if>

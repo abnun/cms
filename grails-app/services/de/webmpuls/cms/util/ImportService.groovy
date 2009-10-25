@@ -169,7 +169,9 @@ class ImportService
 			HSSFSheet sheet = hssfworkbook.getSheetAt(0);
 
 			// Liste fuer die neuen Personen
-			def personenNeu = []
+			def personenNew = []
+
+			def abteilungenForLaterSave = []
 
 			int s = 1;
 
@@ -334,6 +336,12 @@ class ImportService
 
 									tmpAbteilung.addToMitarbeiterfunktionen(abteilungsLeiterFunktion)
 									tmpAbteilung.save(flush: true)
+
+									if(!tmpAbteilung.personen?.contains(tmpPerson))
+									{
+										tmpAbteilung.addToPersonen(tmpPerson)
+										abteilungenForLaterSave << tmpAbteilung
+									}
 								}
 							}
 
@@ -379,7 +387,7 @@ class ImportService
 
 				if (tmpPerson.validate())
 				{
-					personenNeu << tmpPerson
+					personenNew << tmpPerson
 				}
 				else
 				{
@@ -391,9 +399,9 @@ class ImportService
 
 				s++;
 			}
-			if (personenNeu)
+			if (personenNew)
 			{
-				for(Person person : personenNeu)
+				for(Person person : personenNew)
 				{
 					Person checkPerson = Person.findByVornameAndNachname(person.vorname,  person.nachname)
 					if(checkPerson)
@@ -413,6 +421,26 @@ class ImportService
 					else
 					{
 						person.save(flush: true)
+					}
+				}
+			}
+			if (abteilungenForLaterSave)
+			{
+				for(Abteilung abteilung : abteilungenForLaterSave)
+				{
+					if(!abteilung.isAttached())
+					{
+						abteilung.attach()
+					}
+
+					println abteilung.personen
+
+					if(!abteilung.save(flush: true))
+					{
+						abteilung.errors.each
+						{
+							log.error(it)
+						}
 					}
 				}
 			}

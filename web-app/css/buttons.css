@@ -43,3 +43,13 @@ a.pdf_link {
 	padding-bottom: 10px;
 	background: transparent url(../bilder/icons/pdf_icon_30x30.gif) no-repeat center left;
 }
+
+a.excel_link {
+  	color: black;
+	font-weight: bold;
+	line-height: 40px;
+	padding-left: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: transparent url(../bilder/icons/excel_30x30.png) no-repeat center left;
+}

@@ -281,7 +281,7 @@
   </component>
   <component name="ProjectFileVersion" converted="true" />
   <component name="ProjectKey">
-    <option name="state" value="project://D:\dropbox\My Dropbox\projekte\firmen\webmpuls\grails\cms\cms.ipr" />
+    <option name="state" value="project:///Users/markus/Documents/dropbox/projekte/firmen/webmpuls/grails/cms/cms.ipr" />
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="true" id="Add" />
@@ -307,7 +307,7 @@
   <component name="ProjectRunConfigurationManager">
     <configuration default="false" name="Grails:cms" type="GrailsRunConfigurationType" factoryName="Grails Application">
       <module name="cms" />
-      <setting name="vmparams" value="-Xms512M -Xmx768M -XX:PermSize=128m -XX:MaxPermSize=256m -Dgrails.server.port.http=8081" />
+      <setting name="vmparams" value="-Xms512M -Xmx768M -XX:PermSize=128m -XX:MaxPermSize=256m -Dgrails.server.port.http=8081 -Djava.awt.headless=true" />
       <setting name="grailsparams" value="" />
       <setting name="hostik" value="localhost" />
       <setting name="port" value="8080" />
@@ -446,7 +446,7 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="" vcs="Git" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
   <component name="XPathView.XPathProjectComponent">

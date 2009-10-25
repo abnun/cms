@@ -73,7 +73,7 @@
 	<g:javascript library="jquery" />
 	<cms:cmsHead />
 	<script type="text/javascript" src="${resource(dir: 'js/jquery', file: 'superfish.js')}"></script>--}%
-	<gui:resources components="['richEditor','datePicker']"/>
+	<gui:resources components="['richEditor','datePicker', 'tabView']"/>
 	<g:layoutHead />
 </head>
 
@@ -92,7 +92,7 @@
 		<table border="0" cellpadding="0" cellspacing="3" class="rubrik">
 			<tr>
 				<td></td>
-				<td><a href="#">Rubrik 1</a></td>
+				<td class="rubrik"><a href="#">Rubrik 1</a></td>
 
           <td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"></td>
 			<td><a href="#">Rubrik 1</a></td>
@@ -205,10 +205,10 @@
           <td>&nbsp;</td>
         </tr>
       </table>-->
-      <table width="614" border="0" cellpadding="0" cellspacing="0">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
         <tr align="left" valign="top">
-          <td width="520" height="227"><!-- TemplateBeginEditable name="Text" -->
-            <table width="570" border="0" align="left" cellspacing="5">
+          <td width="100%" height="227"><!-- TemplateBeginEditable name="Text" -->
+            <table width="100%" border="0" align="left" cellspacing="5">
               <tr valign="top">
 				  <!--<td class="copy">
 					  <p class="headline">&nbsp;</p>

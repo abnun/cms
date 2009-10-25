@@ -1,4 +1,4 @@
-<%@ page import="de.webmpuls.cms.people.Funktion; de.webmpuls.cms.people.Person" %>
+<%@ page import="de.webmpuls.cms.section.Abteilung; de.webmpuls.cms.people.Funktion; de.webmpuls.cms.people.Person" %>
 <html>
     <head>
         <title>
@@ -6,10 +6,10 @@
         </title>
         <meta name="layout" content="main" />
 		<style type="text/css">
-		@page { size: A4 landscape }			
+		@page { size: A4 landscape }
 		</style>
     </head>
-    
+
     <body>
 		<div class="body">
         	<h1>Adressliste</h1>
@@ -31,6 +31,7 @@
 						Funktion beisitzerFunktion = Funktion.findVorstandByCode(Funktion.BEISITZER)
 						Funktion referentFunktion = Funktion.findVorstandByCode(Funktion.REFERENT)
 						Funktion webmasterFunktion = Funktion.findVorstandByCode(Funktion.WEBMASTER)
+						Funktion abteilungsLeiterFunktion = Funktion.findByCode(Funktion.ABTEILUNGSLEITER)
 
 						Person vorsitzender1 = null
 						if(vorsitzender1Funktion)
@@ -85,6 +86,26 @@
 						{
 							webmaster = webmasterFunktion.personen.asList()[0]
 						}
+
+						Map abteilungsLeiterMap = new HashMap()
+
+						def abteilungList = Abteilung.list()
+
+						Abteilung targetAbteilung = null
+
+						for (Abteilung abteilungInstance: abteilungList)
+						{
+							if (abteilungsLeiterFunktion)
+							{
+								abteilungsLeiterMap.put(abteilungInstance, abteilungInstance.personen.findAll
+								{
+									Person tmpPerson ->
+									abteilungsLeiterFunktion.personen.contains(tmpPerson)
+								})
+							}
+						}
+
+						abteilungsLeiterMap = abteilungsLeiterMap.sort{a,b -> a.key.toString() <=> b.key.toString()}
 					%>
 					<g:render template="tableCell" model="[person: vorsitzender1, funktion: vorsitzender1Funktion, tableClass: 'even']" />
 					<g:render template="tableCell" model="[person: vorsitzender2, funktion: vorsitzender2Funktion, tableClass: 'odd']" />
@@ -95,6 +116,41 @@
 					<g:render template="tableCell" model="[person: beisitzer, funktion: beisitzerFunktion, tableClass: 'even']" />
 					<g:render template="tableCell" model="[person: referent, funktion: referentFunktion, tableClass: 'odd']" />
 					<g:render template="tableCell" model="[person: webmaster, funktion: webmasterFunktion, tableClass: 'even']" />
+				</table>
+				<br/>
+				<table>
+					<tr class="odd">
+						<th colspan="9" align="left">
+							Abteilungsleitung:
+						</th>
+					</tr>
+					<g:if test="${abteilungsLeiterMap != null && !abteilungsLeiterMap.isEmpty()}">
+						<%
+						    def z = 0
+						%>
+						<g:each var="abteilungsLeiterMapEntry" in="${abteilungsLeiterMap}">
+							<%
+							    Abteilung tmpAbteilung = abteilungsLeiterMapEntry.key
+
+								def abteilungsLeiterList = abteilungsLeiterMapEntry.value
+
+								if(abteilungsLeiterList)
+								{
+									abteilungsLeiterList = abteilungsLeiterList.sort{a, b -> a.toString() <=> b.toString()}
+							%>
+							<g:each var="abteilungsLeiter" in="${abteilungsLeiterList}">
+								<g:render template="tableCell" model="[person: abteilungsLeiter, funktion: tmpAbteilung, tableClass: (z % 2) == 0 ? 'odd' : 'even']" />
+								<%
+								    z++
+								%>
+							</g:each>
+							<%
+								}
+
+								//z++
+							%>
+						</g:each>
+					</g:if>
 				</table>
 			</div>
 		</div>

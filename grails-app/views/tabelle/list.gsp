@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'tabelle.label', default: 'Tabelle')}" />
-        <title><g:message code="default.list.label" args="[entityName]" /></title>
+        %{--<title><g:message code="default.list.label" args="[entityName]" /></title>--}%
     </head>
     <body>
         <div class="nav">
