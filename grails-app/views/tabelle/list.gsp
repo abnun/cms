@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="nav">
-            %{--<span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>--}%
+            <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
         </div>
         <div class="body">
@@ -17,12 +17,16 @@
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
+			<br/>
+			Es sind ${tabelleInstanceTotal} Ergebnisse im System hinterlegt.
+			<br/>
+			<br/>
             <div class="list">
                 <table>
                     <thead>
                         <tr>
                         
-                            <g:sortableColumn property="id" title="${message(code: 'tabelle.id.label', default: 'Id')}" />
+                            <th>&nbsp;</th>
                         
                             <g:sortableColumn property="spieldatum" title="${message(code: 'tabelle.spieldatum.label', default: 'Spieldatum')}" />
                         
@@ -46,7 +50,7 @@
                     <g:each in="${tabelleInstanceList}" status="i" var="tabelleInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td><g:link action="show" id="${tabelleInstance.id}">${fieldValue(bean: tabelleInstance, field: "id")}</g:link></td>
+                            <td><g:link action="show" id="${tabelleInstance.id}">${i + 1}</g:link></td>
                         
                             <td><g:formatDate date="${tabelleInstance.spieldatum}" /></td>
                         
@@ -57,9 +61,14 @@
                             <td>${fieldValue(bean: tabelleInstance, field: "gastmannschaft")}</td>
                         
                             <td>${fieldValue(bean: tabelleInstance, field: "anstoss")}</td>
-                        
-                            <td>${tabelleInstance?.tore}</td>
-                        
+
+							<g:if test="${tabelleInstance?.tore?.contains('png')}">
+								<td><img src="${resource(dir: 'bilder/tabellen/tore', file: tabelleInstance?.tore)}" alt="" border="0" /></td>
+							</g:if>
+							<g:else>
+								<td>${tabelleInstance?.tore}</td>
+							</g:else>
+
                             <td>${fieldValue(bean: tabelleInstance, field: "spielklasse")}</td>
                         
                             <td>${fieldValue(bean: tabelleInstance, field: "typ")}</td>
@@ -69,9 +78,9 @@
                     </tbody>
                 </table>
             </div>
-            <div class="paginateButtons">
+            %{--<div class="paginateButtons">
                 <g:paginate total="${tabelleInstanceTotal}" />
-            </div>
+            </div>--}%
         </div>
     </body>
 </html>

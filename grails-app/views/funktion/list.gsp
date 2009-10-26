@@ -11,18 +11,23 @@
         <div class="nav">
             <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
+			<g:render template="/global/admin/menu" />
         </div>
         <div class="body">
             %{--<h1><g:message code="default.list.label" args="[entityName]" /></h1>--}%
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
+			<br/>
+			Es sind ${funktionInstanceTotal} Funktionen im System hinterlegt.
+			<br/>
+			<br/>
             <div class="list">
                 <table>
                     <thead>
                         <tr>
                         
-                            <g:sortableColumn property="id" title="${message(code: 'funktion.id.label', default: 'Id')}" />
+                            <th>&nbsp;</th>
                         
                             <g:sortableColumn property="name" title="${message(code: 'funktion.name.label', default: 'Name')}" />
                         
@@ -36,7 +41,7 @@
                     <g:each in="${funktionInstanceList}" status="i" var="funktionInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td><g:link action="show" id="${funktionInstance.id}">${fieldValue(bean: funktionInstance, field: "id")}</g:link></td>
+                            <td><g:link action="show" id="${funktionInstance.id}">${i + 1}</g:link></td>
                         
                             <td>${fieldValue(bean: funktionInstance, field: "name")}</td>
                         

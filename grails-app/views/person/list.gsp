@@ -11,6 +11,7 @@
         <div class="nav">
             <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
+			<g:render template="/global/admin/menu" />
         </div>
         <div class="body">
             %{--<h1><g:message code="default.list.label" args="[entityName]" /></h1>--}%
@@ -26,7 +27,7 @@
                     <thead>
                         <tr>
 
-                            <g:sortableColumn property="id" title="${message(code: 'person.id.label', default: 'Id')}" />
+                            <th>&nbsp;</th>
 
                             <g:sortableColumn property="vorname" title="${message(code: 'person.vorname.label', default: 'Vorname')}" />
 
@@ -52,7 +53,7 @@
                     <g:each in="${personInstanceList}" status="i" var="personInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
 
-                            <td><g:link action="show" id="${personInstance.id}">${fieldValue(bean: personInstance, field: "id")}</g:link></td>
+                            <td><g:link action="show" id="${personInstance.id}">${i + 1}</g:link></td>
 
                             <td>${fieldValue(bean: personInstance, field: "vorname")}</td>
 

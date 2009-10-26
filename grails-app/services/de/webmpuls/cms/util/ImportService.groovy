@@ -12,11 +12,15 @@ import de.webmpuls.cms.people.Person
 import org.apache.poi.hssf.usermodel.HSSFCell
 import de.webmpuls.cms.people.Funktion
 import de.webmpuls.cms.section.Abteilung
+import org.springframework.context.ApplicationContextAware
+import org.springframework.context.ApplicationContext
 
-class ImportService
+class ImportService implements ApplicationContextAware
 {
 
 	boolean transactional = false
+
+	ApplicationContext applicationContext
 
     public void importHTMLTable(String link)
 	{
@@ -90,7 +94,28 @@ class ImportService
 
 							if(tmpNodeDIV.attributes().'src')
 							{
-								tmpText = "<img src=\"http://www.fussball.de${tmpNodeDIV.attributes().'src'}\" alt=\"\" border=\"0\" />"
+								String tmpLink = "http://www.fussball.de${tmpNodeDIV.attributes().'src'}"
+
+								URL tmpURL = new URL(tmpLink)
+
+								println tmpLink.tokenize("/")[-1]
+
+								String targetFileName = newTable.spielkennung
+								targetFileName = targetFileName.replaceAll(" ", "_")
+								targetFileName = targetFileName + ".png"
+
+								println targetFileName
+
+								String targetPath = applicationContext.getResource(File.separator + "bilder" + File.separator + "tabellen" + File.separator + "tore" + File.separator + targetFileName).getFile().getAbsolutePath()
+
+								println "Zielpfad für Image: $targetPath"
+
+								FileOutputStream fileOutputStream = new FileOutputStream(targetPath)
+								BufferedOutputStream out = new BufferedOutputStream(fileOutputStream)
+								out << tmpURL.openStream()
+								out.close()
+
+								tmpText = targetFileName
 								println "$iTD -> Tore: $tmpText"
 								newTable.tore = tmpText
 							}
@@ -409,7 +434,15 @@ class ImportService
 						log.debug("Gespeicherte Funktion gefunden ...")
 						checkFunktion.name = funktion.name
 						checkFunktion.code = funktion.code
-						checkFunktion.personen = funktion.personen
+
+						for(Person tmpFPerson : funktion.personen)
+						{
+							if(!checkFunktion.personen.contains(tmpFPerson))
+							{
+								checkFunktion.addToPersonen(tmpFPerson)
+							}
+						}
+
 
 						checkFunktion.save(flush: true)
 					}
@@ -430,7 +463,34 @@ class ImportService
 						log.debug("Gespeicherte Abteilung gefunden ...")
 						checkAbteilung.name = abteilung.name
 						checkAbteilung.code = abteilung.code
-						checkAbteilung.personen = abteilung.personen
+
+						for(Funktion tmpAFunktion : abteilung.mitarbeiterfunktionen)
+						{
+							if(!checkAbteilung.mitarbeiterfunktionen.contains(tmpAFunktion))
+							{
+								checkAbteilung.addToMitarbeiterfunktionen(tmpAFunktion)
+							}
+						}
+
+						for(Person tmpAPerson : abteilung.personen)
+						{
+							if(!checkAbteilung.personen.contains(tmpAPerson))
+							{
+								Person checkAPerson = Person.findByNachnameAndVorname(tmpAPerson.nachname, tmpAPerson.vorname)
+
+								if(checkAPerson)
+								{
+									for (Funktion tmpPFunktion: tmpAPerson.funktionen)
+									{
+										if (!checkAPerson.funktionen.contains(tmpPFunktion))
+										{
+											checkAPerson.addToFunktionen(tmpPFunktion)
+										}
+									}
+								}
+								checkAbteilung.addToPersonen(tmpAPerson)
+							}
+						}
 
 						checkAbteilung.save(flush: true)
 					}
@@ -458,6 +518,22 @@ class ImportService
 						checkPerson.telefon2 =  person.telefon2
 						checkPerson.email =  person.email
 						checkPerson.adresseAnzeigen = person.adresseAnzeigen
+
+						for(Funktion tmpPFunktion : person.funktionen)
+						{
+							if(!checkPerson.funktionen.contains(tmpPFunktion))
+							{
+								checkPerson.addToFunktionen(tmpPFunktion)
+							}
+						}
+
+						for(Abteilung tmpPAbteilung : person.abteilungen)
+						{
+							if(!checkPerson.abteilungen.contains(tmpPAbteilung))
+							{
+								checkPerson.addToAbteilungen(tmpPAbteilung)
+							}
+						}
 
 						checkPerson.save(flush: true)
 					}

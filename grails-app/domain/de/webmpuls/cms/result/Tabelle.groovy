@@ -16,6 +16,8 @@ class Tabelle
 	static mapping =
 	{
 		sort(spieldatum: 'asc')
+
+		cache(true)
 	}
 
     static constraints =

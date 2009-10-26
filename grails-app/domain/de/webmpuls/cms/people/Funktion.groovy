@@ -29,6 +29,9 @@ class Funktion
 	{
 		sort("name")
 		order("asc")
+
+		cache(true)
+		personen(cache: true)
 	}
 
     static constraints =

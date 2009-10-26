@@ -22,6 +22,10 @@ class Person
 	{
 		sort("nachname")
 		order("asc")
+
+		cache(true)
+		funktionen(cache: true)
+		abteilungen(cache: true)
 	}
 
     static constraints =

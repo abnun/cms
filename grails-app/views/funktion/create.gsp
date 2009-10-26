@@ -10,7 +10,7 @@
     <body>
         <div class="nav">
             <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
-            <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
+			<g:render template="/global/admin/menu" />
         </div>
         <div class="body">
             <h1><g:message code="default.create.label" args="[entityName]" /></h1>

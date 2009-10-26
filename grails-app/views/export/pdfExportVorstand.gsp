@@ -21,6 +21,17 @@
 							Vorstand
 						</th>
 					</tr>
+					<tr class="even">
+						<th>Name</th>
+						<th>Vorname</th>
+						<th>Strasse</th>
+						<th>PLZ</th>
+						<th>Ort</th>
+						<th>Telefon</th>
+						<th>Handy</th>
+						<th>E-Mail</th>
+						<th></th>
+					</tr>
 					<%
 						Funktion vorsitzender1Funktion = Funktion.findVorstandByCode(Funktion.VORSITZENDER1)
 						Funktion vorsitzender2Funktion = Funktion.findVorstandByCode(Funktion.VORSITZENDER2)
@@ -31,6 +42,11 @@
 						Funktion beisitzerFunktion = Funktion.findVorstandByCode(Funktion.BEISITZER)
 						Funktion referentFunktion = Funktion.findVorstandByCode(Funktion.REFERENT)
 						Funktion webmasterFunktion = Funktion.findVorstandByCode(Funktion.WEBMASTER)
+						Funktion seniorenbeauftragterFunktion = Funktion.findVorstandByCode(Funktion.SENIONERBEAUFTRAGTER)
+						Funktion schriftfuehrerFunktion = Funktion.findVorstandByCode(Funktion.SCHRIFTFUEHRER)
+						Funktion geschaeftsstelleFunktion = Funktion.findVorstandByCode(Funktion.GESCHAEFTSSTELLE)
+						Funktion jugendLeiterFunktion = Funktion.findVorstandByCode(Funktion.JUGENDLEITER)
+						Funktion jugendSprecherFunktion = Funktion.findVorstandByCode(Funktion.JUGENDSPRECHER)
 						Funktion abteilungsLeiterFunktion = Funktion.findByCode(Funktion.ABTEILUNGSLEITER)
 
 						Person vorsitzender1 = null
@@ -54,7 +70,7 @@
 						Person kassierer = null
 						if(kassiererFunktion)
 						{
-							kassierer3 = kassiererFunktion.personen.asList()[0]
+							kassierer = kassiererFunktion.personen.asList()[0]
 						}
 
 						Person wirt_tech_leiter = null
@@ -87,6 +103,36 @@
 							webmaster = webmasterFunktion.personen.asList()[0]
 						}
 
+						Person seniorenbeauftragter = null
+						if(seniorenbeauftragterFunktion)
+						{
+							seniorenbeauftragter = seniorenbeauftragterFunktion.personen.asList()[0]
+						}
+
+						Person schriftfuehrer = null
+						if(schriftfuehrerFunktion)
+						{
+							schriftfuehrer = schriftfuehrerFunktion.personen.asList()[0]
+						}
+
+						Person geschaeftsstelle = null
+						if(geschaeftsstelleFunktion)
+						{
+							geschaeftsstelle = geschaeftsstelleFunktion.personen.asList()[0]
+						}
+
+						Person jugendLeiter = null
+						if(jugendLeiterFunktion)
+						{
+							jugendLeiter = jugendLeiterFunktion.personen.asList()[0]
+						}
+
+						Person jugendSprecher = null
+						if(jugendSprecherFunktion)
+						{
+							jugendSprecher = jugendSprecherFunktion.personen.asList()[0]
+						}
+
 						Map abteilungsLeiterMap = new HashMap()
 
 						def abteilungList = Abteilung.list()
@@ -107,15 +153,20 @@
 
 						abteilungsLeiterMap = abteilungsLeiterMap.sort{a,b -> a.key.toString() <=> b.key.toString()}
 					%>
-					<g:render template="tableCell" model="[person: vorsitzender1, funktion: vorsitzender1Funktion, tableClass: 'even']" />
-					<g:render template="tableCell" model="[person: vorsitzender2, funktion: vorsitzender2Funktion, tableClass: 'odd']" />
-					<g:render template="tableCell" model="[person: vorsitzender3, funktion: vorsitzender3Funktion, tableClass: 'even']" />
-					<g:render template="tableCell" model="[person: kassierer, funktion: kassiererFunktion, tableClass: 'odd']" />
-					<g:render template="tableCell" model="[person: wirt_tech_leiter, funktion: wirt_tech_leiterFunktion, tableClass: 'even']" />
-					<g:render template="tableCell" model="[person: sport_tech_leiter, funktion: sport_tech_leiterFunktion, tableClass: 'odd']" />
-					<g:render template="tableCell" model="[person: beisitzer, funktion: beisitzerFunktion, tableClass: 'even']" />
-					<g:render template="tableCell" model="[person: referent, funktion: referentFunktion, tableClass: 'odd']" />
-					<g:render template="tableCell" model="[person: webmaster, funktion: webmasterFunktion, tableClass: 'even']" />
+					<g:render template="tableCell" model="[person: vorsitzender1, funktion: vorsitzender1Funktion, tableClass: 'odd']" />
+					<g:render template="tableCell" model="[person: vorsitzender2, funktion: vorsitzender2Funktion, tableClass: 'even']" />
+					<g:render template="tableCell" model="[person: vorsitzender3, funktion: vorsitzender3Funktion, tableClass: 'odd']" />
+					<g:render template="tableCell" model="[person: kassierer, funktion: kassiererFunktion, tableClass: 'even']" />
+					<g:render template="tableCell" model="[person: wirt_tech_leiter, funktion: wirt_tech_leiterFunktion, tableClass: 'odd']" />
+					<g:render template="tableCell" model="[person: sport_tech_leiter, funktion: sport_tech_leiterFunktion, tableClass: 'even']" />
+					<g:render template="tableCell" model="[person: beisitzer, funktion: beisitzerFunktion, tableClass: 'odd']" />
+					<g:render template="tableCell" model="[person: referent, funktion: referentFunktion, tableClass: 'even']" />
+					<g:render template="tableCell" model="[person: webmaster, funktion: webmasterFunktion, tableClass: 'odd']" />
+					<g:render template="tableCell" model="[person: seniorenbeauftragter, funktion: seniorenbeauftragterFunktion, tableClass: 'even']" />
+					<g:render template="tableCell" model="[person: schriftfuehrer, funktion: schriftfuehrerFunktion, tableClass: 'odd']" />
+					<g:render template="tableCell" model="[person: geschaeftsstelle, funktion: geschaeftsstelleFunktion, tableClass: 'even']" />
+					<g:render template="tableCell" model="[person: jugendLeiter, funktion: jugendLeiterFunktion, tableClass: 'odd']" />
+					<g:render template="tableCell" model="[person: jugendSprecher, funktion: jugendSprecherFunktion, tableClass: 'even']" />
 				</table>
 				<br/>
 				<table>
@@ -123,6 +174,17 @@
 						<th colspan="9" align="left">
 							Abteilungsleitung:
 						</th>
+					</tr>
+					<tr class="even">
+						<th>Name</th>
+						<th>Vorname</th>
+						<th>Strasse</th>
+						<th>PLZ</th>
+						<th>Ort</th>
+						<th>Telefon</th>
+						<th>Handy</th>
+						<th>E-Mail</th>
+						<th></th>
 					</tr>
 					<g:if test="${abteilungsLeiterMap != null && !abteilungsLeiterMap.isEmpty()}">
 						<%
@@ -139,7 +201,7 @@
 									abteilungsLeiterList = abteilungsLeiterList.sort{a, b -> a.toString() <=> b.toString()}
 							%>
 							<g:each var="abteilungsLeiter" in="${abteilungsLeiterList}">
-								<g:render template="tableCell" model="[person: abteilungsLeiter, funktion: tmpAbteilung, tableClass: (z % 2) == 0 ? 'odd' : 'even']" />
+								<g:render template="tableCell" model="[person: abteilungsLeiter, funktion: tmpAbteilung, tableClass: (z % 2) == 0 ? 'even' : 'odd']" />
 								<%
 								    z++
 								%>

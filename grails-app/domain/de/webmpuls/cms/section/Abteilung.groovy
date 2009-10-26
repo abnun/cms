@@ -15,6 +15,11 @@ class Abteilung
 		//mitarbeiterfunktionen(sort: 'name')
 		sort("name")
 		order("asc")
+
+		cache(true)
+		mitarbeiterfunktionen(cache: true)
+		unterabteilungen(cache: true)
+		personen(cache: true)
 	}
 
 	static constraints =
