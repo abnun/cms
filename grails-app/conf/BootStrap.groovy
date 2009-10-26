@@ -55,7 +55,7 @@ class BootStrap
 
 		if (!abteilungsleiter)
 		{
-			abteilungsleiter = new Funktion(name: 'Abteilungsleiter(in)', code: Funktion.ABTEILUNGSLEITER, vorstand: true).save(flush: true)
+			abteilungsleiter = new Funktion(name: 'Abteilungsleiter(in)', code: Funktion.ABTEILUNGSLEITER, vorstand: false).save(flush: true)
 		}
 
 		if (!geschaeftsstelle)

@@ -206,6 +206,8 @@ class ImportService implements ApplicationContextAware
 			//			HSSFCell cell  = row.getCell((short)1);
 			//			println cell.getStringCellValue()
 
+			boolean isOldExcelFormat = true
+
 			while (s <= sheet.getLastRowNum())
 			{
 				HSSFRow row = sheet.getRow(s)
@@ -217,6 +219,12 @@ class ImportService implements ApplicationContextAware
 				tmpPerson = new Person()
 
 				String telefon1String = ""
+
+				short cellCount = row.getLastCellNum()
+				if (cellCount == 9)
+				{
+					isOldExcelFormat = false
+				}
 
 				while (row && r < row.getLastCellNum())
 				{
@@ -261,122 +269,243 @@ class ImportService implements ApplicationContextAware
 
 						}
 
-						if (r == 3)
+						if(isOldExcelFormat)
 						{
-							tmpPerson.strasse = value
-
-						}
-
-						if (r == 4)
-						{
-							tmpPerson.ort = value
-
-						}
-
-						if (r == 7)
-						{
-							tmpPerson.telefon2 = value
-
-						}
-
-						if (r == 8)
-						{
-							tmpPerson.email = value
-
-						}
-
-						if (r == 9)
-						{
-							Funktion tmpFunktion = Funktion.findByName(value)
-
-							Abteilung tmpAbteilung = Abteilung.findByName(value)
-
-							if(tmpFunktion)
+							if (r == 4)
 							{
-								log.debug("Funktion: $tmpFunktion")
+								tmpPerson.ort = value
 
-								if(!tmpPerson.funktionen?.contains(tmpFunktion))
-								{
-									tmpPerson.addToFunktionen(tmpFunktion)
-								}
+							}
+	
+							if (r == 7)
+							{
+								tmpPerson.telefon2 = value
 
-								if(!tmpFunktion.personen?.contains(tmpPerson))
-								{
-									tmpFunktion.addToPersonen(tmpPerson)
-								}
-								
-								funktionenForLaterSave << tmpFunktion
 							}
 
-							else if(!tmpAbteilung)
+							if (r == 8)
 							{
-								String tmpCode = value.toLowerCase()
-								if(value.contains(" "))
-								{
-									tmpCode = tmpCode.replaceAll(" ", "_")
-								}
-								if(value.contains("."))
-								{
-									tmpCode = tmpCode.replaceAll(".", "")
-								}
-								if(value.contains("/"))
-								{
-									tmpCode = tmpCode.replaceAll("/", "_")
-								}
-								if(value.contains("("))
-								{
-									tmpCode = tmpCode.replaceAll("\\(", "")
-								}
-								if(value.contains(")"))
-								{
-									tmpCode = tmpCode.replaceAll("\\)", "")
-								}
-								if(value.contains("ß"))
-								{
-									tmpCode = tmpCode.replaceAll("ß", "ss")
-								}
-								if(value.contains("ä"))
-								{
-									tmpCode = tmpCode.replaceAll("ä", "ae")
-								}
-								if(value.contains("ü"))
-								{
-									tmpCode = tmpCode.replaceAll("ü", "ue")
-								}
-								if(value.contains("ö"))
-								{
-									tmpCode = tmpCode.replaceAll('ö', "oe")
-								}
-								Abteilung newAbteilung = new Abteilung(name: value, code: tmpCode)
+								tmpPerson.email = value
 
-								abteilungenForLaterSave << newAbteilung
+							}
 
-								tmpAbteilung = newAbteilung
+							if (r == 9)
+							{
+								Funktion tmpFunktion = Funktion.findByName(value)
 
-								if(tmpAbteilung)
+								Abteilung tmpAbteilung = Abteilung.findByName(value)
+
+								if(tmpFunktion)
 								{
-									log.debug("Abteilung: $tmpAbteilung")
-									Funktion abteilungsLeiterFunktion = Funktion.findByCode(Funktion.ABTEILUNGSLEITER)
- 									if (abteilungsLeiterFunktion)
+									log.debug("Funktion: $tmpFunktion")
+
+									if(!tmpPerson.funktionen?.contains(tmpFunktion))
 									{
-										if (!tmpPerson.funktionen?.contains(abteilungsLeiterFunktion))
-										{
-											tmpPerson.addToFunktionen(abteilungsLeiterFunktion)
-										}
+										tmpPerson.addToFunktionen(tmpFunktion)
+									}
 
-										if (!tmpAbteilung.mitarbeiterfunktionen?.contains(abteilungsLeiterFunktion))
-										{
-											tmpAbteilung.addToMitarbeiterfunktionen(abteilungsLeiterFunktion)
-										}
+									if(!tmpFunktion.personen?.contains(tmpPerson))
+									{
+										tmpFunktion.addToPersonen(tmpPerson)
+									}
 
-										if(!tmpAbteilung.personen?.contains(tmpPerson))
+									funktionenForLaterSave << tmpFunktion
+								}
+
+								else if(!tmpAbteilung)
+								{
+									String tmpCode = value.toLowerCase()
+									if(value.contains(" "))
+									{
+										tmpCode = tmpCode.replaceAll(" ", "_")
+									}
+									if(value.contains("."))
+									{
+										tmpCode = tmpCode.replaceAll(".", "")
+									}
+									if(value.contains("/"))
+									{
+										tmpCode = tmpCode.replaceAll("/", "_")
+									}
+									if(value.contains("("))
+									{
+										tmpCode = tmpCode.replaceAll("\\(", "")
+									}
+									if(value.contains(")"))
+									{
+										tmpCode = tmpCode.replaceAll("\\)", "")
+									}
+									if(value.contains("ß"))
+									{
+										tmpCode = tmpCode.replaceAll("ß", "ss")
+									}
+									if(value.contains("ä"))
+									{
+										tmpCode = tmpCode.replaceAll("ä", "ae")
+									}
+									if(value.contains("ü"))
+									{
+										tmpCode = tmpCode.replaceAll("ü", "ue")
+									}
+									if(value.contains("ö"))
+									{
+										tmpCode = tmpCode.replaceAll('ö', "oe")
+									}
+									Abteilung newAbteilung = new Abteilung(name: value, code: tmpCode)
+
+									abteilungenForLaterSave << newAbteilung
+
+									tmpAbteilung = newAbteilung
+
+									if(tmpAbteilung)
+									{
+										log.debug("Abteilung: $tmpAbteilung")
+										Funktion abteilungsLeiterFunktion = Funktion.findByCode(Funktion.ABTEILUNGSLEITER)
+										if (abteilungsLeiterFunktion)
 										{
-											tmpAbteilung.addToPersonen(tmpPerson)
+											if (!tmpPerson.funktionen?.contains(abteilungsLeiterFunktion))
+											{
+												tmpPerson.addToFunktionen(abteilungsLeiterFunktion)
+											}
+
+											if (!tmpAbteilung.mitarbeiterfunktionen?.contains(abteilungsLeiterFunktion))
+											{
+												tmpAbteilung.addToMitarbeiterfunktionen(abteilungsLeiterFunktion)
+											}
+
+											if(!tmpAbteilung.personen?.contains(tmpPerson))
+											{
+												tmpAbteilung.addToPersonen(tmpPerson)
+											}
+											abteilungenForLaterSave << tmpAbteilung
 										}
-										abteilungenForLaterSave << tmpAbteilung
 									}
 								}
 							}
+						}
+						else
+						{
+							if (r == 3)
+							{
+								tmpPerson.plz = value
+							}
+
+							if (r == 4)
+							{
+								tmpPerson.ort = value
+
+							}
+
+							if (r == 5)
+							{
+								tmpPerson.telefon1 = value
+							}
+
+							if (r == 6)
+							{
+								tmpPerson.telefon2 = value
+							}
+
+							if (r == 7)
+							{
+								tmpPerson.email = value
+
+							}
+
+							if (r == 8)
+							{
+								Funktion tmpFunktion = Funktion.findByName(value)
+
+								Abteilung tmpAbteilung = Abteilung.findByName(value)
+
+								if(tmpFunktion)
+								{
+									log.debug("Funktion: $tmpFunktion")
+
+									if(!tmpPerson.funktionen?.contains(tmpFunktion))
+									{
+										tmpPerson.addToFunktionen(tmpFunktion)
+									}
+
+									if(!tmpFunktion.personen?.contains(tmpPerson))
+									{
+										tmpFunktion.addToPersonen(tmpPerson)
+									}
+
+									funktionenForLaterSave << tmpFunktion
+								}
+
+								else if(!tmpAbteilung)
+								{
+									String tmpCode = value.toLowerCase()
+									if(value.contains(" "))
+									{
+										tmpCode = tmpCode.replaceAll(" ", "_")
+									}
+									if(value.contains("."))
+									{
+										tmpCode = tmpCode.replaceAll(".", "")
+									}
+									if(value.contains("/"))
+									{
+										tmpCode = tmpCode.replaceAll("/", "_")
+									}
+									if(value.contains("("))
+									{
+										tmpCode = tmpCode.replaceAll("\\(", "")
+									}
+									if(value.contains(")"))
+									{
+										tmpCode = tmpCode.replaceAll("\\)", "")
+									}
+									if(value.contains("ß"))
+									{
+										tmpCode = tmpCode.replaceAll("ß", "ss")
+									}
+									if(value.contains("ä"))
+									{
+										tmpCode = tmpCode.replaceAll("ä", "ae")
+									}
+									if(value.contains("ü"))
+									{
+										tmpCode = tmpCode.replaceAll("ü", "ue")
+									}
+									if(value.contains("ö"))
+									{
+										tmpCode = tmpCode.replaceAll('ö', "oe")
+									}
+									Abteilung newAbteilung = new Abteilung(name: value, code: tmpCode)
+
+									abteilungenForLaterSave << newAbteilung
+
+									tmpAbteilung = newAbteilung
+
+									if(tmpAbteilung)
+									{
+										log.debug("Abteilung: $tmpAbteilung")
+										Funktion abteilungsLeiterFunktion = Funktion.findByCode(Funktion.ABTEILUNGSLEITER)
+										if (abteilungsLeiterFunktion)
+										{
+											if (!tmpPerson.funktionen?.contains(abteilungsLeiterFunktion))
+											{
+												tmpPerson.addToFunktionen(abteilungsLeiterFunktion)
+											}
+
+											if (!tmpAbteilung.mitarbeiterfunktionen?.contains(abteilungsLeiterFunktion))
+											{
+												tmpAbteilung.addToMitarbeiterfunktionen(abteilungsLeiterFunktion)
+											}
+
+											if(!tmpAbteilung.personen?.contains(tmpPerson))
+											{
+												tmpAbteilung.addToPersonen(tmpPerson)
+											}
+											abteilungenForLaterSave << tmpAbteilung
+										}
+									}
+								}
+							}
+
 						}
 					}
 					if (cell != null && cell.getCellType() == HSSFCell.CELL_TYPE_NUMERIC)
@@ -388,7 +517,6 @@ class ImportService implements ApplicationContextAware
 						if (r == 3)
 						{
 							tmpPerson.plz = value.intValue()
-
 						}
 
 						if (r == 5)
@@ -399,6 +527,8 @@ class ImportService implements ApplicationContextAware
 							{
 								telefon1String = "0${telefon1String}"
 
+								tmpPerson.telefon1 = telefon1String
+								
 								log.debug("Vorwahl: $telefon1String")
 							}
 						}
