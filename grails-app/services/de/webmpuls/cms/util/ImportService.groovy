@@ -173,6 +173,8 @@ class ImportService
 
 			def abteilungenForLaterSave = []
 
+			def funktionenForLaterSave = []
+
 			int s = 1;
 
 			//			HSSFRow row = sheet.getRow(s)
@@ -215,6 +217,19 @@ class ImportService
 
 						}
 
+						String tmpNachname = tmpPerson.nachname
+						String tmpVorname = tmpPerson.vorname
+						if(tmpNachname && tmpVorname)
+						{
+							Person checkPerson = Person.findByNachnameAndVorname(tmpNachname, tmpVorname)
+
+							if(checkPerson)
+							{
+								log.debug("Gespeicherte Person bereits gefunden -> $checkPerson")
+								tmpPerson = checkPerson
+							}
+						}
+
 						if (r == 2)
 						{
 							tmpPerson.strasse = value
@@ -254,20 +269,18 @@ class ImportService
 							if(tmpFunktion)
 							{
 								log.debug("Funktion: $tmpFunktion")
-								tmpPerson.addToFunktionen(tmpFunktion)
-								tmpFunktion.addToPersonen(tmpPerson)
 
-								if(tmpFunktion.save(flush: true))
+								if(!tmpPerson.funktionen?.contains(tmpFunktion))
 								{
-									log.debug("Funktion '${tmpFunktion}' gespeichert.")
+									tmpPerson.addToFunktionen(tmpFunktion)
 								}
-								else
+
+								if(!tmpFunktion.personen?.contains(tmpPerson))
 								{
-									tmpFunktion.errors.each
-									{
-										log.error(it)
-									}
+									tmpFunktion.addToPersonen(tmpPerson)
 								}
+								
+								funktionenForLaterSave << tmpFunktion
 							}
 
 							else if(!tmpAbteilung)
@@ -311,40 +324,34 @@ class ImportService
 								}
 								Abteilung newAbteilung = new Abteilung(name: value, code: tmpCode)
 
-								if(newAbteilung.save(flush: true))
-								{
-									log.debug("Neue Abteilung -> ${newAbteilung.name}")
-								}
-								else
-								{
-									newAbteilung.errors.each
-									{
-										log.error(it)
-									}
-								}
+								abteilungenForLaterSave << newAbteilung
 
 								tmpAbteilung = newAbteilung
-							}
 
-							if(tmpAbteilung)
-							{
-								log.debug("Abteilung: $tmpAbteilung")
-								Funktion abteilungsLeiterFunktion = Funktion.findByCode(Funktion.ABTEILUNGSLEITER)
-								if (abteilungsLeiterFunktion)
+								if(tmpAbteilung)
 								{
-									tmpPerson.addToFunktionen(abteilungsLeiterFunktion)
-
-									tmpAbteilung.addToMitarbeiterfunktionen(abteilungsLeiterFunktion)
-									tmpAbteilung.save(flush: true)
-
-									if(!tmpAbteilung.personen?.contains(tmpPerson))
+									log.debug("Abteilung: $tmpAbteilung")
+									Funktion abteilungsLeiterFunktion = Funktion.findByCode(Funktion.ABTEILUNGSLEITER)
+ 									if (abteilungsLeiterFunktion)
 									{
-										tmpAbteilung.addToPersonen(tmpPerson)
+										if (!tmpPerson.funktionen?.contains(abteilungsLeiterFunktion))
+										{
+											tmpPerson.addToFunktionen(abteilungsLeiterFunktion)
+										}
+
+										if (!tmpAbteilung.mitarbeiterfunktionen?.contains(abteilungsLeiterFunktion))
+										{
+											tmpAbteilung.addToMitarbeiterfunktionen(abteilungsLeiterFunktion)
+										}
+
+										if(!tmpAbteilung.personen?.contains(tmpPerson))
+										{
+											tmpAbteilung.addToPersonen(tmpPerson)
+										}
 										abteilungenForLaterSave << tmpAbteilung
 									}
 								}
 							}
-
 						}
 					}
 					if (cell != null && cell.getCellType() == HSSFCell.CELL_TYPE_NUMERIC)
@@ -385,19 +392,54 @@ class ImportService
 					r++;
 				}
 
-				if (tmpPerson.validate())
+				if (tmpPerson.validate() && !personenNew.contains(tmpPerson))
 				{
 					personenNew << tmpPerson
 				}
-				else
-				{
-					tmpPerson.errors.each
-					{
-						log.error(it)
-					}
-				}
 
 				s++;
+			}
+			if (funktionenForLaterSave)
+			{
+				for(Funktion funktion : funktionenForLaterSave)
+				{
+					Funktion checkFunktion = Funktion.findByCode(funktion.code)
+					if(checkFunktion)
+					{
+						log.debug("Gespeicherte Funktion gefunden ...")
+						checkFunktion.name = funktion.name
+						checkFunktion.code = funktion.code
+						checkFunktion.personen = funktion.personen
+
+						checkFunktion.save(flush: true)
+					}
+					else
+					{
+						log.debug("Lege neue Funktion an ...")
+						funktion.save(flush: true)
+					}
+				}
+			}
+			if (abteilungenForLaterSave)
+			{
+				for(Abteilung abteilung : abteilungenForLaterSave)
+				{
+					Abteilung checkAbteilung = Abteilung.findByCode(abteilung.code)
+					if(checkAbteilung)
+					{
+						log.debug("Gespeicherte Abteilung gefunden ...")
+						checkAbteilung.name = abteilung.name
+						checkAbteilung.code = abteilung.code
+						checkAbteilung.personen = abteilung.personen
+
+						checkAbteilung.save(flush: true)
+					}
+					else
+					{
+						log.debug("Lege neue Abteilung an ...")
+						abteilung.save(flush: true)
+					}
+				}
 			}
 			if (personenNew)
 			{
@@ -406,6 +448,7 @@ class ImportService
 					Person checkPerson = Person.findByVornameAndNachname(person.vorname,  person.nachname)
 					if(checkPerson)
 					{
+						log.debug("Gespeicherte Person gefunden ...")
 						checkPerson.vorname =  person.vorname
 						checkPerson.nachname =  person.nachname
 						checkPerson.strasse =  person.strasse
@@ -420,27 +463,8 @@ class ImportService
 					}
 					else
 					{
+						log.debug("Lege neue Person an ...")
 						person.save(flush: true)
-					}
-				}
-			}
-			if (abteilungenForLaterSave)
-			{
-				for(Abteilung abteilung : abteilungenForLaterSave)
-				{
-					if(!abteilung.isAttached())
-					{
-						abteilung.attach()
-					}
-
-					println abteilung.personen
-
-					if(!abteilung.save(flush: true))
-					{
-						abteilung.errors.each
-						{
-							log.error(it)
-						}
 					}
 				}
 			}

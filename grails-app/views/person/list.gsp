@@ -109,7 +109,7 @@
 						<span>
 							<g:uploadForm controller="import" action="excelImport" name="ExcelUploadForm">
 								<input type="file" name="file"/>
-								<g:link controller="import" action="uploadExcel" class="excel_link" onclick="document.forms.ExcelUploadForm.submit();">Excel-File einlesen</g:link>
+								<a href="javascript: void(0);" class="excel_link" onclick="document.forms.ExcelUploadForm.submit();">Excel-File einlesen</a>
 							</g:uploadForm>
 						</span>
 					</div>
