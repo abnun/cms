@@ -67,6 +67,8 @@
 	<link href="${resource(dir: 'css', file: 'menu.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'buttons.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'dialog.css')}" rel="stylesheet" type="text/css">
+	<link href="${resource(dir: 'css', file: 'boxes.css')}" rel="stylesheet" type="text/css"/>
+	<wm_photo_album:resources />
 	%{--<link href="${resource(dir: 'css', file: 'main.css')}" rel="stylesheet" type="text/css">--}%
 	%{--<link href="${resource(dir: 'css', file: 'superfish.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'superfish-vertical.css')}" rel="stylesheet" type="text/css">

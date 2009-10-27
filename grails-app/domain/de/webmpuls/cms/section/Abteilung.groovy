@@ -13,6 +13,7 @@ class Abteilung
 	static mapping =
 	{
 		//mitarbeiterfunktionen(sort: 'name')
+		personen(sort: 'nachname')
 		sort("name")
 		order("asc")
 

@@ -1,0 +1,210 @@
+/*************/
+/* the boxes */
+/*************/
+
+/* main box (content to background) and inner box (to be placed in outer box) */
+
+.box {
+ width: 100%;
+ display: table;
+}
+.box div.c, ibox div.c {
+	min-height: 1px;
+}
+/* header */
+
+.box .hd {
+	background: transparent url(../bilder/boxes/box2.png) no-repeat left top;
+}
+.ibox .hd {
+	background: transparent url(../bilder/boxes/ibox.png) no-repeat left top;
+}
+.box .hd .c, .box .ibox .hd .c {
+	background: transparent url(../bilder/boxes/box2.png) no-repeat top right;
+	font: bold 16px/20px Arial, Helvetica, sans-serif;
+	min-height: 20px;
+	padding: 15px 30px 0px 0px;
+	margin-left: 30px; 
+	text-align: left;
+	color: #4176b2;
+}
+.box .ibox .hd .c {
+	font: bold 13px/20px Arial, Helvetica, sans-serif;
+	background: transparent url(../bilder/boxes/ibox.png) no-repeat top right;
+	padding: 5px 20px 0px 0px;
+	margin-left: 20px;
+}
+.box .hd .c .controls, .ibox .hd .c .controls {
+	float: left;
+	padding: 0px 2px 0px 6px;
+	margin-left: -20px;
+}
+.browser_msie6 .box .hd .c .controls, .browser_msie6 .ibox .hd .c .controls {
+	margin-left: -10px;
+}
+.box .hd .c .tabs, .ibox .hd .c .tabs {
+	margin-top: -1px;
+	margin-left: -20px;
+}
+.box .hd .c a.open, .ibox .hd .c a.open, .box .hd .c a.close, .ibox .hd .c a.close {
+	cursor: pointer;
+	/*
+	line-height: 20px;
+	padding-right: 12px;
+	*/
+	display: block; float: left; width: 12px; height: 20px;
+	background: transparent url(../bilder/boxes/box.controls.gif) no-repeat left center;
+}
+.box .hd .c a.close, .ibox .hd .c a.close {
+	background: transparent url(../bilder/boxes/box.controls.gif) no-repeat right center;
+}
+.box .hd .c a.open:hover {
+	cursor: pointer;
+}
+.box .hd .c a.close:hover {
+	cursor: pointer;
+}
+
+/* abstract */
+
+.box .ab {
+	background: transparent url(../bilder/boxes/box.content.r_y2.png) repeat-y left top;
+}
+.ibox .ab {
+	background: transparent url(../bilder/boxes/ibox.content.r_y.png) repeat-y left top;
+}
+.box .ab .c {
+	background: transparent url(../bilder/boxes/box.content.r_y2.png) repeat-y right top;
+	padding: 1px 30px 1px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
+	margin-left: 30px;
+}
+.box .ibox .ab .c {
+	background: transparent url(../bilder/boxes/ibox.content.r_y.png) repeat-y right top;
+	padding: 1px 20px 1px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
+	margin-left: 20px;
+}
+
+/* body and separator */
+
+.box .bd, .box .bda, .box .bdb {
+	background: transparent url(../bilder/boxes/box.content.r_y2.png) repeat-y left top;
+}
+.box .ibox .bd, .box .ibox .bda, .box .ibox .bdb {
+	background: transparent url(../bilder/boxes/ibox.content.r_y.png) repeat-y left top;
+}
+.box .bd .c, .box .bdb .c {
+	background: transparent url(../bilder/boxes/box.content.r_y2.png) repeat-y right top;
+	padding: 1px 30px 1px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
+	margin-left: 30px;
+}
+.box .ibox .bd .c,  .box .ibox .bdb .c {
+	background: transparent url(../bilder/boxes/ibox.content.r_y.png) repeat-y right top;
+	padding: 1px 20px 1px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
+	margin-left: 20px;
+}
+.box .bdb .c {
+	padding: 1px 11px 1px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
+	margin-left: 11px;
+}
+.box .ibox .bdb .c {
+	padding: 1px 1px 1px 1px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
+	margin-left: 1px;
+}
+
+/* separator */
+
+.box .sp {
+	background: transparent url(../bilder/boxes/box2.png) no-repeat 0px -60px;
+}
+.ibox .sp {
+	background: transparent url(../bilder/boxes/ibox.png) no-repeat 0px -60px;
+}
+.box .sp .c, .box .ibox .sp .c {
+	background: transparent url(../bilder/boxes/box2.png) no-repeat right -60px;
+	height: 30px; min-height: 30px; max-height: 30px;
+	padding: 1px 30px 1px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
+	margin-left: 80px;
+}
+.box .ibox .sp .c {
+	background: transparent url(../bilder/boxes/ibox.png) no-repeat right -60px;
+	padding: 1px 20px 1px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
+}
+
+
+/* footer */
+.box .ft {
+	background: transparent url(../bilder/boxes/box2.png) no-repeat left bottom;
+}
+.ibox .ft {
+	background: transparent url(../bilder/boxes/ibox.png) no-repeat left bottom;
+}
+.box .ft .c, .box .ibox .ft .c {
+	color: gray;
+	background: transparent url(../bilder/boxes/box2.png) no-repeat right bottom;
+	clear: both;
+	font: italic 11px/18px 'Lucida Grande', Geneva, Arial, Trebuchet, Verdana, Helvetica, sans-serif;
+	height: 20px;
+	padding: 0px 30px 11px 0px;
+	margin-left: 60px; 
+	
+}
+.box .ibox .ft .c {
+	background: transparent url(../bilder/boxes/ibox.png) no-repeat right bottom;
+	padding: 0px 20px 5px 20px;
+}
+.box .ft .c .controls, .ibox .ft .c .controls {
+	font: bold 11px/18px 'Lucida Grande', Geneva, Arial, Trebuchet, Verdana, Helvetica, sans-serif;
+	float: right;
+}
+
+/* accordion boxes, inherited from accordion */
+.box .bda .accordion1, .ibox .bda .accordion1 {
+	overflow: hidden;
+}
+.box .bda .c, .ibox .bda .c {
+	background: transparent url(../bilder/boxes/box.content.r_y2.png) repeat-y right top;
+	padding: 10px 11px 10px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
+	margin-left: 11px;
+}
+.ibox .bda .c {
+	background: transparent url(../bilder/boxes/ibox.content.r_y.png) repeat-y right top;
+}
+.box .bda .c dt, .ibox .bda .c dt {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.box .bda .c dt b, .ibox .bda .c dt b {
+	font: normal 13px/20px 'Lucida Grande', Geneva, Arial, Trebuchet, Verdana, Helvetica, sans-serif;
+}
+.box .bda .c dt, .ibox .bda .c dt {
+	background: transparent url(accordion/tab.active.background.png) repeat-x top left;
+}
+* html .box .bda .c dt, * html .ibox .bda .c dt {
+	background: transparent url(accordion/tab.active.background.png) repeat-x left 1px;;
+}
+
+/* messages boxes: error, hint+warning, info, ok */
+/* standard is 'hint' which is warning */
+
+.error, .alert, .hint, .warning, .info, .ok {
+	border: 1px dashed #ff8000;
+	border-left: 5px solid #ff8000;
+	background: #fde5b1;
+	margin: 10px 0 10px 0;
+	padding: 10px;
+}
+.error h1, .alert h1, .hint h1, .warning h1, .info h1, .ok h1 {
+	background: transparent url(../bilder/boxes/box.icons.20x20.png) no-repeat left -200px; /* hint */
+	font: normal 13px/20px 'Lucida Grande', Geneva, Arial, Trebuchet, Verdana, Helvetica, sans-serif;
+	padding-left: 30px;
+	margin: 0;
+}
+
+.error, .alert { border-color: red; background: #f8bebe; }
+.error h1, .alert h1 {	background: transparent url(../bilder/boxes/box.icons.20x20.png) no-repeat left 0px; }
+
+.ok { border-color: #6dc962; background: #deffd7; }
+.ok h1 {	background: transparent url(../bilder/boxes/box.icons.20x20.png) no-repeat left -400px; }
+
+.info { border-color: #4a8ae9; background: #dae9ff; }
+.info h1 {	background: transparent url(../bilder/boxes/box.icons.20x20.png) no-repeat left -600px; }

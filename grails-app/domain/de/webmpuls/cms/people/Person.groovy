@@ -1,6 +1,7 @@
 package de.webmpuls.cms.people
 
 import de.webmpuls.cms.section.Abteilung
+import de.webmpuls.photo_album.Picture
 
 class Person
 {
@@ -15,6 +16,9 @@ class Person
 	String telefon1
 	String telefon2
 	String email
+
+	Picture bild
+	Steckbrief steckbrief
 
 	Boolean adresseAnzeigen = false
 
@@ -38,6 +42,8 @@ class Person
 		telefon1(blank: true, nullable: true)
 		telefon2(blank: true, nullable: true)
 		email(blank: true, nullable: true, email:true)
+		bild(nullable: true)
+		steckbrief(nullable: true)
     }
 
 	def String toString()

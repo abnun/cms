@@ -13,11 +13,37 @@
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
 			<g:render template="/global/admin/menu" />
         </div>
-        <div class="body">
+        <div class="body" style="width: 300px; float: left;">
             %{--<h1><g:message code="default.show.label" args="[entityName]" /></h1>--}%
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
+
+			<%
+				Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
+				{
+					Funktion funktion ->
+
+					if (funktion.code == Funktion.ABTEILUNGSLEITER)
+					{
+						return funktion
+					}
+				}
+
+				Collection abteilungsLeiterCollection = null
+
+				if (abteilungsLeiterFunktion)
+				{
+					abteilungsLeiterCollection = abteilungInstance.personen.findAll
+					{
+						Person tmpPerson ->
+						abteilungsLeiterFunktion.personen.contains(tmpPerson)
+					}
+				}
+
+				abteilungsLeiterCollection = abteilungsLeiterCollection.sort{a, b -> a.nachname <=> b.nachname}
+			%>
+
             <div class="dialog">
                 <table>
                     <tbody>
@@ -26,7 +52,7 @@
                             <td valign="top" class="name"><g:message code="abteilung.id.label" default="Id" /></td>
                             
                             <td valign="top" class="value">${fieldValue(bean: abteilungInstance, field: "id")}</td>
-                            
+
                         </tr>
                     
                         <tr class="prop">
@@ -92,34 +118,11 @@
                     <span class="button"><g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" /></span>
                 </g:form>
             </div>
-			<div>
-			<h1 class="headline_dunkel">Abteilungsleiter</h1>
-			<%
-			    Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
-				{
-					Funktion funktion ->
-
-					if(funktion.code == Funktion.ABTEILUNGSLEITER)
-					{
-						return funktion
-					}
-				}
-
-				Collection abteilungsLeiterCollection = null
-
-				if(abteilungsLeiterFunktion)
-				{
-					abteilungsLeiterCollection = abteilungInstance.personen.findAll
-					{
-						Person tmpPerson ->
-						abteilungsLeiterFunktion.personen.contains(tmpPerson)
-					}
-				}
-			%>
+        </div>
+		<div>
 			<g:each var="abteilungsLeiter" in="${abteilungsLeiterCollection}">
-			<h3>${abteilungsLeiter.vorname} ${abteilungsLeiter.nachname}</h3>
+				<g:render template="/global/section/head" model="[head: abteilungsLeiter, section: abteilungInstance]"/>
 			</g:each>
 		</div>
-        </div>
     </body>
 </html>
