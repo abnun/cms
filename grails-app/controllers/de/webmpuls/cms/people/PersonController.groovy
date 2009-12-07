@@ -10,7 +10,7 @@ class PersonController {
 
     def list = {
         //params.max = Math.min(params.max ? params.max.toInteger() : 10, 100)
-        [personInstanceList: Person.list(params), personInstanceTotal: Person.count()]
+        [personInstanceList: Person.list([cache: true]), personInstanceTotal: Person.count()]
     }
 
     def create = {

@@ -27,7 +27,7 @@ class Abteilung
 	{
 		name()
 		code(validator: { String v ->
-			boolean isValid = (v ==~ /[a-z_]+/)
+			boolean isValid = (v ==~ /[a-z_0-9]+/)
 			println("validation for '$v' evaluates to $isValid")
 			return isValid
 		})

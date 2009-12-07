@@ -17,6 +17,7 @@ environments {
 //			url = "jdbc:hsqldb:mem:devDB"
 			dbCreate = "update"
 			url = "jdbc:hsqldb:file:prodDbSVLeingarten;shutdown=true"
+			logSql = true
 		}
 	}
 	test {

@@ -14,19 +14,19 @@
 /* header */
 
 .box .hd {
-	background: transparent url(../bilder/boxes/box2.png) no-repeat left top;
+	background: transparent url(../bilder/boxes/box_svl.png) no-repeat left top;
 }
 .ibox .hd {
 	background: transparent url(../bilder/boxes/ibox.png) no-repeat left top;
 }
 .box .hd .c, .box .ibox .hd .c {
-	background: transparent url(../bilder/boxes/box2.png) no-repeat top right;
-	font: bold 16px/20px Arial, Helvetica, sans-serif;
-	min-height: 20px;
-	padding: 15px 30px 0px 0px;
-	margin-left: 30px; 
+	background: transparent url(../bilder/boxes/box_svl.png) no-repeat top right;
+	font: bold 12px/13px Arial, Helvetica, sans-serif;
+	min-height: 15px;
+	padding: 10px 20px 7px 0px;
+	margin-left: 10px; 
 	text-align: left;
-	color: #4176b2;
+	color: #FFFFFF;
 }
 .box .ibox .hd .c {
 	font: bold 13px/20px Arial, Helvetica, sans-serif;
@@ -68,13 +68,13 @@
 /* abstract */
 
 .box .ab {
-	background: transparent url(../bilder/boxes/box.content.r_y2.png) repeat-y left top;
+	background: transparent url(../bilder/boxes/box.content.r_y3.png) repeat-y left top;
 }
 .ibox .ab {
 	background: transparent url(../bilder/boxes/ibox.content.r_y.png) repeat-y left top;
 }
 .box .ab .c {
-	background: transparent url(../bilder/boxes/box.content.r_y2.png) repeat-y right top;
+	background: transparent url(../bilder/boxes/box.content.r_y3.png) repeat-y right top;
 	padding: 1px 30px 1px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
 	margin-left: 30px;
 }
@@ -87,15 +87,15 @@
 /* body and separator */
 
 .box .bd, .box .bda, .box .bdb {
-	background: transparent url(../bilder/boxes/box.content.r_y2.png) repeat-y left top;
+	background: transparent url(../bilder/boxes/box.content.r_y3.png) repeat-y left top;
 }
 .box .ibox .bd, .box .ibox .bda, .box .ibox .bdb {
 	background: transparent url(../bilder/boxes/ibox.content.r_y.png) repeat-y left top;
 }
 .box .bd .c, .box .bdb .c {
-	background: transparent url(../bilder/boxes/box.content.r_y2.png) repeat-y right top;
-	padding: 1px 30px 1px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
-	margin-left: 30px;
+	background: transparent url(../bilder/boxes/box.content.r_y3.png) repeat-y right top;
+	padding: 7px 10px 1px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
+	margin-left: 10px;
 }
 .box .ibox .bd .c,  .box .ibox .bdb .c {
 	background: transparent url(../bilder/boxes/ibox.content.r_y.png) repeat-y right top;
@@ -114,13 +114,13 @@
 /* separator */
 
 .box .sp {
-	background: transparent url(../bilder/boxes/box2.png) no-repeat 0px -60px;
+	background: transparent url(../bilder/boxes/box_svl.png) no-repeat 0px -60px;
 }
 .ibox .sp {
 	background: transparent url(../bilder/boxes/ibox.png) no-repeat 0px -60px;
 }
 .box .sp .c, .box .ibox .sp .c {
-	background: transparent url(../bilder/boxes/box2.png) no-repeat right -60px;
+	background: transparent url(../bilder/boxes/box_svl.png) no-repeat right -60px;
 	height: 30px; min-height: 30px; max-height: 30px;
 	padding: 1px 30px 1px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
 	margin-left: 80px;
@@ -133,17 +133,17 @@
 
 /* footer */
 .box .ft {
-	background: transparent url(../bilder/boxes/box2.png) no-repeat left bottom;
+	background: transparent url(../bilder/boxes/box_svl.png) no-repeat left bottom;
 }
 .ibox .ft {
 	background: transparent url(../bilder/boxes/ibox.png) no-repeat left bottom;
 }
 .box .ft .c, .box .ibox .ft .c {
 	color: gray;
-	background: transparent url(../bilder/boxes/box2.png) no-repeat right bottom;
+	background: transparent url(../bilder/boxes/box_svl.png) no-repeat right bottom;
 	clear: both;
 	font: italic 11px/18px 'Lucida Grande', Geneva, Arial, Trebuchet, Verdana, Helvetica, sans-serif;
-	height: 20px;
+	height: 0px;
 	padding: 0px 30px 11px 0px;
 	margin-left: 60px; 
 	
@@ -162,7 +162,7 @@
 	overflow: hidden;
 }
 .box .bda .c, .ibox .bda .c {
-	background: transparent url(../bilder/boxes/box.content.r_y2.png) repeat-y right top;
+	background: transparent url(../bilder/boxes/box.content.r_y3.png) repeat-y right top;
 	padding: 10px 11px 10px 0px; /* padding 1px on top and bottom is important to avoid the collapsing margins! */
 	margin-left: 11px;
 }

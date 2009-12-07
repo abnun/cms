@@ -12,8 +12,7 @@
 	<link href="${resource(dir: 'css', file: 'buttons.css')}" rel="stylesheet" type="text/css"/>
 	<link href="${resource(dir: 'css', file: 'dialog.css')}" rel="stylesheet" type="text/css"/>
 	<link href="${resource(dir: 'css', file: 'boxes.css')}" rel="stylesheet" type="text/css"/>
-	<wm_photo_album:resources />
-	<wm_photo_album:gallery />
+	<wm_photo_album:static_resources />
 	<link rel="shortcut icon" href="${resource(dir: 'bilder', file: 'svl.ico')}" type="image/x-icon"/>
 	<g:layoutHead/>
 	<g:javascript library="application"/>

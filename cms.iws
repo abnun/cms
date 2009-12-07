@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project relativePaths="false" version="4">
-  <component name="BookmarkManager">
-    <editor_bookmark url="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/ImportController.groovy" line="37" number="7" description="render &quot;Tabelle von &lt;a href=&quot;&quot;$tmpLink eingelesen ..." />
-  </component>
   <component name="CCaseConfig">
     <option name="checkoutReserved" value="false" />
     <option name="markExternalChangeAsUpToDate" value="true" />
@@ -18,237 +15,7 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0165.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/Praesentation_ZKW2.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/intro/intro_6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw_zar_frage2kl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/divers/punkt.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/plan_shof.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0163.jpg" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/bilder/icons/excel_30x30.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/wedoarts.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/abteilung/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/abteilung/show.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/diem.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/aok.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/show.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/cbl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/FINDER.DAT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0042.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/impressum/katja_gr.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0051.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/kipp.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/scaffolding/show.gsp" afterPath="$PROJECT_DIR$/src/templates/scaffolding/show.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/plan_sicht1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/plan_halle.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0048.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0044.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/import/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/import/index.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0149_r1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/wohlfuehlerei.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/paradies.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0035.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/scaffolding/edit.gsp" afterPath="$PROJECT_DIR$/src/templates/scaffolding/edit.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/biegert.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/css/text.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/raus/wt_symbol.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/scaffolding/list.gsp" afterPath="$PROJECT_DIR$/src/templates/scaffolding/list.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/sponsoren.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/intro/intro_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0307.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/i18n/messages_de.properties" afterPath="$PROJECT_DIR$/grails-app/i18n/messages_de.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0059.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0319.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0335.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/css/rubrik.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/siegel.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/divers/spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/aberle.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/prodDb.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv_leingarten.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0025.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/reiner.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/unser.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/prodDb.script" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/divers/trenn.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/autohutt.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/buttons.css" afterPath="$PROJECT_DIR$/web-app/css/buttons.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/skyline.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/jufu.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0072_r1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/plan_sicht4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0298.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0033.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/FINDER.DAT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/css/navi.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0150.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0292.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/_ROOT/Image/arrows-ffffff.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0315.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0136.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/schurmann.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/sv_leingarten.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/sv_leingarten.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/volksbank.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0144.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/plan_kulturg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0155_r1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/gambrinus.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/weinmann_alt.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/ternis.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/strecken_kl.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0329.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/senghaas_1.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms.iws" afterPath="$PROJECT_DIR$/cms.iws" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/brunnenapo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/impressum/impressum.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0169.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw_zar_frage2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0331.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/themen.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0070.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/intro/intro_5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/plan_sicht2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw_zar_frage1.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/ImportController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/ImportController.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0139_r1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0094.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0032.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/kaesreiter.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/raus/wt_text.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/dwi.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/de/webmpuls/cms/util/ImportService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/de/webmpuls/cms/util/ImportService.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/bp_ernaehrung.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0092_r1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0326.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/illig.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/export/pdfExport.gsp" afterPath="$PROJECT_DIR$/grails-app/views/export/pdfExportVorstand.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/svl.ico" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/import/uploadExcel.gsp" afterPath="$PROJECT_DIR$/grails-app/views/import/uploadExcel.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0159.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/Protokoll_ZKW3.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/gessmann.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/hkellerei.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0026.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0291_r1.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/tabelle/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/tabelle/list.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0311_r1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0153.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0140.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/impressum/lars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0299.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0161.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0320.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/divers/logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/freyer.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms.ipr" afterPath="$PROJECT_DIR$/cms.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/rubrik.css" afterPath="$PROJECT_DIR$/web-app/css/rubrik.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/excel.tmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0317.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/intro/intro_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0039.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/wt_logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0090.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/impressum/renate_tel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/drautzgaab.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/intro/intro_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0061.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/export/_tableCell.gsp" afterPath="$PROJECT_DIR$/grails-app/views/export/_tableCell.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/hnv.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0323.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/list.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0050.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/Protokoll_ZKW1.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/weinmann.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0146.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0296_r1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/wt_text.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0318.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/scaffolding/create.gsp" afterPath="$PROJECT_DIR$/src/templates/scaffolding/create.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0302.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/lbhandlung.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/Rolshausen.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0294.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/Rumm.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0036.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0062.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0328.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/abteilung/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/abteilung/edit.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/streik.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/plan_sicht3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/dietz.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0312.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0034.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/css/sparte.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0152.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0093.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/www.e-stimme2.de.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/bender.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/impressum/sarah.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/mueller.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/BerndRau.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/kissling.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/steinstahl.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/funktion/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/funktion/list.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/eitel.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0164.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0325.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0148.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/kohfink.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/fueralle.dwt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/abteilung/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/abteilung/list.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0324.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0321.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/Allaut.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/senghaas_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0348_r1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/prodDb.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/holzhauff.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/aok.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0290_r1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0310_r1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/sparkasse.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0001.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0157_r1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/FINDER.DAT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw_zar_frage1kl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0332.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/Rolshausen_kl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/intro/FINDER.DAT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/intro/intro_3.jpg" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/export/pdfExportMitglieder.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0052.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0037.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms.iml" afterPath="$PROJECT_DIR$/cms.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/impressum/katja_gs.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/create.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0098.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/wt_anz.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/tabelle.css" afterPath="$PROJECT_DIR$/web-app/css/tabelle.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/_ROOT/Image/weceem-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/divers/trans.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/edit.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/divers/allgkopf.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/ExportController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/ExportController.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/layer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0097.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0060.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/Protokoll_ZKW2.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/Scheckuebergabe2005.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/eberhard.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw1/zkw1_0041.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/allianz.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/walking.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0167.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/wt_symbol.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/strecken.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/stadtmueller.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/walk/www.e-stimme.de.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/sponsoren/nicht mehr dabei/galeriebauer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw3/zkw3_0151.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WeceemFiles/sv-leingarten/bilder/themen/zkw2/zkw2_0295.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/abteilung/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/abteilung/create.gsp" />
-    </list>
+    <list default="true" name="Default" comment="" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="cms.iws" />
   </component>
@@ -304,94 +71,30 @@
   <component name="FavoritesManager">
     <favorites_list name="cms" />
   </component>
-  <component name="FileColors" enabled="false" enabledForTabs="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pdfExportVorstand.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/export/pdfExportVorstand.gsp">
+      <file leaf-file-name="create.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/anzeigen/create.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="16" selection-start="0" selection-end="5393" vertical-scroll-proportion="-2.1666667">
+            <state line="60" column="118" selection-start="3716" selection-end="3716" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pdfExportMitglieder.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/export/pdfExportMitglieder.gsp">
+      <file leaf-file-name="edit.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/anzeigen/edit.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="7" selection-start="5393" selection-end="5393" vertical-scroll-proportion="-4.037037">
+            <state line="66" column="82" selection-start="4221" selection-end="4221" vertical-scroll-proportion="-4.759259">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExportController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/ExportController.groovy">
+      <file leaf-file-name="application.properties" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="20" selection-start="646" selection-end="646" vertical-scroll-proportion="-5.142857">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImportController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/ImportController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="26" selection-start="2308" selection-end="2308" vertical-scroll-proportion="-2.2857144">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/import/index.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="76" selection-start="83" selection-end="159" vertical-scroll-proportion="-1.3333334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="uploadExcel.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/import/uploadExcel.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="-1.7777778">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrlMappings.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/funktion/list.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="8" selection-start="312" selection-end="312" vertical-scroll-proportion="7.611111">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.gsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/person/list.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="43" selection-start="4157" selection-end="4157" vertical-scroll-proportion="1.1707317">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sv_leingarten.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/sv_leingarten.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="68" selection-start="3417" selection-end="3417" vertical-scroll-proportion="-3.5">
+            <state line="21" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="0.70985913">
               <folding />
             </state>
           </provider>
@@ -406,37 +109,6 @@
   </component>
   <component name="Git.Settings">
     <option name="GIT_EXECUTABLE" value="/usr/local/git/bin/git" />
-  </component>
-  <component name="GroovyCompilerConfiguration">
-    <option name="excludeFromStubGeneration">
-      <ExcludedEntriesConfiguration />
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="changedFiles">
-      <list>
-        <option value="/Users/markus/.grails/1.2-M3/projects/cms/plugins/weceem-0.3/grails-app/services/org/weceem/services/ContentRepositoryService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/template/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/TemplateController.groovy" />
-        <option value="/Users/markus/.grails/1.2-M3/projects/cms/plugins/weceem-0.3/grails-app/views/layouts/main/_footer.gsp" />
-        <option value="/Users/markus/.grails/1.2-M3/projects/cms/plugins/weceem-0.3/grails-app/views/layouts/main/_header.gsp" />
-        <option value="$PROJECT_DIR$/web-app/WeceemFiles/jufu.xhtml" />
-        <option value="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/News.groovy" />
-        <option value="$PROJECT_DIR$/web-app/zugang_sv_leingarten.txt" />
-        <option value="/Users/markus/.grails/1.2-M3/projects/cms/plugins/weceem-0.3/grails-app/controllers/org/weceem/controllers/EditorController.groovy" />
-        <option value="/Users/markus/.grails/1.2-M3/projects/cms/plugins/weceem-0.3/grails-app/conf/WeceemPluginUrlMappings.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/i18n/messages_de.properties" />
-        <option value="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/people/Funktion.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/people/Person.groovy" />
-        <option value="$PROJECT_DIR$/prodDb.script" />
-        <option value="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Abteilung.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/person/show.gsp" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenRunner">
-    <option name="jreName" value="#JAVA_INTERNAL" />
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" />
@@ -490,54 +162,6 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="plugins" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="yui-2.7.0.1" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="plugins" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="yui-2.7.0.1" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="groovy" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="plugins" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
           <option name="myItemId" value="cms" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
@@ -557,6 +181,58 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="web-app" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="cms" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="cms" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="cms" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="web-app" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="js" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="cms" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="cms" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="cms" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="web-app" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="js" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ckeditor" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="styles" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -596,141 +272,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="web-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="bilder" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="web-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="bilder" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="icons" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="unit" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="unit" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="section" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="unit" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="news" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
+          <option name="myItemId" value="src" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -753,84 +295,6 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="views" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="grails-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="views" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="template" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="grails-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="views" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="tabelle" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="grails-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="views" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="person" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -882,7 +346,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="import" />
+          <option name="myItemId" value="inhalt" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -908,7 +372,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="funktion" />
+          <option name="myItemId" value="anzeigen" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -934,7 +398,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="export" />
+          <option name="myItemId" value="aktuelles" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -953,152 +417,6 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="grails-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="views" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="abteilung" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="grails-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="utils" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="de" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="webmpuls" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="codec" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="grails-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="grails-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="services" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="util" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="grails-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="i18n" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Resource Bundle 'messages'" />
-          <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="grails-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="domain" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="section" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -1128,37 +446,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="result" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="grails-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="domain" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="cms" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="people" />
+          <option name="myItemId" value="start" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -1240,7 +528,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="util" />
+          <option name="myItemId" value="start" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -1279,7 +567,7 @@
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <showStructure ProjectPane="true" />
+      <showStructure ProjectPane="false" />
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
@@ -1288,15 +576,12 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
-    <property name="RESOURCE_BUNDLE_SPLITTER_PROPORTION" value="0.5" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
@@ -1312,11 +597,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method>
-        <option name="Maven.BeforeRunTask" value="false" />
-        <option name="AntTarget" value="false" />
-        <option name="BuildArtifacts" value="false" />
-      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false" runner="emma">
       <module name="" />
@@ -1343,12 +623,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="Maven.BeforeRunTask" value="false" />
-        <option name="AntTarget" value="false" />
-        <option name="BuildArtifacts" value="false" />
-        <option name="Make" value="false" />
-      </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
@@ -1361,12 +635,6 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="Maven.BeforeRunTask" value="false" />
-        <option name="AntTarget" value="false" />
-        <option name="BuildArtifacts" value="false" />
-        <option name="Make" value="false" />
-      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false" runner="emma">
       <option name="MAIN_CLASS_NAME" />
@@ -1380,29 +648,17 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method>
-        <option name="Maven.BeforeRunTask" value="false" />
-        <option name="AntTarget" value="false" />
-        <option name="BuildArtifacts" value="false" />
-        <option name="Make" value="false" />
-      </method>
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails Application">
       <module name="" />
       <setting name="vmparams" value="" />
       <setting name="grailsparams" value="" />
-      <setting name="hostik" value="" />
+      <setting name="hostik" value="localhost" />
       <setting name="port" value="" />
       <setting name="jndi" value="false" />
       <setting name="recomp" value="false" />
       <setting name="recompileFreq" value="" />
       <setting name="launchBrowser" value="true" />
-      <method>
-        <option name="Maven.BeforeRunTask" value="false" />
-        <option name="AntTarget" value="false" />
-        <option name="BuildArtifacts" value="false" />
-        <option name="Make" value="false" />
-      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <module name="" />
@@ -1422,34 +678,18 @@
         <value defaultName="moduleWithDependencies" />
       </option>
       <envs />
-      <method>
-        <option name="Maven.BeforeRunTask" value="false" />
-        <option name="AntTarget" value="false" />
-        <option name="BuildArtifacts" value="false" />
-        <option name="Make" value="false" />
-      </method>
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
     </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Grails Application.Grails:cms" />
     </list>
-    <configuration default="true" type="PhpRunConfigurationType" factoryName="PHP" break_at_first_line="false" browser="DEFAULT" open_page_automatically="true" session_id="" session_after_first_page="false" web_path="">
-      <option name="mappings">
-        <list />
-      </option>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" class_name="" html_or_swf_file_path="" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" port="0" run_mode="HtmlOrSwfFile" scope="Class" socket_policy_port="0" url_to_launch="http://">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="StarteamConfiguration">
@@ -1466,7 +706,7 @@
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="true" />
     <option name="AUTOSCROLL_FROM_SOURCE" value="false" />
-    <option name="ACTIVE_ACTIONS" value="ALPHA_COMPARATOR" />
+    <option name="ACTIVE_ACTIONS" value="" />
   </component>
   <component name="SvnConfiguration">
     <option name="USER" value="" />
@@ -1477,16 +717,10 @@
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
     <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <configuration useDefault="false">C:\Dokumente und Einstellungen\markus2.mueller\Anwendungsdaten\Subversion</configuration>
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <configuration useDefault="false">/Users/markus/.subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="fd8ad812-8be8-4e5f-aeab-b4f122f94ebe" name="Default" comment="" />
-      <created>1255989000793</created>
-      <updated>1255989000793</updated>
-    </task>
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1509,35 +743,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="703" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1280" height="705" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298791" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32469776" sideWeight="0.5" order="1" side_tool="false" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5960961" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932126" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.27288428" order="1" side_tool="true" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Grails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32297063" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32224026" sideWeight="0.6580311" order="0" side_tool="false" />
+      <window_info id="Grails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18912338" sideWeight="0.65920824" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33678755" sideWeight="0.5" order="2" side_tool="false" x="0" y="275" width="1280" height="196" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874355" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="JavaRebel Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="JavaRebel" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -1607,190 +841,154 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/templates/scaffolding/create.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/aktuelles/create.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="90" selection-start="849" selection-end="849" vertical-scroll-proportion="-7.5789475">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.8333333">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/scaffolding/Controller.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/start/News.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="6" selection-start="37" selection-end="37" vertical-scroll-proportion="-0.6938776">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/scaffolding/edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="88" selection-start="996" selection-end="996" vertical-scroll-proportion="-10.105263">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/people/Person.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="399" selection-end="399" vertical-scroll-proportion="-3.357143">
-          <folding />
-        </state>
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/person/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="92" selection-start="306" selection-end="390" vertical-scroll-proportion="-1.5555556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/person/edit.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/start/NewsController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/person/show.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/start/Termin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="-2.4285715">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/tabelle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="21" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/buttons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="63" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/text.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/funktion/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="12.722222">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/de/webmpuls/cms/util/ImportService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="341" column="40" selection-start="7798" selection-end="7798" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/export/_tableCell.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="22" selection-start="709" selection-end="709" vertical-scroll-proportion="-7.7777777">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/abteilung/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="17" selection-start="5680" selection-end="5939" vertical-scroll-proportion="-3.7407408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Abteilung.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/start/TerminController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="116" selection-end="116" vertical-scroll-proportion="-0.85714287">
+        <state line="10" column="16" selection-start="223" selection-end="223" vertical-scroll-proportion="-5.6666665">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Users/markus/Documents/downloads/grails-1.2-M3/lib/groovy-all-1.6.4.jar!/org/codehaus/groovy/runtime/DefaultGroovyMethods.class">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/export/pdfExportVorstand.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="16" selection-start="0" selection-end="5393" vertical-scroll-proportion="-2.1666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/export/pdfExportMitglieder.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="7" selection-start="5393" selection-end="5393" vertical-scroll-proportion="-4.037037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+        <state line="15" column="4" selection-start="1138" selection-end="1138" vertical-scroll-proportion="-4.7222223">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/sv_leingarten.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="68" selection-start="3417" selection-end="3417" vertical-scroll-proportion="-3.5">
+        <state line="186" column="24" selection-start="12755" selection-end="12755" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/ExportController.groovy">
+    <entry file="file://$PROJECT_DIR$/prodDbSVLeingarten.script">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="20" selection-start="646" selection-end="646" vertical-scroll-proportion="-5.142857">
+        <state line="35" column="16" selection-start="5193" selection-end="5193" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/ImportController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/inhalt/aktuelles.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="26" selection-start="2308" selection-end="2308" vertical-scroll-proportion="-2.2857144">
+        <state line="13" column="64" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/import/index.gsp">
+    <entry file="file://$PROJECT_DIR$/prodDbSVLeingarten.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="76" selection-start="83" selection-end="159" vertical-scroll-proportion="-1.3333334">
+        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/import/uploadExcel.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/start/Anzeigen.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="-1.7777778">
+        <state line="6" column="10" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Abteilung.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/funktion/list.gsp">
+    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="312" selection-end="312" vertical-scroll-proportion="7.611111">
+        <state line="28" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/person/list.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="43" selection-start="4157" selection-end="4157" vertical-scroll-proportion="1.1707317">
+        <state line="48" column="60" selection-start="2325" selection-end="2325" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/ckeditor/styles/sv_leingarten.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="24" selection-start="497" selection-end="503" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/anzeigen/list.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="48" selection-start="2742" selection-end="2742" vertical-scroll-proportion="-4.7222223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/anzeigen/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="118" selection-start="3716" selection-end="3716" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/anzeigen/edit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="82" selection-start="4221" selection-end="4221" vertical-scroll-proportion="-4.759259">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="0.70985913">
           <folding />
         </state>
       </provider>
@@ -1814,22 +1012,6 @@
               <option name="proportions">
                 <SplitterProportionsDataImpl />
               </option>
-            </UIState>
-          </value>
-        </entry>
-        <entry key="ProjectJDKs.UI">
-          <value>
-            <UIState>
-              <option name="proportions">
-                <SplitterProportionsDataImpl>
-                  <option name="proportions">
-                    <list>
-                      <option value="0.2" />
-                    </list>
-                  </option>
-                </SplitterProportionsDataImpl>
-              </option>
-              <option name="lastEditedConfigurable" value="1.6" />
             </UIState>
           </value>
         </entry>
@@ -1867,22 +1049,6 @@
               <option name="proportions">
                 <SplitterProportionsDataImpl />
               </option>
-            </UIState>
-          </value>
-        </entry>
-        <entry key="ProjectJDKs.UI">
-          <value>
-            <UIState>
-              <option name="proportions">
-                <SplitterProportionsDataImpl>
-                  <option name="proportions">
-                    <list>
-                      <option value="0.2" />
-                    </list>
-                  </option>
-                </SplitterProportionsDataImpl>
-              </option>
-              <option name="lastEditedConfigurable" value="1.6" />
             </UIState>
           </value>
         </entry>

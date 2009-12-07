@@ -23,4 +23,7 @@ grails.project.dependency.resolution = {
 }
 
 // So heisst das WAR-File nachher
-grails.war.destFile = "sv-leingarten.war"
+grails.project.war.destFile = "sv-leingarten.war"
+
+// Plugin repository
+grails.plugin.repos.discovery.myRepository="http://github.com/abnun/cms" 

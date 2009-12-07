@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<html><!-- InstanceBegin template="/Templates/svlmaster.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 	<!-- TemplateBeginEditable name="doctitle" -->
 	<title><g:layoutTitle default="(( (  Sportverein Leingarten  ) ))" /></title>
@@ -9,55 +9,31 @@
 	<link rel="shortcut icon" type="image/x-icon" href="${resource(dir: 'bilder', file: 'svl.ico')}"/>
 	<script language="JavaScript" type="text/JavaScript">
 		<!--
-		function MM_reloadPage(init)
-		{  //reloads the window if Nav4 resized
-			if (init == true) with (navigator)
-			{
-				if ((appName == "Netscape") && (parseInt(appVersion) == 4))
-				{
-					document.MM_pgW = innerWidth;
-					document.MM_pgH = innerHeight;
-					onresize = MM_reloadPage;
-				}
-			}
-			else if (innerWidth != document.MM_pgW || innerHeight != document.MM_pgH) location.reload();
+		function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+		  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+		    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+		  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
 		}
 		MM_reloadPage(true);
-
-		function MM_findObj(n, d)
-		{ //v4.01
-			var p,i,x;
-			if (!d) d = document;
-			if ((p = n.indexOf("?")) > 0 && parent.frames.length)
-			{
-				d = parent.frames[n.substring(p + 1)].document;
-				n = n.substring(0, p);
-			}
-			if (!(x = d[n]) && d.all) x = d.all[n];
-			for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
-			for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
-			if (!x && d.getElementById) x = d.getElementById(n);
-			return x;
+		
+		function MM_findObj(n, d) { //v4.01
+		  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+		  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+		  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+		  if(!x && d.getElementById) x=d.getElementById(n); return x;
 		}
-
-		function MM_showHideLayers()
-		{ //v6.0
-			var i,p,v,obj,args = MM_showHideLayers.arguments;
-			for (i = 0; i < (args.length - 2); i += 3) if ((obj = MM_findObj(args[i])) != null)
-			{
-				v = args[i + 2];
-				if (obj.style)
-				{
-					obj = obj.style;
-					v = (v == 'show') ? 'visible' : (v == 'hide') ? 'hidden' : v;
-				}
-				obj.visibility = v;
-			}
+		
+		function MM_showHideLayers() { //v6.0
+		  var i,p,v,obj,args=MM_showHideLayers.arguments;
+		  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+		    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+		    obj.visibility=v; }
 		}
 		//-->
 	</script>
-	<!-- TemplateParam name="oben" type="boolean" value="true" --> <!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
-	<!-- TemplateParam name="OptionalRegion1" type="boolean" value="true" -->
+<!-- InstanceParam name="oben" type="boolean" value="true" --> <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --> 
+<!-- InstanceParam name="OptionalRegion1" type="boolean" value="true" -->
 	<link href="${resource(dir: 'css', file: 'navi.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'rubrik.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'text.css')}" rel="stylesheet" type="text/css">
@@ -68,7 +44,8 @@
 	<link href="${resource(dir: 'css', file: 'buttons.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'dialog.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'boxes.css')}" rel="stylesheet" type="text/css"/>
-	<wm_photo_album:resources />
+	<wm_photo_album:gallery_resources />
+	<ckeditor:resources />
 	%{--<link href="${resource(dir: 'css', file: 'main.css')}" rel="stylesheet" type="text/css">--}%
 	%{--<link href="${resource(dir: 'css', file: 'superfish.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'superfish-vertical.css')}" rel="stylesheet" type="text/css">
@@ -84,17 +61,17 @@
   <tr>
     <td width="110" height="87" align="center" valign="middle" bgcolor="#D2DFFF"><a name="oben"></a><img src="${resource(dir: 'bilder/divers', file: 'logo.jpg')}" name="svllogo" width="110" height="87" id="svllogo"></td>
     <td width="10" height="87" bgcolor="#97C0EA">&nbsp;</td>
-    <td width="100%" height="87" align="left" valign="top" bgcolor="#D2DFFF"><!-- TemplateBeginEditable name="kopf" --><img src="${resource(dir: 'bilder/divers', file: 'allgkopf.jpg')}" width="690" height="88"><!-- TemplateEndEditable --></td>
+    <td width="100%" height="87" align="left" valign="top" bgcolor="#D2DFFF"><!-- InstanceBeginEditable name="kopf" --><img src="${resource(dir: 'bilder/divers', file: 'allgkopf.jpg')}" width="690" height="88"><!-- InstanceEndEditable --></td>
   </tr>
   <tr>
-    <td width="110" height="20" align="right" bgcolor="#93BEEE"> <span class="svl">Sportverein
-      Leingarten 1895 e.V.</span></td>
+    <td width="110" height="20" align="right" bgcolor="#1760A8"> <span class="svl"><font color="#FFFFFF">Sportverein
+      Leingarten 1895 e.V</font>.</span></td>
     <td width="10" height="20" bgcolor="#1760A8">&nbsp;</td>
-    <td height="20" bgcolor="#1760A8"><!-- TemplateBeginEditable name="rubriken" -->
+    <td height="20" bgcolor="#1760A8"><!-- InstanceBeginEditable name="rubriken" -->
 		<table border="0" cellpadding="0" cellspacing="3" class="rubrik">
 			<tr>
 				<td></td>
-				<td class="rubrik"><a href="#">Rubrik 1</a></td>
+				<td><a href="#">Rubrik 1</a></td>
 
           <td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"></td>
 			<td><a href="#">Rubrik 1</a></td>
@@ -108,7 +85,7 @@
 			<td><a href="#">Rubrik 1</a></td>
 			</tr>
 		</table>
-    <!-- TemplateEndEditable -->
+    <!-- InstanceEndEditable -->
 	  </td>
   </tr>
   <tr>
@@ -145,8 +122,8 @@
           <td height="10" valign="middle" class="sparte2">&nbsp;</td>
         </tr>
         <tr>
-          <td height="10" valign="middle" class="sparte2"><a href="../sites/walking.htm"><img src="${resource(dir: 'bilder/walk', file: 'wt_symbol.gif')}" width="110" height="109" border="0"></a><br>
-            <a href="../sites/walking.htm"><img src="${resource(dir: 'bilder/walk', file: 'wt_text.gif')}" width="110" height="28" border="0"></a></td>
+          <td height="10" valign="middle" class="sparte2"><g:javascript>var sponsorfoldername='${resource(dir: 'bilder/sponsoren/')}';</g:javascript><g:javascript src="sponsor.js" /></td>
+          <!--<td height="10" valign="middle" class="sparte2"><img src="../bilder/sponsoren/aok.gif" width="110" height="51" border="0"></td>-->
         </tr>
         <tr>
           <td height="10" valign="middle" class="sparte2">&nbsp;</td>
@@ -160,7 +137,7 @@
             intern</td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"><p class="navi"><a href="#" class="navi" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','show','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Organe</a></td>
+          <td width="110" height="20" valign="middle"><span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','show','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Organe</a></span></td>
         </tr>
         <tr>
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/sitzungen.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','show','impressum','','hide','aktuell','','hide')">Sitzungen</a></span></td>
@@ -202,67 +179,26 @@
     </td>
     <td width="10" height="100%" bgcolor="#97C0EA">&nbsp;</td>
     <td width="100%" height="100%" align="left" valign="top" bgcolor="#FFFFFF">
-      <!--<table width="100%" height="20" border="0" cellspacing="0">
+      <table width="100%" height="20" border="0" cellspacing="0">
         <tr>
           <td>&nbsp;</td>
         </tr>
-      </table>-->
+      </table>
       <table width="100%" border="0" cellpadding="0" cellspacing="0">
         <tr align="left" valign="top">
-          <td width="100%" height="227"><!-- TemplateBeginEditable name="Text" -->
-            <table width="100%" border="0" align="left" cellspacing="5">
-              <tr valign="top">
-				  <!--<td class="copy">
-					  <p class="headline">&nbsp;</p>
-				  </td>-->
-                <td>
-					<g:layoutBody />
-                </td>
-              </tr>
-            </table>
-            <!-- TemplateEndEditable --></td>
-          %{--<td width="120"><!-- TemplateBeginEditable name="info" -->
-            <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
-              <tr>
-                <td height="20" bgcolor="#93BEEE" class="infohead">Abteilungsleiter</td>
-              </tr>
-              <tr>
-                <td valign="bottom" bgcolor="#D2DFFF" class="copy">Ingo Appelt</td>
-              </tr>
-            </table>
-            <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
-              <tr>
-                <td height="20" bgcolor="#93BEEE" class="infohead">Abteilungsleiter</td>
-              </tr>
-              <tr>
-                <td valign="bottom" bgcolor="#D2DFFF" class="copy">Ingo Appelt</td>
-              </tr>
-            </table>
-            <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
-              <tr>
-                <td height="20" bgcolor="#93BEEE" class="infohead">Abteilungsleiter</td>
-              </tr>
-              <tr>
-                <td valign="bottom" bgcolor="#D2DFFF" class="copy">Ingo Appelt</td>
-              </tr>
-            </table>
-            <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
-              <tr>
-                <td height="20" bgcolor="#93BEEE" class="infohead">Abteilungsleiter</td>
-              </tr>
-              <tr>
-                <td valign="bottom" bgcolor="#D2DFFF" class="copy">Ingo Appelt</td>
-              </tr>
-            </table>
+          <td height="227"><!-- InstanceBeginEditable name="Text" -->
+          <g:layoutBody />
+            <!-- InstanceEndEditable --></td>
+          <td width="130"><!-- InstanceBeginEditable name="info" --> <!--<img src="../bilder/test/photo_beispiel.jpg" width="130" height="211">-->
             <p>&nbsp;</p>
-            <!-- TemplateEndEditable --></td>--}%
+            <!-- InstanceEndEditable --></td>
         </tr>
       </table>
       <p>&nbsp;</p></td>
   </tr>
 </table>
 
-<div id="veranstaltungen" class="navi" style="position:absolute; width:114px; height:131px; z-index:12; left: 112px; top: 176px; visibility: hidden;">
+<div id="veranstaltungen" class="navi" style="position:absolute; width:114px; height:131px; z-index:12; left: 112px; top: 178px; visibility: hidden;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td height="20" bgcolor="#1760A8" class="marker">&nbsp;</td>
@@ -287,27 +223,33 @@
   </table>
 </div>
 
-<div id="abteilungen" style="position:absolute; visibility:hidden; left:112px; top:197px; width:114px; z-index:11">
+<div id="abteilungen" style="position:absolute; visibility:hidden; left:112px; top:199px; width:114px; z-index:11">
   <table width="100%" border="0" cellpadding="0" cellspacing="0">
     <tr>
       <td width="4" bgcolor="#1760A8" class="marker"> </td>
       <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/badminton.htm">Badminton</a></td>
     </tr>
     <tr>
-      <td width="4" rowspan="17">&nbsp;</td>
+      <td width="4" rowspan="18">&nbsp;</td>
       <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/basketball.htm">Basketball</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/fussball.htm">Fu&szlig;ball</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/ahfussball.htm">Fu&szlig;ball
+        - AH</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/ahfussball.htm">Fu&szlig;ball
-        AH</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/fuba_frauen.htm">Fu&szlig;ball
+        - Frauen</a></td>
+    </tr>
+    <tr>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/fussball.htm">Fu&szlig;ball
+        - Herren</a></td>
+    </tr>
+    <tr>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/jufu.htm">Fu&szlig;ball
+        - Jugend</a></td>
     </tr>
     <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/handball.htm">Handball</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/jufu.htm">Jugendfu&szlig;ball</a></td>
     </tr>
     <tr>
       <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/karate.htm">Karate</a></td>
@@ -349,13 +291,13 @@
   </table>
 </div>
 
-<div id="wegrollen" style="position:absolute; visibility:hidden; left:111px; top:133px; width:200px; height:526px; z-index:1">
+<div id="wegrollen" style="position:absolute; visibility:hidden; left:111px; top:135px; width:200px; height:526px; z-index:1">
   <a href="#" onMouseOver="MM_showHideLayers('aktuelles','','hide','abteilungen','','hide','wegrollen','','hide','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','termine','','hide','anliegen','','hide','beschluss','','hide','impressum','','hide')">
   <img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="140" height="20" border="0" align="top">
   <img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="27" height="438" border="0"> </a><a href="#" onMouseOver="MM_showHideLayers('aktuelles','','hide','abteilungen','','hide','wegrollen','','hide','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','termine','','hide','anliegen','','hide','beschluss','','hide','impressum','','hide')"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="140" height="20" border="0" align="top"></a>
 </div>
 
-<div id="anlagen" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:10; left: 112px; top: 218px;">
+<div id="anlagen" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:10; left: 112px; top: 220px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -399,7 +341,7 @@
     </tr>
   </table>
 </div>
-<div id="mitglied" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:9; left: 112px; top: 239px;">
+<div id="mitglied" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:9; left: 112px; top: 241px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -415,7 +357,7 @@
     </tr>
   </table>
 </div>
-<div id="sponsoren" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:8; left: 112; top: 260;">
+<div id="sponsoren" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:8; left: 112; top: 262;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -431,7 +373,7 @@
     </tr>
   </table>
 </div>
-<div id="gaestebuch" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:7; left: 112; top: 281;">
+<div id="gaestebuch" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:7; left: 112; top: 283;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -447,7 +389,7 @@
     </tr>
   </table>
 </div>
-<div id="organe" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:6; left: 112px; top: 505px;">
+<div id="organe" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:6; left: 112px; top: 507px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -463,7 +405,7 @@
     </tr>
   </table>
 </div>
-<div id="themen" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:3; left: 112px; top: 547px;">
+<div id="themen" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:3; left: 112px; top: 549px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -480,7 +422,7 @@
     </tr>
   </table>
 </div>
-<div id="sitzungen" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:4; left: 112px; top: 526px;">
+<div id="sitzungen" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:4; left: 112px; top: 528px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -496,7 +438,7 @@
     </tr>
   </table>
 </div>
-<div id="impressum" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:2; left: 112px; top: 588px;">
+<div id="impressum" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:2; left: 112px; top: 590px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -512,7 +454,7 @@
     </tr>
   </table>
 </div>
-<div id="aktuell" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:13; left: 112; top: 155;">
+<div id="aktuell" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:13; left: 112; top: 157;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -529,4 +471,5 @@
   </table>
 </div>
 </body>
+<!-- InstanceEnd -->
 </html>

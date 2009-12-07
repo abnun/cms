@@ -1,4 +1,4 @@
-<div class="box" id="identifier" style="width: 210px; float: left;">
+<div class="box" id="identifier" style="width: 100px; float: left;">
 	<div class="hd">
 		<div class="c">
 			<g:message code="section.head.label" args="[section]" default="Abteilunsleiter" />

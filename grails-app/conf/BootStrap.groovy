@@ -1,4 +1,7 @@
 import de.webmpuls.cms.people.Funktion
+import de.webmpuls.cms.media.MediaUtils
+import de.webmpuls.photo_album.Album
+import de.webmpuls.photo_album.Picture
 
 class BootStrap
 {
@@ -103,6 +106,20 @@ class BootStrap
 		funktionList.each
 		{
 			println it
+		}
+
+		Album personen = Album.findByName(MediaUtils.ALBUM_PERSONEN)
+		if(!personen)
+		{
+			personen =  new Album(name: MediaUtils.ALBUM_PERSONEN, description: "Foto-Album für die Mitglieder des SV-Leingartens")
+			personen.save()
+		}
+
+		Album verschiedenes = Album.findByName(MediaUtils.ALBUM_VERSCHIEDENES)
+		if(!verschiedenes)
+		{
+			verschiedenes =  new Album(name: MediaUtils.ALBUM_VERSCHIEDENES, description: "Foto-Album für alle anderen Bilder")
+			verschiedenes.save()
 		}
 	}
 

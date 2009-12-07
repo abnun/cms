@@ -63,7 +63,7 @@
                             <td>${fieldValue(bean: tabelleInstance, field: "anstoss")}</td>
 
 							<g:if test="${tabelleInstance?.tore?.contains('png')}">
-								<td><img src="${resource(dir: 'bilder/tabellen/tore', file: tabelleInstance?.tore)}" alt="" border="0" /></td>
+								<td style="display:block; overflow:hidden; height:14px;"><img style="top: -263px; left: -289px;" src="${resource(dir: 'bilder/tabellen/tore', file: tabelleInstance?.tore)}" alt="" border="0" /></td>
 							</g:if>
 							<g:else>
 								<td>${tabelleInstance?.tore}</td>

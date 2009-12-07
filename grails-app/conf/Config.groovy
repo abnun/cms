@@ -28,12 +28,17 @@ grails.mime.types = [ html: ['text/html','application/xhtml+xml'],
 grails.views.default.codec="none" // none, html, base64
 grails.views.gsp.encoding="UTF-8"
 grails.converters.encoding="UTF-8"
+// enable Sitemesh preprocessing of GSP pages
+grails.views.gsp.sitemesh.preprocess = true
+// scaffolding templates configuration
+grails.scaffolding.templates.domainSuffix = 'Instance'
 
+// Set to false to use the new Grails 1.2 JSONBuilder in the render method
+grails.json.legacy.builder=false
 // enabled native2ascii conversion of i18n properties files
 grails.enable.native2ascii = true
-
-// enable GSP preprocessing: replace head -> g:captureHead, title -> g:captureTitle, meta -> g:captureMeta, body -> g:captureBody
-grails.views.gsp.sitemesh.preprocess = true
+// whether to install the java.util.logging bridge for sl4j. Disable fo AppEngine!
+grails.logging.jul.usebridge = true
 
 // set per-environment serverURL stem for creating absolute links
 environments {
@@ -47,6 +52,57 @@ environments {
         grails.serverURL = "http://localhost:8080/${appName}"
     }
 
+}
+
+// show all options to alter pictures
+photo_album.picture.show.all.options = true
+photo_album.picture.show.option.rotate = true
+photo_album.picture.show.option.grayscale = true
+photo_album.picture.show.option.sepia = false
+photo_album.picture.show.option.negation = false
+photo_album.picture.show.option.reduce.red.eyes = true
+photo_album.picture.show.option.reset = true
+photo_album.picture.show.option.crop = true
+
+fckeditor
+{
+    upload
+	{
+        basedir = "/uploads/"
+        baseurl = "/uploads/"
+        overwrite = true
+        link
+		{
+            browser = false
+            upload = false
+            allowed = []
+            denied = ['html', 'htm', 'php', 'php2', 'php3', 'php4', 'php5',
+                      'phtml', 'pwml', 'inc', 'asp', 'aspx', 'ascx', 'jsp',
+                      'cfm', 'cfc', 'pl', 'bat', 'exe', 'com', 'dll', 'vbs', 'js', 'reg',
+                      'cgi', 'htaccess', 'asis', 'sh', 'shtml', 'shtm', 'phtm']
+        }
+        image
+		{
+            browser = true
+            upload = true
+            allowed = ['jpg', 'gif', 'jpeg', 'png']
+            denied = []
+        }
+        flash
+		{
+            browser = false
+            upload = false
+            allowed = ['swf']
+            denied = []
+        }
+        media
+		{
+            browser = false
+            upload = false
+            allowed = ['mpg','mpeg','avi','wmv','asf','mov']
+            denied = []
+        }
+    }
 }
 
 // log4j configuration

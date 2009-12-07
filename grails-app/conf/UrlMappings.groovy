@@ -9,7 +9,7 @@ class UrlMappings {
 		  }
 	  }
       //"/"(view:"/index")
-      "/"(controller:"person")
+      "/"(controller: "inhalt", action: 'aktuelles')
 	  "500"(view:'/error')
 	}
 }
