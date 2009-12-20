@@ -41,7 +41,10 @@
 					}
 				}
 
-				abteilungsLeiterCollection = abteilungsLeiterCollection.sort{a, b -> a.nachname <=> b.nachname}
+				if(abteilungsLeiterCollection)
+				{
+					abteilungsLeiterCollection = abteilungsLeiterCollection.sort{a, b -> a.nachname <=> b.nachname}
+				}
 			%>
 
             <div class="dialog">

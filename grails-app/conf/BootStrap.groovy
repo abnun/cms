@@ -121,6 +121,13 @@ class BootStrap
 			verschiedenes =  new Album(name: MediaUtils.ALBUM_VERSCHIEDENES, description: "Foto-Album für alle anderen Bilder")
 			verschiedenes.save()
 		}
+
+		Album sponsoren = Album.findByName(MediaUtils.ALBUM_SPONSOREN)
+		if(!sponsoren)
+		{
+			sponsoren =  new Album(name: MediaUtils.ALBUM_SPONSOREN, description: "Foto-Album für die Sponsoren")
+			sponsoren.save()
+		}
 	}
 
 	def destroy =

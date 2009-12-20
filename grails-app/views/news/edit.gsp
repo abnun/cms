@@ -32,19 +32,29 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="lastModified"><g:message code="news.lastModified.label" default="Last Modified" /></label>
+                                  <label for="ueberschrift"><g:message code="news.ueberschrift.label" default="Ueberschrift" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: newsInstance, field: 'lastModified', 'errors')}">
-                                    <g:datePicker name="lastModified" precision="day" value="${newsInstance?.lastModified}"  />
+                                <td valign="top" class="value ${hasErrors(bean: newsInstance, field: 'ueberschrift', 'errors')}">
+                                    <g:textField name="ueberschrift" value="${newsInstance?.ueberschrift}" />
                                 </td>
                             </tr>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="dateCreated"><g:message code="news.dateCreated.label" default="Date Created" /></label>
+                                  <label for="abteilung"><g:message code="news.abteilung.label" default="Abteilung" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: newsInstance, field: 'dateCreated', 'errors')}">
-                                    <g:datePicker name="dateCreated" precision="day" value="${newsInstance?.dateCreated}"  />
+                                <td valign="top" class="value ${hasErrors(bean: newsInstance, field: 'abteilung', 'errors')}">
+                                    <g:select name="abteilung.id" from="${de.webmpuls.cms.section.Abteilung.list()}" optionKey="id" value="${newsInstance?.abteilung?.id}"  />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="inhalt"><g:message code="news.inhalt.label" default="Inhalt" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: newsInstance, field: 'inhalt', 'errors')}">
+                                    <ckeditor:editor name="inhalt" width="100%" height="500" toolbar="Basic" enterMode="CKEDITOR.ENTER_BR">${newsInstance?.inhalt}</ckeditor:editor>
+									%{--<g:textArea name="inhalt" cols="40" rows="5" value="${newsInstance?.inhalt}" />--}%
                                 </td>
                             </tr>
                         

@@ -2,9 +2,14 @@ grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir	= "target/test-reports"
 grails.project.dependency.resolution = {
-    inherits "global" // inherit Grails' default dependencies
+    // inherit Grails' default dependencies
+    inherits( "global" ) {
+        // uncomment to disable ehcache
+        // excludes 'ehcache'
+    }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     repositories {
+        grailsPlugins()
         grailsHome()
 
         // uncomment the below to enable remote dependency resolution
@@ -14,11 +19,12 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
-        //mavenRepo "http://repository.jboss.com/maven2/
+        //mavenRepo "http://repository.jboss.com/maven2/"
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-        // runtime 'com.mysql:mysql-connector-java:5.1.5'
+
+        // runtime 'mysql:mysql-connector-java:5.1.5'
     }
 }
 
@@ -26,4 +32,4 @@ grails.project.dependency.resolution = {
 grails.project.war.destFile = "sv-leingarten.war"
 
 // Plugin repository
-grails.plugin.repos.discovery.myRepository="http://github.com/abnun/cms" 
+// grails.plugin.repos.discovery.myRepository="http://github.com/abnun/cms" 

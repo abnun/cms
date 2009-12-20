@@ -5,6 +5,8 @@ import de.webmpuls.cms.people.Funktion
 
 class Abteilung
 {
+	static final String JUGEND_FUSSBALL = "Fußball (Jugend)"
+
 	static hasMany = [mitarbeiterfunktionen: Funktion, unterabteilungen: Abteilung, personen: Person]
 
 	String name
@@ -13,7 +15,7 @@ class Abteilung
 	static mapping =
 	{
 		//mitarbeiterfunktionen(sort: 'name')
-		personen(sort: 'nachname')
+		//personen(sort: 'nachname')
 		sort("name")
 		order("asc")
 

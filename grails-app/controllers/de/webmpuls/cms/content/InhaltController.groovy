@@ -1,6 +1,7 @@
 package de.webmpuls.cms.content
 
 import de.webmpuls.cms.start.Anzeigen
+import de.webmpuls.cms.start.News
 
 class InhaltController
 {
@@ -10,6 +11,7 @@ class InhaltController
     def aktuelles =
 	{
 		def anzeigenList = Anzeigen.list([cache: true])
-		return [anzeigenList: anzeigenList]
+		def newsList = News.list([cache: true])
+		return [anzeigenList: anzeigenList, newsList: newsList]
 	}
 }

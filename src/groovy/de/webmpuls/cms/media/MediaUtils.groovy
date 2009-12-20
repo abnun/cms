@@ -8,6 +8,7 @@ class MediaUtils
 {
 	// Alben
 	public static final String ALBUM_PERSONEN = "personen"
+	public static final String ALBUM_SPONSOREN = "sponsoren"
 	public static final String ALBUM_VERSCHIEDENES = "verschiedenes"
 
 	// Dummy-Personen

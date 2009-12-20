@@ -97,4 +97,19 @@ class AbteilungController {
             redirect(action: "list")
         }
     }
+
+	def start =
+	{
+		String name = params.name
+		if(name)
+		{
+			Abteilung abteilung = Abteilung.findByName(name)
+			if(abteilung)
+			{
+//				return[abteilung: abteilung]
+				render("${abteilung.name} - ${abteilung.code}")
+			}
+			re
+		}
+	}
 }

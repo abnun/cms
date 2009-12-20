@@ -30,9 +30,23 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="news.lastModified.label" default="Last Modified" /></td>
+                            <td valign="top" class="name"><g:message code="news.ueberschrift.label" default="Ueberschrift" /></td>
                             
-                            <td valign="top" class="value"><g:formatDate date="${newsInstance?.lastModified}" /></td>
+                            <td valign="top" class="value">${fieldValue(bean: newsInstance, field: "ueberschrift")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="news.abteilung.label" default="Abteilung" /></td>
+                            
+                            <td valign="top" class="value"><g:link controller="abteilung" action="show" id="${newsInstance?.abteilung?.id}">${newsInstance?.abteilung?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="news.inhalt.label" default="Inhalt" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: newsInstance, field: "inhalt")}</td>
                             
                         </tr>
                     
@@ -40,6 +54,13 @@
                             <td valign="top" class="name"><g:message code="news.dateCreated.label" default="Date Created" /></td>
                             
                             <td valign="top" class="value"><g:formatDate date="${newsInstance?.dateCreated}" /></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="news.lastModified.label" default="Last Modified" /></td>
+                            
+                            <td valign="top" class="value"><g:formatDate date="${newsInstance?.lastModified}" /></td>
                             
                         </tr>
                     

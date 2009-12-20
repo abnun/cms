@@ -44,6 +44,7 @@
 	<link href="${resource(dir: 'css', file: 'buttons.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'dialog.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'boxes.css')}" rel="stylesheet" type="text/css"/>
+	<g:javascript library="jquery" />
 	<wm_photo_album:gallery_resources />
 	<ckeditor:resources />
 	%{--<link href="${resource(dir: 'css', file: 'main.css')}" rel="stylesheet" type="text/css">--}%
@@ -53,38 +54,40 @@
 	<cms:cmsHead />
 	<script type="text/javascript" src="${resource(dir: 'js/jquery', file: 'superfish.js')}"></script>--}%
 	<gui:resources components="['richEditor','datePicker', 'tabView']"/>
+	<jq:jquery>
+		$(function(){
+			$('.fadein img:gt(0)').hide();
+			setInterval(function(){
+			$('.fadein :first-child').fadeOut()
+			.next('img').fadeIn()
+			.end().appendTo('.fadein');},
+			5000);
+		});
+	  </jq:jquery>
 	<g:layoutHead />
 </head>
 
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <table height="100%" border="0" align="center" cellpadding="0" cellspacing="1" bordercolor="#FFFFFF">
   <tr>
-    <td width="110" height="87" align="center" valign="middle" bgcolor="#D2DFFF"><a name="oben"></a><img src="${resource(dir: 'bilder/divers', file: 'logo.jpg')}" name="svllogo" width="110" height="87" id="svllogo"></td>
+    <td width="110" height="87" align="center" valign="middle" bgcolor="#D2DFFF"><a name="oben"></a><a href="${resource(dir: '')}" alt="Startseite"><img src="${resource(dir: 'bilder/divers', file: 'logo.jpg')}" name="svllogo" width="110" height="87" id="svllogo" border="0" /></a></td>
     <td width="10" height="87" bgcolor="#97C0EA">&nbsp;</td>
-    <td width="100%" height="87" align="left" valign="top" bgcolor="#D2DFFF"><!-- InstanceBeginEditable name="kopf" --><img src="${resource(dir: 'bilder/divers', file: 'allgkopf.jpg')}" width="690" height="88"><!-- InstanceEndEditable --></td>
+    <td width="100%" height="87" align="left" valign="top" bgcolor="#D2DFFF"><!-- InstanceBeginEditable name="kopf" -->
+      <p><img src="${resource(dir: 'bilder/divers', file: 'allgkopf.jpg')}" width="690" height="88"></p>
+      <!-- InstanceEndEditable --></td>
   </tr>
   <tr>
     <td width="110" height="20" align="right" bgcolor="#1760A8"> <span class="svl"><font color="#FFFFFF">Sportverein
       Leingarten 1895 e.V</font>.</span></td>
     <td width="10" height="20" bgcolor="#1760A8">&nbsp;</td>
     <td height="20" bgcolor="#1760A8"><!-- InstanceBeginEditable name="rubriken" -->
-		<table border="0" cellpadding="0" cellspacing="3" class="rubrik">
-			<tr>
-				<td></td>
-				<td><a href="#">Rubrik 1</a></td>
 
-          <td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"></td>
-			<td><a href="#">Rubrik 1</a></td>
-			<td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"></td>
-			<td><a href="#">Rubrik 1</a></td>
-
-          <td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"></td>
- 			<td><a href="#">Rubrik 1</a></td>
-
-          <td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"></td>
-			<td><a href="#">Rubrik 1</a></td>
-			</tr>
-		</table>
+      <table border="0" cellpadding="0" cellspacing="3" class="rubrik">
+        <tr>
+          <td></td>
+          <td class="rubrikactiv"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="1" height="1"></td>
+        </tr>
+      </table>
     <!-- InstanceEndEditable -->
 	  </td>
   </tr>
@@ -122,8 +125,11 @@
           <td height="10" valign="middle" class="sparte2">&nbsp;</td>
         </tr>
         <tr>
-          <td height="10" valign="middle" class="sparte2"><g:javascript>var sponsorfoldername='${resource(dir: 'bilder/sponsoren/')}';</g:javascript><g:javascript src="sponsor.js" /></td>
-          <!--<td height="10" valign="middle" class="sparte2"><img src="../bilder/sponsoren/aok.gif" width="110" height="51" border="0"></td>-->
+          <td height="10" valign="middle" class="sparte2">
+			  <div class="fadein">
+				  <g:include controller="sponsor" action="images" /> 
+			  </div>
+		  </td>
         </tr>
         <tr>
           <td height="10" valign="middle" class="sparte2">&nbsp;</td>
@@ -162,19 +168,6 @@
         <tr>
           <td width="110" height="100%" valign="middle"><font color="#000033" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
         </tr>
-		  %{--<tr>
-			  <td>
-				  <jq:jquery>
-
-					   $("ul.sf-menu").superfish({
-							  animation: {height:'show'},   // slide-down effect without fade-in
-							  delay:	 1200			   // 1.2 second delay on mouseout
-						  });
-
-				  </jq:jquery>
-				  <cms:menu name="admin" />
-			  </td>
-		  </tr>--}%
       </table>
     </td>
     <td width="10" height="100%" bgcolor="#97C0EA">&nbsp;</td>
@@ -184,16 +177,7 @@
           <td>&nbsp;</td>
         </tr>
       </table>
-      <table width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr align="left" valign="top">
-          <td height="227"><!-- InstanceBeginEditable name="Text" -->
-          <g:layoutBody />
-            <!-- InstanceEndEditable --></td>
-          <td width="130"><!-- InstanceBeginEditable name="info" --> <!--<img src="../bilder/test/photo_beispiel.jpg" width="130" height="211">-->
-            <p>&nbsp;</p>
-            <!-- InstanceEndEditable --></td>
-        </tr>
-      </table>
+      <g:layoutBody />
       <p>&nbsp;</p></td>
   </tr>
 </table>
