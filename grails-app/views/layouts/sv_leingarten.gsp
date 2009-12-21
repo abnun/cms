@@ -54,16 +54,6 @@
 	<cms:cmsHead />
 	<script type="text/javascript" src="${resource(dir: 'js/jquery', file: 'superfish.js')}"></script>--}%
 	<gui:resources components="['richEditor','datePicker', 'tabView']"/>
-	<jq:jquery>
-		$(function(){
-			$('.fadein img:gt(0)').hide();
-			setInterval(function(){
-			$('.fadein :first-child').fadeOut()
-			.next('img').fadeIn()
-			.end().appendTo('.fadein');},
-			5000);
-		});
-	  </jq:jquery>
 	<g:layoutHead />
 </head>
 
@@ -119,24 +109,40 @@
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/sponsoren.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','show','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Sponsoren</a></span></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle">&nbsp; </td>
+          <td width="110" height="20" valign="middle">&nbsp;</td>
         </tr>
         <tr>
-          <td height="10" valign="middle" class="sparte2">&nbsp;</td>
-        </tr>
-        <tr>
-          <td height="10" valign="middle" class="sparte2">
+          <td valign="middle" class="sparte2">
+			  <jq:jquery>
+				  $(function(){
+					   $('.fadein img:gt(0)').hide();
+					   setInterval(function() {
+					   $('.fadein :first-child').fadeOut(2750)
+					   .next('img').fadeIn(2750)
+					   .end().appendTo('.fadein');},
+					   5000);
+				   });
+			  </jq:jquery>
+			  <style type="text/css">
+			  .fadein {
+				  position: relative;
+				  width: 110px;
+				  height: 51px;
+			  }
+
+			  .fadein img {
+				  position: absolute;
+				  left: 0;
+				  top: 0;
+			  }
+			  </style>
 			  <div class="fadein">
-				  <g:include controller="sponsor" action="images" /> 
+				  <g:include controller="sponsor" action="images" />
 			  </div>
-		  </td>
+          </td>
         </tr>
         <tr>
-          <td height="10" valign="middle" class="sparte2">&nbsp;</td>
-        </tr>
-        <tr>
-          <td height="10" valign="middle" class="sparte2"><font color="#D2E9FF" size="-1" face="Arial, Helvetica, sans-serif" border:"#FFFFFF" border-style= "solid" border-top-width="1px border-bottom-width="1px" background-color="#D2E9FF" height="20px" width="110px">&nbsp;
-            _ </font></td>
+          <td width="110" height="20" valign="middle">&nbsp;</td>
         </tr>
         <tr>
           <td height="10" valign="middle" bordercolor="0" class="sparte1">SVL
@@ -341,7 +347,7 @@
     </tr>
   </table>
 </div>
-<div id="sponsoren" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:8; left: 112; top: 262;">
+<div id="sponsoren" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:8; left: 112px; top: 262px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -357,7 +363,7 @@
     </tr>
   </table>
 </div>
-<div id="gaestebuch" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:7; left: 112; top: 283;">
+<div id="gaestebuch" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:7; left: 112px; top: 283px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -438,7 +444,7 @@
     </tr>
   </table>
 </div>
-<div id="aktuell" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:13; left: 112; top: 157;">
+<div id="aktuell" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:13; left: 112px; top: 157px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>

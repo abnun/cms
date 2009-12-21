@@ -24,14 +24,32 @@
                         
                             <g:sortableColumn property="id" title="${message(code: 'termin.id.label', default: 'Id')}" />
                         
+                            <g:sortableColumn property="datum" title="${message(code: 'termin.datum.label', default: 'Datum')}" />
+                        
+                            <g:sortableColumn property="inhalt" title="${message(code: 'termin.inhalt.label', default: 'Inhalt')}" />
+                        
+                            <g:sortableColumn property="findetStatt" title="${message(code: 'termin.findetStatt.label', default: 'Findet Statt')}" />
+                        
+                            <g:sortableColumn property="zusatzinfo" title="${message(code: 'termin.zusatzinfo.label', default: 'Zusatzinfo')}" />
+
+							<th>&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
                     <g:each in="${terminInstanceList}" status="i" var="terminInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td><g:link action="show" id="${terminInstance.id}">${fieldValue(bean: terminInstance, field: "id")}</g:link></td>
+                            <td>${fieldValue(bean: terminInstance, field: "id")}</td>
                         
+                            <td><g:formatDate date="${terminInstance.datum}" /></td>
+                        
+                            <td>${fieldValue(bean: terminInstance, field: "inhalt")}</td>
+                        
+                            <td><g:formatBoolean boolean="${terminInstance.findetStatt}" /></td>
+                        
+                            <td>${fieldValue(bean: terminInstance, field: "zusatzinfo")}</td>
+
+							<td><g:link action="edit" id="${terminInstance.id}">Bearbeiten</g:link></td>
                         </tr>
                     </g:each>
                     </tbody>

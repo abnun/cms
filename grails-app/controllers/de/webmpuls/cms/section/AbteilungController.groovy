@@ -1,5 +1,8 @@
 package de.webmpuls.cms.section
 
+import de.webmpuls.cms.people.Funktion
+import de.webmpuls.cms.people.Person
+
 class AbteilungController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -31,13 +34,44 @@ class AbteilungController {
     }
 
     def show = {
+		println("params -> $params")
         def abteilungInstance = Abteilung.get(params.id)
+        if (!abteilungInstance) {
+			abteilungInstance = Abteilung.findByCode(params.code)
+		}
         if (!abteilungInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), params.id])}"
             redirect(action: "list")
         }
         else {
-            [abteilungInstance: abteilungInstance]
+
+			Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
+			{
+				Funktion funktion ->
+
+				if (funktion.code == Funktion.ABTEILUNGSLEITER)
+				{
+					return funktion
+				}
+			}
+
+			Collection abteilungsLeiterCollection = null
+
+			if (abteilungsLeiterFunktion)
+			{
+				abteilungsLeiterCollection = abteilungInstance.personen.findAll
+				{
+					Person tmpPerson ->
+					abteilungsLeiterFunktion.personen.contains(tmpPerson)
+				}
+			}
+
+			if (abteilungsLeiterCollection)
+			{
+				abteilungsLeiterCollection = abteilungsLeiterCollection.sort {a, b -> a.nachname <=> b.nachname}
+			}
+
+            [abteilungInstance: abteilungInstance, abteilungsLeiterCollection: abteilungsLeiterCollection]
         }
     }
 

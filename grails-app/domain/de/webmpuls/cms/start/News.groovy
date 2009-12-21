@@ -12,6 +12,11 @@ class News
 	String ueberschrift
 	String inhalt
 
+	static mapping =
+	{
+		sort("dateCreated")
+	}
+
     static constraints =
 	{
 		ueberschrift()

@@ -25,10 +25,5 @@ CKEDITOR.addStylesSet('sv_leingarten_styles',
 	},*/
 
 	// Format Styles
-	{
-		name: 'bold wichtig',
-		element: 'strong',
-		styles : {'color' : '#1760A8'}
-//		sattributes: {'class': 'wichtig'}
-	}
+	{ name : 'Fett'			, element : 'strong', overrides : 'b', attributes : { 'class' : 'wichtig' } }
 ]);

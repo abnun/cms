@@ -5,127 +5,187 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}" />
-        %{--<title><g:message code="default.show.label" args="[entityName]" /></title>--}%
     </head>
     <body>
-        <div class="nav">
-            <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
-            <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-			<g:render template="/global/admin/menu" />
-        </div>
-        <div class="body" style="width: 300px; float: left;">
-            %{--<h1><g:message code="default.show.label" args="[entityName]" /></h1>--}%
-            <g:if test="${flash.message}">
-            <div class="message">${flash.message}</div>
-            </g:if>
-
-			<%
-				Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
-				{
-					Funktion funktion ->
-
-					if (funktion.code == Funktion.ABTEILUNGSLEITER)
-					{
-						return funktion
-					}
-				}
-
-				Collection abteilungsLeiterCollection = null
-
-				if (abteilungsLeiterFunktion)
-				{
-					abteilungsLeiterCollection = abteilungInstance.personen.findAll
-					{
-						Person tmpPerson ->
-						abteilungsLeiterFunktion.personen.contains(tmpPerson)
-					}
-				}
-
-				if(abteilungsLeiterCollection)
-				{
-					abteilungsLeiterCollection = abteilungsLeiterCollection.sort{a, b -> a.nachname <=> b.nachname}
-				}
-			%>
-
-            <div class="dialog">
-                <table>
-                    <tbody>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="abteilung.id.label" default="Id" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: abteilungInstance, field: "id")}</td>
-
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="abteilung.name.label" default="Name" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: abteilungInstance, field: "name")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="abteilung.code.label" default="Code" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: abteilungInstance, field: "code")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="abteilung.personen.label" default="Personen" /></td>
-                            
-                            <td valign="top" style="text-align: left;" class="value">
-                                <ul>
-                                <g:each in="${abteilungInstance.personen}" var="p">
-                                    <li><g:link controller="person" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
-                                </g:each>
-                                </ul>
-                            </td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="abteilung.unterabteilungen.label" default="Unterabteilungen" /></td>
-                            
-                            <td valign="top" style="text-align: left;" class="value">
-                                <ul>
-                                <g:each in="${abteilungInstance.unterabteilungen}" var="u">
-                                    <li><g:link controller="abteilung" action="show" id="${u.id}">${u?.encodeAsHTML()}</g:link></li>
-                                </g:each>
-                                </ul>
-                            </td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="abteilung.mitarbeiterfunktionen.label" default="Mitarbeiterfunktionen" /></td>
-                            
-                            <td valign="top" style="text-align: left;" class="value">
-                                <ul>
-                                <g:each in="${abteilungInstance.mitarbeiterfunktionen}" var="m">
-                                    <li><g:link controller="funktion" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></li>
-                                </g:each>
-                                </ul>
-                            </td>
-                            
-                        </tr>
-                    
-                    </tbody>
-                </table>
-            </div>
-            <div class="buttons">
-                <g:form>
-                    <g:hiddenField name="id" value="${abteilungInstance?.id}" />
-                    <span class="button"><g:actionSubmit class="edit" action="edit" value="${message(code: 'default.button.edit.label', default: 'Edit')}" /></span>
-                    <span class="button"><g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" /></span>
-                </g:form>
-            </div>
-        </div>
-		<div>
-			<g:each var="abteilungsLeiter" in="${abteilungsLeiterCollection}">
-				<g:render template="/global/section/head" model="[head: abteilungsLeiter, section: abteilungInstance]"/>
-			</g:each>
-		</div>
+	<table width="614" border="0" cellpadding="0" cellspacing="0">
+		<tr align="left" valign="top">
+			<td height="227"><!-- InstanceBeginEditable name="Text" -->
+				<table border="0" align="left" cellspacing="10">
+					<tr>
+						<td valign="top" class="copy">
+							<table border="0" cellpadding="0" cellspacing="3">
+								<tr>
+									<td></td>
+									<td><span class="headline_dunkel">F-Junioren (&acute;01-&acute;02)</span></td>
+									<td><img src="../bilder/divers/trenn.gif" width="1" height="26"></td>
+									<td class="copy">Landesstaffel 1 Bezirk Nord</td>
+								</tr>
+							</table>
+							<p>&nbsp;</p></td>
+						<td align="right" valign="top">
+							<table border="0" cellpadding="0" cellspacing="3">
+								<tr valign="middle">
+									<td class="copy">Berichte</td>
+									<td><img src="../bilder/test/trenn_grau.png" width="3" height="20"></td>
+									<td><a href="#" class="rubrik_grau">Portraits</a></td>
+									<td><img src="../bilder/test/trenn_grau.png" width="3" height="20"></td>
+									<td class="rubrik_grau"><a href="#">Spielplan</a></td>
+									<td><img src="../bilder/test/trenn_grau.png" width="3" height="20"></td>
+									<td><a href="#" class="rubrik_grau"><img src="../bilder/test/icon_table.jpg" width="26" height="26" border="0"></a></td>
+									<td><img src="../bilder/test/trenn_grau.png" width="3" height="20"></td>
+									<td><a href="#" class="rubrik_grau"><img src="../bilder/test/icon_team.jpg" width="27" height="26" border="0"></a></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top" class="copy">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td width="30"><img src="../bilder/test/arrow_down.jpg" width="18" height="14"></td>
+									<td><span class="headline_dunkel">F1:</span><span class="headline">
+										Spieltag in Stetten</span></td>
+									<td width="34">&nbsp;</td>
+									<td width="130" class="copy">
+										<div align="right">20.11.2009</div></td>
+								</tr>
+								<tr>
+									<td width="30">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td width="34">&nbsp;</td>
+									<td width="130">&nbsp;</td>
+								</tr>
+								<tr>
+									<td width="30">&nbsp;</td>
+									<td valign="top" class="copy"><p>Wir waren am 31.10.09 beim
+									Eppinger Spielfest zu Gast und spielten zum ersten Mal
+									in dieser Saison in der Halle. Rings herum waren kleine
+									Veranstaltungen mit Geschicklichkeitsspielen. Die Spiele
+									fanden auf einem halben Spielfeld, mit kleinem Tor,
+									ohne Torwart und mit 4 Spielern statt. Dies war f&uuml;r
+									uns eine Umstellung, aber unsere Spieler kamen damit
+									klar. Wir trafen zuerst auf den TSV Waldangelloch. Der
+									TSV Waldangelloch hatte einen Spieler knapp vor dem
+									Tor platziert, w&auml;hrend wir offen gespielt hatten.
+									Obwohl wir gut spielten, verloren wir mit 2:0. Im 2.
+									Spiel war unser Spielgegner der 1. FC Stebbach. Da auch
+									der 1. FC Stebbach offen spielte war es eine interessante
+									Partie. Luna scho&szlig; f&uuml;r uns den F&uuml;hrungstreffer
+									und Malte machte mit dem 2. Treffer das Spiel f&uuml;r
+									uns klar. In der n&auml;chsten Partie gegen den 1899
+									Hoffenheim gingen wir zuerst in den R&uuml;ckstand,
+									aber Yannik erzielte den Ausgleich f&uuml;r uns und
+									Yakup setzte noch einen d&#8217;rauf. Das Spiel endete
+									schlie&szlig;lich mit 2:1 f&uuml;r uns. Zu guter Letzt
+									standen wir gegen den VfB Eppingen auf dem Spielfeld.
+									Yakup und Yannik erzielten durch sch&ouml;ne Treffer
+									den Spielendstand 2:0.</p>
+										<p>Es spielten: Jens, Luna, Malte, Max, Mert, Yakup, Yannik<br>
+											<br>
+										</p></td>
+									<td width="34" valign="top">&nbsp;</td>
+									<td width="130" valign="top">
+										<table width="130" border="0" cellpadding="3" bordercolor="#93C9FF">
+											<tr>
+												<td height="130" colspan="2" bgcolor="#999999" class="infohead">&nbsp;</td>
+											</tr>
+											<tr>
+												<td valign="bottom" bordercolor="#999999" class="copy"><p>Bild
+												1 von 2</p></td>
+												<td valign="bottom" bordercolor="#999999" class="copy"><div align="right"><img src="../bilder/test/icon_zoom.jpg" width="16" height="16"></div></td>
+											</tr>
+										</table></td>
+								</tr>
+								<tr>
+									<td colspan="4"><img src="../bilder/test/linie_grau.png" width="695" height="3"></td>
+								</tr>
+							</table></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top" class="copy">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td width="30"><img src="../bilder/test/arrow_right.jpg" width="18" height="14"></td>
+									<td width="394"><span class="headline_dunkel">F2:</span><span class="headline">
+										Spieltag in Stetten</span></td>
+									<td width="47">&nbsp;</td>
+									<td width="253" class="copy"><div align="right">20.11.2009</div></td>
+								</tr>
+								<tr>
+									<td width="30">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td colspan="4"><img src="../bilder/test/linie_grau.png" width="695" height="3"></td>
+								</tr>
+							</table></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top" class="copy">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td width="30"><img src="../bilder/test/arrow_right.jpg" width="18" height="14"></td>
+									<td width="394"><span class="headline_dunkel">F3:</span><span class="headline">
+										Spieltag in Stetten</span></td>
+									<td width="47">&nbsp;</td>
+									<td width="253" class="copy"><div align="right">20.11.2009</div></td>
+								</tr>
+								<tr>
+									<td width="30">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td colspan="4"><img src="../bilder/test/linie_grau.png" width="695" height="3"></td>
+								</tr>
+							</table></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top" class="copy">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td width="30"><img src="../bilder/test/arrow_right.jpg" width="18" height="14"></td>
+									<td width="394"><span class="headline_dunkel">F1:</span><span class="headline">
+										Spieltag in Stetten</span></td>
+									<td width="47">&nbsp;</td>
+									<td width="253" class="copy"><div align="right">20.11.2009</div></td>
+								</tr>
+								<tr>
+									<td width="30">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td colspan="4"><img src="../bilder/test/linie_grau.png" width="695" height="3"></td>
+								</tr>
+							</table>
+							<p>&nbsp;</p>
+							<p>&nbsp;</p></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top" class="copy">
+							<p class="headline">&nbsp;</p>
+							<p class="headline">&nbsp;</p>
+							<p class="headline">&nbsp;</p>
+							<p>&nbsp;</p></td>
+					</tr>
+				</table>
+				<!-- InstanceEndEditable --></td>
+			<td width="130"><!-- InstanceBeginEditable name="info" -->
+				<g:each var="abteilungsLeiter" in="${abteilungsLeiterCollection}">
+					<p>
+						<g:render template="/global/section/head" model="[head: abteilungsLeiter, section: abteilungInstance]"/>
+					</p>
+				</g:each>
+				<p><img src="../bilder/test/box_training.png" width="127" height="91">
+				</p>
+				<p>&nbsp;</p>
+				<!-- InstanceEndEditable --></td>
+		</tr>
+	</table>
     </body>
 </html>

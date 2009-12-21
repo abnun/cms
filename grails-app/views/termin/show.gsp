@@ -29,6 +29,34 @@
                             
                         </tr>
                     
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="termin.datum.label" default="Datum" /></td>
+                            
+                            <td valign="top" class="value"><g:formatDate date="${terminInstance?.datum}" /></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="termin.inhalt.label" default="Inhalt" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: terminInstance, field: "inhalt")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="termin.findetStatt.label" default="Findet Statt" /></td>
+                            
+                            <td valign="top" class="value"><g:formatBoolean boolean="${terminInstance?.findetStatt}" /></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="termin.zusatzinfo.label" default="Zusatzinfo" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: terminInstance, field: "zusatzinfo")}</td>
+                            
+                        </tr>
+                    
                     </tbody>
                 </table>
             </div>

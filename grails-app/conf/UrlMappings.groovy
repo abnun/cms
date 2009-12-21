@@ -4,8 +4,10 @@ class UrlMappings
 	static excludes = ["/images/**", "/css/**", "/js/**"]
 
 	static mappings = {
-
-		
+		name abteilungShow: "/abteilungen/$code" {
+				controller = 'abteilung'
+				action = 'show'
+			}
 
 		"/$controller/$action?/$id?" {
 			constraints {

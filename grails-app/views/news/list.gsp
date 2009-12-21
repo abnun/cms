@@ -34,24 +34,26 @@
                         
                             <g:sortableColumn property="lastModified" title="${message(code: 'news.lastModified.label', default: 'Last Modified')}" />
                         
+							<th>&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
                     <g:each in="${newsInstanceList}" status="i" var="newsInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td><g:link action="show" id="${newsInstance.id}">${fieldValue(bean: newsInstance, field: "id")}</g:link></td>
+                            <td>${fieldValue(bean: newsInstance, field: "id")}</td>
                         
                             <td>${fieldValue(bean: newsInstance, field: "ueberschrift")}</td>
                         
                             <td>${fieldValue(bean: newsInstance, field: "abteilung")}</td>
                         
-                            <td>${fieldValue(bean: newsInstance, field: "inhalt")}</td>
+                            <td width="270">${newsInstance?.inhalt}</td>
                         
                             <td><g:formatDate date="${newsInstance.dateCreated}" /></td>
                         
                             <td><g:formatDate date="${newsInstance.lastModified}" /></td>
                         
+							<td><g:link action="edit" id="${newsInstance.id}"><g:message code="news.edit" default="Bearbeiten" /></g:link></td>
                         </tr>
                     </g:each>
                     </tbody>

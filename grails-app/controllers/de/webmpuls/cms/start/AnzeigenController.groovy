@@ -23,7 +23,7 @@ class AnzeigenController {
         def anzeigenInstance = new Anzeigen(params)
         if (anzeigenInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'anzeigen.label', default: 'Anzeigen'), anzeigenInstance.id])}"
-            redirect(action: "show", id: anzeigenInstance.id)
+            redirect(controller: 'inhalt', action: "aktuelles")
         }
         else {
             render(view: "create", model: [anzeigenInstance: anzeigenInstance])
@@ -67,7 +67,7 @@ class AnzeigenController {
             anzeigenInstance.properties = params
             if (!anzeigenInstance.hasErrors() && anzeigenInstance.save(flush: true)) {
                 flash.message = "${message(code: 'default.updated.message', args: [message(code: 'anzeigen.label', default: 'Anzeigen'), anzeigenInstance.id])}"
-                redirect(action: "show", id: anzeigenInstance.id)
+                redirect(controller: 'inhalt', action: "aktuelles")
             }
             else {
                 render(view: "edit", model: [anzeigenInstance: anzeigenInstance])

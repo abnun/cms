@@ -30,15 +30,20 @@
                         
                             <th><g:message code="anzeigen.abteilung.label" default="Abteilung" /></th>
                    	    
+                            <g:sortableColumn property="takeEndDate" title="${message(code: 'anzeigen.takeEndDate.label', default: 'Take End Date')}" />
+                        
+                            <g:sortableColumn property="endDatum" title="${message(code: 'anzeigen.endDatum.label', default: 'End Datum')}" />
+                        
                             <g:sortableColumn property="inhalt" title="${message(code: 'anzeigen.inhalt.label', default: 'Inhalt')}" />
                         
+							<th>&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
                     <g:each in="${anzeigenInstanceList}" status="i" var="anzeigenInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td><g:link action="show" id="${anzeigenInstance.id}">${fieldValue(bean: anzeigenInstance, field: "id")}</g:link></td>
+                            <td>${fieldValue(bean: anzeigenInstance, field: "id")}</td>
                         
                             <td>${fieldValue(bean: anzeigenInstance, field: "ueberschrift1")}</td>
                         
@@ -46,9 +51,13 @@
                         
                             <td>${fieldValue(bean: anzeigenInstance, field: "abteilung")}</td>
                         
-                            <td>${anzeigenInstance.inhalt}</td>
-                            %{--<td>${fieldValue(bean: anzeigenInstance, field: "inhalt")}</td>--}%
-
+                            <td><g:formatBoolean boolean="${anzeigenInstance.takeEndDate}" /></td>
+                        
+                            <td><g:formatDate date="${anzeigenInstance.endDatum}" /></td>
+                        
+                            <td width="270">${anzeigenInstance?.inhalt}</td>
+                        
+							<td><g:link action="edit" id="${anzeigenInstance.id}"><g:message code="anzeigen.edit" default="Bearbeiten" /></g:link></td>
                         </tr>
                     </g:each>
                     </tbody>

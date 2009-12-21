@@ -8,12 +8,16 @@ class Anzeigen
 	String ueberschrift1
 	String ueberschrift2
 	String inhalt
+	Boolean takeEndDate = false
+	Date endDatum
 
-    static constraints =
+	static constraints =
 	{
 		ueberschrift1()
 		ueberschrift2()
 		abteilung()
+		takeEndDate(nullable: true)
+		endDatum(nullable: true)
 		inhalt()
     }
 }

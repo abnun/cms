@@ -51,6 +51,20 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="anzeigen.takeEndDate.label" default="Take End Date" /></td>
+                            
+                            <td valign="top" class="value"><g:formatBoolean boolean="${anzeigenInstance?.takeEndDate}" /></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="anzeigen.endDatum.label" default="End Datum" /></td>
+                            
+                            <td valign="top" class="value"><g:formatDate date="${anzeigenInstance?.endDatum}" /></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="anzeigen.inhalt.label" default="Inhalt" /></td>
                             
                             <td valign="top" class="value">${fieldValue(bean: anzeigenInstance, field: "inhalt")}</td>

@@ -23,15 +23,16 @@
                         <tr>
                         
                             <g:sortableColumn property="id" title="${message(code: 'aktuelles.id.label', default: 'Id')}" />
-                        
+                        	<th></th>
                         </tr>
                     </thead>
                     <tbody>
                     <g:each in="${aktuellesInstanceList}" status="i" var="aktuellesInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td><g:link action="show" id="${aktuellesInstance.id}">${fieldValue(bean: aktuellesInstance, field: "id")}</g:link></td>
-                        
+                            <td>${fieldValue(bean: aktuellesInstance, field: "id")}</td>
+
+							<td><g:link action="edit" id="${aktuellesInstance.id}">Bearbeiten</g:link></td>
                         </tr>
                     </g:each>
                     </tbody>

@@ -50,8 +50,8 @@
                                     <label for="inhalt"><g:message code="news.inhalt.label" default="Inhalt" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: newsInstance, field: 'inhalt', 'errors')}">
-                                    <ckeditor:editor name="inhalt" width="100%" height="500" toolbar="Basic" enterMode="CKEDITOR.ENTER_BR">${newsInstance?.inhalt}</ckeditor:editor>
-									%{--<g:textArea name="inhalt" cols="40" rows="5" value="${newsInstance?.inhalt}" />--}%
+                                    %{--<g:textArea name="inhalt" cols="40" rows="5" value="${newsInstance?.inhalt}" />--}%
+									<g:render template="/ckeditor/editor" model="['inhalt': newsInstance?.inhalt]" />
                                 </td>
                             </tr>
                         

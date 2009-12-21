@@ -56,6 +56,12 @@ environments {
 
 }
 
+// Cache per default
+grails.gorm.default.mapping = {
+   cache(true)
+}
+
+
 // show all options to alter pictures
 photo_album.picture.show.all.options = true
 photo_album.picture.show.option.rotate = true

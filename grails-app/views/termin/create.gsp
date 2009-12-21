@@ -27,6 +27,42 @@
                     <table>
                         <tbody>
                         
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="datum"><g:message code="termin.datum.label" default="Datum" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'datum', 'errors')}">
+                                    <g:datePicker name="datum" precision="day" value="${terminInstance?.datum}"  />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="inhalt"><g:message code="termin.inhalt.label" default="Inhalt" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'inhalt', 'errors')}">
+                                    <g:textArea name="inhalt" cols="40" rows="5" value="${terminInstance?.inhalt}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="findetStatt"><g:message code="termin.findetStatt.label" default="Findet Statt" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'findetStatt', 'errors')}">
+                                    <g:checkBox name="findetStatt" value="${terminInstance?.findetStatt}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="zusatzinfo"><g:message code="termin.zusatzinfo.label" default="Zusatzinfo" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'zusatzinfo', 'errors')}">
+                                    <g:textArea name="zusatzinfo" cols="40" rows="5" value="${terminInstance?.zusatzinfo}" />
+                                </td>
+                            </tr>
+                        
                         </tbody>
                     </table>
                 </div>

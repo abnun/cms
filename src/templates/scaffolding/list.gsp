@@ -33,6 +33,7 @@
                         <%  }
 //						}
 						} %>
+							<th>&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,7 +42,7 @@
                         <%  props.eachWithIndex { p, i ->
                                 cp = domainClass.constrainedProperties[p.name]
                                 if (i == 0) { %>
-                            <td><g:link action="show" id="\${${propertyName}.id}">\${fieldValue(bean: ${propertyName}, field: "${p.name}")}</g:link></td>
+                            <td>\${fieldValue(bean: ${propertyName}, field: "${p.name}")}</td>
                         <%      } else if (i > 0) {//(i < 6) {
                                     if (p.type == Boolean.class || p.type == boolean.class) { %>
                             <td><g:formatBoolean boolean="\${${propertyName}.${p.name}}" /></td>
@@ -50,6 +51,7 @@
                         <%          } else { %>
                             <td>\${fieldValue(bean: ${propertyName}, field: "${p.name}")}</td>
                         <%  }   }   } %>
+							<td><g:link action="edit" id="\${${propertyName}.id}"><g:message code="${domainClass.propertyName}.edit" default="Bearbeiten" /></g:link></td>
                         </tr>
                     </g:each>
                     </tbody>

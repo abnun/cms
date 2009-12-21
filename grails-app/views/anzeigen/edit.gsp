@@ -59,12 +59,29 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="takeEndDate"><g:message code="anzeigen.takeEndDate.label" default="Take End Date" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: anzeigenInstance, field: 'takeEndDate', 'errors')}">
+                                    <g:checkBox name="takeEndDate" value="${anzeigenInstance?.takeEndDate}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="endDatum"><g:message code="anzeigen.endDatum.label" default="End Datum" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: anzeigenInstance, field: 'endDatum', 'errors')}">
+                                    <g:datePicker name="endDatum" precision="day" value="${anzeigenInstance?.endDatum}" noSelection="['': '']" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="inhalt"><g:message code="anzeigen.inhalt.label" default="Inhalt" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: anzeigenInstance, field: 'inhalt', 'errors')}">
                                     %{--<g:textField name="inhalt" value="${anzeigenInstance?.inhalt}" />--}%
-									<ckeditor:config contentsCss="${resource(dir: 'css', file: 'text.css')}" />
-									<ckeditor:editor name="inhalt" width="100%" height="500" toolbar="Basic" >${anzeigenInstance?.inhalt}</ckeditor:editor>
+									<g:render template="/ckeditor/editor" model="['inhalt': anzeigenInstance?.inhalt]" />
                                 </td>
                             </tr>
                         
