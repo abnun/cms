@@ -21,7 +21,7 @@
         def ${propertyName} = new ${className}(params)
         if (${propertyName}.save(flush: true)) {
             flash.message = "\${message(code: 'default.created.message', args: [message(code: '${domainClass.propertyName}.label', default: '${className}'), ${propertyName}.id])}"
-            redirect(action: "show", id: ${propertyName}.id)
+            redirect(action: "list")
         }
         else {
             render(view: "create", model: [${propertyName}: ${propertyName}])
@@ -65,7 +65,7 @@
             ${propertyName}.properties = params
             if (!${propertyName}.hasErrors() && ${propertyName}.save(flush: true)) {
                 flash.message = "\${message(code: 'default.updated.message', args: [message(code: '${domainClass.propertyName}.label', default: '${className}'), ${propertyName}.id])}"
-                redirect(action: "show", id: ${propertyName}.id)
+                redirect(action: "list")
             }
             else {
                 render(view: "edit", model: [${propertyName}: ${propertyName}])

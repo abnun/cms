@@ -1,3 +1,5 @@
+<%@ page import="de.webmpuls.cms.people.ShiroRole" %>
+
 <jq:jquery>
 	$("#anzeige_open_${i}").click(function () {
 		$("#anzeige_inhalt_${i}").slideToggle("normal");
@@ -25,10 +27,12 @@
 				<span class="copy">${anzeige.ueberschrift1 ?: anzeige.abteilung?.name}</span>
 				<span class="wichtig"><br></span>
 				<span class="subline">${anzeige.ueberschrift2}</span>
-				<span>
-					<g:link controller="anzeigen" action="edit" id="${anzeige.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Anzeige ändern" title="Anzeige ändern" border="0" /></g:link>
-					<a href="javascript: void(0);" id="anzeige_del_${anzeige.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Anzeige löschen" title="Anzeige löschen" border="0" /></a>
-				</span>
+				<shiro:hasRole name="${ShiroRole.BENUTZER}">
+					<span>
+						<g:link controller="anzeigen" action="edit" id="${anzeige.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Anzeige ändern" title="Anzeige ändern" border="0"/></g:link>
+						<a href="javascript: void(0);" id="anzeige_del_${anzeige.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Anzeige löschen" title="Anzeige löschen" border="0"/></a>
+					</span>
+				</shiro:hasRole>
 				<span class="headline_dunkel"><br /></span>
 			</p>
 		</td>

@@ -1,7 +1,15 @@
+<%@ page import="de.webmpuls.cms.people.ShiroRole" %>
 <table width="270" border="0" cellspacing="0" cellpadding="2">
 	<tr>
 		<td width="270" height="32" valign="bottom" background="${resource(dir: 'bilder/divers', file: 'kopf_dblau.jpg')}" class="headline_dunkel">
 			<font color="#FFFFFF">Newsticker</font>
+			<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+				<span>
+					<g:link controller="news" action="list">
+						<img src="${resource(dir: '/images/skin', file: 'database_table.png')}" alt="Übersicht News" title="Übersicht News" border="0"/>
+					</g:link>
+				</span>
+			</shiro:hasRole>
 		</td>
 	</tr>
 </table>

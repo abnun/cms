@@ -2,6 +2,10 @@ import de.webmpuls.cms.people.Funktion
 import de.webmpuls.cms.media.MediaUtils
 import de.webmpuls.photo_album.Album
 import de.webmpuls.photo_album.Picture
+import de.webmpuls.cms.people.ShiroRole
+import de.webmpuls.cms.people.Person
+import org.apache.shiro.crypto.hash.Sha1Hash
+import de.webmpuls.cms.people.ShiroUser
 
 class BootStrap
 {
@@ -9,6 +13,9 @@ class BootStrap
 	def init =
 	{
 		servletContext ->
+
+		
+		// Funktionen
 
 		Funktion vorsitzender1 = Funktion.findByCode(Funktion.VORSITZENDER1)
 		Funktion vorsitzender2 = Funktion.findByCode(Funktion.VORSITZENDER2)
@@ -108,6 +115,9 @@ class BootStrap
 			println it
 		}
 
+
+		// Foto-Alben
+
 		Album personen = Album.findByName(MediaUtils.ALBUM_PERSONEN)
 		if(!personen)
 		{
@@ -127,6 +137,59 @@ class BootStrap
 		{
 			sponsoren =  new Album(name: MediaUtils.ALBUM_SPONSOREN, description: "Foto-Album für die Sponsoren")
 			sponsoren.save()
+		}
+
+
+		// System-Rollen
+
+		ShiroRole adminRole = ShiroRole.findByName(ShiroRole.ADMINISTRATOR)
+		if(!adminRole)
+		{
+			adminRole = new ShiroRole(name: ShiroRole.ADMINISTRATOR)
+			adminRole.addToPermissions("*:*:*")
+			adminRole.save(flush: true)
+		}
+
+		ShiroRole userRole = ShiroRole.findByName(ShiroRole.BENUTZER)
+		if(!userRole)
+		{
+			userRole = new ShiroRole(name: ShiroRole.BENUTZER)
+			userRole.addToPermissions("*:*:*")
+			userRole.save(flush: true)
+		}
+
+		
+		// Benutzer
+
+		ShiroUser adminstrator  = ShiroUser.findByUsername(ShiroUser.ADMINISTRATOR)
+		if(!adminstrator)
+		{
+			adminstrator = new ShiroUser(username: ShiroUser.ADMINISTRATOR, passwordHash: new Sha1Hash("xkermitS").toHex())
+			adminstrator.addToRoles(adminRole)
+			adminstrator.addToRoles(userRole)
+
+			if(!adminstrator.save())
+			{
+				adminstrator.errors.allErrors.each
+				{
+					println it
+				}
+			}
+		}
+
+		ShiroUser testUser  = ShiroUser.findByUsername(ShiroUser.TEST)
+		if(!testUser)
+		{
+			testUser = new ShiroUser(username: ShiroUser.TEST, passwordHash: new Sha1Hash("test").toHex())
+			testUser.addToRoles(userRole)
+
+			if(!testUser.save())
+			{
+				testUser.errors.allErrors.each
+				{
+					println it
+				}
+			}
 		}
 	}
 

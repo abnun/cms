@@ -1,12 +1,15 @@
+<%@ page import="de.webmpuls.cms.people.ShiroRole" %>
 <table width="270" border="0" cellspacing="0" cellpadding="2">
 	<tr>
 		<td width="270" height="32" valign="bottom" background="${resource(dir: 'bilder/divers', file: 'kopf_hblau.jpg')}" class="headline_dunkel">SVL
 		Anzeigenmarkt
+			<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
 			<span>
 				<g:link controller="anzeigen" action="list">
 					<img src="${resource(dir: '/images/skin', file: 'database_table.png')}" alt="Übersicht Anzeigen" title="Übersicht Anzeigen" border="0"/>
 				</g:link>
 			</span>
+			</shiro:hasRole>
 		</td>
 	</tr>
 </table>
@@ -31,6 +34,7 @@
 <g:else>
 	Derzeit sind keine Anzeigen vorhanden.
 </g:else>
+<shiro:hasRole name="${ShiroRole.BENUTZER}">
 <br />
 <br/>
 <span>
@@ -38,4 +42,5 @@
 		<img src="${resource(dir: '/images/skin', file: 'database_add.png')}" alt="Neue Anzeige" border="0"/>&nbsp;Neue Anzeige
 	</g:link>
 </span>
+</shiro:hasRole>
 <p>&nbsp;</p>

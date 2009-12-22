@@ -1,3 +1,4 @@
+<%@ page import="de.webmpuls.cms.people.ShiroRole" %>
 <table width="270" border="0" cellspacing="0" cellpadding="0">
 	<tr>
 		<td height="25" colspan="3" valign="top"><p>&nbsp;</p>
@@ -5,11 +6,13 @@
 				<tr>
 					<td width="270" height="32" valign="bottom" background="${resource(dir: 'bilder/divers', file: 'kopf_hblau.jpg')}" class="headline_dunkel">
 						SVL Terminvorschau
+						<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
 						<span>
 							<g:link controller="termin" action="list">
 								<img src="${resource(dir: '/images/skin', file: 'database_table.png')}" alt="Übersicht Termine" title="Übersicht Termine" border="0"/>
 							</g:link>
 						</span>
+						</shiro:hasRole>
 					</td>
 				</tr>
 			</table>
@@ -45,16 +48,20 @@
 		<tr>
 			<td height="30" class="copy" colspan="2">
 				Derzeit sind keine Termine vorhanden.
-				<br/>
-				<br/>
-				<span>
-					<g:link controller="termin" action="create">
-						<img src="${resource(dir: '/images/skin', file: 'database_add.png')}" alt="Neuer Termin" border="0"/>&nbsp;Neuer Termin
-					</g:link>
-				</span>
 			</td>
 		</tr>
 	</g:else>
+	<tr>
+		<td height="30" class="copy" colspan="2">
+			<shiro:hasRole name="${ShiroRole.BENUTZER}">
+			<span>
+				<g:link controller="termin" action="create">
+					<img src="${resource(dir: '/images/skin', file: 'database_add.png')}" alt="Neuer Termin" border="0"/>&nbsp;Neuer Termin
+				</g:link>
+			</span>
+			</shiro:hasRole>
+		</td>
+	</tr>
 	<tr valign="top" class="copy">
 		<td width="90" height="20">&nbsp;</td>
 		<td height="20">&nbsp;</td>

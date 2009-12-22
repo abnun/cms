@@ -9,6 +9,18 @@ class UrlMappings
 				action = 'show'
 			}
 
+		"/admin" {
+			controller = "auth"
+			action = "login"
+			targetUri = "/"
+		}
+
+		"/sponsoren"
+		{
+			controller = "sponsor"
+			action = "list"
+		}
+
 		"/$controller/$action?/$id?" {
 			constraints {
 				// apply constraints here

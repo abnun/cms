@@ -1,5 +1,5 @@
-<g:if test="${pictureList}">
-	<g:each var="picture" in="${pictureList}">
-		<img src="${wm_photo_album.mediaPath(albumId: album.id)}${picture.getThumbNailURL()}" alt="${picture.caption}" width="110" />
+<g:if test="${sponsorInstanceList}">
+	<g:each var="sponsor" in="${sponsorInstanceList}">
+		<img id="sponsor" rel="${sponsor.verlinkung ?: ''}" src="${wm_photo_album.pathToImage(picture: sponsor?.bild)}" alt="${sponsor?.bild?.caption}" width="110" />
 	</g:each>
 </g:if>

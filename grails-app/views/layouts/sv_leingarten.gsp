@@ -106,7 +106,7 @@
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/mitglied.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','show','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Mitgliedschaft</a></span></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/sponsoren.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','show','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Sponsoren</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="${createLink(controller: 'sponsor', action: 'list')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','show','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Sponsoren</a></span></td>
         </tr>
         <tr>
           <td width="110" height="20" valign="middle">&nbsp;</td>
@@ -122,6 +122,10 @@
 					   .end().appendTo('.fadein');},
 					   5000);
 				   });
+				  $("#sponsor:visible").click(function () {
+						var link = $("#sponsor:visible").attr("rel");
+						window.open('http://' + link, "Neues Fenster", "dependent=no,hotkeys=yes,location=yes,menubar=yes,resizable=yes,scrollbars=yes,status=yes,toolbar=yes");
+					});
 			  </jq:jquery>
 			  <style type="text/css">
 			  .fadein {
@@ -158,15 +162,7 @@
           <td width="110" height="21" valign="middle"> <span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','show','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Themen</a></span></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle" bordercolor="0" class="sparte2"><font color="#D2E9FF" size="-1" face="Arial, Helvetica, sans-serif" border:"#FFFFFF" border-style= "solid" border-top-width="1px border-bottom-width="1px" background-color="#D2E9FF" height="20px" width="110px">&nbsp;
-            _ </font></td>
-        </tr>
-        <tr>
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/impressum.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','show','aktuell','','hide')">Impressum</a></span></td>
-        </tr>
-        <tr>
-          <td width="110" height="16" valign="middle" class="sparte2"><font border="#FFFFFF" border-style="solid" border-top-width="1px border-bottom-width="1px" background-color="#D2E9FF" height="20px" width="110px">&nbsp;
-            </font></td>
         </tr>
         <tr>
           <td valign="middle">&nbsp;</td>
