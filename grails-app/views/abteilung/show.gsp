@@ -26,14 +26,14 @@
 							<table border="0" cellpadding="0" cellspacing="3">
 								<tr valign="middle">
 									<td class="copy">Berichte</td>
-									<td><img src="../bilder/test/trenn_grau.png" width="3" height="20"></td>
+									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
 									<td><a href="#" class="rubrik_grau">Portraits</a></td>
-									<td><img src="../bilder/test/trenn_grau.png" width="3" height="20"></td>
+									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
 									<td class="rubrik_grau"><a href="#">Spielplan</a></td>
-									<td><img src="../bilder/test/trenn_grau.png" width="3" height="20"></td>
-									<td><a href="#" class="rubrik_grau"><img src="../bilder/test/icon_table.jpg" width="26" height="26" border="0"></a></td>
-									<td><img src="../bilder/test/trenn_grau.png" width="3" height="20"></td>
-									<td><a href="#" class="rubrik_grau"><img src="../bilder/test/icon_team.jpg" width="27" height="26" border="0"></a></td>
+									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
+									<td><a href="#" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_table.jpg')}" width="26" height="26" border="0"></a></td>
+									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
+									<td><a href="#" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_team.jpg')}" width="27" height="26" border="0"></a></td>
 								</tr>
 							</table>
 						</td>
@@ -97,7 +97,7 @@
 										</table></td>
 								</tr>
 								<tr>
-									<td colspan="4"><img src="../bilder/test/linie_grau.png" width="695" height="3"></td>
+									<td colspan="4"><img src="${resource(dir: 'bilder/divers', file: 'linie_grau.png')}" width="695" height="3"></td>
 								</tr>
 							</table></td>
 					</tr>
@@ -118,7 +118,7 @@
 									<td>&nbsp;</td>
 								</tr>
 								<tr>
-									<td colspan="4"><img src="../bilder/test/linie_grau.png" width="695" height="3"></td>
+									<td colspan="4"><img src="${resource(dir: 'bilder/divers', file: 'linie_grau.png')}" width="695" height="3"></td>
 								</tr>
 							</table></td>
 					</tr>
@@ -139,7 +139,7 @@
 									<td>&nbsp;</td>
 								</tr>
 								<tr>
-									<td colspan="4"><img src="../bilder/test/linie_grau.png" width="695" height="3"></td>
+									<td colspan="4"><img src="${resource(dir: 'bilder/divers', file: 'linie_grau.png')}" width="695" height="3"></td>
 								</tr>
 							</table></td>
 					</tr>
@@ -160,7 +160,7 @@
 									<td>&nbsp;</td>
 								</tr>
 								<tr>
-									<td colspan="4"><img src="../bilder/test/linie_grau.png" width="695" height="3"></td>
+									<td colspan="4"><img src="${resource(dir: 'bilder/divers', file: 'linie_grau.png')}" width="695" height="3"></td>
 								</tr>
 							</table>
 							<p>&nbsp;</p>

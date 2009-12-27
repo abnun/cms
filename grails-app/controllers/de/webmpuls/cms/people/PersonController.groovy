@@ -1,5 +1,7 @@
 package de.webmpuls.cms.people
 
+import de.webmpuls.cms.section.Abteilung
+
 class PersonController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -23,7 +25,7 @@ class PersonController {
         def personInstance = new Person(params)
         if (personInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'person.label', default: 'Person'), personInstance.id])}"
-            redirect(action: "show", id: personInstance.id)
+            redirect(action: "edit", id: personInstance.id)
         }
         else {
             render(view: "create", model: [personInstance: personInstance])
@@ -53,6 +55,7 @@ class PersonController {
     }
 
     def update = {
+		println params
         def personInstance = Person.get(params.id)
         if (personInstance) {
             if (params.version) {
@@ -65,9 +68,17 @@ class PersonController {
                 }
             }
             personInstance.properties = params
+			if (!params.list('funktionen'))
+			{
+				personInstance.funktionen = []
+			}
+			if (!params.list('abteilungen'))
+			{
+				personInstance.abteilungen = []
+			}
             if (!personInstance.hasErrors() && personInstance.save(flush: true)) {
                 flash.message = "${message(code: 'default.updated.message', args: [message(code: 'person.label', default: 'Person'), personInstance.id])}"
-                redirect(action: "show", id: personInstance.id)
+                redirect(action: "edit", id: personInstance.id)
             }
             else {
                 render(view: "edit", model: [personInstance: personInstance])
@@ -83,8 +94,26 @@ class PersonController {
         def personInstance = Person.get(params.id)
         if (personInstance) {
             try {
+				def abteilungList = Abteilung.list()
+				def funktionList = Funktion.list()
+				def abteilungenToAlter = abteilungList.findAll
+				{
+					Abteilung abteilung ->
+					abteilung.personen.contains(personInstance)
+				}
+				abteilungenToAlter*.removeFromPersonen(personInstance)
+				abteilungenToAlter*.save(flush: true)
+
+				def funktionenToAlter = funktionList.findAll
+				{
+					Funktion funktion ->
+					funktion.personen.contains(personInstance)
+				}
+				funktionenToAlter*.removeFromPersonen(personInstance)
+				funktionenToAlter*.save(flush: true)
+
                 personInstance.delete(flush: true)
-                flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'person.label', default: 'Person'), params.id])}"
+                flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'person.label', default: 'Person'), personInstance.toString()])}"
                 redirect(action: "list")
             }
             catch (org.springframework.dao.DataIntegrityViolationException e) {

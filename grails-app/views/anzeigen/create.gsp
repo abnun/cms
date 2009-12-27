@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
+            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
             <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
         </div>
         <div class="body">
@@ -78,7 +78,7 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: anzeigenInstance, field: 'inhalt', 'errors')}">
                                     %{--<g:textField name="inhalt" value="${anzeigenInstance?.inhalt}" />--}%
-									<g:render template="/ckeditor/editor" model="['inhalt': anzeigenInstance?.inhalt]" />
+									<g:render template="/global/ckeditor/editor" model="['inhalt': anzeigenInstance?.inhalt]" />
                                 </td>
                             </tr>
                         

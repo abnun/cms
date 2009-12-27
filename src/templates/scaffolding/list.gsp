@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="\${resource(dir: '')}">Home</a></span>
+            <span class="menuButton"><a class="home" href="\${createLink(uri: '/')}">Home</a></span>
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
         </div>
         <div class="body">
@@ -42,7 +42,7 @@
                         <%  props.eachWithIndex { p, i ->
                                 cp = domainClass.constrainedProperties[p.name]
                                 if (i == 0) { %>
-                            <td>\${fieldValue(bean: ${propertyName}, field: "${p.name}")}</td>
+                            <td><g:link action="show" id="\${${propertyName}.id}">\${fieldValue(bean: ${propertyName}, field: "${p.name}")}</g:link></td>
                         <%      } else if (i > 0) {//(i < 6) {
                                     if (p.type == Boolean.class || p.type == boolean.class) { %>
                             <td><g:formatBoolean boolean="\${${propertyName}.${p.name}}" /></td>

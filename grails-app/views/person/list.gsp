@@ -9,9 +9,9 @@
     </head>
     <body class="yui-skin-sam">
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
+            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-			<g:render template="/global/admin/menu" />
+			<g:render template="/global/menu/admin" />
         </div>
         <div class="body">
             %{--<h1><g:message code="default.list.label" args="[entityName]" /></h1>--}%
@@ -47,6 +47,7 @@
 
                             <g:sortableColumn property="adresseAnzeigen" title="${message(code: 'person.adresseAnzeigen.label', default: 'Adresse Anzeigen')}" />
 
+							<th>&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -72,6 +73,8 @@
                             <td>${fieldValue(bean: personInstance, field: "email")}</td>
 
                             <td><g:formatBoolean boolean="${personInstance.adresseAnzeigen}" /></td>
+
+							<td><g:link action="edit" id="${personInstance.id}"><g:message code="person.edit" default="Bearbeiten" /></g:link></td>
 
                         </tr>
                     </g:each>

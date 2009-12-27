@@ -217,6 +217,7 @@ class ImportService implements ApplicationContextAware
 				def substring = ""
 
 				tmpPerson = new Person()
+				tmpPerson.adresseAnzeigen = true
 
 				String telefon1String = ""
 
@@ -351,7 +352,7 @@ class ImportService implements ApplicationContextAware
 									{
 										tmpCode = tmpCode.replaceAll('ö', "oe")
 									}
-									Abteilung newAbteilung = new Abteilung(name: value, code: tmpCode)
+									Abteilung newAbteilung = new Abteilung(name: value, code: tmpCode, anzeigeImMenu: true)
 
 									abteilungenForLaterSave << newAbteilung
 

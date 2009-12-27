@@ -9,8 +9,8 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
-            <g:render template="/global/admin/menu" />
+            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
+            <g:render template="/global/menu/admin" />
         </div>
         <div class="body">
             %{--<h1><g:message code="default.create.label" args="[entityName]" /></h1>--}%
@@ -96,6 +96,24 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'email', 'errors')}">
                                     <g:textField name="email" value="${personInstance?.email}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="bild"><g:message code="person.bild.label" default="Bild" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'bild', 'errors')}">
+                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.list()}" optionKey="id" value="${personInstance?.bild?.id}" noSelection="['null': '']" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="steckbrief"><g:message code="person.steckbrief.label" default="Steckbrief" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'steckbrief', 'errors')}">
+                                    <g:select name="steckbrief.id" from="${de.webmpuls.cms.people.Steckbrief.list()}" optionKey="id" value="${personInstance?.steckbrief?.id}" noSelection="['null': '']" />
                                 </td>
                             </tr>
                         

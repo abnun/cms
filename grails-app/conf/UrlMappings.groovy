@@ -9,10 +9,10 @@ class UrlMappings
 				action = 'show'
 			}
 
-		"/admin" {
-			controller = "auth"
-			action = "login"
-			targetUri = "/"
+		"/aktuelles"
+		{
+			controller = "inhalt"
+			action = "aktuelles"
 		}
 
 		"/sponsoren"

@@ -9,8 +9,8 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
-            <g:render template="/global/admin/menu" />
+            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
+            <g:render template="/global/menu/admin" />
         </div>
         <div class="body">
             %{--<h1><g:message code="default.create.label" args="[entityName]" /></h1>--}%
@@ -42,6 +42,15 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'code', 'errors')}">
                                     <g:textField name="code" value="${abteilungInstance?.code}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="anzeigeImMenu"><g:message code="abteilung.anzeigeImMenu.label" default="Anzeige Im Menu" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'anzeigeImMenu', 'errors')}">
+                                    <g:checkBox name="anzeigeImMenu" value="${abteilungInstance?.anzeigeImMenu}" />
                                 </td>
                             </tr>
                         

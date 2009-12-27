@@ -104,6 +104,6 @@ class SponsorController {
 
 	def images =
 	{
-		return [sponsorInstanceList: Sponsor.list([cache: true])]
+		render(view: '/global/menu/sponsoren', model:[sponsorInstanceList: Sponsor.list([cache: true])])
 	}
 }

@@ -59,7 +59,7 @@ class ImportController
 				importService.importExcel(file)
 			}
 
-			redirect(uri: '/')
+			redirect(controller: 'person', action: 'list')
 			return false
 		}
 		redirect(uri: '/')

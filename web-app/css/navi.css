@@ -66,6 +66,7 @@
 	border: 0px solid #FFFFFF;
 	border-top-width: 1px;
 	display: block;
+	margin-left: 3px;
 }
 .unavi a:visited {
 	font-family: Arial, Helvetica, sans-serif;
@@ -83,6 +84,7 @@
 	border: 0px solid #FFFFFF;
 	border-top-width: 1px;
 	display: block;
+	margin-left: 3px;
 }
 .unavi a:hover {
 	font-family: Arial, Helvetica, sans-serif;
@@ -98,6 +100,7 @@
 	border: 0px solid #FFFFFF;
 	border-top-width: 1px;
 	display: block;
+	margin-left: 3px;
 }
 .marker {
 	font-family: Arial, Helvetica, sans-serif;

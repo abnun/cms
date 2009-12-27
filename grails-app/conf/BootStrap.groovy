@@ -177,15 +177,15 @@ class BootStrap
 			}
 		}
 
-		ShiroUser testUser  = ShiroUser.findByUsername(ShiroUser.TEST)
-		if(!testUser)
+		ShiroUser webmasterUser  = ShiroUser.findByUsername(ShiroUser.WEBMASTER)
+		if(!webmasterUser)
 		{
-			testUser = new ShiroUser(username: ShiroUser.TEST, passwordHash: new Sha1Hash("test").toHex())
-			testUser.addToRoles(userRole)
+			webmasterUser = new ShiroUser(username: ShiroUser.WEBMASTER, passwordHash: new Sha1Hash("test").toHex())
+			webmasterUser.addToRoles(userRole)
 
-			if(!testUser.save())
+			if(!webmasterUser.save())
 			{
-				testUser.errors.allErrors.each
+				webmasterUser.errors.allErrors.each
 				{
 					println it
 				}

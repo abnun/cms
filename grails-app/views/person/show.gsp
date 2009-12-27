@@ -9,9 +9,9 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
+            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-			<g:render template="/global/admin/menu" />
+			<g:render template="/global/menu/admin" />
         </div>
         <div class="body">
             %{--<h1><g:message code="default.show.label" args="[entityName]" /></h1>--}%
@@ -82,6 +82,20 @@
                             <td valign="top" class="name"><g:message code="person.email.label" default="Email" /></td>
                             
                             <td valign="top" class="value">${fieldValue(bean: personInstance, field: "email")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="person.bild.label" default="Bild" /></td>
+                            
+                            <td valign="top" class="value"><g:link controller="picture" action="show" id="${personInstance?.bild?.id}">${personInstance?.bild?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="person.steckbrief.label" default="Steckbrief" /></td>
+                            
+                            <td valign="top" class="value"><g:link controller="steckbrief" action="show" id="${personInstance?.steckbrief?.id}">${personInstance?.steckbrief?.encodeAsHTML()}</g:link></td>
                             
                         </tr>
                     

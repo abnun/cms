@@ -99,6 +99,18 @@ class AbteilungController {
                 }
             }
             abteilungInstance.properties = params
+			if (!params.list('mitarbeiterfunktionen'))
+			{
+				abteilungInstance.mitarbeiterfunktionen = []
+			}
+			if (!params.list('personen'))
+			{
+				abteilungInstance.personen = []
+			}
+			if (!params.list('unterabteilungen'))
+			{
+				abteilungInstance.unterabteilungen = []
+			}
             if (!abteilungInstance.hasErrors() && abteilungInstance.save(flush: true)) {
                 flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilungInstance.id])}"
                 redirect(action: "show", id: abteilungInstance.id)
@@ -132,18 +144,8 @@ class AbteilungController {
         }
     }
 
-	def start =
+	def menu =
 	{
-		String name = params.name
-		if(name)
-		{
-			Abteilung abteilung = Abteilung.findByName(name)
-			if(abteilung)
-			{
-//				return[abteilung: abteilung]
-				render("${abteilung.name} - ${abteilung.code}")
-			}
-			re
-		}
+		render(view: '/global/menu/abteilung', model:[abteilungInstanceList: Abteilung.hauptAbteilungen().listOrderByName([cache: true])])
 	}
 }

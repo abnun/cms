@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
+            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
             <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
         </div>
@@ -45,7 +45,7 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: sponsorInstance, field: 'beschreibung', 'errors')}">
                                     %{--<g:textArea name="beschreibung" cols="40" rows="5" value="${sponsorInstance?.beschreibung}" />--}%
-									<g:render template="/ckeditor/editor" model="['inhalt': sponsorInstance?.beschreibung, 'name': 'beschreibung']" />
+									<g:render template="/global/ckeditor/editor" model="['inhalt': sponsorInstance?.beschreibung, 'name': 'beschreibung']" />
                                 </td>
                             </tr>
                         

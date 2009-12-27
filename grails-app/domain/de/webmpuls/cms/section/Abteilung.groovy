@@ -12,6 +12,8 @@ class Abteilung
 	String name
 	String code
 
+	Boolean anzeigeImMenu = false
+
 	static mapping =
 	{
 		//mitarbeiterfunktionen(sort: 'name')
@@ -33,7 +35,24 @@ class Abteilung
 			println("validation for '$v' evaluates to $isValid")
 			return isValid
 		})
+		anzeigeImMenu(nullable: true)
     }
+
+	static namedQueries =
+	{
+   		hauptAbteilungen
+		{
+           eq('anzeigeImMenu', true)
+       	}
+	}
+
+	def beforeUpdate()
+	{
+		if(unterabteilungen && !unterabteilungen.isEmpty())
+		{
+			anzeigeImMenu = true
+		}
+	}
 
 	def String toString()
 	{

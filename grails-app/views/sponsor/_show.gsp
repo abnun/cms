@@ -12,7 +12,7 @@
 	<tr>
 		<td>
 			<g:if test="${sponsor?.bild}">
-				<img height="80" width="170" border="1" src="${wm_photo_album.pathToImage(picture: sponsor?.bild)}"/>
+				<g:if test="${sponsor?.verlinkung && !sponsor?.verlinkung?.contains('@')}"><a href="javascript: void(0);" onclick="confirmTargetLink('${sponsor?.verlinkung}');" ></g:if><img height="80" width="170" style="border: 1px solid black;" src="${wm_photo_album.pathToImage(picture: sponsor?.bild)}"/><g:if test="${sponsor?.verlinkung && !sponsor?.verlinkung?.contains('@')}"></a></g:if>
 			</g:if>
 			<g:else>
 				&nbsp;
@@ -29,7 +29,13 @@
 					${sponsor?.beschreibung}
 				</g:if>
 				<g:if test="${sponsor?.verlinkung}">
-					<a target="_blank" href="http://${sponsor?.verlinkung}">${sponsor?.verlinkung}</a><br/>
+					<g:if test="${!sponsor?.verlinkung?.contains('@')}">
+						<a href="javascript: void(0);" onclick="confirmTargetLink('${sponsor?.verlinkung}');" >${sponsor?.verlinkung}</a>
+					</g:if>
+					<g:else>
+						<a href="mailto:${sponsor?.verlinkung}">${sponsor?.verlinkung}</a>
+					</g:else>
+					<br/>
 				</g:if>
 				<shiro:hasRole name="${ShiroRole.BENUTZER}">
 					<span>

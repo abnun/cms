@@ -1,4 +1,5 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<%@ page import="de.webmpuls.cms.people.ShiroRole" %>
+
 <html><!-- InstanceBegin template="/Templates/svlmaster.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 	<!-- TemplateBeginEditable name="doctitle" -->
@@ -7,32 +8,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<link rel="SHORTCUT ICON" href="${resource(dir: 'bilder', file: 'svl.ico')}">
 	<link rel="shortcut icon" type="image/x-icon" href="${resource(dir: 'bilder', file: 'svl.ico')}"/>
-	<script language="JavaScript" type="text/JavaScript">
-		<!--
-		function MM_reloadPage(init) {  //reloads the window if Nav4 resized
-		  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
-		    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
-		  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
-		}
-		MM_reloadPage(true);
-		
-		function MM_findObj(n, d) { //v4.01
-		  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-		    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-		  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-		  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-		  if(!x && d.getElementById) x=d.getElementById(n); return x;
-		}
-		
-		function MM_showHideLayers() { //v6.0
-		  var i,p,v,obj,args=MM_showHideLayers.arguments;
-		  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
-		    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-		    obj.visibility=v; }
-		}
-		//-->
-	</script>
-<!-- InstanceParam name="oben" type="boolean" value="true" --> <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --> 
+<!-- InstanceParam name="oben" type="boolean" value="true" --> <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 <!-- InstanceParam name="OptionalRegion1" type="boolean" value="true" -->
 	<link href="${resource(dir: 'css', file: 'navi.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'rubrik.css')}" rel="stylesheet" type="text/css">
@@ -44,26 +20,39 @@
 	<link href="${resource(dir: 'css', file: 'buttons.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'dialog.css')}" rel="stylesheet" type="text/css">
 	<link href="${resource(dir: 'css', file: 'boxes.css')}" rel="stylesheet" type="text/css"/>
+
+	<style type="text/css">
+	.fadein {
+		position: relative;
+		width: 110px;
+		height: 51px;
+	}
+
+	.fadein img {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	</style>
+
+	<shiro:hasRole name="${ShiroRole.BENUTZER}">
+		<gui:resources components="['tabView']"/>
+		<ckeditor:resources />
+	</shiro:hasRole>
+
 	<g:javascript library="jquery" />
-	<wm_photo_album:gallery_resources />
-	<ckeditor:resources />
-	%{--<link href="${resource(dir: 'css', file: 'main.css')}" rel="stylesheet" type="text/css">--}%
-	%{--<link href="${resource(dir: 'css', file: 'superfish.css')}" rel="stylesheet" type="text/css">
-	<link href="${resource(dir: 'css', file: 'superfish-vertical.css')}" rel="stylesheet" type="text/css">
-	<g:javascript library="jquery" />
-	<cms:cmsHead />
-	<script type="text/javascript" src="${resource(dir: 'js/jquery', file: 'superfish.js')}"></script>--}%
-	<gui:resources components="['richEditor','datePicker', 'tabView']"/>
+
 	<g:layoutHead />
 </head>
 
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <table height="100%" border="0" align="center" cellpadding="0" cellspacing="1" bordercolor="#FFFFFF">
   <tr>
-    <td width="110" height="87" align="center" valign="middle" bgcolor="#D2DFFF"><a name="oben"></a><a href="${resource(dir: '')}" alt="Startseite"><img src="${resource(dir: 'bilder/divers', file: 'logo.jpg')}" name="svllogo" width="110" height="87" id="svllogo" border="0" /></a></td>
+    <td width="110" height="87" align="center" valign="middle" bgcolor="#D2DFFF"><a name="oben"></a><a href="${createLink(controller: 'inhalt', action: 'aktuelles')}" alt="Startseite"><img src="${resource(dir: 'bilder/divers', file: 'logo.jpg')}" name="svllogo" width="110" height="87" id="svllogo" border="0" /></a></td>
     <td width="10" height="87" bgcolor="#97C0EA">&nbsp;</td>
     <td width="100%" height="87" align="left" valign="top" bgcolor="#D2DFFF"><!-- InstanceBeginEditable name="kopf" -->
       <p><img src="${resource(dir: 'bilder/divers', file: 'allgkopf.jpg')}" width="690" height="88"></p>
+      %{--<p><img src="${resource(dir: 'bilder/' + actionName ?: 'divers', file: actionName + '.jpg' ?: 'allgkopf.jpg')}" width="690" height="88"></p>--}%
       <!-- InstanceEndEditable --></td>
   </tr>
   <tr>
@@ -91,7 +80,7 @@
           <td height="10" valign="middle" class="sparte1">SVL aktiv</td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../index.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','show')">Aktuelles</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="${createLink(controller: 'inhalt', action: 'aktuelles')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','show')">Aktuelles</a></span></td>
         </tr>
         <tr>
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','show','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Veranstaltungen</a></span></td>
@@ -113,33 +102,6 @@
         </tr>
         <tr>
           <td valign="middle" class="sparte2">
-			  <jq:jquery>
-				  $(function(){
-					   $('.fadein img:gt(0)').hide();
-					   setInterval(function() {
-					   $('.fadein :first-child').fadeOut(2750)
-					   .next('img').fadeIn(2750)
-					   .end().appendTo('.fadein');},
-					   5000);
-				   });
-				  $("#sponsor:visible").click(function () {
-						var link = $("#sponsor:visible").attr("rel");
-						window.open('http://' + link, "Neues Fenster", "dependent=no,hotkeys=yes,location=yes,menubar=yes,resizable=yes,scrollbars=yes,status=yes,toolbar=yes");
-					});
-			  </jq:jquery>
-			  <style type="text/css">
-			  .fadein {
-				  position: relative;
-				  width: 110px;
-				  height: 51px;
-			  }
-
-			  .fadein img {
-				  position: absolute;
-				  left: 0;
-				  top: 0;
-			  }
-			  </style>
 			  <div class="fadein">
 				  <g:include controller="sponsor" action="images" />
 			  </div>
@@ -165,8 +127,17 @@
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/impressum.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','show','aktuell','','hide')">Impressum</a></span></td>
         </tr>
         <tr>
-          <td valign="middle">&nbsp;</td>
+          <td width="110" height="20" valign="middle">&nbsp;</td>
         </tr>
+		<tr>
+          <td width="110" height="20" valign="middle">&nbsp;</td>
+        </tr>
+		<tr>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/impressum.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','show','aktuell','','hide')">Impressum</a></span></td>
+        </tr>
+		<tr>
+		  <td width="110" height="20" valign="middle">&nbsp;</td>
+		</tr>
         <tr>
           <td width="110" height="100%" valign="middle"><font color="#000033" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
         </tr>
@@ -210,71 +181,7 @@
 </div>
 
 <div id="abteilungen" style="position:absolute; visibility:hidden; left:112px; top:199px; width:114px; z-index:11">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="4" bgcolor="#1760A8" class="marker"> </td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/badminton.htm">Badminton</a></td>
-    </tr>
-    <tr>
-      <td width="4" rowspan="18">&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/basketball.htm">Basketball</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/ahfussball.htm">Fu&szlig;ball
-        - AH</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/fuba_frauen.htm">Fu&szlig;ball
-        - Frauen</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/fussball.htm">Fu&szlig;ball
-        - Herren</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/jufu.htm">Fu&szlig;ball
-        - Jugend</a></td>
-    </tr>
-    <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/handball.htm">Handball</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/karate.htm">Karate</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/leichtathletik.htm">Leichtathletik</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/turnen_pg.htm">Pluspunkt
-        Gesundheit</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/radsport.htm">Radsport</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/reiten.htm">Reiten</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/schach.htm">Schach</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/ski.htm">Ski</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/tanzen.htm">Tanzen</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/tennis.htm">Tennis</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/ttennis.htm">Tischtennis</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/turnen.htm">Turnen</a></td>
-    </tr>
-    <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/volleyball.htm">Volleyball</a></td>
-    </tr>
-  </table>
+  <g:include controller="abteilung" action="menu" />
 </div>
 
 <div id="wegrollen" style="position:absolute; visibility:hidden; left:111px; top:135px; width:200px; height:526px; z-index:1">
@@ -456,6 +363,8 @@
     </tr>
   </table>
 </div>
+
+	<g:render template="/global/javascript/globalJS" />
 </body>
 <!-- InstanceEnd -->
 </html>

@@ -1,17 +1,67 @@
 
-<%@ page import="de.webmpuls.cms.people.Person" %>
+<%@ page import="de.webmpuls.photo_album.Album; de.webmpuls.cms.media.MediaUtils; de.webmpuls.cms.people.Person" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
+		<g:javascript base="${resource(dir: '/js/jquery/')}" src="jquery.blockUI.js" />
         <g:set var="entityName" value="${message(code: 'person.label', default: 'Person')}" />
         %{--<title><g:message code="default.edit.label" args="[entityName]" /></title>--}%
+		<wm_photo_album:uploadify_resources />
+
+		<%
+			Album tmpAlbum = de.webmpuls.photo_album.Album.withName(MediaUtils.ALBUM_PERSONEN).list().first()
+			String albumId = tmpAlbum.id
+
+			String albumDate = ""
+			if(tmpAlbum) {
+				albumDate = formatDate(date: tmpAlbum.dateCreated, format: 'ddMMyyyy')
+			}
+
+		%>
+
+		<jq:jquery>
+			// change message border
+			$.blockUI.defaults.css.border = '2px solid #1760a8'; 
+
+			// make fadeOut effect shorter
+			$.blockUI.defaults.fadeOut = 100;
+
+			$("#bildUpload").click(function () {
+		  		$.blockUI({ message: $('#bildUploadContent') });
+		  		$('.blockOverlay').attr('title','Klicken um den Dialog zu schließen.').click($.unblockUI);
+			});
+
+			$('#albumFotos').uploadify({
+				'uploader'  		: '${resource(dir: '/js/uploadify', file: 'uploadify.swf', plugin: 'photo-album')}',
+				'script'    		: '${createLink(controller: 'picture', action: 'uploadPhotos')}',
+				'cancelImg' 		: '${resource(dir: '/images', file: 'cancel.png', plugin: 'photo-album')}',
+				'auto'      		: false,
+				'fileDataName'		: 'fotos',
+				'multi'				: false,
+				'method'			: 'POST',
+				'buttonText'		: 'Bild auswaehlen',
+				'fileDesc'			: 'Erlaubte Datei-Typen',
+				'fileExt'			: '*.jpg;*.gif;*.JPG;*.jpeg;*.JPEG;*.GIF;*.png;*.PNG;',
+				'folder'    		: '/${de.webmpuls.photo_album.util.MediaUtils.DEFAULT_FOLDER}_${tmpAlbum.toString()}_${albumDate}',
+				%{--'onComplete'		: function (evt, queueID, fileObj, response, data) { alert("Response: "+response);},--}%
+				'onAllComplete'	: function(event, uploadObj) { alert(uploadObj.filesUploaded + ' Bild(er) hochgeladen. Anzahl der Fehler: ' + uploadObj.errors); $.unblockUI(); location.reload();},
+				'onError'			: function(event, ID, fileObj, errorObj) { alert("Fehler: "+errorObj.info);}
+			});
+
+			$('#startUpload').click(function(){
+				var queryString = { 'album.id': '${albumId}', 'rotate': $('#rotate').val() };
+				$('#albumFotos').uploadifySettings('scriptData', queryString);
+				$('#albumFotos').uploadifyUpload();
+			 });
+
+		</jq:jquery>
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
+            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-			<g:render template="/global/admin/menu" />
+			<g:render template="/global/menu/admin" />
         </div>
         <div class="body">
             %{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
@@ -104,10 +154,33 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="bild"><g:message code="person.bild.label" default="Bild" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'bild', 'errors')}">
+                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.withAlbumName(MediaUtils.ALBUM_PERSONEN).list()}" optionKey="id" value="${personInstance?.bild?.id}" noSelection="['null': '']" />
+									&nbsp;<span><a href="javascript: void(0);" id="bildUpload">Bild hochladen</a></span>
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="steckbrief"><g:message code="person.steckbrief.label" default="Steckbrief" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'steckbrief', 'errors')}">
+                                    <g:select name="steckbrief.id" from="${de.webmpuls.cms.people.Steckbrief.list()}" optionKey="id" value="${personInstance?.steckbrief?.id}" noSelection="['null': '']" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="abteilungen"><g:message code="person.abteilungen.label" default="Abteilungen" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'abteilungen', 'errors')}">
-                                    
+									<ul>
+										<g:each in="${personInstance.abteilungen}" var="a">
+											<li><g:link controller="abteilung" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></li>
+										</g:each>
+									</ul>
                                 </td>
                             </tr>
                         
@@ -138,5 +211,8 @@
                 </div>
             </g:form>
         </div>
+		<div style="display: none;" id="bildUploadContent">
+			<g:render template="/global/bilder/upload" model="['albumId': albumId]" />
+		</div>
     </body>
 </html>
