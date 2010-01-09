@@ -16,4 +16,11 @@ class InhaltController
 		def terminList = Termin.letzteTermine().listOrderByDatum()
 		return [anzeigenList: anzeigenList, newsList: newsList, terminList: terminList]
 	}
+
+	def sitzungen =
+	{
+		def terminList = Termin.letzteTermine().listOrderByDatum()
+
+		return [terminList:terminList]
+	}
 }

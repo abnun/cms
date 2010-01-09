@@ -1,6 +1,8 @@
 package de.webmpuls.cms.people
 
 import de.webmpuls.cms.section.Abteilung
+import de.webmpuls.photo_album.Album
+import de.webmpuls.cms.media.MediaUtils
 
 class PersonController {
 
@@ -50,7 +52,13 @@ class PersonController {
             redirect(action: "list")
         }
         else {
-            return [personInstance: personInstance]
+			Album tmpAlbum = de.webmpuls.photo_album.Album.withName(MediaUtils.ALBUM_PERSONEN).list().first()
+
+			String albumDate = ""
+			if(tmpAlbum) {
+				albumDate = formatDate(date: tmpAlbum.dateCreated, format: 'ddMMyyyy')
+			}
+            return [personInstance: personInstance, album: tmpAlbum, albumDate: albumDate]
         }
     }
 

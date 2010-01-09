@@ -56,7 +56,7 @@
           <td height="10" valign="middle" class="sparte1">SVL aktiv</td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../index.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','show')">Aktuelles</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="index.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','show')">Aktuelles</a></span></td>
         </tr>
         <tr>
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','show','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Veranstaltungen</a></span></td>
@@ -68,10 +68,10 @@
           <td width="110" height="20" valign="middle"><span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','show','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Sportanlagen</a></span></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/mitglied.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','show','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Mitgliedschaft</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="sites/mitglied.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','show','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Mitgliedschaft</a></span></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/sponsoren.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','show','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Sponsoren</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="sites/sponsoren.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','show','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Sponsoren</a></span></td>
         </tr>
         <tr>
           <td width="110" height="20" valign="middle">&nbsp; </td>
@@ -80,8 +80,8 @@
           <td height="10" valign="middle" class="sparte2">&nbsp;</td>
         </tr>
         <tr>
-          <td height="10" valign="middle" class="sparte2"><a href="../sites/walking.htm"><img src="${resource(dir: 'bilder/walk', file: 'wt_symbol.gif')}" width="110" height="109" border="0"></a><br>
-            <a href="../sites/walking.htm"><img src="${resource(dir: 'bilder/walk', file: 'wt_text.gif')}" width="110" height="28" border="0"></a></td>
+          <td height="10" valign="middle" class="sparte2"><a href="sites/walking.htm"><img src="${resource(dir: 'bilder/walk', file: 'wt_symbol.gif')}" width="110" height="109" border="0"></a><br>
+            <a href="sites/walking.htm"><img src="${resource(dir: 'bilder/walk', file: 'wt_text.gif')}" width="110" height="28" border="0"></a></td>
         </tr>
         <tr>
           <td height="10" valign="middle" class="sparte2">&nbsp;</td>
@@ -98,7 +98,7 @@
           <td width="110" height="20" valign="middle"><p class="navi"><a href="#" class="navi" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','show','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Organe</a></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/sitzungen.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','show','impressum','','hide','aktuell','','hide')">Sitzungen</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="sites/sitzungen.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','show','impressum','','hide','aktuell','','hide')">Sitzungen</a></span></td>
         </tr>
         <tr>
           <td width="110" height="21" valign="middle"> <span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','show','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Themen</a></span></td>
@@ -108,7 +108,7 @@
             _ </font></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/impressum.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','show','aktuell','','hide')">Impressum</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="sites/impressum.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','show','aktuell','','hide')">Impressum</a></span></td>
         </tr>
         <tr>
           <td width="110" height="16" valign="middle" class="sparte2"><font border="#FFFFFF" border-style="solid" border-top-width="1px border-bottom-width="1px" background-color="#D2E9FF" height="20px" width="110px">&nbsp;
@@ -188,19 +188,19 @@
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td height="20" bgcolor="#1760A8" class="marker">&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/veranstaltungen/veranstaltung_08.htm">2008</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/veranstaltungen/veranstaltung_08.htm">2008</a></td>
     </tr>
     <tr>
       <td width="4" height="20" class="marker">&nbsp; </td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="../sites/veranstaltungen/veranstaltung_07.htm">2007</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="sites/veranstaltungen/veranstaltung_07.htm">2007</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/veranstaltungen/veranstaltung_06.htm">2006</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/veranstaltungen/veranstaltung_06.htm">2006</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/veranstaltungen/eranstaltung_05.htm">2005</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/veranstaltungen/eranstaltung_05.htm">2005</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
@@ -213,60 +213,60 @@
   <table width="100%" border="0" cellpadding="0" cellspacing="0">
     <tr>
       <td width="4" bgcolor="#1760A8" class="marker"> </td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/badminton.htm">Badminton</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/badminton.htm">Badminton</a></td>
     </tr>
     <tr>
       <td width="4" rowspan="17">&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/basketball.htm">Basketball</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/basketball.htm">Basketball</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/fussball.htm">Fu&szlig;ball</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/fussball.htm">Fu&szlig;ball</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/ahfussball.htm">Fu&szlig;ball
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/ahfussball.htm">Fu&szlig;ball
         AH</a></td>
     </tr>
-    <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/handball.htm">Handball</a></td>
+    <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/handball.htm">Handball</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/jufu.htm">Jugendfu&szlig;ball</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/jufu.htm">Jugendfu&szlig;ball</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/karate.htm">Karate</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/karate.htm">Karate</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/leichtathletik.htm">Leichtathletik</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/leichtathletik.htm">Leichtathletik</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/turnen_pg.htm">Pluspunkt
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/turnen_pg.htm">Pluspunkt
         Gesundheit</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/radsport.htm">Radsport</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/radsport.htm">Radsport</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/reiten.htm">Reiten</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/reiten.htm">Reiten</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/schach.htm">Schach</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/schach.htm">Schach</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/ski.htm">Ski</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/ski.htm">Ski</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/tanzen.htm">Tanzen</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/tanzen.htm">Tanzen</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/tennis.htm">Tennis</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/tennis.htm">Tennis</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/ttennis.htm">Tischtennis</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/ttennis.htm">Tischtennis</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/turnen.htm">Turnen</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/turnen.htm">Turnen</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/abteilungen/volleyball.htm">Volleyball</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/abteilungen/volleyball.htm">Volleyball</a></td>
     </tr>
   </table>
 </div>
@@ -281,43 +281,43 @@
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="../sites/anlagen/uebersicht.htm">&Uuml;bersichtsplan</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="sites/anlagen/uebersicht.htm">&Uuml;bersichtsplan</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="../sites/anlagen/eichbott_beachfeld.htm" >Beachfeld</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="sites/anlagen/eichbott_beachfeld.htm" >Beachfeld</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="../sites/anlagen/eichbott_halle.htm" >Eichbotthalle</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="sites/anlagen/eichbott_halle.htm" >Eichbotthalle</a></td>
     </tr>
     <tr>
       <td rowspan="9">&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/festgelaende.htm">Festhalle/Festplatz</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/anlagen/festgelaende.htm">Festhalle/Festplatz</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/eichbott_freibad.htm">Freibad</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/anlagen/eichbott_freibad.htm">Freibad</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_sportheim.htm">Gymnastikraum</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/anlagen/heuchelberg_sportheim.htm">Gymnastikraum</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/eichbott_hallenbad.htm">Hallenbad</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/anlagen/eichbott_hallenbad.htm">Hallenbad</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_stadion.htm">Heuchelbergstadion</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/anlagen/heuchelberg_stadion.htm">Heuchelbergstadion</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_sportheim.htm">SVL-Sportheim</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/anlagen/heuchelberg_sportheim.htm">SVL-Sportheim</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_tennis.htm">Tennisanlage</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/anlagen/heuchelberg_tennis.htm">Tennisanlage</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_trimm.htm">Trimm-Dich-Pfad</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/anlagen/heuchelberg_trimm.htm">Trimm-Dich-Pfad</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_reiten.htm">Reitanlage</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/anlagen/heuchelberg_reiten.htm">Reitanlage</a></td>
     </tr>
   </table>
 </div>
@@ -373,15 +373,15 @@
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/organe/vorstand.htm">Vorstand</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/organe/vorstand.htm">Vorstand</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/organe/jvorstand.htm">Jugendvorstand</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/organe/jvorstand.htm">Jugendvorstand</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/organe/delegierte.htm">Delegierte</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/organe/delegierte.htm">Delegierte</a></td>
     </tr>
   </table>
 </div>
@@ -389,11 +389,11 @@
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="../sites/themen/th_zkw.htm">Zukunftswerkstatt</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="sites/themen/th_zkw.htm">Zukunftswerkstatt</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/themen/th_streik_05.htm">Streik
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="sites/themen/th_streik_05.htm">Streik
         2005</a></td>
     </tr>
     <tr>

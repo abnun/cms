@@ -1,11 +1,12 @@
 
-<%@ page import="de.webmpuls.cms.section.Sponsor" %>
+<%@ page import="de.webmpuls.cms.media.MediaUtils; de.webmpuls.cms.section.Sponsor" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'sponsor.label', default: 'Sponsor')}" />
         %{--<title><g:message code="default.edit.label" args="[entityName]" /></title>--}%
+		<g:render template="/global/javascript/bildUploadJS" model="['album': album, 'albumDate': albumDate]" />
     </head>
     <body>
         <div class="nav">
@@ -36,6 +37,7 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: sponsorInstance, field: 'name', 'errors')}">
                                     <g:textField name="name" value="${sponsorInstance?.name}" />
+									<g:if test="${sponsorInstance.bild}">&nbsp;<span><img width="110" border="0" src="${wm_photo_album.pathToImage(picture: sponsorInstance.bild)}"/></span></g:if>
                                 </td>
                             </tr>
                         
@@ -63,8 +65,9 @@
                                   <label for="bild"><g:message code="sponsor.bild.label" default="Bild" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: sponsorInstance, field: 'bild', 'errors')}">
-                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.listOrderByBaseName()}" optionKey="id" value="${sponsorInstance?.bild?.id}"  />
-                                </td>
+                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.withAlbumName(MediaUtils.ALBUM_SPONSOREN).listOrderByBaseName()}" optionKey="id" value="${sponsorInstance?.bild?.id}" noSelection="['null': '']" />
+									&nbsp;<span><a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Bild-Upload Dialog öffnen</a></span>
+								</td>
                             </tr>
                         
                         </tbody>
@@ -76,5 +79,7 @@
                 </div>
             </g:form>
         </div>
+
+		<g:render template="/global/bilder/upload" model="['albumId': album.id]" />
     </body>
 </html>

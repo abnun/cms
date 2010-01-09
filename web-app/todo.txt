@@ -1,0 +1,17 @@
+Unterabteiungen:
+
+Badminton: Team 1 - 6
+
+Fussball-Frauen: Team 1 - 2 (mit Leerauswahl)
+
+Fussball-Herren: 1./2.Mannschaft
+
+Jugendfussball: A - F Junioren/Juniorinnen, Bambini
+
+Handball: Männer 1 / Männer 2, Frauen 1/2, A-/B-/C-/D-/E-Juniorinnen/Junioren, Minis (Böckingen), Minis Leingarten)
+
+Tischtennis: U-18 (1./2./3. Mannschaft), Herren (1./2./3. Mannschaft), Senioren
+
+Volleyball: U-12, U-13, U-16, Damen, Freizeit 1/2
+
+Abteilungen mit Person- und Funktionsfeld (autocomplete)

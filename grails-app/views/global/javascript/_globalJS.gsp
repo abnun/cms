@@ -30,10 +30,10 @@
 	function confirmTargetLink(link)
 	{
 		link = 'http://' + link;
-		if (confirm('${message(code: 'confirm.jump.to.target.page1')}\n\n\"' + link + '\"\n\n${message(code: 'confirm.jump.to.target.page2')}'))
-		{
+		//if (confirm('${message(code: 'confirm.jump.to.target.page1')}\n\n\"' + link + '\"\n\n${message(code: 'confirm.jump.to.target.page2')}'))
+		//{
 			window.open(link, "Neues_Fenster", "dependent=no,hotkeys=yes,location=yes,menubar=yes,resizable=yes,scrollbars=yes,status=yes,toolbar=yes");
-		}
+		//}
 	}
 </script>
 <jq:jquery>

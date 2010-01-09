@@ -23,7 +23,7 @@
 					</table>
 
 			  		<!-- Terminvorschau -->
-			  		<g:render template="/inhalt/start/termine" />
+			  		<g:render template="/inhalt/start/termine" model="[]" />
 				</td>
 			</tr>
 			<tr>

@@ -44,7 +44,25 @@
                                     <g:textArea name="inhalt" cols="40" rows="5" value="${terminInstance?.inhalt}" />
                                 </td>
                             </tr>
-                        
+
+							<tr class="prop">
+								<td valign="top" class="name">
+									<label for="ort"><g:message code="termin.ort.label" default="Ort"/></label>
+								</td>
+								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'ort', 'errors')}">
+									<g:textField name="ort" value="${terminInstance?.ort}" />
+								</td>
+							</tr>
+
+							<tr class="prop">
+								<td valign="top" class="name">
+									<label for="uhrzeit"><g:message code="termin.uhrzeit.label" default="Uhrzeit"/></label>
+								</td>
+								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'uhrzeit', 'errors')}">
+									<g:textField name="uhrzeit" value="${terminInstance?.uhrzeit}" />
+								</td>
+							</tr>
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="findetStatt"><g:message code="termin.findetStatt.label" default="Findet Statt" /></label>

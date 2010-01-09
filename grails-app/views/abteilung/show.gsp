@@ -17,7 +17,7 @@
 								<tr>
 									<td></td>
 									<td><span class="headline_dunkel">F-Junioren (&acute;01-&acute;02)</span></td>
-									<td><img src="../bilder/divers/trenn.gif" width="1" height="26"></td>
+									<td><img src="bilder/divers/trenn.gif" width="1" height="26"></td>
 									<td class="copy">Landesstaffel 1 Bezirk Nord</td>
 								</tr>
 							</table>
@@ -42,7 +42,7 @@
 						<td colspan="2" valign="top" class="copy">
 							<table border="0" cellpadding="0" cellspacing="0">
 								<tr>
-									<td width="30"><img src="../bilder/test/arrow_down.jpg" width="18" height="14"></td>
+									<td width="30"><img src="bilder/test/arrow_down.jpg" width="18" height="14"></td>
 									<td><span class="headline_dunkel">F1:</span><span class="headline">
 										Spieltag in Stetten</span></td>
 									<td width="34">&nbsp;</td>
@@ -92,7 +92,7 @@
 											<tr>
 												<td valign="bottom" bordercolor="#999999" class="copy"><p>Bild
 												1 von 2</p></td>
-												<td valign="bottom" bordercolor="#999999" class="copy"><div align="right"><img src="../bilder/test/icon_zoom.jpg" width="16" height="16"></div></td>
+												<td valign="bottom" bordercolor="#999999" class="copy"><div align="right"><img src="bilder/test/icon_zoom.jpg" width="16" height="16"></div></td>
 											</tr>
 										</table></td>
 								</tr>
@@ -105,7 +105,7 @@
 						<td colspan="2" valign="top" class="copy">
 							<table border="0" cellpadding="0" cellspacing="0">
 								<tr>
-									<td width="30"><img src="../bilder/test/arrow_right.jpg" width="18" height="14"></td>
+									<td width="30"><img src="bilder/test/arrow_right.jpg" width="18" height="14"></td>
 									<td width="394"><span class="headline_dunkel">F2:</span><span class="headline">
 										Spieltag in Stetten</span></td>
 									<td width="47">&nbsp;</td>
@@ -126,7 +126,7 @@
 						<td colspan="2" valign="top" class="copy">
 							<table border="0" cellpadding="0" cellspacing="0">
 								<tr>
-									<td width="30"><img src="../bilder/test/arrow_right.jpg" width="18" height="14"></td>
+									<td width="30"><img src="bilder/test/arrow_right.jpg" width="18" height="14"></td>
 									<td width="394"><span class="headline_dunkel">F3:</span><span class="headline">
 										Spieltag in Stetten</span></td>
 									<td width="47">&nbsp;</td>
@@ -147,7 +147,7 @@
 						<td colspan="2" valign="top" class="copy">
 							<table border="0" cellpadding="0" cellspacing="0">
 								<tr>
-									<td width="30"><img src="../bilder/test/arrow_right.jpg" width="18" height="14"></td>
+									<td width="30"><img src="bilder/test/arrow_right.jpg" width="18" height="14"></td>
 									<td width="394"><span class="headline_dunkel">F1:</span><span class="headline">
 										Spieltag in Stetten</span></td>
 									<td width="47">&nbsp;</td>
@@ -181,7 +181,7 @@
 						<g:render template="/global/section/head" model="[head: abteilungsLeiter, section: abteilungInstance]"/>
 					</p>
 				</g:each>
-				<p><img src="../bilder/test/box_training.png" width="127" height="91">
+				<p><img src="bilder/test/box_training.png" width="127" height="91">
 				</p>
 				<p>&nbsp;</p>
 				<!-- InstanceEndEditable --></td>

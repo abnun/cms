@@ -10,7 +10,7 @@
 </jq:jquery>
 <table cellspacing="0">
 	<tr>
-		<td>
+		<td valign="top">
 			<g:if test="${sponsor?.bild}">
 				<g:if test="${sponsor?.verlinkung && !sponsor?.verlinkung?.contains('@')}"><a href="javascript: void(0);" onclick="confirmTargetLink('${sponsor?.verlinkung}');" ></g:if><img height="80" width="170" style="border: 1px solid black;" src="${wm_photo_album.pathToImage(picture: sponsor?.bild)}"/><g:if test="${sponsor?.verlinkung && !sponsor?.verlinkung?.contains('@')}"></a></g:if>
 			</g:if>

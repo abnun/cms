@@ -22,7 +22,7 @@
 						<g:if test="${i % 3 == 0}">
 							<tr>
 						</g:if>
-						<td>
+						<td valign="top">
 							<g:render template="show" model="['sponsor': sponsor]"/>
 						</td>
 						<g:if test="${i > 1 && i % 3 == 0}">						

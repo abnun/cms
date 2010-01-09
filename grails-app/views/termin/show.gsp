@@ -42,7 +42,17 @@
                             <td valign="top" class="value">${fieldValue(bean: terminInstance, field: "inhalt")}</td>
                             
                         </tr>
-                    
+
+						<tr class="prop">
+							<td valign="top" class="name"><g:message code="termin.ort.label" default="Ort"/></td>
+							<td valign="top" class="value">${fieldValue(bean: terminInstance, field: "ort")}</td>
+						</tr>
+
+						<tr class="prop">
+							<td valign="top" class="name"><g:message code="termin.uhrzeit.label" default="Uhrzeit"/></td>
+							<td valign="top" class="value">${fieldValue(bean: terminInstance, field: "uhrzeit")}</td>
+						</tr>
+
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="termin.findetStatt.label" default="Findet Statt" /></td>
                             

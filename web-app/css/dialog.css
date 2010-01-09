@@ -2,13 +2,15 @@
 
 .dialog table {
     padding: 5px 0;
+	font-size: 13px;
+	font-family: sans-serif;
 }
 
 .prop {
     padding: 5px;
 }
 .prop .name {
-    text-align: left;
+    text-align: right;
     width: 15%;
     white-space: nowrap;
 }

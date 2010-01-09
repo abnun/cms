@@ -98,6 +98,7 @@
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_fin.htm" charset="UTF-8" />
   </component>
   <component name="IdProvider" IDEtalkID="9690374FBD9CF74968993057E8D04663" />
   <component name="InspectionProjectProfileManager">

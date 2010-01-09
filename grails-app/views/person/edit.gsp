@@ -4,58 +4,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
-		<g:javascript base="${resource(dir: '/js/jquery/')}" src="jquery.blockUI.js" />
         <g:set var="entityName" value="${message(code: 'person.label', default: 'Person')}" />
         %{--<title><g:message code="default.edit.label" args="[entityName]" /></title>--}%
-		<wm_photo_album:uploadify_resources />
-
-		<%
-			Album tmpAlbum = de.webmpuls.photo_album.Album.withName(MediaUtils.ALBUM_PERSONEN).list().first()
-			String albumId = tmpAlbum.id
-
-			String albumDate = ""
-			if(tmpAlbum) {
-				albumDate = formatDate(date: tmpAlbum.dateCreated, format: 'ddMMyyyy')
-			}
-
-		%>
-
-		<jq:jquery>
-			// change message border
-			$.blockUI.defaults.css.border = '2px solid #1760a8'; 
-
-			// make fadeOut effect shorter
-			$.blockUI.defaults.fadeOut = 100;
-
-			$("#bildUpload").click(function () {
-		  		$.blockUI({ message: $('#bildUploadContent') });
-		  		$('.blockOverlay').attr('title','Klicken um den Dialog zu schließen.').click($.unblockUI);
-			});
-
-			$('#albumFotos').uploadify({
-				'uploader'  		: '${resource(dir: '/js/uploadify', file: 'uploadify.swf', plugin: 'photo-album')}',
-				'script'    		: '${createLink(controller: 'picture', action: 'uploadPhotos')}',
-				'cancelImg' 		: '${resource(dir: '/images', file: 'cancel.png', plugin: 'photo-album')}',
-				'auto'      		: false,
-				'fileDataName'		: 'fotos',
-				'multi'				: false,
-				'method'			: 'POST',
-				'buttonText'		: 'Bild auswaehlen',
-				'fileDesc'			: 'Erlaubte Datei-Typen',
-				'fileExt'			: '*.jpg;*.gif;*.JPG;*.jpeg;*.JPEG;*.GIF;*.png;*.PNG;',
-				'folder'    		: '/${de.webmpuls.photo_album.util.MediaUtils.DEFAULT_FOLDER}_${tmpAlbum.toString()}_${albumDate}',
-				%{--'onComplete'		: function (evt, queueID, fileObj, response, data) { alert("Response: "+response);},--}%
-				'onAllComplete'	: function(event, uploadObj) { alert(uploadObj.filesUploaded + ' Bild(er) hochgeladen. Anzahl der Fehler: ' + uploadObj.errors); $.unblockUI(); location.reload();},
-				'onError'			: function(event, ID, fileObj, errorObj) { alert("Fehler: "+errorObj.info);}
-			});
-
-			$('#startUpload').click(function(){
-				var queryString = { 'album.id': '${albumId}', 'rotate': $('#rotate').val() };
-				$('#albumFotos').uploadifySettings('scriptData', queryString);
-				$('#albumFotos').uploadifyUpload();
-			 });
-
-		</jq:jquery>
+		<g:render template="/global/javascript/bildUploadJS" model="['album': album, 'albumDate': albumDate]" />
     </head>
     <body>
         <div class="nav">
@@ -79,7 +30,17 @@
                 <div class="dialog">
                     <table>
                         <tbody>
-                        
+
+							<tr class="prop">
+                                <td valign="top" class="name" colspan="2">
+                                  <g:if test="${personInstance.bild}">
+									  <span>
+										  <img style="float: left;" width="110" border="0" src="${wm_photo_album.pathToImage(picture: personInstance.bild)}"/>
+									  </span>
+								  </g:if>
+                                </td>
+                            </tr>
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="vorname"><g:message code="person.vorname.label" default="Vorname" /></label>
@@ -157,8 +118,8 @@
                                   <label for="bild"><g:message code="person.bild.label" default="Bild" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'bild', 'errors')}">
-                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.withAlbumName(MediaUtils.ALBUM_PERSONEN).list()}" optionKey="id" value="${personInstance?.bild?.id}" noSelection="['null': '']" />
-									&nbsp;<span><a href="javascript: void(0);" id="bildUpload">Bild hochladen</a></span>
+                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.withAlbumName(MediaUtils.ALBUM_PERSONEN).listOrderByBaseName()}" optionKey="id" value="${personInstance?.bild?.id}" noSelection="['null': '']" />
+									&nbsp;<span><a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Bild-Upload Dialog öffnen</a></span>
                                 </td>
                             </tr>
                         
@@ -211,8 +172,8 @@
                 </div>
             </g:form>
         </div>
-		<div style="display: none;" id="bildUploadContent">
-			<g:render template="/global/bilder/upload" model="['albumId': albumId]" />
-		</div>
+
+		<g:render template="/global/bilder/upload" model="['albumId': album.id]" />
+
     </body>
 </html>

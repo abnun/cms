@@ -11,6 +11,7 @@ class Abteilung
 
 	String name
 	String code
+	String kuerzel
 
 	Boolean anzeigeImMenu = false
 
@@ -31,6 +32,11 @@ class Abteilung
 	{
 		name()
 		code(validator: { String v ->
+			boolean isValid = (v ==~ /[a-z_0-9]+/)
+			println("validation for '$v' evaluates to $isValid")
+			return isValid
+		})
+		kuerzel(validator: { String v ->
 			boolean isValid = (v ==~ /[a-z_0-9]+/)
 			println("validation for '$v' evaluates to $isValid")
 			return isValid

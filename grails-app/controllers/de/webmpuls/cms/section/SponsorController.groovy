@@ -52,7 +52,13 @@ class SponsorController {
             redirect(action: "list")
         }
         else {
-            return [sponsorInstance: sponsorInstance]
+			Album tmpAlbum = de.webmpuls.photo_album.Album.withName(MediaUtils.ALBUM_SPONSOREN).list().first()
+
+			String albumDate = ""
+			if(tmpAlbum) {
+				albumDate = formatDate(date: tmpAlbum.dateCreated, format: 'ddMMyyyy')
+			}
+            return [sponsorInstance: sponsorInstance, album: tmpAlbum, albumDate: albumDate]
         }
     }
 

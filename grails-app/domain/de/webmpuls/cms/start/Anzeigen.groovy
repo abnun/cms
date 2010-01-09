@@ -16,8 +16,8 @@ class Anzeigen
 		ueberschrift1()
 		ueberschrift2()
 		abteilung()
+		inhalt()
 		takeEndDate(nullable: true)
 		endDatum(nullable: true)
-		inhalt()
     }
 }

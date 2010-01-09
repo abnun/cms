@@ -1,11 +1,13 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ page import="de.webmpuls.cms.people.ShiroRole" %>
 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><!-- InstanceBegin template="/Templates/svlmaster.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 	<!-- TemplateBeginEditable name="doctitle" -->
 	<title><g:layoutTitle default="(( (  Sportverein Leingarten  ) ))" /></title>
 	<!-- TemplateEndEditable -->
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="SHORTCUT ICON" href="${resource(dir: 'bilder', file: 'svl.ico')}">
 	<link rel="shortcut icon" type="image/x-icon" href="${resource(dir: 'bilder', file: 'svl.ico')}"/>
 <!-- InstanceParam name="oben" type="boolean" value="true" --> <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
@@ -36,7 +38,6 @@
 	</style>
 
 	<shiro:hasRole name="${ShiroRole.BENUTZER}">
-		<gui:resources components="['tabView']"/>
 		<ckeditor:resources />
 	</shiro:hasRole>
 
@@ -86,13 +87,13 @@
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','show','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Veranstaltungen</a></span></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','show','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Abteilungen</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="${resource(dir: 'sites/abteilungen', file: 'abteilungen.gsp')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','show','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Abteilungen</a></span></td>
         </tr>
         <tr>
           <td width="110" height="20" valign="middle"><span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','show','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Sportanlagen</a></span></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/mitglied.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','show','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Mitgliedschaft</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="${resource(dir: 'sites', file: 'mitglied.gsp')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','show','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Mitgliedschaft</a></span></td>
         </tr>
         <tr>
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="${createLink(controller: 'sponsor', action: 'list')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','show','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Sponsoren</a></span></td>
@@ -118,13 +119,13 @@
           <td width="110" height="20" valign="middle"><span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','show','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Organe</a></span></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/sitzungen.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','show','impressum','','hide','aktuell','','hide')">Sitzungen</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="${createLink(controller: 'inhalt', action: 'sitzungen')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','show','impressum','','hide','aktuell','','hide')">Sitzungen</a></span></td>
         </tr>
         <tr>
           <td width="110" height="21" valign="middle"> <span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','show','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Themen</a></span></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/impressum.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','show','aktuell','','hide')">Impressum</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="${resource(dir: 'sites', file: 'impressum.gsp')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','show','aktuell','','hide')">Impressum</a></span></td>
         </tr>
         <tr>
           <td width="110" height="20" valign="middle">&nbsp;</td>
@@ -133,7 +134,7 @@
           <td width="110" height="20" valign="middle">&nbsp;</td>
         </tr>
 		<tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="../sites/impressum.htm" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','show','aktuell','','hide')">Impressum</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="${resource(dir: 'sites', file: 'impressum.gsp')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','show','aktuell','','hide')">Impressum</a></span></td>
         </tr>
 		<tr>
 		  <td width="110" height="20" valign="middle">&nbsp;</td>
@@ -159,19 +160,19 @@
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td height="20" bgcolor="#1760A8" class="marker">&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/veranstaltungen/veranstaltung_08.htm">2008</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/veranstaltungen', file: 'veranstaltung_08.gsp')}">2008</a></td>
     </tr>
     <tr>
       <td width="4" height="20" class="marker">&nbsp; </td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="../sites/veranstaltungen/veranstaltung_07.htm">2007</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="${resource(dir: 'sites/veranstaltungen', file: 'veranstaltung_07.gsp')}">2007</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/veranstaltungen/veranstaltung_06.htm">2006</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/veranstaltungen', file: 'veranstaltung_06.gsp')}">2006</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/veranstaltungen/eranstaltung_05.htm">2005</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/veranstaltungen', file: 'veranstaltung_05.gsp')}">2005</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
@@ -194,43 +195,43 @@
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="../sites/anlagen/uebersicht.htm">&Uuml;bersichtsplan</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="${resource(dir: 'sites/anlagen', file: 'uebersicht.gsp')}">&Uuml;bersichtsplan</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="../sites/anlagen/eichbott_beachfeld.htm" >Beachfeld</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="${resource(dir: 'sites/anlagen', file: 'eichbott_beachfeld.gsp')}" >Beachfeld</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="../sites/anlagen/eichbott_halle.htm" >Eichbotthalle</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="${resource(dir: 'sites/anlagen', file: 'eichbott_halle.gsp')}" >Eichbotthalle</a></td>
     </tr>
     <tr>
       <td rowspan="9">&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/festgelaende.htm">Festhalle/Festplatz</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/anlagen', file: 'festgelaende.gsp')}">Festhalle/Festplatz</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/eichbott_freibad.htm">Freibad</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/anlagen', file: 'eichbott_freibad.gsp')}">Freibad</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_sportheim.htm">Gymnastikraum</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/anlagen', file: 'heuchelberg_sportheim.gsp')}">Gymnastikraum</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/eichbott_hallenbad.htm">Hallenbad</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/anlagen', file: 'eichbott_hallenbad.gsp')}">Hallenbad</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_stadion.htm">Heuchelbergstadion</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/anlagen', file: 'heuchelberg_stadion.gsp')}">Heuchelbergstadion</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_sportheim.htm">SVL-Sportheim</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/anlagen', file: 'heuchelberg_sportheim.gsp')}">SVL-Sportheim</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_tennis.htm">Tennisanlage</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/anlagen', file: 'heuchelberg_tennis.gsp')}">Tennisanlage</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_trimm.htm">Trimm-Dich-Pfad</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/anlagen', file: 'heuchelberg_trimm.gsp')}">Trimm-Dich-Pfad</a></td>
     </tr>
     <tr>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/anlagen/heuchelberg_reiten.htm">Reitanlage</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/anlagen', file: 'heuchelberg_reiten.gsp')}">Reitanlage</a></td>
     </tr>
   </table>
 </div>
@@ -286,15 +287,15 @@
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/organe/vorstand.htm">Vorstand</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/organe', file: 'vorstand.gsp')}">Vorstand</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/organe/jvorstand.htm">Jugendvorstand</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/organe', file: 'jvorstand.gsp')}">Jugendvorstand</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/organe/delegierte.htm">Delegierte</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/organe', file: 'delegierte.gsp')}">Delegierte</a></td>
     </tr>
   </table>
 </div>
@@ -302,11 +303,11 @@
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="../sites/themen/th_zkw.htm">Zukunftswerkstatt</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"> <a href="${resource(dir: 'sites/themen', file: 'th_zkw.gsp')}">Zukunftswerkstatt</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="../sites/themen/th_streik_05.htm">Streik
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/themen', file: 'th_streik_05.gsp')}">Streik
         2005</a></td>
     </tr>
     <tr>

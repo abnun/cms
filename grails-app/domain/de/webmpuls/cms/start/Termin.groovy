@@ -6,11 +6,15 @@ class Termin
 	String inhalt
 	Boolean findetStatt = true
 	String zusatzinfo
+	String uhrzeit
+	String ort
 
     static constraints =
 	{
 		datum()
 		inhalt(widget: 'textarea')
+		ort(blank: true, nullable: true)
+		uhrzeit(blank: true, nullable: true)
 		findetStatt(nullable: true)
 		zusatzinfo(widget: 'textarea', blank: true, nullable: true)
     }

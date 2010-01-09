@@ -62,6 +62,8 @@ grails.gorm.default.mapping = {
 }
 
 
+alter.static.files = true
+
 // show all options to alter pictures
 photo_album.picture.show.all.options = true
 photo_album.picture.show.option.rotate = true

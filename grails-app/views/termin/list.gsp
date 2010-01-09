@@ -27,7 +27,11 @@
                             <g:sortableColumn property="datum" title="${message(code: 'termin.datum.label', default: 'Datum')}" />
                         
                             <g:sortableColumn property="inhalt" title="${message(code: 'termin.inhalt.label', default: 'Inhalt')}" />
-                        
+
+							<g:sortableColumn property="ort" title="${message(code: 'termin.ort.label', default: 'Ort')}" />
+
+							<g:sortableColumn property="uhrzeit" title="${message(code: 'termin.uhrzeit.label', default: 'Uhrzeit')}" />
+
                             <g:sortableColumn property="findetStatt" title="${message(code: 'termin.findetStatt.label', default: 'Findet Statt')}" />
                         
                             <g:sortableColumn property="zusatzinfo" title="${message(code: 'termin.zusatzinfo.label', default: 'Zusatzinfo')}" />
@@ -44,7 +48,11 @@
                             <td><g:formatDate date="${terminInstance.datum}" /></td>
                         
                             <td>${fieldValue(bean: terminInstance, field: "inhalt")}</td>
-                        
+
+							<td>${fieldValue(bean: terminInstance, field: "ort")}</td>
+
+							<td>${fieldValue(bean: terminInstance, field: "uhrzeit")}</td>
+
                             <td><g:formatBoolean boolean="${terminInstance.findetStatt}" /></td>
                         
                             <td>${fieldValue(bean: terminInstance, field: "zusatzinfo")}</td>
