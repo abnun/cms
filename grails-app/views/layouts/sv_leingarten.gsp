@@ -80,13 +80,13 @@
 						<img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"/>
 					</td>
 					<td class="copy">
-						&nbsp;<g:link controller="admin" style="color: white;">Mein SVL</g:link>&nbsp;
+						&nbsp;<g:link controller="admin" style="color: white;"><g:message code="admin.home.link.lable" default="Adminstration" /></g:link>&nbsp;
 					</td>
 					<td>
 						<img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"/>
 					</td>
 					<td class="copy">
-						&nbsp;<g:link controller="auth" action="signOut" style="color: white;" onclick="return confirm('Wirklich ausloggen?');">ausloggen</g:link>&nbsp;
+						&nbsp;<g:link controller="auth" action="signOut" style="color: white;" onclick="return confirm('Wirklich ausloggen?');"><g:message code="admin.logout.link.lable" default="ausloggen" /></g:link>&nbsp;
 					</td>
 				</tr>
 				</tbody>
