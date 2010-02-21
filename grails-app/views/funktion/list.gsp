@@ -34,7 +34,8 @@
                             <g:sortableColumn property="code" title="${message(code: 'funktion.code.label', default: 'Code')}" />
                         
                             <g:sortableColumn property="vorstand" title="${message(code: 'funktion.vorstand.label', default: 'Vorstand')}" />
-                        
+
+							<th>&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -48,6 +49,8 @@
                             <td>${fieldValue(bean: funktionInstance, field: "code")}</td>
                         
                             <td><g:formatBoolean boolean="${funktionInstance.vorstand}" /></td>
+
+							<td><g:link action="edit" id="${funktionInstance.id}"><g:message code="funktion.edit" default="Bearbeiten" /></g:link></td>
                         
                         </tr>
                     </g:each>

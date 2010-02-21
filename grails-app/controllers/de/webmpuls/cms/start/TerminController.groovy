@@ -23,7 +23,7 @@ class TerminController {
         def terminInstance = new Termin(params)
         if (terminInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'termin.label', default: 'Termin'), terminInstance.id])}"
-            redirect(action: "show", id: terminInstance.id)
+            redirect(controller: 'inhalt', action: "aktuelles")
         }
         else {
             render(view: "create", model: [terminInstance: terminInstance])
@@ -67,7 +67,7 @@ class TerminController {
             terminInstance.properties = params
             if (!terminInstance.hasErrors() && terminInstance.save(flush: true)) {
                 flash.message = "${message(code: 'default.updated.message', args: [message(code: 'termin.label', default: 'Termin'), terminInstance.id])}"
-                redirect(action: "show", id: terminInstance.id)
+                redirect(controller: 'inhalt', action: "aktuelles")
             }
             else {
                 render(view: "edit", model: [terminInstance: terminInstance])
@@ -85,7 +85,8 @@ class TerminController {
             try {
                 terminInstance.delete(flush: true)
                 flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'termin.label', default: 'Termin'), params.id])}"
-                redirect(action: "list")
+                //redirect(action: "list")
+				redirect(controller: 'inhalt', action: "aktuelles")
             }
             catch (org.springframework.dao.DataIntegrityViolationException e) {
                 flash.message = "${message(code: 'default.not.deleted.message', args: [message(code: 'termin.label', default: 'Termin'), params.id])}"

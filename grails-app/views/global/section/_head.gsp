@@ -1,5 +1,5 @@
 <%@ page import="de.webmpuls.cms.people.ShiroRole" %>
-<div class="box" id="identifier" style="width: 100px; float: left;">
+<div class="box" id="identifier" style="width: 130px; float: left;">
 	<div class="hd">
 		<div class="c">
 			<g:message code="section.head.label" args="[section]" default="Abteilunsleiter" />
@@ -8,9 +8,9 @@
 	<div class="bd">
 		<div class="c">
 			<g:if test="${head.bild}">
-				<a href="mailto:${head.email}"><img width="110" border="0" src="${wm_photo_album.pathToImage(picture: head.bild)}"/></a><br/>
+				<a href="mailto:${head.email}"><img  style="margin-bottom: 5px;" width="110" border="0" src="${wm_photo_album.pathToImage(picture: head.bild)}"/></a><br/>
 			</g:if>
-				${head.vorname}&nbsp;${head.nachname}<br/>
+				<span class="copy">${head.vorname}&nbsp;${head.nachname}</span>
 			<g:if test="${head.adresseAnzeigen}">
 				<g:if test="${head.telefon1}">
 					${head.telefon1}<br/>

@@ -226,7 +226,8 @@ th.desc a {
 .prop .name {
     text-align: left;
     width: 15%;
-    white-space: nowrap;
+    white-space: normal;
+    /*white-space: nowrap;*/
 }
 .prop .value {
     text-align: left;

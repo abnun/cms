@@ -6,6 +6,7 @@
         <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'funktion.label', default: 'Funktion')}" />
         <title><g:message code="default.edit.label" args="[entityName]" /></title>
+		<g:render template="/global/javascript/jQueryUIJS" />
     </head>
     <body>
         <div class="nav">
@@ -53,7 +54,11 @@
                                   <label for="personen"><g:message code="funktion.personen.label" default="Personen" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: funktionInstance, field: 'personen', 'errors')}">
-                                    
+									<ul>
+										<g:each in="${funktionInstance.personen}" var="p">
+											<li><g:link controller="person" action="edit" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
+										</g:each>
+									</ul>
                                 </td>
                             </tr>
                         

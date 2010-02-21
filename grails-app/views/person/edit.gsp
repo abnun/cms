@@ -1,16 +1,17 @@
 
-<%@ page import="de.webmpuls.photo_album.Album; de.webmpuls.cms.media.MediaUtils; de.webmpuls.cms.people.Person" %>
+<%@ page import="de.webmpuls.cms.people.Funktion; de.webmpuls.photo_album.Album; de.webmpuls.cms.media.MediaUtils; de.webmpuls.cms.people.Person" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'person.label', default: 'Person')}" />
         %{--<title><g:message code="default.edit.label" args="[entityName]" /></title>--}%
-		<g:render template="/global/javascript/bildUploadJS" model="['album': album, 'albumDate': albumDate]" />
+		<g:render template="/global/javascript/onePictureUploadJS" model="['album': album, 'albumDate': albumDate]" />
+		<wm_photo_album:gallery_resources noGallery="true" />
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
+            <span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
 			<g:render template="/global/menu/admin" />
         </div>
@@ -28,16 +29,24 @@
                 <g:hiddenField name="id" value="${personInstance?.id}" />
                 <g:hiddenField name="version" value="${personInstance?.version}" />
                 <div class="dialog">
-                    <table>
-                        <tbody>
+					<table>
+						<tbody>
 
 							<tr class="prop">
-                                <td valign="top" class="name" colspan="2">
-                                  <g:if test="${personInstance.bild}">
-									  <span>
-										  <img style="float: left;" width="110" border="0" src="${wm_photo_album.pathToImage(picture: personInstance.bild)}"/>
-									  </span>
-								  </g:if>
+								<td valign="middle" class="name">
+                                  <label for="bild"><g:message code="person.bild.label" default="Bild" /></label>
+                                </td>
+                                <td valign="middle" class="value ${hasErrors(bean: personInstance, field: 'bild', 'errors')}">
+									<div class="highslide-gallery" style="margin: auto">
+										<g:if test="${personInstance.bild}">
+											<a class='highslide' href='${wm_photo_album.pathToImage(picture: personInstance.bild, size: de.webmpuls.photo_album.util.MediaUtils.BIG)}' onclick="return hs.expand(this, { captionText: '${personInstance.bild?.caption ?: ''}' })">
+												<img width="110" border="0" src="${wm_photo_album.pathToImage(picture: personInstance.bild)}" title="${message(code: 'picture.show.big.label', 'default': 'Klicken um eine größere Ansicht zu erhalten.')}" align="middle"/>
+											</a>
+										</g:if>
+										&nbsp;<span><a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Bild-Auswahl Dialog öffnen</a></span>
+										<br/>
+										<br/>
+									</div>
                                 </td>
                             </tr>
 
@@ -113,15 +122,14 @@
                                 </td>
                             </tr>
                         
-                            <tr class="prop">
+                            %{--<tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="bild"><g:message code="person.bild.label" default="Bild" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'bild', 'errors')}">
-                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.withAlbumName(MediaUtils.ALBUM_PERSONEN).listOrderByBaseName()}" optionKey="id" value="${personInstance?.bild?.id}" noSelection="['null': '']" />
-									&nbsp;<span><a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Bild-Upload Dialog öffnen</a></span>
+                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.withAlbumName(MediaUtils.ALBUM_PERSONEN).listOrderByBaseName()}" optionKey="id" value="${personInstance?.bild?.id}" noSelection="['null': 'Bild auswählen']" />
                                 </td>
-                            </tr>
+                            </tr>--}%
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
@@ -139,7 +147,7 @@
                                 <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'abteilungen', 'errors')}">
 									<ul>
 										<g:each in="${personInstance.abteilungen}" var="a">
-											<li><g:link controller="abteilung" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></li>
+											<li><g:link controller="abteilung" action="edit" id="${a.id}">${a?.encodeAsHTML()}</g:link></li>
 										</g:each>
 									</ul>
                                 </td>
@@ -156,13 +164,26 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="funktionen"><g:message code="person.funktionen.label" default="Funktionen" /></label>
+                                  <label for="funktionen.vorstand"><g:message code="person.funktionen.label" default="Funktionen" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'funktionen', 'errors')}">
-                                    <g:select name="funktionen" from="${de.webmpuls.cms.people.Funktion.list()}" multiple="yes" optionKey="id" size="5" value="${personInstance?.funktionen}" />
+                                    <g:select name="funktionen.vorstand" from="${Funktion.vorstandsFunktionen().listOrderByName([cache: true])}" multiple="yes" optionKey="id" size="5" value="${personInstance?.funktionen}" />
                                 </td>
                             </tr>
-                        
+
+							<tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="additional.funktionen"><g:message code="person.additional.funktionen.label" default="Weitere Funktionen" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'funktionen', 'errors')}">
+									<ul>
+										<g:each in="${personInstance.funktionen.findAll { Funktion tmpFunktion -> if(tmpFunktion.vorstand == false) {return true} } }" var="f">
+											<li><g:link controller="funktion" action="edit" id="${f.id}">${f?.encodeAsHTML()}</g:link></li>
+										</g:each>
+									</ul>
+                                </td>
+                            </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -173,7 +194,26 @@
             </g:form>
         </div>
 
-		<g:render template="/global/bilder/upload" model="['albumId': album.id]" />
+		<g:set var="select" value="${de.webmpuls.photo_album.Picture.withAlbumName(MediaUtils.ALBUM_PERSONEN).listOrderByBaseName()}" />
+		<g:if test="${select}">
+			<jq:jquery>
+				$("select[name='bild.id']").change(function() {
+					$("input[name='picture_select_hidden']").val("true");
+					var mediaPath = '${wm_photo_album.mediaPath(albumId: album.id)}';
+				    $("#tmpBild").attr("src", mediaPath + $("select[name='bild.id']").val());
+				   	$("#tmpBild").show();
+				   	$("#dialog_error:visible").slideUp("slow");
+				 });
+
+				$("input[name='fotos']").change(function() {
+					$("#dialog_error:visible").slideUp("slow");
+				 });
+			</jq:jquery>
+		</g:if>
+
+		<g:set var="callbackUri" value="/person/setPicture/${personInstance.id}" />
+		<g:set var="fileName" value="${personInstance.vorname.toLowerCase()}_${personInstance.nachname.toLowerCase()}${de.webmpuls.photo_album.util.MediaUtils.SUFFIX}" />
+		<g:render template="/global/bilder/upload" model="['albumId': album.id, 'isMultiUpload': false, 'album': album, 'albumDate': albumDate, select: select, item: personInstance, callbackUri: callbackUri, fileName: fileName]" />
 
     </body>
 </html>

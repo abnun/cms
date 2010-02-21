@@ -25,7 +25,8 @@ class BootStrap
 		{
 			development
 			{
-				if(Boolean.valueOf((String)ConfigurationHolder.getConfig().flatten().get("alter.static.files")))
+				
+				if(Boolean.valueOf((String)ConfigurationHolder.getConfig().alter.static.files))
 				{
 					alterStaticFiles(servletContext)
 				}
@@ -256,14 +257,17 @@ class BootStrap
 
 					Node page = new XmlParser(parser).parse(tmpFileOrDir)
 
+					boolean isOuterTable = false
+
 					for (Node tmpNode in page.depthFirst())
 					{
 						if (tmpNode.attributes().containsKey('width'))
 						{
 							String width = tmpNode.attributes().get('width').toString()
 
-							if (width == "614" || width == "570")
+							if (width == "614" || (!isOuterTable && width == "570"))
 							{
+								isOuterTable = true
 								for (Node tmpChildNode in tmpNode.depthFirst())
 								{
 									if (tmpChildNode.attributes().containsKey('src'))
@@ -424,13 +428,12 @@ class BootStrap
 				}
 			}
 
-			println deleteList
+			println "deleteList.size() -> ${deleteList.size()}"
 			for (File deleteFile in deleteList)
 			{
-				deleteFile.delete()
-				if(deleteFile.exists())
+				if(!deleteFile.delete() && deleteFile.exists())
 				{
-					println "something went wrong during deleting"
+					println "something went wrong during deleting of $deleteFile"
 				}
 				else
 				{

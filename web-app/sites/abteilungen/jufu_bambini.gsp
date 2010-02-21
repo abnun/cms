@@ -2,55 +2,59 @@
 <head>
 <meta name="layout" content="sv_leingarten"/>
 </head>
-<table width="570" border="0" cellspacing="5">
+<table width="614" border="0" cellpadding="0" cellspacing="0">
   <tbody>
-    <tr>
-      <td colspan="2" valign="top" class="copy">
-        <p class="headline_dunkel">
-          Bambini 
-                    (2003 und jünger)
-          <br/>
-        </p>
-        <table border="0" cellspacing="0" class="copy">
+    <tr align="left" valign="top">
+      <td width="520" height="227">
+        <table width="570" border="0" cellspacing="5">
           <tbody>
-            <tr class="copy">
-              <td class="copy">
-                Berichte
-              </td>
-              <td>
-                <img src="${resource(dir: 'bilder/divers', file: 'trans.png')}" width="1" height="20"/>
-              </td>
-              <td class="copy">
-                <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_bambini_plan.gsp')}">
-                  Spielplan
-                </a>
-              </td>
-              <td>
-                <img src="${resource(dir: 'bilder/divers', file: 'trans.png')}" width="1" height="20"/>
-              </td>
-              <td class="copy">
-                <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_bambini_team.gsp')}">
-                  Mannschaft
-                </a>
+            <tr>
+              <td colspan="2" valign="top" class="copy">
+                <p class="headline_dunkel">
+                  Bambini 
+                    (2003 und jünger)
+                  <br/>
+                </p>
+                <table border="0" cellspacing="0" class="copy">
+                  <tbody>
+                    <tr class="copy">
+                      <td class="copy">
+                        Berichte
+                      </td>
+                      <td>
+                        <img src="${resource(dir: 'bilder/divers', file: 'trans.png')}" width="1" height="20"/>
+                      </td>
+                      <td class="copy">
+                        <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_bambini_plan.gsp')}">
+                          Spielplan
+                        </a>
+                      </td>
+                      <td>
+                        <img src="${resource(dir: 'bilder/divers', file: 'trans.png')}" width="1" height="20"/>
+                      </td>
+                      <td class="copy">
+                        <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_bambini_team.gsp')}">
+                          Mannschaft
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                   
+                </p>
               </td>
             </tr>
-          </tbody>
-        </table>
-        <p>
-           
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td width="275" class="copy">
-        06.12.09
-        <br/>
-        <span class="headline">
-          3. Platz 
+            <tr>
+              <td width="275" class="copy">
+                06.12.09
+                <br/>
+                <span class="headline">
+                  3. Platz 
                   im Hallenturnier
-        </span>
-        <p>
-          Am Nikolaustag spielten wir in der 
+                </span>
+                <p>
+                  Am Nikolaustag spielten wir in der 
                     Eichbotthalle unser 1. Hallenturnier in dieser Saison. Ausrichter 
                     des Turniers war der SV Schluchtern. In unserer Gruppe war 
                     unser 1. Spielgegner die SG Stetten-Kleingartach. Dieser Spielgegner 
@@ -67,29 +71,29 @@
                     0:0 und es kam zu einem spannenden 9-Meter-Schießen. 
                     Yakup, Jannik, Jens und Martin trafen sauber und somit endete 
                     die Partie mit einem tollen 3. Platz für unser Team.
-        </p>
-        <p>
-          Es spielten: Malte (TS), Christian, Jens (2), Luna (1), Martin 
+                </p>
+                <p>
+                  Es spielten: Malte (TS), Christian, Jens (2), Luna (1), Martin 
                     (2), Mert (1), Yakup (1), Yannik (4)
-        </p>
-        <p>
-           
-        </p>
-      </td>
-      <td class="copy">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/bambini', file: 'jufu_bambin_06-12-09.jpg')}" width="275" height="306"/>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" class="copy">
-        31.10.09
-        <br/>
-        <span class="headline">
-          Eppinger 
+                </p>
+                <p>
+                   
+                </p>
+              </td>
+              <td class="copy">
+                <img src="${resource(dir: 'bilder/abtei/jfussball/bambini', file: 'jufu_bambin_06-12-09.jpg')}" width="275" height="306"/>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="copy">
+                31.10.09
+                <br/>
+                <span class="headline">
+                  Eppinger 
                   Spielfest
-        </span>
-        <p>
-          Wir waren am 31.10.09 beim Eppinger Spielfest 
+                </span>
+                <p>
+                  Wir waren am 31.10.09 beim Eppinger Spielfest 
                     zu Gast und spielten zum ersten Mal in dieser Saison in der 
                     Halle. Rings herum waren kleine Veranstaltungen mit Geschicklichkeitsspielen. 
                     Die Spiele fanden auf einem halben Spielfeld, mit kleinem 
@@ -109,25 +113,25 @@
                     guter Letzt standen wir gegen den VfB Eppingen auf dem Spielfeld. 
                     Yakup und Yannik erzielten durch schöne Treffer den Spielendstand 
                     2:0.
-        </p>
-        <p>
-          Es spielten: Jens, Luna, Malte, Max, Mert, Yakup, Yannik
-        </p>
-        <p>
-           
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" class="copy">
-        18.10.09
-        <br/>
-        <span class="headline">
-          4. 
+                </p>
+                <p>
+                  Es spielten: Jens, Luna, Malte, Max, Mert, Yakup, Yannik
+                </p>
+                <p>
+                   
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="copy">
+                18.10.09
+                <br/>
+                <span class="headline">
+                  4. 
                   Spieltag
-        </span>
-        <p>
-          Am 18.10.09 spielten wir auf heimischen Boden. 
+                </span>
+                <p>
+                  Am 18.10.09 spielten wir auf heimischen Boden. 
                     Im ersten Spiel trafen wir auf den TSV Brettach 2. Yakup erzielte 
                     für uns im Doppelpack die Treffer und Jens sorgte dafür, 
                     dass wir mit 0:3 Toren gewannen. Im nächsten Spiel gegen 
@@ -141,25 +145,25 @@
                     ausgeliehen; auch durch ein anschließendes Freundschaftspiel 
                     mit dem FC Obersulm konnten unsere Spieler wieder Spielpraxis 
                     gewinnen.
-        </p>
-        <p>
-          Es spielten: Malte (TS), Christian, Jens, Lara B, Lara J., 
+                </p>
+                <p>
+                  Es spielten: Malte (TS), Christian, Jens, Lara B, Lara J., 
                     Luna, Tim, Raphael, Yakup, Yannik
-        </p>
-        <p>
-          <br/>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td class="copy">
-        11.10.09
-        <br/>
-        <span class="headline">
-          3. Spieltag
-        </span>
-        <p>
-          Am 11.10.09 waren wir zu Gast in Obersulm-Affaltrach 
+                </p>
+                <p>
+                  <br/>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="copy">
+                11.10.09
+                <br/>
+                <span class="headline">
+                  3. Spieltag
+                </span>
+                <p>
+                  Am 11.10.09 waren wir zu Gast in Obersulm-Affaltrach 
                     und konnten Siege erspielen. Die Freude der Mannschaft war 
                     riesengroß. Zuerst spielten wir gegen den TSV Brettach 
                     2. Unser Torspieler Malte hatte nichts zu tun. Yakup schoss 
@@ -174,32 +178,32 @@
                     für das im Anschluss stattgefundene Freundschaftsspiel 
                     danken. So konnte jedes Team seine jüngsten Spieler länger 
                     zum Einsatz bringen.
-        </p>
-        <p>
-          Es spielten: Malte (TS), Christian, Jens, Luna, Martin, Tim, 
+                </p>
+                <p>
+                  Es spielten: Malte (TS), Christian, Jens, Luna, Martin, Tim, 
                     Yakup
-        </p>
-        <p>
-           
-        </p>
-      </td>
-      <td class="copy">
-        <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_bambini_team.gsp')}">
-          <img src="${resource(dir: 'bilder/abtei/jfussball/bambini', file: 'Bambini_team_10_2009.jpg')}" width="275" height="243" border="0"/>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" class="copy">
-        <p>
-          03.10.09
-          <br/>
-          <span class="headline">
-            2. Spieltag in Böckingen
-          </span>
-        </p>
-        <p>
-          Am 03.10.09 fand unser 2. Spieltag bei der Union Böckingen 
+                </p>
+                <p>
+                   
+                </p>
+              </td>
+              <td class="copy">
+                <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_bambini_team.gsp')}">
+                  <img src="${resource(dir: 'bilder/abtei/jfussball/bambini', file: 'Bambini_team_10_2009.jpg')}" width="275" height="243" border="0"/>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="copy">
+                <p>
+                  03.10.09
+                  <br/>
+                  <span class="headline">
+                    2. Spieltag in Böckingen
+                  </span>
+                </p>
+                <p>
+                  Am 03.10.09 fand unser 2. Spieltag bei der Union Böckingen 
                     statt. Unsere junge Mannschaft traf zuerst auf den TSV Talheim. 
                     Hier konnten wir noch etwas spielerisch mithalten, aber wir 
                     unterlagen mit 0:3. Gegen den TV Flein hatten wir gar keine 
@@ -209,25 +213,25 @@
                     entgegen zu halten, doch unserem Sturm fehlt es noch an Erfahrung 
                     und somit wurden wir schnell ausgekontert. Das Spiel endete 
                     mit 0:7 Toren für den SC Böckingen.
-        </p>
-        <p>
-          Es spielten: Jens (TS), Laura, Luna, Mert, Nick, Yasin
-        </p>
-        <p>
-          <br/>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" class="copy">
-        27.09.09
-        <br/>
-        <span class="headline">
-          1. 
+                </p>
+                <p>
+                  Es spielten: Jens (TS), Laura, Luna, Mert, Nick, Yasin
+                </p>
+                <p>
+                  <br/>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="copy">
+                27.09.09
+                <br/>
+                <span class="headline">
+                  1. 
                   Spieltag in Frankenbach
-        </span>
-        <p>
-          Am 27.09.09 gingen wir mit 
+                </span>
+                <p>
+                  Am 27.09.09 gingen wir mit 
                     unseren jüngsten Spielern nach Frankenbach und die meisten 
                     Spieler trafen das 1. Mal auf gegnerische Vereine. Unser erster 
                     Spielgegner war der TV Flein. In diesem Spiel kamen wir selten 
@@ -238,11 +242,64 @@
                     Im letzten Spiel gegen TSV Talheim kamen wir zwar öfters 
                     in die Spielhälfte vom Gegner aber konnten nur 1 Tor 
                     verwirklichen. Das Spiel ging mit 5:1 zu Ende.
-        </p>
-        <p>
-          Es spielten: Yasin (TS), Mert (TS), Christian (1), Jens, 
+                </p>
+                <p>
+                  Es spielten: Yasin (TS), Mert (TS), Christian (1), Jens, 
                     Luna, Malte, Martin (1), Tim
-        </p>
+                </p>
+                <p>
+                   
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td width="120">
+        <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
+          <tbody>
+            <tr>
+              <td height="20" bgcolor="#93BEEE" class="infohead">
+                Trainingszeiten
+                <br/>
+                seite 01.09.2009
+              </td>
+            </tr>
+            <tr>
+              <td valign="bottom" bgcolor="#D2DFFF" class="copy">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td width="40" class="copy">
+                        Di
+                      </td>
+                      <td valign="top" class="copy">
+                        17.30 - 19.00
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                im Heuchelbergstadion
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
+          <tbody>
+            <tr>
+              <td bgcolor="#93BEEE" class="infohead">
+                Trainer und Betreuer
+              </td>
+            </tr>
+            <tr>
+              <td valign="bottom" bgcolor="#D2DFFF" class="copy">
+                Bernd Friedrich, 
+                  Steffen Greis, Oliver Hartmann, Frank Herkert, Ralf Leihenseder, 
+                  Michael Neutz, Helmut Nöckler, Arthur Steinberg
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <p>
            
         </p>

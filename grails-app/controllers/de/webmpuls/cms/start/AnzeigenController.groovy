@@ -85,7 +85,8 @@ class AnzeigenController {
             try {
                 anzeigenInstance.delete(flush: true)
                 flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'anzeigen.label', default: 'Anzeigen'), params.id])}"
-                redirect(action: "list")
+                //redirect(action: "list")
+				redirect(controller: 'inhalt', action: "aktuelles")
             }
             catch (org.springframework.dao.DataIntegrityViolationException e) {
                 flash.message = "${message(code: 'default.not.deleted.message', args: [message(code: 'anzeigen.label', default: 'Anzeigen'), params.id])}"

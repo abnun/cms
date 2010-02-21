@@ -2,119 +2,123 @@
 <head>
 <meta name="layout" content="sv_leingarten"/>
 </head>
-<table width="570" border="0" cellspacing="5">
+<table width="614" border="0" cellpadding="0" cellspacing="0">
   <tbody>
-    <tr>
-      <td colspan="3" valign="top" class="copy">
-        <p class="headline_dunkel">
-          C-Juniorinnen 
-                    (´95-´96)
-          <br/>
-        </p>
-        <table border="0" cellspacing="0" class="copy">
+    <tr align="left" valign="top">
+      <td width="520" height="227">
+        <table width="570" border="0" cellspacing="5">
           <tbody>
-            <tr class="copy">
-              <td class="copy">
-                Berichte
-              </td>
-              <td>
-                <img src="${resource(dir: 'bilder/divers', file: 'trans.png')}" width="1" height="20"/>
-              </td>
-              <td class="copy">
-                <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_w_c_plan.gsp')}">
-                  Spielplan
-                </a>
-              </td>
-              <td>
-                <img src="${resource(dir: 'bilder/divers', file: 'trans.png')}" width="1" height="20"/>
-              </td>
-              <td class="copy">
-                <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_w_c_tab.gsp')}">
-                  Tabelle
-                </a>
-              </td>
-              <td>
-                <img src="${resource(dir: 'bilder/divers', file: 'trans.png')}" width="1" height="20"/>
-              </td>
-              <td class="copy">
-                <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_w_c_team.gsp')}">
-                  Das Team
-                </a>
+            <tr>
+              <td colspan="3" valign="top" class="copy">
+                <p class="headline_dunkel">
+                  C-Juniorinnen 
+                    (´95-´96)
+                  <br/>
+                </p>
+                <table border="0" cellspacing="0" class="copy">
+                  <tbody>
+                    <tr class="copy">
+                      <td class="copy">
+                        Berichte
+                      </td>
+                      <td>
+                        <img src="${resource(dir: 'bilder/divers', file: 'trans.png')}" width="1" height="20"/>
+                      </td>
+                      <td class="copy">
+                        <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_w_c_plan.gsp')}">
+                          Spielplan
+                        </a>
+                      </td>
+                      <td>
+                        <img src="${resource(dir: 'bilder/divers', file: 'trans.png')}" width="1" height="20"/>
+                      </td>
+                      <td class="copy">
+                        <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_w_c_tab.gsp')}">
+                          Tabelle
+                        </a>
+                      </td>
+                      <td>
+                        <img src="${resource(dir: 'bilder/divers', file: 'trans.png')}" width="1" height="20"/>
+                      </td>
+                      <td class="copy">
+                        <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_w_c_team.gsp')}">
+                          Das Team
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <script>
+                  function PopupFenster(jahr) {
+		  		if (jahr == "90316") {
+				window.open("jufu_w_c_pics_90316.htm", "Popup1", "width=590, height=530, scrollbars" );
+				}
+				}
+                </script>
+                <p>
+                   
+                </p>
               </td>
             </tr>
-          </tbody>
-        </table>
-        <script>
-          function PopupFenster(jahr) {
-		  		if (jahr == &quot;90316&quot;) {
-				window.open(&quot;jufu_w_c_pics_90316.htm&quot;, &quot;Popup1&quot;, &quot;width=590, height=530, scrollbars&quot; );
-				}
-				}
-        </script>
-        <p>
-           
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3" valign="top" class="copy">
-        <p>
-          06.12.09
-          <br/>
-          <span class="headline">
-            Endrunde der Hallenbezirksmeisterschaft 
+            <tr>
+              <td colspan="3" valign="top" class="copy">
+                <p>
+                  06.12.09
+                  <br/>
+                  <span class="headline">
+                    Endrunde der Hallenbezirksmeisterschaft 
                     erreicht
-          </span>
-        </p>
-        <p>
-          Hurra. Die C-Juniorinnen haben die Endrunde der Hallenbezirksmeisterschaft 
+                  </span>
+                </p>
+                <p>
+                  Hurra. Die C-Juniorinnen haben die Endrunde der Hallenbezirksmeisterschaft 
                     erreicht.
-          <br/>
-          Im ersten Spiel gewannen wir mit Toren von Daniela ( 2 ) und 
+                  <br/>
+                  Im ersten Spiel gewannen wir mit Toren von Daniela ( 2 ) und 
                     Anna B. ( 2 ) mit 4:0 gegen Fürfeld. Im 2. Spiel gegen 
                     Dürrenzimmern waren die Torschützen Alina ( 2 ) 
                     und Sabina ( 1 ), das wir dann mit 3:0 gewannen.. Im 3. Spiel 
                     taten wir uns gegen Güglingen schwer aber gewannen verdient 
                     mit 3:2.. Tore erzielten Chiara, Anna und Daniela.
-        </p>
-        <p>
-          Das Spiel gegen Ilsfeld wurde leider unnötigerweise 
+                </p>
+                <p>
+                  Das Spiel gegen Ilsfeld wurde leider unnötigerweise 
                     mit 1:0 verloren. Da wir unsere gut herausgespielten Chancen 
                     nicht nutzten.. Nun hatten wir noch ein schweres Spiel gegen 
                     die TSG Heilbronn, das von beiden hätte gewonnen werden 
                     können, aber man gerechterweise mit einem Unentschieden 
                     1:1 beendete..das tor erzielte Anne..
-        </p>
-        <p>
-          Das letzte Spiel machte man dann gegen den Tabellennachbar 
+                </p>
+                <p>
+                  Das letzte Spiel machte man dann gegen den Tabellennachbar 
                     FSV Schwaigern. Chancen über Chancen wurden leider nicht 
                     genützt so das man unglücklicherweise das letzte 
                     spiel mit 3:1 verloren hatte. Torschütze des Spiels war 
                     Chiara..Somit beendete man das Turnier mit einem guten Dritten 
                     Platz, der reicht um an der Endrunde teilzunehmen. bei einer 
                     besseren Chancenausnutzung wäre der 1. Platz drin gewesen.
-        </p>
-        <p>
-          Es spielten: Schultheiß Phillin, Besserer Anna, Flaig 
+                </p>
+                <p>
+                  Es spielten: Schultheiß Phillin, Besserer Anna, Flaig 
                     Anne, Müller Alina, Dahlke Daniela, Diz Sabina, Plieninger 
                     Chiara... Bedanken möchte ich mich noch bei all unseren 
                     mitgereisten Fans für die Unterstützung.
-        </p>
-        <p>
-           
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3" valign="top" class="copy">
-        24.10.09
-        <br/>
-        <span class="headline">
-          SC 
+                </p>
+                <p>
+                   
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" valign="top" class="copy">
+                24.10.09
+                <br/>
+                <span class="headline">
+                  SC 
                   Ilsfeld : SV Leingarten &gt; 8:5
-        </span>
-        <p>
-          Im Nachholspiel 
+                </span>
+                <p>
+                  Im Nachholspiel 
                     gegen die Juniorinnen des SC Ilsfeld taten wir uns zu Beginn 
                     sehr schwer. Schon in der 1. Minute gelangten wir durch ein 
                     Missverständnis in der Abwehr mit 0:1 in Rückstand. 
@@ -144,28 +148,28 @@
                     an unserer Stärke gezweifelt haben. Leider hatten wir 
                     nicht das nötige Glück im Abschluss. So endet diese 
                     Hinrunde für uns auf Platz 3.
-        </p>
-        <p>
-          Es spielten: Phillin Schultheiß (Tor); Anne Flaig; 
+                </p>
+                <p>
+                  Es spielten: Phillin Schultheiß (Tor); Anne Flaig; 
                     Anna Besserer; Daniela Dahlke; Sabina Diz; Anna Hofmann (1Tor); 
                     Alina Müller (3Tore); Jessica Harris; Jasmin Wildermuth; 
                     Chiara Plieninger (1Tor) und Sophia Doll.
-        </p>
-        <p>
-          <br/>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td rowspan="3" valign="top" class="copy">
-        16.10.09
-        <br/>
-        <span class="headline">
-          SV 
+                </p>
+                <p>
+                  <br/>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="3" valign="top" class="copy">
+                16.10.09
+                <br/>
+                <span class="headline">
+                  SV 
                   Leingarten : TSV Güglingen &gt; 10:2
-        </span>
-        <p>
-          Zu Gast 
+                </span>
+                <p>
+                  Zu Gast 
                     waren heute die Juniorinnen der TSV Güglingen. Bei leichtem 
                     Regen und kaltem Wind, begann die Partie wie erwartet. In 
                     der 1. Minute gingen wir mit 1:0 durch Sabina in Führung. 
@@ -192,62 +196,62 @@
                     durch Jasmin, Daniela, Alina und Anna H. in der Folgezeit 
                     auf den Endstand von 10:2. Mit dem Ergebnis können wir 
                     nach diesen Wetterbedingungen voll zufrieden sein.
-        </p>
-        <p>
-          Es spielten: Phillin Schultheiß (Tor); Anne Flaig; 
+                </p>
+                <p>
+                  Es spielten: Phillin Schultheiß (Tor); Anne Flaig; 
                     Anna Besserer (2Tore); Daniela Dahlke (2Tore); Sabina Diz 
                     (2Tore) Anna Hofmann (1Tor); Alina Müller (2Tore); Jessica 
                     Harris; Jasmin Wildermuth (1Tor) und Sophia Doll (1Tor).
-        </p>
-      </td>
-      <td colspan="2" class="copy">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0043.jpg')}" width="275" height="206"/>
-      </td>
-    </tr>
-    <tr>
-      <td class="copy">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0042.jpg')}" width="134" height="206"/>
-      </td>
-      <td class="copy">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0044.jpg')}" width="134" height="206"/>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" class="copy">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0045.jpg')}" width="275" height="206"/>
-      </td>
-    </tr>
-    <tr>
-      <td class="copy">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0051.jpg')}" width="275" height="206"/>
-      </td>
-      <td colspan="2" class="copy">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0052.jpg')}" width="275" height="206"/>
-      </td>
-    </tr>
-    <tr>
-      <td class="copy">
-        <p>
-          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0053.jpg')}" width="275" height="206"/>
-        </p>
-        <p>
-           
-        </p>
-      </td>
-      <td colspan="2" class="copy">
-         
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3" class="copy">
-        02.10.09
-        <br/>
-        <span class="headline">
-          SV 
+                </p>
+              </td>
+              <td colspan="2" class="copy">
+                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0043.jpg')}" width="275" height="206"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="copy">
+                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0042.jpg')}" width="134" height="206"/>
+              </td>
+              <td class="copy">
+                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0044.jpg')}" width="134" height="206"/>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="copy">
+                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0045.jpg')}" width="275" height="206"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="copy">
+                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0051.jpg')}" width="275" height="206"/>
+              </td>
+              <td colspan="2" class="copy">
+                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0052.jpg')}" width="275" height="206"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="copy">
+                <p>
+                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0053.jpg')}" width="275" height="206"/>
+                </p>
+                <p>
+                   
+                </p>
+              </td>
+              <td colspan="2" class="copy">
+                 
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="copy">
+                02.10.09
+                <br/>
+                <span class="headline">
+                  SV 
                   Leingarten : TGV Dürrenzimmern &gt; 11:1
-        </span>
-        <p>
-          Zu 
+                </span>
+                <p>
+                  Zu 
                     Gast waren heute die Juniorinnen der beim TGV Dürrenzimmern. 
                     Wir begannen gleich Druck aufzubauen und gingen in der 2. 
                     Minute durch Anne in Führung. Nachdem Anna B. nach einem 
@@ -279,31 +283,31 @@
                     Chiara. Doch auch die Juniorinnen der TGV kamen zu Ihrem Ehrentreffer 
                     zum Endstand von 11:1. Alle zeigten in diesem Spiel und vor 
                     allem in der 1. Halbzeit eine gute Leistung!
-        </p>
-        <p>
-          Es spielten: Phillin Schultheiß (Tor); Anne Flaig (1Tor); 
+                </p>
+                <p>
+                  Es spielten: Phillin Schultheiß (Tor); Anne Flaig (1Tor); 
                     Anna Besserer (2Tore); Daniela Dahlke (2Tore); Sabina Diz 
                     (1Tor) Anna Hofmann (1Tor); Alina Müller (3Tore); Chiara 
                     Plieninger (2Tore); Jessica Hannss; Jessica Harris und Sarah 
                     Siegele.
-        </p>
-        <p>
-           
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td class="copy">
-        <p>
-          25.09.09
-          <br/>
-          <span class="headline">
-            TSV Fürfeld : SV Leingarten &gt; 
+                </p>
+                <p>
+                   
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="copy">
+                <p>
+                  25.09.09
+                  <br/>
+                  <span class="headline">
+                    TSV Fürfeld : SV Leingarten &gt; 
                     1:8
-          </span>
-        </p>
-        <p>
-          Zum 2. Spiel der Runde waren wir zu Gast beim TSV Fürfeld. 
+                  </span>
+                </p>
+                <p>
+                  Zum 2. Spiel der Runde waren wir zu Gast beim TSV Fürfeld. 
                     Hier war Wiedergutmachung angesagt. Vorab jedoch ein Lob und 
                     Dankeschön an die Eltern unser Juniorinnen!! die uns 
                     anfeuerten ohne jedoch Anweisungen auf den Platz zu rufen. 
@@ -332,59 +336,59 @@
                     Treffer!! Auch Phillin konnte sich trotz unserer starken Hintermannschaft 
                     auszeichnen indem Sie einen direkt geschossenen Freistoß 
                     mit einer klasse Parade hielt.
-        </p>
-        <p>
-          Es spielten: Phillin Schultheiß (Tor); Anne Flaig (2Tore); 
+                </p>
+                <p>
+                  Es spielten: Phillin Schultheiß (Tor); Anne Flaig (2Tore); 
                     Anna Besserer (1Tor); Daniela Dahlke (1Tor); Sabina Diz (1Tor) 
                     Anna Hofmann (1Tor); Alina Müller (1Tor) und Chiara Plieninger 
                     (1Tor).
-        </p>
-      </td>
-      <td colspan="2" class="copy">
-        <p>
-          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0040.jpg')}" width="275" height="206"/>
-        </p>
-        <p>
-          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0041.jpg')}" width="275" height="206"/>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td class="copy">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0042.jpg')}" width="275" height="206"/>
-      </td>
-      <td colspan="2" class="copy">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0043.jpg')}" width="275" height="206"/>
-      </td>
-    </tr>
-    <tr valign="top">
-      <td class="copy">
-        <p>
-          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0044.jpg')}" width="275" height="206"/>
-        </p>
-        <p>
-           
-        </p>
-      </td>
-      <td colspan="2" class="copy">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0045.jpg')}" width="275" height="206"/>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3" class="copy">
-        18.09.09
-        <br/>
-        <span class="headline">
-          SV 
+                </p>
+              </td>
+              <td colspan="2" class="copy">
+                <p>
+                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0040.jpg')}" width="275" height="206"/>
+                </p>
+                <p>
+                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0041.jpg')}" width="275" height="206"/>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="copy">
+                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0042.jpg')}" width="275" height="206"/>
+              </td>
+              <td colspan="2" class="copy">
+                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0043.jpg')}" width="275" height="206"/>
+              </td>
+            </tr>
+            <tr valign="top">
+              <td class="copy">
+                <p>
+                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0044.jpg')}" width="275" height="206"/>
+                </p>
+                <p>
+                   
+                </p>
+              </td>
+              <td colspan="2" class="copy">
+                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0045.jpg')}" width="275" height="206"/>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="copy">
+                18.09.09
+                <br/>
+                <span class="headline">
+                  SV 
                   Leingarten : FSV Schwaigern &gt; 1:3
-        </span>
-        <p>
-          <span class="wichtig">
-            Auftaktniederlage 
+                </span>
+                <p>
+                  <span class="wichtig">
+                    Auftaktniederlage 
                     unserer C-Juniorinnen
-          </span>
-          <br/>
-          Zum Start in die neue Runde waren die Juniorinnen der FSV 
+                  </span>
+                  <br/>
+                  Zum Start in die neue Runde waren die Juniorinnen der FSV 
                     Schwaigern zu Gast im Heuchelbergstadion. Schon kurz nach 
                     dem Anpfiff war klar, das unsere Juniorinnen nicht konzentriert 
                     und mit dem Kopf beim Spiel waren. Mit Mühe konnten wir 
@@ -402,17 +406,77 @@
                     unserer Hintermannschaft, in der nicht alle schliefen. Hoffen 
                     wir, das wir im nächsten Spiel ausgeschlafen und konzentriert 
                     ins Spiel gehen.
-        </p>
-        <p>
-          Es spielten: Carolin Schneider (Tor); Anna Besserer; Anna 
+                </p>
+                <p>
+                  Es spielten: Carolin Schneider (Tor); Anna Besserer; Anna 
                     Hofmann; Alina Müller (1Tor); Daniela Dahlke; Sarah Siegele; 
                     Cora Tietz; Jessica Hannss und Sabina Diz
-        </p>
-        <p>
-          <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_w_c_tab.gsp')}">
-            &gt; hier zur aktuellen Tabelle
-          </a>
-        </p>
+                </p>
+                <p>
+                  <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_w_c_tab.gsp')}">
+                    &gt; hier zur aktuellen Tabelle
+                  </a>
+                </p>
+                <p>
+                   
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td width="120">
+        <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
+          <tbody>
+            <tr>
+              <td height="20" bgcolor="#93BEEE" class="infohead">
+                Trainingszeiten
+                <br/>
+                seit 17.08.2009
+              </td>
+            </tr>
+            <tr>
+              <td valign="bottom" bgcolor="#D2DFFF" class="copy">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td class="copy">
+                        Mo
+                      </td>
+                      <td valign="top" class="copy">
+                        19.00 - 20.00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="40" class="copy">
+                        Fr
+                      </td>
+                      <td valign="top" class="copy">
+                        17.30 - 19.00
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                im Heuchelbergstadion
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
+          <tbody>
+            <tr>
+              <td height="20" bgcolor="#93BEEE" class="infohead">
+                Trainer und 
+                  Betreuer
+              </td>
+            </tr>
+            <tr>
+              <td valign="bottom" bgcolor="#D2DFFF" class="copy">
+                Uwe Dorst
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <p>
            
         </p>

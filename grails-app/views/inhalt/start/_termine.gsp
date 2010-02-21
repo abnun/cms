@@ -41,6 +41,21 @@
 				<td height="30" class="copy"><g:formatDate date="${termin.datum}" format="dd. MMMMM"/></td>
 				<td height="30"><span class="wichtig"><g:if test="${!termin.findetStatt}"><s></g:if>${termin.inhalt}<g:if test="${!termin.findetStatt}"></s><br/></g:if></span><span class="copy">
 				</span><g:if test="${!termin.findetStatt}"><span class="copy">${termin.zusatzinfo ?: '(fällt aus)'}</span></g:if></td>
+				<shiro:hasRole name="${ShiroRole.BENUTZER}">
+					<td>
+						<g:link controller="termin" action="edit" id="${termin.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Termin ändern" title="Termin ändern" border="0"/></g:link>
+						<jq:jquery>
+								$("#termin_del_${termin.id}").click(function () {
+									if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+									{
+										$.post("${createLink(controller: 'termin', action: 'delete', id: termin.id)}");
+										location.reload();
+									}
+								});
+						</jq:jquery>
+						<a href="javascript: void(0);" id="termin_del_${termin.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Termin löschen" title="Termin löschen" border="0"/></a>
+					</td>
+				</shiro:hasRole>
 			</tr>
 		</g:each>
 	</g:if>

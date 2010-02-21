@@ -21,7 +21,11 @@ class UrlMappings
 			action = "list"
 		}
 
-		"/${action}.asp"(controller: 'propagation')
+		"/sites/$name**.htm"
+		{
+			controller = "propagation"
+			action = "route"
+		}
 
 		"/$controller/$action?/$id?" {
 			constraints {

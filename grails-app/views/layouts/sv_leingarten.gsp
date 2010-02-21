@@ -42,6 +42,7 @@
 	</shiro:hasRole>
 
 	<g:javascript library="jquery" />
+	%{--<script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/legacy/jquery-1.3.2.js"></script>--}%
 
 	<g:layoutHead />
 </head>
@@ -68,6 +69,30 @@
           <td class="rubrikactiv"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="1" height="1"></td>
         </tr>
       </table>
+		<shiro:isLoggedIn>
+			<table border="0" cellspacing="0" class="copy" style="float: right; color: white;">
+				<tbody>
+				<tr class="copy">
+					<td class="copy">
+						Eingeloggter User: <shiro:principal/>&nbsp;
+					</td>
+					<td>
+						<img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"/>
+					</td>
+					<td class="copy">
+						&nbsp;<g:link controller="admin" style="color: white;">Mein SVL</g:link>&nbsp;
+					</td>
+					<td>
+						<img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"/>
+					</td>
+					<td class="copy">
+						&nbsp;<g:link controller="auth" action="signOut" style="color: white;" onclick="return confirm('Wirklich ausloggen?');">ausloggen</g:link>&nbsp;
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</shiro:isLoggedIn>
+
     <!-- InstanceEndEditable -->
 	  </td>
   </tr>
@@ -84,7 +109,7 @@
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="${createLink(controller: 'inhalt', action: 'aktuelles')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','show')">Aktuelles</a></span></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','show','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Veranstaltungen</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="${resource(dir: 'sites/veranstaltungen', file: 'veranstaltungen.gsp')}" onMouseOver="MM_showHideLayers('veranstaltungen','','show','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Veranstaltungen</a></span></td>
         </tr>
         <tr>
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="${resource(dir: 'sites/abteilungen', file: 'abteilungen.gsp')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','show','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Abteilungen</a></span></td>
@@ -134,12 +159,6 @@
           <td width="110" height="20" valign="middle">&nbsp;</td>
         </tr>
 		<tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="${resource(dir: 'sites', file: 'impressum.gsp')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','show','aktuell','','hide')">Impressum</a></span></td>
-        </tr>
-		<tr>
-		  <td width="110" height="20" valign="middle">&nbsp;</td>
-		</tr>
-        <tr>
           <td width="110" height="100%" valign="middle"><font color="#000033" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
         </tr>
       </table>
@@ -283,7 +302,7 @@
     </tr>
   </table>
 </div>
-<div id="organe" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:6; left: 112px; top: 507px;">
+<div id="organe" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:6; left: 112px; top: 393px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -299,7 +318,7 @@
     </tr>
   </table>
 </div>
-<div id="themen" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:3; left: 112px; top: 549px;">
+<div id="themen" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:3; left: 112px; top: 435px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -316,7 +335,7 @@
     </tr>
   </table>
 </div>
-<div id="sitzungen" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:4; left: 112px; top: 528px;">
+<div id="sitzungen" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:4; left: 112px; top: 414px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
@@ -332,7 +351,7 @@
     </tr>
   </table>
 </div>
-<div id="impressum" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:2; left: 112px; top: 590px;">
+<div id="impressum" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:2; left: 112px; top: 456px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>

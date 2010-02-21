@@ -44,6 +44,19 @@ class Funktion
 		})
     }
 
+	static namedQueries =
+	{
+   		vorstandsFunktionen
+		{
+           eq('vorstand', true)
+       	}
+
+		normaleFunktionen
+		{
+           eq('vorstand', false)
+       	}
+	}
+
 	def String toString()
 	{
 		return name

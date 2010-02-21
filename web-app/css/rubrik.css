@@ -54,3 +54,39 @@
 	background-position: right center;
 	background-repeat: no-repeat;
 }
+.rubrik_grau {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #999999;
+	text-decoration: none;
+}
+.rubrik_grau a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #999999;
+	text-align: right;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 20px;
+	font-weight: normal;
+}
+.rubrik_grau a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #999999;
+	text-align: right;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+.rubrik_grau a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #93BEEE;
+	text-align: right;
+	text-decoration: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+}

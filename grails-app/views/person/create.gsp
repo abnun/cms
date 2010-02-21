@@ -99,7 +99,7 @@
                                 </td>
                             </tr>
                         
-                            <tr class="prop">
+                            %{--<tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="bild"><g:message code="person.bild.label" default="Bild" /></label>
                                 </td>
@@ -115,7 +115,7 @@
                                 <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'steckbrief', 'errors')}">
                                     <g:select name="steckbrief.id" from="${de.webmpuls.cms.people.Steckbrief.list()}" optionKey="id" value="${personInstance?.steckbrief?.id}" noSelection="['null': '']" />
                                 </td>
-                            </tr>
+                            </tr>--}%
                         
                             <tr class="prop">
                                 <td valign="top" class="name">

@@ -1,8 +1,7 @@
 package de.webmpuls.cms.section
 
-import de.webmpuls.photo_album.Album
-import de.webmpuls.photo_album.Picture
 import de.webmpuls.cms.media.MediaUtils
+import de.webmpuls.photo_album.Album
 
 class SponsorController {
 

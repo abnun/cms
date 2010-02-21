@@ -7,7 +7,7 @@ class Abteilung
 {
 	static final String JUGEND_FUSSBALL = "Fußball (Jugend)"
 
-	static hasMany = [mitarbeiterfunktionen: Funktion, unterabteilungen: Abteilung, personen: Person]
+	static hasMany = [mitarbeiterfunktionen: Funktion, unterabteilungen: Abteilung, personen: Person, trainingszeiten: Trainingszeit]
 
 	String name
 	String code
@@ -36,7 +36,11 @@ class Abteilung
 			println("validation for '$v' evaluates to $isValid")
 			return isValid
 		})
-		kuerzel(validator: { String v ->
+		kuerzel(nullable: true, validator: { String v ->
+			if(v == null)
+			{
+				return true
+			}
 			boolean isValid = (v ==~ /[a-z_0-9]+/)
 			println("validation for '$v' evaluates to $isValid")
 			return isValid

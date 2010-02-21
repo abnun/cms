@@ -9,7 +9,7 @@
 		<td class="copy">
 			<p class="headline">
 				Sitzungen und andere Termine
-				2009
+				<g:formatDate date="${new Date()}" format="yyyy" />
 			</p>
 			<table width="100%" border="0" cellpadding="0" cellspacing="0">
 				<tbody>
@@ -106,7 +106,19 @@
 							</g:if>
 						</td>
 						<shiro:hasRole name="${ShiroRole.BENUTZER}">
-							<td><g:link controller="termin" action="edit" id="${termin.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Termin ändern" title="Termin ändern" border="0"/></g:link></td>
+							<td>
+								<g:link controller="termin" action="edit" id="${termin.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Termin ändern" title="Termin ändern" border="0"/></g:link>
+								<jq:jquery>
+										$("#termin_del_${termin.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												$.post("${createLink(controller: 'termin', action: 'delete', id: termin.id)}");
+												location.reload();
+											}
+										});
+								</jq:jquery>
+								<a href="javascript: void(0);" id="termin_del_${termin.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Termin löschen" title="Termin löschen" border="0"/></a>
+							</td>
 						</shiro:hasRole>
 					</tr>
 
@@ -122,6 +134,7 @@
 				<br/>
 				<br/>
 			</p>
+
 		</td>
 	</tr>
 	</tbody>

@@ -62,7 +62,7 @@ grails.gorm.default.mapping = {
 }
 
 
-alter.static.files = true
+alter.static.files = false
 
 // show all options to alter pictures
 photo_album.picture.show.all.options = true
@@ -134,7 +134,7 @@ log4j = {
 
 	root
 	{
-		error 'stdout'
+		info 'stdout'
 		additivity = false
 	}
 

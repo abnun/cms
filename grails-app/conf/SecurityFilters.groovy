@@ -6,6 +6,15 @@ import de.webmpuls.cms.people.ShiroRole
  */
 class SecurityFilters {
     def filters = {
+		adminArea(controller: 'admin', action: 'index') {
+            before = {
+                // Access control by convention.
+                accessControl()
+				{
+					role(ShiroRole.BENUTZER)
+				}
+            }
+        }
         user(controller: 'anzeigen|news|aktuelles|abteilung|funktion|person|tabelle|termin', action: 'edit|create|list|update|save|delete') {
             before = {
                 // Access control by convention.

@@ -48,6 +48,6 @@ class Person
 
 	def String toString()
 	{
-		return "$nachname, $vorname"
+		return "$vorname $nachname"
 	}
 }

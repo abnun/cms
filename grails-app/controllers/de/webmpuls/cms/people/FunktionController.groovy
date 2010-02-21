@@ -23,7 +23,7 @@ class FunktionController {
         def funktionInstance = new Funktion(params)
         if (funktionInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'funktion.label', default: 'Funktion'), funktionInstance.id])}"
-            redirect(action: "show", id: funktionInstance.id)
+            redirect(action: "edit", id: funktionInstance.id)
         }
         else {
             render(view: "create", model: [funktionInstance: funktionInstance])
@@ -67,7 +67,7 @@ class FunktionController {
             funktionInstance.properties = params
             if (!funktionInstance.hasErrors() && funktionInstance.save(flush: true)) {
                 flash.message = "${message(code: 'default.updated.message', args: [message(code: 'funktion.label', default: 'Funktion'), funktionInstance.id])}"
-                redirect(action: "show", id: funktionInstance.id)
+                redirect(action: "edit", id: funktionInstance.id)
             }
             else {
                 render(view: "edit", model: [funktionInstance: funktionInstance])

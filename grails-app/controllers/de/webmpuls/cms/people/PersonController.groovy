@@ -1,8 +1,10 @@
 package de.webmpuls.cms.people
 
 import de.webmpuls.cms.section.Abteilung
-import de.webmpuls.photo_album.Album
+
 import de.webmpuls.cms.media.MediaUtils
+import de.webmpuls.photo_album.Album
+import de.webmpuls.photo_album.Picture
 
 class PersonController {
 
@@ -26,7 +28,7 @@ class PersonController {
     def save = {
         def personInstance = new Person(params)
         if (personInstance.save(flush: true)) {
-            flash.message = "${message(code: 'default.created.message', args: [message(code: 'person.label', default: 'Person'), personInstance.id])}"
+            flash.message = "${message(code: 'default.created.message', args: [message(code: 'person.label', default: 'Person'), personInstance.toString()])}"
             redirect(action: "edit", id: personInstance.id)
         }
         else {
@@ -76,6 +78,20 @@ class PersonController {
                 }
             }
             personInstance.properties = params
+
+			ArrayList vorstandsFunktionList = params.list('funktionen.vorstand')
+			if(vorstandsFunktionList)
+			{
+				for(String vFunktionId in vorstandsFunktionList)
+				{
+					Funktion tmpVFunktion = Funktion.get(vFunktionId)
+
+					if(tmpVFunktion && !personInstance.funktionen.contains(tmpVFunktion))
+					{
+						personInstance.addToFunktionen(tmpVFunktion)
+					}
+				}
+			}
 			if (!params.list('funktionen'))
 			{
 				personInstance.funktionen = []
@@ -85,7 +101,7 @@ class PersonController {
 				personInstance.abteilungen = []
 			}
             if (!personInstance.hasErrors() && personInstance.save(flush: true)) {
-                flash.message = "${message(code: 'default.updated.message', args: [message(code: 'person.label', default: 'Person'), personInstance.id])}"
+                flash.message = "${message(code: 'default.updated.message', args: [message(code: 'person.label', default: 'Person'), personInstance.toString()])}"
                 redirect(action: "edit", id: personInstance.id)
             }
             else {
@@ -134,4 +150,50 @@ class PersonController {
             redirect(action: "list")
         }
     }
+
+	def setPicture =
+	{
+		String id = params.id
+		if(id)
+		{
+			Person tmpPerson = Person.get(id)
+
+			String pictureBaseName = "${tmpPerson.vorname.toLowerCase()}_${tmpPerson.nachname.toLowerCase()}${de.webmpuls.photo_album.util.MediaUtils.SUFFIX}"
+			String tmpPictureBaseName = params["bild.id"] 
+			if(tmpPictureBaseName)
+			{
+				pictureBaseName = tmpPictureBaseName
+
+				int indexOf = pictureBaseName.indexOf(de.webmpuls.photo_album.util.MediaUtils.NORMAL)
+				if(indexOf != -1)
+				{
+					String suffix = pictureBaseName.substring(pictureBaseName.indexOf("."), pictureBaseName.size())
+					String baseName = pictureBaseName.substring(0, indexOf)
+					pictureBaseName = baseName + suffix
+				}
+			}
+			if(tmpPerson)
+			{
+				Picture tmpPicture = Picture.findByBaseName(pictureBaseName)
+				if(tmpPicture)
+				{
+					tmpPerson.setBild(tmpPicture)
+
+					if (!tmpPerson.hasErrors() && tmpPerson.save(flush: true))
+					{
+						flash.message = "${message(code: 'default.updated.message', args: [message(code: 'person.label', default: 'Person'), tmpPerson.toString()])}"
+						redirect(action: "edit", id: tmpPerson.id)
+					}
+					else
+					{
+						render(view: "edit", model: [personInstance: tmpPerson])
+					}
+				}
+				else
+				{
+					render(view: "edit", model: [personInstance: tmpPerson])
+				}
+			}
+		}
+	}
 }

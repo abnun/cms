@@ -181,7 +181,7 @@
 						<g:render template="/global/section/head" model="[head: abteilungsLeiter, section: abteilungInstance]"/>
 					</p>
 				</g:each>
-				<p><img src="bilder/test/box_training.png" width="127" height="91">
+				<p><img src="bilder/test/box_training.png" width="127" height="91" style="margin-top: 5px;">
 				</p>
 				<p>&nbsp;</p>
 				<!-- InstanceEndEditable --></td>

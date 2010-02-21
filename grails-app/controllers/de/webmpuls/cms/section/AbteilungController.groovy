@@ -7,6 +7,8 @@ class AbteilungController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
+	static List allowedCodes = ["fussball_jugend", "fussball", "fussball_ah"]
+
     def index = {
         redirect(action: "list", params: params)
     }
@@ -35,7 +37,8 @@ class AbteilungController {
 
     def show = {
 		println("params -> $params")
-        def abteilungInstance = Abteilung.get(params.id)
+
+		def abteilungInstance = Abteilung.get(params.id)
         if (!abteilungInstance) {
 			abteilungInstance = Abteilung.findByCode(params.code)
 		}
@@ -43,35 +46,44 @@ class AbteilungController {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), params.id])}"
             redirect(action: "list")
         }
-        else {
-
-			Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
+        else
+		{
+			//println abteilungInstance.code
+			if (!allowedCodes.contains(abteilungInstance.code))
 			{
-				Funktion funktion ->
-
-				if (funktion.code == Funktion.ABTEILUNGSLEITER)
+				response.sendRedirect("${request.getContextPath()}/sites/abteilungen/${abteilungInstance.code}.gsp")
+				return false
+			}
+			else
+			{
+				Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
 				{
-					return funktion
+					Funktion funktion ->
+
+					if (funktion.code == Funktion.ABTEILUNGSLEITER)
+					{
+						funktion
+					}
 				}
-			}
 
-			Collection abteilungsLeiterCollection = null
+				Collection abteilungsLeiterCollection = null
 
-			if (abteilungsLeiterFunktion)
-			{
-				abteilungsLeiterCollection = abteilungInstance.personen.findAll
+				if (abteilungsLeiterFunktion)
 				{
-					Person tmpPerson ->
-					abteilungsLeiterFunktion.personen.contains(tmpPerson)
+					abteilungsLeiterCollection = abteilungInstance.personen.findAll
+					{
+						Person tmpPerson ->
+						abteilungsLeiterFunktion.personen.contains(tmpPerson)
+					}
 				}
-			}
 
-			if (abteilungsLeiterCollection)
-			{
-				abteilungsLeiterCollection = abteilungsLeiterCollection.sort {a, b -> a.nachname <=> b.nachname}
-			}
+				if (abteilungsLeiterCollection)
+				{
+					abteilungsLeiterCollection = abteilungsLeiterCollection.sort {a, b -> a.nachname <=> b.nachname}
+				}
 
-            [abteilungInstance: abteilungInstance, abteilungsLeiterCollection: abteilungsLeiterCollection]
+				return [abteilungInstance: abteilungInstance, abteilungsLeiterCollection: abteilungsLeiterCollection]
+			}
         }
     }
 
@@ -81,12 +93,51 @@ class AbteilungController {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), params.id])}"
             redirect(action: "list")
         }
-        else {
-            return [abteilungInstance: abteilungInstance]
+        else
+		{
+
+			def funktionList = de.webmpuls.cms.people.Funktion.normaleFunktionen().list([cache: true])
+
+			StringBuilder fBuilder = new StringBuilder()
+			for (de.webmpuls.cms.people.Funktion funktion: funktionList)
+			{
+				//if(!abteilungInstance.mitarbeiterfunktionen.contains(funktion))
+				//{
+					if (fBuilder.length() == 0)
+					{
+						fBuilder.append("\"${funktion.name}\"")
+					}
+					else
+					{
+						fBuilder.append(",\"${funktion.name}\"")
+					}
+				//}
+			}
+
+			def personList = de.webmpuls.cms.people.Person.list([cache: true])
+
+			StringBuilder pBuilder = new StringBuilder()
+			for (Person person: personList)
+			{
+				//if(!abteilungInstance.personen.contains(person))
+				//{
+					if (pBuilder.length() == 0)
+					{
+						pBuilder.append("\"${person.vorname} ${person.nachname}\"")
+					}
+					else
+					{
+						pBuilder.append(",\"${person.vorname} ${person.nachname}\"")
+					}
+				//}
+			}
+
+            return [abteilungInstance: abteilungInstance, fBuilder: fBuilder.toString(), pBuilder: pBuilder.toString()]
         }
     }
 
     def update = {
+		println("params -> $params")
         def abteilungInstance = Abteilung.get(params.id)
         if (abteilungInstance) {
             if (params.version) {
@@ -98,22 +149,64 @@ class AbteilungController {
                     return
                 }
             }
-            abteilungInstance.properties = params
-			if (!params.list('mitarbeiterfunktionen'))
+
+			ArrayList personList = params.list('personen')
+			ArrayList funktionList = params.list('funktionen')
+
+			if(personList && funktionList)
 			{
-				abteilungInstance.mitarbeiterfunktionen = []
+				for(String personString in personList)
+				{
+					String tmpVorname = personString.split(" ")[0]
+					String tmpNachname = personString.split(" ")[1]
+
+					Person tmpPerson = Person.findByVornameAndNachname(tmpVorname, tmpNachname)
+
+					if(tmpPerson)
+					{
+						for (String funktionString in funktionList)
+						{
+							Funktion tmpFunktion = Funktion.findByName(funktionString)
+
+							if (tmpFunktion)
+							{
+								tmpPerson.addToFunktionen(tmpFunktion)
+								tmpFunktion.addToPersonen(tmpPerson)
+								
+								if(!abteilungInstance.mitarbeiterfunktionen.contains(tmpFunktion))
+								{
+									abteilungInstance.addToMitarbeiterfunktionen(tmpFunktion)
+								}
+							}
+						}
+
+						if(!abteilungInstance.personen.contains(tmpPerson))
+						{
+							abteilungInstance.addToPersonen(tmpPerson)
+						}
+					}
+				}
+				params.remove('personen')
+				params.remove('funktionen')
 			}
-			if (!params.list('personen'))
+			/*else if (!params.list('personen'))
 			{
 				abteilungInstance.personen = []
 			}
+			else if (!params.list('funktionen'))
+			{
+				abteilungInstance.mitarbeiterfunktionen = []
+			}*/
+
+            abteilungInstance.properties = params
+
 			if (!params.list('unterabteilungen'))
 			{
 				abteilungInstance.unterabteilungen = []
 			}
             if (!abteilungInstance.hasErrors() && abteilungInstance.save(flush: true)) {
                 flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilungInstance.id])}"
-                redirect(action: "show", id: abteilungInstance.id)
+                redirect(action: "edit", id: abteilungInstance.id)
             }
             else {
                 render(view: "edit", model: [abteilungInstance: abteilungInstance])
@@ -147,5 +240,73 @@ class AbteilungController {
 	def menu =
 	{
 		render(view: '/global/menu/abteilung', model:[abteilungInstanceList: Abteilung.hauptAbteilungen().listOrderByName([cache: true])])
+	}
+
+	def removePerson =
+	{
+		println("params -> $params")
+
+		String id = params.id
+
+		if(id)
+		{
+			Abteilung abteilung = Abteilung.get(id)
+
+			if(abteilung)
+			{
+				String personId = params['person.id']
+
+				if(personId)
+				{
+					Person tmpPerson = Person.get(personId)
+
+					if(tmpPerson)
+					{
+						abteilung.removeFromPersonen(tmpPerson)
+						tmpPerson.removeFromAbteilungen(abteilung)
+
+						Collection funktionenToDelete = tmpPerson.funktionen.findAll
+						{
+							Funktion tmpFunktion ->
+
+							boolean noOtherDependency = true
+
+							for(Abteilung tmpAbteilung in tmpPerson.abteilungen)
+							{
+								if (tmpAbteilung.mitarbeiterfunktionen.contains(tmpFunktion))
+								{
+									noOtherDependency = false
+								}
+							}
+
+							if(abteilung.mitarbeiterfunktionen.contains(tmpFunktion) && noOtherDependency)
+							{
+								return true
+							}
+						}
+
+						for(Funktion tmpFunktion in funktionenToDelete)
+						{
+							tmpPerson.removeFromFunktionen(tmpFunktion)
+
+							if (tmpPerson.hasErrors() && !tmpPerson.save(flush: true))
+							{
+								tmpPerson.errors.allErrors.each
+								{
+									println it
+								}
+							}
+						}
+
+						if (!abteilung.hasErrors() && abteilung.save(flush: true))
+						{
+							flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilung.id])}"
+							redirect(action: "edit", id: abteilung.id)
+						}
+					}
+				}
+			}
+		}
+
 	}
 }
