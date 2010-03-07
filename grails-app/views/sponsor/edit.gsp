@@ -1,5 +1,5 @@
 
-<%@ page import="de.webmpuls.cms.media.MediaHelper; de.webmpuls.cms.media.MediaUtils; de.webmpuls.cms.section.Sponsor" %>
+<%@ page import="de.webmpuls.cms.media.MediaHelper; de.webmpuls.cms.section.Sponsor" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
