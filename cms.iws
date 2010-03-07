@@ -16,798 +16,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="5f73de50-6db0-4ae4-9992-1a775988b942" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-pl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-pt-BR.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/organe/delegierte.gsp" afterPath="$PROJECT_DIR$/web-app/sites/organe/delegierte.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Baumann.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/oliver_hartmann.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Werner.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_freibad.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_freibad.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/benefiz_05.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/benefiz_05.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_wir.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_wir.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.fade.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/news/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/news/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/veranstaltung_07.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/veranstaltung_07.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/ballnacht_08.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/ballnacht_08.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-tr.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/admin/AdminController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/admin/AdminController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/senioren_05.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/senioren_05.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Vedder.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/downloads/SVL Satzung.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/aktuelles/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/aktuelles/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/reiten.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/reiten.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/tabelle/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/tabelle/show.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_rieker.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/Kopie von f1_port_Schietinger.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.mouse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-eo.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_senioren.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_senioren.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/pdf/demo.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/bernd_hedendorf.htm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-hy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_f_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_f_team.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Bolch.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-nl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_authenrieth.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volley_a_ski05.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volley_a_ski05.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.tabs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/global/css/_buttonCSS.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/start/TerminController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/start/TerminController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/inhalt/start/_anzeigen.gsp" afterPath="$PROJECT_DIR$/grails-app/views/inhalt/start/_anzeigen.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.fold.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_reiten.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_reiten.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/people/FunktionController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/people/FunktionController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_c_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_c_team.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis_versammlung05.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.core.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_a_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_a_plan.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-ca.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Schneider.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port__neutral.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc9.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/thomas_werner.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking_anmeldung.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking_anmeldung.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Dietz.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.sortable.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Duerrwang.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.bounce.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Liaci.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_BeckerPh.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.fade.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/juergen_kroedel.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/saskia_lauerer.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.tabs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis_uebersicht.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis_uebersicht.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms.iws" afterPath="$PROJECT_DIR$/cms.iws" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Kreissig.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-fr-CH.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/termin/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/termin/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_jazztanz.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_jazztanz.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.drop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-th.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/anzeigen/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/anzeigen/show.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.progressbar.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_ZahnM.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.resizable.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_strecken.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_strecken.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Vogt.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_b_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_b_team.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fuba_frauen.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fuba_frauen.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.transfer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_messe2.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_messe2.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/anzeigen/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/anzeigen/list.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/jquery-ui-1.7.2.custom.css" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/jquery-ui-1.7.2.custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_geschichte.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_geschichte.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/uwe_dorst.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.button.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery-ui-i18n.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-bs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.resizable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.selectable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/global/javascript/_uploadifyJS.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/downloads/SVL_Adressliste.xls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/radsport_wir.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/radsport_wir.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_hofstetter.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/global/javascript/_morePictureUploadJS.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.progressbar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/external/jquery.metadata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/basketball.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/basketball.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_damen.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_damen.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/ute_kern.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/jquery/jquery-1.3.2.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw3.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw3.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery-ui.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Koch.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.pulsate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Schellmann.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_d.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_d.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_BeckerM.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc8.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_zar_frage1.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.core.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/leichtathletik_training.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/leichtathletik_training.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-da.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/people/Funktion.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/people/Funktion.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_frauen.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_frauen.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_ZahnTh.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_e.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_e.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc1.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/festgelaende.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/festgelaende.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Remmele.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/SecurityFilters.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/SecurityFilters.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Schietinger.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-sr-SR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Schaefer.htm" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/abteilung/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/abteilung/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/sponsor/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/sponsor/edit.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/Kopie von f1_port_Schietinger.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/section/SponsorController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/section/SponsorController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_FinkC.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-el.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Herzberg.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/oliver_helber.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-ms.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_MayerH.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_f2.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_f2.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/karate.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/karate.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/sponsor/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/sponsor/show.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_sportheim.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/bilder/icons/user-male.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/oliver_hartmann.gsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/js/jquery/jquery.bgiframe.min.js" afterPath="$PROJECT_DIR$/web-app/js/external/jquery.bgiframe-2.1.1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_torjaeger.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_torjaeger.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.accordion.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-lv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-hu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.slide.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_hofstetter.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_ik.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_ik.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_HeubachR.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_zar_frage2.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.drop.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_bambini_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_bambini_tab.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-lt.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/create.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Hussein.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/anzeigen/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/anzeigen/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_curriculum.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_curriculum.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc4.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_f1.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Zimmermann.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prodDbSVLeingarten.properties" afterPath="$PROJECT_DIR$/prodDbSVLeingarten.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.clip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_tab.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/funktion/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/funktion/show.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-zh-CN.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Liaci.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_MayerU.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.fold.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Hussein.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Abteilung.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Abteilung.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/global/section/_head.gsp" afterPath="$PROJECT_DIR$/grails-app/views/global/section/_head.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-icons_3d80b3_256x240.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-icons_3d80b3_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_reiten.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_herren.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_herren.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-ko.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/show.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/funktion/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/funktion/create.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_aufgdef.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_mannschaft.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_mannschaft.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/organe/vorstand_aktion.gsp" afterPath="$PROJECT_DIR$/web-app/sites/organe/vorstand_aktion.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.resizable.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_terminologie.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_terminologie.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-sq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/de/webmpuls/cms/section/TrainingszeitTests.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/beachfeld_bau.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_yoga.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_yoga.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_hallenbad.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/section/AbteilungController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/section/AbteilungController.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f1_port_MayerA.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.blind.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Authenrieth.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/patrick_sommer.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Gottwik.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Czok.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.autocomplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-es.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis_mitglied.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis_mitglied.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.autocomplete.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/marco_rieker.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Weinreuter.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-bg_glass_75_dadada_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_d_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_d_tab.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.transfer.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_hannemann.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f1_port_MayerA.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fuba_frauen_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fuba_frauen_team.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_ej.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_ej.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_hallenbad.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_hallenbad.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/walking_08.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/walking_08.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Heinle.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_bambini_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_bambini_team.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_damen.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_damen.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.button.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_HeubachJ.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_zar.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_zar.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/frank_herkert.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-bs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Unkauf.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_b_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_b_tab.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking_programm.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking_programm.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_FinkC.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-bg_glass_75_79c9ec_1x400.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/sv_leingarten.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/sv_leingarten.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.resizable.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-sr-SR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-cs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-en-GB.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_froehlich.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_e_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_e_plan.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-is.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/bernd_friedrich.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_froehlich.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/deleg_07.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/deleg_07.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_kilic.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_weinmann.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/external/jquery.cookie-r6165.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-az.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-icons_ffffff_256x240.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-icons_ffffff_256x240.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Cano.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_beachfeld_1.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.accordion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/gudrun_werner.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Wachtler.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_portraits.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_portraits.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/gerhard_katona.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.widget.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-zh-TW.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/termin/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/termin/create.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/jenny_potsch.gsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-icons_72a7cf_256x240.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-icons_72a7cf_256x240.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_BeckerM.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_szegedi.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_szegedi.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc7.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Kopp.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Schaefer.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/downloads/Belegungsplan.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_training.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_training.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-zh-TW.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms.ipr" afterPath="$PROJECT_DIR$/cms.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/termin/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/termin/edit.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_HeubachR.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/senioren_08.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/senioren_08.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_guttleber.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.dialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-uk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.droppable.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/handball.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/handball.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.button.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_HeubachW.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_f1.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_f1.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-ms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_e_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_e_team.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/external/jsdiff.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_VedderJulian.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_ausfahrt.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_ausfahrt.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_programm.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_programm.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_hannemann.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-icons_454545_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/vfb_07.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/vfb_07.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/._veranstaltungen.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/senioren_06.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/senioren_06.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.explode.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/schach_aktiv.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/schach_aktiv.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-en-GB.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis_termine.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis_termine.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_kilic.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.bounce.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.highlight.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_b_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_b_plan.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_pg.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_pg.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_op.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_op.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.dialog.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_schernautzki.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_c_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_c_tab.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_guertel.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_guertel.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f1_port_FrankW.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_b.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_b.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis_versammlung05.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_f_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_f_plan.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/news/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/news/create.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volley_beach.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volley_beach.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Kirchherr.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_damen_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_damen_plan.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Duerrwang.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc8.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/downloads/Ehrungsordnung 2004.PDF" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/sebastian_muth.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/._.DS_Store" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Schneider.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery-ui.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/david_menner.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Hoertling.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Dietz.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f1_port_Sahaikewitsch.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_damen_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_damen_tab.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Anhold.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_halle.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_halle.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_schernautzki.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.explode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.slide.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/sponsoren.gsp" afterPath="$PROJECT_DIR$/web-app/sites/sponsoren.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-sr.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/sitzungen.gsp" afterPath="$PROJECT_DIR$/web-app/sites/sitzungen.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc10.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/de/webmpuls/cms/util/PropagationControllerTests.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/oliver_helber.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_e_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_e_plan.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_weber.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/uwe_hannemann.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_HeubachW.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.autocomplete.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_regeln.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_regeln.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.droppable.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Schuster.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc11.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/start/AnzeigenController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/start/AnzeigenController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/tabelle/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/tabelle/create.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/david_menner.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Tignola.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/downloads/Beitrittsformular.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/patrick_sommer.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/walking_Bilder07.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/walking_Bilder07.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.datepicker.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port__neutral.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-ar.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/news/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/news/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_ueben.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_ueben.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-grailsPlugins.iml" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-cs.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_menner.gsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-icons_2694e8_256x240.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-icons_2694e8_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/schach_termine.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/schach_termine.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_damen.htm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/termin/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/termin/show.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.dialog.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/tennisplatz.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/tennisplatz.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_u16.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_u16.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_ausfahrt.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.base.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/gerhard_katona.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-el.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Zimmer.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_streik_05.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_streik_05.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/jugendwinterfeier_04.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/jugendwinterfeier_04.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_zar_frage2.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-no.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Trainingszeit.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_doyle.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/matthias_zahn.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/impressum.gsp" afterPath="$PROJECT_DIR$/web-app/sites/impressum.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_bedeutung.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_bedeutung.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Remmele.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_thiessen.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery-1.4.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/tim_rieker.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_rieker.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc12.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-fr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/downloads/Belegungsplaene/BelegungsplanSportheim.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/people/Person.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/people/Person.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Schietinger.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_ZahnTh.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Heinle.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-vi.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_ZahnM.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_c.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_c.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/heiko_neumeister.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Gottwik.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_weinmann.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/jquery/jquery-1.3.2.min.js" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Heinle.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_d_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_d_team.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Cano.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_messe.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_messe.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/martin_knaus.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc9.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Baumann.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/uwe_hannemann.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/dreamteam_04.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/dreamteam_04.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/pg_info.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/pg_info.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/people/PersonController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/people/PersonController.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/jquery/jquery.dimensions.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/global/javascript/_globalJS.gsp" afterPath="$PROJECT_DIR$/grails-app/views/global/javascript/_globalJS.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.tabs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_tabelle.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_tabelle.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc10.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-id.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/ski.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/ski.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/organe/jvorstand.gsp" afterPath="$PROJECT_DIR$/web-app/sites/organe/jvorstand.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Zimmer.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_proreha.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_proreha.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_bambini_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_bambini_plan.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_kinder.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_kinder.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Schellmann.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Vogt.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/leichtathletik.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/leichtathletik.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc11.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.progressbar.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Pelka.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc7.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_kiss.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_kiss.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_tennis.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_tennis.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_MayerU.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.slider.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_FrankM.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Werschner.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Tignola.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Anhold.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_guttleber.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Pelka.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/tabelle/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/tabelle/list.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_menner.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/ute_kern.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_bilder.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_bilder.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/pdf/demo3.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_f_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_f_tab.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/bernd_hedendorf.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_halle.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking_strecken.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking_strecken.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_HeubachJ.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/downloads/Beitragsordnung 2004.PDF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/bilder/icons/pencil.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.shake.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Kopp.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/winterfeier_04.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/winterfeier_04.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/suewag_08.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/suewag_08.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.clip.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc1.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/news/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/news/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_e_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_e_tab.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.scale.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/schach_jugend.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/schach_jugend.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_holzwarth.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.highlight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.mouse.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_a_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_a_tab.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/walking_07.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/walking_07.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Reiner.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/schach.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/schach.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Wachtler.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-fi.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Schnabel.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/ehrungen_05.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/ehrungen_05.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/main.css" afterPath="$PROJECT_DIR$/web-app/css/main.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_zar_frage1.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/ski_neues.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/ski_neues.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_bj.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_bj.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_trimm.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_trimm.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/veranstaltung_08.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/veranstaltung_08.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.widget.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_wirbelsaeule.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_wirbelsaeule.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc2.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_d_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_d_plan.gsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-icons_f5e175_256x240.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery-ui-1.8rc3.custom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-grailsPlugins.iml" afterPath="$PROJECT_DIR$/cms-grailsPlugins.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms.iws" afterPath="$PROJECT_DIR$/cms.iws" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-icons_fcd113_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-icons_f7a50d_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-icons_056b93_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-bg_flat_55_999999_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-icons_d8e7f3_256x240.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/navi.css" afterPath="$PROJECT_DIR$/web-app/css/navi.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Abteilung.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Abteilung.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-icons_72a7cf_256x240.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/funktion/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/funktion/list.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/gudrun_werner.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_a_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_a_team.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Vedder.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw1.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw1.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-sk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-et.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/inhalt/start/_termine.gsp" afterPath="$PROJECT_DIR$/grails-app/views/inhalt/start/_termine.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Rodewald.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/frank_herkert.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_schadt.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.core.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-he.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_d_portraits.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_d_portraits.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/pdf/_demo2.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_messe3.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_messe3.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Ortwein.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/marco_rieker.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis_anfahrt.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/tennis_anfahrt.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/ttennis.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/ttennis.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/winterfeier_05.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/winterfeier_05.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Schnabel.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/veranstaltung_05.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/veranstaltung_05.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.shake.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Latic.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Kirchherr.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc2.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Weinreuter.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.core.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-anim.basic.16x16.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_BeckerPh.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_kurse.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_kurse.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/matthias_zahn.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_weber.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_tabelle.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_tabelle.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking 2007/walking.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking 2007/walking.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc12.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/saskia_lauerer.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery-1.4.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-hr.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/jquery/jquery.blockUI.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_spielplan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_spielplan.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_beachfeld_2.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc5.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.tabs.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/martin_knaus.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/beachfeld_bau.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/beachfeld_bau.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.accordion.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/aktuelles/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/aktuelles/edit.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Unkauf.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball_party.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball_party.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites.zip" afterPath="$PROJECT_DIR$/web-app/sites.zip" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/bernd_friedrich.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/abteilung/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/abteilung/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/dialog.css" afterPath="$PROJECT_DIR$/web-app/css/dialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/inhalt/start/_anzeige.gsp" afterPath="$PROJECT_DIR$/grails-app/views/inhalt/start/_anzeige.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-no.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Koch.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_schadt.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/beachfeld.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/beachfeld.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/tabelle/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/tabelle/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_e.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_e.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-hy.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc4.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-icons_222222_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/external/testrunner-r6588.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc5.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-icons_cd0a0a_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.draggable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/bilder/icons/user-female.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Bolch.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Werner.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/global/javascript/_bildUploadJS.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/heiko_neumeister.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_thiessen.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/senioren_07.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/senioren_07.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/senioren_04.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/senioren_04.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Jordan.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_f.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_f.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/i18n/messages_de.properties" afterPath="$PROJECT_DIR$/grails-app/i18n/messages_de.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/inhalt/sitzungen.gsp" afterPath="$PROJECT_DIR$/grails-app/views/inhalt/sitzungen.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/thomas_werner.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volley_beach.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-ru.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_e_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_e_tab.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_mannschaft.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_mannschaft.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.position.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_bericht.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_bericht.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/festgelaende.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_b_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_b_team.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-sl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-sv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/pdf/sampleInclude.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_freibad.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/beachfeld.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_FrankM.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Authenrieth.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Latic.htm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-icons_2e83ff_256x240.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-icons_2e83ff_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/aktuelles/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/aktuelles/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prodDbSVLeingarten.script" afterPath="$PROJECT_DIR$/prodDbSVLeingarten.script" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery-ui-i18n.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_spg.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_spg.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_maenner.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_maenner.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f1_port_FrankW.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Herzberg.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_d_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_d_plan.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc3.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-anim_basic_16x16.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/aktuelles/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/aktuelles/list.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Zimmermann.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Hoertling.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_bambini.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_bambini.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-ro.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_stadion.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_holzwarth.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw2.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw2.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-ja.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_authenrieth.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Werschner.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/anzeigen/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/anzeigen/edit.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_doyle.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.selectable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_VedderJens.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Heinle.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_stadion.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_stadion.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_b_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_b_plan.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_f2.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_d_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_d_tab.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/veranstaltung_06.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/veranstaltung_06.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_d.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_d.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/global/javascript/_pictureUploadGlobalJS.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/winterfeier_06.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/winterfeier_06.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_vision.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_vision.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/beachfeld_turnier.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/beachfeld_turnier.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/uwe_dorst.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-bg.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-ja.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/jquery.ui.base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/uebersicht.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/global/bilder/_upload.gsp" afterPath="$PROJECT_DIR$/grails-app/views/global/bilder/_upload.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-af.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/PropagationController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_torjaeger.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_torjaeger.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/organe/vorstand.gsp" afterPath="$PROJECT_DIR$/web-app/sites/organe/vorstand.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-bg_flat_75_ffffff_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-icons_2e83ff_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/rubrik.css" afterPath="$PROJECT_DIR$/web-app/css/rubrik.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/downloads/Finanzordnung 2004.PDF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.autocomplete.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-az.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/bilder/icons/home.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/sponsor/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/sponsor/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_u12.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_u12.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.progressbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/tanzen.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/tanzen.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_beachfeld.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/jquery/jquery-ui-1.7.2.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_baumgaertner.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.scale.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_fin.gsp" afterPath="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_fin.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_portraits.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_portraits.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_anmeldung.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_anmeldung.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/ahfussball.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/ahfussball.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/juergen_kroedel.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.sortable.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_MayerH.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.draggable.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_b_tab.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_b_tab.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_spielplan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_spielplan.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/funktion/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/funktion/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_plan.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-de.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prodDbSVLeingarten.properties" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/jquery-ui-1.7.2.custom.css" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/jquery-ui-1.8rc3.custom.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/jquery-ui-1.7.2.custom.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-bg_flat_75_aaaaaa_40x100.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/abteilung/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/abteilung/edit.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_team.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_VedderJens.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-it.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_messe1.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking 2007/walking_messe1.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.position.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_cj.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/handball_cj.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Zimmer.htm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball_links.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball_links.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/admin/index.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.accordion.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.effects.blind.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Jordan.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/global/javascript/_jQueryUIJS.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_VedderJulian.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_e_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_e_team.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_literatur.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/karate_literatur.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_tennis.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/badminton.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/badminton.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/sebastian_muth.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/beachfeld_turnier.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/walking.gsp" afterPath="$PROJECT_DIR$/web-app/sites/walking.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/mitglied.gsp" afterPath="$PROJECT_DIR$/web-app/sites/mitglied.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery-1.4.1.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/tim_rieker.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-sq.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-eu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Kreissig.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Schuster.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_c_plan.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_c_plan.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc3.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/images/ui-icons_888888_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Zimmer.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_steckbriefe/jenny_potsch.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/tennisplatz.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/uebersicht.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/uebersicht.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms.iml" afterPath="$PROJECT_DIR$/cms.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-fa.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Reiner.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-pt-BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-fr-CH.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_u13.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_u13.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_b.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_b.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f2_port_Ortwein.gsp" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.ui.datepicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/external/testsuite-r6565.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_bericht.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_bericht.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f1_port_Sahaikewitsch.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/pdf/demo2.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/f1_port_Czok.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/i18n/jquery.ui.datepicker-zh-CN.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/f_portraits/raus/f2_port_Rodewald.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_beachfeld.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/eichbott_beachfeld.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/i18n/jquery.ui.datepicker-af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits/jc_port_baumgaertner.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/minified/jquery.effects.pulsate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/veranstaltungen/winterfeier_08.gsp" afterPath="$PROJECT_DIR$/web-app/sites/veranstaltungen/winterfeier_08.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/base/ui.dialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_sportheim.gsp" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_sportheim.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/sites/anlagen/heuchelberg_trimm.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/global/javascript/_buttonJS.gsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery-1.4.2.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-bg_gloss-wave_45_e14f1c_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/groovy/de/webmpuls/cms/media/MediaUtils.groovy" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/abteilung/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/abteilung/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_d_team.gsp" afterPath="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_d_team.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/global/javascript/_onePictureUploadJS.gsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-bg_gloss-wave_50_6eac2c_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-icons_e0fdff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-icons_2694e8_256x240.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/auth/login.gsp" afterPath="$PROJECT_DIR$/grails-app/views/auth/login.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/global/css/_jQueryUICSS.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-icons_3d80b3_256x240.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-bg_glass_45_0078ae_1x400.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-icons_2694e8_256x240.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/todo.txt" afterPath="$PROJECT_DIR$/web-app/todo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/global/javascript/_jQueryUIJS.gsp" afterPath="$PROJECT_DIR$/grails-app/views/global/javascript/_jQueryUIJS.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/sponsor/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/sponsor/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/inhalt/start/_anzeige.gsp" afterPath="$PROJECT_DIR$/grails-app/views/inhalt/start/_anzeige.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-icons_ffffff_256x240.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-icons_72a7cf_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prodDbSVLeingarten.script" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-icons_3d80b3_256x240.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/people/PersonController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/people/PersonController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/de/webmpuls/cms/util/ImportService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/de/webmpuls/cms/util/ImportService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/list.gsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-bg_gloss-wave_75_2191c0_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/jquery/cupertino/images/ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery/themes/cupertino/images/ui-icons_2e83ff_256x240.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-icons_0078ae_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/css/start/images/ui-bg_glass_55_f8da4e_1x400.png" afterPath="" />
     </list>
-    <ignored path=".idea/workspace.xml" />
+    <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="cms.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$USER_HOME_GRIFFON$/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -830,6 +107,32 @@
   <component name="DebuggerManager">
     <line_breakpoints>
       <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/section/AbteilungController.groovy" line="200" class="Class at AbteilungController.groovy:200" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Abteilung.groovy" line="70" class="Class at Abteilung.groovy:70" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/groovy/de/webmpuls/cms/section/AbteilungHelper.groovy" line="10" class="Class at AbteilungHelper.groovy:10" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -901,91 +204,85 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jufu.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/jufu.gsp">
+      <file leaf-file-name="_jQueryUIJS.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/global/javascript/_jQueryUIJS.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="477" column="97" selection-start="18280" selection-end="18281" vertical-scroll-proportion="-5.0">
+            <state line="3" column="116" selection-start="215" selection-end="215" vertical-scroll-proportion="-1.8947369">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jufu_c_portraits.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits.gsp">
+      <file leaf-file-name="_jQueryUICSS.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/global/css/_jQueryUICSS.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="118" selection-start="4298" selection-end="4299" vertical-scroll-proportion="-5.0">
+            <state line="3" column="23" selection-start="172" selection-end="172" vertical-scroll-proportion="-1.8947369">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jufu_f.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/jufu_f.gsp">
+      <file leaf-file-name="login.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/auth/login.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="0" selection-start="2028" selection-end="2028" vertical-scroll-proportion="-12.578947">
+            <state line="19" column="0" selection-start="432" selection-end="432" vertical-scroll-proportion="-2.1555555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jufu_w_c.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_c.gsp">
+      <file leaf-file-name="list.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/person/list.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="100" selection-start="2203" selection-end="2204" vertical-scroll-proportion="-4.631579">
+            <state line="133" column="69" selection-start="5540" selection-end="5540" vertical-scroll-proportion="-1.6222222">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jufu_wir.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/jufu_wir.gsp">
+      <file leaf-file-name="todo.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web-app/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="111" selection-start="5361" selection-end="5362" vertical-scroll-proportion="-4.631579">
+            <state line="45" column="65" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.697479">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="turnen_pg.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/turnen_pg.gsp">
+      <file leaf-file-name="Abteilung.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Abteilung.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="100" selection-start="728" selection-end="729" vertical-scroll-proportion="-5.0">
+            <state line="37" column="11" selection-start="859" selection-end="859" vertical-scroll-proportion="-0.8541667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="volleyball_lc.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc.gsp">
+      <file leaf-file-name="AbteilungHelper.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/groovy/de/webmpuls/cms/section/AbteilungHelper.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="215" column="17" selection-start="9719" selection-end="9719" vertical-scroll-proportion="-6.894737">
+            <state line="2" column="53" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="th_zkw_ergebnisse_zar.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_zar.gsp">
+      <file leaf-file-name="edit.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/abteilung/edit.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="28" selection-start="96" selection-end="96" vertical-scroll-proportion="-1.2105263">
+            <state line="120" column="36" selection-start="3975" selection-end="3975" vertical-scroll-proportion="-3.3111112">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PropagationController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/PropagationController.groovy">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.46153846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/admin/index.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="62" column="1" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1004,32 +301,32 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/views/person/create.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/global/bilder/_upload.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/global/css/_buttonCSS.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/global/javascript/_buttonJS.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/global/javascript/_pictureUploadGlobalJS.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/people/Funktion.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/person/edit.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/funktion/edit.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/section/AbteilungController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/i18n/messages_de.properties" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/people/FunktionController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/people/Person.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/abteilung/edit.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-        <option value="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_bericht.gsp" />
-        <option value="$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_portraits.gsp" />
-        <option value="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_bericht.gsp" />
-        <option value="$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_portraits.gsp" />
-        <option value="$PROJECT_DIR$/web-app/sites/abteilungen/jufu.gsp" />
-        <option value="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits.gsp" />
         <option value="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_f.gsp" />
         <option value="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_c.gsp" />
         <option value="$PROJECT_DIR$/web-app/sites/abteilungen/jufu_wir.gsp" />
         <option value="$PROJECT_DIR$/web-app/sites/abteilungen/turnen_pg.gsp" />
         <option value="$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc.gsp" />
         <option value="$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_zar.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/admin/index.gsp" />
+        <option value="$PROJECT_DIR$/../trip-planner/grails-app/views/global/javascript/_globalJS.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/navi.css" />
+        <option value="$PROJECT_DIR$/grails-app/views/abteilung/list.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/funktion/list.gsp" />
+        <option value="$PROJECT_DIR$/src/groovy/de/webmpuls/cms/media/MediaHelper.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/de/webmpuls/cms/util/ImportService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/section/AbteilungController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/abteilung/create.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/global/javascript/_jQueryUIJS.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/inhalt/start/_anzeige.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/sv_leingarten.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/global/css/_jQueryUICSS.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/auth/login.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/main.css" />
+        <option value="$PROJECT_DIR$/grails-app/views/person/list.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/abteilung/edit.gsp" />
+        <option value="$PROJECT_DIR$/src/groovy/de/webmpuls/cms/section/AbteilungHelper.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Abteilung.groovy" />
+        <option value="$PROJECT_DIR$/web-app/todo.txt" />
       </list>
     </option>
   </component>
@@ -2475,46 +1772,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abteilungen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2602,6 +1859,10 @@
               <option name="myItemId" value="jquery" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2613,19 +1874,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jquery" />
+              <option name="myItemId" value="groovy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cupertino" />
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="section" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2857,6 +2154,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aktuelles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2959,6 +2300,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="section" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="people" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2982,6 +2349,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3068,8 +2461,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Favorites" />
       <pane id="PackagesPane" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3094,16 +2487,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web-app/css/jquery/themes" />
       <recent name="$PROJECT_DIR$/web-app/js/jquery" />
+      <recent name="$PROJECT_DIR$/../trip-planner/web-app/js" />
+      <recent name="$PROJECT_DIR$/../trip-planner/grails-app/views/global" />
       <recent name="$PROJECT_DIR$/web-app/js" />
-      <recent name="$PROJECT_DIR$/web-app/css/jquery" />
-      <recent name="$PROJECT_DIR$/web-app/bilder/icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/grails-app/views/global/css" />
     </key>
   </component>
-  <component name="RunManager" selected="Grails.cms:war">
+  <component name="RunManager" selected="Grails.Grails:cms">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -3375,24 +2769,23 @@
     <frame x="0" y="22" width="1280" height="703" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44158074" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32646048" sideWeight="0.0" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6843911" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="139" width="1280" height="468" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6838488" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="139" width="1280" height="468" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6082474" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60652924" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44732296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44685715" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919955" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.663626" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67413795" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3300813" sideWeight="0.5463917" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46907216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-41" y="292" width="1636" height="380" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3300813" sideWeight="0.51890033" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46907216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-41" y="292" width="1636" height="380" />
       <window_info id="JavaRebel Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JavaRebel" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3401,6 +2794,7 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3257143" sideWeight="0.0" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33560863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3481,188 +2875,171 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/radsport.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/global/menu/_admin.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="85" selection-start="85" selection-end="85" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/abteilung/list.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="8" selection-start="622" selection-end="622" vertical-scroll-proportion="-4.76" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/funktion/list.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="8" selection-start="607" selection-end="607" vertical-scroll-proportion="-4.76" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/de/webmpuls/cms/util/ImportService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="320" column="73" selection-start="7624" selection-end="7651" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/section/SponsorController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="2" selection-start="2788" selection-end="2788" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/abteilung/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="37" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/section/AbteilungController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="28" selection-start="5616" selection-end="5616" vertical-scroll-proportion="0.0">
+        <state line="27" column="8" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/people/Person.groovy">
+    <entry file="file://$PROJECT_DIR$/src/groovy/de/webmpuls/cms/media/MediaHelper.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="34" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="11" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" />
       </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/person/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/person/edit.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="275" selection-start="12539" selection-end="12651" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="7" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/funktion/edit.gsp">
+    <entry file="file://$PROJECT_DIR$/web-app/js/jquery/jquery-ui-1.8rc3.custom.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="96" selection-start="3622" selection-end="3645" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6513761">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/i18n/messages_de.properties">
-      <provider editor-type-id="ResourceBundle">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/global/javascript/_globalJS.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="27" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-14.526316">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/global/javascript/_buttonJS.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/inhalt/start/_anzeige.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="382" selection-end="382" vertical-scroll-proportion="-5.0526314">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/inhalt/start/_anzeigen.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="54.789474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/sv_leingarten.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="96" selection-start="2197" selection-end="2197" vertical-scroll-proportion="-3.4666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/global/javascript/_jQueryUIJS.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="116" selection-start="215" selection-end="215" vertical-scroll-proportion="-1.8947369">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/global/css/_jQueryUICSS.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="23" selection-start="172" selection-end="172" vertical-scroll-proportion="-1.8947369">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/auth/login.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="432" selection-end="432" vertical-scroll-proportion="-2.1555555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="1" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/person/list.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="69" selection-start="5540" selection-end="5540" vertical-scroll-proportion="-1.6222222">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/abteilung/edit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="36" selection-start="3975" selection-end="3975" vertical-scroll-proportion="-3.3111112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../../../downloads/grails-1.2.1/lib/hibernate-core-3.3.1.GA.jar!/org/hibernate/impl/SessionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="17" selection-start="5924" selection-end="5924" vertical-scroll-proportion="0.41573033">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/cms/section/Abteilung.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="42" selection-start="4634" selection-end="4634" vertical-scroll-proportion="0.0">
+        <state line="37" column="11" selection-start="859" selection-end="859" vertical-scroll-proportion="-0.8541667">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/people/FunktionController.groovy">
+    <entry file="file://$PROJECT_DIR$/src/groovy/de/webmpuls/cms/section/AbteilungHelper.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="34" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0">
+        <state line="2" column="53" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+    <entry file="file://$PROJECT_DIR$/web-app/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="411" column="8" selection-start="13306" selection-end="13306" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../../../downloads/grails-1.2.1/dist/grails-web-1.2.1.jar!/org/codehaus/groovy/grails/web/pages/GroovyPageCompiler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="181" selection-end="181" vertical-scroll-proportion="0.24365482">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="24" selection-start="5102" selection-end="5102" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../downloads/grails-1.2.1/src/java/org/codehaus/groovy/grails/web/pages/GroovyPageCompiler.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="17" selection-start="4080" selection-end="4080" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/impressum.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="34" selection-start="1556" selection-end="1556" vertical-scroll-proportion="-5.631579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_bericht.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="94" selection-start="4602" selection-end="4603" vertical-scroll-proportion="-47.94737">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/fussball1_portraits.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="16" selection-start="5775" selection-end="5775" vertical-scroll-proportion="-12.578947">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_bericht.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="79" selection-start="6174" selection-end="6174" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/fussball2_portraits.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="109" selection-start="5436" selection-end="5437" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/jufu.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="477" column="97" selection-start="18280" selection-end="18281" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/jufu_c_portraits.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="118" selection-start="4298" selection-end="4299" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/jufu_f.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="2028" selection-end="2028" vertical-scroll-proportion="-12.578947">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/jufu_w_c.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="100" selection-start="2203" selection-end="2204" vertical-scroll-proportion="-4.631579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/jufu_wir.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="111" selection-start="5361" selection-end="5362" vertical-scroll-proportion="-4.631579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/turnen_pg.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="100" selection-start="728" selection-end="729" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/abteilungen/volleyball_lc.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="17" selection-start="9719" selection-end="9719" vertical-scroll-proportion="-6.894737">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/sites/themen/th_zkw_ergebnisse_zar.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="96" selection-end="96" vertical-scroll-proportion="-1.2105263">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/cms/util/PropagationController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.46153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/admin/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="45" column="65" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.697479">
           <folding />
         </state>
       </provider>

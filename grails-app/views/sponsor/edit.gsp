@@ -1,5 +1,5 @@
 
-<%@ page import="de.webmpuls.cms.media.MediaUtils; de.webmpuls.cms.section.Sponsor" %>
+<%@ page import="de.webmpuls.cms.media.MediaHelper; de.webmpuls.cms.media.MediaUtils; de.webmpuls.cms.section.Sponsor" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -65,7 +65,7 @@
                                   <label for="bild"><g:message code="sponsor.bild.label" default="Bild" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: sponsorInstance, field: 'bild', 'errors')}">
-                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.withAlbumName(MediaUtils.ALBUM_SPONSOREN).listOrderByBaseName()}" optionKey="id" value="${sponsorInstance?.bild?.id}" noSelection="['null': '']" />
+                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.withAlbumName(MediaHelper.ALBUM_SPONSOREN).listOrderByBaseName()}" optionKey="id" value="${sponsorInstance?.bild?.id}" noSelection="['null': '']" />
 									&nbsp;<span><a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Bild-Upload Dialog öffnen</a></span>
 								</td>
                             </tr>

@@ -41,8 +41,9 @@
 		<ckeditor:resources />
 	</shiro:hasRole>
 
-	<g:javascript library="jquery" />
-	%{--<script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/legacy/jquery-1.3.2.js"></script>--}%
+	%{--<g:javascript library="jquery" />--}%
+
+	<script type="text/javascript" src="${resource(dir: 'js/jquery/', file: 'jquery-1.4.2.min.js')}"></script>
 
 	<g:layoutHead />
 </head>

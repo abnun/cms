@@ -14,6 +14,7 @@ import de.webmpuls.cms.people.Funktion
 import de.webmpuls.cms.section.Abteilung
 import org.springframework.context.ApplicationContextAware
 import org.springframework.context.ApplicationContext
+import de.webmpuls.cms.section.AbteilungHelper
 
 class ImportService implements ApplicationContextAware
 {
@@ -316,42 +317,9 @@ class ImportService implements ApplicationContextAware
 								else if(!tmpAbteilung)
 								{
 									String tmpCode = value.toLowerCase()
-									if(value.contains(" "))
-									{
-										tmpCode = tmpCode.replaceAll(" ", "_")
-									}
-									if(value.contains("."))
-									{
-										tmpCode = tmpCode.replaceAll(".", "")
-									}
-									if(value.contains("/"))
-									{
-										tmpCode = tmpCode.replaceAll("/", "_")
-									}
-									if(value.contains("("))
-									{
-										tmpCode = tmpCode.replaceAll("\\(", "")
-									}
-									if(value.contains(")"))
-									{
-										tmpCode = tmpCode.replaceAll("\\)", "")
-									}
-									if(value.contains("ß"))
-									{
-										tmpCode = tmpCode.replaceAll("ß", "ss")
-									}
-									if(value.contains("ä"))
-									{
-										tmpCode = tmpCode.replaceAll("ä", "ae")
-									}
-									if(value.contains("ü"))
-									{
-										tmpCode = tmpCode.replaceAll("ü", "ue")
-									}
-									if(value.contains("ö"))
-									{
-										tmpCode = tmpCode.replaceAll('ö', "oe")
-									}
+
+									tmpCode = AbteilungHelper.formatCode(value, tmpCode)
+
 									Abteilung newAbteilung = new Abteilung(name: value, code: tmpCode, anzeigeImMenu: true)
 
 									abteilungenForLaterSave << newAbteilung

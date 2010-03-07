@@ -1,5 +1,5 @@
 
-<%@ page import="de.webmpuls.cms.people.Funktion; de.webmpuls.photo_album.Album; de.webmpuls.cms.media.MediaUtils; de.webmpuls.cms.people.Person" %>
+<%@ page import="de.webmpuls.cms.media.MediaHelper; de.webmpuls.cms.people.Funktion; de.webmpuls.photo_album.Album; de.webmpuls.cms.media.MediaUtils; de.webmpuls.cms.people.Person" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -194,7 +194,7 @@
             </g:form>
         </div>
 
-		<g:set var="select" value="${de.webmpuls.photo_album.Picture.withAlbumName(MediaUtils.ALBUM_PERSONEN).listOrderByBaseName()}" />
+		<g:set var="select" value="${de.webmpuls.photo_album.Picture.withAlbumName(MediaHelper.ALBUM_PERSONEN).listOrderByBaseName()}" />
 		<g:if test="${select}">
 			<jq:jquery>
 				$("select[name='bild.id']").change(function() {

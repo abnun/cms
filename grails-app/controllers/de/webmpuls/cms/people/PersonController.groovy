@@ -2,7 +2,7 @@ package de.webmpuls.cms.people
 
 import de.webmpuls.cms.section.Abteilung
 
-import de.webmpuls.cms.media.MediaUtils
+import de.webmpuls.cms.media.MediaHelper
 import de.webmpuls.photo_album.Album
 import de.webmpuls.photo_album.Picture
 
@@ -54,7 +54,7 @@ class PersonController {
             redirect(action: "list")
         }
         else {
-			Album tmpAlbum = de.webmpuls.photo_album.Album.withName(MediaUtils.ALBUM_PERSONEN).list().first()
+			Album tmpAlbum = de.webmpuls.photo_album.Album.withName(MediaHelper.ALBUM_PERSONEN).list().first()
 
 			String albumDate = ""
 			if(tmpAlbum) {

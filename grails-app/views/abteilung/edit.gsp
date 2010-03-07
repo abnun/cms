@@ -100,14 +100,14 @@
 									</td>
 								</tr>
 
-								<tr class="prop">
+								%{--<tr class="prop">
 									<td valign="top" class="name">
 									  <label for="code"><g:message code="abteilung.code.label" default="Code" /></label>
 									</td>
 									<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'code', 'errors')}">
 										<g:textField name="code" value="${abteilungInstance?.code}" />
 									</td>
-								</tr>
+								</tr>--}%
 
 								<tr class="prop">
 									<td valign="top" class="name">
@@ -118,7 +118,7 @@
 									</td>
 								</tr>
 
-								<tr class="prop">
+								%{--<tr class="prop">
 									<td valign="top" class="name">
 									  <label for="unterabteilungen"><g:message code="abteilung.unterabteilungen.label" default="Unterabteilungen" /></label>
 									</td>
@@ -127,7 +127,7 @@
 									</td>
 								</tr>
 
-								%{--<tr class="prop">
+								<tr class="prop">
 									<td valign="top" class="name">
 									  <label for="mitarbeiterfunktionen"><g:message code="abteilung.mitarbeiterfunktionen.label" default="Mitarbeiterfunktionen" /></label>
 									</td>

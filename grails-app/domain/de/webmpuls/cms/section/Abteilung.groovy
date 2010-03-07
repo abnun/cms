@@ -13,7 +13,7 @@ class Abteilung
 	String code
 	String kuerzel
 
-	Boolean anzeigeImMenu = false
+	Boolean anzeigeImMenu = true
 
 	static mapping =
 	{
@@ -31,11 +31,11 @@ class Abteilung
 	static constraints =
 	{
 		name()
-		code(validator: { String v ->
+		code(unique: true, nullable: true, blank: true/*, validator: { String v ->
 			boolean isValid = (v ==~ /[a-z_0-9]+/)
 			println("validation for '$v' evaluates to $isValid")
 			return isValid
-		})
+		}*/)
 		kuerzel(nullable: true, validator: { String v ->
 			if(v == null)
 			{
@@ -62,6 +62,13 @@ class Abteilung
 		{
 			anzeigeImMenu = true
 		}
+
+		code = AbteilungHelper.formatCode(name, code)
+	}
+
+	def beforeInsert()
+	{
+		code = AbteilungHelper.formatCode(name, code)
 	}
 
 	def String toString()

@@ -1,5 +1,5 @@
 import de.webmpuls.cms.people.Funktion
-import de.webmpuls.cms.media.MediaUtils
+import de.webmpuls.cms.media.MediaHelper
 import de.webmpuls.photo_album.Album
 import de.webmpuls.cms.people.ShiroRole
 import org.apache.shiro.crypto.hash.Sha1Hash
@@ -8,7 +8,7 @@ import org.apache.catalina.core.ApplicationContextFacade
 import org.codehaus.groovy.grails.commons.ApplicationAttributes
 import org.springframework.context.ApplicationContext
 import org.cyberneko.html.parsers.SAXParser
-import groovy.xml.MarkupBuilder
+
 import de.webmpuls.cms.xml.XMLParserHandler
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
 
@@ -143,24 +143,24 @@ class BootStrap
 		
 		// Foto-Alben
 
-		Album personen = Album.findByName(MediaUtils.ALBUM_PERSONEN)
+		Album personen = Album.findByName(MediaHelper.ALBUM_PERSONEN)
 		if(!personen)
 		{
-			personen =  new Album(name: MediaUtils.ALBUM_PERSONEN, description: "Foto-Album für die Mitglieder des SV-Leingartens")
+			personen =  new Album(name: MediaHelper.ALBUM_PERSONEN, description: "Foto-Album für die Mitglieder des SV-Leingartens")
 			personen.save()
 		}
 
-		Album verschiedenes = Album.findByName(MediaUtils.ALBUM_VERSCHIEDENES)
+		Album verschiedenes = Album.findByName(MediaHelper.ALBUM_VERSCHIEDENES)
 		if(!verschiedenes)
 		{
-			verschiedenes =  new Album(name: MediaUtils.ALBUM_VERSCHIEDENES, description: "Foto-Album für alle anderen Bilder")
+			verschiedenes =  new Album(name: MediaHelper.ALBUM_VERSCHIEDENES, description: "Foto-Album für alle anderen Bilder")
 			verschiedenes.save()
 		}
 
-		Album sponsoren = Album.findByName(MediaUtils.ALBUM_SPONSOREN)
+		Album sponsoren = Album.findByName(MediaHelper.ALBUM_SPONSOREN)
 		if(!sponsoren)
 		{
-			sponsoren =  new Album(name: MediaUtils.ALBUM_SPONSOREN, description: "Foto-Album für die Sponsoren")
+			sponsoren =  new Album(name: MediaHelper.ALBUM_SPONSOREN, description: "Foto-Album für die Sponsoren")
 			sponsoren.save()
 		}
 

@@ -6,22 +6,34 @@
         <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'person.label', default: 'Person')}" />
         %{--<title><g:message code="default.list.label" args="[entityName]" /></title>--}%
+
+		<g:render template="/global/javascript/jQueryUIJS" />
+		<jq:jquery>
+			$("#tabs").tabs();
+		</jq:jquery>
+		<style type="text/css">
+			.ui-widget-content {
+				background: white;
+			}
+		</style>
     </head>
-    <body class="yui-skin-sam">
+    <body>
         <div class="nav">
             <span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>
-            <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
 			<g:render template="/global/menu/admin" />
-        </div>
+		</div>
+		<div class="nav">
+			<span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
+		</div>
         <div class="body">
             %{--<h1><g:message code="default.list.label" args="[entityName]" /></h1>--}%
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
 			<br/>
-			Es sind ${personInstanceTotal} Mitglieder im System hinterlegt.
-			<br/>
-			<br/>
+			<p class="copy">
+				Es sind ${personInstanceTotal} Mitglieder im System hinterlegt.
+			</p>
             <div class="list">
                 <table>
                     <thead>
@@ -86,29 +98,52 @@
             </div>--}%
 
 			<br/>
-			<h2>Funktionen:</h2>
-			<gui:tabView id="tabView">
-				<g:if test="${personInstanceTotal > 0}">
-					<gui:tab label="Export">
-						<div>
-							<span>
-								<g:pdfLink url="/export/pdfExportVorstand" filename="AdressenlisteVorstand" class="pdf_link">Vorstand- und Abteilungsleiterliste PDF-Export</g:pdfLink>
-							</span>
-							<span style="margin-left: 20px;">
-								<g:link controller="export" action="excelExportVorstand" params="[fileName: 'AdressenlisteVorstand']" class="excel_link">Vorstand- und Abteilungsleiterliste Excel-Export</g:link>
-							</span>
-						</div>
-						<div>
-							<span>
-								<g:pdfLink url="/export/pdfExportMitglieder" filename="Mitgliederliste" class="pdf_link">Mitgliederliste PDF-Export</g:pdfLink>
-							</span>
-							<span style="margin-left: 20px;">
-								<g:link controller="export" action="excelExportMitglieder" params="[fileName: 'Mitgliederliste']" class="excel_link">Mitgliederliste Excel-Export</g:link>
-							</span>
-						</div>
-					</gui:tab>
+			<%
+			    boolean personInstanceTotalNotZero = personInstanceTotal > 0
+			%>
+			<p class="headline" style="margin-left: 10px;">Funktionen:</p>
+			<div id="tabs">
+				<ul>
+					<g:if test="${personInstanceTotalNotZero}">
+						<li><a href="#tabs-1">Export</a></li>
+					</g:if>
+					<li><a href="#tabs-2">Import</a></li>
+				</ul>
+				<g:if test="${personInstanceTotalNotZero}">
+					<div id="tabs-1">
+
+						<table style="font-size: 10px;">
+							<tr>
+								<td>
+										<g:pdfLink url="/export/pdfExportVorstand" filename="AdressenlisteVorstand.pdf" class="pdf_link">Vorstand- und Abteilungsleiterliste PDF-Export</g:pdfLink>
+								</td>
+								<td>
+									<span style="margin-left: 20px;">
+										&nbsp;
+									</span>
+								</td>
+								<td>
+										<g:link controller="export" action="excelExportVorstand" params="[fileName: 'AdressenlisteVorstand']" class="excel_link">Vorstand- und Abteilungsleiterliste Excel-Export</g:link>
+								</td>
+							</tr>
+							<tr>
+								<td>
+										<g:pdfLink url="/export/pdfExportMitglieder" filename="Mitgliederliste.pdf" class="pdf_link">Mitgliederliste PDF-Export</g:pdfLink>
+								</td>
+								<td>
+									<span style="margin-left: 20px;">
+										&nbsp;
+									</span>
+								</td>
+								<td>
+										<g:link controller="export" action="excelExportMitglieder" params="[fileName: 'Mitgliederliste']" class="excel_link">Mitgliederliste Excel-Export</g:link>
+								</td>
+							</tr>
+						</table>
+					</div>
 				</g:if>
-				<gui:tab label="Import">
+
+				<div id="tabs-${personInstanceTotalNotZero ? '2' : '1'}">
 					<div>
 						<span>
 							<g:uploadForm controller="import" action="excelImport" name="ExcelUploadForm">
@@ -117,8 +152,8 @@
 							</g:uploadForm>
 						</span>
 					</div>
-				</gui:tab>
-			</gui:tabView>
+				</div>
+			</div>
         </div>
     </body>
 </html>

@@ -1,3 +1,7 @@
+#######################################################################################################################
+TODO
+#######################################################################################################################
+
 Unterabteiungen:
 
 Badminton: Team 1 - 6
@@ -15,3 +19,28 @@ Tischtennis: U-18 (1./2./3. Mannschaft), Herren (1./2./3. Mannschaft), Senioren
 Volleyball: U-12, U-13, U-16, Damen, Freizeit 1/2
 
 Abteilungen mit Person- und Funktionsfeld (autocomplete)
+
+
+
+Fehler bei Änderung Abteilung
+
+Excel-File einlesen
+
+Icons verlinken auf Abteilungsseite
+
+Sponsoren Bildupload
+
+
+#######################################################################################################################
+FIXED
+#######################################################################################################################
+
+Fehler beim Hochladen Bild (fixed)
+
+Endung PDF fehlt (fixed)
+
+Webmaster in Administratorgruppe (wontfix)
+
+margin-left: 3px beim Menü rausmachen (fixed)
+
+Code bei Abteilungen muss im Hintergrund ermittelt werden (fixed)

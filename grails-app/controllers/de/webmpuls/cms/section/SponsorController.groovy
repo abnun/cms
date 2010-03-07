@@ -1,6 +1,6 @@
 package de.webmpuls.cms.section
 
-import de.webmpuls.cms.media.MediaUtils
+import de.webmpuls.cms.media.MediaHelper
 import de.webmpuls.photo_album.Album
 
 class SponsorController {
@@ -51,7 +51,7 @@ class SponsorController {
             redirect(action: "list")
         }
         else {
-			Album tmpAlbum = de.webmpuls.photo_album.Album.withName(MediaUtils.ALBUM_SPONSOREN).list().first()
+			Album tmpAlbum = de.webmpuls.photo_album.Album.withName(MediaHelper.ALBUM_SPONSOREN).list().first()
 
 			String albumDate = ""
 			if(tmpAlbum) {
