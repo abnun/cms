@@ -9,8 +9,8 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>
-            <g:render template="/global/menu/admin" />
+            %{--<span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>--}%
+            %{--<g:render template="/global/menu/admin" />--}%
         </div>
         <div class="body">
             %{--<h1><g:message code="default.create.label" args="[entityName]" /></h1>--}%

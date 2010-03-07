@@ -72,7 +72,7 @@
 			<div class="nav">
 				<span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
 				<span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-				<g:render template="/global/menu/admin" />
+				%{--<g:render template="/global/menu/admin" />--}%
 			</div>
 			<div class="body">
 				%{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%

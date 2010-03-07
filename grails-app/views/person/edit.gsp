@@ -1,5 +1,5 @@
 
-<%@ page import="de.webmpuls.cms.media.MediaHelper; de.webmpuls.cms.people.Funktion; de.webmpuls.photo_album.Album; de.webmpuls.cms.media.MediaUtils; de.webmpuls.cms.people.Person" %>
+<%@ page import="de.webmpuls.cms.media.MediaHelper; de.webmpuls.cms.people.Funktion; de.webmpuls.photo_album.Album; de.webmpuls.cms.people.Person" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -11,9 +11,9 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>
+            %{--%{--<span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>--}%--}%
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-			<g:render template="/global/menu/admin" />
+			%{--<g:render template="/global/menu/admin" />--}%
         </div>
         <div class="body">
             %{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
@@ -127,7 +127,7 @@
                                   <label for="bild"><g:message code="person.bild.label" default="Bild" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'bild', 'errors')}">
-                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.withAlbumName(MediaUtils.ALBUM_PERSONEN).listOrderByBaseName()}" optionKey="id" value="${personInstance?.bild?.id}" noSelection="['null': 'Bild auswählen']" />
+                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.withAlbumName(MediaHelper.ALBUM_PERSONEN).listOrderByBaseName()}" optionKey="id" value="${personInstance?.bild?.id}" noSelection="['null': 'Bild auswählen']" />
                                 </td>
                             </tr>--}%
                         
