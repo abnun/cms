@@ -1,5 +1,4 @@
 <%@ page import="de.webmpuls.cms.people.ShiroRole" %>
-<g:render template="/global/javascript/jQueryUIJS" />
 <script type="text/javascript">
 	$(function() {
 		$("#accordion").accordion({

@@ -2,6 +2,7 @@ package de.webmpuls.cms.section
 
 import de.webmpuls.cms.media.MediaHelper
 import de.webmpuls.photo_album.Album
+import de.webmpuls.photo_album.Picture
 
 class SponsorController {
 
@@ -26,7 +27,7 @@ class SponsorController {
         def sponsorInstance = new Sponsor(params)
         if (sponsorInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'sponsor.label', default: 'Sponsor'), sponsorInstance.id])}"
-            redirect(action: "list")
+            redirect(action: "edit", id: sponsorInstance.id)
         }
         else {
             render(view: "create", model: [sponsorInstance: sponsorInstance])
@@ -75,7 +76,7 @@ class SponsorController {
             }
             sponsorInstance.properties = params
             if (!sponsorInstance.hasErrors() && sponsorInstance.save(flush: true)) {
-                flash.message = "${message(code: 'default.updated.message', args: [message(code: 'sponsor.label', default: 'Sponsor'), sponsorInstance.id])}"
+                flash.message = "${message(code: 'default.updated.message', args: [message(code: 'sponsor.label', default: 'Sponsor'), sponsorInstance.name])}"
                 redirect(action: "list")
             }
             else {
@@ -110,5 +111,56 @@ class SponsorController {
 	def images =
 	{
 		render(view: '/global/menu/sponsoren', model:[sponsorInstanceList: Sponsor.list([cache: true])])
+	}
+
+	def setPicture =
+	{
+		String id = params.id
+		if(id)
+		{
+			Sponsor tmpSponsor = Sponsor.get(id)
+
+			String pictureBaseName = "${MediaHelper.formatNameForDisk(tmpSponsor.name.toLowerCase() + de.webmpuls.photo_album.util.MediaUtils.SUFFIX)}"
+			String tmpPictureBaseName = params["bild.id"]
+			if(tmpPictureBaseName)
+			{
+				pictureBaseName = tmpPictureBaseName
+
+				int indexOf = pictureBaseName.indexOf(de.webmpuls.photo_album.util.MediaUtils.NORMAL)
+				if(indexOf != -1)
+				{
+					String suffix = pictureBaseName.substring(pictureBaseName.indexOf("."), pictureBaseName.size())
+					String baseName = pictureBaseName.substring(0, indexOf)
+					pictureBaseName = baseName + suffix
+				}
+			}
+			if(tmpSponsor)
+			{
+				Picture tmpPicture = Picture.findByBaseName(pictureBaseName)
+				if(tmpPicture)
+				{
+					tmpSponsor.setBild(tmpPicture)
+
+					if (!tmpSponsor.hasErrors() && tmpSponsor.save(flush: true))
+					{
+						flash.message = "${message(code: 'default.updated.message', args: [message(code: 'sponsor.label', default: 'Sponsor'), tmpSponsor.toString()])}"
+						redirect(action: "edit", id: tmpSponsor.id)
+					}
+					else
+					{
+						tmpSponsor.errors.allErrors.each
+						{
+							println it
+						}
+
+						redirect(action: "edit", id: id)
+					}
+				}
+				else
+				{
+					redirect(action: "edit", id: id)
+				}
+			}
+		}
 	}
 }

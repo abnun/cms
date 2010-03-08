@@ -55,15 +55,6 @@
                                 </td>
                             </tr>
                         
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="bild"><g:message code="sponsor.bild.label" default="Bild" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: sponsorInstance, field: 'bild', 'errors')}">
-                                    <g:select name="bild.id" from="${de.webmpuls.photo_album.Picture.listOrderByBaseName()}" optionKey="id" value="${sponsorInstance?.bild?.id}"  />
-                                </td>
-                            </tr>
-                        
                         </tbody>
                     </table>
                 </div>

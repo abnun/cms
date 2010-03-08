@@ -27,7 +27,7 @@ class AbteilungController {
     def save = {
         def abteilungInstance = new Abteilung(params)
         if (abteilungInstance.save(flush: true)) {
-            flash.message = "${message(code: 'default.created.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilungInstance.id])}"
+            flash.message = "${message(code: 'default.created.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilungInstance.name])}"
             redirect(action: "show", id: abteilungInstance.id)
         }
         else {
@@ -153,36 +153,39 @@ class AbteilungController {
 			ArrayList personList = params.list('personen')
 			ArrayList funktionList = params.list('funktionen')
 
-			if(personList && funktionList)
+			if(personList && !personList.isEmpty() && funktionList && !funktionList.isEmpty())
 			{
 				for(String personString in personList)
 				{
-					String tmpVorname = personString.split(" ")[0]
-					String tmpNachname = personString.split(" ")[1]
-
-					Person tmpPerson = Person.findByVornameAndNachname(tmpVorname, tmpNachname)
-
-					if(tmpPerson)
+					if(personString)
 					{
-						for (String funktionString in funktionList)
-						{
-							Funktion tmpFunktion = Funktion.findByName(funktionString)
+						String tmpVorname = personString.split(" ")[0]
+						String tmpNachname = personString.split(" ")[1]
 
-							if (tmpFunktion)
+						Person tmpPerson = Person.findByVornameAndNachname(tmpVorname, tmpNachname)
+
+						if(tmpPerson)
+						{
+							for (String funktionString in funktionList)
 							{
-								tmpPerson.addToFunktionen(tmpFunktion)
-								tmpFunktion.addToPersonen(tmpPerson)
-								
-								if(!abteilungInstance.mitarbeiterfunktionen.contains(tmpFunktion))
+								Funktion tmpFunktion = Funktion.findByName(funktionString)
+
+								if (tmpFunktion)
 								{
-									abteilungInstance.addToMitarbeiterfunktionen(tmpFunktion)
+									tmpPerson.addToFunktionen(tmpFunktion)
+									tmpFunktion.addToPersonen(tmpPerson)
+
+									if(!abteilungInstance.mitarbeiterfunktionen.contains(tmpFunktion))
+									{
+										abteilungInstance.addToMitarbeiterfunktionen(tmpFunktion)
+									}
 								}
 							}
-						}
 
-						if(!abteilungInstance.personen.contains(tmpPerson))
-						{
-							abteilungInstance.addToPersonen(tmpPerson)
+							if(!abteilungInstance.personen.contains(tmpPerson))
+							{
+								abteilungInstance.addToPersonen(tmpPerson)
+							}
 						}
 					}
 				}
@@ -205,7 +208,7 @@ class AbteilungController {
 				abteilungInstance.unterabteilungen = []
 			}
             if (!abteilungInstance.hasErrors() && abteilungInstance.save(flush: true)) {
-                flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilungInstance.id])}"
+                flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilungInstance.name])}"
                 redirect(action: "edit", id: abteilungInstance.id)
             }
             else {

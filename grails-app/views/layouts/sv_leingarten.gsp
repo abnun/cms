@@ -45,6 +45,8 @@
 
 	<script type="text/javascript" src="${resource(dir: 'js/jquery/', file: 'jquery-1.4.2.min.js')}"></script>
 
+	<g:render template="/global/javascript/jQueryUIJS" />
+
 	<g:layoutHead />
 </head>
 

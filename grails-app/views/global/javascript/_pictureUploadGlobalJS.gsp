@@ -1,6 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-<g:render template="/global/javascript/jQueryUIJS" />
 <jq:jquery>
 
 	$('#dialog').dialog( {

@@ -1,19 +1,16 @@
 
-<%@ page import="de.webmpuls.cms.people.Funktion" %>
+<%@ page import="de.webmpuls.cms.media.MediaHelper; de.webmpuls.cms.people.Funktion" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'funktion.label', default: 'Funktion')}" />
         <title><g:message code="default.edit.label" args="[entityName]" /></title>
-		<g:render template="/global/javascript/jQueryUIJS" />
     </head>
     <body>
-        <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
-            <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-			%{--<g:render template="/global/menu/admin" />--}%
-        </div>
+        <g:render template="/global/javascript/createButtonJS" />
+		<button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]" /></button>
+		<hr />
         <div class="body">
             <h1><g:message code="default.edit.label" args="[entityName]" /></h1>
             <g:if test="${flash.message}">

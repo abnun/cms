@@ -7,8 +7,6 @@
 		
 			<g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}" />
 				%{--<title><g:message code="default.edit.label" args="[entityName]" /></title>--}%
-			<g:render template="/global/javascript/jQueryUIJS" />
-
 		<jq:jquery>
 			var personArray = [${pBuilder}];
 			$('#person').autocomplete({
@@ -70,9 +68,7 @@
 	</head>
 		<body>
 			<div class="nav">
-				<span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
 				<span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-				%{--<g:render template="/global/menu/admin" />--}%
 			</div>
 			<div class="body">
 				%{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%

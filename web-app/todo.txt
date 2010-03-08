@@ -20,15 +20,9 @@ Volleyball: U-12, U-13, U-16, Damen, Freizeit 1/2
 
 Abteilungen mit Person- und Funktionsfeld (autocomplete)
 
-
-
-Fehler bei Änderung Abteilung
-
 Excel-File einlesen
 
 Icons verlinken auf Abteilungsseite
-
-Sponsoren Bildupload
 
 
 #######################################################################################################################
@@ -44,3 +38,7 @@ Webmaster in Administratorgruppe (wontfix)
 margin-left: 3px beim Menü rausmachen (fixed)
 
 Code bei Abteilungen muss im Hintergrund ermittelt werden (fixed)
+
+Fehler bei Änderung Abteilung (fixed)
+
+Sponsoren Bildupload (fixed)

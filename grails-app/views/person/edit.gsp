@@ -10,12 +10,10 @@
 		<wm_photo_album:gallery_resources noGallery="true" />
     </head>
     <body>
-        <div class="nav">
-            %{--%{--<span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>--}%--}%
-            <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-			%{--<g:render template="/global/menu/admin" />--}%
-        </div>
-        <div class="body">
+        <g:render template="/global/javascript/createButtonJS" />
+		<button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]" /></button>
+        <hr />
+		<div class="body">
             %{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>

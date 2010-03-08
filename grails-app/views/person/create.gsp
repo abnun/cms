@@ -8,12 +8,8 @@
         %{--<title><g:message code="default.create.label" args="[entityName]" /></title>--}%
     </head>
     <body>
-        <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
-            %{--<g:render template="/global/menu/admin" />--}%
-        </div>
         <div class="body">
-            %{--<h1><g:message code="default.create.label" args="[entityName]" /></h1>--}%
+            <h1 class="headline"><g:message code="default.create.label" args="[entityName]" /></h1>
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>

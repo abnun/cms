@@ -1,3 +1,4 @@
+<%@ page import="de.webmpuls.cms.people.ShiroRole" %>
 %{--<link href="${resource(dir: 'css', file: 'superfish.css')}" rel="stylesheet" type="text/css">
 <link href="${resource(dir: 'css', file: 'superfish-vertical.css')}" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="${resource(dir: 'js/jquery', file: 'superfish.js')}"></script>--}%

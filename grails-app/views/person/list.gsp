@@ -7,7 +7,6 @@
         <g:set var="entityName" value="${message(code: 'person.label', default: 'Person')}" />
         %{--<title><g:message code="default.list.label" args="[entityName]" /></title>--}%
 
-		<g:render template="/global/javascript/jQueryUIJS" />
 		<jq:jquery>
 			$("#tabs").tabs();
 		</jq:jquery>
@@ -18,13 +17,9 @@
 		</style>
     </head>
     <body>
-        <div class="nav">
-            %{--<span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>--}%
-			%{--<g:render template="/global/menu/admin" />--}%
-		</div>
-		<div class="nav">
-			<span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-		</div>
+		<g:render template="/global/javascript/createButtonJS" />
+		<button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]" /></button>
+		<hr />
         <div class="body">
             %{--<h1><g:message code="default.list.label" args="[entityName]" /></h1>--}%
             <g:if test="${flash.message}">

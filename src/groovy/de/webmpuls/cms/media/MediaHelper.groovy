@@ -14,4 +14,10 @@ class MediaHelper
 	// Dummy-Personen
 	public static final String DUMMY_PERSON_MALE = "dummy"
 	public static final String DUMMY_PERSON_FEMALE = "dummy"
+
+	public static String formatNameForDisk(String name)
+	{
+		name = name.replaceAll(' ', '_')
+		return name
+	}
 }

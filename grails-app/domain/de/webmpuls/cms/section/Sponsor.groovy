@@ -19,7 +19,13 @@ class Sponsor
     static constraints =
 	{
 		name(nullable: true, blank: true)
+		bild(nullable: true)
 		beschreibung(nullable: true, blank: true, widget: 'textarea')
 		verlinkung(nullable: true, blank: true)
     }
+
+	def String toString()
+	{
+		return name
+	}
 }
