@@ -114,7 +114,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '1-Mitsch_Fabian.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '1-Mitsch_Fabian.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -138,7 +138,7 @@
                     <tr>
                       <td width="110" valign="top">
                         <a href="javascript:PopupFenster(102)">
-                          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '2_Froehlich_Benjamin.jpg')}" alt="" width="110" height="165" border="0"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '2_Froehlich_Benjamin.jpg')}" alt="" width="110" height="165" border="0"/>
                         </a>
                       </td>
                       <td>
@@ -167,7 +167,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '3_Weiss_Pascal.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '3_Weiss_Pascal.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -203,7 +203,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '4-Muth_Konstantin.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '4-Muth_Konstantin.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -236,7 +236,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '7-Katona_Jan.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '7-Katona_Jan.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -258,7 +258,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '8-Kochanski_Lukas.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '8-Kochanski_Lukas.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -291,7 +291,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '9-Urgut_Egekan.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '9-Urgut_Egekan.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -311,7 +311,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '10-Yaramaz_Ilker.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '10-Yaramaz_Ilker.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -333,7 +333,7 @@
                     <tr>
                       <td width="110" valign="top">
                         <a href="javascript:PopupFenster(111)">
-                          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '11-Weber_denn.jpg')}" alt="" width="110" height="165" border="0"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '11-Weber_denn.jpg')}" alt="" width="110" height="165" border="0"/>
                         </a>
                       </td>
                       <td>
@@ -358,7 +358,7 @@
                     <tr>
                       <td width="110" valign="top">
                         <a href="javascript:PopupFenster(112)">
-                          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '12-Kilic_Timur.jpg')}" alt="" width="110" height="165" border="0"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '12-Kilic_Timur.jpg')}" alt="" width="110" height="165" border="0"/>
                         </a>
                       </td>
                       <td>
@@ -386,7 +386,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '13-Bauer_Luca.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '13-Bauer_Luca.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -408,7 +408,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '14-Blachetta_Jeremy.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '14-Blachetta_Jeremy.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -442,7 +442,7 @@
                     <tr>
                       <td width="110" valign="top">
                         <a href="javascript:PopupFenster(116)">
-                          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '16-Doyle_Paddy.jpg')}" alt="" width="110" height="165" border="0"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '16-Doyle_Paddy.jpg')}" alt="" width="110" height="165" border="0"/>
                         </a>
                       </td>
                       <td>
@@ -469,7 +469,7 @@
                     <tr>
                       <td width="110" valign="top">
                         <a href="javascript:PopupFenster(119)">
-                          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '19-Guttleber_Robin.jpg')}" alt="" width="110" height="165" border="0"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '19-Guttleber_Robin.jpg')}" alt="" width="110" height="165" border="0"/>
                         </a>
                       </td>
                       <td>
@@ -503,7 +503,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '20-Trkulja_Bojan.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '20-Trkulja_Bojan.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -523,7 +523,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '21-Boelz_Dominik.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '21-Boelz_Dominik.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -558,7 +558,7 @@
                     <tr>
                       <td width="110" valign="top">
                         <a href="javascript:PopupFenster(125)">
-                          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '25-Rieker_Tim.jpg')}" alt="" width="110" height="165" border="0"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '25-Rieker_Tim.jpg')}" alt="" width="110" height="165" border="0"/>
                         </a>
                       </td>
                       <td>
@@ -585,7 +585,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '28-Winter-Rene.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '28-Winter-Rene.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -622,7 +622,7 @@
                     <tr>
                       <td width="110" valign="top">
                         <a href="javascript:PopupFenster(132)">
-                          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '32-Szegedi_Yannick.jpg')}" alt="" width="110" height="165" border="0"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '32-Szegedi_Yannick.jpg')}" alt="" width="110" height="165" border="0"/>
                         </a>
                       </td>
                       <td>
@@ -650,7 +650,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '33-Fischer_Oliver.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '33-Fischer_Oliver.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -672,7 +672,7 @@
                     <tr>
                       <td width="110" valign="top">
                         <a href="javascript:PopupFenster(201)">
-                          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '41-Theissen_Kevin.jpg')}" alt="" width="110" height="165" border="0"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '41-Theissen_Kevin.jpg')}" alt="" width="110" height="165" border="0"/>
                         </a>
                       </td>
                       <td>
@@ -697,7 +697,7 @@
                     <tr>
                       <td width="110" valign="top">
                         <a href="javascript:PopupFenster(202)">
-                          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '42-Schernautzki_Tristan.jpg')}" alt="" width="110" height="165" border="0"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '42-Schernautzki_Tristan.jpg')}" alt="" width="110" height="165" border="0"/>
                         </a>
                       </td>
                       <td>
@@ -721,7 +721,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '50-Bal_Pascal.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '50-Bal_Pascal.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -741,7 +741,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '87-Stegmueller-Mario.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '87-Stegmueller-Mario.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -762,7 +762,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '88-Grasl_Alexander.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '88-Grasl_Alexander.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -784,7 +784,7 @@
                     <tr>
                       <td width="110" valign="top">
                         <a href="javascript:PopupFenster(195)">
-                          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '95-Hannemann_Marco.jpg')}" alt="" width="110" height="165" border="0"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '95-Hannemann_Marco.jpg')}" alt="" width="110" height="165" border="0"/>
                         </a>
                       </td>
                       <td>
@@ -811,7 +811,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '96-Matyssek_Jacob.jpg')}" width="110" height="165" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '96-Matyssek_Jacob.jpg')}" width="110" height="165" alt=""/>
                       </td>
                       <td>
                          
@@ -846,7 +846,7 @@
                     <tr>
                       <td width="110" valign="top">
                         <a href="javascript:PopupFenster(199)">
-                          <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren/c-portraits_09', file: '99-Menner_Joshua.jpg')}" alt="" width="110" height="165" border="0"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren/c-portraits_09', file: '99-Menner_Joshua.jpg')}" alt="" width="110" height="165" border="0"/>
                         </a>
                       </td>
                       <td>
@@ -896,7 +896,7 @@
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'kani_bal_trainer.jpg')}" width="110" height="160" alt=""/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'kani_bal_trainer.jpg')}" width="110" height="160" alt=""/>
                 <br/>
                 Kani Bal
               </td>

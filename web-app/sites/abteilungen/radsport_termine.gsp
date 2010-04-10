@@ -178,7 +178,7 @@
                 </div>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'S_3-1.jpg')}" width="134" height="348"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'S_3-1.jpg')}" width="134" height="348"/>
               </td>
             </tr>
             <tr valign="top">
@@ -211,7 +211,7 @@
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'S_3.jpg')}" width="414" height="158"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'S_3.jpg')}" width="414" height="158"/>
               </td>
               <td class="copy">
                  

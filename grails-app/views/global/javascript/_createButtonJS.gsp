@@ -1,7 +1,7 @@
 <jq:jquery>
 	$("#createButton").button({
 		icons: {
-			primary: 'ui-icon-plus'
+			primary: 'ui-icon-plusthick'
 		}
 	}).click(function() {
 		window.location.href = '${createLink(action: 'create')}';

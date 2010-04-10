@@ -50,7 +50,7 @@
                   F1
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/F-Jugend', file: 'jufu_f1_team_2009_10.jpg')}" width="557" height="337"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/F-Jugend', file: 'jufu_f1_team_2009_10.jpg')}" width="557" height="337"/>
                 </p>
               </td>
             </tr>
@@ -77,7 +77,7 @@
             <tr valign="top">
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/F-Jugend', file: 'fufu_f4_10_2009.jpg')}" width="557" height="369"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/F-Jugend', file: 'fufu_f4_10_2009.jpg')}" width="557" height="369"/>
                 </p>
                 <p>
                    

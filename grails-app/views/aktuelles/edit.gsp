@@ -11,18 +11,39 @@
         <div class="nav">
             %{--<span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>--}%
             <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
-            <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
+            <g:render template="/global/javascript/createButtonJS" />
+		<button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]" /></button>
         </div>
         <div class="body">
             %{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
             <g:if test="${flash.message}">
-            <div class="message">${flash.message}</div>
+				<div class="ui-widget">
+					<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+						<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+							${flash.message}
+						</p>
+					</div>
+				</div>
+			</g:if>
+			<g:if test="${flash.error}">
+				<div class="ui-widget">
+					<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+						<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+							<strong><g:message code="default.error" />:</strong>&nbsp;${flash.error}
+						</p>
+					</div>
+				</div>
             </g:if>
             <g:hasErrors bean="${aktuellesInstance}">
-            <div class="errors">
-                <g:renderErrors bean="${aktuellesInstance}" as="list" />
-            </div>
-            </g:hasErrors>
+					<div class="ui-widget">
+						<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+							<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+								<strong><g:message code="default.error"/>:</strong>
+								<br/>
+								<g:renderErrors bean="${aktuellesInstance}" as="list"/>
+						</div>
+					</div>
+            	</g:hasErrors>
             <g:form method="post" >
                 <g:hiddenField name="id" value="${aktuellesInstance?.id}" />
                 <g:hiddenField name="version" value="${aktuellesInstance?.version}" />

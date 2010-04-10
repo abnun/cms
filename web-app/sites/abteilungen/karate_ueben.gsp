@@ -30,15 +30,15 @@
             </tr>
             <tr valign="top">
               <td align="center" valign="bottom" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben1.gif')}" width="72" height="104"/>
+                <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben1.gif')}" width="72" height="104"/>
               </td>
               <td align="center" valign="bottom" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben2.gif')}" width="56" height="116"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben2.gif')}" width="56" height="116"/>
                 </div>
               </td>
               <td align="center" valign="bottom" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben3.gif')}" width="74" height="93"/>
+                <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben3.gif')}" width="74" height="93"/>
               </td>
               <td class="copy">
                  
@@ -87,12 +87,12 @@
             <tr valign="top">
               <td colspan="2" align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_bg_mae.gif')}" width="225" height="132"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_bg_mae.gif')}" width="225" height="132"/>
                 </div>
               </td>
               <td colspan="2" align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_bg_maw.gif')}" width="253" height="132"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_bg_maw.gif')}" width="253" height="132"/>
                 </div>
               </td>
             </tr>
@@ -127,22 +127,22 @@
             <tr valign="top">
               <td align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_bg_hei.gif')}" width="48" height="128"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_bg_hei.gif')}" width="48" height="128"/>
                 </div>
               </td>
               <td align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_bg_mus.gif')}" width="45" height="129"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_bg_mus.gif')}" width="45" height="129"/>
                 </div>
               </td>
               <td align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_bg_heik.gif')}" width="59" height="129"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_bg_heik.gif')}" width="59" height="129"/>
                 </div>
               </td>
               <td class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_bg_soto.gif')}" width="69" height="129"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_bg_soto.gif')}" width="69" height="129"/>
                 </div>
               </td>
             </tr>
@@ -175,22 +175,22 @@
             <tr valign="top">
               <td align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_bg_chi.gif')}" width="87" height="140"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_bg_chi.gif')}" width="87" height="140"/>
                 </div>
               </td>
               <td align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_bg_shiko.gif')}" width="127" height="140"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_bg_shiko.gif')}" width="127" height="140"/>
                 </div>
               </td>
               <td align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_bg_zenk.gif')}" width="117" height="140"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_bg_zenk.gif')}" width="117" height="140"/>
                 </div>
               </td>
               <td class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_bg_sanch.gif')}" width="68" height="140"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_bg_sanch.gif')}" width="68" height="140"/>
                 </div>
               </td>
             </tr>
@@ -233,12 +233,12 @@
             <tr valign="top">
               <td colspan="2" align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_sa_oi.gif')}" width="126" height="141"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_sa_oi.gif')}" width="126" height="141"/>
                 </div>
               </td>
               <td colspan="2" align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_sa_gua.gif')}" width="122" height="141"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_sa_gua.gif')}" width="122" height="141"/>
                 </div>
               </td>
             </tr>
@@ -271,12 +271,12 @@
             <tr valign="top">
               <td colspan="2" align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_sa_jodan.gif')}" width="167" height="126"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_sa_jodan.gif')}" width="167" height="126"/>
                 </div>
               </td>
               <td colspan="2" align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_sa_har.gif')}" width="206" height="126"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_sa_har.gif')}" width="206" height="126"/>
                 </div>
               </td>
             </tr>
@@ -301,12 +301,12 @@
             <tr valign="top">
               <td colspan="2" align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_sa_uchi.gif')}" width="236" height="135"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_sa_uchi.gif')}" width="236" height="135"/>
                 </div>
               </td>
               <td colspan="2" align="center" class="copy">
                 <div align="center">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_ueben_sa_soto.gif')}" width="107" height="135"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_ueben_sa_soto.gif')}" width="107" height="135"/>
                 </div>
               </td>
             </tr>

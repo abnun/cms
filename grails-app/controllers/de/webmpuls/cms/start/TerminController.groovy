@@ -22,7 +22,7 @@ class TerminController {
     def save = {
         def terminInstance = new Termin(params)
         if (terminInstance.save(flush: true)) {
-            flash.message = "${message(code: 'default.created.message', args: [message(code: 'termin.label', default: 'Termin'), terminInstance.id])}"
+            flash.message = "${message(code: 'default.created.message', args: [message(code: 'termin.label', default: 'Termin'), terminInstance.inhalt])}"
             redirect(controller: 'inhalt', action: "aktuelles")
         }
         else {
@@ -66,7 +66,7 @@ class TerminController {
             }
             terminInstance.properties = params
             if (!terminInstance.hasErrors() && terminInstance.save(flush: true)) {
-                flash.message = "${message(code: 'default.updated.message', args: [message(code: 'termin.label', default: 'Termin'), terminInstance.id])}"
+                flash.message = "${message(code: 'default.updated.message', args: [message(code: 'termin.label', default: 'Termin'), terminInstance.inhalt])}"
                 redirect(controller: 'inhalt', action: "aktuelles")
             }
             else {

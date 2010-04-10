@@ -107,7 +107,7 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/F-Jugend', file: 'jufu_f1_05-12-2009.jpg')}" width="275" height="311"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/F-Jugend', file: 'jufu_f1_05-12-2009.jpg')}" width="275" height="311"/>
               </td>
             </tr>
             <tr valign="top">
@@ -184,7 +184,7 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/F-Jugend', file: 'jufu_f2_05-12-09.jpg')}" width="275" height="232"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/F-Jugend', file: 'jufu_f2_05-12-09.jpg')}" width="275" height="232"/>
               </td>
             </tr>
             <tr valign="top">
@@ -362,7 +362,7 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/F-Jugend', file: 'f1_fellbach_24_10_2009.jpg')}" width="275" height="372"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/F-Jugend', file: 'f1_fellbach_24_10_2009.jpg')}" width="275" height="372"/>
               </td>
             </tr>
             <tr valign="top">
@@ -571,7 +571,7 @@
               </td>
               <td class="copy">
                 <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_f_team.gsp')}">
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/F-Jugend', file: 'fufu_f4_10_2009.jpg')}" width="275" height="182" border="0"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/F-Jugend', file: 'fufu_f4_10_2009.jpg')}" width="275" height="182" border="0"/>
                 </a>
               </td>
             </tr>

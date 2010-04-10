@@ -97,7 +97,7 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/fussball', file: 'fuba_gassenfest_2009.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball', file: 'fuba_gassenfest_2009.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
@@ -228,7 +228,7 @@
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/fussball', file: 'manfred_geier.jpg')}" width="100" height="100"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball', file: 'manfred_geier.jpg')}" width="100" height="100"/>
                   <br/>
                   <br/>
                   Manfred Geier

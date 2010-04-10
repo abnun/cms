@@ -11,6 +11,7 @@ import org.cyberneko.html.parsers.SAXParser
 
 import de.webmpuls.cms.xml.XMLParserHandler
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
+import de.webmpuls.cms.section.*
 
 class BootStrap
 {
@@ -162,6 +163,134 @@ class BootStrap
 		{
 			sponsoren =  new Album(name: MediaHelper.ALBUM_SPONSOREN, description: "Foto-Album für die Sponsoren")
 			sponsoren.save()
+		}
+
+
+		// Abteilungen
+		Abteilung badminton = Abteilung.findByCode(AbteilungHelper.CODE_BADMINTON)
+		if(!badminton)
+		{
+			badminton =  new Abteilung(name: AbteilungHelper.NAME_BADMINTON, code: AbteilungHelper.CODE_BADMINTON)
+			badminton.save()
+		}
+
+		Abteilung basketball = Abteilung.findByCode(AbteilungHelper.CODE_BASKETBALL)
+		if(!basketball)
+		{
+			basketball =  new Abteilung(name: AbteilungHelper.NAME_BASKETBALL, code: AbteilungHelper.CODE_BASKETBALL)
+			basketball.save()
+		}
+
+		Abteilung fussball_ah = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_AH)
+		if(!fussball_ah)
+		{
+			fussball_ah =  new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_AH, code: AbteilungHelper.CODE_FUSSBALL_AH)
+			fussball_ah.save()
+		}
+
+		Abteilung fussball_damen = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_DAMEN)
+		if(!fussball_damen)
+		{
+			fussball_damen =  new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_DAMEN, code: AbteilungHelper.CODE_FUSSBALL_DAMEN)
+			fussball_damen.save()
+		}
+
+		Abteilung fussball_herren = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_HERREN)
+		if(!fussball_herren)
+		{
+			fussball_herren =  new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_HERREN, code: AbteilungHelper.CODE_FUSSBALL_HERREN)
+			fussball_herren.save()
+		}
+
+		Abteilung fussball_jugend = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND)
+		if(!fussball_jugend)
+		{
+			fussball_jugend =  new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND, code: AbteilungHelper.CODE_FUSSBALL_JUGEND)
+			fussball_jugend.save()
+		}
+
+		Abteilung handball = Abteilung.findByCode(AbteilungHelper.CODE_HANDBALL)
+		if(!handball)
+		{
+			handball =  new Abteilung(name: AbteilungHelper.NAME_HANDBALL, code: AbteilungHelper.CODE_HANDBALL)
+			handball.save()
+		}
+
+		Abteilung karate = Abteilung.findByCode(AbteilungHelper.CODE_KARATE)
+		if(!karate)
+		{
+			karate =  new Abteilung(name: AbteilungHelper.NAME_KARATE, code: AbteilungHelper.CODE_KARATE, )
+			karate.save()
+		}
+
+		Abteilung leichtathletik = Abteilung.findByCode(AbteilungHelper.CODE_LEICHTATHLETIK)
+		if(!leichtathletik)
+		{
+			leichtathletik =  new Abteilung(name: AbteilungHelper.NAME_LEICHTATHLETIK, code: AbteilungHelper.CODE_LEICHTATHLETIK)
+			leichtathletik.save()
+		}
+
+		Abteilung radsport = Abteilung.findByCode(AbteilungHelper.CODE_RADSPORT)
+		if(!radsport)
+		{
+			radsport =  new Abteilung(name: AbteilungHelper.NAME_RADSPORT, code: AbteilungHelper.CODE_RADSPORT)
+			radsport.save()
+		}
+
+		Abteilung reiten = Abteilung.findByCode(AbteilungHelper.CODE_REITEN)
+		if(!reiten)
+		{
+			reiten =  new Abteilung(name: AbteilungHelper.NAME_REITEN, code: AbteilungHelper.CODE_REITEN)
+			reiten.save()
+		}
+
+		Abteilung schach = Abteilung.findByCode(AbteilungHelper.CODE_SCHACH)
+		if(!schach)
+		{
+			schach =  new Abteilung(name: AbteilungHelper.NAME_SCHACH, code: AbteilungHelper.CODE_SCHACH)
+			schach.save()
+		}
+
+		Abteilung ski = Abteilung.findByCode(AbteilungHelper.CODE_SKI)
+		if(!ski)
+		{
+			ski =  new Abteilung(name: AbteilungHelper.NAME_SKI, code: AbteilungHelper.CODE_SKI)
+			ski.save()
+		}
+
+		Abteilung tanzen = Abteilung.findByCode(AbteilungHelper.CODE_TANZEN)
+		if(!tanzen)
+		{
+			tanzen =  new Abteilung(name: AbteilungHelper.NAME_TANZEN, code: AbteilungHelper.CODE_TANZEN)
+			tanzen.save()
+		}
+
+		Abteilung tennis = Abteilung.findByCode(AbteilungHelper.CODE_TENNIS)
+		if(!tennis)
+		{
+			tennis =  new Abteilung(name: AbteilungHelper.NAME_TENNIS, code: AbteilungHelper.CODE_TENNIS)
+			tennis.save()
+		}
+
+		Abteilung tischtennis = Abteilung.findByCode(AbteilungHelper.CODE_TISCHTENNIS)
+		if(!tischtennis)
+		{
+			tischtennis =  new Abteilung(name: AbteilungHelper.NAME_TISCHTENNIS, code: AbteilungHelper.CODE_TISCHTENNIS)
+			tischtennis.save()
+		}
+
+		Abteilung turnen = Abteilung.findByCode(AbteilungHelper.CODE_TURNEN)
+		if(!turnen)
+		{
+			turnen =  new Abteilung(name: AbteilungHelper.NAME_TURNEN, code: AbteilungHelper.CODE_TURNEN)
+			turnen.save()
+		}
+
+		Abteilung volleyball = Abteilung.findByCode(AbteilungHelper.CODE_VOLLEYBALL)
+		if(!volleyball)
+		{
+			volleyball =  new Abteilung(name: AbteilungHelper.NAME_VOLLEYBALL, code: AbteilungHelper.CODE_VOLLEYBALL)
+			volleyball.save()
 		}
 
 

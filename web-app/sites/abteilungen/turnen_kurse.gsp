@@ -137,7 +137,7 @@
                   <img src="${resource(dir: 'bilder/aktuell', file: 'ppg_logo.gif')}" width="75" height="69"/>
                 </p>
                 <p align="center">
-                  <img src="${resource(dir: 'bilder/abtei/turnen', file: 'yin-yang.gif')}" width="50" height="50"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'yin-yang.gif')}" width="50" height="50"/>
                 </p>
               </td>
             </tr>

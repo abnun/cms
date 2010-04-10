@@ -22,7 +22,7 @@ class AnzeigenController {
     def save = {
         def anzeigenInstance = new Anzeigen(params)
         if (anzeigenInstance.save(flush: true)) {
-            flash.message = "${message(code: 'default.created.message', args: [message(code: 'anzeigen.label', default: 'Anzeigen'), anzeigenInstance.id])}"
+            flash.message = "${message(code: 'default.created.message', args: [message(code: 'anzeigen.label', default: 'Anzeige'), anzeigenInstance.ueberschrift1 + anzeigenInstance.ueberschrift2])}"
             redirect(controller: 'inhalt', action: "aktuelles")
         }
         else {
@@ -33,7 +33,7 @@ class AnzeigenController {
     def show = {
         def anzeigenInstance = Anzeigen.get(params.id)
         if (!anzeigenInstance) {
-            flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'anzeigen.label', default: 'Anzeigen'), params.id])}"
+            flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'anzeigen.label', default: 'Anzeige'), params.id])}"
             redirect(action: "list")
         }
         else {
@@ -66,7 +66,7 @@ class AnzeigenController {
             }
             anzeigenInstance.properties = params
             if (!anzeigenInstance.hasErrors() && anzeigenInstance.save(flush: true)) {
-                flash.message = "${message(code: 'default.updated.message', args: [message(code: 'anzeigen.label', default: 'Anzeigen'), anzeigenInstance.id])}"
+                flash.message = "${message(code: 'default.updated.message', args: [message(code: 'anzeigen.label', default: 'Anzeigen'), anzeigenInstance.ueberschrift1 + anzeigenInstance.ueberschrift2])}"
                 redirect(controller: 'inhalt', action: "aktuelles")
             }
             else {
@@ -84,12 +84,12 @@ class AnzeigenController {
         if (anzeigenInstance) {
             try {
                 anzeigenInstance.delete(flush: true)
-                flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'anzeigen.label', default: 'Anzeigen'), params.id])}"
+                flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'anzeigen.label', default: 'Anzeige'), anzeigenInstance.ueberschrift1 + anzeigenInstance.ueberschrift2])}"
                 //redirect(action: "list")
 				redirect(controller: 'inhalt', action: "aktuelles")
             }
             catch (org.springframework.dao.DataIntegrityViolationException e) {
-                flash.message = "${message(code: 'default.not.deleted.message', args: [message(code: 'anzeigen.label', default: 'Anzeigen'), params.id])}"
+                flash.message = "${message(code: 'default.not.deleted.message', args: [message(code: 'anzeigen.label', default: 'Anzeige'), params.id])}"
                 redirect(action: "show", id: params.id)
             }
         }

@@ -276,7 +276,7 @@
                           <tbody>
                             <tr>
                               <td height="130" colspan="2" bgcolor="#999999" class="infohead">
-                                <img src="${resource(dir: 'bilder/abtei/jfussball/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
+                                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
                               </td>
                             </tr>
                             <tr>
@@ -508,7 +508,7 @@
                 </p>
                 <p>
                   &gt;
-                  <a href="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp09_ergebnisse.pdf')}" target="_blank">
+                  <a href="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp09_ergebnisse.pdf')}" target="_blank">
                     camp09_ergebnisse.pdf
                   </a>
                 </p>
@@ -518,13 +518,13 @@
               </td>
               <td width="270" class="copy">
                 <a href="javascript:PopupFenster(310709)">
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_elfer.jpg')}" width="275" height="206" border="0"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_elfer.jpg')}" width="275" height="206" border="0"/>
                 </a>
               </td>
             </tr>
             <tr valign="top">
               <td colspan="2" bgcolor="d2dfff" class="copy">
-                <a href="${resource(dir: 'bilder/abtei/jfussball', file: 'jufu_trainingszeiten_auftakt_2009.pdf')}" target="_blank">
+                <a href="${resource(dir: 'bilder/abteilungen/fussball_-_jugend', file: 'jufu_trainingszeiten_auftakt_2009.pdf')}" target="_blank">
                   <br/>
                   &gt; Neue Trainingszeiten für die Saison 2009/2010
                 </a>
@@ -548,7 +548,7 @@
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball', file: 'jufu_ehrennadel.jpg')}" width="557" height="318"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend', file: 'jufu_ehrennadel.jpg')}" width="557" height="318"/>
               </td>
             </tr>
             <tr valign="top">
@@ -638,10 +638,10 @@
               </td>
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball', file: 'jufu_fair_ist_mehr_Niklas.JPG')}" width="275" height="336"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend', file: 'jufu_fair_ist_mehr_Niklas.JPG')}" width="275" height="336"/>
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball', file: 'jufu_jugend-ehrungen_1.jpg')}" width="275" height="274"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend', file: 'jufu_jugend-ehrungen_1.jpg')}" width="275" height="274"/>
                 </p>
               </td>
             </tr>
@@ -660,7 +660,7 @@
                     ist mehr“ erhalten.
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball', file: 'jufu_fair_ist_mehr_Niklas.JPG')}" width="275" height="336"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend', file: 'jufu_fair_ist_mehr_Niklas.JPG')}" width="275" height="336"/>
                   <br/>
                   <br/>
                   Dieser Preis wird vom DFB aufgrund einer Schiedsrichtermeldung, 
@@ -712,7 +712,7 @@
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
                 <a href="mailto:gernot-hagen@versanet.de">
-                  <img src="${resource(dir: 'bilder/abtei/jfussball', file: 'jf_gernot.jpg')}" width="110" height="155" border="0"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend', file: 'jf_gernot.jpg')}" width="110" height="155" border="0"/>
                 </a>
                 <br/>
                 Gernot Hagen

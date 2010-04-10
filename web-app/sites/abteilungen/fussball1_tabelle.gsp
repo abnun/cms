@@ -64,7 +64,7 @@
                 <br/>
                 <div align="right"/>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/fussball', file: 'f1_tab.jpg')}" width="540" height="287"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball', file: 'f1_tab.jpg')}" width="540" height="287"/>
                 </p>
                 <p/>
                 <p>
@@ -628,7 +628,7 @@
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/fussball', file: 'manfred_geier.jpg')}" width="100" height="100"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball', file: 'manfred_geier.jpg')}" width="100" height="100"/>
                   <br/>
                   <br/>
                   Manfred Geier

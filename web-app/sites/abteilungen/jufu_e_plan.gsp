@@ -144,8 +144,8 @@
                   Turnierplan für den 29.11.2008
                 </p>
                 <p>
-                  <a href="${resource(dir: 'bilder/abtei/jfussball/jufu_turniere_2008', file: '081129_E-Junioren.pdf')}" target="_blank">
-                    <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_turniere_2008', file: '081129_E-Junioren1.jpg')}" width="275" height="389" border="1"/>
+                  <a href="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_turniere_2008', file: '081129_E-Junioren.pdf')}" target="_blank">
+                    <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_turniere_2008', file: '081129_E-Junioren1.jpg')}" width="275" height="389" border="1"/>
                   </a>
                 </p>
               </td>

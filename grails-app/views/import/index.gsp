@@ -1,19 +1,53 @@
 <html>
 <head>
 	<meta name="layout" content="sv_leingarten"/>
+	<jq:jquery>
+		$("#datepickerFrom").datepicker({
+			dateFormat: 'dd.mm.yy'
+		});
+		$("#datepickerTo").datepicker({
+			dateFormat: 'dd.mm.yy' 
+		});
+
+		$("#htmlImportSubmit").button();
+	</jq:jquery>
 </head>
 <body>
-<br />
-<g:link action="uploadExcel" class="excel_link">Excel-File einlesen</g:link>
-<br />
-<br />
 <h2>Tabelle einlesen</h2>
 <g:form action="tableHTMLImport" name="TabelleHTMLImportForm" method="post">
-Von: <gui:datePicker id='vonDate' formatString="dd.MM.yyyy" />
-<br/>
-Bis: <gui:datePicker id='bisDate' formatString="dd.MM.yyyy" />
-<br/>
-<a href="javascript: void(0);" onclick="document.forms.TabelleHTMLImportForm.submit();">Ergebnis-Tabelle einlesen</a>
+	<table>
+		<tbody>
+		<tr>
+			<td align="right">
+				<p class="copy">
+					Von
+				</p>
+			</td>
+			<td>
+				<input name="datepickerFrom" id="datepickerFrom" type="text">
+			</td>
+		</tr>
+		<tr>
+			<td align="right">
+				<p class="copy">
+					Bis
+				</p>
+			</td>
+			<td>
+				<input name="datepickerTo" id="datepickerTo" type="text">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 5px;">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<input id="htmlImportSubmit" type="submit" value="${message(code: 'default.form.submit')}"/>
+			</td>
+		</tr>
+		</tbody>
+	</table>
 </g:form>
 </body>
 </html>

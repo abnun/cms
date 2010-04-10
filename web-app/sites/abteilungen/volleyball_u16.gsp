@@ -27,7 +27,7 @@
             <tr valign="top">
               <td width="551" class="copy">
                 <p class="headline">
-                  <img src="${resource(dir: 'bilder/abtei/volley/u16', file: 'volley_u16_team.jpg')}" width="557" height="257"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/volley/u16', file: 'volley_u16_team.jpg')}" width="557" height="257"/>
                 </p>
                 <p>
                    

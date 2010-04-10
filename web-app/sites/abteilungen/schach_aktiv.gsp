@@ -25,7 +25,7 @@
               </td>
               <td>
                 <p class="copy">
-                  <img src="${resource(dir: 'bilder/abtei/schach', file: 'Schach_2794.jpg')}" width="275" height="179"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/schach', file: 'Schach_2794.jpg')}" width="275" height="179"/>
                 </p>
               </td>
             </tr>
@@ -459,7 +459,7 @@
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/schach', file: 'Keller_Rolf.jpg')}" width="110" height="110"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/schach', file: 'Keller_Rolf.jpg')}" width="110" height="110"/>
                   <br/>
                   <span class="wichtig">
                     Rolf Keller
@@ -472,7 +472,7 @@
                   Tel. 07131 / 40 17 07
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/schach', file: 'Eric_Hermann.jpg')}" width="110" height="165"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/schach', file: 'Eric_Hermann.jpg')}" width="110" height="165"/>
                   <br/>
                   <span class="wichtig">
                     Eric Hermann

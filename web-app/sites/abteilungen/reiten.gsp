@@ -116,12 +116,12 @@
               <td>
                 <p>
                   <span class="headline">
-                    <img src="${resource(dir: 'bilder/abtei/reiten', file: 'Reiten1.jpg')}" width="275" height="190"/>
+                    <img src="${resource(dir: 'bilder/abteilungen/reiten', file: 'Reiten1.jpg')}" width="275" height="190"/>
                   </span>
                   <span class="copy">
                     <br/>
                     <br/>
-                    <img src="${resource(dir: 'bilder/abtei/reiten', file: 'Reiten2.jpg')}" width="275" height="225"/>
+                    <img src="${resource(dir: 'bilder/abteilungen/reiten', file: 'Reiten2.jpg')}" width="275" height="225"/>
                     <br/>
                     (Fotos: Josef Staudinger)
                   </span>

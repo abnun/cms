@@ -5,8 +5,6 @@ import de.webmpuls.cms.people.Funktion
 
 class Abteilung
 {
-	static final String JUGEND_FUSSBALL = "Fußball (Jugend)"
-
 	static hasMany = [mitarbeiterfunktionen: Funktion, unterabteilungen: Abteilung, personen: Person, trainingszeiten: Trainingszeit]
 
 	String name
@@ -30,7 +28,7 @@ class Abteilung
 
 	static constraints =
 	{
-		name()
+		name(blank: false, nullable: false)
 		code(unique: true, nullable: true, blank: true/*, validator: { String v ->
 			boolean isValid = (v ==~ /[a-z_0-9]+/)
 			println("validation for '$v' evaluates to $isValid")
@@ -63,12 +61,12 @@ class Abteilung
 			anzeigeImMenu = true
 		}
 
-		code = AbteilungHelper.formatCode(name, code)
+		code = AbteilungHelper.formatNameToCode(name, code)
 	}
 
 	def beforeInsert()
 	{
-		code = AbteilungHelper.formatCode(name, code)
+		code = AbteilungHelper.formatNameToCode(name, code)
 	}
 
 	def String toString()

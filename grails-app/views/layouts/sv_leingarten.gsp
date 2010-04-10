@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ page import="de.webmpuls.cms.people.ShiroRole" %>
+<%@ page import="de.webmpuls.cms.section.AbteilungHelper" %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><!-- InstanceBegin template="/Templates/svlmaster.dwt" codeOutsideHTMLIsLocked="false" -->
@@ -8,6 +9,9 @@
 	<title><g:layoutTitle default="(( (  Sportverein Leingarten  ) ))" /></title>
 	<!-- TemplateEndEditable -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Cache-control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="-1"/>
 	<link rel="SHORTCUT ICON" href="${resource(dir: 'bilder', file: 'svl.ico')}">
 	<link rel="shortcut icon" type="image/x-icon" href="${resource(dir: 'bilder', file: 'svl.ico')}"/>
 <!-- InstanceParam name="oben" type="boolean" value="true" --> <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
@@ -55,10 +59,11 @@
   <tr>
     <td width="110" height="87" align="center" valign="middle" bgcolor="#D2DFFF"><a name="oben"></a><a href="${createLink(controller: 'inhalt', action: 'aktuelles')}" alt="Startseite"><img src="${resource(dir: 'bilder/divers', file: 'logo.jpg')}" name="svllogo" width="110" height="87" id="svllogo" border="0" /></a></td>
     <td width="10" height="87" bgcolor="#97C0EA">&nbsp;</td>
-    <td width="100%" height="87" align="left" valign="top" bgcolor="#D2DFFF"><!-- InstanceBeginEditable name="kopf" -->
-      <p><img src="${resource(dir: 'bilder/divers', file: 'allgkopf.jpg')}" width="690" height="88"></p>
-      %{--<p><img src="${resource(dir: 'bilder/' + actionName ?: 'divers', file: actionName + '.jpg' ?: 'allgkopf.jpg')}" width="690" height="88"></p>--}%
-      <!-- InstanceEndEditable --></td>
+	  <td width="100%" height="87" align="left" valign="top" bgcolor="#D2DFFF"><!-- InstanceBeginEditable name="kopf" -->
+		  <p>
+		  	<layout:header_image />
+		  </p>
+		  <!-- InstanceEndEditable --></td>
   </tr>
   <tr>
     <td width="110" height="20" align="right" bgcolor="#1760A8"> <span class="svl"><font color="#FFFFFF">Sportverein
@@ -68,9 +73,16 @@
 
       <table border="0" cellpadding="0" cellspacing="3" class="rubrik">
         <tr>
-          <td></td>
-          <td class="rubrikactiv"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="1" height="1"></td>
-        </tr>
+			<td></td>
+			<td class="rubrikactiv">
+				<g:if test="${(request.getRequestURI().contains(AbteilungHelper.CODE_ABTEILUNGEN))}">
+					<menu:header_menu />
+				</g:if>
+				<g:else>
+					<img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="1" height="1">
+				</g:else>
+			</td>
+		</tr>
       </table>
 		<shiro:isLoggedIn>
 			<table border="0" cellspacing="0" class="copy" style="float: right; color: white;">
@@ -83,13 +95,13 @@
 						<img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"/>
 					</td>
 					<td class="copy">
-						&nbsp;<g:link controller="admin" style="color: white;"><g:message code="admin.home.link.lable" default="Adminstration" /></g:link>&nbsp;
+						&nbsp;<g:link controller="admin" style="color: white;"><g:message code="admin.home.link.lable" default="Dashboard" /></g:link>&nbsp;
 					</td>
 					<td>
 						<img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"/>
 					</td>
 					<td class="copy">
-						&nbsp;<g:link controller="auth" action="signOut" style="color: white;" onclick="return confirm('Wirklich ausloggen?');"><g:message code="admin.logout.link.lable" default="ausloggen" /></g:link>&nbsp;
+						&nbsp;<g:link controller="auth" action="signOut" style="color: white;" onclick="return confirm('${message(code: 'logout.confirm')}');"><g:message code="admin.logout.link.lable" default="ausloggen" /></g:link>&nbsp;
 					</td>
 				</tr>
 				</tbody>

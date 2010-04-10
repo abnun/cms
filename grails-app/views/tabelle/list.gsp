@@ -1,26 +1,102 @@
-
 <%@ page import="de.webmpuls.cms.result.Tabelle" %>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'tabelle.label', default: 'Tabelle')}" />
         %{--<title><g:message code="default.list.label" args="[entityName]" /></title>--}%
+		<style type="text/css">
+		div .list table td,
+		div .list table th {
+			vertical-align: top;
+			text-align: right;
+			height:14px;
+			overflow: hidden;
+		}
+		</style>
     </head>
     <body>
-        <div class="nav">
-            %{--<span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>--}%
-            <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-        </div>
+		<table>
+			<tr valign="middle" align="center">
+				<td valign="top" align="center">
+					<g:render template="/global/javascript/createButtonJS"/>
+					<button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]"/></button>
+				</td>
+				<td valign="top" align="center">
+					<jq:jquery>
+						$("#importListButton").button({
+							icons: {
+								primary: 'ui-icon-arrowreturnthick-1-s'
+							}
+						}).click(function() {
+							document.forms.TabelleHTMLImportForm.submit();
+						});
+
+						$("#datepickerFrom").datepicker({
+							dateFormat: 'dd.mm.yy'
+						});
+						$("#datepickerTo").datepicker({
+							dateFormat: 'dd.mm.yy'
+						});
+
+						$("#htmlImportSubmit").button();
+					</jq:jquery>
+					<g:form controller="import" action="tableHTMLImport" name="TabelleHTMLImportForm" method="post">
+						<table>
+							<tbody>
+							<tr>
+								<td align="right" valign="top">
+									<p class="copy">
+										<label for="datepickerFrom">Von</label>
+									</p>
+								</td>
+								<td valign="top">
+									<input name="datepickerFrom" id="datepickerFrom" type="text" autocomplete="off">
+								</td>
+								<td align="right" valign="top">
+									<p class="copy">
+										<label for="datepickerTo">Bis</label>
+									</p>
+								</td>
+								<td valign="top">
+									<input name="datepickerTo" id="datepickerTo" type="text" autocomplete="off">
+								</td>
+								<td valign="top">
+									<button id="importListButton" style="margin-left: 10px;"><g:message code="tabelle.import.button.label" /></button>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</g:form>
+				</td>
+			</tr>
+		</table>
+
+        <hr />
         <div class="body">
-            <h1 class="headline_dunkel"><g:message code="default.list.label" args="[entityName]" /></h1>
             <g:if test="${flash.message}">
-            <div class="message">${flash.message}</div>
+				<div class="ui-widget">
+					<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+						<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+							${flash.message}
+						</p>
+					</div>
+				</div>
+			</g:if>
+			<g:if test="${flash.error}">
+				<div class="ui-widget">
+					<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+						<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+							<strong><g:message code="default.error" />:</strong>&nbsp;${flash.error}
+						</p>
+					</div>
+				</div>
             </g:if>
 			<br/>
-			Es sind ${tabelleInstanceTotal} Ergebnisse im System hinterlegt.
-			<br/>
-			<br/>
+			<p class="copy">
+				Es sind ${tabelleInstanceTotal} Ergebnisse im System hinterlegt.
+			</p>
             <div class="list">
                 <table>
                     <thead>
@@ -63,7 +139,11 @@
                             <td>${fieldValue(bean: tabelleInstance, field: "anstoss")}</td>
 
 							<g:if test="${tabelleInstance?.tore?.contains('png')}">
-								<td style="display:block; overflow:hidden; height:14px;"><img style="top: -263px; left: -289px;" src="${resource(dir: 'bilder/tabellen/tore', file: tabelleInstance?.tore)}" alt="" border="0" /></td>
+								<td>
+									<div style="position: relative; display: block; float: right; margin: 0; border: none; width: 35px; height: 14px; overflow: hidden;">
+										<img style="position: absolute; ${tabelleInstance.toreImageStyle ?: ''}" src="${resource(dir: 'bilder/tabellen/tore', file: tabelleInstance?.tore)}" alt="" border="0" />
+									</div>
+								</td>
 							</g:if>
 							<g:else>
 								<td>${tabelleInstance?.tore}</td>

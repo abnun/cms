@@ -67,7 +67,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'arlind-gashi.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'arlind-gashi.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -102,7 +102,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'cem-yaramaz.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'cem-yaramaz.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -136,7 +136,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'finn-geiger.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'finn-geiger.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -172,7 +172,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'ilyas-abukar.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'ilyas-abukar.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -196,7 +196,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'jonas-jesser.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'jonas-jesser.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -229,7 +229,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'julian-walter.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'julian-walter.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -262,7 +262,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'luka-kircher.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'luka-kircher.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -296,7 +296,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'marc-joanni.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'marc-joanni.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -331,7 +331,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'robert-dedores.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'robert-dedores.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -364,7 +364,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'tim-jegglin.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'tim-jegglin.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -400,7 +400,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'calvin-kirsch.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'calvin-kirsch.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -434,7 +434,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'husein-kuran.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'husein-kuran.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -467,7 +467,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'ivan-brnic.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'ivan-brnic.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -500,7 +500,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'jannik-rau.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'jannik-rau.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -533,7 +533,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'johannes-werner.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'johannes-werner.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -566,7 +566,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'jonathan-menner.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'jonathan-menner.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -599,7 +599,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'marc-lauerer.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'marc-lauerer.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -633,7 +633,7 @@
                   <tbody>
                     <tr>
                       <td width="110" valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'thomas-gros.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'thomas-gros.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -667,7 +667,7 @@
                   <tbody>
                     <tr>
                       <td valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'berkin-durak.jpg')}" width="110" height="160" alt=""/>
+                        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'berkin-durak.jpg')}" width="110" height="160" alt=""/>
                       </td>
                       <td>
                          
@@ -712,7 +712,7 @@
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'bernd-hedendorf_trainer.jpg')}" width="110" height="160" alt=""/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'bernd-hedendorf_trainer.jpg')}" width="110" height="160" alt=""/>
                   <br/>
                   Bernd Hedendorf
                   <br/>
@@ -721,35 +721,35 @@
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'juergen-lauerer_trainer.jpg')}" width="110" height="160" alt=""/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'juergen-lauerer_trainer.jpg')}" width="110" height="160" alt=""/>
                 <br/>
                 Jürgen Lauerer
               </td>
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'matthias-zahn_trainer.jpg')}" width="110" height="160" alt=""/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'matthias-zahn_trainer.jpg')}" width="110" height="160" alt=""/>
                 <br/>
                 Matthias Zahn
               </td>
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'sebastian-rother_trainer.jpg')}" width="110" height="160" alt=""/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'sebastian-rother_trainer.jpg')}" width="110" height="160" alt=""/>
                 <br/>
                 Sebastian Rother
               </td>
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'thomas-werner_trainer.jpg')}" width="110" height="160" alt=""/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'thomas-werner_trainer.jpg')}" width="110" height="160" alt=""/>
                 <br/>
                 Thomas Werner
               </td>
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'kani_bal_trainer.jpg')}" width="110" height="160" alt=""/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'kani_bal_trainer.jpg')}" width="110" height="160" alt=""/>
                 <br/>
                 Kani Bal
               </td>

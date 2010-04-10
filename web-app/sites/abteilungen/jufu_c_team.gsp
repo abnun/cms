@@ -72,7 +72,7 @@
             <tr valign="top">
               <td class="copy">
                 <p class="headline">
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren', file: 'jufu_c_team_2009.jpg')}" width="557" height="314"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren', file: 'jufu_c_team_2009.jpg')}" width="557" height="314"/>
                 </p>
                 <p class="headline">
                    

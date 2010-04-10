@@ -106,7 +106,7 @@
                 </p>
               </td>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_kyu_deshi.gif')}" width="90" height="43"/>
+                <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_kyu_deshi.gif')}" width="90" height="43"/>
               </td>
             </tr>
             <tr valign="top">
@@ -246,7 +246,7 @@
                 </p>
               </td>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_kyu_sensei.gif')}" width="90" height="43"/>
+                <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_kyu_sensei.gif')}" width="90" height="43"/>
               </td>
             </tr>
             <tr valign="top">
@@ -276,7 +276,7 @@
                 </p>
               </td>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_kyu_sempai.gif')}" width="90" height="43"/>
+                <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_kyu_sempai.gif')}" width="90" height="43"/>
               </td>
             </tr>
           </tbody>

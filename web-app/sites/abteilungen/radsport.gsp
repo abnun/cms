@@ -10,7 +10,7 @@
           <tbody>
             <tr>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'raeder.jpg')}" width="690" height="174"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'raeder.jpg')}" width="690" height="174"/>
               </td>
             </tr>
           </tbody>
@@ -51,7 +51,7 @@
                 Herzlichen Glückwunsch!
               </td>
               <td rowspan="2" valign="bottom" class="headline_dunkel">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: '2009_10_Waldsee2.jpg')}" width="275" height="343"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: '2009_10_Waldsee2.jpg')}" width="275" height="343"/>
               </td>
             </tr>
             <tr>
@@ -59,7 +59,7 @@
                  
               </td>
               <td valign="bottom" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: '2009_10_Waldsee1.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: '2009_10_Waldsee1.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr>
@@ -120,7 +120,7 @@
                 </p>
               </td>
               <td valign="top" class="headline_dunkel">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: '2009_10_Dingolfing.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: '2009_10_Dingolfing.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr>
@@ -158,7 +158,7 @@
               </td>
               <td valign="top" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_09_2009_Bergpokal.jpg')}" width="275" height="246"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_09_2009_Bergpokal.jpg')}" width="275" height="246"/>
                 </p>
               </td>
             </tr>
@@ -259,7 +259,7 @@
               </td>
               <td valign="top">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad', file: 'Riderman_Siegerehrung.jpg')}" width="275" height="216"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'Riderman_Siegerehrung.jpg')}" width="275" height="216"/>
                   <br/>
                   <br/>
                   Norbert bei der Siegerehrung
@@ -293,7 +293,7 @@
               </td>
               <td colspan="2" valign="top">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad', file: 'Bikepark1-1.jpg')}" width="557" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'Bikepark1-1.jpg')}" width="557" height="206"/>
                   <br/>
                   <br/>
                 </p>
@@ -395,7 +395,7 @@
                  
               </td>
               <td colspan="2" valign="top" class="headline_dunkel">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'Bikepark2-2.jpg')}" width="557" height="251"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'Bikepark2-2.jpg')}" width="557" height="251"/>
                 <br/>
                 <br/>
               </td>
@@ -445,7 +445,7 @@
                   – und diesmal auf PLATZ 1.
               </td>
               <td valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_nuerburgring_09_1.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_nuerburgring_09_1.jpg')}" width="275" height="206"/>
                 <br/>
                 <span class="copy">
                   Markus Rieber und Norbert Stegmüller
@@ -458,7 +458,7 @@
               </td>
               <td colspan="2" valign="top" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_nuerburgring_09_2.jpg')}" width="557" height="229"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_nuerburgring_09_2.jpg')}" width="557" height="229"/>
                   <br/>
                   Das 4-Team bei der Siegerehrung (von links) Markus Rieber, 
                     Franz Rongen, Norbert Stegmüller und Klaus Elsner
@@ -604,7 +604,7 @@
                 </p>
               </td>
               <td valign="top">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'bike-safari_2009.jpg')}" width="275" height="347"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'bike-safari_2009.jpg')}" width="275" height="347"/>
               </td>
             </tr>
             <tr>
@@ -634,7 +634,7 @@
               </td>
               <td valign="top" class="copy">
                 <p class="copy">
-                  <img src="${resource(dir: 'bilder/abtei/rad/bikepark', file: 'anfahrt_bikepark_leingarten.png')}" width="195" height="202"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad/bikepark', file: 'anfahrt_bikepark_leingarten.png')}" width="195" height="202"/>
                 </p>
                 <p>
                   <span class="copy">
@@ -741,7 +741,7 @@
                 </p>
               </td>
               <td valign="top" class="headline_dunkel">
-                <img src="${resource(dir: 'bilder/abtei/rad/bikepark', file: 'Einweihung_Bikepark_275px.jpg')}" width="275" height="389"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad/bikepark', file: 'Einweihung_Bikepark_275px.jpg')}" width="275" height="389"/>
               </td>
             </tr>
             <tr>
@@ -765,7 +765,7 @@
                  
               </td>
               <td colspan="2" valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_dittingheim_aufstell.jpg')}" width="557" height="231"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_dittingheim_aufstell.jpg')}" width="557" height="231"/>
               </td>
             </tr>
             <tr>
@@ -808,7 +808,7 @@
                 </p>
               </td>
               <td valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_dittingheim_ehrung.jpg')}" width="275" height="261"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_dittingheim_ehrung.jpg')}" width="275" height="261"/>
               </td>
             </tr>
             <tr>
@@ -817,12 +817,12 @@
               </td>
               <td valign="top" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_dittingheim_strecke.jpg')}" width="275" height="207"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_dittingheim_strecke.jpg')}" width="275" height="207"/>
                 </p>
               </td>
               <td valign="top" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_dittingheim_ziel.jpg')}" width="275" height="203"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_dittingheim_ziel.jpg')}" width="275" height="203"/>
                 </p>
               </td>
             </tr>
@@ -977,12 +977,12 @@
               </td>
               <td colspan="2" valign="top">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_stadtrundgang.jpg')}" width="557" height="349"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_stadtrundgang.jpg')}" width="557" height="349"/>
                   <br/>
                   Die Gruppe beim Stadtrundgang
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_burg_hohenzollern.jpg')}" width="557" height="316"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_burg_hohenzollern.jpg')}" width="557" height="316"/>
                   <br/>
                   Auf der Burg Hohenzollern
                 </p>
@@ -1090,13 +1090,13 @@
                 <br/>
               </td>
               <td valign="top" class="headline_dunkel">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_06_2009_in_Ardennen_am_.jpg')}" width="275" height="181"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_06_2009_in_Ardennen_am_.jpg')}" width="275" height="181"/>
                 <br/>
                 <br/>
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_06_2009_Ortwin_und_Pete.jpg')}" width="275" height="231"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_06_2009_Ortwin_und_Pete.jpg')}" width="275" height="231"/>
                 <br/>
                 <br/>
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_06_2009_Regenfahrt_am_2.jpg')}" width="275" height="217"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_06_2009_Regenfahrt_am_2.jpg')}" width="275" height="217"/>
               </td>
             </tr>
             <tr>
@@ -1104,7 +1104,7 @@
                  
               </td>
               <td colspan="2" valign="top" class="headline_dunkel">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_06_2009_Gruppe_in_La-Ro.jpg')}" width="557" height="228"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_06_2009_Gruppe_in_La-Ro.jpg')}" width="557" height="228"/>
               </td>
             </tr>
             <tr>
@@ -1159,7 +1159,7 @@
               </td>
               <td valign="top" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_norbert.jpg')}" width="275" height="391"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_norbert.jpg')}" width="275" height="391"/>
                 </p>
                 <p>
                   Norbert (rechts) bei der Siegerehrung
@@ -1333,7 +1333,7 @@
               </td>
               <td valign="top">
                 <div align="right">
-                  <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_2009_3Mai_861.jpg')}" width="275" height="222"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_2009_3Mai_861.jpg')}" width="275" height="222"/>
                 </div>
               </td>
             </tr>
@@ -1343,7 +1343,7 @@
               </td>
               <td colspan="2" valign="top" class="headline_dunkel">
                 <div align="right">
-                  <img src="${resource(dir: 'bilder/abtei/rad', file: 'rad_2009_3Mai_869.jpg')}" width="557" height="217"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'rad_2009_3Mai_869.jpg')}" width="557" height="217"/>
                 </div>
               </td>
             </tr>
@@ -1413,7 +1413,7 @@
                 </p>
               </td>
               <td valign="top" class="headline_dunkel">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'mtb-marathon_logo_275px.gif')}" width="275" height="317"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'mtb-marathon_logo_275px.gif')}" width="275" height="317"/>
               </td>
             </tr>
             <tr>
@@ -1778,19 +1778,19 @@
               </td>
               <td valign="top" class="headline_dunkel">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad/mitglieder_versamml_2009', file: 'P1090287.jpg')}" width="275" height="219"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad/mitglieder_versamml_2009', file: 'P1090287.jpg')}" width="275" height="219"/>
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad/mitglieder_versamml_2009', file: 'P1090288.jpg')}" width="275" height="169"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad/mitglieder_versamml_2009', file: 'P1090288.jpg')}" width="275" height="169"/>
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad/mitglieder_versamml_2009', file: 'P1090290.jpg')}" width="275" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad/mitglieder_versamml_2009', file: 'P1090290.jpg')}" width="275" height="206"/>
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad/mitglieder_versamml_2009', file: 'P1090294.jpg')}" width="275" height="194"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad/mitglieder_versamml_2009', file: 'P1090294.jpg')}" width="275" height="194"/>
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/rad/mitglieder_versamml_2009', file: 'P1090295.jpg')}" width="275" height="197"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad/mitglieder_versamml_2009', file: 'P1090295.jpg')}" width="275" height="197"/>
                 </p>
               </td>
             </tr>

@@ -23,158 +23,207 @@ class ImportService implements ApplicationContextAware
 
 	ApplicationContext applicationContext
 
-    public void importHTMLTable(String link)
+	public void importHTMLTable(String link)
 	{
 		SAXParser parser = new SAXParser()
 		parser.setFeature('http://xml.org/sax/features/namespaces', false)
 		Node page = new XmlParser(parser).parse(link)
 
+		log.debug("page -> $page")
+
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("E, dd.MM.yyy")
 
 		Date tmpDate = null
 
-		page.depthFirst().'TR'.eachWithIndex
+		ArrayList arrayListTR = page.depthFirst().'TR'
+
+		if (arrayListTR)
 		{
-			Node tmpNodeTR, int iTR ->
-
-			Tabelle newTable = new Tabelle()
-
-			tmpNodeTR.depthFirst().'TD'.eachWithIndex
+			for (NodeList nodeListTR in arrayListTR)
 			{
-				Node tmpNodeTD, int iTD ->
+				Tabelle newTable = null
 
-				String tmpText = new String(tmpNodeTD.text().getBytes("ISO-8859-1"), "UTF-8")
-
-				// Spielkennung rausfischen
-				if(tmpNodeTD.attributes().'class'.contains('edVSpielkennung'))
+				if(nodeListTR)
 				{
-					if(tmpNodeTD.depthFirst().'A')
+					newTable = new Tabelle()
+
+					for (Node nodeTR in nodeListTR)
 					{
-						tmpText = tmpNodeTD.depthFirst().'A'.text()
-					}
-					println "$iTD -> Spielkennung: $tmpText"
-
-					Tabelle existingTable = Tabelle.findBySpielkennung(tmpText)
-					if(existingTable)
-					{
-						newTable = existingTable
-						println "found existing table"
-					}
-					newTable.spielkennung = tmpText
-				}
-
-				// Heim-Mannschaft rausfischen
-				else if(tmpNodeTD.attributes().'class'.contains('edVHeim'))
-				{
-					println "$iTD -> Heimmannschaft: $tmpText"
-					newTable.heimmannschaft = tmpText
-				}
-
-				// Gast-Mannschaft rausfischen
-				else if(tmpNodeTD.attributes().'class'.contains('edVGast'))
-				{
-					println "$iTD -> Gastmannschaft: $tmpText"
-					newTable.gastmannschaft = tmpText
-				}
-
-				// Anstoss-Uhrzeit rausfischen
-				else if(tmpNodeTD.attributes().'class'.contains('edVAnstoss'))
-				{
-					println "$iTD -> Anstoss: $tmpText"
-					newTable.anstoss = tmpText
-				}
-
-				// Tore rausfischen
-				else if(tmpNodeTD.attributes().'class'.contains('edVTore'))
-				{
-					if(tmpNodeTD.depthFirst().'DIV')
-					{
-						tmpNodeTD.depthFirst().each
+						ArrayList arrayListTD = nodeTR.depthFirst().'TD'
+						if (arrayListTD)
 						{
-							Node tmpNodeDIV ->
-
-							if(tmpNodeDIV.attributes().'src')
+							for (NodeList nodeListTD in arrayListTD)
 							{
-								String tmpLink = "http://www.fussball.de${tmpNodeDIV.attributes().'src'}"
+								if (nodeListTD)
+								{
+									for (Node tmpNodeTD in nodeListTD)
+									{
+										String tmpText = new String(tmpNodeTD.text().getBytes("ISO-8859-1"), "UTF-8")
 
-								URL tmpURL = new URL(tmpLink)
+										// Spielkennung rausfischen
+										if (tmpNodeTD.attributes())
+										{
+											if(tmpNodeTD.attributes().'class'.contains('edVSpielkennung'))
+											{
+												ArrayList arrayListAnker = tmpNodeTD.depthFirst().'A'
 
-								println tmpLink.tokenize("/")[-1]
+												if (arrayListAnker)
+												{
+													for (NodeList nodeListAnker in arrayListAnker)
+													{
+														if (nodeListAnker)
+														{
+															for (Node nodeAnker in nodeListAnker)
+															{
+																tmpText = nodeAnker.text()
+															}
+														}
+													}
+												}
 
-								String targetFileName = newTable.spielkennung
-								targetFileName = targetFileName.replaceAll(" ", "_")
-								targetFileName = targetFileName + ".png"
+												println "Spielkennung: $tmpText"
 
-								println targetFileName
+												Tabelle existingTable = Tabelle.findBySpielkennung(tmpText)
+												if (existingTable)
+												{
+													newTable = existingTable
+													println "found existing table"
+												}
+												newTable.spielkennung = tmpText
+											}
 
-								String targetPath = applicationContext.getResource(File.separator + "bilder" + File.separator + "tabellen" + File.separator + "tore" + File.separator + targetFileName).getFile().getAbsolutePath()
+											// Heim-Mannschaft rausfischen
+											else if (tmpNodeTD.attributes().'class'.contains('edVHeim'))
+											{
+												println "Heimmannschaft: $tmpText"
+												newTable.heimmannschaft = tmpText
+											}
 
-								println "Zielpfad für Image: $targetPath"
+											// Gast-Mannschaft rausfischen
+											else if (tmpNodeTD.attributes().'class'.contains('edVGast'))
+											{
+												println "Gastmannschaft: $tmpText"
+												newTable.gastmannschaft = tmpText
+											}
 
-								FileOutputStream fileOutputStream = new FileOutputStream(targetPath)
-								BufferedOutputStream out = new BufferedOutputStream(fileOutputStream)
-								out << tmpURL.openStream()
-								out.close()
+											// Anstoss-Uhrzeit rausfischen
+											else if (tmpNodeTD.attributes().'class'.contains('edVAnstoss'))
+											{
+												println "Anstoss: $tmpText"
+												newTable.anstoss = tmpText
+											}
 
-								tmpText = targetFileName
-								println "$iTD -> Tore: $tmpText"
-								newTable.tore = tmpText
+											// Tore rausfischen
+											else if (tmpNodeTD.attributes().'class'.contains('edVTore'))
+											{
+												ArrayList arrayListDIV = tmpNodeTD.depthFirst().'DIV'
+												if (arrayListDIV)
+												{
+													for(Node tmpNodeDIV in tmpNodeTD.depthFirst())
+													{
+														if(tmpNodeDIV.attributes().'style')
+														{
+															tmpText = tmpNodeDIV.attributes().'style'
+															println "Style: $tmpText"
+															newTable.toreImageStyle = tmpText
+														}
+														if (tmpNodeDIV.attributes().'src')
+														{
+															String tmpLink = "http://www.fussball.de${tmpNodeDIV.attributes().'src'}"
+
+															URL tmpURL = new URL(tmpLink)
+
+															println tmpLink.tokenize("/")[-1]
+
+															String targetFileName = newTable.spielkennung
+															targetFileName = targetFileName.replaceAll(" ", "_")
+															targetFileName = targetFileName + ".png"
+
+															println targetFileName
+
+															String targetPath = applicationContext.getResource(File.separator + "bilder" + File.separator + "tabellen" + File.separator + "tore" + File.separator + targetFileName).getFile().getAbsolutePath()
+
+															println "Zielpfad für Image: $targetPath"
+
+															FileOutputStream fileOutputStream = new FileOutputStream(targetPath)
+															BufferedOutputStream out = new BufferedOutputStream(fileOutputStream)
+															out << tmpURL.openStream()
+															out.close()
+
+															tmpText = targetFileName
+															println "Tore: $tmpText"
+															newTable.tore = tmpText
+														}
+														else
+														{
+															println "Tore: $tmpText"
+															newTable.tore = tmpText
+														}
+													}
+
+												}
+												else
+												{
+													println "Tore: $tmpText"
+													newTable.tore = tmpText
+												}
+											}
+
+											// Spielklasse rausfischen
+											else if (tmpNodeTD.attributes().'class'.contains('edVSpielklasse'))
+											{
+												println "Spielkasse: $tmpText"
+												newTable.spielklasse = tmpText
+											}
+
+											// Typ rausfischen
+											else if (tmpNodeTD.attributes().'class'.contains('edVTyp'))
+											{
+												println "Typ: $tmpText"
+												newTable.typ = tmpText
+											}
+
+											// Datum der Spieltage rausfischen
+											if (tmpNodeTD.attributes().'class' == 'edDatum')
+											{
+												println "Datum: $tmpText"
+												tmpDate = simpleDateFormat.parse(tmpText)
+												newTable.spieldatum = tmpDate
+												break
+											}
+											else
+											{
+												newTable.spieldatum = tmpDate
+											}
+										}
+									}
+								}
 							}
 						}
-
 					}
-					else
+
+					if(newTable)
 					{
-						println "$iTD -> Tore: $tmpText"
-						newTable.tore = tmpText
-					}
-				}
-
-				// Spielklasse rausfischen
-				else if(tmpNodeTD.attributes().'class'.contains('edVSpielklasse'))
-				{
-					println "$iTD -> Spielkasse: $tmpText"
-					newTable.spielklasse = tmpText
-				}
-
-				// Typ rausfischen
-				else if(tmpNodeTD.attributes().'class'.contains('edVTyp'))
-				{
-					println "$iTD -> Typ: $tmpText"
-					newTable.typ = tmpText
-				}
-
-				// Datum der Spieltage rausfischen
-				if(tmpNodeTD.attributes().'class' == 'edDatum')
-				{
-					println "$iTD -> Datum: $tmpText"
-					tmpDate = simpleDateFormat.parse(tmpText)
-					newTable.spieldatum = tmpDate
-				}
-				else
-				{
-					println "$iTD -> Datum: $tmpDate"
-					newTable.spieldatum = tmpDate
-				}
-			}
-
-			if (newTable.validate() && !newTable.hasErrors())
-			{
-				newTable.save(flush: true)
-				println "table saved"
-			}
-			else
-			{
-				if (newTable.hasErrors())
-				{
-					newTable.errors.each
-					{
-						println it
+						if (newTable.validate() && !newTable.hasErrors())
+						{
+							newTable.save(flush: true)
+							println "table saved"
+						}
+						else
+						{
+							if (newTable.hasErrors())
+							{
+								newTable.errors.each
+								{
+									println it
+								}
+							}
+						}
 					}
 				}
 			}
 		}
-    }
+	}
 
 	public void importExcel(MultipartFile excelFile)
 	{
@@ -235,7 +284,7 @@ class ImportService implements ApplicationContextAware
 					if (cell != null && cell.getCellType() == HSSFCell.CELL_TYPE_STRING)
 					{
 						String value = cell.getStringCellValue()
-						if(value)
+						if (value)
 						{
 							value = value.trim()
 						}
@@ -254,11 +303,11 @@ class ImportService implements ApplicationContextAware
 
 						String tmpNachname = tmpPerson.nachname
 						String tmpVorname = tmpPerson.vorname
-						if(tmpNachname && tmpVorname)
+						if (tmpNachname && tmpVorname)
 						{
 							Person checkPerson = Person.findByNachnameAndVorname(tmpNachname, tmpVorname)
 
-							if(checkPerson)
+							if (checkPerson)
 							{
 								log.debug("Gespeicherte Person bereits gefunden -> $checkPerson")
 								tmpPerson = checkPerson
@@ -271,14 +320,14 @@ class ImportService implements ApplicationContextAware
 
 						}
 
-						if(isOldExcelFormat)
+						if (isOldExcelFormat)
 						{
 							if (r == 4)
 							{
 								tmpPerson.ort = value
 
 							}
-	
+
 							if (r == 7)
 							{
 								tmpPerson.telefon2 = value
@@ -297,16 +346,16 @@ class ImportService implements ApplicationContextAware
 
 								Abteilung tmpAbteilung = Abteilung.findByName(value)
 
-								if(tmpFunktion)
+								if (tmpFunktion)
 								{
 									log.debug("Funktion: $tmpFunktion")
 
-									if(!tmpPerson.funktionen?.contains(tmpFunktion))
+									if (!tmpPerson.funktionen?.contains(tmpFunktion))
 									{
 										tmpPerson.addToFunktionen(tmpFunktion)
 									}
 
-									if(!tmpFunktion.personen?.contains(tmpPerson))
+									if (!tmpFunktion.personen?.contains(tmpPerson))
 									{
 										tmpFunktion.addToPersonen(tmpPerson)
 									}
@@ -314,11 +363,11 @@ class ImportService implements ApplicationContextAware
 									funktionenForLaterSave << tmpFunktion
 								}
 
-								else if(!tmpAbteilung)
+								else if (!tmpAbteilung)
 								{
 									String tmpCode = value.toLowerCase()
 
-									tmpCode = AbteilungHelper.formatCode(value, tmpCode)
+									tmpCode = AbteilungHelper.formatNameToCode(value, tmpCode)
 
 									Abteilung newAbteilung = new Abteilung(name: value, code: tmpCode, anzeigeImMenu: true)
 
@@ -326,7 +375,7 @@ class ImportService implements ApplicationContextAware
 
 									tmpAbteilung = newAbteilung
 
-									if(tmpAbteilung)
+									if (tmpAbteilung)
 									{
 										log.debug("Abteilung: $tmpAbteilung")
 										Funktion abteilungsLeiterFunktion = Funktion.findByCode(Funktion.ABTEILUNGSLEITER)
@@ -342,7 +391,7 @@ class ImportService implements ApplicationContextAware
 												tmpAbteilung.addToMitarbeiterfunktionen(abteilungsLeiterFunktion)
 											}
 
-											if(!tmpAbteilung.personen?.contains(tmpPerson))
+											if (!tmpAbteilung.personen?.contains(tmpPerson))
 											{
 												tmpAbteilung.addToPersonen(tmpPerson)
 											}
@@ -387,16 +436,16 @@ class ImportService implements ApplicationContextAware
 
 								Abteilung tmpAbteilung = Abteilung.findByName(value)
 
-								if(tmpFunktion)
+								if (tmpFunktion)
 								{
 									log.debug("Funktion: $tmpFunktion")
 
-									if(!tmpPerson.funktionen?.contains(tmpFunktion))
+									if (!tmpPerson.funktionen?.contains(tmpFunktion))
 									{
 										tmpPerson.addToFunktionen(tmpFunktion)
 									}
 
-									if(!tmpFunktion.personen?.contains(tmpPerson))
+									if (!tmpFunktion.personen?.contains(tmpPerson))
 									{
 										tmpFunktion.addToPersonen(tmpPerson)
 									}
@@ -404,42 +453,42 @@ class ImportService implements ApplicationContextAware
 									funktionenForLaterSave << tmpFunktion
 								}
 
-								else if(!tmpAbteilung)
+								else if (!tmpAbteilung)
 								{
 									String tmpCode = value.toLowerCase()
-									if(value.contains(" "))
+									if (value.contains(" "))
 									{
 										tmpCode = tmpCode.replaceAll(" ", "_")
 									}
-									if(value.contains("."))
+									if (value.contains("."))
 									{
 										tmpCode = tmpCode.replaceAll(".", "")
 									}
-									if(value.contains("/"))
+									if (value.contains("/"))
 									{
 										tmpCode = tmpCode.replaceAll("/", "_")
 									}
-									if(value.contains("("))
+									if (value.contains("("))
 									{
 										tmpCode = tmpCode.replaceAll("\\(", "")
 									}
-									if(value.contains(")"))
+									if (value.contains(")"))
 									{
 										tmpCode = tmpCode.replaceAll("\\)", "")
 									}
-									if(value.contains("ß"))
+									if (value.contains("ß"))
 									{
 										tmpCode = tmpCode.replaceAll("ß", "ss")
 									}
-									if(value.contains("ä"))
+									if (value.contains("ä"))
 									{
 										tmpCode = tmpCode.replaceAll("ä", "ae")
 									}
-									if(value.contains("ü"))
+									if (value.contains("ü"))
 									{
 										tmpCode = tmpCode.replaceAll("ü", "ue")
 									}
-									if(value.contains("ö"))
+									if (value.contains("ö"))
 									{
 										tmpCode = tmpCode.replaceAll('ö', "oe")
 									}
@@ -449,7 +498,7 @@ class ImportService implements ApplicationContextAware
 
 									tmpAbteilung = newAbteilung
 
-									if(tmpAbteilung)
+									if (tmpAbteilung)
 									{
 										log.debug("Abteilung: $tmpAbteilung")
 										Funktion abteilungsLeiterFunktion = Funktion.findByCode(Funktion.ABTEILUNGSLEITER)
@@ -465,7 +514,7 @@ class ImportService implements ApplicationContextAware
 												tmpAbteilung.addToMitarbeiterfunktionen(abteilungsLeiterFunktion)
 											}
 
-											if(!tmpAbteilung.personen?.contains(tmpPerson))
+											if (!tmpAbteilung.personen?.contains(tmpPerson))
 											{
 												tmpAbteilung.addToPersonen(tmpPerson)
 											}
@@ -492,19 +541,19 @@ class ImportService implements ApplicationContextAware
 						{
 							telefon1String = value.intValue().toString()
 
-							if(telefon1String.toString().size() < 5)
+							if (telefon1String.toString().size() < 5)
 							{
 								telefon1String = "0${telefon1String}"
 
 								tmpPerson.telefon1 = telefon1String
-								
+
 								log.debug("Vorwahl: $telefon1String")
 							}
 						}
 
 						if (r == 6)
 						{
-							if(telefon1String.startsWith("0"))
+							if (telefon1String.startsWith("0"))
 							{
 								telefon1String += "/${value.intValue().toString()}"
 								tmpPerson.telefon1 = telefon1String
@@ -525,18 +574,18 @@ class ImportService implements ApplicationContextAware
 			}
 			if (funktionenForLaterSave)
 			{
-				for(Funktion funktion : funktionenForLaterSave)
+				for (Funktion funktion: funktionenForLaterSave)
 				{
 					Funktion checkFunktion = Funktion.findByCode(funktion.code)
-					if(checkFunktion)
+					if (checkFunktion)
 					{
 						log.debug("Gespeicherte Funktion gefunden ...")
 						checkFunktion.name = funktion.name
 						checkFunktion.code = funktion.code
 
-						for(Person tmpFPerson : funktion.personen)
+						for (Person tmpFPerson: funktion.personen)
 						{
-							if(!checkFunktion.personen.contains(tmpFPerson))
+							if (!checkFunktion.personen.contains(tmpFPerson))
 							{
 								checkFunktion.addToPersonen(tmpFPerson)
 							}
@@ -554,30 +603,30 @@ class ImportService implements ApplicationContextAware
 			}
 			if (abteilungenForLaterSave)
 			{
-				for(Abteilung abteilung : abteilungenForLaterSave)
+				for (Abteilung abteilung: abteilungenForLaterSave)
 				{
 					Abteilung checkAbteilung = Abteilung.findByCode(abteilung.code)
-					if(checkAbteilung)
+					if (checkAbteilung)
 					{
 						log.debug("Gespeicherte Abteilung gefunden ...")
 						checkAbteilung.name = abteilung.name
 						checkAbteilung.code = abteilung.code
 
-						for(Funktion tmpAFunktion : abteilung.mitarbeiterfunktionen)
+						for (Funktion tmpAFunktion: abteilung.mitarbeiterfunktionen)
 						{
-							if(!checkAbteilung.mitarbeiterfunktionen.contains(tmpAFunktion))
+							if (!checkAbteilung.mitarbeiterfunktionen.contains(tmpAFunktion))
 							{
 								checkAbteilung.addToMitarbeiterfunktionen(tmpAFunktion)
 							}
 						}
 
-						for(Person tmpAPerson : abteilung.personen)
+						for (Person tmpAPerson: abteilung.personen)
 						{
-							if(!checkAbteilung.personen.contains(tmpAPerson))
+							if (!checkAbteilung.personen.contains(tmpAPerson))
 							{
 								Person checkAPerson = Person.findByNachnameAndVorname(tmpAPerson.nachname, tmpAPerson.vorname)
 
-								if(checkAPerson)
+								if (checkAPerson)
 								{
 									for (Funktion tmpPFunktion: tmpAPerson.funktionen)
 									{
@@ -602,33 +651,33 @@ class ImportService implements ApplicationContextAware
 			}
 			if (personenNew)
 			{
-				for(Person person : personenNew)
+				for (Person person: personenNew)
 				{
-					Person checkPerson = Person.findByVornameAndNachname(person.vorname,  person.nachname)
-					if(checkPerson)
+					Person checkPerson = Person.findByVornameAndNachname(person.vorname, person.nachname)
+					if (checkPerson)
 					{
 						log.debug("Gespeicherte Person gefunden ...")
-						checkPerson.vorname =  person.vorname
-						checkPerson.nachname =  person.nachname
-						checkPerson.strasse =  person.strasse
-						checkPerson.plz =  person.plz
-						checkPerson.ort =  person.ort
-						checkPerson.telefon1 =  person.telefon1
-						checkPerson.telefon2 =  person.telefon2
-						checkPerson.email =  person.email
+						checkPerson.vorname = person.vorname
+						checkPerson.nachname = person.nachname
+						checkPerson.strasse = person.strasse
+						checkPerson.plz = person.plz
+						checkPerson.ort = person.ort
+						checkPerson.telefon1 = person.telefon1
+						checkPerson.telefon2 = person.telefon2
+						checkPerson.email = person.email
 						checkPerson.adresseAnzeigen = person.adresseAnzeigen
 
-						for(Funktion tmpPFunktion : person.funktionen)
+						for (Funktion tmpPFunktion: person.funktionen)
 						{
-							if(!checkPerson.funktionen.contains(tmpPFunktion))
+							if (!checkPerson.funktionen.contains(tmpPFunktion))
 							{
 								checkPerson.addToFunktionen(tmpPFunktion)
 							}
 						}
 
-						for(Abteilung tmpPAbteilung : person.abteilungen)
+						for (Abteilung tmpPAbteilung: person.abteilungen)
 						{
-							if(!checkPerson.abteilungen.contains(tmpPAbteilung))
+							if (!checkPerson.abteilungen.contains(tmpPAbteilung))
 							{
 								checkPerson.addToAbteilungen(tmpPAbteilung)
 							}

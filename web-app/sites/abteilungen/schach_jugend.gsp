@@ -27,7 +27,7 @@
               <td colspan="2">
                 <p class="headline">
                   <span class="copy">
-                    <img src="${resource(dir: 'bilder/abtei/schach', file: 'Schach_3103.jpg')}" width="275" height="179"/>
+                    <img src="${resource(dir: 'bilder/abteilungen/schach', file: 'Schach_3103.jpg')}" width="275" height="179"/>
                   </span>
                 </p>
               </td>
@@ -75,11 +75,11 @@
               </td>
               <td>
                 <p class="headline">
-                  <img src="${resource(dir: 'bilder/abtei/schach', file: 'Markus_Holzinger.jpg')}" width="110" height="165"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/schach', file: 'Markus_Holzinger.jpg')}" width="110" height="165"/>
                 </p>
               </td>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/schach', file: 'Daniel_Martel.jpg')}" width="110" height="165"/>
+                <img src="${resource(dir: 'bilder/abteilungen/schach', file: 'Daniel_Martel.jpg')}" width="110" height="165"/>
               </td>
             </tr>
             <tr valign="top">
@@ -108,7 +108,7 @@
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/schach', file: 'Holzinger_Armin.jpg')}" width="110" height="146"/>
+                <img src="${resource(dir: 'bilder/abteilungen/schach', file: 'Holzinger_Armin.jpg')}" width="110" height="146"/>
                 <br/>
                 Armin Holzinger
                 <br/>

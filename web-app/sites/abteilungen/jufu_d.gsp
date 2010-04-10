@@ -1127,7 +1127,7 @@
                 </p>
               </td>
               <td height="166" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/D-Jugend', file: 'fufu_d_vrcup_DSCN6128.jpg')}" width="275" height="250"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/D-Jugend', file: 'fufu_d_vrcup_DSCN6128.jpg')}" width="275" height="250"/>
               </td>
             </tr>
             <tr valign="top">
@@ -1213,7 +1213,7 @@
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'bernd-hedendorf_trainer.jpg')}" width="110" height="160" alt=""/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'bernd-hedendorf_trainer.jpg')}" width="110" height="160" alt=""/>
                   <br/>
                   Bernd Hedendorf
                   <br/>
@@ -1222,35 +1222,35 @@
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'juergen-lauerer_trainer.jpg')}" width="110" height="160" alt=""/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'juergen-lauerer_trainer.jpg')}" width="110" height="160" alt=""/>
                 <br/>
                 Jürgen Lauerer
               </td>
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'matthias-zahn_trainer.jpg')}" width="110" height="160" alt=""/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'matthias-zahn_trainer.jpg')}" width="110" height="160" alt=""/>
                 <br/>
                 Matthias Zahn
               </td>
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'sebastian-rother_trainer.jpg')}" width="110" height="160" alt=""/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'sebastian-rother_trainer.jpg')}" width="110" height="160" alt=""/>
                 <br/>
                 Sebastian Rother
               </td>
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'thomas-werner_trainer.jpg')}" width="110" height="160" alt=""/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'thomas-werner_trainer.jpg')}" width="110" height="160" alt=""/>
                 <br/>
                 Thomas Werner
               </td>
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_d_portraits', file: 'kani_bal_trainer.jpg')}" width="110" height="160" alt=""/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_d_portraits', file: 'kani_bal_trainer.jpg')}" width="110" height="160" alt=""/>
                 <br/>
                 Kani Bal
               </td>

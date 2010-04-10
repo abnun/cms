@@ -20,7 +20,7 @@
             <tr valign="top">
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/fussball/f_Party', file: 'p_08_04_18_IMG_8206.jpg')}" width="275" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball/f_Party', file: 'p_08_04_18_IMG_8206.jpg')}" width="275" height="206"/>
                 </p>
                 <p>
                   <a href="http://picasaweb.google.de/SVLeingarten/KabinenfestApril2008?authkey=JH3c8IL4SZ4" target="_blank">
@@ -33,7 +33,7 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/fussball/f_Party', file: 'p_08_04_18_IMG_8209.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball/f_Party', file: 'p_08_04_18_IMG_8209.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
@@ -49,18 +49,18 @@
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/fussball/f_Party/2008_soelden', file: '2008_01_16_CIMG2518.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball/f_Party/2008_soelden', file: '2008_01_16_CIMG2518.jpg')}" width="275" height="206"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/fussball/f_Party/2008_soelden', file: '2008_01_16.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball/f_Party/2008_soelden', file: '2008_01_16.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/fussball/f_Party/2008_soelden', file: '2008_01_16_CIMG2635.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball/f_Party/2008_soelden', file: '2008_01_16_CIMG2635.jpg')}" width="275" height="206"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/fussball/f_Party/2008_soelden', file: '2008_01_16_CIMG2620.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball/f_Party/2008_soelden', file: '2008_01_16_CIMG2620.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
@@ -106,10 +106,10 @@
             </tr>
             <tr valign="top">
               <td height="5" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/fussball/f_Party', file: '2008_02_09_01.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball/f_Party', file: '2008_02_09_01.jpg')}" width="275" height="206"/>
               </td>
               <td height="5" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/fussball/f_Party', file: '2008_02_09_02.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball/f_Party', file: '2008_02_09_02.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">

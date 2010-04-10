@@ -51,27 +51,27 @@
               </td>
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/ski', file: 'Skikurs12-08-031.jpg')}" width="275" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'Skikurs12-08-031.jpg')}" width="275" height="206"/>
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/ski', file: 'Skikurs12-08-026.jpg')}" width="275" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'Skikurs12-08-026.jpg')}" width="275" height="206"/>
                 </p>
               </td>
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/ski', file: 'Skikurs12-08-018.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'Skikurs12-08-018.jpg')}" width="275" height="206"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/ski', file: 'SVL-01-2009-035.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'SVL-01-2009-035.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/ski', file: 'DSC00304.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'DSC00304.jpg')}" width="275" height="206"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/ski', file: 'IMG_0428.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'IMG_0428.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
@@ -85,10 +85,10 @@
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/ski', file: 'Gabi-SVL-007.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'Gabi-SVL-007.jpg')}" width="275" height="206"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/ski', file: 'KiGym2009-003.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'KiGym2009-003.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
@@ -107,18 +107,18 @@
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/ski', file: 'Hike&amp;Bike-2009-(2).jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'Hike&amp;Bike-2009-(2).jpg')}" width="275" height="206"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/ski', file: 'Hohenlohe09-106.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'Hohenlohe09-106.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/ski', file: 'Hohenlohe09-089.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'Hohenlohe09-089.jpg')}" width="275" height="206"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/ski', file: 'KiFePro-2009-077.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'KiFePro-2009-077.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
@@ -156,7 +156,7 @@
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/ski', file: 'hartmut_frey.jpg')}" width="110" height="147"/>
+                <img src="${resource(dir: 'bilder/abteilungen/ski', file: 'hartmut_frey.jpg')}" width="110" height="147"/>
                 <br/>
                 <br/>
                 Hartmut Frey

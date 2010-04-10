@@ -12,6 +12,6 @@ class TabelleTests extends GrailsUnitTestCase {
     }
 
     void testSomething() {
-
+		mockDomain(Tabelle)
     }
 }

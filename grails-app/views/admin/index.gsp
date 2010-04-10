@@ -24,12 +24,12 @@
 				<ul>
 					<li>
 						<a href="${createLink(controller: 'aktuelles')}">
-							Aktuelles
+							Bereich 'Aktuelles' verwalten
 						</a>
 					</li>
 					<li>
 						<a href="${createLink(controller: 'anzeigen')}">
-							Anzeigen
+							Bereich 'Anzeigen' verwalten
 						</a>
 					</li>
 					%{--<li>
@@ -39,7 +39,7 @@
 					</li>--}%
 					<li>
 						<a href="${createLink(controller: 'termin')}">
-							Termine
+							Bereich 'Termine' verwalten
 						</a>
 					</li>
 				</ul>
@@ -59,17 +59,22 @@
 				<ul>
 					<li>
 						<a href="${createLink(controller: 'person')}">
-							Mitgliederverwaltung
+							Mitglieder verwalten
 						</a>
 					</li>
 					<li>
 						<a href="${createLink(controller: 'abteilung')}">
-							Abteilungsverwaltung
+							Abteilung verwalten
 						</a>
 					</li>
 					<li>
 						<a href="${createLink(controller: 'funktion')}">
-							Tätigkeitenverwaltung
+							Tätigkeiten verwalten
+						</a>
+					</li>
+					<li>
+						<a href="${createLink(controller: 'tabelle')}">
+							Fussballergebnis-Tabellen verwalten
 						</a>
 					</li>
 				</ul>

@@ -203,7 +203,7 @@
                         der Techniken erfolgt in klösterlichen oder Familienzusammenhängen.
                       </td>
                       <td>
-                        <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_geschichte1.gif')}" width="134" height="143"/>
+                        <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_geschichte1.gif')}" width="134" height="143"/>
                       </td>
                     </tr>
                   </tbody>
@@ -408,7 +408,7 @@
                         (te=Faust).
                       </td>
                       <td valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_geschichte2.jpg')}" width="134" height="194"/>
+                        <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_geschichte2.jpg')}" width="134" height="194"/>
                       </td>
                     </tr>
                   </tbody>
@@ -540,7 +540,7 @@
                         </p>
                       </td>
                       <td valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_geschichte3.jpg')}" width="134" height="184"/>
+                        <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_geschichte3.jpg')}" width="134" height="184"/>
                       </td>
                     </tr>
                     <tr>
@@ -595,7 +595,7 @@
                       </td>
                       <td valign="top">
                         <br/>
-                        <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_geschichte4.jpg')}" width="134" height="183"/>
+                        <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_geschichte4.jpg')}" width="134" height="183"/>
                       </td>
                     </tr>
                   </tbody>
@@ -681,7 +681,7 @@
                         Karate-Do und seine Geschichte, sowie Videotapes veröffentlicht.
                       </td>
                       <td valign="top">
-                        <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_geschichte5.jpg')}" width="134" height="204"/>
+                        <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_geschichte5.jpg')}" width="134" height="204"/>
                       </td>
                     </tr>
                   </tbody>

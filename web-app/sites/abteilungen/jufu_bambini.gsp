@@ -81,7 +81,7 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/bambini', file: 'jufu_bambin_06-12-09.jpg')}" width="275" height="306"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/bambini', file: 'jufu_bambin_06-12-09.jpg')}" width="275" height="306"/>
               </td>
             </tr>
             <tr>
@@ -189,7 +189,7 @@
               </td>
               <td class="copy">
                 <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_bambini_team.gsp')}">
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/bambini', file: 'Bambini_team_10_2009.jpg')}" width="275" height="243" border="0"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/bambini', file: 'Bambini_team_10_2009.jpg')}" width="275" height="243" border="0"/>
                 </a>
               </td>
             </tr>

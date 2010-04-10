@@ -55,7 +55,7 @@
             <tr valign="top">
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/b_junioren_w', file: 'jufu_w_b_team_25-11-09.jpg')}" width="557" height="277"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/b_junioren_w', file: 'jufu_w_b_team_25-11-09.jpg')}" width="557" height="277"/>
                 </p>
                 <p>
                   hinten: Horst Potsch, Jessica Potsch, Cora Tietz, Derya Haug, 
@@ -88,7 +88,7 @@
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/b_junioren_w', file: 'jufu_b_w_IMG_4377.jpg')}" width="110" height="168"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/b_junioren_w', file: 'jufu_b_w_IMG_4377.jpg')}" width="110" height="168"/>
               </td>
             </tr>
           </tbody>

@@ -11,7 +11,7 @@
             <tr valign="top">
               <td class="copy">
                 <p class="headline">
-                  <img src="${resource(dir: 'bilder/abtei/handball', file: 'b_herren.jpg')}" width="500" height="333"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/handball', file: 'b_herren.jpg')}" width="500" height="333"/>
                 </p>
               </td>
             </tr>

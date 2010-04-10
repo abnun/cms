@@ -62,7 +62,7 @@
                 </table>
                 <p>
                   <br/>
-                  <img src="${resource(dir: 'bilder/abtei/fussball', file: 'fuba_2_2008.jpg')}" width="557" height="236"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball', file: 'fuba_2_2008.jpg')}" width="557" height="236"/>
                   <br/>
                   <br/>
                 </p>
@@ -85,7 +85,7 @@
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/fussball', file: 'manfred_geier.jpg')}" width="100" height="100"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball', file: 'manfred_geier.jpg')}" width="100" height="100"/>
                   <br/>
                   <br/>
                   Manfred Geier

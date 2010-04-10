@@ -251,7 +251,7 @@
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball', file: 'jf_gernot.jpg')}" width="110" height="155"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend', file: 'jf_gernot.jpg')}" width="110" height="155"/>
                 <br/>
                 Gernot Hagen
                 <br/>

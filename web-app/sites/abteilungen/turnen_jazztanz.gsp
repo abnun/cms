@@ -160,18 +160,18 @@
             </tr>
             <tr>
               <td valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'splash_wfeier06.jpg')}" width="275" height="160"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'splash_wfeier06.jpg')}" width="275" height="160"/>
               </td>
               <td colspan="2" rowspan="2" valign="top" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/turnen', file: 'splash_embajada.jpg')}" width="275" height="252"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'splash_embajada.jpg')}" width="275" height="252"/>
                 </p>
               </td>
             </tr>
             <tr>
               <td valign="top" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/turnen', file: 'splash1.jpg')}" width="275" height="196"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'splash1.jpg')}" width="275" height="196"/>
                 </p>
               </td>
             </tr>

@@ -55,7 +55,7 @@
             <tr valign="top">
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w', file: 'tabelle.jpg')}" width="552" height="154"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w', file: 'tabelle.jpg')}" width="552" height="154"/>
                   <br/>
                   <br/>
                   (Stand 24.10.09)

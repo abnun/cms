@@ -205,34 +205,34 @@
                 </p>
               </td>
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0043.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/c_w_16_10_2009', file: 'DSCI0043.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0042.jpg')}" width="134" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/c_w_16_10_2009', file: 'DSCI0042.jpg')}" width="134" height="206"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0044.jpg')}" width="134" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/c_w_16_10_2009', file: 'DSCI0044.jpg')}" width="134" height="206"/>
               </td>
             </tr>
             <tr>
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0045.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/c_w_16_10_2009', file: 'DSCI0045.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0051.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/c_w_16_10_2009', file: 'DSCI0051.jpg')}" width="275" height="206"/>
               </td>
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0052.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/c_w_16_10_2009', file: 'DSCI0052.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr>
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/c_w_16_10_2009', file: 'DSCI0053.jpg')}" width="275" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/c_w_16_10_2009', file: 'DSCI0053.jpg')}" width="275" height="206"/>
                 </p>
                 <p>
                    
@@ -346,32 +346,32 @@
               </td>
               <td colspan="2" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0040.jpg')}" width="275" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0040.jpg')}" width="275" height="206"/>
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0041.jpg')}" width="275" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0041.jpg')}" width="275" height="206"/>
                 </p>
               </td>
             </tr>
             <tr>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0042.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0042.jpg')}" width="275" height="206"/>
               </td>
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0043.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0043.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0044.jpg')}" width="275" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0044.jpg')}" width="275" height="206"/>
                 </p>
                 <p>
                    
                 </p>
               </td>
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0045.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren_w/w_c_fuerfeld_10_2009', file: 'DSCI0045.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr>

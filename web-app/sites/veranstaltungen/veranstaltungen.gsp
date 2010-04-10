@@ -44,7 +44,7 @@
                             <tr>
                               <td width="130" rowspan="3" valign="top">
                                 <span class="infohead">
-                                  <img src="${resource(dir: 'bilder/abtei/jfussball/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
+                                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
                                 </span>
                               </td>
                               <td>
@@ -99,7 +99,7 @@
                             <tr>
                               <td width="130" rowspan="3" valign="top">
                                 <span class="infohead">
-                                  <img src="${resource(dir: 'bilder/abtei/jfussball/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
+                                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
                                 </span>
                               </td>
                               <td>
@@ -156,7 +156,7 @@
                             <tr>
                               <td width="130" rowspan="3" valign="top">
                                 <span class="infohead">
-                                  <img src="${resource(dir: 'bilder/abtei/jfussball/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
+                                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
                                 </span>
                               </td>
                               <td>
@@ -211,7 +211,7 @@
                             <tr>
                               <td width="130" rowspan="3" valign="top">
                                 <span class="infohead">
-                                  <img src="${resource(dir: 'bilder/abtei/jfussball/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
+                                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
                                 </span>
                               </td>
                               <td>
@@ -268,7 +268,7 @@
                             <tr>
                               <td width="130" rowspan="3" valign="top">
                                 <span class="infohead">
-                                  <img src="${resource(dir: 'bilder/abtei/jfussball/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
+                                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
                                 </span>
                               </td>
                               <td>

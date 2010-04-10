@@ -32,7 +32,7 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/tanzen', file: 'tanzen-2007-1.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/tanzen', file: 'tanzen-2007-1.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
@@ -76,7 +76,7 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/tanzen', file: 'tanzen_2009.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/tanzen', file: 'tanzen_2009.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">

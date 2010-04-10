@@ -154,7 +154,7 @@
                           <tbody>
                             <tr>
                               <td height="130" colspan="2" bgcolor="#999999" class="infohead">
-                                <img src="${resource(dir: 'bilder/abtei/jfussball/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
+                                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/A-Jugend', file: 'jufu_a_futsal_12_2009.jpg')}" width="126" height="130"/>
                               </td>
                             </tr>
                             <tr>

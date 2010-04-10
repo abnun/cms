@@ -11,7 +11,7 @@
             <tr valign="top">
               <td width="134" class="copy">
                 <p class="headline">
-                  <img src="${resource(dir: 'bilder/abtei/badminton', file: 'badminton_logo.gif')}" width="134" height="128"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/badminton', file: 'badminton_logo.gif')}" width="134" height="128"/>
                 </p>
               </td>
               <td>

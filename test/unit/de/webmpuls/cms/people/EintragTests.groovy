@@ -12,6 +12,5 @@ class EintragTests extends GrailsUnitTestCase {
     }
 
     void testSomething() {
-
     }
 }

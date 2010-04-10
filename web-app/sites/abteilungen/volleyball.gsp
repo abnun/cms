@@ -11,7 +11,7 @@
             <tr valign="top">
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/volley', file: 'wantyou.JPG')}" width="275" height="153"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/volleyball', file: 'wantyou.JPG')}" width="275" height="153"/>
                 </p>
                 <p>
                    
@@ -152,7 +152,7 @@
               </td>
               <td colspan="2">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/volley', file: 'volley_logo.gif')}" width="275" height="240"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/volleyball', file: 'volley_logo.gif')}" width="275" height="240"/>
                 </p>
               </td>
             </tr>
@@ -183,23 +183,23 @@
                 </p>
                 <p align="center">
                   <a href="${resource(dir: 'sites/abteilungen', file: 'volleyball_lc.gsp')}">
-                    <img src="${resource(dir: 'bilder/abtei/volley/lc_2009', file: 'logo_lc_2009.jpg')}" width="275" height="107" border="0"/>
+                    <img src="${resource(dir: 'bilder/abteilungen/volleyball/lc_2009', file: 'logo_lc_2009.jpg')}" width="275" height="107" border="0"/>
                   </a>
                 </p>
               </td>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/volley', file: 'volley_punkte.jpg')}" width="134" height="101"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball', file: 'volley_punkte.jpg')}" width="134" height="101"/>
               </td>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/volley', file: 'volley_freu.jpg')}" width="134" height="101"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball', file: 'volley_freu.jpg')}" width="134" height="101"/>
               </td>
             </tr>
             <tr valign="top">
               <td width="275">
-                <img src="${resource(dir: 'bilder/abtei/volley', file: 'volley_angriff.jpg')}" width="134" height="101"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball', file: 'volley_angriff.jpg')}" width="134" height="101"/>
               </td>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/volley', file: 'volley_beach.jpg')}" width="134" height="101"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball', file: 'volley_beach.jpg')}" width="134" height="101"/>
               </td>
             </tr>
             <tr valign="top">
@@ -229,7 +229,7 @@
             <tr>
               <td height="90" valign="bottom" bgcolor="#D2DFFF" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/volley', file: 'rolf_mueller.jpg')}" width="110" height="165"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/volleyball', file: 'rolf_mueller.jpg')}" width="110" height="165"/>
                   <br/>
                   <br/>
                   Rolf Müller

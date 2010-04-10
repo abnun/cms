@@ -50,7 +50,7 @@
                   E1
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/E-Jugend', file: 'jufu_e1_team.jpg')}" width="420" height="307"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/E-Jugend', file: 'jufu_e1_team.jpg')}" width="420" height="307"/>
                 </p>
                 <p>
                   Stehend von links: Hope Krebs, Oliver-Swen Reininger, Niklas 
@@ -70,7 +70,7 @@
                   E2
                 </p>
                 <p class="headline">
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/E-Jugend', file: 'jufu_team_e2j_03_2009.jpg')}" width="420" height="340"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/E-Jugend', file: 'jufu_team_e2j_03_2009.jpg')}" width="420" height="340"/>
                 </p>
                 <p>
                   Marcel Abdiu, Leandro Rieker, Marius Haiges, Felix Hannemann, 

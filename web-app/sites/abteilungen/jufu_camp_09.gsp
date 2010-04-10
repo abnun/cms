@@ -125,83 +125,83 @@
         <br/>
       </td>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_begruessungplakat.jpg')}" width="275" height="206"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_begruessungplakat.jpg')}" width="275" height="206"/>
         <br/>
         Begrüßungsplakat
       </td>
     </tr>
     <tr class="copy">
       <td>
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_elfer.jpg')}" width="275" height="206"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_elfer.jpg')}" width="275" height="206"/>
         <br/>
         beim Elfer schießen
       </td>
     </tr>
     <tr class="copy">
       <td>
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_erfrischung.jpg')}" width="275" height="206"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_erfrischung.jpg')}" width="275" height="206"/>
         <br/>
         Erfrischung
       </td>
     </tr>
     <tr class="copy">
       <td>
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_olis_sweet_home.jpg')}" width="275" height="206"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_olis_sweet_home.jpg')}" width="275" height="206"/>
       </td>
     </tr>
     <tr class="copy">
       <td>
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_Fuetterung.jpg')}" width="275" height="206"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_Fuetterung.jpg')}" width="275" height="206"/>
       </td>
     </tr>
     <tr class="copy">
       <td>
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_irgendwann_enden_alle.jpg')}" width="275" height="206"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_irgendwann_enden_alle.jpg')}" width="275" height="206"/>
       </td>
     </tr>
     <tr class="copy">
       <td>
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_Kopfball.jpg')}" width="275" height="206"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_Kopfball.jpg')}" width="275" height="206"/>
         <br/>
         Kopfball
       </td>
     </tr>
     <tr>
       <td colspan="3">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_alle_da.jpg')}" width="557" height="302"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_alle_da.jpg')}" width="557" height="302"/>
       </td>
     </tr>
     <tr>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_am_ball.jpg')}" width="557" height="166"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_am_ball.jpg')}" width="557" height="166"/>
       </td>
     </tr>
     <tr>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_dinge_neben_fussball.jpg')}" width="557" height="283"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_dinge_neben_fussball.jpg')}" width="557" height="283"/>
       </td>
     </tr>
     <tr>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_fliegende_baelle.jpg')}" width="557" height="283"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_fliegende_baelle.jpg')}" width="557" height="283"/>
       </td>
     </tr>
     <tr>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_laufen.jpg')}" width="275" height="206"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_laufen.jpg')}" width="275" height="206"/>
       </td>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_svl_torte.jpg')}" width="275" height="206"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_svl_torte.jpg')}" width="275" height="206"/>
       </td>
     </tr>
     <tr>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_girls_on_tour_lang.jpg')}" width="557" height="218"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_girls_on_tour_lang.jpg')}" width="557" height="218"/>
       </td>
     </tr>
     <tr>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_torspieler.jpg')}" width="557" height="288"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_torspieler.jpg')}" width="557" height="288"/>
         <br/>
         <span class="copy">
           Torspieler
@@ -210,7 +210,7 @@
     </tr>
     <tr>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/jfussball/camp_2009', file: 'camp_wir_kommen_aufs_bild.jpg')}" width="557" height="278"/>
+        <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/camp_2009', file: 'camp_wir_kommen_aufs_bild.jpg')}" width="557" height="278"/>
       </td>
     </tr>
     <tr>

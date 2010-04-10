@@ -1,14 +1,13 @@
-
 <%@ page import="de.webmpuls.cms.people.Funktion; de.webmpuls.cms.people.Person; de.webmpuls.cms.section.Abteilung" %>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="sv_leingarten" />
-		
-			<g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}" />
-				%{--<title><g:message code="default.edit.label" args="[entityName]" /></title>--}%
-		<jq:jquery>
-			var personArray = [${pBuilder}];
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="layout" content="sv_leingarten"/>
+
+	<g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}"/>
+	%{--<title><g:message code="default.edit.label" args="[entityName]" /></title>--}%
+	<jq:jquery>
+		var personArray = [${pBuilder}];
 			$('#person').autocomplete({
 				source: personArray
 			});
@@ -17,29 +16,29 @@
 			$('#funktion').autocomplete({
 				source: funktionArray
 			});
-		</jq:jquery>
+	</jq:jquery>
 
-		<jq:jquery>
+	<jq:jquery>
 
-			$('#dialog').dialog( {
-						title: 'Zuordnung-Dialog',
-						bgiframe: true,
-						autoOpen: false,
-						closeOnEscape: true,
-						modal: true,
-						resizable: false,
-						hide: 'explode',
-						width: 600,
-						buttons: {
-							"Zuordnung erstellen": function() {
-								var pValue = $("input[name='person']").val();
-								var fValue = $("input[name='funktion']").val();
+		$('#dialog').dialog( {
+								title: 'Zuordnung-Dialog',
+								bgiframe: true,
+								autoOpen: false,
+								closeOnEscape: true,
+								modal: true,
+								resizable: false,
+								hide: 'explode',
+								width: 600,
+								buttons: {
+									"Zuordnung erstellen": function() {
+										var pValue = $("input[name='person']").val();
+										var fValue = $("input[name='funktion']").val();
 
-								if(pValue != "" && fValue != "")
-								{
-									$("input[name='personen']").val(pValue);
-									$("input[name='funktionen']").val(fValue);
-									$("#AbteilungForm").attr("action", '${createLink(action: 'update')}');
+										if(pValue != "" && fValue != "")
+										{
+											$("input[name='personen']").val(pValue);
+											$("input[name='funktionen']").val(fValue);
+											$("#AbteilungForm").attr("action", '${createLink(action: 'update')}');
 									$("#AbteilungForm").submit();
 								}
 								else
@@ -54,67 +53,74 @@
 						}
 				});
 
-		</jq:jquery>
+	</jq:jquery>
 
-		<g:render template="/global/javascript/buttonJS" />
+	<g:render template="/global/javascript/buttonJS"/>
 
-		<g:render template="/global/css/buttonCSS" />
+	<g:render template="/global/css/buttonCSS"/>
 
-		<style type="text/css">
-			.ui-autocomplete {
-				width: 200px;
-			}
-		</style>
-	</head>
-		<body>
-			<div class="nav">
-				<span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
+	<style type="text/css">
+	.ui-autocomplete {
+		width: 200px;
+	}
+	</style>
+</head>
+<body>
+<g:render template="/global/javascript/createButtonJS"/>
+<button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]"/></button>
+<g:render template="/global/javascript/backToListButtonJS" />
+<button id="backToListButton" style="margin-left: 10px;"><g:message code="default.back.to.list" /></button>
+<hr/>
+<div class="body">
+%{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
+	<g:if test="${flash.message}">
+		<div class="message">${flash.message}</div>
+	</g:if>
+	<g:hasErrors bean="${abteilungInstance}">
+		<div class="ui-widget">
+			<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+				<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+					<strong><g:message code="default.error"/>:</strong>
+					<br/>
+					<g:renderErrors bean="${abteilungInstance}" as="list"/>
 			</div>
-			<div class="body">
-				%{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
-				<g:if test="${flash.message}">
-				<div class="message">${flash.message}</div>
-				</g:if>
-				<g:hasErrors bean="${abteilungInstance}">
-				<div class="errors">
-					<g:renderErrors bean="${abteilungInstance}" as="list" />
-				</div>
-				</g:hasErrors>
-				<g:form method="post" name="AbteilungForm">
-					<g:hiddenField name="id" value="${abteilungInstance?.id}" />
-					<g:hiddenField name="version" value="${abteilungInstance?.version}" />
-					<div class="dialog">
-						<table>
-							<tbody>
+		</div>
+	</g:hasErrors>
+	<g:form method="post" name="AbteilungForm">
+		<g:hiddenField name="id" value="${abteilungInstance?.id}"/>
+		<g:hiddenField name="version" value="${abteilungInstance?.version}"/>
+		<div class="dialog">
+			<table>
+				<tbody>
 
-								<tr class="prop">
-									<td valign="top" class="name">
-									  <label for="name"><g:message code="abteilung.name.label" default="Name" /></label>
-									</td>
-									<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'name', 'errors')}">
-										<g:textField name="name" value="${abteilungInstance?.name}" />
-									</td>
-								</tr>
+				<tr class="prop">
+					<td valign="top" class="name">
+						<label for="name"><g:message code="abteilung.name.label" default="Name"/></label>
+					</td>
+					<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'name', 'errors')}">
+						<g:textField name="name" value="${abteilungInstance?.name}"/>
+					</td>
+				</tr>
 
-								%{--<tr class="prop">
-									<td valign="top" class="name">
-									  <label for="code"><g:message code="abteilung.code.label" default="Code" /></label>
-									</td>
-									<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'code', 'errors')}">
-										<g:textField name="code" value="${abteilungInstance?.code}" />
-									</td>
-								</tr>--}%
+				%{--<tr class="prop">
+								<td valign="top" class="name">
+								  <label for="code"><g:message code="abteilung.code.label" default="Code" /></label>
+								</td>
+								<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'code', 'errors')}">
+									<g:textField name="code" value="${abteilungInstance?.code}" />
+								</td>
+							</tr>--}%
 
-								<tr class="prop">
-									<td valign="top" class="name">
-									  <label for="anzeigeImMenu"><g:message code="abteilung.anzeigeImMenu.label" default="Anzeige Im Menu" /></label>
-									</td>
-									<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'anzeigeImMenu', 'errors')}">
-										<g:checkBox name="anzeigeImMenu" value="${abteilungInstance?.anzeigeImMenu}" />
-									</td>
-								</tr>
+				<tr class="prop">
+					<td valign="top" class="name">
+						<label for="anzeigeImMenu"><g:message code="abteilung.anzeigeImMenu.label" default="Anzeige Im Menu"/></label>
+					</td>
+					<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'anzeigeImMenu', 'errors')}">
+						<g:checkBox name="anzeigeImMenu" value="${abteilungInstance?.anzeigeImMenu}"/>
+					</td>
+				</tr>
 
-								%{--<tr class="prop">
+				%{--<tr class="prop">
 									<td valign="top" class="name">
 									  <label for="unterabteilungen"><g:message code="abteilung.unterabteilungen.label" default="Unterabteilungen" /></label>
 									</td>

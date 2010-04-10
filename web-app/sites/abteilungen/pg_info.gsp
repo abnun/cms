@@ -36,7 +36,7 @@
               </td>
               <td>
                 <p class="headline">
-                  <img src="${resource(dir: 'bilder/abtei/pg', file: 'dtb_logo.jpg')}" width="75" height="69"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/pg', file: 'dtb_logo.jpg')}" width="75" height="69"/>
                 </p>
               </td>
             </tr>

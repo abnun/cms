@@ -48,12 +48,12 @@
 								$("#termin_del_${termin.id}").click(function () {
 									if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
 									{
-										$.post("${createLink(controller: 'termin', action: 'delete', id: termin.id)}");
-										location.reload();
+										document.forms.TerminDeleteForm_${termin.id}.submit();
 									}
 								});
 						</jq:jquery>
 						<a href="javascript: void(0);" id="termin_del_${termin.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Termin löschen" title="Termin löschen" border="0"/></a>
+						<g:form action="delete" controller="termin" id="${termin.id}" name="TerminDeleteForm_${termin.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
 					</td>
 				</shiro:hasRole>
 			</tr>

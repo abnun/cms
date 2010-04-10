@@ -286,7 +286,7 @@
                 </p>
               </td>
               <td valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/d_junioren_w', file: 'jufu_w_d_2009_11_07.jpg')}" width="275" height="272"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/d_junioren_w', file: 'jufu_w_d_2009_11_07.jpg')}" width="275" height="272"/>
               </td>
             </tr>
             <tr>
@@ -547,7 +547,7 @@
               </td>
               <td valign="top" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/d_junioren_w', file: 'jufu_w_d_091003.jpg')}" width="275" height="179"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/d_junioren_w', file: 'jufu_w_d_091003.jpg')}" width="275" height="179"/>
                 </p>
                 <p>
                   Es spielten:
@@ -676,7 +676,7 @@
               </td>
               <td valign="top" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/d_junioren_w', file: 'jufu_w_d_19_09_2009.jpg')}" width="275" height="280"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/d_junioren_w', file: 'jufu_w_d_19_09_2009.jpg')}" width="275" height="280"/>
                 </p>
                 <p>
                   Es spielten:
@@ -760,7 +760,7 @@
               </td>
               <td valign="top" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/d_junioren_w', file: 'jufu_w_d_2009_09_12.jpg')}" width="275" height="302"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/d_junioren_w', file: 'jufu_w_d_2009_09_12.jpg')}" width="275" height="302"/>
                 </p>
                 <p>
                   Es spielten:

@@ -48,7 +48,7 @@
             <tr valign="top">
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/bambini', file: 'Bambini_team_10_2009.jpg')}" width="420" height="372"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/bambini', file: 'Bambini_team_10_2009.jpg')}" width="420" height="372"/>
                 </p>
                 <p>
                    

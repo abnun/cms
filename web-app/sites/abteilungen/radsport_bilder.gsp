@@ -20,7 +20,7 @@
               <td class="copy">
                 <p>
                   <a href="http://www.ipernity.com/doc/radsport-leingarten/album" target="_blank">
-                    <img src="${resource(dir: 'bilder/abtei/rad/galerie', file: '1445453_1564dc881_m.jpg')}" width="240" height="180" border="0"/>
+                    <img src="${resource(dir: 'bilder/abteilungen/rad/galerie', file: '1445453_1564dc881_m.jpg')}" width="240" height="180" border="0"/>
                   </a>
                 </p>
               </td>
@@ -45,7 +45,7 @@
               </td>
               <td class="copy">
                 <a href="http://www.ipernity.com/doc/radsport-leingarten/album" target="_blank">
-                  <img src="${resource(dir: 'bilder/abtei/rad/galerie', file: '1444430_28c61cb11_m.jpg')}" width="240" height="180" border="0"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad/galerie', file: '1444430_28c61cb11_m.jpg')}" width="240" height="180" border="0"/>
                 </a>
               </td>
               <td valign="middle">
@@ -70,7 +70,7 @@
               </td>
               <td class="copy">
                 <a href="http://www.ipernity.com/doc/radsport-leingarten/album" target="_blank">
-                  <img src="${resource(dir: 'bilder/abtei/rad/galerie', file: '1304665_eeb378ce1_m.jpg')}" width="240" height="180" border="0"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/rad/galerie', file: '1304665_eeb378ce1_m.jpg')}" width="240" height="180" border="0"/>
                 </a>
               </td>
               <td valign="middle">

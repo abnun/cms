@@ -12,34 +12,34 @@
     </tr>
     <tr>
       <td colspan="4">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0437.jpg')}" width="557" height="160"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0437.jpg')}" width="557" height="160"/>
       </td>
     </tr>
     <tr>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0439.jpg')}" width="134" height="201"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0439.jpg')}" width="134" height="201"/>
       </td>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0442.jpg')}" width="134" height="201"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0442.jpg')}" width="134" height="201"/>
       </td>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0440.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0440.jpg')}" width="275" height="183"/>
       </td>
     </tr>
     <tr>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0499.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0499.jpg')}" width="275" height="183"/>
       </td>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0500.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0500.jpg')}" width="275" height="183"/>
       </td>
     </tr>
     <tr>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0463.jpg')}" width="134" height="201"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0463.jpg')}" width="134" height="201"/>
       </td>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'LC_0466.jpg')}" width="134" height="200"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'LC_0466.jpg')}" width="134" height="200"/>
       </td>
       <td colspan="2" class="copy">
         Das &quot;Sprungturnier&quot;
@@ -52,29 +52,29 @@
     </tr>
     <tr>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'LC_0491.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'LC_0491.jpg')}" width="275" height="183"/>
       </td>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'LC_0492.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'LC_0492.jpg')}" width="275" height="183"/>
       </td>
     </tr>
     <tr>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0505.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0505.jpg')}" width="275" height="183"/>
       </td>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0507.jpg')}" width="134" height="201"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0507.jpg')}" width="134" height="201"/>
       </td>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0504.jpg')}" width="134" height="201"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0504.jpg')}" width="134" height="201"/>
       </td>
     </tr>
     <tr>
       <td height="188" colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0508.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0508.jpg')}" width="275" height="183"/>
       </td>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0510.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0510.jpg')}" width="275" height="183"/>
       </td>
     </tr>
     <tr>
@@ -84,45 +84,45 @@
         </p>
       </td>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'LC_0494.jpg')}" width="134" height="201"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'LC_0494.jpg')}" width="134" height="201"/>
       </td>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0511.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0511.jpg')}" width="275" height="183"/>
       </td>
     </tr>
     <tr>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0519.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0519.jpg')}" width="275" height="183"/>
       </td>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0518.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0518.jpg')}" width="275" height="183"/>
       </td>
     </tr>
     <tr>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0524.jpg')}" width="134" height="201"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0524.jpg')}" width="134" height="201"/>
       </td>
       <td>
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0529.jpg')}" width="134" height="201"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0529.jpg')}" width="134" height="201"/>
       </td>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0530.jpg')}" width="275" height="183"/>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0525.jpg')}" width="275" height="183"/>
-      </td>
-      <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0528.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0530.jpg')}" width="275" height="183"/>
       </td>
     </tr>
     <tr>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0553.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0525.jpg')}" width="275" height="183"/>
       </td>
       <td colspan="2">
-        <img src="${resource(dir: 'bilder/abtei/volley/lc_2005', file: 'lc_0558.jpg')}" width="275" height="183"/>
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0528.jpg')}" width="275" height="183"/>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0553.jpg')}" width="275" height="183"/>
+      </td>
+      <td colspan="2">
+        <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2005', file: 'lc_0558.jpg')}" width="275" height="183"/>
       </td>
     </tr>
     <tr>

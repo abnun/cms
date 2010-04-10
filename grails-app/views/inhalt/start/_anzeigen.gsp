@@ -1,56 +1,7 @@
 <%@ page import="de.webmpuls.cms.people.ShiroRole" %>
-<script type="text/javascript">
-	$(function() {
-		$("#accordion").accordion({
-			header: "h3",
-			active: false,
-			autoHeight: false,
-			collapsible: true,
-			icons: {
-				header: "own-icon-circle-arrow-e",
-				headerSelected: "own-icon-circle-arrow-s"
-			}
+<g:render template="/global/javascript/accordionJS" model="[accordionID: 'accordion']" />
+<g:render template="/global/css/accordionCSS" />
 
-		});
-	});
-	</script>
-<style type="text/css">
-	.ui-widget {
-		font-family: sans-serif;
-		font-size: inherit;
-	}
-
-	.ui-widget-content {
-		background: none;
-		border: none;
-	}
-
-	.ui-accordion .ui-accordion-header .ui-icon {
-		left: 0.1em;
-	}
-	.ui-accordion .ui-accordion-content {
-		padding: inherit;
-	}
-	.ui-state-default .ui-icon,
-	.ui-state-hover .ui-icon {
-		background-image: url('${resource(dir: 'bilder/divers', file: 'arrow_right.jpg')}');
-	}
-	.ui-state-active .ui-icon {
-		background-image: url('${resource(dir: 'bilder/divers', file: 'arrow_down.jpg')}');
-	}
-	.ui-state-default, .ui-state-active {
-		background: none;
-		border: none;
-		font-weight: normal;
-		color: inherit;
-	}
-	.own-icon-circle-arrow-e {
-		background-image: url('${resource(dir: 'bilder/divers', file: 'arrow_right.jpg')}')
-	}
-	.own-icon-circle-arrow-s {
-		background-image: url('${resource(dir: 'bilder/divers', file: 'arrow_down.jpg')}')
-	}
-</style>
 <table width="270" border="0" cellspacing="0" cellpadding="2">
 	<tr>
 		<td width="270" height="32" valign="bottom" background="${resource(dir: 'bilder/divers', file: 'kopf_hblau.jpg')}" class="headline_dunkel">SVL
@@ -86,7 +37,9 @@
 	</table>
 </g:if>
 <g:else>
-	Derzeit sind keine Anzeigen vorhanden.
+	<p class="copy">
+		Derzeit sind keine Anzeigen vorhanden.
+	</p>
 </g:else>
 <shiro:hasRole name="${ShiroRole.BENUTZER}">
 <br />

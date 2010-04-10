@@ -8,6 +8,20 @@
         <tr align="left" valign="top">
           <td height="227"><!-- InstanceBeginEditable name="Text" -->
           <table width="570" border="0" align="left" cellspacing="10">
+			  <g:if test="${flash.message}">
+				  <tr>
+					  <td colspan="2">
+						  <div class="ui-widget">
+							  <div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+								  <p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+									  ${flash.message}
+								  </p>
+							  </div>
+						  </div>
+						  <br />
+					  </td>
+				  </tr>
+			  </g:if>
 			<tr>
 				<td width="270" valign="top" class="copy">
 					<!-- Aktuelles vom Verein -->

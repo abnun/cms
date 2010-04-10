@@ -66,7 +66,7 @@
                   D1
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/D-Jugend', file: 'jufu_team_d1_12_2009.jpg')}" width="420" height="357"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/D-Jugend', file: 'jufu_team_d1_12_2009.jpg')}" width="420" height="357"/>
                 </p>
                 <p>
                    
@@ -79,7 +79,7 @@
                   D2
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/D-Jugend', file: 'jufu_team_d2_12_2009.jpg')}" width="420" height="337"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/D-Jugend', file: 'jufu_team_d2_12_2009.jpg')}" width="420" height="337"/>
                 </p>
                 <p>
                    
@@ -92,7 +92,7 @@
                   D3
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/D-Jugend', file: 'jufu_team_d3_12_2009.jpg')}" width="420" height="380"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/D-Jugend', file: 'jufu_team_d3_12_2009.jpg')}" width="420" height="380"/>
                 </p>
               </td>
             </tr>

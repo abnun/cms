@@ -1,5 +1,4 @@
 import org.apache.ivy.plugins.resolver.FileSystemResolver
-import org.apache.ivy.plugins.resolver.ResolverSettings
 import org.apache.ivy.core.settings.IvySettings
 
 grails.project.class.dir = "target/classes"

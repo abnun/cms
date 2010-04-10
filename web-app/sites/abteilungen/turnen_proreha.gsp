@@ -93,7 +93,7 @@
             </tr>
             <tr>
               <td colspan="2" valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'Sport_Pro_Reha.gif')}" width="134" height="128"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'Sport_Pro_Reha.gif')}" width="134" height="128"/>
               </td>
             </tr>
           </tbody>

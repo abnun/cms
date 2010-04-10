@@ -54,7 +54,7 @@
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/d_junioren_w', file: 'jufu_w_d_091003.jpg')}" width="557" height="365"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/d_junioren_w', file: 'jufu_w_d_091003.jpg')}" width="557" height="365"/>
               </td>
             </tr>
           </tbody>

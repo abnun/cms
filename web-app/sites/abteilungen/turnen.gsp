@@ -172,7 +172,7 @@
               </td>
               <td class="copy">
                 <span class="wichtig">
-                  <img src="${resource(dir: 'bilder/abtei/turnen', file: 'neu.gif')}" width="83" height="71"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'neu.gif')}" width="83" height="71"/>
                 </span>
               </td>
               <td>
@@ -201,8 +201,8 @@
                 </p>
               </td>
               <td rowspan="2">
-                <a href="${resource(dir: 'bilder/abtei/turnen', file: 'praevention.de.pdf')}" target="_blank">
-                  <img src="${resource(dir: 'bilder/abtei/turnen', file: 'praevention.jpg')}" width="275" height="206" border="1"/>
+                <a href="${resource(dir: 'bilder/abteilungen/turnen', file: 'praevention.de.pdf')}" target="_blank">
+                  <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'praevention.jpg')}" width="275" height="206" border="1"/>
                 </a>
               </td>
             </tr>
@@ -219,7 +219,7 @@
               </td>
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/turnen', file: 'gluehbirne.gif')}" width="108" height="107"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'gluehbirne.gif')}" width="108" height="107"/>
                 </p>
                 <p>
                    
@@ -304,7 +304,7 @@
                 </p>
               </td>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'turnen_46_3.jpg')}" width="275" height="204"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'turnen_46_3.jpg')}" width="275" height="204"/>
               </td>
             </tr>
             <tr valign="top">
@@ -417,14 +417,14 @@
               </td>
               <td>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/turnen', file: 'olymp_07_Maerz_1.jpg')}" width="275" height="183"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'olymp_07_Maerz_1.jpg')}" width="275" height="183"/>
                 </p>
               </td>
             </tr>
             <tr valign="top">
               <td>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/turnen', file: 'olymp_07_Maerz_2.jpg')}" width="275" height="183"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'olymp_07_Maerz_2.jpg')}" width="275" height="183"/>
                 </p>
                 <p>
                    
@@ -433,7 +433,7 @@
             </tr>
             <tr valign="top">
               <td width="275" colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'turn_vorstand.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'turn_vorstand.jpg')}" width="275" height="206"/>
               </td>
               <td>
                 <span class="wichtig">
@@ -448,15 +448,15 @@
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'turnen_23_1.jpg')}" width="275" height="116"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'turnen_23_1.jpg')}" width="275" height="116"/>
               </td>
               <td rowspan="2">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'Aerobic1S.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'Aerobic1S.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'splash_wfeier06.jpg')}" width="275" height="160"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'splash_wfeier06.jpg')}" width="275" height="160"/>
               </td>
             </tr>
             <tr valign="top">
@@ -481,7 +481,7 @@
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/turnen', file: 'katja.jpg')}" width="110" height="147"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'katja.jpg')}" width="110" height="147"/>
                   <br/>
                   Katja Springer,
                   <br/>

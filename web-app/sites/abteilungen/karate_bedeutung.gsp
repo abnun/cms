@@ -49,7 +49,7 @@
               </td>
               <td>
                 <p class="headline">
-                  <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_bedeutung.gif')}" width="275" height="145"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_bedeutung.gif')}" width="275" height="145"/>
                 </p>
               </td>
             </tr>

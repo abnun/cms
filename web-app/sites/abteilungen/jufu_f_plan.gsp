@@ -53,7 +53,7 @@
             <tr valign="top">
               <td class="copy">
                 <p>
-                  <a href="${resource(dir: 'bilder/abtei/jfussball/F-Jugend', file: 'Spielplan_F-Jugend.pdf')}">
+                  <a href="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/F-Jugend', file: 'Spielplan_F-Jugend.pdf')}">
                     Spielplan 
                     2008/2009
                   </a>
@@ -73,8 +73,8 @@
                   Turnierplan für den 29.11.2008
                 </p>
                 <p>
-                  <a href="${resource(dir: 'bilder/abtei/jfussball/jufu_turniere_2008', file: '081129_F2000-Junioren.pdf')}" target="_blank">
-                    <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_turniere_2008', file: '081129_F2000-Junioren1.jpg')}" width="275" height="389" border="1"/>
+                  <a href="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_turniere_2008', file: '081129_F2000-Junioren.pdf')}" target="_blank">
+                    <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_turniere_2008', file: '081129_F2000-Junioren1.jpg')}" width="275" height="389" border="1"/>
                   </a>
                 </p>
               </td>
@@ -83,8 +83,8 @@
                   Turnierplan für den 30.11.2008
                 </p>
                 <p>
-                  <a href="${resource(dir: 'bilder/abtei/jfussball/jufu_turniere_2008', file: '081130_F2001-Junioren.pdf')}" target="_blank">
-                    <img src="${resource(dir: 'bilder/abtei/jfussball/jufu_turniere_2008', file: '081130_F2001-Junioren1.jpg')}" width="275" height="389" border="1"/>
+                  <a href="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_turniere_2008', file: '081130_F2001-Junioren.pdf')}" target="_blank">
+                    <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/jufu_turniere_2008', file: '081130_F2001-Junioren1.jpg')}" width="275" height="389" border="1"/>
                   </a>
                 </p>
               </td>

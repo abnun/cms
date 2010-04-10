@@ -57,7 +57,7 @@
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/tennis', file: 'tennis_sponsoren.jpg')}" width="557" height="262"/>
+                <img src="${resource(dir: 'bilder/abteilungen/tennis', file: 'tennis_sponsoren.jpg')}" width="557" height="262"/>
               </td>
               <td>
                  
@@ -88,7 +88,7 @@
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/tennis', file: 'Manfred_Kuehner.jpg')}" width="110" height="147"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/tennis', file: 'Manfred_Kuehner.jpg')}" width="110" height="147"/>
                   <br/>
                   <br/>
                   Manfred Kühner

@@ -120,7 +120,7 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren', file: 'jufu_c_20-12-09.jpg')}" width="275" height="239"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren', file: 'jufu_c_20-12-09.jpg')}" width="275" height="239"/>
               </td>
             </tr>
             <tr valign="top">
@@ -501,7 +501,7 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren', file: 'jufu_c_20-12-09.jpg')}" width="275" height="239"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren', file: 'jufu_c_20-12-09.jpg')}" width="275" height="239"/>
               </td>
             </tr>
             <tr valign="top">
@@ -924,13 +924,13 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren', file: 'jufu_c_heuchelbglauf_aufw.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren', file: 'jufu_c_heuchelbglauf_aufw.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren', file: 'jufu_c_hHeuchelbglauf_team.jpg')}" width="557" height="366"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren', file: 'jufu_c_hHeuchelbglauf_team.jpg')}" width="557" height="366"/>
                 </p>
                 <p>
                    
@@ -979,16 +979,16 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren', file: 'jufu_c_2009_09_12_002.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren', file: 'jufu_c_2009_09_12_002.jpg')}" width="275" height="206"/>
                 <br/>
                 <br/>
-                <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren', file: 'jufu_c_2009_09_12_003.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren', file: 'jufu_c_2009_09_12_003.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/c_junioren', file: 'jufu_c_2009_09_12_001.jpg')}" width="557" height="217"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren', file: 'jufu_c_2009_09_12_001.jpg')}" width="557" height="217"/>
                 </p>
                 <p>
                    
@@ -1110,7 +1110,7 @@
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <a href="${resource(dir: 'bilder/abtei/jfussball/c_junioren', file: 'Termine_2_2009_2010.pdf')}" target="_blank">
+                <a href="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/c_junioren', file: 'Termine_2_2009_2010.pdf')}" target="_blank">
                   Termine_2_
                   <br/>
                   2009_ 2010.pdf

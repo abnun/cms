@@ -7,7 +7,7 @@ class AbteilungController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
-	static List allowedCodes = ["fussball_jugend", "fussball", "fussball_ah"]
+	static List allowedCodes = [AbteilungHelper.CODE_FUSSBALL_DAMEN, AbteilungHelper.CODE_FUSSBALL_HERREN, AbteilungHelper.CODE_FUSSBALL_JUGEND]
 
     def index = {
         redirect(action: "list", params: params)

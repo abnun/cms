@@ -17,7 +17,7 @@
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/handball', file: 'spgr-gr.jpg')}" width="500" height="332"/>
+                <img src="${resource(dir: 'bilder/abteilungen/handball', file: 'spgr-gr.jpg')}" width="500" height="332"/>
               </td>
             </tr>
           </tbody>

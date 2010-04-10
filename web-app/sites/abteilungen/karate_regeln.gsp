@@ -369,37 +369,37 @@
                     <tr>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln01.gif')}" width="56" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln01.gif')}" width="56" height="118"/>
                         </div>
                       </td>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln02.gif')}" width="48" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln02.gif')}" width="48" height="118"/>
                         </div>
                       </td>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln03.gif')}" width="44" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln03.gif')}" width="44" height="118"/>
                         </div>
                       </td>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln04.gif')}" width="43" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln04.gif')}" width="43" height="118"/>
                         </div>
                       </td>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln05.gif')}" width="44" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln05.gif')}" width="44" height="118"/>
                         </div>
                       </td>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln06.gif')}" width="46" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln06.gif')}" width="46" height="118"/>
                         </div>
                       </td>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln07.gif')}" width="49" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln07.gif')}" width="49" height="118"/>
                         </div>
                       </td>
                     </tr>
@@ -466,32 +466,32 @@
                     <tr>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln08.gif')}" width="56" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln08.gif')}" width="56" height="118"/>
                         </div>
                       </td>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln09.gif')}" width="60" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln09.gif')}" width="60" height="118"/>
                         </div>
                       </td>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln10.gif')}" width="55" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln10.gif')}" width="55" height="118"/>
                         </div>
                       </td>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln11.gif')}" width="77" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln11.gif')}" width="77" height="118"/>
                         </div>
                       </td>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln12.gif')}" width="72" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln12.gif')}" width="72" height="118"/>
                         </div>
                       </td>
                       <td>
                         <div align="center">
-                          <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_regeln13.gif')}" width="57" height="118"/>
+                          <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_regeln13.gif')}" width="57" height="118"/>
                         </div>
                       </td>
                     </tr>

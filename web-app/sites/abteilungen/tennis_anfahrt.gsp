@@ -64,7 +64,7 @@
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/tennis', file: 'Manfred_Kuehner.jpg')}" width="110" height="147"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/tennis', file: 'Manfred_Kuehner.jpg')}" width="110" height="147"/>
                   <br/>
                   <br/>
                   Manfred Kühner

@@ -66,7 +66,7 @@
             </tr>
             <tr valign="top">
               <td colspan="2">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/b_junioren_w', file: 'jufu_w_b_28-11-09_2.jpg')}" width="557" height="148"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/b_junioren_w', file: 'jufu_w_b_28-11-09_2.jpg')}" width="557" height="148"/>
               </td>
             </tr>
             <tr valign="top">
@@ -133,7 +133,7 @@
                 </p>
               </td>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/jfussball/b_junioren_w', file: 'jufu_w_b_28-11-09_1.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/b_junioren_w', file: 'jufu_w_b_28-11-09_1.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
@@ -181,7 +181,7 @@
               </td>
               <td>
                 <a href="${resource(dir: 'sites/abteilungen', file: 'jufu_w_b_team.gsp')}">
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/b_junioren_w', file: 'jufu_w_b_team_25-11-09.jpg')}" width="275" height="136" border="0"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/b_junioren_w', file: 'jufu_w_b_team_25-11-09.jpg')}" width="275" height="136" border="0"/>
                 </a>
               </td>
             </tr>
@@ -300,7 +300,7 @@
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/jfussball/b_junioren_w', file: 'jufu_b_w_IMG_4377.jpg')}" width="110" height="168"/>
+                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/b_junioren_w', file: 'jufu_b_w_IMG_4377.jpg')}" width="110" height="168"/>
               </td>
             </tr>
           </tbody>

@@ -55,7 +55,7 @@
             <tr valign="top">
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/jfussball/B-Jugend', file: 'jufu_b_team_10_2009.jpg')}" width="557" height="259"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend/B-Jugend', file: 'jufu_b_team_10_2009.jpg')}" width="557" height="259"/>
                 </p>
                 <p>
                   Hinten von Links: Sommer, Patrick (Trainer);- Önsöz, 

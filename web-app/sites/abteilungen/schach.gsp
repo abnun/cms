@@ -26,10 +26,10 @@
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/schach', file: 'matt_01.gif')}" width="275" height="279"/>
+                <img src="${resource(dir: 'bilder/abteilungen/schach', file: 'matt_01.gif')}" width="275" height="279"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/schach', file: 'matt_02.gif')}" width="275" height="275"/>
+                <img src="${resource(dir: 'bilder/abteilungen/schach', file: 'matt_02.gif')}" width="275" height="275"/>
               </td>
             </tr>
             <tr valign="top">
@@ -66,7 +66,7 @@
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/schach', file: 'rdietz.jpg')}" width="110" height="165"/>
+                <img src="${resource(dir: 'bilder/abteilungen/schach', file: 'rdietz.jpg')}" width="110" height="165"/>
                 <br/>
                 Roland Dietz
                 <br/>

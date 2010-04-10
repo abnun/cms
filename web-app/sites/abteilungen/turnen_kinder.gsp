@@ -36,7 +36,7 @@
                   Iris Layer, Tel. 0 71 31 / 90 10 57
                   <br/>
                   <br/>
-                  <img src="${resource(dir: 'bilder/abtei/turnen', file: 'turnen_23_1.jpg')}" width="275" height="116"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'turnen_23_1.jpg')}" width="275" height="116"/>
                 </p>
               </td>
               <td rowspan="2" valign="top" class="copy">
@@ -182,7 +182,7 @@
                   </tbody>
                 </table>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/turnen', file: 'elki2.jpg')}" width="275" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'elki2.jpg')}" width="275" height="206"/>
                 </p>
               </td>
             </tr>
@@ -388,10 +388,10 @@
             </tr>
             <tr>
               <td valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'turnen_46_1.jpg')}" width="275" height="204"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'turnen_46_1.jpg')}" width="275" height="204"/>
               </td>
               <td valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'turnen_46_3.jpg')}" width="275" height="204"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'turnen_46_3.jpg')}" width="275" height="204"/>
               </td>
             </tr>
             <tr>
@@ -495,10 +495,10 @@
             </tr>
             <tr>
               <td valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'geraete_kinder1.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'geraete_kinder1.jpg')}" width="275" height="206"/>
               </td>
               <td valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'geraete_kinder2.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'geraete_kinder2.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr>

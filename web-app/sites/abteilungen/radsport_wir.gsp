@@ -18,7 +18,7 @@
                 85 männlich, 69 weiblich.
               </td>
               <td width="134" rowspan="4" class="headline_dunkel">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'S_2.jpg')}" width="134" height="408"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'S_2.jpg')}" width="134" height="408"/>
               </td>
             </tr>
             <tr valign="top">
@@ -97,7 +97,7 @@
             </tr>
             <tr valign="top">
               <td colspan="3" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'S_2_MTB_coll.jpg')}" width="414" height="207"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'S_2_MTB_coll.jpg')}" width="414" height="207"/>
               </td>
             </tr>
           </tbody>

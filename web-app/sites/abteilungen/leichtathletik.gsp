@@ -43,13 +43,13 @@
               </td>
               <td width="277">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/leichtathletik', file: 'la_2.jpg')}" width="275" height="153"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/leichtathletik', file: 'la_2.jpg')}" width="275" height="153"/>
                 </p>
               </td>
             </tr>
             <tr valign="top">
               <td>
-                <img src="${resource(dir: 'bilder/abtei/leichtathletik', file: 'la_3.jpg')}" width="275" height="108"/>
+                <img src="${resource(dir: 'bilder/abteilungen/leichtathletik', file: 'la_3.jpg')}" width="275" height="108"/>
               </td>
             </tr>
           </tbody>

@@ -297,7 +297,7 @@
                 </span>
               </td>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/karate', file: 'k_terminologie.gif')}" width="134" height="210"/>
+                <img src="${resource(dir: 'bilder/abteilungen/karate', file: 'k_terminologie.gif')}" width="134" height="210"/>
               </td>
             </tr>
             <tr valign="top">

@@ -14,8 +14,4 @@
 	margin-top: -8px;
 }
 
-span.ui-icon {
-	float: left;
-	margin: 0 4px;
-}
 </style>

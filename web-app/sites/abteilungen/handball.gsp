@@ -10,8 +10,8 @@
           <tbody>
             <tr valign="top">
               <td class="copy">
-                <a href="${resource(dir: 'bilder/abtei/handball', file: 'baumsamml_10.pdf')}" target="_blank">
-                  <img src="${resource(dir: 'bilder/abtei/handball', file: 'baumsammlung.gif')}" width="275" height="135" border="0"/>
+                <a href="${resource(dir: 'bilder/abteilungen/handball', file: 'baumsamml_10.pdf')}" target="_blank">
+                  <img src="${resource(dir: 'bilder/abteilungen/handball', file: 'baumsammlung.gif')}" width="275" height="135" border="0"/>
                 </a>
               </td>
               <td class="copy">
@@ -82,10 +82,10 @@
               </td>
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/handball', file: 'handball_Bild_025.jpg')}" width="275" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/handball', file: 'handball_Bild_025.jpg')}" width="275" height="206"/>
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/handball', file: 'handball_Bild_037.jpg')}" width="275" height="206"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/handball', file: 'handball_Bild_037.jpg')}" width="275" height="206"/>
                 </p>
                 <p>
                    
@@ -197,7 +197,7 @@
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/handball', file: 'handball_2009_06.jpg')}" width="557" height="309"/>
+                <img src="${resource(dir: 'bilder/abteilungen/handball', file: 'handball_2009_06.jpg')}" width="557" height="309"/>
               </td>
             </tr>
             <tr valign="top">
@@ -324,7 +324,7 @@
                   </span>
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/handball', file: 'bild_baumsammlung_2009.jpg')}" width="557" height="277"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/handball', file: 'bild_baumsammlung_2009.jpg')}" width="557" height="277"/>
                 </p>
                 <p>
                   Trotz klirrender Kälte fand am 10. Januar wieder die 
@@ -512,16 +512,16 @@
               </td>
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/handball/minspielfest_04_2008', file: 'image002.jpg')}" width="153" height="155"/>
-                  <img src="${resource(dir: 'bilder/abtei/handball/minspielfest_04_2008', file: 'image004.jpg')}" width="119" height="155"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/handball/minspielfest_04_2008', file: 'image002.jpg')}" width="153" height="155"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/handball/minspielfest_04_2008', file: 'image004.jpg')}" width="119" height="155"/>
                 </p>
               </td>
             </tr>
             <tr valign="top">
               <td class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/handball/minspielfest_04_2008', file: 'image006.jpg')}" width="107" height="155"/>
-                  <img src="${resource(dir: 'bilder/abtei/handball/minspielfest_04_2008', file: 'image008.jpg')}" width="166" height="155"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/handball/minspielfest_04_2008', file: 'image006.jpg')}" width="107" height="155"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/handball/minspielfest_04_2008', file: 'image008.jpg')}" width="166" height="155"/>
                 </p>
               </td>
             </tr>
@@ -549,7 +549,7 @@
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/handball/minspielfest_04_2008', file: 'image009_web.jpg')}" width="557" height="307"/>
+                <img src="${resource(dir: 'bilder/abteilungen/handball/minspielfest_04_2008', file: 'image009_web.jpg')}" width="557" height="307"/>
               </td>
             </tr>
             <tr valign="top">
@@ -655,12 +655,12 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/handball', file: 'baumsamml_08.jpg')}" width="275" height="349"/>
+                <img src="${resource(dir: 'bilder/abteilungen/handball', file: 'baumsamml_08.jpg')}" width="275" height="349"/>
               </td>
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/handball', file: 'handball_alle.jpg')}" width="557" height="302"/>
+                <img src="${resource(dir: 'bilder/abteilungen/handball', file: 'handball_alle.jpg')}" width="557" height="302"/>
               </td>
             </tr>
             <tr valign="top">

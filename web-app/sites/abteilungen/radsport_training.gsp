@@ -361,7 +361,7 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'S_4-1-coll.jpg')}" width="134" height="486"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'S_4-1-coll.jpg')}" width="134" height="486"/>
               </td>
             </tr>
             <tr valign="top">

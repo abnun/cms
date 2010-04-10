@@ -35,7 +35,7 @@
                 </p>
               </td>
               <td rowspan="3" class="headline_dunkel">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'fernfahrt_planung.gif')}" width="275" height="155"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'fernfahrt_planung.gif')}" width="275" height="155"/>
               </td>
             </tr>
             <tr valign="top">
@@ -74,10 +74,10 @@
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'S_5_kl_Fern.jpg')}" width="275" height="183"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'S_5_kl_Fern.jpg')}" width="275" height="183"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abtei/rad', file: 'S_5_Frauen.jpg')}" width="275" height="183"/>
+                <img src="${resource(dir: 'bilder/abteilungen/rad', file: 'S_5_Frauen.jpg')}" width="275" height="183"/>
               </td>
             </tr>
           </tbody>

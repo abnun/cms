@@ -10,6 +10,7 @@ class Tabelle
 	String tore
 	String spielklasse
 	String typ
+	String toreImageStyle
 
 	String spielbericht
 
@@ -30,6 +31,7 @@ class Tabelle
 		tore(nullable: true, blank: true)
 		spielklasse(blank: false)
 		typ(blank: false)
+		toreImageStyle(nullable: true, blank: true)
 		spielbericht(nullable: true, blank: true, widget:'textarea')
     }
 

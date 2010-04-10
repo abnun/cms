@@ -96,7 +96,7 @@
               </td>
               <td width="134" class="copy">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/volley/damen', file: 'volley_beach_damen_2009.jpg')}" width="275" height="418"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/volley/damen', file: 'volley_beach_damen_2009.jpg')}" width="275" height="418"/>
                 </p>
                 <p>
                   Das Beachteam: Miriam Kunz und Sabrina Herrmann

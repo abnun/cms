@@ -26,16 +26,16 @@
           <tbody>
             <tr valign="top">
               <td width="134" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/volley/f1', file: 'volley_f1_01_2008_1.jpg')}" width="134" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volley/f1', file: 'volley_f1_01_2008_1.jpg')}" width="134" height="206"/>
               </td>
               <td width="134" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/volley/f1', file: 'volley_f1_01_2008_2.jpg')}" width="134" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volley/f1', file: 'volley_f1_01_2008_2.jpg')}" width="134" height="206"/>
               </td>
               <td width="134">
-                <img src="${resource(dir: 'bilder/abtei/volley/f1', file: 'volley_f1_01_2008_3.jpg')}" width="134" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volley/f1', file: 'volley_f1_01_2008_3.jpg')}" width="134" height="206"/>
               </td>
               <td width="137">
-                <img src="${resource(dir: 'bilder/abtei/volley/f1', file: 'volley_f1_01_2008_4.jpg')}" width="134" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volley/f1', file: 'volley_f1_01_2008_4.jpg')}" width="134" height="206"/>
               </td>
             </tr>
             <tr valign="top">
@@ -829,7 +829,7 @@
               </td>
               <td colspan="2">
                 <p>
-                  <img src="${resource(dir: 'bilder/abtei/volley/f1', file: 'volley_f1_team_11_2007.jpg')}" width="275" height="286"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/volley/f1', file: 'volley_f1_team_11_2007.jpg')}" width="275" height="286"/>
                 </p>
                 <p>
                    

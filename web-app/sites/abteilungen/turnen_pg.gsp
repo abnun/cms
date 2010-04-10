@@ -124,10 +124,10 @@
             </tr>
             <tr>
               <td>
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'pfundsfit_4.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'pfundsfit_4.jpg')}" width="275" height="206"/>
               </td>
               <td colspan="2">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'pfundsfitbilder_3.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'pfundsfitbilder_3.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr>
@@ -307,10 +307,10 @@
             </tr>
             <tr>
               <td valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'Aerobic1S.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'Aerobic1S.jpg')}" width="275" height="206"/>
               </td>
               <td colspan="2" valign="top" class="copy">
-                <img src="${resource(dir: 'bilder/abtei/turnen', file: 'Aerobic2s.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/turnen', file: 'Aerobic2s.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr>
