@@ -75,12 +75,7 @@
         <tr>
 			<td></td>
 			<td class="rubrikactiv">
-				<g:if test="${(request.getRequestURI().contains(AbteilungHelper.CODE_ABTEILUNGEN))}">
-					<menu:header_menu />
-				</g:if>
-				<g:else>
-					<img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="1" height="1">
-				</g:else>
+				<menu:header_menu />
 			</td>
 		</tr>
       </table>
@@ -321,15 +316,15 @@
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/organe', file: 'vorstand.gsp')}">Vorstand</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${createLink(controller: 'person', action: 'vorstand')}">Vorstand</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/organe', file: 'jvorstand.gsp')}">Jugendvorstand</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${createLink(controller: 'person', action: 'jugend_vorstand')}">Jugendvorstand</a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${resource(dir: 'sites/organe', file: 'delegierte.gsp')}">Delegierte</a></td>
+      <td height="20" bgcolor="#D2DFFF" class="unavi"><a href="${createLink(controller: 'person', action: 'delegierte')}">Delegierte</a></td>
     </tr>
   </table>
 </div>

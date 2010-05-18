@@ -105,20 +105,20 @@
                 </p>
               </td>
               <td width="275">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009', file: 'beach09_sarah_331.jpg')}" width="275" height="378"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009', file: 'beach09_sarah_331.jpg')}" width="275" height="378"/>
                 <br/>
                 Spannung pur auf und neben dem Platz
               </td>
             </tr>
             <tr valign="top" class="copy">
               <td>
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009', file: 'beach09_sarah_346.jpg')}" width="275" height="165"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009', file: 'beach09_sarah_346.jpg')}" width="275" height="165"/>
               </td>
             </tr>
             <tr valign="top" class="copy">
               <td>
                 <p>
-                  <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009', file: 'beach09_sarah_345.jpg')}" width="275" height="209"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009', file: 'beach09_sarah_345.jpg')}" width="275" height="209"/>
                 </p>
                 <p>
                    
@@ -135,10 +135,10 @@
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009/beach_vorab', file: 'beach2009_vorab_02.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009/beach_vorab', file: 'beach2009_vorab_02.jpg')}" width="275" height="206"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009/beach_vorab', file: 'beach2009_vorab_01.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009/beach_vorab', file: 'beach2009_vorab_01.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
@@ -183,45 +183,45 @@
                 </p>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009/beach_vorab', file: 'beach2009_vorab_5.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009/beach_vorab', file: 'beach2009_vorab_5.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009/beach_vorab', file: 'beach2009_vorab_6.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009/beach_vorab', file: 'beach2009_vorab_6.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009/beach_vorab', file: 'beach2009_vorab_7.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009/beach_vorab', file: 'beach2009_vorab_7.jpg')}" width="275" height="206"/>
                 <br/>
                 vorher
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009/beach_vorab', file: 'beach2009_vorab_9.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009/beach_vorab', file: 'beach2009_vorab_9.jpg')}" width="275" height="206"/>
                 <br/>
                 nachher
               </td>
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009/beach_vorab', file: 'beach2009_vorab_3.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009/beach_vorab', file: 'beach2009_vorab_3.jpg')}" width="275" height="206"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009/beach_vorab', file: 'beach2009_vorab_8.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009/beach_vorab', file: 'beach2009_vorab_8.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
               <td colspan="2" class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009/beach_vorab', file: 'beach2009_vorab_4.jpg')}" width="557" height="233"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009/beach_vorab', file: 'beach2009_vorab_4.jpg')}" width="557" height="233"/>
               </td>
             </tr>
             <tr valign="top">
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009/beach_vorab', file: 'beach2009_vorab_10.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009/beach_vorab', file: 'beach2009_vorab_10.jpg')}" width="275" height="206"/>
               </td>
               <td class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/volley/beach_2009/beach_vorab', file: 'beach2009_vorab_11.jpg')}" width="275" height="206"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/beach_2009/beach_vorab', file: 'beach2009_vorab_11.jpg')}" width="275" height="206"/>
               </td>
             </tr>
             <tr valign="top">
@@ -235,11 +235,11 @@
           </tbody>
         </table>
       </td>
-      <td width="120">
-        <a href="${resource(dir: 'bilder/abteilungen/volley', file: 'beach_2008_spielplan.pdf')}" target="_blank">
+      %{--<td width="120">
+        <a href="${resource(dir: 'bilder/abteilungen/volleyball', file: 'beach_2008_spielplan.pdf')}" target="_blank">
           Ergebnisse Beachturnier 2008 (PDF, 26KB)
         </a>
-      </td>
+      </td>--}%
     </tr>
   </tbody>
 </table>

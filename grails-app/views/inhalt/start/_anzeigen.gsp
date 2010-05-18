@@ -19,7 +19,8 @@
 <g:if test="${anzeigenList}">
 	<table width="27" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFCC">
 		<tr>
-			<td class="copy"><br>
+			<td class="copy">
+				<br>
 				<div id="accordion" style="width: 270px;">
 					<g:each status="i" var="anzeige" in="${anzeigenList}">
 						<g:if test="${anzeige?.takeEndDate}">

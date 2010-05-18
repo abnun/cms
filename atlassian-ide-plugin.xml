@@ -1,0 +1,24 @@
+<atlassian-ide-plugin>
+  <project-configuration>
+    <servers>
+      <bamboo>
+        <server-id>04f69956-f77b-43ed-a028-8289bfe202ec</server-id>
+        <name>webmpuls bamboo</name>
+        <url>http://83.169.2.186:8085</url>
+        <use-favourites>false</use-favourites>
+        <bamboo2>true</bamboo2>
+        <isBamboo2M9>true</isBamboo2M9>
+        <plans>
+          <plan key="SVL-MAS" />
+        </plans>
+        <isBamboo24>true</isBamboo24>
+      </bamboo>
+      <jira>
+        <server-id>2af4da19-d45a-4c57-945d-ae8c51656633</server-id>
+        <name>webmpuls jira</name>
+        <url>http://83.169.2.186:8081</url>
+      </jira>
+    </servers>
+    <default-jira-server>2af4da19-d45a-4c57-945d-ae8c51656633</default-jira-server>
+  </project-configuration>
+</atlassian-ide-plugin>

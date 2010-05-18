@@ -196,4 +196,95 @@ class PersonController {
 			}
 		}
 	}
+
+	def vorstand =
+	{
+		Funktion vorsitzender1 = Funktion.findByCode(Funktion.VORSITZENDER1)
+		Funktion vorsitzender2 = Funktion.findByCode(Funktion.VORSITZENDER2)
+		Funktion vorsitzender3 = Funktion.findByCode(Funktion.VORSITZENDER3)
+		Funktion beisitzer = Funktion.findByCode(Funktion.BEISITZER)
+		Funktion webmaster = Funktion.findByCode(Funktion.WEBMASTER)
+		Funktion referent = Funktion.findByCode(Funktion.REFERENT)
+		Funktion geschaeftsstelle = Funktion.findByCode(Funktion.GESCHAEFTSSTELLE)
+		Funktion jugendleiter = Funktion.findByCode(Funktion.JUGENDLEITER)
+		Funktion jugendsprecher = Funktion.findByCode(Funktion.JUGENDSPRECHER)
+		Funktion kassierer = Funktion.findByCode(Funktion.KASSIERER)
+		Funktion leiter_tech_sport = Funktion.findByCode(Funktion.LEITER_TECH_SPORT)
+		Funktion leiter_tech_wirt = Funktion.findByCode(Funktion.LEITER_TECH_WIRT)
+		Funktion schriftfuehrer = Funktion.findByCode(Funktion.SCHRIFTFUEHRER)
+		Funktion seniorenbeauftrager = Funktion.findByCode(Funktion.SENIONERBEAUFTRAGTER)
+		Funktion frauenbeauftragter = Funktion.findByCode(Funktion.FRAUENBEAUFTRAGTER)
+
+		Person vorsitzender1Person = vorsitzender1.personen ? vorsitzender1.personen.iterator().next() : null
+		Person vorsitzender2Person = vorsitzender2.personen ? vorsitzender2.personen.iterator().next() : null
+		Person vorsitzender3Person = vorsitzender3.personen ? vorsitzender3.personen.iterator().next() : null
+		Person beisitzerPerson = beisitzer.personen ? beisitzer.personen.iterator().next() : null
+		Person webmasterPerson = webmaster.personen ? webmaster.personen.iterator().next() : null
+		Person referentPerson = referent.personen ? referent.personen.iterator().next() : null
+
+		Iterator geschaeftsstellePersonIterator = geschaeftsstelle.personen ? geschaeftsstelle.personen.iterator() : null
+		Person geschaeftsstellePerson1 = geschaeftsstellePersonIterator?.hasNext() ? geschaeftsstellePersonIterator?.next() : null
+		Person geschaeftsstellePerson2 = geschaeftsstellePersonIterator?.hasNext() ? geschaeftsstellePersonIterator?.next() : null
+
+		Person jugendleiterPerson = jugendleiter.personen ? jugendleiter.personen.iterator().next() : null
+		Person jugendsprecherPerson = jugendsprecher.personen ? jugendsprecher.personen.iterator().next() : null
+		Person kassiererPerson = kassierer.personen ? kassierer.personen.iterator().next() : null
+		Person leiter_tech_sportPerson = leiter_tech_sport.personen ? leiter_tech_sport.personen.iterator().next() : null
+		Person leiter_tech_wirtPerson = leiter_tech_wirt.personen ? leiter_tech_wirt.personen.iterator().next() : null
+		Person schriftfuehrerPerson = schriftfuehrer.personen ? schriftfuehrer.personen.iterator().next() : null
+		Person seniorenbeauftragerPerson = seniorenbeauftrager.personen ? seniorenbeauftrager.personen.iterator().next() : null
+		Person frauenbeauftragterPerson = frauenbeauftragter.personen ? frauenbeauftragter.personen.iterator().next() : null
+
+		return[vorsitzender1: vorsitzender1,
+				vorsitzender2: vorsitzender2,
+				vorsitzender3: vorsitzender3,
+				kassierer: kassierer,
+				beisitzer: beisitzer,
+				webmaster: webmaster,
+				referent: referent,
+				geschaeftsstelle: geschaeftsstelle,
+				jugendleiter: jugendleiter,
+				jugendsprecher: jugendsprecher,
+				leiter_tech_sport: leiter_tech_sport,
+				leiter_tech_wirt: leiter_tech_wirt,
+				schriftfuehrer: schriftfuehrer,
+				seniorenbeauftrager: seniorenbeauftrager,
+				frauenbeauftragter: frauenbeauftragter,
+				vorsitzender1Person: vorsitzender1Person,
+				vorsitzender2Person: vorsitzender2Person,
+				vorsitzender3Person: vorsitzender3Person,
+				kassiererPerson: kassiererPerson,
+				beisitzerPerson: beisitzerPerson,
+				webmasterPerson: webmasterPerson,
+				referentPerson: referentPerson,
+				geschaeftsstellePerson1: geschaeftsstellePerson1,
+				geschaeftsstellePerson2: geschaeftsstellePerson2,
+				jugendleiterPerson: jugendleiterPerson,
+				jugendsprecherPerson: jugendsprecherPerson,
+				leiter_tech_sportPerson: leiter_tech_sportPerson,
+				leiter_tech_wirtPerson: leiter_tech_wirtPerson,
+				schriftfuehrerPerson: schriftfuehrerPerson,
+				seniorenbeauftragerPerson: seniorenbeauftragerPerson,
+				frauenbeauftragterPerson: frauenbeauftragterPerson
+		]
+	}
+
+	def jugend_vorstand =
+	{
+		Funktion jugendleiter = Funktion.findByCode(Funktion.JUGENDLEITER)
+		Funktion jugendsprecher = Funktion.findByCode(Funktion.JUGENDSPRECHER)
+
+		Person jugendleiterPerson = jugendleiter.personen ? jugendleiter.personen.iterator().next() : null
+		Person jugendsprecherPerson = jugendsprecher.personen ? jugendsprecher.personen.iterator().next() : null
+
+		[jugendleiterPerson: jugendleiterPerson,
+				jugendsprecherPerson: jugendsprecherPerson,
+				jugendleiter: jugendleiter,
+				jugendsprecher: jugendsprecher]
+	}
+
+	def delegierte =
+	{
+		
+	}
 }

@@ -39,12 +39,41 @@
 											$("input[name='personen']").val(pValue);
 											$("input[name='funktionen']").val(fValue);
 											$("#AbteilungForm").attr("action", '${createLink(action: 'update')}');
-									$("#AbteilungForm").submit();
-								}
-								else
-								{
-									$("#dialog_error").slideDown("slow");
-								}
+											$("#AbteilungForm").submit();
+										}
+										else
+										{
+											$("#dialog_error").slideDown("slow");
+										}
+
+							},
+							"abbrechen": function() {
+								$(this).dialog('close');
+							}
+						}
+				});
+
+		$('#sp_dialog').dialog( {
+								title: 'Spielplan-Dialog',
+								bgiframe: true,
+								autoOpen: false,
+								closeOnEscape: true,
+								modal: true,
+								resizable: false,
+								hide: 'explode',
+								width: 600,
+								buttons: {
+									"Spielplan erstellen": function() {
+										var iValue = $("textarea[name='inhalt']").val();
+
+										if(iValue != "")
+										{
+											$("#SpielplanForm").submit();
+										}
+										else
+										{
+											$("#sp_dialog_error").slideDown("slow");
+										}
 
 							},
 							"abbrechen": function() {
@@ -57,7 +86,11 @@
 
 	<g:render template="/global/javascript/buttonJS"/>
 
+	<g:render template="/global/javascript/buttonJS" model="[dialogLinkId: 'sp_dialog_link', dialogId: 'sp_dialog']" />
+
 	<g:render template="/global/css/buttonCSS"/>
+
+	<g:render template="/global/css/buttonCSS" model="[dialogLinkId: 'sp_dialog_link']" />
 
 	<style type="text/css">
 	.ui-autocomplete {
@@ -74,7 +107,24 @@
 <div class="body">
 %{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
 	<g:if test="${flash.message}">
-		<div class="message">${flash.message}</div>
+		<div class="ui-widget">
+			<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+				<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+					${flash.message}
+				</p>
+			</div>
+		</div>
+		<br />
+	</g:if>
+	<g:if test="${flash.error}">
+		<div class="ui-widget">
+			<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+				<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+					<strong><g:message code="default.error"/>:<br /><br /></strong>${flash.error}
+				</p>
+			</div>
+		</div>
+		<br />
 	</g:if>
 	<g:hasErrors bean="${abteilungInstance}">
 		<div class="ui-widget">
@@ -102,6 +152,15 @@
 					</td>
 				</tr>
 
+				<tr class="prop">
+					<td valign="top" class="name">
+						<label for="anzeigeName"><g:message code="abteilung.anzeigeName.label" default="Anzeigename"/></label>
+					</td>
+					<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'anzeigeName', 'errors')}">
+						<g:textField name="anzeigeName" value="${abteilungInstance?.anzeigeName}"/>
+					</td>
+				</tr>
+
 				%{--<tr class="prop">
 								<td valign="top" class="name">
 								  <label for="code"><g:message code="abteilung.code.label" default="Code" /></label>
@@ -113,7 +172,7 @@
 
 				<tr class="prop">
 					<td valign="top" class="name">
-						<label for="anzeigeImMenu"><g:message code="abteilung.anzeigeImMenu.label" default="Anzeige Im Menu"/></label>
+						<label for="anzeigeImMenu"><g:message code="abteilung.anzeigeImMenu.label" default="Anzeige Im Menü"/></label>
 					</td>
 					<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'anzeigeImMenu', 'errors')}">
 						<g:checkBox name="anzeigeImMenu" value="${abteilungInstance?.anzeigeImMenu}"/>
@@ -187,6 +246,31 @@
 													</ul>
 												</td>--}%
 											</tr>
+
+											<tr>
+												<td valign="top" align="left" class="name">
+													<g:message code="abteilung.spielplaene.label" default="Spielpläne"/>
+												</td>
+												<td valign="top" align="left">
+													%{--<g:select name="personen" from="${abteilungInstance.personen}" multiple="yes" optionKey="id" size="${abteilungInstance.personen.size()}" value="${abteilungInstance?.personen}" disabled="disabled"/>--}%
+													<ul>
+														<g:each in="${abteilungInstance.spielplaene}" var="sp">
+															<li>
+																<table>
+																	<tr>
+																		<td valign="top" align="left" width="300">
+																			<g:link controller="spielplan" action="edit" id="${sp.id}">${sp?.encodeAsHTML()}</g:link>
+																		</td>
+																		<td valign="top" align="left">
+																			<g:link controller="abteilung" action="removeSpielplan" params="['spielplan.id': sp.id, 'id': abteilungInstance.id]" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');"><span class="ui-icon ui-icon-circle-minus" title="${sp?.encodeAsHTML()} löschen"></span></g:link>
+																		</td>
+																	</tr>
+																</table>
+															</li>
+														</g:each>
+													</ul>
+												</td>
+											</tr>
 										</table>
 									</td>
 								</tr>
@@ -194,7 +278,10 @@
 								<tr class="prop">
 									<td valign="top" colspan="2">
 										<br/>
-										<a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Zuordnungen&nbsp;hinzufügen</a>
+										<a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Personen-Zuordnungen&nbsp;hinzufügen</a>
+										<br/>
+										<br/>
+										<a href="javascript: void(0);" id="sp_dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Spielplan&nbsp;hinzufügen</a>
 										<br/>
 										<br/>
 									</td>
@@ -234,6 +321,29 @@
 				<div style="padding: 0pt 0.7em;" class="ui-state-error ui-corner-all">
 					<p><span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
 						<strong>Fehler:</strong> Es muss sowohl eine Person als auch eine Funktion gewählt sein!</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="sp_dialog">
+			<g:form controller="spielplan" action="createSpielplanFromAbteilung" method="post" name="SpielplanForm">
+				<table>
+					<tr>
+						<td valign="top" align="left">
+							<label for="inhalt">Spielplan:</label>
+						</td>
+						<td valign="top" align="left">
+							<g:textArea name="inhalt" id="inhalt" style="width: 400px;" />
+						</td>
+					</tr>
+				</table>
+				<g:hiddenField name="abteilung.id" value="${abteilungInstance.id}" />
+			</g:form>
+			<br/>
+			<div id="sp_dialog_error" class="ui-widget" style="display: none;">
+				<div style="padding: 0pt 0.7em;" class="ui-state-error ui-corner-all">
+					<p><span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
+						<strong>Fehler:</strong> Es muss mindestens ein vollständiger Spielplan-Eintrag eingegeben werden!</p>
 				</div>
 			</div>
 		</div>

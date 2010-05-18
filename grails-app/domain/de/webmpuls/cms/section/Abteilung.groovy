@@ -5,9 +5,11 @@ import de.webmpuls.cms.people.Funktion
 
 class Abteilung
 {
-	static hasMany = [mitarbeiterfunktionen: Funktion, unterabteilungen: Abteilung, personen: Person, trainingszeiten: Trainingszeit]
+	static hasMany = [mitarbeiterfunktionen: Funktion, unterabteilungen: Abteilung, personen: Person, trainingszeiten: Trainingszeit, berichte: Bericht, spielplaene: Spielplan]
 
 	String name
+	String anzeigeName
+	String spielklasse
 	String code
 	String kuerzel
 
@@ -24,11 +26,15 @@ class Abteilung
 		mitarbeiterfunktionen(cache: true)
 		unterabteilungen(cache: true)
 		personen(cache: true)
+		berichte(cache: true)
+		spielplaene(cache: true)
 	}
 
 	static constraints =
 	{
 		name(blank: false, nullable: false)
+		anzeigeName(blank: true, nullable: true)
+		spielklasse(blank: true, nullable: true)
 		code(unique: true, nullable: true, blank: true/*, validator: { String v ->
 			boolean isValid = (v ==~ /[a-z_0-9]+/)
 			println("validation for '$v' evaluates to $isValid")

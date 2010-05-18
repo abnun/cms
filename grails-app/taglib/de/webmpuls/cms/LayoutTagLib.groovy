@@ -34,7 +34,7 @@ class LayoutTagLib
 
 			if (abteilungFile)
 			{
-				def abteilungCodes = Abteilung.list()*.code
+				def abteilungCodes = Abteilung.list([cache: true])*.code
 				for (String aCode in abteilungCodes)
 				{
 					if (abteilungFile.contains(aCode))
@@ -43,19 +43,30 @@ class LayoutTagLib
 					}
 				}
 
+				if (abteilungCode == AbteilungHelper.CODE_RADSPORT)
+				{
+					out << "<a target=\"_blank\" href=\"http://gaestebuch.gbserver.de/radsportleingarten,1.html\">"
+				}
+
 				if (abteilungCode)
 				{
-					out << "<img src=\"${resource(dir: dir, file: abteilungCode + '.jpg')}\" width=\"690\" height=\"88\">"
+					out << "<img src=\"${resource(dir: dir, file: abteilungCode + '.jpg')}\" width=\"690\" height=\"88\" border=\"0\">"
 				}
-				else
+
+				if (abteilungCode == AbteilungHelper.CODE_RADSPORT)
 				{
-					out << "<img src=\"${resource(dir: dir, file: abteilungFile + '.jpg')}\" width=\"690\" height=\"88\">"
+					out << "</a>"
 				}
+
 			}
 			else
 			{
 				out << ""
 			}
+		}
+		else if(controllerName == 'person' && (actionName == 'vorstand' || actionName == "jugend_vorstand" || actionName == "delegierte"))
+		{
+			out << "<img src=\"${resource(dir: dir, file: 'organe.jpg')}\" width=\"690\" height=\"88\">"
 		}
 		else
 		{

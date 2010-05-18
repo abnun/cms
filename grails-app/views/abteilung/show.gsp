@@ -5,6 +5,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}" />
+		<g:render template="/global/javascript/accordionJS" model="[accordionID: 'accordion']" />
+		<g:render template="/global/css/accordionCSS" />
     </head>
     <body>
 	<table width="614" border="0" cellpadding="0" cellspacing="0">
@@ -16,8 +18,8 @@
 							<table border="0" cellpadding="0" cellspacing="3">
 								<tr>
 									<td></td>
-									<td><span class="headline_dunkel">F-Junioren (&acute;01-&acute;02)</span></td>
-									<td><img src="bilder/divers/trenn.gif" width="1" height="26"></td>
+									<td><span class="headline_dunkel">${abteilungInstance?.anzeigeName ?: abteilungInstance?.name}</span></td>
+									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="26"></td>
 									<td class="copy">Landesstaffel 1 Bezirk Nord</td>
 								</tr>
 							</table>
@@ -40,6 +42,13 @@
 					</tr>
 					<tr>
 						<td colspan="2" valign="top" class="copy">
+							<br>
+							<div id="accordion" style="width: 270px;">
+								<g:each status="i" var="bericht" in="${abteilungInstance?.berichte}">
+									<g:render template="/abteilung/bericht" model="['bericht': bericht, 'i': i, 'abteilung': abteilungInstance]"/>
+								</g:each>
+							</div>
+
 							<table border="0" cellpadding="0" cellspacing="0">
 								<tr>
 									<td width="30"><img src="bilder/test/arrow_down.jpg" width="18" height="14"></td>

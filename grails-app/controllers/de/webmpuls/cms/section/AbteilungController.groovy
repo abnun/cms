@@ -242,7 +242,8 @@ class AbteilungController {
 
 	def menu =
 	{
-		render(view: '/global/menu/abteilung', model:[abteilungInstanceList: Abteilung.hauptAbteilungen().listOrderByName([cache: true])])
+		def abteilungList = Abteilung.hauptAbteilungen().listOrderByName([cache: true])
+		render(view: '/global/menu/abteilung', model:[abteilungInstanceList: abteilungList])
 	}
 
 	def removePerson =
@@ -300,6 +301,40 @@ class AbteilungController {
 								}
 							}
 						}
+
+						if (!abteilung.hasErrors() && abteilung.save(flush: true))
+						{
+							flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilung.id])}"
+							redirect(action: "edit", id: abteilung.id)
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	def removeSpielplan =
+	{
+		println("params -> $params")
+
+		String id = params.id
+
+		if(id)
+		{
+			Abteilung abteilung = Abteilung.get(id)
+
+			if(abteilung)
+			{
+				String spielplanId = params['spielplan.id']
+
+				if(spielplanId)
+				{
+					Spielplan tmpSpielplan = Spielplan.get(spielplanId)
+
+					if(tmpSpielplan)
+					{
+						abteilung.removeFromSpielplaene(tmpSpielplan)
 
 						if (!abteilung.hasErrors() && abteilung.save(flush: true))
 						{

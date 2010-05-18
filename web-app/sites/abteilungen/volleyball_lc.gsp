@@ -101,7 +101,7 @@
                 </p>
               </td>
               <td>
-                <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2009', file: 'logo_lc_2009.jpg')}" width="275" height="107"/>
+                <img src="${resource(dir: 'bilder/abteilungen/volleyball/lc_2009', file: 'logo_lc_2009.jpg')}" width="275" height="107"/>
               </td>
             </tr>
             <tr valign="top">
@@ -154,7 +154,7 @@
                    
                 </p>
                 <p>
-                  <img src="${resource(dir: 'bilder/abteilungen/volley/lc_2008_pokal', file: 'JugendVolleyb2008BK-(128)_f.jpg')}" width="275" height="238"/>
+                  <img src="${resource(dir: 'bilder/abteilungen/volleyball/lc_2008_pokal', file: 'JugendVolleyb2008BK-(128)_f.jpg')}" width="275" height="238"/>
                 </p>
               </td>
             </tr>

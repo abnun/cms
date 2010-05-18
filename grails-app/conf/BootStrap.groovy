@@ -58,6 +58,7 @@ class BootStrap
 		Funktion leiter_tech_wirt = Funktion.findByCode(Funktion.LEITER_TECH_WIRT)
 		Funktion schriftfuehrer = Funktion.findByCode(Funktion.SCHRIFTFUEHRER)
 		Funktion seniorenbeauftrager = Funktion.findByCode(Funktion.SENIONERBEAUFTRAGTER)
+		Funktion frauenbeauftragter = Funktion.findByCode(Funktion.FRAUENBEAUFTRAGTER)
 
 		if (!vorsitzender1)
 		{
@@ -86,7 +87,7 @@ class BootStrap
 
 		if (!webmaster)
 		{
-			webmaster = new Funktion(name: 'Beisitzer(in)/Webmaster', code: Funktion.WEBMASTER, vorstand: true).save(flush: true)
+			webmaster = new Funktion(name: 'Beisitzer(in) / Webmaster(in)', code: Funktion.WEBMASTER, vorstand: true).save(flush: true)
 		}
 
 		if (!abteilungsleiter)
@@ -132,6 +133,11 @@ class BootStrap
 		if (!seniorenbeauftrager)
 		{
 			seniorenbeauftrager = new Funktion(name: 'Seniorenbeauftragte(r)', code: Funktion.SENIONERBEAUFTRAGTER, vorstand: true).save(flush: true)
+		}
+
+		if (!frauenbeauftragter)
+		{
+			frauenbeauftragter = new Funktion(name: 'Frauenbeauftragte(r)', code: Funktion.FRAUENBEAUFTRAGTER, vorstand: true).save(flush: true)
 		}
 
 		def funktionList = Funktion.list()
@@ -191,7 +197,26 @@ class BootStrap
 		Abteilung fussball_damen = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_DAMEN)
 		if(!fussball_damen)
 		{
-			fussball_damen =  new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_DAMEN, code: AbteilungHelper.CODE_FUSSBALL_DAMEN)
+			fussball_damen =  new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_DAMEN, anzeigeName: 'Frauen (ab 1992)', code: AbteilungHelper.CODE_FUSSBALL_DAMEN)
+
+			// TODO: entfernen!
+			String tmpInhalt = """Wir waren am 31.10.09 beim Eppinger Spielfest zu Gast und spielten zum ersten
+			 Mal in dieser Saison in der Halle. Rings herum waren kleine Veranstaltungen mit
+			 Geschicklichkeitsspielen. Die Spiele fanden auf einem halben Spielfeld, mit kleinem Tor, ohne Torwart
+			 und mit 4 Spielern statt. Dies war für uns eine Umstellung, aber unsere Spieler kamen damit klar.
+			 Wir trafen zuerst auf den TSV Waldangelloch. Der TSV Waldangelloch hatte einen Spieler knapp vor
+			 dem Tor platziert, während wir offen gespielt hatten. Obwohl wir gut spielten, verloren wir mit
+			 2:0. Im 2. Spiel war unser Spielgegner der 1. FC Stebbach. Da auch der 1. FC Stebbach offen
+			 spielte war es eine interessante Partie. Luna schoß für uns den Führungstreffer und Malte machte
+			 mit dem 2. Treffer das Spiel für uns klar. In der nächsten Partie gegen den 1899 Hoffenheim gingen
+			 wir zuerst in den Rückstand, aber Yannik erzielte den Ausgleich für uns und Yakup setzte noch
+			 einen d’rauf. Das Spiel endete schließlich mit 2:1 für uns. Zu guter Letzt standen wir gegen den
+			 VfB Eppingen auf dem Spielfeld. Yakup und Yannik erzielten durch schöne Treffer den Spielendstand
+			 2:0."""
+			Bericht tmpBericht = new Bericht(ueberschrift: ' Spieltag in Stetten', inhalt: tmpInhalt)
+			tmpBericht.save()
+			fussball_damen.addToBerichte(tmpBericht)
+
 			fussball_damen.save()
 		}
 

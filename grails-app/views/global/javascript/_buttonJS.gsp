@@ -1,9 +1,9 @@
 <jq:jquery>
-	$('#dialog_link').click(function() {
-		$('#dialog').dialog('open');
+	$('${dialogLinkId ? '#' + dialogLinkId : '#dialog_link'}').click(function() {
+		$('${dialogId ? '#' + dialogId : '#dialog'}').dialog('open');
 	});
 
-	$('#dialog_link, ul#icons li').hover(
+	$('${dialogLinkId ? '#' + dialogLinkId : '#dialog_link'}, ul#icons li').hover(
 		function() { $(this).addClass('ui-state-hover'); },
 		function() { $(this).removeClass('ui-state-hover'); }
 	);

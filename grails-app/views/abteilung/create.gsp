@@ -49,6 +49,15 @@
 					</td>
 				</tr>
 
+				<tr class="prop">
+					<td valign="top" class="name">
+						<label for="anzeigeName"><g:message code="abteilung.anzeigeName.label" default="Anzeigename"/></label>
+					</td>
+					<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'anzeigeName', 'errors')}">
+						<g:textField name="anzeigeName" value="${abteilungInstance?.anzeigeName}"/>
+					</td>
+				</tr>
+
 				%{--<tr class="prop">
 												<td valign="top" class="name">
 													<label for="code"><g:message code="abteilung.code.label" default="Code" /></label>

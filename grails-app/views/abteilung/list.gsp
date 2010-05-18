@@ -43,7 +43,9 @@
                             <g:sortableColumn property="id" title="${message(code: 'abteilung.id.label', default: 'Id')}" />
                         
                             <g:sortableColumn property="name" title="${message(code: 'abteilung.name.label', default: 'Name')}" />
-                        
+
+							<g:sortableColumn property="anzeigeName" title="${message(code: 'abteilung.anzeigeName.label', default: 'Anzeigename')}" />
+
                             <g:sortableColumn property="code" title="${message(code: 'abteilung.code.label', default: 'Code')}" />
                         
                             <g:sortableColumn property="anzeigeImMenu" title="${message(code: 'abteilung.anzeigeImMenu.label', default: 'Anzeige Im Menu')}" />
@@ -58,7 +60,9 @@
                             <td><g:link action="show" id="${abteilungInstance.id}">${fieldValue(bean: abteilungInstance, field: "id")}</g:link></td>
                         
                             <td>${fieldValue(bean: abteilungInstance, field: "name")}</td>
-                        
+
+							<td>${fieldValue(bean: abteilungInstance, field: "anzeigeName")}</td>
+
                             <td>${fieldValue(bean: abteilungInstance, field: "code")}</td>
                         
                             <td><g:formatBoolean boolean="${abteilungInstance.anzeigeImMenu}" /></td>

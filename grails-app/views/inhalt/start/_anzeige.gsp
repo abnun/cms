@@ -3,7 +3,7 @@
 <shiro:hasRole name="${ShiroRole.BENUTZER}">
 	<g:form action="delete" controller="anzeigen" id="${anzeige.id}" name="AnzeigeDeleteForm_${anzeige.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
 	<jq:jquery>
-		$("#anzeige_del_${anzeige.id}").click(function () {
+		$("#anzeigen_del_${anzeige.id}").click(function () {
 			if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
 			{
 				document.forms.AnzeigeDeleteForm_${anzeige.id}.submit();

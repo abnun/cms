@@ -17,6 +17,7 @@ class Funktion
 	static final String REFERENT = "referent"
 	static final String JUGENDLEITER = "jugendleiter"
 	static final String JUGENDSPRECHER = "jugendsprecher"
+	static final String FRAUENBEAUFTRAGTER = "frauenbeauftragter"
 
 	static hasMany = [personen: Person]
 	static belongsTo = Person

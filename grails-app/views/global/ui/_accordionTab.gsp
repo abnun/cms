@@ -16,7 +16,7 @@
 			<shiro:hasRole name="${ShiroRole.BENUTZER}">
 				<span>
 					<g:link controller="${itemName}" action="edit" id="${item.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="ändern" title="ändern" border="0"/></g:link>
-					<a href="javascript: void(0);" id="anzeige_del_${item.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="löschen" title="löschen" border="0"/></a>
+					<a href="javascript: void(0);" id="${itemName}_del_${item.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="löschen" title="löschen" border="0"/></a>
 				</span>
 			</shiro:hasRole>
 		</g:if>
