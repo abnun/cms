@@ -63,7 +63,12 @@
 								<s>
 							</g:if>
 
-							<g:formatDate date="${termin.datum}" format="dd. MMMMM"/>
+							<g:if test="${((Date)termin.startDatum).equals((Date)termin.endDatum)}">
+								<g:formatDate date="${termin.startDatum}" format="dd. MMMMM"/>
+							</g:if>
+							<g:else>
+								<g:formatDate date="${termin.startDatum}" format="dd. MMMMM"/> - <g:formatDate date="${termin.endDatum}" format="dd. MMMMM"/>
+							</g:else>
 
 							<g:if test="${!findetStatt}">
 								</s>
@@ -87,7 +92,7 @@
 								<s>
 							</g:if>
 
-							${termin.inhalt}
+							${termin.inhalt}<g:if test="${termin.abteilung}">&nbsp;(${termin.abteilung})</g:if> 
 
 							<g:if test="${!findetStatt}">
 								</s>
