@@ -15,6 +15,7 @@ import de.webmpuls.cms.section.Abteilung
 import org.springframework.context.ApplicationContextAware
 import org.springframework.context.ApplicationContext
 import de.webmpuls.cms.section.AbteilungHelper
+import org.cyberneko.html.Version
 
 class ImportService implements ApplicationContextAware
 {
@@ -25,8 +26,10 @@ class ImportService implements ApplicationContextAware
 
 	public void importHTMLTable(String link)
 	{
+		log.debug(Version.getVersion())
 		SAXParser parser = new SAXParser()
 		parser.setFeature('http://xml.org/sax/features/namespaces', false)
+		parser.setProperty('http://cyberneko.org/html/properties/default-encoding', 'UTF-8')
 		Node page = new XmlParser(parser).parse(link)
 
 		log.debug("page -> $page")
@@ -39,168 +42,178 @@ class ImportService implements ApplicationContextAware
 
 		if (arrayListTR)
 		{
-			for (NodeList nodeListTR in arrayListTR)
+			//for (NodeList nodeListTR in arrayListTR)
+			for (Node nodeTR in arrayListTR)
 			{
 				Tabelle newTable = null
 
-				if(nodeListTR)
-				{
+				//if(nodeListTR)
+				//{
 					newTable = new Tabelle()
 
-					for (Node nodeTR in nodeListTR)
-					{
+					//for (Node nodeTR in nodeListTR)
+					//{
 						ArrayList arrayListTD = nodeTR.depthFirst().'TD'
 						if (arrayListTD)
 						{
-							for (NodeList nodeListTD in arrayListTD)
+							//for (NodeList nodeListTD in arrayListTD)
+							for (Node tmpNodeTD in arrayListTD)
 							{
-								if (nodeListTD)
+								//if (nodeListTD)
+								if (tmpNodeTD)
 								{
-									for (Node tmpNodeTD in nodeListTD)
-									{
-										String tmpText = new String(tmpNodeTD.text().getBytes("ISO-8859-1"), "UTF-8")
-
-										// Spielkennung rausfischen
-										if (tmpNodeTD.attributes())
+									//for (Node tmpNodeTD in nodeListTD)
+									//{
+										println tmpNodeTD
+										if(tmpNodeTD instanceof Node)
 										{
-											if(tmpNodeTD.attributes().'class'.contains('edVSpielkennung'))
-											{
-												ArrayList arrayListAnker = tmpNodeTD.depthFirst().'A'
+											//String tmpText = new String(tmpNodeTD.text().getBytes("ISO-8859-1"), "UTF-8")
+											String tmpText = tmpNodeTD.text()
 
-												if (arrayListAnker)
+											// Spielkennung rausfischen
+											if (tmpNodeTD.attributes())
+											{
+												if(tmpNodeTD.attributes().'class'.contains('edVSpielkennung'))
 												{
-													for (NodeList nodeListAnker in arrayListAnker)
+													ArrayList arrayListAnker = tmpNodeTD.depthFirst().'A'
+
+													if (arrayListAnker)
 													{
-														if (nodeListAnker)
+														//for (NodeList nodeListAnker in arrayListAnker)
+														for (Node nodeAnker in arrayListAnker)
 														{
-															for (Node nodeAnker in nodeListAnker)
+															//if (nodeListAnker)
+															if (nodeAnker)
 															{
-																tmpText = nodeAnker.text()
+																//for (Node nodeAnker in nodeListAnker)
+																//{
+																	tmpText = nodeAnker.text()
+																//}
 															}
 														}
 													}
-												}
 
-												println "Spielkennung: $tmpText"
+													println "Spielkennung: $tmpText"
 
-												Tabelle existingTable = Tabelle.findBySpielkennung(tmpText)
-												if (existingTable)
-												{
-													newTable = existingTable
-													println "found existing table"
-												}
-												newTable.spielkennung = tmpText
-											}
-
-											// Heim-Mannschaft rausfischen
-											else if (tmpNodeTD.attributes().'class'.contains('edVHeim'))
-											{
-												println "Heimmannschaft: $tmpText"
-												newTable.heimmannschaft = tmpText
-											}
-
-											// Gast-Mannschaft rausfischen
-											else if (tmpNodeTD.attributes().'class'.contains('edVGast'))
-											{
-												println "Gastmannschaft: $tmpText"
-												newTable.gastmannschaft = tmpText
-											}
-
-											// Anstoss-Uhrzeit rausfischen
-											else if (tmpNodeTD.attributes().'class'.contains('edVAnstoss'))
-											{
-												println "Anstoss: $tmpText"
-												newTable.anstoss = tmpText
-											}
-
-											// Tore rausfischen
-											else if (tmpNodeTD.attributes().'class'.contains('edVTore'))
-											{
-												ArrayList arrayListDIV = tmpNodeTD.depthFirst().'DIV'
-												if (arrayListDIV)
-												{
-													for(Node tmpNodeDIV in tmpNodeTD.depthFirst())
+													Tabelle existingTable = Tabelle.findBySpielkennung(tmpText)
+													if (existingTable)
 													{
-														if(tmpNodeDIV.attributes().'style')
-														{
-															tmpText = tmpNodeDIV.attributes().'style'
-															println "Style: $tmpText"
-															newTable.toreImageStyle = tmpText
-														}
-														if (tmpNodeDIV.attributes().'src')
-														{
-															String tmpLink = "http://www.fussball.de${tmpNodeDIV.attributes().'src'}"
-
-															URL tmpURL = new URL(tmpLink)
-
-															println tmpLink.tokenize("/")[-1]
-
-															String targetFileName = newTable.spielkennung
-															targetFileName = targetFileName.replaceAll(" ", "_")
-															targetFileName = targetFileName + ".png"
-
-															println targetFileName
-
-															String targetPath = applicationContext.getResource(File.separator + "bilder" + File.separator + "tabellen" + File.separator + "tore" + File.separator + targetFileName).getFile().getAbsolutePath()
-
-															println "Zielpfad für Image: $targetPath"
-
-															FileOutputStream fileOutputStream = new FileOutputStream(targetPath)
-															BufferedOutputStream out = new BufferedOutputStream(fileOutputStream)
-															out << tmpURL.openStream()
-															out.close()
-
-															tmpText = targetFileName
-															println "Tore: $tmpText"
-															newTable.tore = tmpText
-														}
-														else
-														{
-															println "Tore: $tmpText"
-															newTable.tore = tmpText
-														}
+														newTable = existingTable
+														println "found existing table"
 													}
+													newTable.spielkennung = tmpText
+												}
 
+												// Heim-Mannschaft rausfischen
+												else if (tmpNodeTD.attributes().'class'.contains('edVHeim'))
+												{
+													println "Heimmannschaft: $tmpText"
+													newTable.heimmannschaft = tmpText
+												}
+
+												// Gast-Mannschaft rausfischen
+												else if (tmpNodeTD.attributes().'class'.contains('edVGast'))
+												{
+													println "Gastmannschaft: $tmpText"
+													newTable.gastmannschaft = tmpText
+												}
+
+												// Anstoss-Uhrzeit rausfischen
+												else if (tmpNodeTD.attributes().'class'.contains('edVAnstoss'))
+												{
+													println "Anstoss: $tmpText"
+													newTable.anstoss = tmpText
+												}
+
+												// Tore rausfischen
+												else if (tmpNodeTD.attributes().'class'.contains('edVTore'))
+												{
+													ArrayList arrayListDIV = tmpNodeTD.depthFirst().'DIV'
+													if (arrayListDIV)
+													{
+														for(Node tmpNodeDIV in tmpNodeTD.depthFirst())
+														{
+															if(tmpNodeDIV.attributes().'style')
+															{
+																tmpText = tmpNodeDIV.attributes().'style'
+																println "Style: $tmpText"
+																newTable.toreImageStyle = tmpText
+															}
+															if (tmpNodeDIV.attributes().'src')
+															{
+																String tmpLink = "http://www.fussball.de${tmpNodeDIV.attributes().'src'}"
+
+																URL tmpURL = new URL(tmpLink)
+
+																println tmpLink.tokenize("/")[-1]
+
+																String targetFileName = newTable.spielkennung
+																targetFileName = targetFileName.replaceAll(" ", "_")
+																targetFileName = targetFileName + ".png"
+
+																println targetFileName
+
+																String targetPath = applicationContext.getResource(File.separator + "bilder" + File.separator + "tabellen" + File.separator + "tore" + File.separator + targetFileName).getFile().getAbsolutePath()
+
+																println "Zielpfad für Image: $targetPath"
+
+																FileOutputStream fileOutputStream = new FileOutputStream(targetPath)
+																BufferedOutputStream out = new BufferedOutputStream(fileOutputStream)
+																out << tmpURL.openStream()
+																out.close()
+
+																tmpText = targetFileName
+																println "Tore: $tmpText"
+																newTable.tore = tmpText
+															}
+															else
+															{
+																println "Tore: $tmpText"
+																newTable.tore = tmpText
+															}
+														}
+
+													}
+													else
+													{
+														println "Tore: $tmpText"
+														newTable.tore = tmpText
+													}
+												}
+
+												// Spielklasse rausfischen
+												else if (tmpNodeTD.attributes().'class'.contains('edVSpielklasse'))
+												{
+													println "Spielkasse: $tmpText"
+													newTable.spielklasse = tmpText
+												}
+
+												// Typ rausfischen
+												else if (tmpNodeTD.attributes().'class'.contains('edVTyp'))
+												{
+													println "Typ: $tmpText"
+													newTable.typ = tmpText
+												}
+
+												// Datum der Spieltage rausfischen
+												if (tmpNodeTD.attributes().'class' == 'edDatum')
+												{
+													println "Datum: $tmpText"
+													tmpDate = simpleDateFormat.parse(tmpText)
+													newTable.spieldatum = tmpDate
+													break
 												}
 												else
 												{
-													println "Tore: $tmpText"
-													newTable.tore = tmpText
+													newTable.spieldatum = tmpDate
 												}
-											}
-
-											// Spielklasse rausfischen
-											else if (tmpNodeTD.attributes().'class'.contains('edVSpielklasse'))
-											{
-												println "Spielkasse: $tmpText"
-												newTable.spielklasse = tmpText
-											}
-
-											// Typ rausfischen
-											else if (tmpNodeTD.attributes().'class'.contains('edVTyp'))
-											{
-												println "Typ: $tmpText"
-												newTable.typ = tmpText
-											}
-
-											// Datum der Spieltage rausfischen
-											if (tmpNodeTD.attributes().'class' == 'edDatum')
-											{
-												println "Datum: $tmpText"
-												tmpDate = simpleDateFormat.parse(tmpText)
-												newTable.spieldatum = tmpDate
-												break
-											}
-											else
-											{
-												newTable.spieldatum = tmpDate
 											}
 										}
 									}
 								}
-							}
-						}
-					}
+							//}
+						//}
+					//}
 
 					if(newTable)
 					{
@@ -346,7 +359,7 @@ class ImportService implements ApplicationContextAware
 
 								Abteilung tmpAbteilung = Abteilung.findByName(value)
 
-								if (tmpFunktion)
+								if (tmpFunktion && !tmpAbteilung)
 								{
 									log.debug("Funktion: $tmpFunktion")
 
@@ -371,32 +384,31 @@ class ImportService implements ApplicationContextAware
 
 									Abteilung newAbteilung = new Abteilung(name: value, code: tmpCode, anzeigeImMenu: true)
 
-									abteilungenForLaterSave << newAbteilung
+									//abteilungenForLaterSave << newAbteilung
 
 									tmpAbteilung = newAbteilung
-
-									if (tmpAbteilung)
+								}
+								if (tmpAbteilung)
+								{
+									log.debug("Abteilung: $tmpAbteilung")
+									Funktion abteilungsLeiterFunktion = Funktion.findByCode(Funktion.ABTEILUNGSLEITER)
+									if (abteilungsLeiterFunktion)
 									{
-										log.debug("Abteilung: $tmpAbteilung")
-										Funktion abteilungsLeiterFunktion = Funktion.findByCode(Funktion.ABTEILUNGSLEITER)
-										if (abteilungsLeiterFunktion)
+										if (!tmpPerson.funktionen?.contains(abteilungsLeiterFunktion))
 										{
-											if (!tmpPerson.funktionen?.contains(abteilungsLeiterFunktion))
-											{
-												tmpPerson.addToFunktionen(abteilungsLeiterFunktion)
-											}
-
-											if (!tmpAbteilung.mitarbeiterfunktionen?.contains(abteilungsLeiterFunktion))
-											{
-												tmpAbteilung.addToMitarbeiterfunktionen(abteilungsLeiterFunktion)
-											}
-
-											if (!tmpAbteilung.personen?.contains(tmpPerson))
-											{
-												tmpAbteilung.addToPersonen(tmpPerson)
-											}
-											abteilungenForLaterSave << tmpAbteilung
+											tmpPerson.addToFunktionen(abteilungsLeiterFunktion)
 										}
+
+										if (!tmpAbteilung.mitarbeiterfunktionen?.contains(abteilungsLeiterFunktion))
+										{
+											tmpAbteilung.addToMitarbeiterfunktionen(abteilungsLeiterFunktion)
+										}
+
+										if (!tmpAbteilung.personen?.contains(tmpPerson))
+										{
+											tmpAbteilung.addToPersonen(tmpPerson)
+										}
+										abteilungenForLaterSave << tmpAbteilung
 									}
 								}
 							}
@@ -436,7 +448,7 @@ class ImportService implements ApplicationContextAware
 
 								Abteilung tmpAbteilung = Abteilung.findByName(value)
 
-								if (tmpFunktion)
+								if (tmpFunktion && !tmpAbteilung)
 								{
 									log.debug("Funktion: $tmpFunktion")
 

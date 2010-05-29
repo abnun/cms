@@ -1,18 +1,39 @@
 
-<%@ page import="de.webmpuls.cms.start.Termin" %>
+<%@ page import="de.webmpuls.cms.section.Abteilung; de.webmpuls.cms.start.Termin" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'termin.label', default: 'Termin')}" />
         %{--<title><g:message code="default.edit.label" args="[entityName]" /></title>--}%
+		<script type="text/javascript">
+			$(function()
+			{
+				$("select[name='startDatum_day']").change(function ()
+				{
+					$("select[name='endDatum_day']").val($("select[name='startDatum_day']").val());
+				});
+
+				$("select[name='startDatum_month']").change(function ()
+				{
+					$("select[name='endDatum_month']").val($("select[name='startDatum_month']").val());
+				});
+
+				$("select[name='startDatum_year']").change(function ()
+				{
+					$("select[name='endDatum_year']").val($("select[name='startDatum_year']").val());
+				});
+			});
+		</script>
     </head>
     <body>
         <div class="nav">
             %{--<span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>--}%
-            <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
+            %{--<span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>--}%
             <g:render template="/global/javascript/createButtonJS" />
 		<button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]" /></button>
+			<g:render template="/global/javascript/backToListButtonJS" />
+		<button id="backToListButton" style="margin-left: 10px;"><g:message code="default.back.to.list" /></button>
         </div>
         <div class="body">
             %{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
@@ -53,16 +74,30 @@
 							$("#zusatzInfoSPAN1").slideToggle('slow');
 							$("#zusatzInfoSPAN2").slideToggle('slow');
 						});
-                    </jq:jquery>
+
+						<g:if test="${!terminInstance.findetStatt}">
+							$("#zusatzInfoSPAN1").slideToggle('slow');
+							$("#zusatzInfoSPAN2").slideToggle('slow');
+						</g:if>
+					</jq:jquery>
 					<table>
                         <tbody>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="datum"><g:message code="termin.datum.label" default="Datum" /></label>
+                                    <label for="startDatum"><g:message code="termin.startDatum.label" default="Von" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'datum', 'errors')}">
-                                    <g:datePicker name="datum" precision="day" value="${terminInstance?.datum}"  />
+                                <td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'startDatum', 'errors')}">
+                                    <g:datePicker name="startDatum" precision="day" value="${terminInstance?.startDatum}"  />
+                                </td>
+                            </tr>
+
+							<tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="endDatum"><g:message code="termin.endDatum.label" default="Bis" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'endDatum', 'errors')}">
+                                    <g:datePicker name="endDatum" precision="day" value="${terminInstance?.endDatum}"  />
                                 </td>
                             </tr>
                         
@@ -81,6 +116,15 @@
 								</td>
 								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'ort', 'errors')}">
 									<g:textField name="ort" value="${terminInstance?.ort}" />
+								</td>
+							</tr>
+
+							<tr class="prop">
+								<td valign="top" class="name">
+									<label for="abteilung.id"><g:message code="termin.abteilung.label" default="Abteilung"/></label>
+								</td>
+								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'abteilung', 'errors')}">
+									<g:select from="${Abteilung.list()}" name="abteilung.id" value="${terminInstance?.abteilung?.id}" optionKey="id" noSelection="['null': message(code: 'default.form.select.text')]" />
 								</td>
 							</tr>
 

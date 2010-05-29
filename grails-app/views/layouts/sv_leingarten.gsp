@@ -154,11 +154,11 @@
           <td width="110" height="20" valign="middle"><span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','show','themen','','hide','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Organe</a></span></td>
         </tr>
         <tr>
-          <td width="110" height="20" valign="middle"> <span class="navi"><a href="${createLink(controller: 'inhalt', action: 'sitzungen')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','show','impressum','','hide','aktuell','','hide')">Sitzungen</a></span></td>
+          <td width="110" height="20" valign="middle"> <span class="navi"><a href="${createLink(controller: 'inhalt', action: 'sitzungen')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','show','impressum','','hide','aktuell','','hide')">Termine</a></span></td>
         </tr>
-        <tr>
+        %{--<tr>
           <td width="110" height="21" valign="middle"> <span class="navi"><a href="#" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','show','sitzungen','','hide','impressum','','hide','aktuell','','hide')">Themen</a></span></td>
-        </tr>
+        </tr>--}%
         <tr>
           <td width="110" height="20" valign="middle"> <span class="navi"><a href="${resource(dir: 'sites', file: 'impressum.gsp')}" onMouseOver="MM_showHideLayers('veranstaltungen','','hide','abteilungen','','hide','wegrollen','','show','anlagen','','hide','mitglied','','hide','sponsoren','','hide','gaestebuch','','hide','organe','','hide','themen','','hide','sitzungen','','hide','impressum','','show','aktuell','','hide')">Impressum</a></span></td>
         </tr>

@@ -27,20 +27,25 @@
 			<td class="headline_dunkel"><span class="wichtig"></span></td>
 		</tr>
 		<g:each status="i" var="termin" in="${terminList}">
-			<g:if test="${((Date)termin.datum).getMonth() != ((Date)terminList[i - 1].datum).getMonth()}">
+			<g:if test="${((Date)termin.startDatum).getMonth() != ((Date)terminList[i - 1].startDatum).getMonth()}">
 				<tr valign="top" class="copy">
-					<td colspan="2" bgcolor="d2dfff" class="wichtig"><g:formatDate date="${termin.datum}" format="MMMMM"/></td>
+					<td colspan="2" bgcolor="d2dfff" class="wichtig"><g:formatDate date="${termin.startDatum}" format="MMMMM"/></td>
 				</tr>
 			</g:if>
 			<g:else>
-				<tr>
+				%{--<tr>
 					<td width="90" class="headline_dunkel">&nbsp;</td>
-				</tr>
+				</tr>--}%
 			</g:else>
 			<tr valign="top" class="copy">
-				<td height="30" class="copy"><g:formatDate date="${termin.datum}" format="dd. MMMMM"/></td>
-				<td height="30"><span class="wichtig"><g:if test="${!termin.findetStatt}"><s></g:if>${termin.inhalt}<g:if test="${!termin.findetStatt}"></s><br/></g:if></span><span class="copy">
-				</span><g:if test="${!termin.findetStatt}"><span class="copy">${termin.zusatzinfo ?: '(fällt aus)'}</span></g:if></td>
+				<g:if test="${((Date)termin.startDatum).equals((Date)termin.endDatum)}">
+					<td height="30" class="copy"><g:formatDate date="${termin.startDatum}" format="dd. MMMMM"/></td>
+				</g:if>
+				<g:else>
+					<td height="30" class="copy"><g:formatDate date="${termin.startDatum}" format="dd. MMMMM"/> - <g:formatDate date="${termin.endDatum}" format="dd. MMMMM"/></td>
+				</g:else>
+				<td height="30"><span class="wichtig"><g:if test="${!termin.findetStatt}"><s></g:if>${termin.inhalt}<g:if test="${!termin.findetStatt}"></s></g:if><br/></span><span class="copy">
+				<g:if test="${termin.abteilung}">(${termin.abteilung})<br/></g:if></span><g:if test="${!termin.findetStatt}"><span class="copy">${termin.zusatzinfo ?: message(code: 'termin.canceled.text')}</span></g:if></td>
 				<shiro:hasRole name="${ShiroRole.BENUTZER}">
 					<td>
 						<g:link controller="termin" action="edit" id="${termin.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Termin ändern" title="Termin ändern" border="0"/></g:link>

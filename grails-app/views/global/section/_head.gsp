@@ -13,12 +13,12 @@
 				<span class="copy">${head.vorname}&nbsp;${head.nachname}</span>
 			<g:if test="${head.adresseAnzeigen}">
 				<g:if test="${head.telefon1}">
-					${head.telefon1}<br/>
+					<span class="copy">${head.telefon1}</span><br/>
 				</g:if>
 				<g:if test="${head.telefon2}">
-					${head.telefon2}<br/>
+					<span class="copy">${head.telefon2}</span><br/>
 				</g:if>
-				<a href="mailto:${head.email}">E-Mail</a>
+				<a href="mailto:${head.email}"><span class="copy">E-Mail</span></a>
 			</g:if>
 			<shiro:hasRole name="${ShiroRole.BENUTZER}">
 				<span>

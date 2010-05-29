@@ -44,11 +44,18 @@
                             <td valign="top" class="value">${fieldValue(bean: terminInstance, field: "id")}</td>
                             
                         </tr>
-                    
+
+						<tr class="prop">
+                            <td valign="top" class="name"><g:message code="termin.startDatum.label" default="Von" /></td>
+
+                            <td valign="top" class="value"><g:formatDate date="${terminInstance?.startDatum}" /></td>
+
+                        </tr>
+
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="termin.datum.label" default="Datum" /></td>
+                            <td valign="top" class="name"><g:message code="termin.endDatum.label" default="Bis" /></td>
                             
-                            <td valign="top" class="value"><g:formatDate date="${terminInstance?.datum}" /></td>
+                            <td valign="top" class="value"><g:formatDate date="${terminInstance?.endDatum}" /></td>
                             
                         </tr>
                     
@@ -62,6 +69,11 @@
 						<tr class="prop">
 							<td valign="top" class="name"><g:message code="termin.ort.label" default="Ort"/></td>
 							<td valign="top" class="value">${fieldValue(bean: terminInstance, field: "ort")}</td>
+						</tr>
+
+						<tr class="prop">
+							<td valign="top" class="name"><g:message code="termin.abteilung.label" default="Abteilung"/></td>
+							<td valign="top" class="value">${fieldValue(bean: terminInstance, field: "abteilung")}</td>
 						</tr>
 
 						<tr class="prop">

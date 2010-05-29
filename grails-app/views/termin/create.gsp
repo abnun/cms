@@ -1,11 +1,30 @@
 
-<%@ page import="de.webmpuls.cms.start.Termin" %>
+<%@ page import="de.webmpuls.cms.section.Abteilung; de.webmpuls.cms.start.Termin" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'termin.label', default: 'Termin')}" />
         %{--<title><g:message code="default.create.label" args="[entityName]" /></title>--}%
+		<script type="text/javascript">
+			$(function()
+			{
+				$("select[name='startDatum_day']").change(function ()
+				{
+					$("select[name='endDatum_day']").val($("select[name='startDatum_day']").val());
+				});
+
+				$("select[name='startDatum_month']").change(function ()
+				{
+					$("select[name='endDatum_month']").val($("select[name='startDatum_month']").val());
+				});
+
+				$("select[name='startDatum_year']").change(function ()
+				{
+					$("select[name='endDatum_year']").val($("select[name='startDatum_year']").val());
+				});
+			});
+		</script>
     </head>
     <body>
         <div class="body">
@@ -45,19 +64,33 @@
 							$('#zusatzInfoSPAN1').slideToggle('slow');
 							$('#zusatzInfoSPAN2').slideToggle('slow');
 						});
+
+						<g:if test="${!terminInstance.findetStatt}">
+							$("#zusatzInfoSPAN1").slideToggle('slow');
+							$("#zusatzInfoSPAN2").slideToggle('slow');
+						</g:if>
                     </jq:jquery>
 					<table>
                         <tbody>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="datum"><g:message code="termin.datum.label" default="Datum" /></label>
+                                    <label for="startDatum"><g:message code="termin.startDatum.label" default="Von" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'datum', 'errors')}">
-                                    <g:datePicker name="datum" precision="day" value="${terminInstance?.datum}"  />
+                                <td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'startDatum', 'errors')}">
+                                    <g:datePicker name="startDatum" precision="day" value="${terminInstance?.startDatum}"  />
                                 </td>
                             </tr>
-                        
+
+							<tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="endDatum"><g:message code="termin.endDatum.label" default="Bis" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'endDatum', 'errors')}">
+                                    <g:datePicker name="endDatum" precision="day" value="${terminInstance?.endDatum}"  />
+                                </td>
+                            </tr>
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="inhalt"><g:message code="termin.inhalt.label" default="Inhalt" /></label>
@@ -73,6 +106,15 @@
 								</td>
 								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'ort', 'errors')}">
 									<g:textField name="ort" value="${terminInstance?.ort}" />
+								</td>
+							</tr>
+
+							<tr class="prop">
+								<td valign="top" class="name">
+									<label for="abteilung.id"><g:message code="termin.abteilung.label" default="Abteilung"/></label>
+								</td>
+								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'abteilung', 'errors')}">
+									<g:select from="${Abteilung.list()}" name="abteilung.id" value="${terminInstance?.abteilung?.id}" optionKey="id" noSelection="['null': message(code: 'default.form.select.text')]" />
 								</td>
 							</tr>
 

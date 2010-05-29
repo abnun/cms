@@ -12,7 +12,7 @@ grails.project.dependency.resolution = {
     }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     repositories {
-		grailsRepo("http://83.169.2.186/svn/grails/", "myRepository")
+		grailsRepo("http://83.169.2.186/svn/grails", "myRepository")
         grailsCentral()
         grailsPlugins()
         grailsHome()
@@ -28,6 +28,11 @@ grails.project.dependency.resolution = {
 
 //		resolver(localResolver(basedir, getIvySettings()))
     }
+
+	plugins {
+		build "de.webmpuls:photo-album:0.2"
+	}
+
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -35,6 +40,15 @@ grails.project.dependency.resolution = {
 
 //		runtime 'oracle.jdbc:ojdbc14:10.1.0.5.0'
     }
+
+	credentials {
+		realm = "myRepository"
+		host = "83.169.2.186"
+		username = "markus"
+		password = "kermit"
+	}
+
+	
 }
 
 // So heisst das WAR-File nachher

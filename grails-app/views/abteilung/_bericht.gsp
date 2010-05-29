@@ -11,4 +11,4 @@
 		});
 	</jq:jquery>
 </shiro:hasRole>
-<g:render template="/global/ui/accordionTab" model="[itemName: 'bericht', item: bericht, accordionTabUeberschrift1: bericht.ueberschrift, text: bericht.inhalt, isEditable: true]" />
+<g:render template="/global/ui/accordionTab" model="[itemName: 'bericht', item: bericht, accordionTabUeberschrift1: bericht.ueberschrift, text: bericht.inhalt, isEditable: true, isAbteilung: true]" />

@@ -40,11 +40,15 @@
                         
                             <g:sortableColumn property="id" title="${message(code: 'termin.id.label', default: 'Id')}" />
                         
-                            <g:sortableColumn property="datum" title="${message(code: 'termin.datum.label', default: 'Datum')}" />
-                        
+                            <g:sortableColumn property="startDatum" title="${message(code: 'termin.startDatum.label', default: 'Von')}" />
+
+							<g:sortableColumn property="endDatum" title="${message(code: 'termin.endDatum.label', default: 'Bis')}" />
+
                             <g:sortableColumn property="inhalt" title="${message(code: 'termin.inhalt.label', default: 'Inhalt')}" />
 
 							<g:sortableColumn property="ort" title="${message(code: 'termin.ort.label', default: 'Ort')}" />
+
+							<g:sortableColumn property="abteilung" title="${message(code: 'termin.abteilung.label', default: 'Abteilung')}" />
 
 							<g:sortableColumn property="uhrzeit" title="${message(code: 'termin.uhrzeit.label', default: 'Uhrzeit')}" />
 
@@ -61,11 +65,15 @@
                         
                             <td>${fieldValue(bean: terminInstance, field: "id")}</td>
                         
-                            <td><g:formatDate date="${terminInstance.datum}" /></td>
-                        
+                            <td><g:formatDate date="${terminInstance.startDatum}" /></td>
+
+							<td><g:formatDate date="${terminInstance.endDatum}" /></td>
+
                             <td>${fieldValue(bean: terminInstance, field: "inhalt")}</td>
 
 							<td>${fieldValue(bean: terminInstance, field: "ort")}</td>
+
+							<td>${fieldValue(bean: terminInstance, field: "abteilung")}</td>
 
 							<td>${fieldValue(bean: terminInstance, field: "uhrzeit")}</td>
 

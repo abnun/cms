@@ -43,7 +43,7 @@
 					<tr>
 						<td colspan="2" valign="top" class="copy">
 							<br>
-							<div id="accordion" style="width: 270px;">
+							<div id="accordion">
 								<g:each status="i" var="bericht" in="${abteilungInstance?.berichte}">
 									<g:render template="/abteilung/bericht" model="['bericht': bericht, 'i': i, 'abteilung': abteilungInstance]"/>
 								</g:each>
@@ -51,7 +51,7 @@
 
 							<table border="0" cellpadding="0" cellspacing="0">
 								<tr>
-									<td width="30"><img src="bilder/test/arrow_down.jpg" width="18" height="14"></td>
+									<td width="30"><img src="${resource(dir: 'bilder/divers', file: 'arrow_right.jpg')}" width="18" height="14"></td>
 									<td><span class="headline_dunkel">F1:</span><span class="headline">
 										Spieltag in Stetten</span></td>
 									<td width="34">&nbsp;</td>
@@ -135,7 +135,7 @@
 						<td colspan="2" valign="top" class="copy">
 							<table border="0" cellpadding="0" cellspacing="0">
 								<tr>
-									<td width="30"><img src="bilder/test/arrow_right.jpg" width="18" height="14"></td>
+									<td width="30"><img src="${resource(dir: 'bilder/divers', file: 'arrow_right.jpg')}" width="18" height="14"></td>
 									<td width="394"><span class="headline_dunkel">F3:</span><span class="headline">
 										Spieltag in Stetten</span></td>
 									<td width="47">&nbsp;</td>
@@ -190,8 +190,6 @@
 						<g:render template="/global/section/head" model="[head: abteilungsLeiter, section: abteilungInstance]"/>
 					</p>
 				</g:each>
-				<p><img src="bilder/test/box_training.png" width="127" height="91" style="margin-top: 5px;">
-				</p>
 				<p>&nbsp;</p>
 				<!-- InstanceEndEditable --></td>
 		</tr>
