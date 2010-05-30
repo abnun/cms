@@ -21,24 +21,27 @@ class BerichtController {
 
     def save = {
         def berichtInstance = new Bericht(params)
-        if (berichtInstance.save(flush: true)) {
-			if(params.abteilungId)
+		if (params.abteilungId)
+		{
+			Abteilung tmpAbteilung = Abteilung.get(params.abteilungId)
+			if (tmpAbteilung)
 			{
-				flash.message = "${message(code: 'default.created.message', args: [message(code: 'bericht.label', default: 'Bericht'), berichtInstance.id])}"
-				Abteilung tmpAbteilung = Abteilung.get(params.abteilungId)
-				if(tmpAbteilung)
-				{
-					tmpAbteilung.addToBerichte(berichtInstance)
-					tmpAbteilung.save()
+				berichtInstance.abteilung = tmpAbteilung
+				tmpAbteilung.addToBerichte(berichtInstance)
+				tmpAbteilung.save()
 
-					redirect(controller: 'abteilung', action: "show", id: tmpAbteilung.id)
-					return false
-				}
-				redirect(action: "list")
+				flash.message = "${message(code: 'default.created.message', args: [message(code: 'bericht.label', default: 'Bericht'), berichtInstance?.ueberschrift ?: berichtInstance?.abteilung?.name])}"
+				redirect(controller: 'abteilung', action: "show", id: tmpAbteilung.id)
 				return false
 			}
+		}
+		else if (berichtInstance.save(flush: true))
+		{
+			flash.message = "${message(code: 'default.created.message', args: [message(code: 'bericht.label', default: 'Bericht'), berichtInstance?.ueberschrift ?: berichtInstance?.abteilung?.name])}"
 
-        }
+			redirect(action: "list")
+			return false
+		}
         else {
             render(view: "create", model: [berichtInstance: berichtInstance])
         }
@@ -79,17 +82,23 @@ class BerichtController {
                 }
             }
             berichtInstance.properties = params
-            if (!berichtInstance.hasErrors() && berichtInstance.save(flush: true)) {
-				flash.message = "${message(code: 'default.updated.message', args: [message(code: 'bericht.label', default: 'Bericht'), berichtInstance.id])}"
+			if (params.abteilungId)
+			{
 				Abteilung tmpAbteilung = Abteilung.get(params.abteilungId)
-				if(tmpAbteilung)
+				if (tmpAbteilung)
 				{
+					berichtInstance.abteilung = tmpAbteilung
 					tmpAbteilung.addToBerichte(berichtInstance)
 					tmpAbteilung.save()
 
+					flash.message = "${message(code: 'default.updated.message', args: [message(code: 'bericht.label', default: 'Bericht'), berichtInstance?.ueberschrift ?: berichtInstance?.abteilung?.name])}"
 					redirect(controller: 'abteilung', action: "show", id: tmpAbteilung.id)
 					return false
 				}
+			}
+            else if (!berichtInstance.hasErrors() && berichtInstance.save(flush: true)) {
+				flash.message = "${message(code: 'default.updated.message', args: [message(code: 'bericht.label', default: 'Bericht'), berichtInstance?.ueberschrift ?: berichtInstance?.abteilung?.name])}"
+
 				redirect(action: "list")
 				return false
             }
@@ -100,6 +109,7 @@ class BerichtController {
         else {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'bericht.label', default: 'Bericht'), params.id])}"
             redirect(action: "list")
+			return false
         }
     }
 

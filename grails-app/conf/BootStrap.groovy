@@ -215,16 +215,16 @@ class BootStrap
 			 VfB Eppingen auf dem Spielfeld. Yakup und Yannik erzielten durch schöne Treffer den Spielendstand
 			 2:0."""
 
-			Bericht tmpBericht = new Bericht(ueberschrift: 'Spieltag in Stetten', inhalt: tmpInhalt)
-			tmpBericht.save()
+			Bericht tmpBericht = new Bericht(ueberschrift: 'Spieltag in Stetten', inhalt: tmpInhalt, abteilung: fussball_damen)
+			//tmpBericht.save()
 			fussball_damen.addToBerichte(tmpBericht)
 
 			String tmpInhalt2 = """Auch dieses Jahr war die Fußballabteilung auf dem Gassenfest vertreten.
 			Bei typischen Gassenfest-Wetter wurden unsere Nerven beim Aufbauen einmal mehr strapaziert,
 			danach wurde dann bei bester Stimmung ausgelassen bis in den frühen Morgen gefeiert! Wir bedanken
 			uns bei allen Helfern die das Fest wieder zu einem Erfolg gemacht haben."""
-			Bericht tmpBericht2 = new Bericht(ueberschrift: 'Rückblick Gassenfest 2009', inhalt: tmpInhalt2)
-			tmpBericht2.save()
+			Bericht tmpBericht2 = new Bericht(ueberschrift: 'Rückblick Gassenfest 2009', inhalt: tmpInhalt2, abteilung: fussball_damen)
+			//tmpBericht2.save()
 			fussball_damen.addToBerichte(tmpBericht2)
 
 			if(Environment.isDevelopmentMode())

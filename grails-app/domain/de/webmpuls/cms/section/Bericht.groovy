@@ -5,7 +5,7 @@ import de.webmpuls.cms.start.News
 
 class Bericht extends News
 {
-	static belongsTo = Abteilung
+	static belongsTo = [abteilung: Abteilung]
 	
 	Album album
 

@@ -63,7 +63,7 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: berichtInstance, field: 'inhalt', 'errors')}">
                                     %{--<g:textField name="inhalt" value="${berichtInstance?.inhalt}" />--}%
-									<g:render template="/global/ckeditor/editor" model="['inhalt': berichtInstance?.inhalt]" />
+									<g:render template="/global/ckeditor/editor" model="['inhalt': berichtInstance?.inhalt, width: '614']" />
                                 </td>
                             </tr>
 
