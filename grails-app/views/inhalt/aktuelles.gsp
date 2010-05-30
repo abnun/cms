@@ -37,7 +37,7 @@
 					</table>
 
 			  		<!-- Terminvorschau -->
-			  		<g:render template="/inhalt/start/termine" model="[]" />
+			  		<g:render template="/inhalt/start/termine" />
 				</td>
 			</tr>
 			<tr>

@@ -61,8 +61,8 @@
                 <div class="dialog">
                     <jq:jquery>
 						$(":checkbox[name='findetStatt']").change(function() {
-							$('#zusatzInfoSPAN1').slideToggle('slow');
-							$('#zusatzInfoSPAN2').slideToggle('slow');
+							$("#zusatzInfoSPAN1").slideToggle('slow');
+							$("#zusatzInfoSPAN2").slideToggle('slow');
 						});
 
 						<g:if test="${!terminInstance.findetStatt}">

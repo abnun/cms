@@ -54,7 +54,7 @@
 
                             <g:sortableColumn property="findetStatt" title="${message(code: 'termin.findetStatt.label', default: 'Findet Statt')}" />
                         
-                            <g:sortableColumn property="zusatzinfo" title="${message(code: 'termin.zusatzinfo.label', default: 'Zusatzinfo')}" />
+                            <g:sortableColumn property="zusatzinfo" title="${message(code: 'termin.zusatzinfo.default.label', default: 'Zusatzinfo')}" />
 
 							<th>&nbsp;</th>
                         </tr>

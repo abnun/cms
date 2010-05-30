@@ -20,10 +20,10 @@ class News
     static constraints =
 	{
 		ueberschrift()
-		abteilung()
 		inhalt(widget: 'textarea')
 		dateCreated(display: false, nullable: true)
 		lastModified(display: false, nullable: true)
-    }
+		abteilung()
+	}
 
 }

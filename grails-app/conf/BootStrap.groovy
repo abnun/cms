@@ -12,6 +12,7 @@ import org.cyberneko.html.parsers.SAXParser
 import de.webmpuls.cms.xml.XMLParserHandler
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
 import de.webmpuls.cms.section.*
+import grails.util.Environment
 
 class BootStrap
 {
@@ -213,11 +214,23 @@ class BootStrap
 			 einen d’rauf. Das Spiel endete schließlich mit 2:1 für uns. Zu guter Letzt standen wir gegen den
 			 VfB Eppingen auf dem Spielfeld. Yakup und Yannik erzielten durch schöne Treffer den Spielendstand
 			 2:0."""
-			Bericht tmpBericht = new Bericht(ueberschrift: ' Spieltag in Stetten', inhalt: tmpInhalt)
+
+			Bericht tmpBericht = new Bericht(ueberschrift: 'Spieltag in Stetten', inhalt: tmpInhalt)
 			tmpBericht.save()
 			fussball_damen.addToBerichte(tmpBericht)
 
-			fussball_damen.save()
+			String tmpInhalt2 = """Auch dieses Jahr war die Fußballabteilung auf dem Gassenfest vertreten.
+			Bei typischen Gassenfest-Wetter wurden unsere Nerven beim Aufbauen einmal mehr strapaziert,
+			danach wurde dann bei bester Stimmung ausgelassen bis in den frühen Morgen gefeiert! Wir bedanken
+			uns bei allen Helfern die das Fest wieder zu einem Erfolg gemacht haben."""
+			Bericht tmpBericht2 = new Bericht(ueberschrift: 'Rückblick Gassenfest 2009', inhalt: tmpInhalt2)
+			tmpBericht2.save()
+			fussball_damen.addToBerichte(tmpBericht2)
+
+			if(Environment.isDevelopmentMode())
+			{
+				fussball_damen.save()
+			}
 		}
 
 		Abteilung fussball_herren = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_HERREN)

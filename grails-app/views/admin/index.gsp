@@ -32,11 +32,11 @@
 							Bereich 'Anzeigen' verwalten
 						</a>
 					</li>
-					%{--<li>
+					<li>
 						<a href="${createLink(controller: 'news')}">
-							News
+							Bereich 'News' verwalten
 						</a>
-					</li>--}%
+					</li>
 					<li>
 						<a href="${createLink(controller: 'termin')}">
 							Bereich 'Termine' verwalten

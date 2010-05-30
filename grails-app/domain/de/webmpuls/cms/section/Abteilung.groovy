@@ -18,7 +18,11 @@ class Abteilung
 	static mapping =
 	{
 		//mitarbeiterfunktionen(sort: 'name')
+		//unterabteilungen(sort: 'name')
 		//personen(sort: 'nachname')
+		//trainingszeiten(sort: 'nachname')
+		//berichte(sort: 'lastUpdated')
+		//spielplaene(sort: 'nachname')
 		sort("name")
 		order("asc")
 

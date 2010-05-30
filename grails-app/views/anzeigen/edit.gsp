@@ -96,12 +96,28 @@
                                 </td>
                             </tr>
 
+							<jq:jquery>
+								$(":checkbox[name='takeEndDate']").change(function() {
+								   $("#endDatumSPAN1").slideToggle('slow');
+								   $("#endDatumSPAN2").slideToggle('slow');
+								});
+
+								<g:if test="${anzeigenInstance?.takeEndDate}">
+									$("#endDatumSPAN1").slideToggle('slow');
+									$("#endDatumSPAN2").slideToggle('slow');
+								</g:if>
+							</jq:jquery>
+
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="endDatum"><g:message code="anzeigen.endDatum.label" default="End Datum" /></label>
+									<span id="endDatumSPAN1" style="display: none;">
+										<label for="endDatum"><g:message code="anzeigen.endDatum.label" default="End Datum" /></label>
+									</span>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: anzeigenInstance, field: 'endDatum', 'errors')}">
-                                    <g:datePicker name="endDatum" precision="day" value="${anzeigenInstance?.endDatum}" noSelection="['': '']" />
+                                    <span id="endDatumSPAN2" style="display: none;">
+										<g:datePicker name="endDatum" precision="day" value="${anzeigenInstance?.endDatum}" noSelection="['': '']" />
+									</span>
                                 </td>
                             </tr>
                         

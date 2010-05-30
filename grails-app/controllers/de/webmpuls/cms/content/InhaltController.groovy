@@ -3,6 +3,7 @@ package de.webmpuls.cms.content
 import de.webmpuls.cms.start.Anzeigen
 import de.webmpuls.cms.start.News
 import de.webmpuls.cms.start.Termin
+import de.webmpuls.cms.section.Bericht
 
 class InhaltController
 {

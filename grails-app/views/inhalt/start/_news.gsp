@@ -20,9 +20,9 @@
 <g:if test="${newsList}">
 	<g:each status="i" var="news" in="${newsList}">
 		<tr>
-			<td valign="top"><link:abteilungShow code="${news.abteilung?.code}"><img src="${resource(dir: 'bilder/aktuell', file: 'p_' + news.abteilung.code + '.gif')}" width="32" height="32" border="0"></link:abteilungShow></td>
+			<td valign="top"><link:abteilungShow code="${news.abteilung?.code}"><img src="${resource(dir: 'bilder/aktuell', file: 'p_' + news.abteilung.code + '.jpg')}" width="32" height="32" border="0"></link:abteilungShow></td>
 			<td valign="top">&nbsp;</td>
-			<td height="25" valign="top"><link:abteilungShow code="${news.abteilung?.code}">${news.ueberschrift ?: news.abteilung?.name}</link:abteilungShow><br><span class="copy">${news.inhalt}</span></td>
+			<td height="25" valign="top"><link:abteilungShow code="${news.abteilung?.code}">${news.ueberschrift ?: news.abteilung?.name}</link:abteilungShow><br><span class="copy">${news.inhalt[0..60]}${news.inhalt.size() > 60 ? '[...]' : ''}</span></td>
 		</tr>
 		<tr valign="middle">
 			<td height="10" colspan="3"><img src="${resource(dir: 'bilder/divers', file: 'linie_grau.png')}" width="270" height="3"></td>

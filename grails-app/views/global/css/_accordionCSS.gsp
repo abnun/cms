@@ -15,6 +15,8 @@
 	}
 	.ui-accordion .ui-accordion-content {
 		padding: inherit;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	.ui-state-default .ui-icon,
 	.ui-state-hover .ui-icon {
@@ -30,9 +32,9 @@
 		color: inherit;
 	}
 	.own-icon-circle-arrow-e {
-		background-image: url('${resource(dir: 'bilder/divers', file: 'arrow_right.jpg')}')
+		background-image: url('${resource(dir: 'bilder/divers', file: 'arrow_right.jpg')}');
 	}
 	.own-icon-circle-arrow-s {
-		background-image: url('${resource(dir: 'bilder/divers', file: 'arrow_down.jpg')}')
+		background-image: url('${resource(dir: 'bilder/divers', file: 'arrow_down.jpg')}');
 	}
 </style>

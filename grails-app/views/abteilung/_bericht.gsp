@@ -11,4 +11,8 @@
 		});
 	</jq:jquery>
 </shiro:hasRole>
-<g:render template="/global/ui/accordionTab" model="[itemName: 'bericht', item: bericht, accordionTabUeberschrift1: bericht.ueberschrift, text: bericht.inhalt, isEditable: true, isAbteilung: true]" />
+<%
+    params['abteilungId'] = abteilung.id
+%>
+<g:render template="/global/ui/accordionTabAbteilung" model="[itemName: 'bericht', item: bericht, accordionTabUeberschrift1: bericht.ueberschrift, text: bericht.inhalt, datum: bericht.lastUpdated, isEditable: true, params: params]" />
+<img src="${resource(dir: 'bilder/divers', file: 'linie_grau.png')}" width="695" height="3">
