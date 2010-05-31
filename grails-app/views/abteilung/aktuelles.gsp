@@ -226,7 +226,7 @@
 		<td width="130"><!-- InstanceBeginEditable name="info" -->
 			<g:each var="abteilungsLeiter" in="${abteilungsLeiterCollection}">
 				<p>
-					<abteilungns:abteilungsLeiter head="${abteilungsLeiter}" section="${abteilungInstance}"/>
+					<abteilungns:abteilungsLeiter head="${abteilungsLeiter}" section="${abteilungInstance}" />
 				</p>
 			</g:each>
 			<p>&nbsp;</p>

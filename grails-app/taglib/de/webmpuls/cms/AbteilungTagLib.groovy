@@ -15,7 +15,7 @@ class AbteilungTagLib
 
 		out << "<div class=\"box\" id=\"identifier\" style=\"width: 130px; float: left;\">"
 
-		String header = message(code: 'section.head.label', args: section)
+		String header = message(code: 'section.head.label', args: [section] as String)
 
 		out << render(template: '/global/ui/box/boxHeader', model: [header: header])
 
