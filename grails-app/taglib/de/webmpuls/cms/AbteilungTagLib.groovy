@@ -1,6 +1,7 @@
 package de.webmpuls.cms
 
 import de.webmpuls.cms.people.Person
+import de.webmpuls.cms.section.Abteilung
 
 class AbteilungTagLib
 {
@@ -10,12 +11,12 @@ class AbteilungTagLib
 	{
 		attrs ->
 
-		String section = attrs['section']
+		Abteilung section = attrs['section']
 		Person headP = attrs['head']
 
 		out << "<div class=\"box\" id=\"identifier\" style=\"width: 130px; float: left;\">"
 
-		String header = message(code: 'section.head.label', args: [section] as String[])
+		String header = message(code: 'section.head.label', args: [section.name])
 
 		out << render(template: '/global/ui/box/boxHeader', model: [header: header])
 
