@@ -9,10 +9,10 @@
 		<g:render template="/global/css/accordionCSS" />
     </head>
     <body>
-	<table width="614" border="0" cellpadding="0" cellspacing="0">
+	<table width="614" border="0" cellpadding="0" cellspacing="0" style="width: 614px;">
 		<tr align="left" valign="top">
 			<td height="227"><!-- InstanceBeginEditable name="Text" -->
-				<table border="0" align="left" cellspacing="10">
+				<table width="614" border="0" align="left" cellspacing="10" style="width: 614px;">
 					<tr>
 						<td valign="top" class="copy">
 							<table border="0" cellpadding="0" cellspacing="3">
@@ -20,7 +20,7 @@
 									<td></td>
 									<td><span class="headline_dunkel">${abteilungInstance?.anzeigeName ?: abteilungInstance?.name}</span></td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="26"></td>
-									<td class="copy">Landesstaffel 1 Bezirk Nord</td>
+									<td class="copy">%{--Landesstaffel 1 Bezirk Nord--}%</td>
 								</tr>
 							</table>
 							<p>&nbsp;</p></td>
@@ -72,7 +72,7 @@
 			<td width="130"><!-- InstanceBeginEditable name="info" -->
 				<g:each var="abteilungsLeiter" in="${abteilungsLeiterCollection}">
 					<p>
-						<g:render template="/global/section/head" model="[head: abteilungsLeiter, section: abteilungInstance]"/>
+						<abteilungns:abteilungsLeiter head="${abteilungsLeiter}" section="${abteilungInstance}" />
 					</p>
 				</g:each>
 				<p>&nbsp;</p>

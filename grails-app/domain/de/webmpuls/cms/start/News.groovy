@@ -26,4 +26,8 @@ class News
 		abteilung()
 	}
 
+	def String toString()
+	{
+		return "${abteilung} | ${ueberschrift}"
+	}
 }

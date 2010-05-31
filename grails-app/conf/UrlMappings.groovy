@@ -6,7 +6,7 @@ class UrlMappings
 	static mappings = {
 		name abteilungShow: "/abteilungen/$code" {
 				controller = 'abteilung'
-				action = 'show'
+				action = 'aktuelles'
 			}
 
 		"/aktuelles"
@@ -19,6 +19,18 @@ class UrlMappings
 		{
 			controller = "sponsor"
 			action = "list"
+		}
+
+		"/news"
+		{
+			controller = "news"
+			action = "all"
+		}
+
+		"/anzeigen"
+		{
+			controller = "anzeigen"
+			action = "all"
 		}
 
 		"/sites/$name**.htm"

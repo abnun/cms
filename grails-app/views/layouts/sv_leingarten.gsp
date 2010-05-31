@@ -361,7 +361,7 @@
     </tr>
   </table>
 </div>
-<div id="impressum" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:2; left: 112px; top: 456px;">
+<div id="impressum" style="position:absolute; visibility:hidden; width:114px; height:115px; z-index:2; left: 112px; top: 435px;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
     <tr>
       <td width="4" height="20" bgcolor="#1760A8" class="marker">&nbsp; </td>

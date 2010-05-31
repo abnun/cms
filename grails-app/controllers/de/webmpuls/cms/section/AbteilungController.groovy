@@ -48,43 +48,35 @@ class AbteilungController {
         }
         else
 		{
-			//println abteilungInstance.code
-			if (!allowedCodes.contains(abteilungInstance.code))
+
+			Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
 			{
-				response.sendRedirect("${request.getContextPath()}/sites/abteilungen/${abteilungInstance.code}.gsp")
-				return false
+				Funktion funktion ->
+
+				if (funktion.code == Funktion.ABTEILUNGSLEITER)
+				{
+					funktion
+				}
 			}
-			else
+
+			Collection abteilungsLeiterCollection = null
+
+			if (abteilungsLeiterFunktion)
 			{
-				Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
+				abteilungsLeiterCollection = abteilungInstance.personen.findAll
 				{
-					Funktion funktion ->
-
-					if (funktion.code == Funktion.ABTEILUNGSLEITER)
-					{
-						funktion
-					}
+					Person tmpPerson ->
+					abteilungsLeiterFunktion.personen.contains(tmpPerson)
 				}
-
-				Collection abteilungsLeiterCollection = null
-
-				if (abteilungsLeiterFunktion)
-				{
-					abteilungsLeiterCollection = abteilungInstance.personen.findAll
-					{
-						Person tmpPerson ->
-						abteilungsLeiterFunktion.personen.contains(tmpPerson)
-					}
-				}
-
-				if (abteilungsLeiterCollection)
-				{
-					abteilungsLeiterCollection = abteilungsLeiterCollection.sort {a, b -> a.nachname <=> b.nachname}
-				}
-
-				return [abteilungInstance: abteilungInstance, abteilungsLeiterCollection: abteilungsLeiterCollection]
 			}
-        }
+
+			if (abteilungsLeiterCollection)
+			{
+				abteilungsLeiterCollection = abteilungsLeiterCollection.sort {a, b -> a.nachname <=> b.nachname}
+			}
+
+			return [abteilungInstance: abteilungInstance, abteilungsLeiterCollection: abteilungsLeiterCollection]
+		}
     }
 
     def edit = {
@@ -346,5 +338,62 @@ class AbteilungController {
 			}
 		}
 
+	}
+
+	def aktuelles =
+	{
+		println("params -> $params")
+
+		def abteilungInstance = Abteilung.get(params.id)
+        if (!abteilungInstance)
+		{
+			abteilungInstance = Abteilung.findByCode(params.code)
+		}
+
+        if (!abteilungInstance)
+		{
+            flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), params.id])}"
+            redirect(uri: "/")
+        }
+        else
+		{
+			//println abteilungInstance.code
+			if (!allowedCodes.contains(abteilungInstance.code))
+			{
+				response.sendRedirect("${request.getContextPath()}/sites/abteilungen/${abteilungInstance.code}.gsp")
+				return false
+			}
+			else
+			{
+				Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
+				{
+					Funktion funktion ->
+
+					if (funktion.code == Funktion.ABTEILUNGSLEITER)
+					{
+						funktion
+					}
+				}
+
+				Collection abteilungsLeiterCollection = null
+
+				if (abteilungsLeiterFunktion)
+				{
+					abteilungsLeiterCollection = abteilungInstance.personen.findAll
+					{
+						Person tmpPerson ->
+						abteilungsLeiterFunktion.personen.contains(tmpPerson)
+					}
+				}
+
+				if (abteilungsLeiterCollection)
+				{
+					abteilungsLeiterCollection = abteilungsLeiterCollection.sort {a, b -> a.nachname <=> b.nachname}
+				}
+
+				println abteilungInstance.berichte
+				return [abteilungInstance: abteilungInstance, abteilungsLeiterCollection: abteilungsLeiterCollection]
+			}
+		}
 	}
 }

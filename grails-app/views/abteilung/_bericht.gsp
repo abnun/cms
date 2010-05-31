@@ -14,5 +14,5 @@
 <%
     params['abteilungId'] = abteilung.id
 %>
-<g:render template="/global/ui/accordionTabAbteilung" model="[itemName: 'bericht', item: bericht, accordionTabUeberschrift1: bericht.ueberschrift, text: bericht.inhalt, datum: bericht.lastUpdated, isEditable: true, params: params]" />
+<g:render template="/global/ui/accordion/accordionTabAbteilung" model="[itemName: 'bericht', item: bericht, accordionTabUeberschrift1: bericht.ueberschrift, text: bericht.inhalt, datum: bericht.lastUpdated, isEditable: true, params: params]" />
 <img src="${resource(dir: 'bilder/divers', file: 'linie_grau.png')}" width="695" height="3">

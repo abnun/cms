@@ -3,7 +3,7 @@
 <div style="border-bottom: 1px solid #1760a8">
 	<h3>
 		<a href="javascript: void(0);">
-			<g:render template="/global/ui/accordionHeaderDefault" model="[isAbteilung: isAbteilung, accordionTabUeberschrift1: accordionTabUeberschrift1, accordionTabUeberschrift2: accordionTabUeberschrift2]"/>
+			<g:render template="/global/ui/accordion/accordionHeaderDefault" model="[isAbteilung: isAbteilung, accordionTabUeberschrift1: accordionTabUeberschrift1, accordionTabUeberschrift2: accordionTabUeberschrift2]"/>
 		</a>
 	</h3>
 	<div style="max-width: 270px; overflow: visible;">
