@@ -48,34 +48,7 @@ class AbteilungController {
         }
         else
 		{
-
-			Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
-			{
-				Funktion funktion ->
-
-				if (funktion.code == Funktion.ABTEILUNGSLEITER)
-				{
-					funktion
-				}
-			}
-
-			Collection abteilungsLeiterCollection = null
-
-			if (abteilungsLeiterFunktion)
-			{
-				abteilungsLeiterCollection = abteilungInstance.personen.findAll
-				{
-					Person tmpPerson ->
-					abteilungsLeiterFunktion.personen.contains(tmpPerson)
-				}
-			}
-
-			if (abteilungsLeiterCollection)
-			{
-				abteilungsLeiterCollection = abteilungsLeiterCollection.sort {a, b -> a.nachname <=> b.nachname}
-			}
-
-			return [abteilungInstance: abteilungInstance, abteilungsLeiterCollection: abteilungsLeiterCollection]
+			return [abteilungInstance: abteilungInstance]
 		}
     }
 
@@ -365,35 +338,72 @@ class AbteilungController {
 			}
 			else
 			{
-				Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
-				{
-					Funktion funktion ->
-
-					if (funktion.code == Funktion.ABTEILUNGSLEITER)
-					{
-						funktion
-					}
-				}
-
-				Collection abteilungsLeiterCollection = null
-
-				if (abteilungsLeiterFunktion)
-				{
-					abteilungsLeiterCollection = abteilungInstance.personen.findAll
-					{
-						Person tmpPerson ->
-						abteilungsLeiterFunktion.personen.contains(tmpPerson)
-					}
-				}
-
-				if (abteilungsLeiterCollection)
-				{
-					abteilungsLeiterCollection = abteilungsLeiterCollection.sort {a, b -> a.nachname <=> b.nachname}
-				}
-
-				println abteilungInstance.berichte
-				return [abteilungInstance: abteilungInstance, abteilungsLeiterCollection: abteilungsLeiterCollection]
+				return [abteilungInstance: abteilungInstance]
 			}
+		}
+	}
+
+	def abteilungsLeiter =
+	{
+		def abteilungInstance = Abteilung.get(params.id)
+		if (!abteilungInstance)
+		{
+			abteilungInstance = Abteilung.findByCode(params.code)
+		}
+
+		if (!abteilungInstance)
+		{
+			flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), params.id])}"
+			redirect(uri: "/")
+		}
+		else
+		{
+			Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
+			{
+				Funktion funktion ->
+
+				if (funktion.code == Funktion.ABTEILUNGSLEITER)
+				{
+					funktion
+				}
+			}
+
+			Collection abteilungsLeiterCollection = null
+
+			if (abteilungsLeiterFunktion)
+			{
+				abteilungsLeiterCollection = abteilungInstance.personen.findAll
+				{
+					Person tmpPerson ->
+					abteilungsLeiterFunktion.personen.contains(tmpPerson)
+				}
+			}
+
+			if (abteilungsLeiterCollection)
+			{
+				abteilungsLeiterCollection = abteilungsLeiterCollection.sort {a, b -> a.nachname <=> b.nachname}
+			}
+
+			return [abteilungInstance: abteilungInstance, abteilungsLeiterCollection: abteilungsLeiterCollection]
+		}
+	}
+
+	def trainingszeiten =
+	{
+		def abteilungInstance = Abteilung.get(params.id)
+		if (!abteilungInstance)
+		{
+			abteilungInstance = Abteilung.findByCode(params.code)
+		}
+
+		if (!abteilungInstance)
+		{
+			flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), params.id])}"
+			redirect(uri: "/")
+		}
+		else
+		{
+			return [abteilungInstance: abteilungInstance, trainingszeiten: abteilungInstance.trainingszeiten]
 		}
 	}
 }

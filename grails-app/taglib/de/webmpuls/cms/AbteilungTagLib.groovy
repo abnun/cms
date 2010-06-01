@@ -2,6 +2,7 @@ package de.webmpuls.cms
 
 import de.webmpuls.cms.people.Person
 import de.webmpuls.cms.section.Abteilung
+import de.webmpuls.cms.section.Trainingszeit
 
 class AbteilungTagLib
 {
@@ -14,13 +15,36 @@ class AbteilungTagLib
 		Abteilung section = attrs['section']
 		Person headP = attrs['head']
 
-		out << "<div class=\"box\" id=\"identifier\" style=\"width: 130px; float: left;\">"
+		out << "<div class=\"box\" id=\"identifier\" style=\"width: 130px; margin-top: 20px; margin-left: 10px; float: left;\">"
 
 		String header = message(code: 'section.head.label', args: [section.name])
 
 		out << render(template: '/global/ui/box/boxHeader', model: [header: header])
 
 		String body = render(template: '/global/section/abteilungsLeiterBody', model: [head: headP])
+		out << render(template: '/global/ui/box/boxBody', model: [body: body])
+
+		out << render(template: '/global/ui/box/boxFooter')
+
+		out << "</div>"
+
+		return out
+	}
+
+	def trainingszeiten =
+	{
+		attrs ->
+
+		Abteilung section = attrs['section']
+		Trainingszeit trainingszeit = attrs['trainingszeit']
+
+		out << "<div class=\"box\" id=\"identifier\" style=\"width: 130px; margin-top: 20px; margin-left: 10px; float: left;\">"
+
+		String header = trainingszeit.name
+
+		out << render(template: '/global/ui/box/boxHeader', model: [header: header])
+
+		String body = render(template: '/global/section/trainingszeitenBody', model: [trainingszeit: trainingszeit])
 		out << render(template: '/global/ui/box/boxBody', model: [body: body])
 
 		out << render(template: '/global/ui/box/boxFooter')

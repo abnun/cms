@@ -39,92 +39,13 @@
         </table>
       </td>
       <td width="120">
-        <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
-          <tbody>
-            <tr>
-              <td height="20" bgcolor="#93BEEE" class="infohead">
-                Abteilungsleiter
-              </td>
-            </tr>
-            <tr>
-              <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                Florian Schütz
-                <br/>
-                Im Rosenberger 1
-                <br/>
-                74211 Leingarten
-                <br/>
-                <a href="mailto:abteilungsleiter.badminton@googlemail.com" target="_blank">
-                  abteilungsleiter.
-                  <br/>
-                  badminton@
-                  <br/>
-                  googlemail.com
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
-          <tbody>
-            <tr>
-              <td height="20" bgcolor="#93BEEE" class="infohead">
-                Traininszeiten 
-                  Jugend
-              </td>
-            </tr>
-            <tr>
-              <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tbody>
-                    <tr>
-                      <td width="40" class="copy">
-                        Di
-                      </td>
-                      <td class="copy">
-                        17.15 - 19.00
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
-          <tbody>
-            <tr>
-              <td height="20" bgcolor="#93BEEE" class="infohead">
-                Trainingszeiten 
-                  Erwachsene
-              </td>
-            </tr>
-            <tr>
-              <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tbody>
-                    <tr>
-                      <td width="40" class="copy">
-                        Di
-                      </td>
-                      <td class="copy">
-                        19.00 - 20.15
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="copy">
-                        Fr
-                      </td>
-                      <td class="copy">
-                        20.15 - 22.30
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+		  <g:if test="${params.id && ((String)params.id).endsWith('.gsp')}">
+
+			  <g:include controller="abteilung" action="abteilungsLeiter" params="[code: ((String)params.id).substring(0, ((String)params.id).lastIndexOf('.gsp'))]"/>
+
+			  <g:include controller="abteilung" action="trainingszeiten" params="[code: ((String)params.id).substring(0, ((String)params.id).lastIndexOf('.gsp'))]"/>
+
+		  </g:if>
         <p>
            
         </p>

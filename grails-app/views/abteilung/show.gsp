@@ -70,13 +70,9 @@
 				</table>
 				<!-- InstanceEndEditable --></td>
 			<td width="130"><!-- InstanceBeginEditable name="info" -->
-				<g:each var="abteilungsLeiter" in="${abteilungsLeiterCollection}">
-					<p>
-						<abteilungns:abteilungsLeiter head="${abteilungsLeiter}" section="${abteilungInstance}" />
-					</p>
-				</g:each>
-				<p>&nbsp;</p>
-				<!-- InstanceEndEditable --></td>
+			<g:include controller="abteilung" action="abteilungsLeiter" id="${abteilungInstance.id}" />
+			<p>&nbsp;</p>
+			<!-- InstanceEndEditable --></td>
 		</tr>
 	</table>
     </body>

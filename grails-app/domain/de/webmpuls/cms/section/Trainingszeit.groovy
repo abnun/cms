@@ -2,19 +2,20 @@ package de.webmpuls.cms.section
 
 class Trainingszeit
 {
+	static hasMany = [trainingstage: Trainingstag]
+
 	String name = "Trainingszeiten"
-
-	String tag
-
-	String vonBis
 
 	String ort
 
     static constraints =
 	{
 		name(blank: false)
-		tag(nullable: false, blank: false)
-		vonBis(nullable: false, blank: false)
 		ort(nullable: true, blank: true)
     }
+
+	def String toString()
+	{
+		return "${name} | ${trainingstage?.iterator()?.next()?.tag ?: ''} | ${trainingstage?.iterator()?.next()?.uhrzeiten ?: ''} | ${ort ?: ''}"
+	}
 }

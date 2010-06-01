@@ -2,7 +2,7 @@
 <g:if test="${head.bild}">
 	<a href="mailto:${head.email}"><img style="margin-bottom: 5px;" width="110" border="0" src="${wm_photo_album.pathToImage(picture: head.bild)}"/></a><br/>
 </g:if>
-<span class="copy">${head.vorname}&nbsp;${head.nachname}</span>
+<span class="copy">${head.vorname}&nbsp;${head.nachname}</span><br/>
 <g:if test="${head.adresseAnzeigen}">
 	<g:if test="${head.telefon1}">
 		<span class="copy">${head.telefon1}</span><br/>

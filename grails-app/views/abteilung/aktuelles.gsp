@@ -50,39 +50,6 @@
 						<p>&nbsp;</p></td>
 				</tr>
 			</table>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>
-				<script>
-					<!--
-							  function PopupFenster(jahr) {
-									  if (jahr == "310709") {
-									window.open("jufu_camp_09.htm", "Popup5", "width=590, height=530, scrollbars" );
-									}
-									if (jahr == "290309") {
-									window.open("jufu_pics_290309.htm", "Popup3", "width=590, height=530, scrollbars" );
-									}
-									  if (jahr == "040409") {
-									window.open("jufu_pics_040409.htm", "Popup4", "width=590, height=530, scrollbars" );
-									}
-									}
-							  -->
-				</script>
-			</p>
 			<table width="570" border="0" cellspacing="10">
 				<tr valign="top">
 					<td colspan="2" class="headline">1. Fu&szlig;ball-Sommercamp 2009
@@ -224,13 +191,9 @@
 			</table>
 			<!-- InstanceEndEditable --></td>
 		<td width="130"><!-- InstanceBeginEditable name="info" -->
-			<g:each var="abteilungsLeiter" in="${abteilungsLeiterCollection}">
-				<p>
-					<abteilungns:abteilungsLeiter head="${abteilungsLeiter}" section="${abteilungInstance}" />
-				</p>
-			</g:each>
+		<g:include controller="abteilung" action="abteilungsLeiter" id="${abteilungInstance.id}"/>
 			<p>&nbsp;</p>
-			<!-- InstanceEndEditable --></td>
+		<!-- InstanceEndEditable --></td>
 	</tr>
 </table>
 
