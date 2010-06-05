@@ -46,7 +46,7 @@
 						<table>
 							<tbody>
 							<tr>
-								<td align="right" valign="top">
+								<td align="right" valign="middle">
 									<p class="copy">
 										<label for="datepickerFrom">Von</label>
 									</p>
@@ -54,7 +54,7 @@
 								<td valign="top">
 									<input name="datepickerFrom" id="datepickerFrom" type="text" autocomplete="off">
 								</td>
-								<td align="right" valign="top">
+								<td align="right" valign="middle">
 									<p class="copy">
 										<label for="datepickerTo">Bis</label>
 									</p>

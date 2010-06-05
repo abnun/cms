@@ -43,13 +43,13 @@ class MenuTagLib
 				{
 					if(abteilungFile != "fussball_-_damen_team.gsp")
 					{
-						out << "<td class=\"rubrikactiv\">Berichte</td>"
+						out << "<td class=\"rubrikactiv\">Aktuelles</td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
 						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_-_damen_team.gsp\">Das Team</a></td>"
 					}
 					else
 					{
-						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params: [code: AbteilungHelper.CODE_FUSSBALL_DAMEN], mapping: 'abteilungShow')}\">Berichte</a></td>"
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params: [code: AbteilungHelper.CODE_FUSSBALL_DAMEN], mapping: 'abteilungShow')}\">Aktuelles</a></td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
 						out << "<td class=\"rubrikactiv\">Das Team</td>"
 					}

@@ -21,8 +21,8 @@ class AbteilungTagLib
 
 		out << render(template: '/global/ui/box/boxHeader', model: [header: header])
 
-		String body = render(template: '/global/section/abteilungsLeiterBody', model: [head: headP])
-		out << render(template: '/global/ui/box/boxBody', model: [body: body])
+		String boxBody = render(template: '/global/section/abteilungsLeiterBody', model: [head: headP])
+		out << render(template: '/global/ui/box/boxBody', model: [body: boxBody])
 
 		out << render(template: '/global/ui/box/boxFooter')
 
@@ -44,8 +44,8 @@ class AbteilungTagLib
 
 		out << render(template: '/global/ui/box/boxHeader', model: [header: header])
 
-		String body = render(template: '/global/section/trainingszeitenBody', model: [trainingszeit: trainingszeit])
-		out << render(template: '/global/ui/box/boxBody', model: [body: body])
+		String boxBody = render(template: '/global/section/trainingszeitenBody', model: [trainingszeit: trainingszeit])
+		out << render(template: '/global/ui/box/boxBody', model: [body: boxBody])
 
 		out << render(template: '/global/ui/box/boxFooter')
 
@@ -65,7 +65,8 @@ class AbteilungTagLib
 		String header = message(code: "abteilung.aktuelle.ergebnisse.label")
 		out << render(template: '/global/ui/box/boxHeader', model: [header: header])
 
-		out << render(template: '/global/ui/box/boxBody', model: [body: ergebnisse])
+		String boxBody = render(template: '/global/section/ergebnisse', model: [ergebnisse: ergebnisse])
+		out << render(template: '/global/ui/box/boxBody', model: [body: boxBody])
 
 		out << render(template: '/global/ui/box/boxFooter')
 
@@ -78,14 +79,15 @@ class AbteilungTagLib
 	{
 		attrs ->
 
-		def vorschau = attrs['vorschau']
+		def vorschauSpieltage = attrs['vorschau']
 
 		out << "<div class=\"box\" id=\"identifier\" style=\"width: 330px; float: left;\">"
 
 		String header = message(code: "abteilung.vorschau.label")
 		out << render(template: '/global/ui/box/boxHeader', model: [header: header])
 
-		out << render(template: '/global/ui/box/boxBody', model: [body: vorschau])
+		String boxBody = render(template: '/global/section/vorschauSpieltage', model: [vorschauSpieltage: vorschauSpieltage])
+		out << render(template: '/global/ui/box/boxBody', model: [body: boxBody])
 
 		out << render(template: '/global/ui/box/boxFooter')
 

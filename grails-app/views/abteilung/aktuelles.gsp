@@ -15,10 +15,10 @@
 			<table border="0" align="left" cellspacing="10">
 				<tr>
 					<td valign="top" class="copy">
-						<abteilungns:aktuelleErgebnisse model="[ergebnisse: ergebnisse]"/>
+						<abteilungns:aktuelleErgebnisse ergebnisse="${ergebnisse}" />
 						<p>&nbsp;</p>
 					<td valign="top" class="copy">
-						<abteilungns:vorschau model="[vorschau: vorschau]"/>
+						<abteilungns:vorschau vorschau="${vorschau}" />
 						<p>&nbsp;</p>
 					</td>
 				</tr>

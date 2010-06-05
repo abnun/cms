@@ -44,7 +44,7 @@ class Abteilung
 			println("validation for '$v' evaluates to $isValid")
 			return isValid
 		}*/)
-		kuerzel(nullable: true, validator: { String v ->
+		kuerzel(unique: true, nullable: true/*, validator: { String v ->
 			if(v == null)
 			{
 				return true
@@ -52,7 +52,7 @@ class Abteilung
 			boolean isValid = (v ==~ /[a-z_0-9]+/)
 			println("validation for '$v' evaluates to $isValid")
 			return isValid
-		})
+		}*/)
 		anzeigeImMenu(nullable: true)
     }
 
@@ -66,21 +66,32 @@ class Abteilung
 
 	def beforeUpdate()
 	{
-		if(unterabteilungen && !unterabteilungen.isEmpty())
+		if(hasUnterAbteilungen())
 		{
 			anzeigeImMenu = true
 		}
-
-		code = AbteilungHelper.formatNameToCode(name, code)
+		
+		if (!code)
+		{
+			code = AbteilungHelper.formatNameToCode(name, code)
+		}
 	}
 
 	def beforeInsert()
 	{
-		code = AbteilungHelper.formatNameToCode(name, code)
+		if(!code)
+		{
+			code = AbteilungHelper.formatNameToCode(name, code)
+		}
 	}
 
 	def String toString()
 	{
 		return name
+	}
+
+	public boolean hasUnterAbteilungen()
+	{
+		return (unterabteilungen && !unterabteilungen.isEmpty())
 	}
 }

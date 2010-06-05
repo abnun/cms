@@ -12,7 +12,7 @@ grails.project.dependency.resolution = {
     }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     repositories {
-		grailsRepo("http://83.169.2.186/svn/grails", "myRepository")
+		grailsRepo("http://83.169.2.186/grails-svn/plugins/", "myRepository")
         grailsCentral()
         grailsPlugins()
         grailsHome()
@@ -30,7 +30,8 @@ grails.project.dependency.resolution = {
     }
 
 	plugins {
-		build "de.webmpuls:photo-album:0.2"
+		runtime "de.webmpuls:photo-album:0.2"
+		runtime "de.webmpuls:pdf:0.4.8"
 	}
 
     dependencies {
@@ -55,8 +56,8 @@ grails.project.dependency.resolution = {
 grails.project.war.file = "sv-leingarten.war"
 
 // Plugin repository
-grails.plugin.repos.discovery.myRepository="http://markus:kermit@83.169.2.186/svn/grails/"
-grails.plugin.repos.distribution.myRepository="http://markus:kermit@83.169.2.186/svn/grails/"
+grails.plugin.repos.discovery.myRepository="http://markus:kermit@83.169.2.186/grails-svn/plugins/"
+grails.plugin.repos.distribution.myRepository="http://markus:kermit@83.169.2.186/grails-svn/plugins/"
 
 grails.plugin.repos.resolveOrder=['myRepository', 'default', 'core'/*, 'myRepository'*/]
 

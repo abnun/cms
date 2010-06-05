@@ -213,6 +213,30 @@
 					</td>
 				</tr>
 
+				<tr>
+					<td valign="top" align="left" class="name">
+						<g:message code="abteilung.unterabteilungen.label" default="Unterabteilungen"/>
+					</td>
+					<td valign="top" align="left">
+						%{--<g:select name="personen" from="${abteilungInstance.personen}" multiple="yes" optionKey="id" size="${abteilungInstance.personen.size()}" value="${abteilungInstance?.personen}" disabled="disabled"/>--}%
+						<ul>
+							<g:each in="${abteilungInstance.unterabteilungen}" var="ua">
+								<li>
+									<table>
+										<tr>
+											<td valign="top" align="left" width="300">
+												<g:link controller="abteilung" action="edit" id="${ua.id}">${ua?.encodeAsHTML()}</g:link>
+											</td>
+											<td valign="top" align="left">
+												<g:link controller="abteilung" action="removeUnterAbteilung" params="['abteilung.id': ua.id, 'id': abteilungInstance.id]" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');"><span class="ui-icon ui-icon-circle-minus" title="${ua?.encodeAsHTML()} löschen"></span></g:link>
+											</td>
+										</tr>
+									</table>
+								</li>
+							</g:each>
+						</ul>
+					</td>
+				</tr>
 				%{--<tr class="prop">
 									<td valign="top" class="name">
 									  <label for="unterabteilungen"><g:message code="abteilung.unterabteilungen.label" default="Unterabteilungen" /></label>

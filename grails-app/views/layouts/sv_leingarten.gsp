@@ -71,14 +71,6 @@
     <td width="10" height="20" bgcolor="#1760A8">&nbsp;</td>
     <td height="20" bgcolor="#1760A8"><!-- InstanceBeginEditable name="rubriken" -->
 
-      <table border="0" cellpadding="0" cellspacing="3" class="rubrik">
-        <tr>
-			<td></td>
-			<td class="rubrikactiv">
-				<menu:header_menu />
-			</td>
-		</tr>
-      </table>
 		<shiro:isLoggedIn>
 			<table border="0" cellspacing="0" class="copy" style="float: right; color: white;">
 				<tbody>
@@ -90,19 +82,27 @@
 						<img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"/>
 					</td>
 					<td class="copy">
-						&nbsp;<g:link controller="admin" style="color: white;"><g:message code="admin.home.link.lable" default="Dashboard" /></g:link>&nbsp;
+						&nbsp;<g:link controller="admin" style="color: white;"><g:message code="admin.home.link.lable" default="Dashboard"/></g:link>&nbsp;
 					</td>
 					<td>
 						<img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"/>
 					</td>
 					<td class="copy">
-						&nbsp;<g:link controller="auth" action="signOut" style="color: white;" onclick="return confirm('${message(code: 'logout.confirm')}');"><g:message code="admin.logout.link.lable" default="ausloggen" /></g:link>&nbsp;
+						&nbsp;<g:link controller="auth" action="signOut" style="color: white;" onclick="return confirm('${message(code: 'logout.confirm')}');"><g:message code="admin.logout.link.lable" default="ausloggen"/></g:link>&nbsp;
 					</td>
 				</tr>
 				</tbody>
 			</table>
 		</shiro:isLoggedIn>
 
+		<table border="0" cellpadding="0" cellspacing="3" class="rubrik">
+			<tr>
+				<td></td>
+				<td class="rubrikactiv">
+					<menu:header_menu/>
+				</td>
+			</tr>
+		</table>
     <!-- InstanceEndEditable -->
 	  </td>
   </tr>
