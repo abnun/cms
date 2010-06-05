@@ -34,7 +34,7 @@ class ImportService implements ApplicationContextAware
 
 		log.debug("page -> $page")
 
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("E, dd.MM.yyy")
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("E, dd.MM.yyyy")
 
 		Date tmpDate = null
 
