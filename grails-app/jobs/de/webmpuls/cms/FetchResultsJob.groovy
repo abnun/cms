@@ -20,7 +20,7 @@ class FetchResultsJob
 		}
 		else
 		{
-			cron(name: 'fetchResultsTrigger', startDelay: 200000, cronExpression: "0 0 4 * * 2")
+			cron(name: 'fetchResultsTrigger', startDelay: 200000, cronExpression: "0 0 4 * * MON")
 		}
 	}
 
