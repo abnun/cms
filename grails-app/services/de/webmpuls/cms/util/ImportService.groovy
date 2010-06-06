@@ -34,7 +34,8 @@ class ImportService implements ApplicationContextAware
 
 		log.debug("page -> $page")
 
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEEE, dd.MM.yyyy")
+		String dateFormat = "dd.MM.yyyy"
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(dateFormat)
 
 		Date tmpDate = null
 
@@ -199,7 +200,8 @@ class ImportService implements ApplicationContextAware
 												if (tmpNodeTD.attributes().'class' == 'edDatum')
 												{
 													println "Datum: $tmpText"
-													tmpDate = simpleDateFormat.parse(tmpText)
+													String dateSubstring = tmpText.substring((tmpText.size() - dateFormat.size()), tmpText.size())
+													tmpDate = simpleDateFormat.parse(dateSubstring)
 													newTable.spieldatum = tmpDate
 													break
 												}
