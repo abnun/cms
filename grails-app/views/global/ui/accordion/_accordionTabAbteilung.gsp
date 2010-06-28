@@ -3,7 +3,7 @@
 <div>
 	<h3>
 		<a href="javascript: void(0);">
-			<g:render template="/global/ui/accordion/accordionHeaderAbteilung" model="[accordionTabUeberschrift1: accordionTabUeberschrift1, accordionTabUeberschrift2: accordionTabUeberschrift2, datum: datum]"/>
+			<g:render template="/global/ui/accordion/accordionHeaderAbteilung" model="[abteilung: abteilung, accordionTabUeberschrift1: accordionTabUeberschrift1, accordionTabUeberschrift2: accordionTabUeberschrift2, datum: datum]"/>
 		</a>
 	</h3>
 	<div>
@@ -19,20 +19,22 @@
 		</g:if>
 		<span>
 			<g:if test="${!bild}">
-				<span style="margin-left: 34; width: 130px; min-width: 130px; max-width: 130px; float: right;">
+				<span style="margin-left: 34px; width: 130px; min-width: 130px; max-width: 130px; float: right;">
 					<table width="130" border="0" cellpadding="3" bordercolor="#93C9FF">
 						<tr>
 							<td height="130" colspan="2" bgcolor="#999999" class="infohead">${bild}</td>
 						</tr>
 						<tr>
-							<td valign="bottom" bordercolor="#999999" class="copy"><p>Bild
-							1 von 2</p></td>
+							<td valign="bottom" bordercolor="#999999" class="copy">Bild
+							1 von 2</td>
 							<td valign="bottom" bordercolor="#999999" class="copy"><div align="right"><img src="${resource(dir: 'bilder/divers', file: 'icon_zoom.jpg')}" width="16" height="16"></div></td>
 						</tr>
 					</table>
 				</span>
 			</g:if>
-			${text}
+			<span style="width: 500px; min-width: 500px; max-width: 500px;">
+				${text}
+			</span>
 		</span>
 	</div>
 </div>

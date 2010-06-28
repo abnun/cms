@@ -40,6 +40,7 @@ class LayoutTagLib
 					if (abteilungFile.contains(aCode))
 					{
 						abteilungCode = aCode
+						break
 					}
 				}
 

@@ -40,14 +40,16 @@
                     <thead>
                         <tr>
                         
-                            <g:sortableColumn property="id" title="${message(code: 'abteilung.id.label', default: 'Id')}" />
+                            %{--<g:sortableColumn property="id" title="${message(code: 'abteilung.id.label', default: 'Id')}" />--}%
                         
                             <g:sortableColumn property="name" title="${message(code: 'abteilung.name.label', default: 'Name')}" />
 
 							<g:sortableColumn property="anzeigeName" title="${message(code: 'abteilung.anzeigeName.label', default: 'Anzeigename')}" />
 
                             <g:sortableColumn property="code" title="${message(code: 'abteilung.code.label', default: 'Code')}" />
-                        
+
+							<g:sortableColumn property="oberAbteilung" title="${message(code: 'abteilung.oberAbteilung.label', default: 'Oberabteilung')}" />
+
                             <g:sortableColumn property="anzeigeImMenu" title="${message(code: 'abteilung.anzeigeImMenu.label', default: 'Anzeige Im Menu')}" />
                         
 							<th>&nbsp;</th>
@@ -57,14 +59,16 @@
                     <g:each in="${abteilungInstanceList}" status="i" var="abteilungInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td><g:link action="show" id="${abteilungInstance.id}">${fieldValue(bean: abteilungInstance, field: "id")}</g:link></td>
+                            %{--<td><g:link action="show" id="${abteilungInstance.id}">${fieldValue(bean: abteilungInstance, field: "id")}</g:link></td>--}%
                         
-                            <td>${fieldValue(bean: abteilungInstance, field: "name")}</td>
+                            <td><g:link action="berichte" id="${abteilungInstance.id}">${fieldValue(bean: abteilungInstance, field: "name")}</g:link></td>
 
 							<td>${fieldValue(bean: abteilungInstance, field: "anzeigeName")}</td>
 
                             <td>${fieldValue(bean: abteilungInstance, field: "code")}</td>
-                        
+
+							<td>${fieldValue(bean: abteilungInstance, field: "oberAbteilung")}</td>
+
                             <td><g:formatBoolean boolean="${abteilungInstance.anzeigeImMenu}" /></td>
                         
 							<td><g:link action="edit" id="${abteilungInstance.id}"><g:message code="abteilung.edit" default="Bearbeiten" /></g:link></td>

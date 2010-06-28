@@ -6,6 +6,11 @@
 	<g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}"/>
 	<g:render template="/global/javascript/accordionJS" model="[accordionID: 'accordion']"/>
 	<g:render template="/global/css/accordionCSS"/>
+	<style type="text/css">
+	.ui-accordion .ui-accordion-header .ui-icon {
+		margin-top: -8px;
+	}
+	</style>
 </head>
 <body>
 
@@ -25,10 +30,10 @@
 				<tr>
 					<td colspan="2" valign="top" class="copy">
 						<br>
-						<g:if test="${abteilungInstance?.berichte}">
+						<g:if test="${berichte}">
 							<div id="accordion">
-								<g:each status="i" var="bericht" in="${abteilungInstance?.berichte/*.sort{a, b -> a.ueberschrift <=> b.ueberschrift}*/}">
-									<g:render template="/abteilung/bericht" model="['bericht': bericht, 'i': i, 'abteilung': abteilungInstance]"/>
+								<g:each status="i" var="bericht" in="${berichte/*.sort{a, b -> a.ueberschrift <=> b.ueberschrift}*/}">
+									<g:render template="/abteilung/bericht" model="['bericht': bericht, 'i': i, 'abteilung': bericht.abteilung]"/>
 								</g:each>
 							</div>
 						</g:if>

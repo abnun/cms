@@ -4,15 +4,21 @@ import java.text.SimpleDateFormat
 
 class Spielplan
 {
-	String abteilungCode
+	String abteilungKuerzel
 	Date spieldatum
 	String heimmannschaft
 	String gastmannschaft
 	String anstoss
 
+	static mapping =
+	{
+		sort("spieldatum")
+		order("asc")
+	}
+
     static constraints =
 	{
-		abteilungCode(blank: false)
+		abteilungKuerzel(blank: false)
 		spieldatum()
 		heimmannschaft(blank: false)
 		gastmannschaft(blank: false)
@@ -21,6 +27,6 @@ class Spielplan
 
 	def String toString()
 	{
-		return "${abteilungCode} ${new SimpleDateFormat("dd.MM.yyyy").format(spieldatum)} ${heimmannschaft} ${gastmannschaft} ${anstoss}"
+		return "${abteilungKuerzel} ${new SimpleDateFormat("dd.MM.yyyy").format(spieldatum)} ${heimmannschaft} ${gastmannschaft} ${anstoss}"
 	}
 }

@@ -12,6 +12,7 @@ class Abteilung
 	String spielklasse
 	String code
 	String kuerzel
+	Abteilung oberAbteilung
 
 	Boolean anzeigeImMenu = true
 
@@ -53,6 +54,7 @@ class Abteilung
 			println("validation for '$v' evaluates to $isValid")
 			return isValid
 		}*/)
+		oberAbteilung(nullable: true)
 		anzeigeImMenu(nullable: true)
     }
 
@@ -94,4 +96,5 @@ class Abteilung
 	{
 		return (unterabteilungen && !unterabteilungen.isEmpty())
 	}
+
 }

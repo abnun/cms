@@ -1,15 +1,14 @@
-
-<%@ page import="de.webmpuls.cms.people.ShiroRole; de.webmpuls.cms.people.Person; de.webmpuls.cms.people.Funktion; de.webmpuls.cms.section.Abteilung" %>
+<%@ page import="de.webmpuls.cms.people.ShiroRole; de.webmpuls.cms.section.Spielplan" contentType="text/html;charset=UTF-8" %>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="sv_leingarten" />
-        <g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}" />
-		<g:render template="/global/javascript/accordionJS" model="[accordionID: 'accordion']" />
-		<g:render template="/global/css/accordionCSS" />
-    </head>
-    <body>
-	<table width="614" border="0" cellpadding="0" cellspacing="0" style="width: 614px;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="layout" content="sv_leingarten"/>
+	<g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}" />
+	<g:render template="/global/javascript/accordionJS" model="[accordionID: 'accordion']" />
+	<g:render template="/global/css/accordionCSS" />
+</head>
+<body>
+<table width="614" border="0" cellpadding="0" cellspacing="0" style="width: 614px;">
 		<tr align="left" valign="top">
 			<td height="227"><!-- InstanceBeginEditable name="Text" -->
 				<table width="614" border="0" align="left" cellspacing="10" style="width: 614px;">
@@ -58,15 +57,15 @@
 									</g:link>
 								</span>
 							</shiro:hasRole>
-
+						</td>
 					</tr>
-					<tr>
-						<td colspan="2" valign="top" class="copy">
-							<p class="headline">&nbsp;</p>
-							<p class="headline">&nbsp;</p>
-							<p class="headline">&nbsp;</p>
-							<p>&nbsp;</p></td>
-					</tr>
+				<tr>
+					<td colspan="2" valign="top" class="copy">
+						<p class="headline">&nbsp;</p>
+						<p class="headline">&nbsp;</p>
+						<p class="headline">&nbsp;</p>
+						<p>&nbsp;</p></td>
+				</tr>
 				</table>
 				<!-- InstanceEndEditable --></td>
 			<td width="130"><!-- InstanceBeginEditable name="info" -->
@@ -75,5 +74,5 @@
 			<!-- InstanceEndEditable --></td>
 		</tr>
 	</table>
-    </body>
+</body>
 </html>

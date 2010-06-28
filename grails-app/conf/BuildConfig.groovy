@@ -29,10 +29,11 @@ grails.project.dependency.resolution = {
 //		resolver(localResolver(basedir, getIvySettings()))
     }
 
-	plugins {
+	/*plugins {
 		runtime "de.webmpuls:photo-album:0.2"
 		runtime "de.webmpuls:pdf:0.4.8"
-	}
+		runtime ":pdf:0.4.8"
+	}*/
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.

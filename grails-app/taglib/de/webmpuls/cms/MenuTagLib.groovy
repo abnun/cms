@@ -49,14 +49,117 @@ class MenuTagLib
 					}
 					else
 					{
-						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params: [code: AbteilungHelper.CODE_FUSSBALL_DAMEN], mapping: 'abteilungShow')}\">Aktuelles</a></td>"
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params: [code: AbteilungHelper.CODE_FUSSBALL_DAMEN], mapping: 'abteilungAktuelles')}\">Aktuelles</a></td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
 						out << "<td class=\"rubrikactiv\">Das Team</td>"
 					}
 				}
 				else if(abteilungFile == AbteilungHelper.CODE_FUSSBALL_HERREN || abteilungFile.contains(AbteilungHelper.CODE_FUSSBALL_HERREN))
 				{
-					out << ""
+					if(actionName == "aktuelles")
+					{
+						out << "<td class=\"rubrikactiv\">News</td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN_1_MANNSCHAFT], mapping: 'abteilungShow')}\">1. Mannschaft</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT], mapping: 'abteilungShow')}\">2. Mannschaft</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_-_herren_party.gsp\">Party-Bilder</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_wm2006.gsp\">WM 2006</a></td>"
+						
+					}
+					else if(abteilungFile == AbteilungHelper.CODE_FUSSBALL_HERREN_1_MANNSCHAFT)
+					{
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'aktuelles', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN], mapping: 'abteilungAktuelles')}\">News</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrikactiv\">1. Mannschaft</td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT], mapping: 'abteilungShow')}\">2. Mannschaft</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_-_herren_party.gsp\">Party-Bilder</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_wm2006.gsp\">WM 2006</a></td>"
+					}
+					else if(abteilungFile == AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT)
+					{
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'aktuelles', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN], mapping: 'abteilungAktuelles')}\">News</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN_1_MANNSCHAFT], mapping: 'abteilungShow')}\">1. Mannschaft</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrikactiv\">2. Mannschaft</td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_-_herren_party.gsp\">Party-Bilder</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_wm2006.gsp\">WM 2006</a></td>"
+					}
+					else if(abteilungFile == "fussball_-_herren_party.gsp")
+					{
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'aktuelles', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN], mapping: 'abteilungAktuelles')}\">News</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN_1_MANNSCHAFT], mapping: 'abteilungShow')}\">1. Mannschaft</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT], mapping: 'abteilungShow')}\">2. Mannschaft</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrikactiv\">Party-Bilder</td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_wm2006.gsp\">WM 2006</a></td>"
+					}
+					else if(abteilungFile == "fussball_wm2006.gsp")
+					{
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'aktuelles', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN], mapping: 'abteilungAktuelles')}\">News</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN_1_MANNSCHAFT], mapping: 'abteilungShow')}\">1. Mannschaft</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params:[code: AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT], mapping: 'abteilungShow')}\">2. Mannschaft</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_-_herren_party.gsp\">Party-Bilder</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrikactiv\">WM 2006</td>"
+					}
+				}
+				else if(abteilungFile == AbteilungHelper.CODE_FUSSBALL_JUGEND || abteilungFile.contains(AbteilungHelper.CODE_FUSSBALL_JUGEND))
+				{
+					if(actionName == "aktuelles")
+					{
+						out << "<td class=\"rubrikactiv\">Aktuelles</td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_-_jugend_wir.gsp\">&Uuml;ber uns</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufujungs','','show','jufugirls','','hide');\" href=\"#\">Junioren</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufugirls','','show','jufujungs','','hide');\" href=\"#\">Juniorinnen</a></td>"
+					}
+					else if(abteilungFile == "fussball_-_jugend_wir.gsp")
+					{
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'aktuelles', params:[code: AbteilungHelper.CODE_FUSSBALL_JUGEND], mapping: 'abteilungAktuelles')}\">Aktuelles</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrikactiv\">&Uuml;ber uns</td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufujungs','','show','jufugirls','','hide');\" href=\"#\">Junioren</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufugirls','','show','jufujungs','','hide');\" href=\"#\">Juniorinnen</a></td>"
+					}
+					else if(abteilungFile.startsWith("fussball_-_jugend_m"))
+					{
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'aktuelles', params:[code: AbteilungHelper.CODE_FUSSBALL_JUGEND], mapping: 'abteilungAktuelles')}\">Aktuelles</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_-_jugend_wir.gsp\">&Uuml;ber uns</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrikactiv\" onmouseover=\"MM_showHideLayers('jufujungs','','show','jufugirls','','hide');\">Junioren</td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufugirls','','show','jufujungs','','hide');\" href=\"#\">Juniorinnen</a></td>"
+					}
+					else if(abteilungFile.startsWith("fussball_-_jugend_f"))
+					{
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'aktuelles', params:[code: AbteilungHelper.CODE_FUSSBALL_JUGEND], mapping: 'abteilungAktuelles')}\">Aktuelles</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_-_jugend_wir.gsp\">&Uuml;ber uns</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufujungs','','show','jufugirls','','hide');\" href=\"#\">Junioren</a></td>"
+						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrikactiv\" onmouseover=\"MM_showHideLayers('jufugirls','','show','jufujungs','','hide');\">Juniorinnen</td>"
+					}
 				}
 				else if(abteilungFile == AbteilungHelper.CODE_HANDBALL || abteilungFile.contains(AbteilungHelper.CODE_HANDBALL))
 				{
@@ -396,7 +499,7 @@ class MenuTagLib
 					}
 					else
 					{
-						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params: [code: AbteilungHelper.CODE_SKI], mapping: 'abteilungShow')}\">&Uuml;ber uns</a></td>"
+						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'show', params: [code: AbteilungHelper.CODE_SKI], mapping: 'abteilungAktuelles')}\">&Uuml;ber uns</a></td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
 						out << "<td class=\"rubrikactiv\">Neuigkeiten + Termine</td>"
 					}

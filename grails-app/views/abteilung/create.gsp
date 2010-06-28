@@ -58,6 +58,15 @@
 					</td>
 				</tr>
 
+				<tr class="prop">
+					<td valign="top" class="name">
+						<label for="oberAbteilung"><g:message code="abteilung.oberAbteilung.label" default="Oberabteilung"/></label>
+					</td>
+					<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'oberAbteilung', 'errors')}">
+						<g:select name="oberAbteilung.id" from="${de.webmpuls.cms.section.Abteilung.hauptAbteilungen().listOrderByName([cache: true])}" optionKey="id" value="${abteilungInstance?.oberAbteilung?.id}" noSelection="['null': '']" />
+					</td>
+				</tr>
+
 				%{--<tr class="prop">
 												<td valign="top" class="name">
 													<label for="code"><g:message code="abteilung.code.label" default="Code" /></label>

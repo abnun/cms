@@ -1,4 +1,4 @@
-<%@ page import="de.webmpuls.cms.people.Funktion; de.webmpuls.cms.people.Person; de.webmpuls.cms.section.Abteilung" %>
+<%@ page import="de.webmpuls.cms.section.Spielplan; de.webmpuls.cms.people.Funktion; de.webmpuls.cms.people.Person; de.webmpuls.cms.section.Abteilung" %>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -195,6 +195,24 @@
 					</td>
 				</tr>
 
+				<tr class="prop">
+					<td valign="top" class="name">
+						<label for="name"><g:message code="abteilung.kuerzel.label" default="Kuerzel"/></label>
+					</td>
+					<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'kuerzel', 'errors')}">
+						<g:textField name="kuerzel" value="${abteilungInstance?.kuerzel}"/>
+					</td>
+				</tr>
+
+				<tr class="prop">
+					<td valign="top" class="name">
+						<label for="oberAbteilung"><g:message code="abteilung.oberAbteilung.label" default="Oberabteilung"/></label>
+					</td>
+					<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'oberAbteilung', 'errors')}">
+						<g:select name="oberAbteilung.id" from="${de.webmpuls.cms.section.Abteilung.hauptAbteilungen().listOrderByName([cache: true])}" optionKey="id" value="${abteilungInstance?.oberAbteilung?.id}" noSelection="['null': '']" />
+					</td>
+				</tr>
+
 				%{--<tr class="prop">
 								<td valign="top" class="name">
 								  <label for="code"><g:message code="abteilung.code.label" default="Code" /></label>
@@ -312,7 +330,7 @@
 												<td valign="top" align="left">
 													%{--<g:select name="personen" from="${abteilungInstance.personen}" multiple="yes" optionKey="id" size="${abteilungInstance.personen.size()}" value="${abteilungInstance?.personen}" disabled="disabled"/>--}%
 													<ul>
-														<g:each in="${abteilungInstance.spielplaene}" var="sp">
+														<g:each in="${abteilungInstance.spielplaene.sort{ Spielplan a, Spielplan b -> a.anstoss <=> b.anstoss } }" var="sp">
 															<li>
 																<table>
 																	<tr>
@@ -423,6 +441,13 @@
 						</td>
 					</tr>
 				</table>
+				<br />
+				<p>
+					Bsp.: <b>F_D 10.09.2010 TGV Dürrenzimmern - SV Leingarten 19.30</b>
+					<br/>
+					<br/>
+					Mehrere Spielpl&auml;ne mit Enter/Return am Ende eingeben. Auf unn&ouml;tige Leerzeichen am Ende der Zeile achten!
+				</p>
 				<g:hiddenField name="abteilung.id" value="${abteilungInstance.id}" />
 			</g:form>
 			<br/>

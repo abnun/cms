@@ -12,12 +12,19 @@
 
 	.ui-accordion .ui-accordion-header .ui-icon {
 		left: 0.1em;
+		margin-top: -15px;
 	}
 	.ui-accordion .ui-accordion-content {
-		padding: inherit;
-		padding-left: 0px;
 		padding-right: 0px;
+		padding-bottom: 0px;
+		padding-top: 0px;
 	}
+
+	.ui-accordion .ui-accordion-content span p {
+		margin-bottom: 2px;
+		margin-top: 3px;
+	}
+
 	.ui-state-default .ui-icon,
 	.ui-state-hover .ui-icon {
 		background-image: url('${resource(dir: 'bilder/divers', file: 'arrow_right.jpg')}');

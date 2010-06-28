@@ -8,6 +8,8 @@ class AbteilungTagLib
 {
 	static namespace = "abteilungns"
 
+	static returnObjectForTags = ['isUnterAbteilung']
+
 	def abteilungsLeiter =
 	{
 		attrs ->
@@ -95,4 +97,21 @@ class AbteilungTagLib
 
 		return out
 	}
+
+	def isUnterAbteilung =
+	{
+		attrs ->
+
+		Abteilung section = attrs['section']
+
+		if(section.hasUnterAbteilungen())
+		{
+			return true
+		}
+		else
+		{
+			return false
+		}
+	}
+
 }

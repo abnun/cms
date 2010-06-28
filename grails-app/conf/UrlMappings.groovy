@@ -4,10 +4,16 @@ class UrlMappings
 	static excludes = ["/images/**", "/css/**", "/js/**"]
 
 	static mappings = {
+
 		name abteilungShow: "/abteilungen/$code" {
-				controller = 'abteilung'
-				action = 'aktuelles'
-			}
+			controller = 'abteilung'
+			action = 'berichte'
+		}
+
+		name abteilungAktuelles: "/abteilungen/aktuelles/$code" {
+			controller = 'abteilung'
+			action = 'aktuelles'
+		}
 
 		"/aktuelles"
 		{

@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ page import="de.webmpuls.cms.people.ShiroRole" %>
-<div style="border-bottom: 1px solid #1760a8">
+<div style="border-bottom: 1px solid #1760a8;">
 	<h3>
 		<a href="javascript: void(0);">
 			<g:render template="/global/ui/accordion/accordionHeaderDefault" model="[isAbteilung: isAbteilung, accordionTabUeberschrift1: accordionTabUeberschrift1, accordionTabUeberschrift2: accordionTabUeberschrift2]"/>

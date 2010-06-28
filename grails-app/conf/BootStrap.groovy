@@ -244,14 +244,37 @@ class BootStrap
 			Abteilung fussball_herren_1_mannschaft = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_HERREN_1_MANNSCHAFT)
 			if (!fussball_herren_1_mannschaft)
 			{
-				fussball_herren_1_mannschaft = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_HERREN_1_MANNSCHAFT, code: AbteilungHelper.CODE_FUSSBALL_HERREN_1_MANNSCHAFT, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_HERREN_1_MANNSCHAFT, anzeigeImMenu: false)
+				fussball_herren_1_mannschaft = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_HERREN_1_MANNSCHAFT, code: AbteilungHelper.CODE_FUSSBALL_HERREN_1_MANNSCHAFT, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_HERREN_1_MANNSCHAFT, oberAbteilung: fussball_herren, anzeigeImMenu: false)
+
+				// TODO: entfernen!
+				String tmpInhalt = """Riesenfete und Autokorso
+				Im letzten Saisonspiel bei den Sportfreunden aus Stockheim stand der SVL bereits als Meister und frischgebackener Pokalsieger fest. Dennoch wollten die Schellmann-Jungs die letzte Partie gewinnen, und so eine einzigartige Saison vollends krönen. Nach dem Führungstor von Hörtling sah der Stockheimer Torhüter wegen Meckerns die gelb-rote Karte, sodass der Meister im Anschluss noch klarer dominierte und sich eine Chance nach der anderen erspielte. Vor allem Andreas Hörtling wurde immer wieder hervorragend von seinen Mannschaftskollegen bedient und in Szene gesetzt, sodass es für ihn am Ende zu fünf Toren reichen sollte und der SVL sogar noch die Torjägerkanone der Kreisliga A3 nach Leingarten holt.
+				Nach dieser nahezu perfekten Saison zog die Mannschaft bei strahlendem Sonnenschein mit einem Autokorso hupend durch Leingarten und feierte noch lange in die Nacht hinein.
+
+				Der SV Leingarten bedankt sich hiermit für die tolle Unterstützung seiner treuen Fans und Anhänger in der vergangenen Saison. Herzlichen Glückwunsch auch an unsere Nachbarn aus Schluchtern zum Erreichen der Relegationsspiele zur Landesliga.
+
+				Es spielten:
+				H. Mayer, T. Czok, S. Zimmer, J. Reiner, T. Zimmermann (M. Baumann), M. Frank, M. Vogt (P. Henger), J. Heubach, R. Heubach, A. Hörtling, S. Ostfalk (P. Schietinger)"""
+
+				Bericht tmpBericht = new Bericht(ueberschrift: 'Spfr. Stockheim – SV Leingarten > 2:5 (0:2)', inhalt: tmpInhalt, abteilung: fussball_damen)
+				//tmpBericht.save()
+				fussball_herren_1_mannschaft.addToBerichte(tmpBericht)
+
+				String tmpInhalt2 = """Der SV Leingarten ist Meister der Kreisliga A3 und seit Donnerstag, 03.06.2010, auch noch Bezirkspokalsieger 2010. Im Finale gegen die starke Spvgg Möckmühl gewann der SVL vor knapp 1000 Zuschauern in einer packenden und spannenden Partie mit 2:1. Dabei dominierten die spielstarken Möckmühler die erste Halbzeit und hatten die besseren Torchancen. Doch Holger Mayer schaffte es an jenem Spätnachmittag durch zahlreiche Paraden, seine Mannschaft im Spiel zu halten. Der SVL kam in den ersten 45 Minuten lediglich einmal gefährlich vor das Möckmühler Tor, doch Hörtlings Schuss aus spitzem Winkel konnte der Möckmühler Torhüter parieren.
+				Nach dem Seitenwechsel kam der SVL besser ins Spiel und konnte durch Heubachs Foulelfmeter etwas glücklich in Führung gehen. Die Spvgg Möckmühl erhöhte den Druck und kam zu weiteren Tormöglichkeiten. Doch die Leingartener Defensive hielt. Auf der anderen Seite machte es Hörtling besser, als er zum 2:0 traf. Doch der vermeintlich sichere Vorsprung von zwei Toren wurde im Gegenzug vom Möckmühler Torjäger Dedovic wieder verkürzt. Aus halbrechter Position ließ er Mayer keine Abwehrchance. Fortan drängte Möckmühl mit aller Kraft auf den Ausgleich, doch der SVL schaffte den Riesenerfolg und gewinnt beide Titel in der Saison 2009/2010.
+				An dieser Stelle möchte sich der SV Leingarten bei seinen tollen und einzigartigen Fans und Zuschauern bedanken, die die Mannschaft einmal mehr großartig und lautstark unterstützten und gewiss einen großen Anteil an diesem Erfolg haben. DANKE"""
+
+				Bericht tmpBericht2 = new Bericht(ueberschrift: 'Pokal: SV Leingarten – Spvgg Möckmühl > 2:1 (0:0)', inhalt: tmpInhalt2, abteilung: fussball_damen)
+				//tmpBericht2.save()
+				fussball_herren_1_mannschaft.addToBerichte(tmpBericht2)
+
 				fussball_herren_1_mannschaft.save()
 			}
 
 			Abteilung fussball_herren_2_mannschaft = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT)
 			if (!fussball_herren_2_mannschaft)
 			{
-				fussball_herren_2_mannschaft = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_HERREN_2_MANNSCHAFT, code: AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_HERREN_2_MANNSCHAFT, anzeigeImMenu: false)
+				fussball_herren_2_mannschaft = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_HERREN_2_MANNSCHAFT, code: AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_HERREN_2_MANNSCHAFT, oberAbteilung: fussball_herren, anzeigeImMenu: false)
 				fussball_herren_2_mannschaft.save()
 			}
 
@@ -271,7 +294,7 @@ class BootStrap
 			Abteilung fussball_jugend_bambini = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_BAMBINI)
 			if (!fussball_jugend_bambini)
 			{
-				fussball_jugend_bambini = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_BAMBINI, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_BAMBINI, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_BAMBINI, anzeigeImMenu: false)
+				fussball_jugend_bambini = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_BAMBINI, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_BAMBINI, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_BAMBINI, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_bambini.save()
 			}
 
@@ -281,7 +304,7 @@ class BootStrap
 			Abteilung fussball_jugend_m_f = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_F)
 			if (!fussball_jugend_m_f)
 			{
-				fussball_jugend_m_f = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_F, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_F, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_F, anzeigeImMenu: false)
+				fussball_jugend_m_f = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_F, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_F, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_F, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_m_f.save()
 			}
 
@@ -289,14 +312,14 @@ class BootStrap
 			Abteilung fussball_jugend_m_e_1 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_E_1)
 			if (!fussball_jugend_m_e_1)
 			{
-				fussball_jugend_m_e_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_E_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_E_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_E_1, anzeigeImMenu: false)
+				fussball_jugend_m_e_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_E_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_E_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_E_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_m_e_1.save()
 			}
 
 			Abteilung fussball_jugend_m_e_2 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_E_2)
 			if (!fussball_jugend_m_e_2)
 			{
-				fussball_jugend_m_e_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_E_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_E_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_E_2, anzeigeImMenu: false)
+				fussball_jugend_m_e_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_E_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_E_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_E_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_m_e_2.save()
 			}
 
@@ -304,21 +327,21 @@ class BootStrap
 			Abteilung fussball_jugend_m_d_1 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_1)
 			if (!fussball_jugend_m_d_1)
 			{
-				fussball_jugend_m_d_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_D_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_D_1, anzeigeImMenu: false)
+				fussball_jugend_m_d_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_D_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_D_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_m_d_1.save()
 			}
 
 			Abteilung fussball_jugend_m_d_2 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_2)
 			if (!fussball_jugend_m_d_2)
 			{
-				fussball_jugend_m_d_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_D_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_D_2, anzeigeImMenu: false)
+				fussball_jugend_m_d_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_D_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_D_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_m_d_2.save()
 			}
 
 			Abteilung fussball_jugend_m_d_3 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_3)
 			if (!fussball_jugend_m_d_3)
 			{
-				fussball_jugend_m_d_3 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_D_3, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_3, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_D_3, anzeigeImMenu: false)
+				fussball_jugend_m_d_3 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_D_3, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_3, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_D_3, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_m_d_3.save()
 			}
 
@@ -326,14 +349,14 @@ class BootStrap
 			Abteilung fussball_jugend_m_c_1 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_1)
 			if (!fussball_jugend_m_c_1)
 			{
-				fussball_jugend_m_c_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_C_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_C_1, anzeigeImMenu: false)
+				fussball_jugend_m_c_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_C_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_C_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_m_c_1.save()
 			}
 
 			Abteilung fussball_jugend_m_c_2 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_2)
 			if (!fussball_jugend_m_c_2)
 			{
-				fussball_jugend_m_c_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_C_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_C_2, anzeigeImMenu: false)
+				fussball_jugend_m_c_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_C_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_C_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_m_c_2.save()
 			}
 
@@ -341,7 +364,7 @@ class BootStrap
 			Abteilung fussball_jugend_m_b = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_B)
 			if (!fussball_jugend_m_b)
 			{
-				fussball_jugend_m_b = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_B, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_B, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_B, anzeigeImMenu: false)
+				fussball_jugend_m_b = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_B, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_B, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_B, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_m_b.save()
 			}
 
@@ -349,7 +372,7 @@ class BootStrap
 			Abteilung fussball_jugend_m_a = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_A)
 			if (!fussball_jugend_m_a)
 			{
-				fussball_jugend_m_a = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_A, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_A, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_A, anzeigeImMenu: false)
+				fussball_jugend_m_a = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_A, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_A, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_A, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_m_a.save()
 			}
 
@@ -362,14 +385,14 @@ class BootStrap
 			Abteilung fussball_jugend_f_d_1 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_D_1)
 			if (!fussball_jugend_f_d_1)
 			{
-				fussball_jugend_f_d_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_D_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_D_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_D_1, anzeigeImMenu: false)
+				fussball_jugend_f_d_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_D_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_D_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_D_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_f_d_1.save()
 			}
 
 			Abteilung fussball_jugend_f_d_2 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_D_2)
 			if (!fussball_jugend_f_d_2)
 			{
-				fussball_jugend_f_d_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_D_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_D_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_D_2, anzeigeImMenu: false)
+				fussball_jugend_f_d_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_D_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_D_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_D_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_f_d_2.save()
 			}
 
@@ -377,7 +400,7 @@ class BootStrap
 			Abteilung fussball_jugend_f_c = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_C)
 			if (!fussball_jugend_f_c)
 			{
-				fussball_jugend_f_c = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_C, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_C, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_C, anzeigeImMenu: false)
+				fussball_jugend_f_c = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_C, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_C, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_C, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_f_c.save()
 			}
 
@@ -385,7 +408,7 @@ class BootStrap
 			Abteilung fussball_jugend_f_b = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_B)
 			if (!fussball_jugend_f_b)
 			{
-				fussball_jugend_f_b = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_B, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_B, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_B, anzeigeImMenu: false)
+				fussball_jugend_f_b = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_B, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_B, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_B, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_f_b.save()
 			}
 
@@ -393,7 +416,7 @@ class BootStrap
 			Abteilung fussball_jugend_f_a = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_A)
 			if (!fussball_jugend_f_a)
 			{
-				fussball_jugend_f_a = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_A, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_A, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_A, anzeigeImMenu: false)
+				fussball_jugend_f_a = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_A, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_A, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_A, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
 				fussball_jugend_f_a.save()
 			}
 

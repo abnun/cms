@@ -4,7 +4,6 @@
 	{
 		$("#${accordionID}").accordion({
 			header: "h3",
-			active: false,
 			autoHeight: false,
 			collapsible: true,
 			icons: {

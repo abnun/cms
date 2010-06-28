@@ -1,4 +1,4 @@
-<%@ page import="de.webmpuls.cms.people.ShiroRole" %>
+<%@ page import="de.webmpuls.cms.start.Termin; de.webmpuls.cms.people.ShiroRole" %>
 <table width="270" border="0" cellspacing="0" cellpadding="0">
 	<tr>
 		<td height="25" colspan="3" valign="top"><p>&nbsp;</p>
@@ -27,11 +27,27 @@
 			<td class="headline_dunkel"><span class="wichtig"></span></td>
 		</tr>
 		<g:each status="i" var="termin" in="${terminList}">
-			<g:if test="${((Date)termin.startDatum).getMonth() != ((Date)terminList[i - 1].startDatum).getMonth()}">
+			<g:set var="terminMonth" value="${((Date)termin.startDatum).getMonth()}" />
+			%{--<%
+			    boolean sameMonth = true
+				for(Termin tmpTermin in terminList)
+				{
+					if(((Date)tmpTermin.startDatum).getMonth() != terminMonth)
+					{
+						sameMonth = false
+					}
+				}
+			%>--}%
+			<g:if test="${terminMonth != ((Date)terminList[i - 1].startDatum).getMonth()}">
 				<tr valign="top" class="copy">
 					<td colspan="2" bgcolor="d2dfff" class="wichtig"><g:formatDate date="${termin.startDatum}" format="MMMMM"/></td>
 				</tr>
 			</g:if>
+			%{--<g:elseif test="${sameMonth}">
+				<tr valign="top" class="copy">
+					<td colspan="2" bgcolor="d2dfff" class="wichtig"><g:formatDate date="${termin.startDatum}" format="MMMMM"/></td>
+				</tr>
+			</g:elseif>--}%
 			<g:else>
 				%{--<tr>
 					<td width="90" class="headline_dunkel">&nbsp;</td>
@@ -39,12 +55,12 @@
 			</g:else>
 			<tr valign="top" class="copy">
 				<g:if test="${((Date)termin.startDatum).equals((Date)termin.endDatum)}">
-					<td height="30" class="copy"><g:formatDate date="${termin.startDatum}" format="dd. MMMMM"/></td>
+					<td class="copy"><g:formatDate date="${termin.startDatum}" format="dd. MMMMM"/></td>
 				</g:if>
 				<g:else>
-					<td height="30" class="copy"><g:formatDate date="${termin.startDatum}" format="dd. MMMMM"/> - <g:formatDate date="${termin.endDatum}" format="dd. MMMMM"/></td>
+					<td class="copy"><g:formatDate date="${termin.startDatum}" format="dd. MMMMM"/> - <g:formatDate date="${termin.endDatum}" format="dd. MMMMM"/></td>
 				</g:else>
-				<td height="30"><span class="wichtig"><g:if test="${!termin.findetStatt}"><s></g:if>${termin.inhalt}<g:if test="${!termin.findetStatt}"></s></g:if><br/></span><span class="copy">
+				<td><span class="wichtig"><g:if test="${!termin.findetStatt}"><s></g:if>${termin.inhalt}<g:if test="${!termin.findetStatt}"></s></g:if><br/></span><span class="copy">
 				<g:if test="${termin.abteilung}">(${termin.abteilung})<br/></g:if></span><g:if test="${!termin.findetStatt}"><span class="copy">${termin.zusatzinfo ?: message(code: 'termin.canceled.text')}</span></g:if></td>
 				<shiro:hasRole name="${ShiroRole.BENUTZER}">
 					<td>

@@ -37,7 +37,8 @@ class AbteilungController {
         }
     }
 
-    def show = {
+    def berichte =
+	{
 		println("params -> $params")
 
 		def abteilungInstance = Abteilung.get(params.id)
@@ -332,8 +333,18 @@ class AbteilungController {
         }
         else
 		{
+			boolean redirectToOldPage = true
+
 			//println abteilungInstance.code
-			if (!allowedCodes.contains(abteilungInstance.code))
+			for(String code in allowedCodes)
+			{
+				if(code.startsWith(abteilungInstance.code))
+				{
+					redirectToOldPage = false
+				}
+			}
+
+			if (redirectToOldPage)
 			{
 				response.sendRedirect("${request.getContextPath()}/sites/abteilungen/${abteilungInstance.code}.gsp")
 				return false
@@ -342,6 +353,7 @@ class AbteilungController {
 			{
 				ArrayList ergebnisse = []
 				ArrayList vorschau = []
+				ArrayList berichte = []
 
 				if(abteilungInstance.hasUnterAbteilungen())
 				{
@@ -349,15 +361,21 @@ class AbteilungController {
 					{
 						ergebnisse.addAll(fetchResultsForAbteilung(unterAbteilung))
 						vorschau.addAll(fetchPlayDaysForAbteilung(unterAbteilung))
+
+						for(Bericht bericht in unterAbteilung.berichte)
+						{
+							berichte.add(bericht)
+						}
 					}
 				}
 				else
 				{
 					ergebnisse.addAll(fetchResultsForAbteilung(abteilungInstance))
 					vorschau.addAll(fetchPlayDaysForAbteilung(abteilungInstance))
+					berichte.addAll(abteilungInstance.berichte)
 				}
 
-				return [abteilungInstance: abteilungInstance, ergebnisse: ergebnisse, vorschau: vorschau]
+				return [abteilungInstance: abteilungInstance, ergebnisse: ergebnisse, vorschau: vorschau, berichte: berichte]
 			}
 		}
 	}
@@ -423,6 +441,22 @@ class AbteilungController {
 		else
 		{
 			return [abteilungInstance: abteilungInstance, trainingszeiten: abteilungInstance.trainingszeiten]
+		}
+	}
+
+	def spielplan =
+	{
+		def abteilungInstance = Abteilung.get(params.id)
+
+		if(abteilungInstance)
+		{
+
+			return [abteilungInstance: abteilungInstance]
+		}
+		else
+		{
+			redirect(controller: 'abteilung', action: 'show', id: params.id)
+			return false
 		}
 	}
 

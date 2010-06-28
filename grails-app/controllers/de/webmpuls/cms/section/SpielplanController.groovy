@@ -105,7 +105,8 @@ class SpielplanController {
 	{
 		println params
 		String inhalt = params.inhalt
-		def regex = /^(.+) (.+) (.+) (.+) (.+)?/
+		def regex = /^(.+) ([\.\d]+) ((.+) - (.+)) ([\.\d]+)?/
+		//def regex = /^(.+) (.+) (.+ - .+) (.+)?/
 
 		if(inhalt)
 		{
@@ -124,19 +125,21 @@ class SpielplanController {
 				println("matcher -> ${matcher[0]}")
 
 				println matcher[0][1]
-				spielplan.abteilungCode = matcher[0][1]
-
 				println matcher[0][2]
+				println matcher[0][3]
+				println matcher[0][4]
+				println matcher[0][5]
+				println matcher[0][6]
+
+				spielplan.abteilungKuerzel = matcher[0][1]
+
 				spielplan.spieldatum = new SimpleDateFormat("dd.MM.yyyy").parse(matcher[0][2].toString())
 
-				println matcher[0][3]
-				spielplan.heimmannschaft = matcher[0][3]
+				spielplan.heimmannschaft = matcher[0][4]
 
-				println matcher[0][4]
-				spielplan.gastmannschaft = matcher[0][4]
-
-				println matcher[0][5]
-				spielplan.anstoss = matcher[0][5]
+				spielplan.gastmannschaft = matcher[0][5]
+				
+				spielplan.anstoss = matcher[0][6]
 
 				Spielplan tmpSpielplan = Spielplan.find(spielplan)
 

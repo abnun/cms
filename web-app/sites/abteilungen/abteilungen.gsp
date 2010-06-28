@@ -18,200 +18,200 @@
 					  <tbody>
 					  <tr class="copy">
 						  <td width="32">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_BADMINTON}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_BADMINTON}">
 								  <img src="${resource(dir: 'bilder/aktuell', file: 'p_badminton.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td class="copy">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_BADMINTON}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_BADMINTON}">
 							  	Badminton
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td width="32">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_BASKETBALL}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_BASKETBALL}">
 							  	<img src="${resource(dir: 'bilder/aktuell', file: 'p_basketball.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td class="copy">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_BASKETBALL}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_BASKETBALL}">
 							  	Basketball
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td width="32">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_FUSSBALL_AH}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_FUSSBALL_AH}">
 							  	<img src="${resource(dir: 'bilder/aktuell', file: 'p_fussball.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td class="copy">
 							  <p>
-								  <link:abteilungShow code="${AbteilungHelper.CODE_FUSSBALL_AH}">
+								  <link:abteilungAktuelles code="${AbteilungHelper.CODE_FUSSBALL_AH}">
 								  Fußball-
 								  <br/>
 								  AltHerren
-								  </link:abteilungShow>
+								  </link:abteilungAktuelles>
 							  </p>
 						  </td>
 						  <td width="32">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_FUSSBALL_DAMEN}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_FUSSBALL_DAMEN}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_fussball.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_FUSSBALL_DAMEN}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_FUSSBALL_DAMEN}">
 							  Fußball-
 							  <br/>
 							  Frauen
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td width="32">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_FUSSBALL_HERREN}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_FUSSBALL_HERREN}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_fussball.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_FUSSBALL_HERREN}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_FUSSBALL_HERREN}">
 							  Fußball-
 							  <br/>
 							  Herren
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td width="32">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_FUSSBALL_JUGEND}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_FUSSBALL_JUGEND}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_fussball.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
 							  <p>
-								  <link:abteilungShow code="${AbteilungHelper.CODE_FUSSBALL_JUGEND}">
+								  <link:abteilungAktuelles code="${AbteilungHelper.CODE_FUSSBALL_JUGEND}">
 								  Fußball-
 								  <br/>
 								  Jugend
-								  </link:abteilungShow>
+								  </link:abteilungAktuelles>
 							  </p>
 						  </td>
 					  </tr>
 					  <tr class="copy">
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_HANDBALL}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_HANDBALL}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_handball.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td class="copy">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_HANDBALL}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_HANDBALL}">
 							  Handball
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_KARATE}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_KARATE}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_karate.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td class="copy">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_KARATE}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_KARATE}">
 							  Karate
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_LEICHTATHLETIK}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_LEICHTATHLETIK}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_leichtathletik.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td class="copy">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_LEICHTATHLETIK}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_LEICHTATHLETIK}">
 							  Leichtathletik
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_RADSPORT}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_RADSPORT}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_radsport.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_RADSPORT}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_RADSPORT}">
 							  Radsport
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_REITEN}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_REITEN}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_reiten.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_REITEN}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_REITEN}">
 							  Reiten
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_SCHACH}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_SCHACH}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_schach.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_SCHACH}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_SCHACH}">
 							  Schach
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 					  </tr>
 					  <tr class="copy">
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_SKI}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_SKI}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_ski.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td class="copy">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_SKI}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_SKI}">
 							  Ski
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_TANZEN}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_TANZEN}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_tanzen.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td class="copy">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_TANZEN}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_TANZEN}">
 							  Tanzen
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_TENNIS}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_TENNIS}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_tennis.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td class="copy">
-							  <link:abteilungShow code="${AbteilungHelper.CODE_TENNIS}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_TENNIS}">
 							  Tennis
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_TISCHTENNIS}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_TISCHTENNIS}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_tischtennis.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_TISCHTENNIS}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_TISCHTENNIS}">
 							  Tischtennis
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_TURNEN}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_TURNEN}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_turnen.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_TURNEN}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_TURNEN}">
 							  Turnen
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_VOLLEYBALL}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_VOLLEYBALL}">
 							  <img src="${resource(dir: 'bilder/aktuell', file: 'p_volleyball.jpg')}" width="32" height="32" border="0"/>
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 						  <td>
-							  <link:abteilungShow code="${AbteilungHelper.CODE_VOLLEYBALL}">
+							  <link:abteilungAktuelles code="${AbteilungHelper.CODE_VOLLEYBALL}">
 							  Volleyball
-							  </link:abteilungShow>
+							  </link:abteilungAktuelles>
 						  </td>
 					  </tr>
 					  </tbody>

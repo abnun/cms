@@ -9,9 +9,9 @@
 					<td width="4" rowspan="18">&nbsp;</td>
 				</g:elseif>
 		  		<td height="20" bgcolor="#D2DFFF" class="unavi">
-					<link:abteilungShow code="${abteilung?.code}">
+					<link:abteilungAktuelles code="${abteilung?.code}">
 						${abteilung?.name}
-					</link:abteilungShow>
+					</link:abteilungAktuelles>
 		  		</td>
 			</tr>
 		</g:each>

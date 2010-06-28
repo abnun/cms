@@ -12,8 +12,8 @@
 	</jq:jquery>
 </shiro:hasRole>
 <g:if test="${Boolean.valueOf(isAbteilung)}">
-	<g:render template="/global/ui/accordion/accordionTabAbteilung" model="[itemName: 'anzeigen', item: anzeige, accordionTabUeberschrift1: anzeige.ueberschrift1 ?: anzeige.abteilung.name, accordionTabUeberschrift2: anzeige.ueberschrift2, text: anzeige.inhalt, isEditable: true]" />
+	<g:render template="/global/ui/accordion/accordionTabAbteilung" model="[itemName: 'anzeigen', item: anzeige, accordionTabUeberschrift1: anzeige.ueberschrift1 ?: anzeige.abteilung.name, accordionTabUeberschrift2: anzeige.ueberschrift2, text: anzeige.inhalt, isEditable: true, 'i': i]" />
 </g:if>
 <g:else>
-	<g:render template="/global/ui/accordion/accordionTabDefault" model="[itemName: 'anzeigen', item: anzeige, accordionTabUeberschrift1: anzeige.ueberschrift1 ?: anzeige.abteilung.name, accordionTabUeberschrift2: anzeige.ueberschrift2, text: anzeige.inhalt, isEditable: true]" />
+	<g:render template="/global/ui/accordion/accordionTabDefault" model="[itemName: 'anzeigen', item: anzeige, accordionTabUeberschrift1: anzeige.ueberschrift1 ?: anzeige.abteilung.name, accordionTabUeberschrift2: anzeige.ueberschrift2, text: anzeige.inhalt, isEditable: true, 'i': i]" />
 </g:else>

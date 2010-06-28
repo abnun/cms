@@ -13,9 +13,28 @@ class InhaltController
     def aktuelles =
 	{
 		def anzeigenList = Anzeigen.list([cache: true])
-		def newsList = News.list(max: 5, cache: true)
+		def newsList = News.listOrderByLastModified(max: 5, cache: true)
+
+		HashMap newsMap = new HashMap()
+
+		for(News tmpNews in newsList)
+		{
+			String abteilungId = tmpNews.abteilung.id
+			ArrayList tmpList = newsMap.get(abteilungId)
+			if(!tmpList)
+			{
+				tmpList = new ArrayList()
+				tmpList.add(tmpNews)
+			}
+			else
+			{
+				tmpList.add(tmpNews)
+			}
+			newsMap.put(abteilungId, tmpList)
+		}
+
 		def terminList = Termin.letzteTermine().listOrderByStartDatum([cache: true])
-		return [anzeigenList: anzeigenList, newsList: newsList, terminList: terminList]
+		return [anzeigenList: anzeigenList, newsMap: newsMap, terminList: terminList]
 	}
 
 	def termine =

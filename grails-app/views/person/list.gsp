@@ -1,5 +1,5 @@
 
-<%@ page import="de.webmpuls.cms.people.Person" %>
+<%@ page import="de.webmpuls.cms.section.Abteilung; de.webmpuls.cms.people.Funktion; de.webmpuls.cms.people.Person" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -49,11 +49,11 @@
                     <thead>
                         <tr>
 
-                            <th>&nbsp;</th>
+                            %{--<th>&nbsp;</th>--}%
 
-                            <g:sortableColumn property="vorname" title="${message(code: 'person.vorname.label', default: 'Vorname')}" />
+							<g:sortableColumn property="nachname" title="${message(code: 'person.nachname.label', default: 'Nachname')}" />
 
-                            <g:sortableColumn property="nachname" title="${message(code: 'person.nachname.label', default: 'Nachname')}" />
+							<g:sortableColumn property="vorname" title="${message(code: 'person.vorname.label', default: 'Vorname')}" />
 
                             <g:sortableColumn property="strasse" title="${message(code: 'person.strasse.label', default: 'Strasse')}" />
 
@@ -63,11 +63,13 @@
 
                             <g:sortableColumn property="telefon1" title="${message(code: 'person.telefon1.label', default: 'Telefon1')}" />
 
-                            <g:sortableColumn property="telefon2" title="${message(code: 'person.telefon2.label', default: 'Telefon2')}" />
+                            %{--<g:sortableColumn property="telefon2" title="${message(code: 'person.telefon2.label', default: 'Telefon2')}" />--}%
 
                             <g:sortableColumn property="email" title="${message(code: 'person.email.label', default: 'Email')}" />
 
-                            <g:sortableColumn property="adresseAnzeigen" title="${message(code: 'person.adresseAnzeigen.label', default: 'Adresse Anzeigen')}" />
+							<th>Funktion/Abteilung</th>
+
+                            %{--<g:sortableColumn property="adresseAnzeigen" title="${message(code: 'person.adresseAnzeigen.label', default: 'Adresse Anzeigen')}" />--}%
 
 							<th>&nbsp;</th>
                         </tr>
@@ -76,11 +78,11 @@
                     <g:each in="${personInstanceList}" status="i" var="personInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
 
-                            <td><g:link action="show" id="${personInstance.id}">${i + 1}</g:link></td>
+                            %{--<td><g:link action="show" id="${personInstance.id}">${i + 1}</g:link></td>--}%
 
-                            <td>${fieldValue(bean: personInstance, field: "vorname")}</td>
+							<td><g:link action="show" id="${personInstance.id}">${fieldValue(bean: personInstance, field: "nachname")}</g:link></td>
 
-                            <td>${fieldValue(bean: personInstance, field: "nachname")}</td>
+							<td>${fieldValue(bean: personInstance, field: "vorname")}</td>
 
                             <td>${fieldValue(bean: personInstance, field: "strasse")}</td>
 
@@ -90,11 +92,36 @@
 
                             <td>${fieldValue(bean: personInstance, field: "telefon1")}</td>
 
-                            <td>${fieldValue(bean: personInstance, field: "telefon2")}</td>
+                            %{--<td>${fieldValue(bean: personInstance, field: "telefon2")}</td>--}%
 
                             <td>${fieldValue(bean: personInstance, field: "email")}</td>
 
-                            <td><g:formatBoolean boolean="${personInstance.adresseAnzeigen}" /></td>
+                            %{--<td><g:formatBoolean boolean="${personInstance.adresseAnzeigen}" /></td>--}%
+
+							<td>
+								<g:each var="tmpFunktion" in="${personInstance.funktionen}">
+									<g:if test="${tmpFunktion.code == Funktion.ABTEILUNGSLEITER}">
+										<%
+											for(Abteilung tmpAbteilung : personInstance.abteilungen)
+											{
+												for(Funktion tmpAFunktion : tmpAbteilung.mitarbeiterfunktionen)
+												{
+													if(tmpAFunktion.code == Funktion.ABTEILUNGSLEITER)
+													{
+										%>
+														${tmpAbteilung}
+										<%
+													}
+												}
+											}
+										%>
+									</g:if>
+									<g:else>
+										${tmpFunktion}
+									</g:else>
+									<br />
+								</g:each>
+							</td>
 
 							<td><g:link action="edit" id="${personInstance.id}"><g:message code="person.edit" default="Bearbeiten" /></g:link></td>
 

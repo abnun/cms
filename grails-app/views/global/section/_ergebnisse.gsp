@@ -10,6 +10,8 @@
 		</span>
 	</g:if>
 	<g:else>
-		${ergebnis?.tore}
+		<span style="position: relative; display: block; float: right; margin: 0; border: none; overflow: hidden; font-size: 12px;">
+			${(ergebnis?.tore?.indexOf(' *') != -1) ? ergebnis?.tore?.substring(0, ergebnis?.tore?.indexOf(' *')) : ergebnis?.tore}&nbsp;
+		</span>
 	</g:else>
 </g:each>
