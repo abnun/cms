@@ -28,9 +28,9 @@
 								<tr valign="middle">
 									<td class="copy">Berichte</td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
-									<td class="rubrik_grau"><a href="#" class="rubrik_grau">Portraits</a></td>
+									<td class="rubrik_grau"><a href="${createLink(controller: 'abteilung', action: 'portraits', params: [code: abteilungInstance?.code], mapping: 'abteilungPortraits')}">Portraits</a></td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
-									<td class="rubrik_grau"><a href="${createLink(controller: 'abteilung', action: 'spielplan', id: abteilungInstance?.id)}">Spielplan</a></td>
+									<td class="rubrik_grau"><a href="${createLink(controller: 'abteilung', action: 'spielplan', params: [code: abteilungInstance?.code], mapping: 'abteilungSpielplan')}">Spielplan</a></td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
 									<td><a href="#" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_table.jpg')}" width="26" height="26" border="0"></a></td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
@@ -42,9 +42,9 @@
 					<tr>
 						<td colspan="2" valign="top" class="copy">
 							<br>
-							<g:if test="${abteilungInstance?.berichte}">
+							<g:if test="${berichte}">
 								<div id="accordion">
-									<g:each status="i" var="bericht" in="${abteilungInstance?.berichte/*.sort{a, b -> a.ueberschrift <=> b.ueberschrift}*/}">
+									<g:each status="i" var="bericht" in="${berichte}">
 										<g:render template="/abteilung/bericht" model="['bericht': bericht, 'i': i, 'abteilung': abteilungInstance]"/>
 									</g:each>
 								</div>

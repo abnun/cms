@@ -3,6 +3,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="layout" content="sv_leingarten"/>
+	<g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}" />
+	<g:render template="/global/javascript/accordionJS" model="[accordionID: 'accordion']" />
+	<g:render template="/global/css/accordionCSS" />
 </head>
 <body>
 <table width="614" border="0" cellpadding="0" cellspacing="0" style="width: 614px;">
@@ -14,7 +17,7 @@
 							<table border="0" cellpadding="0" cellspacing="3">
 								<tr>
 									<td></td>
-									<td><span class="headline_dunkel">Spielplan</span></td>
+									<td><span class="headline_dunkel">${abteilungInstance?.anzeigeName ?: abteilungInstance?.name}</span></td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="26"></td>
 									<td class="copy">%{--Landesstaffel 1 Bezirk Nord--}%</td>
 								</tr>
@@ -25,9 +28,9 @@
 								<tr valign="middle">
 									<td class="rubrik_grau"><a href="${createLink(controller: 'abteilung', action: 'show', params: [code: abteilungInstance?.code], mapping: 'abteilungShow')}">Berichte</a></td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
-									<td class="rubrik_grau"><a href="${createLink(controller: 'abteilung', action: 'portraits', params: [code: abteilungInstance?.code], mapping: 'abteilungPortraits')}">Portraits</a></td>
+									<td class="copy">Portraits</td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
-									<td class="copy">Spielplan</td>
+									<td class="rubrik_grau"><a href="${createLink(controller: 'abteilung', action: 'spielplan', id: abteilungInstance?.id)}">Spielplan</a></td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
 									<td><a href="#" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_table.jpg')}" width="26" height="26" border="0"></a></td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
@@ -36,23 +39,9 @@
 							</table>
 						</td>
 					</tr>
-					<tr>
-						<td colspan="2" valign="top" class="copy">
-							<g:each in="${abteilungInstance.spielplaene.sort{ Spielplan a, Spielplan b -> a.anstoss <=> b.anstoss } }" var="sp">
-								<p>
-									<g:formatDate date="${sp?.spieldatum}" format="dd.MM.yyyy" />:&nbsp;${sp?.heimmannschaft}&nbsp;${sp?.gastmannschaft}&nbsp;${sp?.anstoss}
-								</p>
-							</g:each>
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2" valign="top" class="copy">
-							<p class="headline">&nbsp;</p>
-							<p class="headline">&nbsp;</p>
-							<p class="headline">&nbsp;</p>
-							<p>&nbsp;</p></td>
-					</tr>
 				</table>
+				<br />
+				<g:render template="/global/section/portraits/${abteilungInstance.code}_portraits" /> 
 				<!-- InstanceEndEditable --></td>
 			<td width="130"><!-- InstanceBeginEditable name="info" -->
 			<g:include controller="abteilung" action="abteilungsLeiter" id="${abteilungInstance.id}" />

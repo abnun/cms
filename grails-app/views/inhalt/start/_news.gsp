@@ -32,7 +32,7 @@
 				<br />
 				<g:each status="count" var="news" in="${((Map.Entry)newsEntry)?.getValue()}">
 					<p style="margin-top: 0px; margin-bottom: 3px;">
-						<a href="${createLink(controller: 'abteilung', action: 'berichte', params: [code: news?.abteilung?.code], mapping: 'abteilungShow')}" style="text-decoration: none;"> > <span class="copy">${news.ueberschrift ? news.ueberschrift : (news.inhalt[0..60] + (news.inhalt.size() > 60 ? '[...]' : ''))}</span></a>
+						<a href="${createLink(controller: 'abteilung', action: 'berichte', params: [code: news?.abteilung?.code], mapping: 'abteilungShow',  fragment: 'bericht_' + news?.id)}" style="text-decoration: none;"> > <span class="copy">${news.ueberschrift ? news.ueberschrift : (news.inhalt[0..60] + (news.inhalt.size() > 60 ? '[...]' : ''))}</span></a>
 					</p>
 				</g:each>
 			</td>

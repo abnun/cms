@@ -51,7 +51,9 @@ class AbteilungController {
         }
         else
 		{
-			return [abteilungInstance: abteilungInstance]
+			ArrayList abteilungBerichte = new ArrayList()
+			abteilungBerichte.addAll(abteilungInstance.berichte)
+			return [abteilungInstance: abteilungInstance, berichte: abteilungBerichte.sort{Bericht a, Bericht b -> a.ueberschrift.toLowerCase() <=> b.ueberschrift.toLowerCase()}]
 		}
     }
 
@@ -353,7 +355,7 @@ class AbteilungController {
 			{
 				ArrayList ergebnisse = []
 				ArrayList vorschau = []
-				ArrayList berichte = []
+				ArrayList abteilungBerichte = []
 
 				if(abteilungInstance.hasUnterAbteilungen())
 				{
@@ -364,7 +366,7 @@ class AbteilungController {
 
 						for(Bericht bericht in unterAbteilung.berichte)
 						{
-							berichte.add(bericht)
+							abteilungBerichte.add(bericht)
 						}
 					}
 				}
@@ -372,10 +374,10 @@ class AbteilungController {
 				{
 					ergebnisse.addAll(fetchResultsForAbteilung(abteilungInstance))
 					vorschau.addAll(fetchPlayDaysForAbteilung(abteilungInstance))
-					berichte.addAll(abteilungInstance.berichte)
+					abteilungBerichte.addAll(abteilungInstance.berichte)
 				}
 
-				return [abteilungInstance: abteilungInstance, ergebnisse: ergebnisse, vorschau: vorschau, berichte: berichte]
+				return [abteilungInstance: abteilungInstance, ergebnisse: ergebnisse, vorschau: vorschau, berichte: abteilungBerichte.sort{Bericht a, Bericht b -> a.ueberschrift.toLowerCase() <=> b.ueberschrift.toLowerCase()}]
 			}
 		}
 	}
@@ -395,6 +397,11 @@ class AbteilungController {
 		}
 		else
 		{
+			if(abteilungInstance.oberAbteilung)
+			{
+				abteilungInstance = abteilungInstance.oberAbteilung
+			}
+			
 			Funktion abteilungsLeiterFunktion = abteilungInstance.mitarbeiterfunktionen.find
 			{
 				Funktion funktion ->
@@ -447,6 +454,31 @@ class AbteilungController {
 	def spielplan =
 	{
 		def abteilungInstance = Abteilung.get(params.id)
+
+		if (!abteilungInstance)
+		{
+			abteilungInstance = Abteilung.findByCode(params.code)
+		}
+
+		if(abteilungInstance)
+		{
+			return [abteilungInstance: abteilungInstance]
+		}
+		else
+		{
+			redirect(controller: 'abteilung', action: 'show', id: params.id)
+			return false
+		}
+	}
+
+	def portraits =
+	{
+		def abteilungInstance = Abteilung.get(params.id)
+
+		if (!abteilungInstance)
+		{
+			abteilungInstance = Abteilung.findByCode(params.code)
+		}
 
 		if(abteilungInstance)
 		{

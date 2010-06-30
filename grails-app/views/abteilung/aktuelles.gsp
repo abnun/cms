@@ -32,7 +32,7 @@
 						<br>
 						<g:if test="${berichte}">
 							<div id="accordion">
-								<g:each status="i" var="bericht" in="${berichte/*.sort{a, b -> a.ueberschrift <=> b.ueberschrift}*/}">
+								<g:each status="i" var="bericht" in="${berichte}">
 									<g:render template="/abteilung/bericht" model="['bericht': bericht, 'i': i, 'abteilung': bericht.abteilung]"/>
 								</g:each>
 							</div>

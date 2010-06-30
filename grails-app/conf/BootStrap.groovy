@@ -256,7 +256,7 @@ class BootStrap
 				Es spielten:
 				H. Mayer, T. Czok, S. Zimmer, J. Reiner, T. Zimmermann (M. Baumann), M. Frank, M. Vogt (P. Henger), J. Heubach, R. Heubach, A. Hörtling, S. Ostfalk (P. Schietinger)"""
 
-				Bericht tmpBericht = new Bericht(ueberschrift: 'Spfr. Stockheim – SV Leingarten > 2:5 (0:2)', inhalt: tmpInhalt, abteilung: fussball_damen)
+				Bericht tmpBericht = new Bericht(ueberschrift: 'Spfr. Stockheim – SV Leingarten > 2:5 (0:2)', inhalt: tmpInhalt, abteilung: fussball_herren_1_mannschaft)
 				//tmpBericht.save()
 				fussball_herren_1_mannschaft.addToBerichte(tmpBericht)
 
@@ -264,9 +264,21 @@ class BootStrap
 				Nach dem Seitenwechsel kam der SVL besser ins Spiel und konnte durch Heubachs Foulelfmeter etwas glücklich in Führung gehen. Die Spvgg Möckmühl erhöhte den Druck und kam zu weiteren Tormöglichkeiten. Doch die Leingartener Defensive hielt. Auf der anderen Seite machte es Hörtling besser, als er zum 2:0 traf. Doch der vermeintlich sichere Vorsprung von zwei Toren wurde im Gegenzug vom Möckmühler Torjäger Dedovic wieder verkürzt. Aus halbrechter Position ließ er Mayer keine Abwehrchance. Fortan drängte Möckmühl mit aller Kraft auf den Ausgleich, doch der SVL schaffte den Riesenerfolg und gewinnt beide Titel in der Saison 2009/2010.
 				An dieser Stelle möchte sich der SV Leingarten bei seinen tollen und einzigartigen Fans und Zuschauern bedanken, die die Mannschaft einmal mehr großartig und lautstark unterstützten und gewiss einen großen Anteil an diesem Erfolg haben. DANKE"""
 
-				Bericht tmpBericht2 = new Bericht(ueberschrift: 'Pokal: SV Leingarten – Spvgg Möckmühl > 2:1 (0:0)', inhalt: tmpInhalt2, abteilung: fussball_damen)
+				Bericht tmpBericht2 = new Bericht(ueberschrift: 'Pokal: SV Leingarten – Spvgg Möckmühl > 2:1 (0:0)', inhalt: tmpInhalt2, abteilung: fussball_herren_1_mannschaft)
 				//tmpBericht2.save()
 				fussball_herren_1_mannschaft.addToBerichte(tmpBericht2)
+
+				String tmpInhalt3 = """SVL ist Meister und steigt in die Bezirksliga auf
+				Nach zweijähriger Abstinenz kehrt der SV Leingarten wieder in die Bezirksliga zurück. Auf Grund des besseren Torverhältnisses und einem Dreipunktevorsprung ist dem Tabellenführer der Titel nicht mehr zu nehmen.
+				Dabei sah es zu Beginn der Partie sehr gut aus für den SVL. Nach einer halben Stunde führten die Hausherren durch Tore von Schietinger und Hörtling bereits mit 2:0. Doch durch eine Unaufmerksamkeit in der Defensive kam Nordheim noch vor der Pause durch Weber in die Partie zurück.
+				Nach dem Seitenwechsel musste Czok nach wiederholtem Foulspiel mit Gelb-Rot vom Platz, sodass Nordheim auf den Ausgleich drängte. David Benitez schaffte in Minute 60 nach einem Alleingang den nicht unverdienten 2:2 Ausgleich. Der SVL wollte das Remis halten, geriet jedoch nach einem Kopfball von Mario Benitez sogar mit 2:3 in Rückstand. Postwendend kam der SVL im Gegenzug durch Hörtling noch zum 3:3, das die Meisterschaft bedeutete.
+				
+				Es spielten:
+				H. Mayer, T. Czok, S. Zimmer, M. Baumann, J. Reiner, M. Frank, M. Vogt (E. Heidelberger), P. Schietinger (Y. Buchwald), R. Heubach, A. Hörtling, S. Ostfalk"""
+
+				Bericht tmpBericht3 = new Bericht(ueberschrift: 'SV Leingarten - TSV Nordheim > 3:3 (2:1)', inhalt: tmpInhalt3, abteilung: fussball_herren_1_mannschaft)
+				//tmpBericht3.save()
+				fussball_herren_1_mannschaft.addToBerichte(tmpBericht3)
 
 				fussball_herren_1_mannschaft.save()
 			}

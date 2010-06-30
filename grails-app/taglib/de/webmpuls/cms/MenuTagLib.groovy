@@ -1,10 +1,11 @@
 package de.webmpuls.cms
 
 import de.webmpuls.cms.section.AbteilungHelper
+import de.webmpuls.cms.section.Abteilung
 
 class MenuTagLib
 {
-	static namespace = "menu"
+	static namespace = "menuns"
 
 	def header_menu =
 	{
@@ -744,5 +745,33 @@ class MenuTagLib
 		{
 			out << "<img src=\"${resource(dir: 'bilder/divers', file: 'spacer.gif')}\" width=\"1\" height=\"1\">"
 		}
+	}
+
+	def abteilung_menu =
+	{
+		attrs ->
+
+		String type = attrs['type']
+
+		Abteilung abteilung = attrs['abteilung']
+
+		if(type == "portraits")
+		{
+			out << "${request.getContextPath()}/sites/abteilungen/${abteilung.code}_portraits.gsp"
+		}
+		else if(type == "tabelle")
+		{
+			out << "${request.getContextPath()}/sites/abteilungen/${abteilung.code}_tabelle.gsp"
+		}
+		else if(type == "team")
+		{
+			out << "${request.getContextPath()}/sites/abteilungen/${abteilung.code}.gsp"
+		}
+		else
+		{
+			out << ""
+		}
+
+		return out
 	}
 }

@@ -15,7 +15,7 @@ public class AbteilungHelper
 	}
 
 	// Codes
-	static final String CODE_ABTEILUNGEN = "abteilungen"
+	static final String CODE_ABTEILUNGEN = "abteilung"
 	static final String CODE_BADMINTON = "badminton"
 	static final String CODE_BASKETBALL = "basketball"
 	static final String CODE_FUSSBALL_AH = "fussball_-_ah"

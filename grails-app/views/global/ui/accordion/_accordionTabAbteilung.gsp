@@ -2,7 +2,7 @@
 <%@ page import="de.webmpuls.cms.people.ShiroRole" %>
 <div>
 	<h3>
-		<a href="javascript: void(0);">
+		<a name="bericht_${item.id}" href="javascript: void(0);">
 			<g:render template="/global/ui/accordion/accordionHeaderAbteilung" model="[abteilung: abteilung, accordionTabUeberschrift1: accordionTabUeberschrift1, accordionTabUeberschrift2: accordionTabUeberschrift2, datum: datum]"/>
 		</a>
 	</h3>
