@@ -9,75 +9,75 @@
 					{
 						if (jahr == "201")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Authenrieth.htm", "Popup1", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Authenrieth.gsp", "Popup1", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "202")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_BeckerPh.htm", "Popup2", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_BeckerPh.gsp", "Popup2", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "203")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Bolch.htm", "Popup3", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Bolch.gsp", "Popup3", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "207")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Gottwik.htm", "Popup4", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Gottwik.gsp", "Popup4", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "210")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Hussein.htm", "Popup5", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Hussein.gsp", "Popup5", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "211")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Heinle.htm", "Popup11", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Heinle.gsp", "Popup11", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "212")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Jordan.htm", "Popup12", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Jordan.gsp", "Popup12", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "213")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Koch.htm", "Popup13", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Koch.gsp", "Popup13", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "214")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Liaci.htm", "Popup14", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Liaci.gsp", "Popup14", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "215")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_MayerU.htm", "Popup15", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_MayerU.gsp", "Popup15", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "217")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Ortwein.htm", "Popup17", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Ortwein.gsp", "Popup17", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "220")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Schneider.htm", "Popup20", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Schneider.gsp", "Popup20", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "224")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_VedderJulian.htm", "Popup21", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_VedderJulian.gsp", "Popup21", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "225")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Vogt.htm", "Popup21", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Vogt.gsp", "Popup21", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "227")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Werschner.htm", "Popup27", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Werschner.gsp", "Popup27", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "229")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Zimmermann.htm", "Popup29", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Zimmermann.gsp", "Popup29", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "250")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Schellmann.htm", "Popup27", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Schellmann.gsp", "Popup27", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "251")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Tignola.htm", "Popup29", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f2_port_Tignola.gsp", "Popup29", "width=440, height=530, scrollbars");
 						}
 					}
 				</script>

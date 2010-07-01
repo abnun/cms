@@ -29,26 +29,30 @@ public class AbteilungHelper
 	// Jugend
 	static final String CODE_FUSSBALL_JUGEND = "fussball_-_jugend"
 
-	// Jugend Jungs
+	// Jugend Kinderfussball (m/w)
 
 	// Bambini
 	static final String CODE_FUSSBALL_JUGEND_BAMBINI = "fussball_-_jugend_-_bambini"
 
 	// F
-	static final String CODE_FUSSBALL_JUGEND_M_F = "fussball_-_jugend_m_f"
+	static final String CODE_FUSSBALL_JUGEND_M_W_F_1 = "fussball_-_jugend_m_w_f_1"
+	static final String CODE_FUSSBALL_JUGEND_M_W_F_2 = "fussball_-_jugend_m_w_f_2"
+	static final String CODE_FUSSBALL_JUGEND_M_W_F_3 = "fussball_-_jugend_m_w_f_3"
 
 	// E
-	static final String CODE_FUSSBALL_JUGEND_M_E_1 = "fussball_-_jugend_m_e_1"
-	static final String CODE_FUSSBALL_JUGEND_M_E_2 = "fussball_-_jugend_m_e_2"
+	static final String CODE_FUSSBALL_JUGEND_M_W_E_1 = "fussball_-_jugend_m_w_e_1"
+	static final String CODE_FUSSBALL_JUGEND_M_W_E_2 = "fussball_-_jugend_m_w_e_2"
+
+	// Jugend Jungs
 
 	// D
 	static final String CODE_FUSSBALL_JUGEND_M_D_1 = "fussball_-_jugend_m_d_1"
 	static final String CODE_FUSSBALL_JUGEND_M_D_2 = "fussball_-_jugend_m_d_2"
-	static final String CODE_FUSSBALL_JUGEND_M_D_3 = "fussball_-_jugend_m_d_3"
 
 	// C
 	static final String CODE_FUSSBALL_JUGEND_M_C_1 = "fussball_-_jugend_m_c_1"
 	static final String CODE_FUSSBALL_JUGEND_M_C_2 = "fussball_-_jugend_m_c_2"
+	static final String CODE_FUSSBALL_JUGEND_M_C_3 = "fussball_-_jugend_m_c_3"
 
 	// B
 	static final String CODE_FUSSBALL_JUGEND_M_B = "fussball_-_jugend_m_b"
@@ -59,12 +63,15 @@ public class AbteilungHelper
 
 	// Jugend Maedchen
 
+	// E
+	static final String CODE_FUSSBALL_JUGEND_F_E = "fussball_-_jugend_f_e"
+
 	// D
-	static final String CODE_FUSSBALL_JUGEND_F_D_1 = "fussball_-_jugend_f_d_1"
-	static final String CODE_FUSSBALL_JUGEND_F_D_2 = "fussball_-_jugend_f_d_2"
+	static final String CODE_FUSSBALL_JUGEND_F_D = "fussball_-_jugend_f_d"
 
 	// C
-	static final String CODE_FUSSBALL_JUGEND_F_C = "fussball_-_jugend_f_c"
+	static final String CODE_FUSSBALL_JUGEND_F_C_1 = "fussball_-_jugend_f_c_1"
+	static final String CODE_FUSSBALL_JUGEND_F_C_2 = "fussball_-_jugend_f_c_2"
 
 	// B
 	static final String CODE_FUSSBALL_JUGEND_F_B = "fussball_-_jugend_f_b"
@@ -102,26 +109,30 @@ public class AbteilungHelper
 	// Jugend
 	static final String NAME_FUSSBALL_JUGEND = "Fußball - Jugend"
 
-	// Jugend Jungs
+	// Jugend Kinderfussball (m/w)
 
 	// Bambini
 	static final String NAME_FUSSBALL_JUGEND_BAMBINI = "Bambini"
 
 	// F
-	static final String NAME_FUSSBALL_JUGEND_M_F = "SV Leingarten"
+	static final String NAME_FUSSBALL_JUGEND_M_W_F_1 = "SV Leingarten"
+	static final String NAME_FUSSBALL_JUGEND_M_W_F_2 = "SV Leingarten"
+	static final String NAME_FUSSBALL_JUGEND_M_W_F_3 = "SV Leingarten"
 
 	// E
-	static final String NAME_FUSSBALL_JUGEND_M_E_1 = "SV Leingarten I"
-	static final String NAME_FUSSBALL_JUGEND_M_E_2 = "SV Leingarten II"
+	static final String NAME_FUSSBALL_JUGEND_M_W_E_1 = "SV Leingarten I"
+	static final String NAME_FUSSBALL_JUGEND_M_W_E_2 = "SV Leingarten II"
 
+	// Jugend Jungs
+	
 	// D
 	static final String NAME_FUSSBALL_JUGEND_M_D_1 = "SV Leingarten I"
 	static final String NAME_FUSSBALL_JUGEND_M_D_2 = "SV Leingarten II"
-	static final String NAME_FUSSBALL_JUGEND_M_D_3 = "SV Leingarten III"
 
 	// C
 	static final String NAME_FUSSBALL_JUGEND_M_C_1 = "SV Leingarten I"
 	static final String NAME_FUSSBALL_JUGEND_M_C_2 = "SV Leingarten II"
+	static final String NAME_FUSSBALL_JUGEND_M_C_3 = "SV Leingarten III"
 
 	// B
 	static final String NAME_FUSSBALL_JUGEND_M_B = "SV Leingarten"
@@ -132,12 +143,15 @@ public class AbteilungHelper
 
 	// Jugend Maedchen
 
+	// E
+	static final String NAME_FUSSBALL_JUGEND_F_E = "SV Leingarten"
+
 	// D
-	static final String NAME_FUSSBALL_JUGEND_F_D_1 = "SV Leingarten I"
-	static final String NAME_FUSSBALL_JUGEND_F_D_2 = "SV Leingarten II"
+	static final String NAME_FUSSBALL_JUGEND_F_D = "SV Leingarten"
 
 	// C
-	static final String NAME_FUSSBALL_JUGEND_F_C = "SV Leingarten"
+	static final String NAME_FUSSBALL_JUGEND_F_C_1 = "SV Leingarten I"
+	static final String NAME_FUSSBALL_JUGEND_F_C_2 = "SV Leingarten II"
 
 	// B
 	static final String NAME_FUSSBALL_JUGEND_F_B = "SV Leingarten"
@@ -172,48 +186,56 @@ public class AbteilungHelper
 	static final String TOKEN_FUSSBALL_HERREN_1_MANNSCHAFT = "F_H1"
 	static final String TOKEN_FUSSBALL_HERREN_2_MANNSCHAFT = "F_H2"
 
-	// Jugend Jungs
+	// Jugend Kinderfussball (m/w)
 
 	// Bambini
-	static final String TOKEN_FUSSBALL_JUGEND_BAMBINI = "F_JBM"
+
+	static final String TOKEN_FUSSBALL_JUGEND_BAMBINI = "Bamb-m/w"
 
 	// F
-	static final String TOKEN_FUSSBALL_JUGEND_M_F = "F_JMF"
+	static final String TOKEN_FUSSBALL_JUGEND_M_W_F_1 = "F1-m/w"
+	static final String TOKEN_FUSSBALL_JUGEND_M_W_F_2 = "F2-m/w"
+	static final String TOKEN_FUSSBALL_JUGEND_M_W_F_3 = "F3-m/w"
 
 	// E
-	static final String TOKEN_FUSSBALL_JUGEND_M_E_1 = "F_JME1"
-	static final String TOKEN_FUSSBALL_JUGEND_M_E_2 = "F_JME2"
+	static final String TOKEN_FUSSBALL_JUGEND_M_W_E_1 = "E1-m/w"
+	static final String TOKEN_FUSSBALL_JUGEND_M_W_E_2 = "E2-m/w"
+
+	// Jugend Jungs
 
 	// D
-	static final String TOKEN_FUSSBALL_JUGEND_M_D_1 = "F_JMD1"
-	static final String TOKEN_FUSSBALL_JUGEND_M_D_2 = "F_JMD2"
-	static final String TOKEN_FUSSBALL_JUGEND_M_D_3 = "F_JMD3"
+	static final String TOKEN_FUSSBALL_JUGEND_M_D_1 = "D1-m"
+	static final String TOKEN_FUSSBALL_JUGEND_M_D_2 = "D2-m"
 
 	// C
-	static final String TOKEN_FUSSBALL_JUGEND_M_C_1 = "F_JMC1"
-	static final String TOKEN_FUSSBALL_JUGEND_M_C_2 = "F_JMC2"
+	static final String TOKEN_FUSSBALL_JUGEND_M_C_1 = "C1-m-SGM"
+	static final String TOKEN_FUSSBALL_JUGEND_M_C_2 = "C2-m-SGM"
+	static final String TOKEN_FUSSBALL_JUGEND_M_C_3 = "C3-m-SGM"
 
 	// B
-	static final String TOKEN_FUSSBALL_JUGEND_M_B = "F_JMB"
+	static final String TOKEN_FUSSBALL_JUGEND_M_B = "B-m-SGM"
 
 	// A
-	static final String TOKEN_FUSSBALL_JUGEND_M_A = "F_JMA"
+	static final String TOKEN_FUSSBALL_JUGEND_M_A = "A-m"
 
 	
 	// Jugend Maedchen
 
+	// E
+	static final String TOKEN_FUSSBALL_JUGEND_F_E =  "E-w"
+
 	// D
-	static final String TOKEN_FUSSBALL_JUGEND_F_D_1 = "F_JFD1"
-	static final String TOKEN_FUSSBALL_JUGEND_F_D_2 = "F_JFD2"
+	static final String TOKEN_FUSSBALL_JUGEND_F_D = "D-w-SGM"
 
 	// C
-	static final String TOKEN_FUSSBALL_JUGEND_F_C = "F_JFC"
+	static final String TOKEN_FUSSBALL_JUGEND_F_C_1 = "C1-w-SGM"
+	static final String TOKEN_FUSSBALL_JUGEND_F_C_2 = "C2-w-SGM"
 
 	// B
-	static final String TOKEN_FUSSBALL_JUGEND_F_B = "F_JFB"
+	static final String TOKEN_FUSSBALL_JUGEND_F_B = "B-w"
 
 	// A
-	static final String TOKEN_FUSSBALL_JUGEND_F_A = "F_JFA"
+	static final String TOKEN_FUSSBALL_JUGEND_F_A = "A-w"
 
 	// Handball
 	static final String TOKEN_HANDBALL = "Handball"
@@ -298,19 +320,17 @@ public class AbteilungHelper
 		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_BAMBINI, "Bambini")
 		//ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_F_A, "A-Junioren Bezirksstaffel")
 		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_F_B, "B-Juniorinnen Kreisstaffel")
-		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_F_C, "C-Juniorinnen Kreisstaffel")
-		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_F_D_1, "D-Juniorinnen Kreisstaffel")
-		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_F_D_2, "D-Juniorinnen Kreisstaffel")
+		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_F_C_1, "C-Juniorinnen Kreisstaffel")
+		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_F_C_2, "C-Juniorinnen Kreisstaffel")
+		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_F_D, "D-Juniorinnen Kreisstaffel")
+		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_F_E, "E-Juniorinnen Kreisstaffel")
 
 		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_M_A, "A-Junioren Bezirksstaffel")
 		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_M_B, "B-Junioren Bezirksstaffel")
 		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_M_C_1, "C-Junioren Bezirksstaffel")
 		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_M_C_2, "C-Junioren Kreisstaffel")
+		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_M_C_3, "C-Junioren Kreisstaffel")
 		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_M_D_1, "D-Junioren Leistungsstaffel")
 		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_M_D_2, "D-Junioren Kreisstaffel")
-		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_M_D_3, "D-Junioren Kreisstaffel")
-		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_M_E_1, "E-Junioren Kreisstaffel")
-		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_M_E_2, "E-Junioren Kreisstaffel")
-		ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.put(TOKEN_FUSSBALL_JUGEND_M_F, "")
 	}
 }

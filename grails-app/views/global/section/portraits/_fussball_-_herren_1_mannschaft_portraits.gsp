@@ -9,79 +9,79 @@
 					{
 						if (jahr == "101")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Baumann.htm", "Popup1", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Baumann.gsp", "Popup1", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "102")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Czok.htm", "Popup2", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Czok.gsp", "Popup2", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "104")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Duerrwang.htm", "Popup3", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Duerrwang.gsp", "Popup3", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "105")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_FinkC.htm", "Popup3", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_FinkC.gsp", "Popup3", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "106")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_FrankM.htm", "Popup6", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_FrankM.gsp", "Popup6", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "107")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Heinle.htm", "Popup7", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Heinle.gsp", "Popup7", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "108")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Herzberg.htm", "Popup8", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Herzberg.gsp", "Popup8", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "109")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_HeubachJ.htm", "Popup9", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_HeubachJ.gsp", "Popup9", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "110")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_HeubachR.htm", "Popup10", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_HeubachR.gsp", "Popup10", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "111")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Hoertling.htm", "Popup11", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Hoertling.gsp", "Popup11", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "112")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Latic.htm", "Popup12", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Latic.gsp", "Popup12", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "113")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_MayerH.htm", "Popup13", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_MayerH.gsp", "Popup13", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "114")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Reiner.htm", "Popup14", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Reiner.gsp", "Popup14", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "115")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Schietinger.htm", "Popup15", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Schietinger.gsp", "Popup15", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "116")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Schuster.htm", "Popup16", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Schuster.gsp", "Popup16", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "121")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Unkauf.htm", "Popup20", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Unkauf.gsp", "Popup20", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "122")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Weinreuter.htm", "Popup20", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Weinreuter.gsp", "Popup20", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "123")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Zimmer.htm", "Popup20", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Zimmer.gsp", "Popup20", "width=440, height=530, scrollbars");
 						}
 						if (jahr == "150")
 						{
-							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Remmele.htm", "Popup21", "width=440, height=530, scrollbars");
+							window.open("${request.getContextPath()}/sites/abteilungen/f_portraits/f1_port_Remmele.gsp", "Popup21", "width=440, height=530, scrollbars");
 						}
 					}
 				</script>
