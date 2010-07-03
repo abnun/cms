@@ -11,7 +11,7 @@
 				<table width="614" border="0" align="left" cellspacing="10" style="width: 614px;">
 					<tr>
 						<td valign="top" class="copy">
-							<table border="0" cellpadding="0" cellspacing="3">
+							<table border="0" cellpadding="0" cellspacing="10">
 								<tr>
 									<td></td>
 									<td><span class="headline_dunkel">Spielplan</span></td>
@@ -29,9 +29,9 @@
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
 									<td class="copy">Spielplan</td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
-									<td><a href="#" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_table.jpg')}" width="26" height="26" border="0"></a></td>
-									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
-									<td><a href="#" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_team.jpg')}" width="27" height="26" border="0"></a></td>
+									<td><a href="${createLink(controller: 'abteilung', action: 'tabelle', params: [code: abteilungInstance?.code], mapping: 'abteilungTabelle')}" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_table.jpg')}" width="26" height="26" border="0"></a></td>
+								<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
+								<td><a href="${createLink(controller: 'abteilung', action: 'team', params: [code: abteilungInstance?.code], mapping: 'abteilungTeam')}" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_team.jpg')}" width="27" height="26" border="0"></a></td>
 								</tr>
 							</table>
 						</td>

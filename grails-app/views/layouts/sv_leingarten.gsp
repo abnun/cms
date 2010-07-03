@@ -393,10 +393,10 @@
     </tr>
   </table>
 </div>
-<div class="rubrik" id="jufugirls" style="position:absolute; visibility:hidden; width:90px; height:115px; z-index:15; top: 121px; left: 267px;">
+<div class="rubrik" id="jufugirls" style="position:absolute; visibility:hidden; width:90px; height:115px; z-index:15; top: 121px; left: 380px;">
 	<table width="90" border="0" align="left" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
 		<tr>
-			<td width="3" height="20" bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="3" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'inherit', 'jufugirls', '', 'hide')"></td>
+			<td width="3" height="20" bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="3" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide', 'jufukids', '', 'hide')"></td>
 
 			<td bgcolor="#1760A8"><a href="${createLink(controller: 'abteilung', action: 'berichte', params: [code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_E], mapping: 'abteilungShow')}" class="navi">E-Juniorinnen</a></td>
 			<td bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="20" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide', 'jufugirls', '', 'hide')"></td>
@@ -425,11 +425,11 @@
 		</tr>
 	</table>
 </div>
-<div class="rubrik" id="jufujungs" style="position:absolute; visibility:hidden; width:90px; height:115px; z-index:14; left: 219px; top: 121px;" onClick="MM_showHideLayers('jufujungs', '', 'hide')">
+<div class="rubrik" id="jufujungs" style="position:absolute; visibility:hidden; width:90px; height:115px; z-index:14; left: 330px; top: 121px;">
 	<table width="90" border="0" align="left" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
 		<tr>
 			<td width="3" height="20" bgcolor="#1760A8"><a href="#" class="navi">
-			</a><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="3" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+			</a><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="3" height="20" onMouseOver="MM_showHideLayers('jufugirls', '', 'hide', 'jufukids', '', 'hide')"></td>
 			<td bgcolor="#1760A8"><a href="${createLink(controller: 'abteilung', action: 'berichte', params: [code: AbteilungHelper.CODE_FUSSBALL_JUGEND_BAMBINI], mapping: 'abteilungShow')}" class="navi">Bambini</a></td>
 
 			<td bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="20" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
@@ -461,6 +461,42 @@
 			<td><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="60" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
 
 			<td><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="20" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+		</tr>
+	</table>
+</div>
+<div class="rubrik" id="jufukids" style="position:absolute; visibility:hidden; width:130px; height:115px; z-index:14; left: 225px; top: 121px;">
+	<table width="130" border="0" align="left" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
+		<tr>
+			<td width="3" height="20" bgcolor="#1760A8"><a href="#" class="navi">
+			</a><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="3" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide', 'jufugirls', '', 'hide')"></td>
+			<td bgcolor="#1760A8"><a href="${createLink(controller: 'abteilung', action: 'berichte', params: [code: AbteilungHelper.CODE_FUSSBALL_JUGEND_BAMBINI], mapping: 'abteilungShow')}" class="navi">Bambini</a></td>
+
+			<td bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="20" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+		</tr>
+		<tr>
+			<td width="3" height="20" bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="3" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+			<td bgcolor="#1760A8"><a href="${createLink(controller: 'abteilung', action: 'berichte', params: [code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_1], mapping: 'abteilungShow')}" class="navi">F-Junioren Gruppe 1</a></td>
+			<td bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="20" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+		</tr>
+		<tr>
+			<td width="3" height="20" bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="3" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+			<td bgcolor="#1760A8"><a href="${createLink(controller: 'abteilung', action: 'berichte', params: [code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_2], mapping: 'abteilungShow')}" class="navi">F-Junioren Gruppe 2</a></td>
+			<td bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="20" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+		</tr>
+		<tr>
+			<td width="3" height="20" bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="3" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+			<td bgcolor="#1760A8"><a href="${createLink(controller: 'abteilung', action: 'berichte', params: [code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_3], mapping: 'abteilungShow')}" class="navi">F-Junioren Gruppe 3</a></td>
+			<td bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="20" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+		</tr>
+		<tr>
+			<td width="3" height="20" bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="3" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+			<td bgcolor="#1760A8"><a href="${createLink(controller: 'abteilung', action: 'berichte', params: [code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_E_1], mapping: 'abteilungShow')}" class="navi">E-Junioren Gruppe 1</a></td>
+			<td bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="20" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+		</tr>
+		<tr>
+			<td width="3" height="20" bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="3" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
+			<td bgcolor="#1760A8"><a href="${createLink(controller: 'abteilung', action: 'berichte', params: [code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_E_2], mapping: 'abteilungShow')}" class="navi">E-Junioren Gruppe 2</a></td>
+			<td bgcolor="#1760A8"><img src="${resource(dir: 'bilder/divers', file: 'spacer.gif')}" width="20" height="20" onMouseOver="MM_showHideLayers('jufujungs', '', 'hide')"></td>
 		</tr>
 	</table>
 </div>

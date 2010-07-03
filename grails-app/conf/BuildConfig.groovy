@@ -1,6 +1,8 @@
 import org.apache.ivy.plugins.resolver.FileSystemResolver
 import org.apache.ivy.core.settings.IvySettings
 
+grails.server.host="127.0.0.1"
+
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir	= "target/test-reports"

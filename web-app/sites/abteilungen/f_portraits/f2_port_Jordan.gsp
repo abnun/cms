@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>(( (  Sportverein Leingarten  ) ))</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../css/text.css" rel="stylesheet" type="text/css">
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" align="left" cellspacing="5">
+  <tr valign="top"> 
+    <td width="134" class="copy"> <p><img src="../../../bilder/abteilungen/fussball/portrait-bilder/Jordan.jpg" width="134" height="134"></p></td>
+    <td width="275" valign="middle" class="copy"><span class="headline"><br>
+      Jordan, Marco</span></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="134" bgcolor="d2dfff" class="copy">Spitzname:</td>
+    <td width="275" bgcolor="d2dfff" class="copy">-</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Geburtsdatum/ Ort: </td>
+    <td class="copy">27.01.88</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Familienstand / Kinder:</td>
+    <td bgcolor="d2dfff" class="copy">Ledig / keine Kinder</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Gr&ouml;&szlig;e/Gewicht: </td>
+    <td class="copy">1.83m 75 kg</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Position: </td>
+    <td bgcolor="d2dfff" class="copy">TW</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Im Verein seit:</td>
+    <td class="copy">Seit Bambini</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Bisherige Vereine: </td>
+    <td bgcolor="d2dfff" class="copy">Leingarten, TSG Heilbronn </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Ich spiele beim SVL, weil&#8230;</td>
+    <td class="copy">&#8230;es mein Heimat- und Jugendverein ist, und der beste 
+      im Unterland</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Das k&ouml;nnte besser sein <br>
+      beim SV Leingarten:</td>
+    <td bgcolor="d2dfff" class="copy"> Gr&ouml;&szlig;ere Umkleidekabinen</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Was waren Deine gr&ouml;&szlig;ten <br>
+      sportlichen Erfolge?</td>
+    <td class="copy">Meisterschaft, Hallenbezirksmeister, 5er beim VR- hallenturnier</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Mein wichtigster Mitspieler:</td>
+    <td bgcolor="d2dfff" class="copy">Mehrere</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">&nbsp;</td>
+    <td class="copy">&nbsp;</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Lieblings-Essen:</td>
+    <td bgcolor="d2dfff" class="copy">Sahnegeschn&auml;tzeltes</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Lieblings-Getr&auml;nk<br>
+      (alkoholfrei): </td>
+    <td class="copy">Sprudel</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Lieblings-Getr&auml;nk<br>
+      (alkoholisch):</td>
+    <td bgcolor="d2dfff" class="copy">Bacardi Cola </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Lieblings-Buch:</td>
+    <td class="copy">-</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Lieblings-Musikgruppe:</td>
+    <td bgcolor="d2dfff" class="copy">Keine gezielte</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Lieblings-Schauspieler:</td>
+    <td class="copy"> Mehrere<br> </td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Immer im K&uuml;hlschrank:</td>
+    <td bgcolor="d2dfff" class="copy">Ein k&uuml;hles Hefe</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Hier geh ich hin zum Feiern:</td>
+    <td class="copy">Laube, Green Door</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mein Lieblingsverein<br>
+      (neben dem SVL): </td>
+    <td class="copy">BVB</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Was nervt Dich?</td>
+    <td class="copy">Dumme Spr&uuml;che anderer nach schlechten Spielen</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Wen w&uuml;rdest Du gerne <br>
+      kennen lernen?</td>
+    <td class="copy">Heidi Klum</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Wem w&uuml;rdest du gern mal <br>
+      deine Meinung sagen?</td>
+    <td class="copy">Dieter Bohlen</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mit wem w&uuml;rdest du gerne <br>
+      allein in der Sauna sein?</td>
+    <td class="copy">-</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Wann rastest Du aus?</td>
+    <td class="copy">Eigentlich nie</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Dein Vorbild als Spieler?</td>
+    <td class="copy">Stefan Klos</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Erstes Auto?</td>
+    <td class="copy">-</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Erster Trainer?</td>
+    <td class="copy">Gottfried Klenk</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Bester Trainer?</td>
+    <td class="copy">Walter Heubach</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Ich gehe gern ins Training, <br>
+      weil&#8230;</td>
+    <td class="copy">&#8230;es einfach spa&szlig; macht und immer lustig ist</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Das hasse ich am Training:</td>
+    <td class="copy">laufen</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mit Niederlagen werde ich <br>
+      fertig, indem...</td>
+    <td class="copy">&#8230;ich versuch sie so schnell wie m&ouml;glich zu vergessen, 
+      und versuch die Fehler beim n&auml;chsten mal zu vermeiden</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Die besten Spieler aller <br>
+      Zeiten:</td>
+    <td class="copy">Pele, Beckenbauer</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Welche Schlagzeile <br>
+      w&uuml;rdest Du gerne &uuml;ber <br>
+      Dich in der Zeitung lesen?</td>
+    <td class="copy">Elfmeterkiller sichert Titel</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Bist du abergl&auml;ubisch?<br>
+      Wenn ja, Erl&auml;uterung!</td>
+    <td class="copy">nein </td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Meine gr&ouml;&szlig;ten St&auml;rken:</td>
+    <td class="copy">Immer Konzentriert bleiben </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Meine gr&ouml;&szlig;ten Schw&auml;chen:</td>
+    <td class="copy">Abfangen von hohen weiten Flanken</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Meine schlimmste <br>
+      Verletzung:</td>
+    <td class="copy"> Schl&uuml;sselbeinanbruch</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Mein gr&ouml;&szlig;tes Erlebnis:</td>
+    <td class="copy">Aufstiegsspiele</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mein gr&ouml;&szlig;tes Laster:</td>
+    <td class="copy">Viele kleine (1-2 W&ouml;chige) Verletzungen</td>
+  </tr>
+  <tr valign="top"> 
+    <td width="134" class="copy"><br> </td>
+    <td width="275" class="copy"> <p><br>
+      </p></td>
+  </tr>
+</table>
+</body>
+</html>

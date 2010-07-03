@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>(( (  Sportverein Leingarten  ) ))</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../css/text.css" rel="stylesheet" type="text/css">
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" align="left" cellspacing="5">
+  <tr valign="top"> 
+    <td width="134" class="copy"> <p><img src="../../../bilder/abteilungen/fussball/portrait-bilder/duerrwang_timo.jpg" width="134" height="134"></p></td>
+    <td width="275" valign="middle" class="copy"><span class="headline"><br>
+      Timo D&uuml;rrwang</span></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="134" bgcolor="d2dfff" class="copy">Spitzname:</td>
+    <td width="275" bgcolor="d2dfff" class="copy">Motzki / D&uuml;rres / Coach</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Geburtsdatum/ Ort: </td>
+    <td class="copy">21.09.1982 / Heilbronn</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Familienstand / Kinder:</td>
+    <td bgcolor="d2dfff" class="copy">Ledig / meines WISSENS keine!!!!</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Gr&ouml;&szlig;e/Gewicht: </td>
+    <td class="copy">1,75m / 72kg</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Position: </td>
+    <td bgcolor="d2dfff" class="copy">Mittelfeld / da wo mich der Trainer aufstellt</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Im Verein seit:</td>
+    <td class="copy">21.11.2007</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Bisherige Vereine: </td>
+    <td bgcolor="d2dfff" class="copy">Junioren: <br>
+      Spvgg Frankenbach, TSV Weinsberg, TG Heilbronn, VfR Heilbronn <br>
+      Aktive:<br>
+      -Spieler-<br>
+      Heilbronner Spvgg (LL), SG Bad Wimpfen (LL), FC &Ouml;stringen (LL)<br>
+      -Spielertrainer-<br>
+      Spvgg Frankenbach (BK + AK) </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Ich spiele beim SVL, weil&#8230;</td>
+    <td class="copy">es ein Verein mit Tradition und einer sehr guten Jugendarbeit 
+      ist</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Das k&ouml;nnte besser sein <br>
+      beim SV Leingarten:</td>
+    <td bgcolor="d2dfff" class="copy">- die Punktausbeute (stand 25.11.2007)<br>
+      - anstatt des Hartplatzes einen Kunstrasen</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Was waren Deine gr&ouml;&szlig;ten <br>
+      sportlichen Erfolge?</td>
+    <td class="copy">Spieler:<br>
+      Meisterschaften + Aufstiege<br>
+      Spielertrainer:<br>
+      2x Vizemeister, 1x Aufstieg mit der Spvgg Frankenbach </td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mein wichtigster Mitspieler:</td>
+    <td class="copy">- meine Gesundheit<br>
+      - die gesamte Mannschaft (TEAM-SPIRIT)</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">&nbsp;</td>
+    <td class="copy">&nbsp;</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Lieblings-Essen:</td>
+    <td bgcolor="d2dfff" class="copy"><p> kroatische Leckereien<br>
+      </p>
+      </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Lieblings-Getr&auml;nk<br>
+      (alkoholfrei): </td>
+    <td class="copy">Spezi</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Lieblings-Getr&auml;nk<br>
+      (alkoholisch):</td>
+    <td bgcolor="d2dfff" class="copy">ich mag an sich keinen Alkohol</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Lieblings-Buch:</td>
+    <td class="copy">Steven King &#8211; The Green Mile</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Lieblings-Musikgruppe:</td>
+    <td bgcolor="d2dfff" class="copy">keine bestimmte </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Lieblings-Schauspieler:</td>
+    <td class="copy">Johnny Depp / Colin Farrell</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Immer im K&uuml;hlschrank:</td>
+    <td bgcolor="d2dfff" class="copy">Pure &#8222;Leere&#8220;</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Hier geh ich hin zum Feiern:</td>
+    <td class="copy">nach Heilbronn, Karlsruhe, Stuttgart, <br>
+      aber zuk&uuml;nftig hoffentlich oft ins Paradies (SIEGES-FEIERN!!!!)</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mein Lieblingsverein<br>
+      (neben dem SVL): </td>
+    <td class="copy">Der Stern des S&uuml;dens -&gt; FC Bayern<br>
+      und<br>
+      der Karnevals-Club Nr.1 -&gt; 1.FC K&ouml;ln</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Was nervt Dich?</td>
+    <td class="copy">Unp&uuml;nktlichkeit und Unehrlichkeit </td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Wen w&uuml;rdest Du gerne <br>
+      kennen lernen?</td>
+    <td class="copy">Mein &#8222;wahres&#8220; ICH</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Wem w&uuml;rdest du gern mal <br>
+      deine Meinung sagen?</td>
+    <td class="copy">Den Fu&szlig;ballexperten der Krombacher-Runde (Doppelpass) 
+      im DSF, Sonntags um 11:00Uhr </td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mit wem w&uuml;rdest du gerne <br>
+      allein in der Sauna sein?</td>
+    <td class="copy">Das darf ich nicht sagen, sonst bekomm ich &Auml;RGER *g*</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Wann rastest Du aus?</td>
+    <td class="copy"><p> - wenn man versucht mich &uuml;ber den Tisch zu ziehen<br>
+        - wenn der Schiri mich nicht sch&uuml;tzt!!!<br>
+      </p>
+      </td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Dein Vorbild als Spieler?</td>
+    <td class="copy">Bixente Lizarazu sowie Martin Demichelis<br>
+      Bringen immer vollen Einsatz, gut im Spielaufbau, Zweikampfstark, Kopfballstark</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Erstes Auto?</td>
+    <td class="copy">Opel Vectra 2.0</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Erster Trainer?</td>
+    <td class="copy">Uwe Roll</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Bester Trainer?</td>
+    <td class="copy">Jochen Heisig / J&uuml;rgen Schulz</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Ich gehe gern ins Training, <br>
+      weil&#8230;</td>
+    <td class="copy">ich mich verbessern und weiterentwickeln m&ouml;chte </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Das hasse ich am Training:</td>
+    <td class="copy">Wenn nicht mit vollem Einsatz trainiert wird</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mit Niederlagen werde ich <br>
+      fertig, indem...</td>
+    <td class="copy">ich versuche die gemachten Fehler zu analysieren und diese 
+      zu minimieren </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Die besten Spieler aller <br>
+      Zeiten:</td>
+    <td class="copy"> P&eacute;l&eacute;, Kaiser Franz Beckenbauer, Diego Armando 
+      Maradona</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Welche Schlagzeile <br>
+      w&uuml;rdest Du gerne &uuml;ber <br>
+      Dich in der Zeitung lesen?</td>
+    <td class="copy">D&uuml;rrwang bringt den Erfolg zur&uuml;ck</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Bist du abergl&auml;ubisch?<br>
+      Wenn ja, Erl&auml;uterung!</td>
+    <td class="copy">JA, wenn ich vor einem Spiel mein Haus verlassen habe, dann 
+      gehe ich nicht mehr zur&uuml;ck, denn das bringt UNGL&Uuml;CK! </td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Meine gr&ouml;&szlig;ten St&auml;rken:</td>
+    <td class="copy">P&uuml;nktlichkeit, Einsatz, WILLE</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Meine gr&ouml;&szlig;ten Schw&auml;chen:</td>
+    <td class="copy">F&#8230;R&#8230;A&#8230;U&#8230;E&#8230;N</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Meine schlimmste <br>
+      Verletzung:</td>
+    <td class="copy">Knieverletzung (2000), Kn&ouml;chelverletzung (2007)</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Mein gr&ouml;&szlig;tes Erlebnis:</td>
+    <td class="copy">Ich habe im KROATIEN-URLAUB Zlatan Ibrahimovic und Dado Prso 
+      getroffen (2004)</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mein gr&ouml;&szlig;tes Laster:</td>
+    <td class="copy">GEIZIG mit mir SELBST</td>
+  </tr>
+  <tr valign="top"> 
+    <td width="134" class="copy"><br> </td>
+    <td width="275" class="copy">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

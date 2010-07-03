@@ -22,7 +22,7 @@
 						<table border="0" align="left" cellspacing="10">
 							<tr>
 								<td></td>
-								<td><span class="headline_dunkel">${abteilungInstance?.anzeigeName ?: abteilungInstance?.name}</span></td>
+								<td><span class="headline_dunkel">Tabelle</span></td>
 								<td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="26"></td>
 								<td class="copy">%{--Landesstaffel 1 Bezirk Nord--}%&nbsp;</td>
 							</tr>
@@ -32,7 +32,7 @@
 					<td align="right" valign="top">
 						<table border="0" align="right" cellspacing="3">
 							<tr valign="middle">
-								<td class="copy">Berichte</td>
+								<td class="rubrik_grau"><a href="${createLink(controller: 'abteilung', action: 'show', params: [code: abteilungInstance?.code], mapping: 'abteilungShow')}">Berichte</a></td>
 								<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
 								<td class="rubrik_grau"><a href="${createLink(controller: 'abteilung', action: 'portraits', params: [code: abteilungInstance?.code], mapping: 'abteilungPortraits')}">Portraits</a></td>
 								<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
@@ -54,21 +54,7 @@
 				<tr>
 					<td colspan="2" valign="top" class="copy">
 						<br>
-						<g:if test="${berichte}">
-							<div id="accordion">
-								<g:each status="i" var="bericht" in="${berichte}">
-									<g:render template="/abteilung/bericht" model="['bericht': bericht, 'i': i, 'abteilung': abteilungInstance]"/>
-								</g:each>
-							</div>
-						</g:if>
-						<shiro:hasRole name="${ShiroRole.BENUTZER}">
-							<br/>
-							<span>
-								<g:link controller="bericht" action="create" params="[abteilungId: abteilungInstance?.id]">
-									<img src="${resource(dir: '/images/skin', file: 'database_add.png')}" alt="Neuer Bericht" border="0"/>&nbsp;Neuer Bericht
-								</g:link>
-							</span>
-						</shiro:hasRole>
+						<img src="${resource(dir: 'bilder/abteilungen/' + abteilungInstance?.oberAbteilung?.code, file: abteilungInstance?.code + '_tabelle.jpg')}" alt="" />
 					</td>
 				</tr>
 				<tr>

@@ -5,6 +5,12 @@ class UrlMappings
 
 	static mappings = {
 
+		"/$controller/$action?/$id?" {
+			constraints {
+				// apply constraints here
+			}
+		}
+		
 		name abteilungSpielplan: "/abteilung/spielplan/$code" {
 			controller = 'abteilung'
 			action = 'spielplan'
@@ -15,9 +21,19 @@ class UrlMappings
 			action = 'portraits'
 		}
 
-		name abteilungShow: "/abteilung/$code" {
+		name abteilungShow: "/abteilung/berichte/$code" {
 			controller = 'abteilung'
 			action = 'berichte'
+		}
+
+		name abteilungTabelle: "/abteilung/tabelle/$code" {
+			controller = 'abteilung'
+			action = 'tabelle'
+		}
+
+		name abteilungTeam: "/abteilung/team/$code" {
+			controller = 'abteilung'
+			action = 'team'
 		}
 
 		name abteilungAktuelles: "/abteilungen/aktuelles/$code" {
@@ -55,11 +71,6 @@ class UrlMappings
 			action = "route"
 		}
 
-		"/$controller/$action?/$id?" {
-			constraints {
-				// apply constraints here
-			}
-		}
 		//"/"(view:"/index")
 		"/"(controller: "inhalt", action: 'aktuelles')
 		"500"(view: '/error')

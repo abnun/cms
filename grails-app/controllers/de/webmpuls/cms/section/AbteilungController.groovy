@@ -492,6 +492,48 @@ class AbteilungController {
 		}
 	}
 
+	def tabelle =
+	{
+		def abteilungInstance = Abteilung.get(params.id)
+
+		if (!abteilungInstance)
+		{
+			abteilungInstance = Abteilung.findByCode(params.code)
+		}
+
+		if(abteilungInstance)
+		{
+
+			return [abteilungInstance: abteilungInstance]
+		}
+		else
+		{
+			redirect(controller: 'abteilung', action: 'show', id: params.id)
+			return false
+		}
+	}
+
+	def team =
+	{
+		def abteilungInstance = Abteilung.get(params.id)
+
+		if (!abteilungInstance)
+		{
+			abteilungInstance = Abteilung.findByCode(params.code)
+		}
+
+		if(abteilungInstance)
+		{
+
+			return [abteilungInstance: abteilungInstance]
+		}
+		else
+		{
+			redirect(controller: 'abteilung', action: 'show', id: params.id)
+			return false
+		}
+	}
+
 	private ArrayList fetchResultsForAbteilung(Abteilung abteilung)
 	{
 		ArrayList ergebnisse = []

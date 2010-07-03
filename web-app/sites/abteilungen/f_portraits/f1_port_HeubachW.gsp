@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>(( (  Sportverein Leingarten  ) ))</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../css/text.css" rel="stylesheet" type="text/css">
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" align="left" cellspacing="5">
+  <tr valign="top"> 
+    <td width="134" class="copy"> <p><img src="../../../bilder/abteilungen/fussball/portrait-bilder/Heubach_Walter.jpg" width="134" height="134"></p></td>
+    <td width="275" valign="middle" class="copy"><span class="headline"><br>
+      Heubach, Walter</span></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="134" bgcolor="d2dfff" class="copy">Spitzname:</td>
+    <td width="275" bgcolor="d2dfff" class="copy">-</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Geburtsdatum/ Ort: </td>
+    <td class="copy">26.05.55</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Familienstand / Kinder:</td>
+    <td bgcolor="d2dfff" class="copy">Verheiratet / 6</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Gr&ouml;&szlig;e/Gewicht: </td>
+    <td class="copy">175 cm /82 kg</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Position: </td>
+    <td bgcolor="d2dfff" class="copy">Trainer Leingarten1</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Im Verein seit:</td>
+    <td class="copy">Ca. 20 Jahre</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Bisherige Vereine: </td>
+    <td bgcolor="d2dfff" class="copy"> SV G&ouml;ppingen, FA G&ouml;ppingen, SV 
+      Stuttgart- Ost</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Ich spiele beim SVL, weil&#8230;</td>
+    <td class="copy">Gut organisierter (Fu&szlig;ball-) Verein mit hohem Engagement 
+      im Jugendbereich. Verein hat Zukunftsperspektiven</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Das k&ouml;nnte besser sein <br>
+      beim SV Leingarten:</td>
+    <td bgcolor="d2dfff" class="copy">Ehrenamtliche Unterst&uuml;tzung im Fu&szlig;ball- 
+      Aktivenbereich und Sponsorenengagement</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Was waren Deine gr&ouml;&szlig;ten <br>
+      sportlichen Erfolge?</td>
+    <td class="copy"> Aufstieg mit Stgt- Ost in Amateurliga; Aufstiegsrunde zur 
+      Verbandsstaffel mit A- Jugend Leingarten 2005</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mein wichtigster Mitspieler:</td>
+    <td class="copy">-</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">&nbsp;</td>
+    <td class="copy">&nbsp;</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Lieblings-Essen:</td>
+    <td bgcolor="d2dfff" class="copy">Linsen&amp;Sp&auml;tzle Spaghetti mit Fleischk&auml;se</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Lieblings-Getr&auml;nk<br>
+      (alkoholfrei): </td>
+    <td class="copy">Spezi</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Lieblings-Getr&auml;nk<br>
+      (alkoholisch):</td>
+    <td bgcolor="d2dfff" class="copy">keins </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Lieblings-Buch:</td>
+    <td class="copy">&#8222;Die S&auml;ulen der Erde&#8220;</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Lieblings-Musikgruppe:</td>
+    <td bgcolor="d2dfff" class="copy">Deep Purple</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Lieblings-Schauspieler:</td>
+    <td class="copy">-</td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="d2dfff" class="copy">Immer im K&uuml;hlschrank:</td>
+    <td bgcolor="d2dfff" class="copy">Fleischk&auml;se</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Hier geh ich hin zum Feiern:</td>
+    <td class="copy">-</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mein Lieblingsverein<br>
+      (neben dem SVL): </td>
+    <td class="copy">-</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Was nervt Dich?</td>
+    <td class="copy">Eine Politik ohne Weitblick und R&uuml;cksicht auf zuk&uuml;nftige 
+      Generationen. <br>
+      Eine Gesellschaftsentwicklung ohne R&uuml;cksichtnahme und Sozialverantwortung.</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Wen w&uuml;rdest Du gerne <br>
+      kennen lernen?</td>
+    <td class="copy">-</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Wem w&uuml;rdest du gern mal <br>
+      deine Meinung sagen?</td>
+    <td class="copy">Ach da gibt es viele, vor allem jenen, die der &Uuml;berzeugung 
+      sind, da&szlig; wirtschaftliche und/oder (vermeintliche) Glaubensinteressen 
+      die Mi&szlig;achtung der Menschenrechte und &#8211; w&uuml;rde legitimieren.</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mit wem w&uuml;rdest du gerne <br>
+      allein in der Sauna sein?</td>
+    <td class="copy">Gehe nicht in die Sauna.</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Wann rastest Du aus?</td>
+    <td class="copy">Am schwersten kann ich mit Ungerechtigkeiten umgehen.</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Dein Vorbild als Spieler?</td>
+    <td class="copy">-</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Erstes Auto?</td>
+    <td class="copy">Renault R4</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Erster Trainer?</td>
+    <td class="copy">Im Aktivenbereich: Erwin Karrer</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Bester Trainer?</td>
+    <td class="copy"> -</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Ich gehe gern ins Training, <br>
+      weil&#8230;</td>
+    <td class="copy">.... ich davon &uuml;berzeugt bin, da&szlig; wir das mittelfristige 
+      Ziel &#8222;Aufstieg in die Landesliga&#8220; schaffen k&ouml;nnen</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Das hasse ich am Training:</td>
+    <td class="copy">Spieler die sich nicht reinh&auml;ngen und nicht engagiert 
+      mitziehen.</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mit Niederlagen werde ich <br>
+      fertig, indem...</td>
+    <td class="copy">... ich die Ursachen zu analysieren versuche.</td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Die besten Spieler aller <br>
+      Zeiten:</td>
+    <td class="copy">Leider ist derzeit aus unseren Mannschaften keiner dabei.<br>
+      Es sind immer die gleichen Verd&auml;chtigen, wie z.B. Beckenbauer, Cruyff, 
+      Pele etc.</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Welche Schlagzeile <br>
+      w&uuml;rdest Du gerne &uuml;ber <br>
+      Dich in der Zeitung lesen?</td>
+    <td class="copy">Kein Bedarf </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Bist du abergl&auml;ubisch?<br>
+      Wenn ja, Erl&auml;uterung!</td>
+    <td class="copy">Nein</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Meine gr&ouml;&szlig;ten St&auml;rken:</td>
+    <td class="copy">Tatkraft, Energie, Engagement, Entschlossenheit, Offenheit, 
+      Willensst&auml;rke, Hilfsbereitschaft. </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Meine gr&ouml;&szlig;ten Schw&auml;chen:</td>
+    <td class="copy">Nehme mir zu wenig Zeit f&uuml;r mich selbst</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Meine schlimmste <br>
+      Verletzung:</td>
+    <td class="copy">Nichts Dramatisches </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="copy">Mein gr&ouml;&szlig;tes Erlebnis:</td>
+    <td class="copy">Au&szlig;erhalb der Privatsph&auml;re: Versuch der Umrundung 
+      des Annapurna- Massivs in Nepal Nov 2005</td>
+  </tr>
+  <tr valign="top" bgcolor="d2dfff"> 
+    <td class="copy">Mein gr&ouml;&szlig;tes Laster:</td>
+    <td class="copy"> Trainerjob der Aktiven- Fu&szlig;ballmannschaft</td>
+  </tr>
+  <tr valign="top"> 
+    <td width="134" class="copy"><br> </td>
+    <td width="275" class="copy"> <p><br>
+      </p></td>
+  </tr>
+</table>
+</body>
+</html>
