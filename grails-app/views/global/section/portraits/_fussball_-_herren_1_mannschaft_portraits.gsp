@@ -100,7 +100,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(101)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Baumann_Maik.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Baumann_Maik.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -119,7 +119,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(102)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Czok_Tobias.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Czok_Tobias.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -153,7 +153,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(104)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'duerrwang_timo.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'duerrwang_timo.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -173,7 +173,7 @@
 				<tr>
 					<td width="60" bgcolor="d2dfff">
 						<a href="javascript:PopupFenster(105)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Fink_Christian.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Fink_Christian.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td width="1">
@@ -192,7 +192,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(106)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Frank_Marc.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Frank_Marc.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -211,7 +211,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(107)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Heinle_Benjamin.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Heinle_Benjamin.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -230,7 +230,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(108)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Herzberg_Lars.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Herzberg_Lars.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -249,7 +249,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(109)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Heubach_Jonas.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Heubach_Jonas.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -268,7 +268,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(110)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Heubach_Ruben.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Heubach_Ruben.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -287,7 +287,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(111)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Hoertling_Andi.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Hoertling_Andi.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -324,7 +324,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(112)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Latic_Damir.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Latic_Damir.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -343,7 +343,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(113)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Mayer_Holger.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Mayer_Holger.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -362,7 +362,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(114)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Reiner_Hannes.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Reiner_Hannes.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -381,7 +381,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(115)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Schietinger_Phil.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Schietinger_Phil.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -401,7 +401,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(116)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Schuster_Felix.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Schuster_Felix.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -480,7 +480,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(122)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Weinreuter_Martin.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Weinreuter_Martin.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -499,7 +499,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(123)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Zimmer_Steffen.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Zimmer_Steffen.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -526,7 +526,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(109)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'duerrwang_timo.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'duerrwang_timo.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
@@ -552,7 +552,7 @@
 				<tr>
 					<td>
 						<a href="javascript:PopupFenster(114)">
-							<img src="${resource(dir: 'bilder/abteilungen/fussball/portrait-bilder', file: 'Remmele_Andy.jpg')}" width="60" height="60" border="0"/>
+							<img src="${resource(dir: 'bilder/abteilungen/fussball-_-herren/portrait-bilder', file: 'Remmele_Andy.jpg')}" width="60" height="60" border="0"/>
 						</a>
 					</td>
 					<td>
