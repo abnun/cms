@@ -10,7 +10,7 @@
 <table border="0" align="left" cellspacing="5">
   <tr valign="top"> 
     <td width="134" class="copy"> 
-      <p><img src="../../../bilder/abteilungen/fussball/portrait-bilder/Zimmermann_Tobias.jpg" width="134" height="134"></p></td>
+      <p><img src="../../../bilder/abteilungen/fussball_-_herren/portrait-bilder/Zimmermann_Tobias.jpg" width="134" height="134"></p></td>
     <td width="275" valign="middle" class="copy"><span class="headline"><br>
       Zimmermann, Tobias</span></td>
   </tr>

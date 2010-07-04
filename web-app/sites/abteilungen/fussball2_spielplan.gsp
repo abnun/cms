@@ -201,7 +201,7 @@
             </tr>
             <tr>
               <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <a href="${resource(dir: 'bilder/abteilungen/fussball/2_Mannschaft', file: 'spielplan_svl2_2009_2010.pdf')}" target="_blank">
+                <a href="${resource(dir: 'bilder/abteilungen/fussball_-_herren/2_Mannschaft', file: 'spielplan_svl2_2009_2010.pdf')}" target="_blank">
                   spielplan_svl2_
                   <br/>
                   2009_2010.pdf
