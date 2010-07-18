@@ -61,6 +61,7 @@ grails.gorm.default.mapping = {
    cache(true)
 }
 
+grails.gorm.failOnError = true
 
 alter.static.files = false
 

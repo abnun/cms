@@ -67,14 +67,14 @@
                                 </td>
                             </tr>
 
-                            <tr class="prop">
+                            %{--<tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="album"><g:message code="bericht.album.label" default="Album" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: berichtInstance, field: 'album', 'errors')}">
                                     <g:select name="album.id" from="${de.webmpuls.photo_album.Album.list()}" optionKey="id" value="${berichtInstance?.album?.id}" noSelection="['null': '']" />
                                 </td>
-                            </tr>
+                            </tr>--}%
                         
                         </tbody>
                     </table>

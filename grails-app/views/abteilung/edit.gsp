@@ -28,7 +28,7 @@
 								modal: true,
 								resizable: false,
 								hide: 'explode',
-								width: 600,
+								width: 760,
 								buttons: {
 									"Zuordnung erstellen": function() {
 										var pValue = $("input[name='person']").val();
@@ -56,12 +56,12 @@
 		$('#sp_dialog').dialog( {
 								title: 'Spielplan-Dialog',
 								bgiframe: true,
-								autoOpen: false,
+								autoOpen: ${spielplanInhalt ? 'true' : 'false'},
 								closeOnEscape: true,
 								modal: true,
 								resizable: false,
 								hide: 'explode',
-								width: 600,
+								width: 760,
 								buttons: {
 									"Spielplan erstellen": function() {
 										var iValue = $("textarea[name='inhalt']").val();
@@ -90,7 +90,7 @@
 								modal: true,
 								resizable: false,
 								hide: 'explode',
-								width: 600,
+								width: 760,
 								buttons: {
 									"Trainingszeiten zuweisen": function() {
 										var tValue = $("input[name='tag']").val();
@@ -112,6 +112,10 @@
 						}
 				});
 
+		if(${spielplanInhalt ? 'true' : 'false'})
+		{
+			$("#sp_dialog_error2").slideDown("slow");
+		}
 	</jq:jquery>
 
 	<g:render template="/global/javascript/buttonJS"/>
@@ -137,6 +141,16 @@
 <button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]"/></button>
 <g:render template="/global/javascript/backToListButtonJS" />
 <button id="backToListButton" style="margin-left: 10px;"><g:message code="default.back.to.list" /></button>
+<jq:jquery>
+	$("#showAbteilungButton").button({
+		icons: {
+			primary: 'ui-icon-arrowthick-1-e'
+		}
+	}).click(function() {
+		window.location.href = '${createLink(action: 'berichte', params: ['code': abteilungInstance.code], mapping: 'abteilungShow')}';
+	});
+</jq:jquery>
+<button id="showAbteilungButton" style="margin-left: 10px;"><g:message code="abteilung.show" /></button>
 <hr/>
 <div class="body">
 %{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
@@ -379,13 +393,13 @@
 								<tr class="prop">
 									<td valign="top" colspan="2">
 										<br/>
-										<a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Personen-Zuordnungen&nbsp;hinzufügen</a>
+										<a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Personen-Zuordnungen&nbsp;hinzufügen</a>
 										<br/>
 										<br/>
-										<a href="javascript: void(0);" id="sp_dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Spielplan&nbsp;hinzufügen</a>
+										<a href="javascript: void(0);" id="sp_dialog_link" class="ui-state-default ui-corner-all">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Spielplan&nbsp;hinzufügen</a>
 										<br/>
 										<br/>
-										<a href="javascript: void(0);" id="tz_dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Trainingszeiten&nbsp;hinzufügen</a>
+										<a href="javascript: void(0);" id="tz_dialog_link" class="ui-state-default ui-corner-all">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Trainingszeiten&nbsp;hinzufügen</a>
 										<br/>
 										<br/>
 									</td>
@@ -403,8 +417,8 @@
             </g:form>
         </div>
 
-		<div id="dialog">
-			<table>
+		<div id="dialog" style="width: 750px">
+			<table style="width: 750px">
 				<tr>
 					<td valign="top" align="left">
 						<label for="person">Person:</label>
@@ -429,15 +443,15 @@
 			</div>
 		</div>
 
-		<div id="sp_dialog">
+		<div id="sp_dialog" style="width: 750px">
 			<g:form controller="spielplan" action="createSpielplanFromAbteilung" method="post" name="SpielplanForm">
-				<table>
+				<table style="width: 750px">
 					<tr>
 						<td valign="top" align="left">
 							<label for="inhalt">Spielplan:</label>
 						</td>
 						<td valign="top" align="left">
-							<g:textArea name="inhalt" id="inhalt" style="width: 400px;" />
+							<g:textArea name="inhalt" id="inhalt" style="width: 400px;"  value="${spielplanInhalt}"/>
 						</td>
 					</tr>
 				</table>
@@ -457,11 +471,17 @@
 						<strong>Fehler:</strong> Es muss mindestens ein vollständiger Spielplan-Eintrag eingegeben werden!</p>
 				</div>
 			</div>
+			<div id="sp_dialog_error2" class="ui-widget" style="display: none;">
+				<div style="padding: 0pt 0.7em;" class="ui-state-error ui-corner-all">
+					<p><span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
+						<strong>Fehler:</strong> Ungültige Eingabe, bitte Eingabe auf überflüssige Leerzeichen überprüfen!</p>
+				</div>
+			</div>
 		</div>
 
-		<div id="tz_dialog">
+		<div id="tz_dialog" style="width: 750px">
 			<g:form controller="trainingszeit" action="createTrainingszeitFromAbteilung" method="post" name="TrainingszeitForm">
-				<table>
+				<table style="width: 750px">
 					<tr>
 						<td valign="top" align="left">
 							<label for="name">Bezeichnung:</label>

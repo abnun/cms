@@ -27,4 +27,22 @@ class Bericht extends News
 		abteilung()
 		album(nullable: true)
     }
+
+	def afterInsert()
+	{
+		if(!album)
+		{
+			Album.withNewSession
+			{
+				album = new Album(name: "Album-Bericht-${id}", description: "Album für Bericht '${ueberschrift}'").save()
+			}
+			save()
+		}
+	}
+
+
+	def String toString()
+	{
+		return ueberschrift
+	}
 }

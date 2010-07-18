@@ -7,6 +7,7 @@ package de.webmpuls.cms.media
 class MediaHelper 
 {
 	// Alben
+	public static final String ALBUM_BERICHTE = "berichte"
 	public static final String ALBUM_PERSONEN = "personen"
 	public static final String ALBUM_SPONSOREN = "sponsoren"
 	public static final String ALBUM_VERSCHIEDENES = "verschiedenes"
@@ -17,7 +18,46 @@ class MediaHelper
 
 	public static String formatNameForDisk(String name)
 	{
-		name = name.replaceAll(' ', '_')
+		if(name)
+		{
+			name = name.toLowerCase()
+			if (name.contains(" "))
+			{
+				name = name.replaceAll(" ", "_")
+			}
+			if (name.contains("."))
+			{
+				name = name.replaceAll(".", "")
+			}
+			if (name.contains("/"))
+			{
+				name = name.replaceAll("/", "_")
+			}
+			if (name.contains("("))
+			{
+				name = name.replaceAll("\\(", "")
+			}
+			if (name.contains(")"))
+			{
+				name = name.replaceAll("\\)", "")
+			}
+			if (name.contains("ß"))
+			{
+				name = name.replaceAll("ß", "ss")
+			}
+			if (name.contains("ä"))
+			{
+				name = name.replaceAll("ä", "ae")
+			}
+			if (name.contains("ü"))
+			{
+				name = name.replaceAll("ü", "ue")
+			}
+			if (name.contains("ö"))
+			{
+				name = name.replaceAll('ö', "oe")
+			}
+		}
 		return name
 	}
 }

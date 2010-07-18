@@ -68,10 +68,10 @@ class Abteilung
 
 	def beforeUpdate()
 	{
-		if(hasUnterAbteilungen())
+		/*if(hasUnterAbteilungen())
 		{
 			anzeigeImMenu = true
-		}
+		}*/
 		
 		if (!code)
 		{
@@ -89,7 +89,7 @@ class Abteilung
 
 	def String toString()
 	{
-		return name
+		return anzeigeName ?: name
 	}
 
 	public boolean hasUnterAbteilungen()

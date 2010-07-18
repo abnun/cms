@@ -27,14 +27,11 @@
 		</script>
     </head>
     <body>
-        <div class="nav">
-            %{--<span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>--}%
-            %{--<span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>--}%
-            <g:render template="/global/javascript/createButtonJS" />
+        <g:render template="/global/javascript/createButtonJS" />
 		<button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]" /></button>
-			<g:render template="/global/javascript/backToListButtonJS" />
+		<g:render template="/global/javascript/backToListButtonJS" />
 		<button id="backToListButton" style="margin-left: 10px;"><g:message code="default.back.to.list" /></button>
-        </div>
+        <hr />
         <div class="body">
             %{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
             <g:if test="${flash.message}">
@@ -100,7 +97,16 @@
                                     <g:datePicker name="endDatum" precision="day" value="${terminInstance?.endDatum}"  />
                                 </td>
                             </tr>
-                        
+
+							<tr class="prop">
+								<td valign="top" class="name">
+									<label for="uhrzeit"><g:message code="termin.uhrzeit.label" default="Uhrzeit"/></label>
+								</td>
+								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'uhrzeit', 'errors')}">
+									<g:textField name="uhrzeit" value="${terminInstance?.uhrzeit}" />&nbsp;Uhr
+								</td>
+							</tr>
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="inhalt"><g:message code="termin.inhalt.label" default="Inhalt" /></label>
@@ -124,16 +130,7 @@
 									<label for="abteilung.id"><g:message code="termin.abteilung.label" default="Abteilung"/></label>
 								</td>
 								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'abteilung', 'errors')}">
-									<g:select from="${Abteilung.list()}" name="abteilung.id" value="${terminInstance?.abteilung?.id}" optionKey="id" noSelection="['null': message(code: 'default.form.select.text')]" />
-								</td>
-							</tr>
-
-							<tr class="prop">
-								<td valign="top" class="name">
-									<label for="uhrzeit"><g:message code="termin.uhrzeit.label" default="Uhrzeit"/></label>
-								</td>
-								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'uhrzeit', 'errors')}">
-									<g:textField name="uhrzeit" value="${terminInstance?.uhrzeit}" />&nbsp;Uhr
+									<g:select from="${de.webmpuls.cms.section.Abteilung.list().sort{a,b -> a.toString().toLowerCase() <=> b.toString().toLowerCase()}}" name="abteilung.id" value="${terminInstance?.abteilung?.id}" optionKey="id" noSelection="['null': message(code: 'default.form.select.text')]" />
 								</td>
 							</tr>
 

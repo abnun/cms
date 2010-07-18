@@ -198,7 +198,7 @@ class BootStrap
 		Abteilung fussball_damen = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_DAMEN)
 		if(!fussball_damen)
 		{
-			fussball_damen =  new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_DAMEN, anzeigeName: 'Frauen (ab 1992)', code: AbteilungHelper.CODE_FUSSBALL_DAMEN)
+			fussball_damen =  new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_DAMEN, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_DAMEN, code: AbteilungHelper.CODE_FUSSBALL_DAMEN)
 
 			// TODO: entfernen!
 			String tmpInhalt = """Wir waren am 31.10.09 beim Eppinger Spielfest zu Gast und spielten zum ersten
@@ -244,7 +244,7 @@ class BootStrap
 			Abteilung fussball_herren_1_mannschaft = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_HERREN_1_MANNSCHAFT)
 			if (!fussball_herren_1_mannschaft)
 			{
-				fussball_herren_1_mannschaft = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_HERREN_1_MANNSCHAFT, code: AbteilungHelper.CODE_FUSSBALL_HERREN_1_MANNSCHAFT, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_HERREN_1_MANNSCHAFT, oberAbteilung: fussball_herren, anzeigeImMenu: false)
+				fussball_herren_1_mannschaft = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_HERREN_1_MANNSCHAFT, code: AbteilungHelper.CODE_FUSSBALL_HERREN_1_MANNSCHAFT, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_HERREN_1_MANNSCHAFT, oberAbteilung: fussball_herren, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_HERREN_1_MANNSCHAFT)
 
 				// TODO: entfernen!
 				String tmpInhalt = """Riesenfete und Autokorso
@@ -286,7 +286,7 @@ class BootStrap
 			Abteilung fussball_herren_2_mannschaft = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT)
 			if (!fussball_herren_2_mannschaft)
 			{
-				fussball_herren_2_mannschaft = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_HERREN_2_MANNSCHAFT, code: AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_HERREN_2_MANNSCHAFT, oberAbteilung: fussball_herren, anzeigeImMenu: false)
+				fussball_herren_2_mannschaft = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_HERREN_2_MANNSCHAFT, code: AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_HERREN_2_MANNSCHAFT, oberAbteilung: fussball_herren, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_HERREN_1_MANNSCHAFT)
 				fussball_herren_2_mannschaft.save()
 			}
 
@@ -308,43 +308,61 @@ class BootStrap
 			Abteilung fussball_jugend_bambini = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_BAMBINI)
 			if (!fussball_jugend_bambini)
 			{
-				fussball_jugend_bambini = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_BAMBINI, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_BAMBINI, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_BAMBINI, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_bambini = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_BAMBINI, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_BAMBINI, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_BAMBINI, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_BAMBINI)
 				fussball_jugend_bambini.save()
 			}
 
+
+			// F
 			Abteilung fussball_jugend_m_w_f_1 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_1)
 			if (!fussball_jugend_m_w_f_1)
 			{
-				fussball_jugend_m_w_f_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_W_F_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_W_F_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_w_f_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_W_F_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_W_F_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_W_F_1)
 				fussball_jugend_m_w_f_1.save()
 			}
 
 			Abteilung fussball_jugend_m_w_f_2 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_2)
 			if (!fussball_jugend_m_w_f_2)
 			{
-				fussball_jugend_m_w_f_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_W_F_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_W_F_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_w_f_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_W_F_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_W_F_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_W_F_2)
 				fussball_jugend_m_w_f_2.save()
 			}
 
 			Abteilung fussball_jugend_m_w_f_3 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_3)
 			if (!fussball_jugend_m_w_f_3)
 			{
-				fussball_jugend_m_w_f_3 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_W_F_3, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_3, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_W_F_3, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_w_f_3 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_W_F_3, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_F_3, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_W_F_3, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_W_F_3)
 				fussball_jugend_m_w_f_3.save()
 			}
 
+			// E
 			Abteilung fussball_jugend_m_w_e_1 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_E_1)
 			if (!fussball_jugend_m_w_e_1)
 			{
-				fussball_jugend_m_w_e_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_W_E_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_E_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_W_E_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_w_e_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_W_E_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_E_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_W_E_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_W_E_1)
 				fussball_jugend_m_w_e_1.save()
 			}
 
 			Abteilung fussball_jugend_m_w_e_2 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_E_2)
 			if (!fussball_jugend_m_w_e_2)
 			{
-				fussball_jugend_m_w_e_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_W_E_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_E_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_W_E_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_w_e_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_W_E_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W_E_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_W_E_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_W_E_2)
 				fussball_jugend_m_w_e_2.save()
+			}
+
+			Abteilung fussball_jugend_m_w = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W)
+			if (!fussball_jugend_m_w)
+			{
+				fussball_jugend_m_w = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_W, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_W, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_W)
+
+				fussball_jugend_m_w.addToUnterabteilungen(fussball_jugend_m_w_e_1)
+				fussball_jugend_m_w.addToUnterabteilungen(fussball_jugend_m_w_e_2)
+				fussball_jugend_m_w.addToUnterabteilungen(fussball_jugend_m_w_f_1)
+				fussball_jugend_m_w.addToUnterabteilungen(fussball_jugend_m_w_f_2)
+				fussball_jugend_m_w.addToUnterabteilungen(fussball_jugend_m_w_f_3)
+				fussball_jugend_m_w.addToUnterabteilungen(fussball_jugend_bambini)
+
+				fussball_jugend_m_w.save()
 			}
 
 			// Jugend Jungs
@@ -353,14 +371,14 @@ class BootStrap
 			Abteilung fussball_jugend_m_d_1 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_1)
 			if (!fussball_jugend_m_d_1)
 			{
-				fussball_jugend_m_d_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_D_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_D_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_d_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_D_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_D_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_D_1)
 				fussball_jugend_m_d_1.save()
 			}
 
 			Abteilung fussball_jugend_m_d_2 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_2)
 			if (!fussball_jugend_m_d_2)
 			{
-				fussball_jugend_m_d_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_D_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_D_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_d_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_D_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_D_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_D_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_D_2)
 				fussball_jugend_m_d_2.save()
 			}
 
@@ -368,21 +386,21 @@ class BootStrap
 			Abteilung fussball_jugend_m_c_1 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_1)
 			if (!fussball_jugend_m_c_1)
 			{
-				fussball_jugend_m_c_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_C_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_C_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_c_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_C_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_C_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_C_1)
 				fussball_jugend_m_c_1.save()
 			}
 
 			Abteilung fussball_jugend_m_c_2 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_2)
 			if (!fussball_jugend_m_c_2)
 			{
-				fussball_jugend_m_c_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_C_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_C_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_c_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_C_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_C_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_C_2)
 				fussball_jugend_m_c_2.save()
 			}
 
 			Abteilung fussball_jugend_m_c_3 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_3)
 			if (!fussball_jugend_m_c_3)
 			{
-				fussball_jugend_m_c_3 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_C_3, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_3, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_C_3, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_c_3 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_C_3, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_C_3, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_C_3, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_C_3)
 				fussball_jugend_m_c_3.save()
 			}
 
@@ -390,7 +408,7 @@ class BootStrap
 			Abteilung fussball_jugend_m_b = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_B)
 			if (!fussball_jugend_m_b)
 			{
-				fussball_jugend_m_b = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_B, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_B, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_B, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_b = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_B, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_B, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_B, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_B)
 				fussball_jugend_m_b.save()
 			}
 
@@ -398,10 +416,25 @@ class BootStrap
 			Abteilung fussball_jugend_m_a = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_A)
 			if (!fussball_jugend_m_a)
 			{
-				fussball_jugend_m_a = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_A, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_A, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_A, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_m_a = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M_A, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M_A, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M_A, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M_A)
 				fussball_jugend_m_a.save()
 			}
 
+			Abteilung fussball_jugend_m = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M)
+			if (!fussball_jugend_m)
+			{
+				fussball_jugend_m = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_M, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_M, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_M, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_M)
+
+				fussball_jugend_m.addToUnterabteilungen(fussball_jugend_m_a)
+				fussball_jugend_m.addToUnterabteilungen(fussball_jugend_m_b)
+				fussball_jugend_m.addToUnterabteilungen(fussball_jugend_m_c_1)
+				fussball_jugend_m.addToUnterabteilungen(fussball_jugend_m_c_2)
+				fussball_jugend_m.addToUnterabteilungen(fussball_jugend_m_c_3)
+				fussball_jugend_m.addToUnterabteilungen(fussball_jugend_m_d_1)
+				fussball_jugend_m.addToUnterabteilungen(fussball_jugend_m_d_2)
+
+				fussball_jugend_m.save()
+			}
 
 			// Jugend Maedchen
 
@@ -409,7 +442,7 @@ class BootStrap
 			Abteilung fussball_jugend_f_e = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_E)
 			if (!fussball_jugend_f_e)
 			{
-				fussball_jugend_f_e = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_E, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_E, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_E, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_f_e = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_E, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_E, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_E, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_F_E)
 				fussball_jugend_f_e.save()
 			}
 
@@ -417,7 +450,7 @@ class BootStrap
 			Abteilung fussball_jugend_f_d = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_D)
 			if (!fussball_jugend_f_d)
 			{
-				fussball_jugend_f_d = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_D, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_D, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_D, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_f_d = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_D, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_D, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_D, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_F_D)
 				fussball_jugend_f_d.save()
 			}
 
@@ -425,14 +458,14 @@ class BootStrap
 			Abteilung fussball_jugend_f_c_1 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_C_1)
 			if (!fussball_jugend_f_c_1)
 			{
-				fussball_jugend_f_c_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_C_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_C_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_C_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_f_c_1 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_C_1, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_C_1, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_C_1, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_F_C_1)
 				fussball_jugend_f_c_1.save()
 			}
 
 			Abteilung fussball_jugend_f_c_2 = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_C_2)
 			if (!fussball_jugend_f_c_2)
 			{
-				fussball_jugend_f_c_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_C_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_C_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_C_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_f_c_2 = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_C_2, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_C_2, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_C_2, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_F_C_2)
 				fussball_jugend_f_c_2.save()
 			}
 
@@ -440,7 +473,14 @@ class BootStrap
 			Abteilung fussball_jugend_f_b = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_B)
 			if (!fussball_jugend_f_b)
 			{
-				fussball_jugend_f_b = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_B, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_B, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_B, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_f_b = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_B, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_B, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_B, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_F_B)
+
+				// Spielplaene
+				GregorianCalendar spielplanCalendar = new GregorianCalendar()
+				spielplanCalendar.add(GregorianCalendar.DAY_OF_WEEK, 2)
+				Spielplan spielplan = new Spielplan(abteilungKuerzel: 'B-w', gastmannschaft: 'SV Leingarten', heimmannschaft: 'TSG Hoffenheim', anstoss: '19.30', spieldatum: spielplanCalendar.getTime()).save()
+				fussball_jugend_f_b.addToSpielplaene(spielplan)
+
 				fussball_jugend_f_b.save()
 			}
 
@@ -448,11 +488,32 @@ class BootStrap
 			Abteilung fussball_jugend_f_a = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_A)
 			if (!fussball_jugend_f_a)
 			{
-				fussball_jugend_f_a = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_A, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_A, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_A, oberAbteilung: fussball_jugend, anzeigeImMenu: false)
+				fussball_jugend_f_a = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_A, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_A, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_A, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_F_A)
 				fussball_jugend_f_a.save()
 			}
 
-			fussball_jugend.addToUnterabteilungen(fussball_jugend_bambini)
+			Abteilung fussball_jugend_f = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F)
+			if (!fussball_jugend_f)
+			{
+				fussball_jugend_f = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_F)
+
+				fussball_jugend_f.addToUnterabteilungen(fussball_jugend_f_a)
+				fussball_jugend_f.addToUnterabteilungen(fussball_jugend_f_b)
+				fussball_jugend_f.addToUnterabteilungen(fussball_jugend_f_c_1)
+				fussball_jugend_f.addToUnterabteilungen(fussball_jugend_f_c_2)
+				fussball_jugend_f.addToUnterabteilungen(fussball_jugend_f_d)
+				fussball_jugend_f.addToUnterabteilungen(fussball_jugend_f_e)
+
+				fussball_jugend_f.save()
+			}
+
+			// Zuerst die Abteilungen die direkt drunter sind und ihrerseits wieder Abteilungen haben
+			fussball_jugend.addToUnterabteilungen(fussball_jugend_m_w)
+			fussball_jugend.addToUnterabteilungen(fussball_jugend_m)
+			fussball_jugend.addToUnterabteilungen(fussball_jugend_f)
+
+			// und dann die restlichen
+			/*fussball_jugend.addToUnterabteilungen(fussball_jugend_bambini)
 
 			fussball_jugend.addToUnterabteilungen(fussball_jugend_f_a)
 			fussball_jugend.addToUnterabteilungen(fussball_jugend_f_b)
@@ -473,7 +534,7 @@ class BootStrap
 			fussball_jugend.addToUnterabteilungen(fussball_jugend_m_w_e_2)
 			fussball_jugend.addToUnterabteilungen(fussball_jugend_m_w_f_1)
 			fussball_jugend.addToUnterabteilungen(fussball_jugend_m_w_f_2)
-			fussball_jugend.addToUnterabteilungen(fussball_jugend_m_w_f_3)
+			fussball_jugend.addToUnterabteilungen(fussball_jugend_m_w_f_3)*/
 
 			fussball_jugend.save()
 		}
@@ -490,7 +551,7 @@ class BootStrap
 		Abteilung karate = Abteilung.findByCode(AbteilungHelper.CODE_KARATE)
 		if(!karate)
 		{
-			karate =  new Abteilung(name: AbteilungHelper.NAME_KARATE, code: AbteilungHelper.CODE_KARATE, )
+			karate =  new Abteilung(name: AbteilungHelper.NAME_KARATE, code: AbteilungHelper.CODE_KARATE)
 			karate.save()
 		}
 
@@ -586,7 +647,7 @@ class BootStrap
 
 		// Benutzer
 
-		ShiroUser adminstrator  = ShiroUser.findByUsername(ShiroUser.ADMINISTRATOR)
+		ShiroUser adminstrator = ShiroUser.findByUsername(ShiroUser.ADMINISTRATOR)
 		if(!adminstrator)
 		{
 			adminstrator = new ShiroUser(username: ShiroUser.ADMINISTRATOR, passwordHash: new Sha1Hash("xkermitS").toHex())

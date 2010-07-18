@@ -1,6 +1,7 @@
 import org.apache.ivy.plugins.resolver.FileSystemResolver
 import org.apache.ivy.core.settings.IvySettings
 
+//grails.server.host="10.1.50.228"
 grails.server.host="127.0.0.1"
 
 grails.project.class.dir = "target/classes"

@@ -48,7 +48,7 @@ class ImportController
 
 		importService.importHTMLTable(tmpLink)
 
-		flash.message = "Tabelle von <a href=\"${tmpLink}\">hier</a> eingelesen."
+		flash.message = "Tabelle von <a target=\"_blank\" href=\"${tmpLink}\">hier</a> eingelesen."
 		redirect(controller: 'tabelle', action: 'list')
 	}
 

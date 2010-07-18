@@ -61,7 +61,7 @@
                         
                             %{--<td><g:link action="show" id="${abteilungInstance.id}">${fieldValue(bean: abteilungInstance, field: "id")}</g:link></td>--}%
                         
-                            <td><g:link action="berichte" id="${abteilungInstance.id}">${fieldValue(bean: abteilungInstance, field: "name")}</g:link></td>
+                            <td><link:abteilungShow code="${abteilungInstance.code}">${fieldValue(bean: abteilungInstance, field: "name")}</link:abteilungShow></td>
 
 							<td>${fieldValue(bean: abteilungInstance, field: "anzeigeName")}</td>
 

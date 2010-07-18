@@ -6,6 +6,7 @@
 	<g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}"/>
 	<g:render template="/global/javascript/accordionJS" model="[accordionID: 'accordion']"/>
 	<g:render template="/global/css/accordionCSS"/>
+	<wm_photo_album:gallery_resources />
 	<style type="text/css">
 	.ui-accordion .ui-accordion-header .ui-icon {
 		margin-top: -8px;
@@ -14,7 +15,7 @@
 </head>
 <body>
 
-<table width="614" border="0" cellpadding="0" cellspacing="0">
+<table width="695" border="0" cellpadding="0" cellspacing="0">
 	<tr align="left" valign="top">
 		<td height="227"><!-- InstanceBeginEditable name="Text" -->
 			<table border="0" align="left" cellspacing="10">

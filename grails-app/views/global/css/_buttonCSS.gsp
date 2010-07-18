@@ -15,3 +15,12 @@ ${dialogLinkId ? '#' + dialogLinkId : '#dialog_link'} span.ui-icon {
 }
 
 </style>
+
+<!--[if gte IE 6]>
+<style type="text/css">
+	${dialogLinkId ? '#' + dialogLinkId : '#dialog_link'} span.ui-icon {
+	margin-top: -12px;
+}
+
+</style>
+<![endif]-->

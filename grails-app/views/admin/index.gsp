@@ -22,11 +22,11 @@
 			</td>
 			<td class="copy">
 				<ul>
-					<li>
+					%{--<li>
 						<a href="${createLink(controller: 'aktuelles')}">
 							Bereich 'Aktuelles' verwalten
 						</a>
-					</li>
+					</li>--}%
 					<li>
 						<a href="${createLink(controller: 'anzeigen')}">
 							Bereich 'Anzeigen' verwalten
@@ -64,7 +64,7 @@
 					</li>
 					<li>
 						<a href="${createLink(controller: 'abteilung')}">
-							Abteilung verwalten
+							Abteilungen verwalten
 						</a>
 					</li>
 					<li>

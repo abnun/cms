@@ -115,21 +115,29 @@ class SpielplanController {
 			Collection spielplaeneToSave = []
 
 			println array.size()
+			println array
 
-			array.each
+
+			boolean isInvalid = false
+
+			for(String tmpString in array)
 			{
-				Matcher matcher = it =~ regex
+				Matcher matcher = tmpString =~ regex
 
 				Spielplan spielplan = new Spielplan()
 
 				println("matcher -> ${matcher[0]}")
 
-				println matcher[0][1]
 				println matcher[0][2]
 				println matcher[0][3]
 				println matcher[0][4]
 				println matcher[0][5]
 				println matcher[0][6]
+
+				if(matcher[0][1].toString().contains("null") || matcher[0][2].toString().contains("null") || matcher[0][3].toString().contains("null") || matcher[0][4].toString().contains("null") || matcher[0][5].toString().contains("null") || matcher[0][6].toString().contains("null"))
+				{
+					isInvalid = true
+				}
 
 				spielplan.abteilungKuerzel = matcher[0][1]
 
@@ -150,6 +158,12 @@ class SpielplanController {
 
 				spielplaeneToSave.add(spielplan)
 
+			}
+
+			if(isInvalid)	
+			{
+				redirect(controller: 'abteilung', action: 'edit', id: params.abteilung.id, params: ['spielplan.inhalt': params.inhalt])
+				return false;
 			}
 
 			Abteilung abteilung = Abteilung.get(params.abteilung.id)

@@ -63,7 +63,7 @@
 												<img width="110" border="0" src="${wm_photo_album.pathToImage(picture: personInstance.bild)}" title="${message(code: 'picture.show.big.label', 'default': 'Klicken um eine größere Ansicht zu erhalten.')}" align="middle"/>
 											</a>
 										</g:if>
-										&nbsp;<span><a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Bild-Auswahl Dialog öffnen</a></span>
+										&nbsp;<span><a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Bild-Auswahl Dialog öffnen</a></span>
 										<br/>
 										<br/>
 									</div>

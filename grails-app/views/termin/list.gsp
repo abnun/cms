@@ -38,7 +38,7 @@
                     <thead>
                         <tr>
                         
-                            <g:sortableColumn property="id" title="${message(code: 'termin.id.label', default: 'Id')}" />
+                            %{--<g:sortableColumn property="id" title="${message(code: 'termin.id.label', default: 'Id')}" />--}%
                         
                             <g:sortableColumn property="startDatum" title="${message(code: 'termin.startDatum.label', default: 'Von')}" />
 
@@ -63,19 +63,19 @@
                     <g:each in="${terminInstanceList}" status="i" var="terminInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td>${fieldValue(bean: terminInstance, field: "id")}</td>
+                            %{--<td>${fieldValue(bean: terminInstance, field: "id")}</td>--}%
                         
                             <td><g:formatDate date="${terminInstance.startDatum}" /></td>
 
 							<td><g:formatDate date="${terminInstance.endDatum}" /></td>
+
+							<td>${fieldValue(bean: terminInstance, field: "uhrzeit")}</td>
 
                             <td>${fieldValue(bean: terminInstance, field: "inhalt")}</td>
 
 							<td>${fieldValue(bean: terminInstance, field: "ort")}</td>
 
 							<td>${fieldValue(bean: terminInstance, field: "abteilung")}</td>
-
-							<td>${fieldValue(bean: terminInstance, field: "uhrzeit")}</td>
 
                             <td><g:formatBoolean boolean="${terminInstance.findetStatt}" /></td>
                         

@@ -1,4 +1,4 @@
-<%@ page import="de.webmpuls.cms.people.Person; de.webmpuls.cms.people.Funktion" %>
+<%@ page import="de.webmpuls.cms.people.ShiroRole; de.webmpuls.cms.people.Person; de.webmpuls.cms.people.Funktion" %>
 <html>
 <head>
 	<meta name="layout" content="sv_leingarten"/>
@@ -24,6 +24,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${vorsitzender1Person.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${vorsitzender1Person.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${vorsitzender1Person.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${vorsitzender1Person.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${vorsitzender1Person.id}" name="PersonDeleteForm_${vorsitzender1Person.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -40,6 +54,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${vorsitzender2Person.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${vorsitzender2Person.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${vorsitzender2Person.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${vorsitzender2Person.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${vorsitzender2Person.id}" name="PersonDeleteForm_${vorsitzender2Person.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -56,6 +84,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${vorsitzender3Person.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${vorsitzender3Person.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${vorsitzender3Person.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${vorsitzender3Person.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${vorsitzender3Person.id}" name="PersonDeleteForm_${vorsitzender3Person.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -72,6 +114,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${kassiererPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${kassiererPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${kassiererPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${kassiererPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${kassiererPerson.id}" name="PersonDeleteForm_${kassiererPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 				</tr>
@@ -145,6 +201,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${schriftfuehrerPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${schriftfuehrerPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${schriftfuehrerPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${schriftfuehrerPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${schriftfuehrerPerson.id}" name="PersonDeleteForm_${schriftfuehrerPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -161,6 +231,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${geschaeftsstellePerson1.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${geschaeftsstellePerson1.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${geschaeftsstellePerson1.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${geschaeftsstellePerson1.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${geschaeftsstellePerson1.id}" name="PersonDeleteForm_${geschaeftsstellePerson1.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -177,6 +261,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${geschaeftsstellePerson2.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${geschaeftsstellePerson2.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${geschaeftsstellePerson2.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${geschaeftsstellePerson2.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${geschaeftsstellePerson2.id}" name="PersonDeleteForm_${geschaeftsstellePerson2.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -193,6 +291,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${referentPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${referentPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${referentPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${referentPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${referentPerson.id}" name="PersonDeleteForm_${referentPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 				</tr>
@@ -266,6 +378,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${frauenbeauftragterPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${frauenbeauftragterPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${frauenbeauftragterPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${frauenbeauftragterPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${frauenbeauftragterPerson.id}" name="PersonDeleteForm_${frauenbeauftragterPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -282,6 +408,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${jugendleiterPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${jugendleiterPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${jugendleiterPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${jugendleiterPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${jugendleiterPerson.id}" name="PersonDeleteForm_${jugendleiterPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -298,6 +438,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${jugendsprecherPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${jugendsprecherPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${jugendsprecherPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${jugendsprecherPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${jugendsprecherPerson.id}" name="PersonDeleteForm_${jugendsprecherPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -314,6 +468,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${leiter_tech_wirtPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${leiter_tech_wirtPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${leiter_tech_wirtPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${leiter_tech_wirtPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${leiter_tech_wirtPerson.id}" name="PersonDeleteForm_${leiter_tech_wirtPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 				</tr>
@@ -387,6 +555,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${leiter_tech_sportPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${leiter_tech_sportPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${leiter_tech_sportPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${leiter_tech_sportPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${leiter_tech_sportPerson.id}" name="PersonDeleteForm_${leiter_tech_sportPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -403,6 +585,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${beisitzerPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${beisitzerPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${beisitzerPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${beisitzerPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${beisitzerPerson.id}" name="PersonDeleteForm_${beisitzerPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -419,6 +615,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+								
+									<g:link controller="person" action="edit" id="${webmasterPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${webmasterPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${webmasterPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${webmasterPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${webmasterPerson.id}" name="PersonDeleteForm_${webmasterPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">

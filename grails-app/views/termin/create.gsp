@@ -91,6 +91,15 @@
                                 </td>
                             </tr>
 
+							<tr class="prop">
+								<td valign="top" class="name">
+									<label for="uhrzeit"><g:message code="termin.uhrzeit.label" default="Uhrzeit"/></label>
+								</td>
+								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'uhrzeit', 'errors')}">
+									<g:textField name="uhrzeit" value="${terminInstance?.uhrzeit}" />&nbsp;Uhr
+								</td>
+							</tr>
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="inhalt"><g:message code="termin.inhalt.label" default="Inhalt" /></label>
@@ -114,16 +123,7 @@
 									<label for="abteilung.id"><g:message code="termin.abteilung.label" default="Abteilung"/></label>
 								</td>
 								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'abteilung', 'errors')}">
-									<g:select from="${Abteilung.list()}" name="abteilung.id" value="${terminInstance?.abteilung?.id}" optionKey="id" noSelection="['null': message(code: 'default.form.select.text')]" />
-								</td>
-							</tr>
-
-							<tr class="prop">
-								<td valign="top" class="name">
-									<label for="uhrzeit"><g:message code="termin.uhrzeit.label" default="Uhrzeit"/></label>
-								</td>
-								<td valign="top" class="value ${hasErrors(bean: terminInstance, field: 'uhrzeit', 'errors')}">
-									<g:textField name="uhrzeit" value="${terminInstance?.uhrzeit}" />&nbsp;Uhr
+									<g:select from="${de.webmpuls.cms.section.Abteilung.list().sort{a,b -> a.toString().toLowerCase() <=> b.toString().toLowerCase()}}" name="abteilung.id" value="${terminInstance?.abteilung?.id}" optionKey="id" noSelection="['null': message(code: 'default.form.select.text')]" />
 								</td>
 							</tr>
 

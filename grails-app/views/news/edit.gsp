@@ -8,12 +8,11 @@
         %{--<title><g:message code="default.edit.label" args="[entityName]" /></title>--}%
     </head>
     <body>
-        <div class="nav">
-            %{--<span class="menuButton"><a class="home" href="${createLink(controller: 'admin')}">Home</a></span>--}%
-            <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
-            <g:render template="/global/javascript/createButtonJS" />
+        <g:render template="/global/javascript/createButtonJS" />
 		<button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]" /></button>
-        </div>
+		<g:render template="/global/javascript/backToListButtonJS" />
+		<button id="backToListButton" style="margin-left: 10px;"><g:message code="default.back.to.list" /></button>
+		<hr />
         <div class="body">
             %{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
             <g:if test="${flash.message}">
@@ -65,7 +64,7 @@
                                   <label for="abteilung"><g:message code="news.abteilung.label" default="Abteilung" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: newsInstance, field: 'abteilung', 'errors')}">
-                                    <g:select name="abteilung.id" from="${de.webmpuls.cms.section.Abteilung.list()}" optionKey="id" value="${newsInstance?.abteilung?.id}"  />
+                                    <g:select name="abteilung.id" from="${de.webmpuls.cms.section.Abteilung.list().sort{a,b -> a.toString().toLowerCase() <=> b.toString().toLowerCase()}}" optionKey="id" value="${newsInstance?.abteilung?.id}"  />
                                 </td>
                             </tr>
                         

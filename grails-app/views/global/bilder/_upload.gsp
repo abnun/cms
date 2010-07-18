@@ -18,11 +18,11 @@
 		<hr/>
 	</g:if>
 
-	<h3>Bild hochladen:</h3>
-
 	<g:set var="isMultiUpload" value="${isMultiUpload}"/>
 
 	<g:if test="${!isMultiUpload}">
+		<h3>Bild hochladen:</h3>
+
 		<g:uploadForm controller="picture" action="uploadPhotos" name="PictureUploadForm" method="post">
 			<g:hiddenField name="album.id" value="${albumId}" />
 			<g:hiddenField name="Filename" value="${fileName}" />
@@ -36,6 +36,7 @@
 		</g:uploadForm>
 	</g:if>
 	<g:else>
+		<h3>Bilder hochladen:</h3>
 		<p>
 			<input type="file" name="albumFotos" id="albumFotos"/>
 		</p>

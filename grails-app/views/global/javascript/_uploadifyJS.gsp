@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 
+<jq:jquery>
 $('#albumFotos').uploadify({
 			'uploader'  		: '${resource(dir: '/js/uploadify', file: 'uploadify.swf', plugin: 'photo-album')}',
 			'script'    		: '${createLink(controller: 'picture', action: 'uploadPhotos')}',
@@ -7,9 +8,9 @@ $('#albumFotos').uploadify({
 			//'buttonImg' 		: '${resource(dir: '/images', file: 'cancel.png', plugin: 'photo-album')}',
 			'auto'      		: false,
 			'fileDataName'		: 'fotos',
-			'multi'				: false,
+			'multi'				: true,
 			'method'			: 'POST',
-			'buttonText'		: 'Bild auswaehlen',
+			'buttonText'		: 'Auswaehlen',
 			'fileDesc'			: 'Erlaubte Datei-Typen',
 			'fileExt'			: '*.jpg;*.gif;*.JPG;*.jpeg;*.JPEG;*.GIF;*.png;*.PNG;',
 			'folder'    		: '/${de.webmpuls.photo_album.util.MediaUtils.DEFAULT_FOLDER}_${album.toString()}_${albumDate}',
@@ -17,3 +18,4 @@ $('#albumFotos').uploadify({
 				'onAllComplete'	: function(event, uploadObj) { alert(uploadObj.filesUploaded + ' Bild(er) hochgeladen. Anzahl der Fehler: ' + uploadObj.errors); $('#dialog').dialog('close'); location.reload();},
 		   	'onError'			: function(event, ID, fileObj, errorObj) { alert("Fehler: "+errorObj.info);}
 });
+</jq:jquery>

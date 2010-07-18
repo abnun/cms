@@ -38,7 +38,7 @@
                     <thead>
                         <tr>
                         
-                            <g:sortableColumn property="id" title="${message(code: 'news.id.label', default: 'Id')}" />
+                            %{--<g:sortableColumn property="id" title="${message(code: 'news.id.label', default: 'Id')}" />--}%
                         
                             <g:sortableColumn property="ueberschrift" title="${message(code: 'news.ueberschrift.label', default: 'Ueberschrift')}" />
                         
@@ -46,9 +46,9 @@
                    	    
                             <g:sortableColumn property="inhalt" title="${message(code: 'news.inhalt.label', default: 'Inhalt')}" />
                         
-                            <g:sortableColumn property="dateCreated" title="${message(code: 'news.dateCreated.label', default: 'Date Created')}" />
+                            %{--<g:sortableColumn property="dateCreated" title="${message(code: 'news.dateCreated.label', default: 'Date Created')}" />--}%
                         
-                            <g:sortableColumn property="lastModified" title="${message(code: 'news.lastModified.label', default: 'Last Modified')}" />
+                            %{--<g:sortableColumn property="lastModified" title="${message(code: 'news.lastModified.label', default: 'Last Modified')}" />--}%
                         
 							<th>&nbsp;</th>
                         </tr>
@@ -57,7 +57,7 @@
                     <g:each in="${newsInstanceList}" status="i" var="newsInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td>${fieldValue(bean: newsInstance, field: "id")}</td>
+                            %{--<td>${fieldValue(bean: newsInstance, field: "id")}</td>--}%
                         
                             <td>${fieldValue(bean: newsInstance, field: "ueberschrift")}</td>
                         
@@ -65,9 +65,9 @@
                         
                             <td width="270">${newsInstance?.inhalt}</td>
                         
-                            <td><g:formatDate date="${newsInstance.dateCreated}" /></td>
+                            %{--<td><g:formatDate date="${newsInstance.dateCreated}" /></td>--}%
                         
-                            <td><g:formatDate date="${newsInstance.lastModified}" /></td>
+                            %{--<td><g:formatDate date="${newsInstance.lastModified}" /></td>--}%
                         
 							<td><g:link action="edit" id="${newsInstance.id}"><g:message code="news.edit" default="Bearbeiten" /></g:link></td>
                         </tr>

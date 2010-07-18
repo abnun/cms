@@ -66,7 +66,7 @@
                                     <label for="abteilung"><g:message code="anzeigen.abteilung.label" default="Abteilung" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: anzeigenInstance, field: 'abteilung', 'errors')}">
-                                    <g:select name="abteilung.id" from="${de.webmpuls.cms.section.Abteilung.list()}" optionKey="id" value="${anzeigenInstance?.abteilung?.id}"  />
+                                    <g:select name="abteilung.id" from="${de.webmpuls.cms.section.Abteilung.list().sort{a,b -> a.toString().toLowerCase() <=> b.toString().toLowerCase()}}" optionKey="id" value="${anzeigenInstance?.abteilung?.id}"  />
                                 </td>
                             </tr>
                         

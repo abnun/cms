@@ -4,8 +4,13 @@ import de.webmpuls.cms.people.Funktion
 import de.webmpuls.cms.people.Person
 import de.webmpuls.cms.result.Tabelle
 import de.webmpuls.cms.result.TabelleHelper
+import de.webmpuls.cms.media.MediaHelper
+import de.webmpuls.photo_album.Album
 
 class AbteilungController {
+
+	def spielplanService
+	def resultService
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
@@ -53,6 +58,7 @@ class AbteilungController {
 		{
 			ArrayList abteilungBerichte = new ArrayList()
 			abteilungBerichte.addAll(abteilungInstance.berichte)
+
 			return [abteilungInstance: abteilungInstance, berichte: abteilungBerichte.sort{Bericht a, Bericht b -> a.ueberschrift.toLowerCase() <=> b.ueberschrift.toLowerCase()}]
 		}
     }
@@ -102,7 +108,9 @@ class AbteilungController {
 				//}
 			}
 
-            return [abteilungInstance: abteilungInstance, fBuilder: fBuilder.toString(), pBuilder: pBuilder.toString()]
+			String spielplanInhalt = params['spielplan.inhalt']
+
+            return [abteilungInstance: abteilungInstance, fBuilder: fBuilder.toString(), pBuilder: pBuilder.toString(), spielplanInhalt: spielplanInhalt]
         }
     }
 
@@ -361,8 +369,8 @@ class AbteilungController {
 				{
 					for(Abteilung unterAbteilung in abteilungInstance.unterabteilungen)
 					{
-						ergebnisse.addAll(fetchResultsForAbteilung(unterAbteilung))
-						vorschau.addAll(fetchPlayDaysForAbteilung(unterAbteilung))
+						ergebnisse.addAll(resultService.fetchResultsForAbteilung(unterAbteilung))
+						vorschau.addAll(spielplanService.fetchPlayDaysForAbteilung(unterAbteilung))
 
 						for(Bericht bericht in unterAbteilung.berichte)
 						{
@@ -372,8 +380,8 @@ class AbteilungController {
 				}
 				else
 				{
-					ergebnisse.addAll(fetchResultsForAbteilung(abteilungInstance))
-					vorschau.addAll(fetchPlayDaysForAbteilung(abteilungInstance))
+					ergebnisse.addAll(resultService.fetchResultsForAbteilung(abteilungInstance))
+					vorschau.addAll(spielplanService.fetchPlayDaysForAbteilung(abteilungInstance))
 					abteilungBerichte.addAll(abteilungInstance.berichte)
 				}
 
@@ -534,99 +542,45 @@ class AbteilungController {
 		}
 	}
 
-	private ArrayList fetchResultsForAbteilung(Abteilung abteilung)
+	def jufukids_menu =
 	{
-		ArrayList ergebnisse = []
+		Abteilung abteilung = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W)
 
-		String kuerzel = abteilung.kuerzel
-		String name = abteilung.name
-
-		GregorianCalendar gregorianCalendarSomeDaysAgo = new GregorianCalendar()
-		gregorianCalendarSomeDaysAgo.add(GregorianCalendar.DAY_OF_WEEK, -TabelleHelper.FETCH_RESULTS_DAYS_AGO)
-
-		//println kuerzel
-		//println name
-
-		AbteilungHelper abteilungHelper = new AbteilungHelper()
-
-		String identifier = abteilungHelper.ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.get(kuerzel)
-
-		//println "identifier -> $identifier"
-
-		def tabelleCriteria = Tabelle.createCriteria()
-
-		def tabelleList = tabelleCriteria.list
+		if(abteilung && abteilung.hasUnterAbteilungen())
 		{
-			and
-			{
-				eq("spielklasse", identifier)
-				or
-				{
-					eq("gastmannschaft", name)
-					eq("heimmannschaft", name)
-				}
-				ge("spieldatum", gregorianCalendarSomeDaysAgo.getTime())
-			}
+			render(view: '/global/section/menu/fussball_-_jugend_m_w_menu', model: [jufukids: abteilung.unterabteilungen.sort{Abteilung a, Abteilung b -> a.anzeigeName.toLowerCase() <=> b.anzeigeName.toLowerCase()}])
 		}
-
-		for(Tabelle tabelle in tabelleList)
+		else
 		{
-			//println tabelle
-			if(tabelle.tore)
-			{
-				ergebnisse.add(tabelle)
-			}
+			render ""
 		}
-
-		return ergebnisse
 	}
 
-	private ArrayList fetchPlayDaysForAbteilung(Abteilung abteilung)
+	def jufujungs_menu =
 	{
-		ArrayList vorschau = []
+		Abteilung abteilung = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_M)
 
-		String kuerzel = abteilung.kuerzel
-		String name = abteilung.name
-
-		GregorianCalendar gregorianCalendarInSomeDays = new GregorianCalendar()
-		gregorianCalendarInSomeDays.add(GregorianCalendar.DAY_OF_WEEK, TabelleHelper.FETCH_DAYS_OF_PLAY_FORWARD)
-
-		GregorianCalendar gregorianCalendar = new GregorianCalendar()
-		//println kuerzel
-		//println name
-
-		AbteilungHelper abteilungHelper = new AbteilungHelper()
-
-		String identifier = abteilungHelper.ABTEILUNG_KUERZEL_TO_REMOTE_IDENTIFIER_MAP.get(kuerzel)
-
-		//println "identifier -> $identifier"
-
-		def tabelleCriteria = Tabelle.createCriteria()
-
-		def tabelleList = tabelleCriteria.list
+		if(abteilung && abteilung.hasUnterAbteilungen())
 		{
-			and
-			{
-				eq("spielklasse", identifier)
-				or
-				{
-					eq("gastmannschaft", name)
-					eq("heimmannschaft", name)
-				}
-				ge("spieldatum", gregorianCalendar.getTime())
-				le("spieldatum", gregorianCalendarInSomeDays.getTime())
-			}
+			render(view: '/global/section/menu/fussball_-_jugend_m_menu', model: [jufujungs: abteilung.unterabteilungen.sort{Abteilung a, Abteilung b -> a.anzeigeName.toLowerCase() <=> b.anzeigeName.toLowerCase()}])
 		}
-
-		for(Tabelle tabelle in tabelleList)
+		else
 		{
-			//println tabelle
-			if(tabelle.anstoss)
-			{
-				vorschau.add(tabelle)
-			}
+			render ""
 		}
+	}
 
-		return vorschau
+	def jufugirls_menu =
+	{
+		Abteilung abteilung = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F)
+
+		if(abteilung && abteilung.hasUnterAbteilungen())
+		{
+			render(view: '/global/section/menu/fussball_-_jugend_f_menu', model: [jufugirls: abteilung.unterabteilungen.sort{Abteilung a, Abteilung b -> a.anzeigeName.toLowerCase() <=> b.anzeigeName.toLowerCase()}])
+		}
+		else
+		{
+			render ""
+		}
 	}
 }

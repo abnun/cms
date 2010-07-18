@@ -1,5 +1,7 @@
 package de.webmpuls.cms.section
 
+import de.webmpuls.photo_album.Album
+
 class BerichtController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -28,10 +30,10 @@ class BerichtController {
 			{
 				berichtInstance.abteilung = tmpAbteilung
 				tmpAbteilung.addToBerichte(berichtInstance)
-				tmpAbteilung.save()
+				tmpAbteilung.save(flush: true)
 
 				flash.message = "${message(code: 'default.created.message', args: [message(code: 'bericht.label', default: 'Bericht'), berichtInstance?.ueberschrift ?: berichtInstance?.abteilung?.name])}"
-				redirect(controller: 'abteilung', action: "show", id: tmpAbteilung.id)
+				redirect(controller: 'abteilung', action: "berichte", params: [code: tmpAbteilung.code], mapping: 'abteilungShow')
 				return false
 			}
 		}

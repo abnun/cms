@@ -17,7 +17,7 @@ class Termin
 	{
 		startDatum()
 		endDatum()
-		inhalt(widget: 'textarea')
+		inhalt(widget: 'textarea', blank: false, nullable: false)
 		ort(blank: true, nullable: true)
 		uhrzeit(blank: true, nullable: true)
 		findetStatt(nullable: true)

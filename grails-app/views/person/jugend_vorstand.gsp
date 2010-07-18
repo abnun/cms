@@ -1,3 +1,4 @@
+<%@ page import="de.webmpuls.cms.people.ShiroRole" %>
 <html>
 <head>
 <meta name="layout" content="sv_leingarten"/>
@@ -23,6 +24,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${jugendleiterPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${jugendleiterPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${jugendleiterPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${jugendleiterPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${jugendleiterPerson.id}" name="PersonDeleteForm_${jugendleiterPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 					<td width="134" align="center" valign="middle">
@@ -39,6 +54,20 @@
 									Bild folgt
 								</p>
 							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+								
+									<g:link controller="person" action="edit" id="${jugendsprecherPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${jugendsprecherPerson.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${jugendsprecherPerson.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${jugendsprecherPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${jugendsprecherPerson.id}" name="PersonDeleteForm_${jugendsprecherPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
 						</g:if>
 					</td>
 				</tr>
