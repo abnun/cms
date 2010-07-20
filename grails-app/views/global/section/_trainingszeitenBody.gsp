@@ -5,9 +5,10 @@
 	</g:if>
 	<span class="copy">${trainingstag.tag}</span><br/>
 	<span class="copy">${trainingstag.uhrzeiten}</span>
+	<shiro:hasRole name="${ShiroRole.BENUTZER}">
+		<span>
+			<g:link controller="trainingstag" action="edit" id="${trainingstag.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Trainingszeiten ändern" title="Trainingszeiten ändern" border="0"/></g:link>
+		</span>
+	</shiro:hasRole>
 </g:each>
-<shiro:hasRole name="${ShiroRole.BENUTZER}">
-	<span>
-		<g:link controller="trainingszeit" action="edit" id="${trainingszeit.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Trainingszeiten ändern" title="Trainingszeiten ändern" border="0"/></g:link>
-	</span>
-</shiro:hasRole>
+<span class="copy">${trainingszeit.ort}</span>

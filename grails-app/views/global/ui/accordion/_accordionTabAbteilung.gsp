@@ -26,7 +26,7 @@
 
 				if(tmpAlbum && tmpAlbum.getPictures())
 				{
-					bild = tmpAlbum.getPictures()?.first()
+					bild = tmpAlbum.getPictures()?.iterator()?.next()
 					size = tmpAlbum.getPictures()?.size()
 				}
 			%>
@@ -52,7 +52,7 @@
 								<td style="width: 140px; height: 140px; border: 1px solid #999999;" class="infohead"><img width="140" alt="" border="0" src="${resource(dir: 'images', file: 'nopicavailable.gif', plugin: 'photo-album')}" /></td>
 							</tr>
 							<tr>
-								<td colspan="2" valign="bottom" bordercolor="#999999" class="copy"><a href="javascript: void(0);" id="dialog_link">Bilder hinzufügen</a></td>
+								<td colspan="2" valign="bottom" bordercolor="#999999" class="copy"><g:link controller="bericht" action="bilderUpload" params="['bericht.id': item.id]">Bilder hinzufügen</g:link></td>
 							</tr>
 						</table>
 					</span>
@@ -64,7 +64,15 @@
 				</span>
 			</g:if>
 			<g:else>
-				<span style="display: block; width: 650px; min-width: 650px; max-width: 650px;">
+				<%
+				    String width = "650"
+				%>
+				<shiro:hasRole name="${ShiroRole.BENUTZER}">
+					<%
+					    width = "480"
+					%>
+				</shiro:hasRole>
+				<span style="display: block; width: ${width}px; min-width: ${width}px; max-width: ${width}px;">
 					${text}
 				</span>
 			</g:else>

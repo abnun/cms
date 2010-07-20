@@ -286,7 +286,7 @@ class BootStrap
 			Abteilung fussball_herren_2_mannschaft = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT)
 			if (!fussball_herren_2_mannschaft)
 			{
-				fussball_herren_2_mannschaft = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_HERREN_2_MANNSCHAFT, code: AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_HERREN_2_MANNSCHAFT, oberAbteilung: fussball_herren, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_HERREN_1_MANNSCHAFT)
+				fussball_herren_2_mannschaft = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_HERREN_2_MANNSCHAFT, code: AbteilungHelper.CODE_FUSSBALL_HERREN_2_MANNSCHAFT, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_HERREN_2_MANNSCHAFT, oberAbteilung: fussball_herren, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_HERREN_2_MANNSCHAFT)
 				fussball_herren_2_mannschaft.save()
 			}
 

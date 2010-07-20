@@ -120,22 +120,22 @@ public class AbteilungHelper
 
 	// F
 	static final String NAME_FUSSBALL_JUGEND_M_W_F_1 = "SV Leingarten"
-	static final String NAME_FUSSBALL_JUGEND_M_W_F_2 = "SV Leingarten"
-	static final String NAME_FUSSBALL_JUGEND_M_W_F_3 = "SV Leingarten"
+	static final String NAME_FUSSBALL_JUGEND_M_W_F_2 = "SV Leingarten II"
+	static final String NAME_FUSSBALL_JUGEND_M_W_F_3 = "SV Leingarten III"
 
 	// E
-	static final String NAME_FUSSBALL_JUGEND_M_W_E_1 = "SV Leingarten I"
+	static final String NAME_FUSSBALL_JUGEND_M_W_E_1 = "SV Leingarten"
 	static final String NAME_FUSSBALL_JUGEND_M_W_E_2 = "SV Leingarten II"
 
 	// Jugend Jungs
 	static final String NAME_FUSSBALL_JUGEND_M = "Junioren"
 	
 	// D
-	static final String NAME_FUSSBALL_JUGEND_M_D_1 = "SV Leingarten I"
+	static final String NAME_FUSSBALL_JUGEND_M_D_1 = "SV Leingarten"
 	static final String NAME_FUSSBALL_JUGEND_M_D_2 = "SV Leingarten II"
 
 	// C
-	static final String NAME_FUSSBALL_JUGEND_M_C_1 = "SV Leingarten I"
+	static final String NAME_FUSSBALL_JUGEND_M_C_1 = "SV Leingarten"
 	static final String NAME_FUSSBALL_JUGEND_M_C_2 = "SV Leingarten II"
 	static final String NAME_FUSSBALL_JUGEND_M_C_3 = "SV Leingarten III"
 
@@ -156,7 +156,7 @@ public class AbteilungHelper
 	static final String NAME_FUSSBALL_JUGEND_F_D = "SV Leingarten"
 
 	// C
-	static final String NAME_FUSSBALL_JUGEND_F_C_1 = "SV Leingarten I"
+	static final String NAME_FUSSBALL_JUGEND_F_C_1 = "SV Leingarten"
 	static final String NAME_FUSSBALL_JUGEND_F_C_2 = "SV Leingarten II"
 
 	// B

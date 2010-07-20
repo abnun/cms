@@ -4,7 +4,6 @@
 		<g:if test="${i > 0}">
 			<br/>
 		</g:if>
-		<b><g:formatDate date="${ergebnis.spieldatum}" format="dd.MM.yyyy"/></b>: ${ergebnis.heimmannschaft} - ${ergebnis.gastmannschaft}
 		<g:if test="${ergebnis?.tore?.contains('png')}">
 			<span style="position: relative; display: block; float: right; margin: 0; border: none; width: 35px; height: 14px; overflow: hidden;">
 				<img style="position: absolute; ${ergebnis.toreImageStyle ?: ''}" src="${resource(dir: 'bilder/tabellen/tore', file: ergebnis?.tore)}" alt="" border="0"/>
@@ -15,6 +14,7 @@
 				${(ergebnis?.tore?.indexOf(' *') != -1) ? ergebnis?.tore?.substring(0, ergebnis?.tore?.indexOf(' *')) : ergebnis?.tore}&nbsp;
 			</span>
 		</g:else>
+		<b><g:formatDate date="${ergebnis.spieldatum}" format="dd.MM.yyyy"/></b>: ${ergebnis.heimmannschaft} - ${ergebnis.gastmannschaft}
 	</g:each>
 </g:if>
 <g:else>

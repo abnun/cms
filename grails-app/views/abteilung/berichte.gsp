@@ -23,7 +23,14 @@
 						<table border="0" align="left" cellspacing="10">
 							<tr>
 								<td></td>
-								<td><span class="headline_dunkel">${abteilungInstance?.anzeigeName ?: abteilungInstance?.name}</span></td>
+								<td>
+									<span class="headline_dunkel">${abteilungInstance?.anzeigeName ?: abteilungInstance?.name}</span>
+									<shiro:hasRole name="${ShiroRole.BENUTZER}">
+										<span>
+											<g:link controller="abteilung" action="edit" id="${abteilungInstance.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Abteilung ändern" title="Abteilung ändern" border="0"/></g:link>
+										</span>
+									</shiro:hasRole>
+								</td>
 								<td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="26"></td>
 								<td class="copy">%{--Landesstaffel 1 Bezirk Nord--}%&nbsp;</td>
 							</tr>
@@ -84,6 +91,8 @@
 			<!-- InstanceEndEditable --></td>
 		<td width="130"><!-- InstanceBeginEditable name="info" -->
 		<g:include controller="abteilung" action="abteilungsLeiter" id="${abteilungInstance.id}"/>
+
+		<g:include controller="abteilung" action="trainingszeiten" id="${abteilungInstance.id}"/>
 			<p>&nbsp;</p>
 			<!-- InstanceEndEditable --></td>
 	</tr>

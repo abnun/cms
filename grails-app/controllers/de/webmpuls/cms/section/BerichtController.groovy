@@ -133,4 +133,23 @@ class BerichtController {
             redirect(action: "list")
         }
     }
+
+	def bilderUpload =
+	{
+		if(params['bericht.id'])
+		{
+			Bericht bericht = Bericht.get(params['bericht.id'])
+
+			if(bericht)
+			{
+				Album album = bericht.album
+				String albumDate = ""
+				if (album)
+				{
+					albumDate = formatDate(date: album.dateCreated, format: 'ddMMyyyy')
+				}
+				return [bericht: bericht, album: album, albumDate: albumDate]
+			}
+		}
+	}
 }

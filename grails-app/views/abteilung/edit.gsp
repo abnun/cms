@@ -492,18 +492,33 @@
 					</tr>
 					<tr>
 						<td valign="top" align="left">
-							<label for="name">Tag:</label>
+							<label for="tag">Tag:</label>
 						</td>
 						<td valign="top" align="left">
 							<g:select name="tag" from="${de.webmpuls.cms.section.Tag?.values()}" />
 						</td>
 					</tr>
 					<tr>
-						<td valign="top" align="left">
-							<label for="name">Uhrzeiten:</label>
-						</td>
-						<td valign="top" align="left">
-							<g:textField name="uhrzeiten" id="uhrzeiten" />
+						<td align="left">Uhrzeiten</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<table cellspacing="5" cellpadding="5">
+								<tr>
+									<td valign="top" align="left">
+										<label for="von">Von:</label>
+									</td>
+									<td valign="top" align="left">
+										<g:textField name="von" id="von" style="width: 50px;"/>
+									</td>
+									<td valign="top" align="left">
+										<label for="bis">Bis:</label>
+									</td>
+									<td valign="top" align="left">
+										<g:textField name="bis" id="bis" style="width: 50px;"/>
+									</td>
+								</tr>
+							</table>
 						</td>
 					</tr>
 					<tr>
@@ -511,7 +526,22 @@
 							<label for="ort">Ort:</label>
 						</td>
 						<td valign="top" align="left">
-							<g:textField name="ort" id="ort" />
+							<select name="ort" size="1">
+								<option value="">Auswählen</option>
+								<option>Beachfeld</option>
+								<option>Eichbotthalle</option>
+								<option>Festhalle</option>
+								<option>Freibad</option>
+								<option>Gymnastikraum</option>
+								<option>Hallenbad</option>
+								<option>Heuchelbergstadion</option>
+								<option>SVL-Sportheim</option>
+								<option>SVS-Sportheim</option>
+								<option>SVS-Sportplatz</option>
+								<option>Tennisanlage</option>
+								<option>Trim-Dich-Pfad</option>
+								<option>Reitanlage</option>
+							</select>
 						</td>
 					</tr>
 				</table>

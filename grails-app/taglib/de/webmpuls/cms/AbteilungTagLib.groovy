@@ -3,6 +3,7 @@ package de.webmpuls.cms
 import de.webmpuls.cms.people.Person
 import de.webmpuls.cms.section.Abteilung
 import de.webmpuls.cms.section.Trainingszeit
+import de.webmpuls.cms.section.AbteilungHelper
 
 class AbteilungTagLib
 {
@@ -29,6 +30,28 @@ class AbteilungTagLib
 		out << render(template: '/global/ui/box/boxFooter')
 
 		out << "</div>"
+
+		if(section?.code.startsWith(AbteilungHelper.CODE_FUSSBALL_HERREN))
+		{
+			out << "<div class=\"box\" id=\"identifier\" style=\"width: 130px; margin-top: 20px; margin-left: 10px; float: left;\">"
+
+			String linkHeader = message(code: 'section.links.label')
+
+			out << render(template: '/global/ui/box/boxHeader', model: [header: linkHeader])
+
+			StringBuilder builder = new StringBuilder()
+
+			builder << "<span class=\"copy\"><a href=\"http://www.fussball-in-bw.de\">www.fussball-in-bw.de</a></span><br/>"
+			builder << "<span class=\"copy\"><a href=\"http://www.fussball.de\">www.fussball.de</a></span><br/>"
+			builder << "<span class=\"copy\"><a href=\"http://www.wuerttfv.de\">www.wuerttfv.de</a></span><br/>"
+			builder << "<span class=\"copy\"><a href=\"http://www.fuba.net\">www.fuba.net</a></span><br/>"
+
+			out << render(template: '/global/ui/box/boxBody', model: [body: builder.toString()])
+
+			out << render(template: '/global/ui/box/boxFooter')
+
+			out << "</div>"
+		}
 
 		return out
 	}
