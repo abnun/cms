@@ -158,7 +158,9 @@ class PersonController {
 		{
 			Person tmpPerson = Person.get(id)
 
-			String pictureBaseName = "${tmpPerson.vorname.toLowerCase()}_${tmpPerson.nachname.toLowerCase()}${de.webmpuls.photo_album.util.MediaUtils.SUFFIX}"
+			String vorname = MediaHelper.formatNameForDisk(tmpPerson.vorname)
+			String nachname = MediaHelper.formatNameForDisk(tmpPerson.nachname)
+			String pictureBaseName = "${vorname}_${nachname}${de.webmpuls.photo_album.util.MediaUtils.SUFFIX}"
 			String tmpPictureBaseName = params["bild.id"] 
 			if(tmpPictureBaseName)
 			{

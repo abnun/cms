@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
-<%@ page import="de.webmpuls.photo_album.Album; de.webmpuls.photo_album.Picture; de.webmpuls.cms.people.ShiroRole" %>
+<%@ page import="de.webmpuls.photo_album.util.MediaUtils; de.webmpuls.photo_album.Album; de.webmpuls.photo_album.Picture; de.webmpuls.cms.people.ShiroRole" %>
 <div style="width: 695px;">
 	<h3>
 		<a name="bericht_${item.id}" href="javascript: void(0);">
@@ -34,12 +34,36 @@
 				<span style="display: block; margin-left: 10px; margin-right: 10px; width: 140px; min-width: 140px; max-width: 140px; float: right;">
 					<table width="140" border="0" cellpadding="3" bordercolor="#93C9FF">
 						<tr>
-							<td style="width: 140px; height: 140px; border: 1px solid #999999;" colspan="2" class="infohead"><img width="140" alt="" border="0" src="${wm_photo_album.pathToImage(picture: bild)}" /></td>
+							<td style="width: 140px; height: 140px; border: 1px solid #999999;" colspan="2" class="infohead">
+								<div class="highslide-gallery" style="margin: auto">
+									<a class="highslide" href="${wm_photo_album.pathToImage(picture: bild, size: MediaUtils.BIG)}" onclick="return hs.expand(this, {slideshowGroup: 'group_${tmpAlbum.id}'});">
+										<img alt="" style="border: none;" border="0" src="${wm_photo_album.pathToImage(picture: bild, size: MediaUtils.THUMBNAIL)}"/>
+									</a>
+
+									<div class="hidden-container">
+										<g:each status="i" var="pic" in="${tmpAlbum.getPictures()}">
+											<g:if test="${i == 0}">
+												%{-- nuescht ausgeben --}%
+											</g:if>
+											<g:else>
+												<a href="${wm_photo_album.pathToImage(picture: pic, size: MediaUtils.BIG)}" class="highslide" onclick="return hs.expand(this, {slideshowGroup: 'group_${tmpAlbum.id}'});"></a>
+											</g:else>
+										</g:each>
+									</div>
+
+								</div>
+							</td>
 						</tr>
 						<tr>
 							<td valign="bottom" bordercolor="#999999" class="copy">Bild
 							1 von ${size}</td>
-							<td valign="bottom" bordercolor="#999999" class="copy"><div align="right"><img src="${resource(dir: 'bilder/divers', file: 'icon_zoom.jpg')}" width="16" height="16"></div></td>
+							<td valign="bottom" bordercolor="#999999" class="copy">
+								<div align="right">
+									<a class="highslide" href="${wm_photo_album.pathToImage(picture: bild, size: MediaUtils.BIG)}" onclick="expand(this);">
+										<img src="${resource(dir: 'bilder/divers', file: 'icon_zoom.jpg')}" width="16" height="16" border="0" style="border: none;" />
+									</a>
+								</div>
+							</td>
 						</tr>
 					</table>
 				</span>
@@ -49,7 +73,7 @@
 					<span style="display: block; margin-left: 10px; margin-right: 10px; width: 140px; min-width: 140px; max-width: 140px; float: right;">
 						<table width="140" border="0" cellpadding="3" bordercolor="#93C9FF">
 							<tr>
-								<td style="width: 140px; height: 140px; border: 1px solid #999999;" class="infohead"><img width="140" alt="" border="0" src="${resource(dir: 'images', file: 'nopicavailable.gif', plugin: 'photo-album')}" /></td>
+								<td style="width: 140px; height: 140px; border: 1px solid #999999;" class="infohead"><img alt="" border="0" src="${resource(dir: 'images', file: 'nopicavailable.gif', plugin: 'photo-album')}" /></td>
 							</tr>
 							<tr>
 								<td colspan="2" valign="bottom" bordercolor="#999999" class="copy"><g:link controller="bericht" action="bilderUpload" params="['bericht.id': item.id]">Bilder hinzufügen</g:link></td>

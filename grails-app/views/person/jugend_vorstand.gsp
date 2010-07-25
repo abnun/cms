@@ -1,4 +1,4 @@
-<%@ page import="de.webmpuls.cms.people.ShiroRole" %>
+<%@ page import="de.webmpuls.photo_album.util.MediaUtils; de.webmpuls.cms.people.ShiroRole" %>
 <html>
 <head>
 <meta name="layout" content="sv_leingarten"/>
@@ -10,12 +10,12 @@
         <table width="570" border="0" cellspacing="5">
 				<tbody>
 				<tr valign="top">
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${jugendleiterPerson}">
 							<g:if test="${jugendleiterPerson.bild}">
 								<p>
 									<a href="mailto:${jugendleiterPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: jugendleiterPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: jugendleiterPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -40,12 +40,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${jugendsprecherPerson}">
 							<g:if test="${jugendsprecherPerson.bild}">
 								<p>
 									<a href="mailto:${jugendsprecherPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: jugendsprecherPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: jugendsprecherPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -72,7 +72,7 @@
 					</td>
 				</tr>
 				<tr valign="top">
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${jugendleiterPerson}">
 							<div align="center">
 								<span class="titel">
@@ -85,7 +85,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${jugendsprecherPerson}">
 							<div align="center">
 								<span class="titel">
@@ -101,30 +101,30 @@
 				</tr>
 
 				<tr valign="top">
-					<td width="134" align="center" class="copy">
+					<td width="140" align="center" class="copy">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
 				</tr>
 				<tr valign="top">
-					<td width="134" align="center" class="copy">
+					<td width="140" align="center" class="copy">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
 				</tr>

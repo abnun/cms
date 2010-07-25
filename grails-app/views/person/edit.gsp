@@ -1,5 +1,5 @@
 
-<%@ page import="de.webmpuls.cms.media.MediaHelper; de.webmpuls.cms.people.Funktion; de.webmpuls.photo_album.Album; de.webmpuls.cms.people.Person" %>
+<%@ page import="de.webmpuls.photo_album.util.MediaUtils; de.webmpuls.cms.media.MediaHelper; de.webmpuls.cms.people.Funktion; de.webmpuls.photo_album.Album; de.webmpuls.cms.people.Person" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -60,7 +60,7 @@
 									<div class="highslide-gallery" style="margin: auto">
 										<g:if test="${personInstance.bild}">
 											<a class='highslide' href='${wm_photo_album.pathToImage(picture: personInstance.bild, size: de.webmpuls.photo_album.util.MediaUtils.BIG)}' onclick="return hs.expand(this, { captionText: '${personInstance.bild?.caption ?: ''}' })">
-												<img width="110" border="0" src="${wm_photo_album.pathToImage(picture: personInstance.bild)}" title="${message(code: 'picture.show.big.label', 'default': 'Klicken um eine größere Ansicht zu erhalten.')}" align="middle"/>
+												<img border="0" src="${wm_photo_album.pathToImage(picture: personInstance.bild, size: MediaUtils.THUMBNAIL)}" title="${message(code: 'picture.show.big.label', 'default': 'Klicken um eine größere Ansicht zu erhalten.')}" align="middle"/>
 											</a>
 										</g:if>
 										&nbsp;<span><a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Bild-Auswahl Dialog öffnen</a></span>
@@ -232,7 +232,7 @@
 		</g:if>
 
 		<g:set var="callbackUri" value="/person/setPicture/${personInstance.id}" />
-		<g:set var="fileName" value="${personInstance.vorname.toLowerCase()}_${personInstance.nachname.toLowerCase()}${de.webmpuls.photo_album.util.MediaUtils.SUFFIX}" />
+		<g:set var="fileName" value="${MediaHelper.formatNameForDisk(personInstance.vorname)}_${MediaHelper.formatNameForDisk(personInstance.nachname)}${de.webmpuls.photo_album.util.MediaUtils.SUFFIX}" />
 		<g:render template="/global/bilder/upload" model="['albumId': album.id, 'isMultiUpload': false, 'album': album, 'albumDate': albumDate, select: select, item: personInstance, callbackUri: callbackUri, fileName: fileName]" />
 
     </body>

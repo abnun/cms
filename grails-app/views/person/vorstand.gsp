@@ -1,4 +1,4 @@
-<%@ page import="de.webmpuls.cms.people.ShiroRole; de.webmpuls.cms.people.Person; de.webmpuls.cms.people.Funktion" %>
+<%@ page import="de.webmpuls.photo_album.util.MediaUtils; de.webmpuls.cms.people.ShiroRole; de.webmpuls.cms.people.Person; de.webmpuls.cms.people.Funktion" %>
 <html>
 <head>
 	<meta name="layout" content="sv_leingarten"/>
@@ -10,12 +10,12 @@
 			<table width="570" border="0" cellspacing="5">
 				<tbody>
 				<tr valign="top">
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${vorsitzender1Person}">
 							<g:if test="${vorsitzender1Person.bild}">
 								<p>
 									<a href="mailto:${vorsitzender1Person.email}">
-										<img src="${wm_photo_album.pathToImage(picture: vorsitzender1Person.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: vorsitzender1Person.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -40,12 +40,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${vorsitzender2Person}">
 							<g:if test="${vorsitzender2Person.bild}">
 								<p>
 									<a href="mailto:${vorsitzender2Person.email}">
-										<img src="${wm_photo_album.pathToImage(picture: vorsitzender2Person.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: vorsitzender2Person.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -70,12 +70,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${vorsitzender3Person}">
 							<g:if test="${vorsitzender3Person.bild}">
 								<p>
 									<a href="mailto:${vorsitzender3Person.email}">
-										<img src="${wm_photo_album.pathToImage(picture: vorsitzender3Person.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: vorsitzender3Person.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -100,12 +100,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${kassiererPerson}">
 							<g:if test="${kassiererPerson.bild}">
 								<p>
 									<a href="mailto:${kassiererPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: kassiererPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: kassiererPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -132,7 +132,7 @@
 					</td>
 				</tr>
 				<tr valign="top">
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${vorsitzender1Person}">
 							<div align="center">
 								<span class="titel">
@@ -145,7 +145,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${vorsitzender2Person}">
 							<div align="center">
 								<span class="titel">
@@ -158,7 +158,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${vorsitzender3Person}">
 							<div align="center">
 								<span class="titel">
@@ -171,7 +171,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${kassiererPerson}">
 							<div align="center">
 								<span class="titel">
@@ -187,12 +187,12 @@
 				</tr>
 
 				<tr valign="top">
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${schriftfuehrerPerson}">
 							<g:if test="${schriftfuehrerPerson.bild}">
 								<p>
 									<a href="mailto:${schriftfuehrerPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: schriftfuehrerPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: schriftfuehrerPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -217,12 +217,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${geschaeftsstellePerson1}">
 							<g:if test="${geschaeftsstellePerson1.bild}">
 								<p>
 									<a href="mailto:${geschaeftsstellePerson1.email}">
-										<img src="${wm_photo_album.pathToImage(picture: geschaeftsstellePerson1.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: geschaeftsstellePerson1.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -247,12 +247,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${geschaeftsstellePerson2}">
 							<g:if test="${geschaeftsstellePerson2.bild}">
 								<p>
 									<a href="mailto:${geschaeftsstellePerson2.email}">
-										<img src="${wm_photo_album.pathToImage(picture: geschaeftsstellePerson2.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: geschaeftsstellePerson2.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -277,12 +277,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${referentPerson}">
 							<g:if test="${referentPerson.bild}">
 								<p>
 									<a href="mailto:${referentPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: referentPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: referentPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -309,7 +309,7 @@
 					</td>
 				</tr>
 				<tr valign="top">
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${schriftfuehrerPerson}">
 							<div align="center">
 								<span class="titel">
@@ -322,7 +322,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${geschaeftsstellePerson1}">
 							<div align="center">
 								<span class="titel">
@@ -335,7 +335,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${geschaeftsstellePerson2}">
 							<div align="center">
 								<span class="titel">
@@ -348,7 +348,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${referentPerson}">
 							<div align="center">
 								<span class="titel">
@@ -364,12 +364,12 @@
 				</tr>
 
 				<tr valign="top">
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${frauenbeauftragterPerson}">
 							<g:if test="${frauenbeauftragterPerson.bild}">
 								<p>
 									<a href="mailto:${frauenbeauftragterPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: frauenbeauftragterPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: frauenbeauftragterPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -394,12 +394,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${jugendleiterPerson}">
 							<g:if test="${jugendleiterPerson.bild}">
 								<p>
 									<a href="mailto:${jugendleiterPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: jugendleiterPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: jugendleiterPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -424,12 +424,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${jugendsprecherPerson}">
 							<g:if test="${jugendsprecherPerson.bild}">
 								<p>
 									<a href="mailto:${jugendsprecherPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: jugendsprecherPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: jugendsprecherPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -454,12 +454,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${leiter_tech_wirtPerson}">
 							<g:if test="${leiter_tech_wirtPerson.bild}">
 								<p>
 									<a href="mailto:${leiter_tech_wirtPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: leiter_tech_wirtPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: leiter_tech_wirtPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -486,7 +486,7 @@
 					</td>
 				</tr>
 				<tr valign="top">
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${frauenbeauftragterPerson}">
 							<div align="center">
 								<span class="titel">
@@ -499,7 +499,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${jugendleiterPerson}">
 							<div align="center">
 								<span class="titel">
@@ -512,7 +512,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${jugendsprecherPerson}">
 							<div align="center">
 								<span class="titel">
@@ -525,7 +525,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${leiter_tech_wirtPerson}">
 							<div align="center">
 								<span class="titel">
@@ -541,12 +541,12 @@
 				</tr>
 
 				<tr valign="top">
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${leiter_tech_sportPerson}">
 							<g:if test="${leiter_tech_sportPerson.bild}">
 								<p>
 									<a href="mailto:${leiter_tech_sportPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: leiter_tech_sportPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: leiter_tech_sportPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -571,12 +571,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${beisitzerPerson}">
 							<g:if test="${beisitzerPerson.bild}">
 								<p>
 									<a href="mailto:${beisitzerPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: beisitzerPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: beisitzerPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -601,12 +601,12 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${webmasterPerson}">
 							<g:if test="${webmasterPerson.bild}">
 								<p>
 									<a href="mailto:${webmasterPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: webmasterPerson.bild)}" width="110" height="147" border="0"/>
+										<img src="${wm_photo_album.pathToImage(picture: webmasterPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -631,11 +631,11 @@
 							</shiro:hasRole>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 					</td>
 				</tr>
 				<tr valign="top">
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${leiter_tech_sportPerson}">
 							<div align="center">
 								<span class="titel">
@@ -648,7 +648,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${beisitzerPerson}">
 							<div align="center">
 								<span class="titel">
@@ -661,7 +661,7 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						<g:if test="${webmasterPerson}">
 							<div align="center">
 								<span class="titel">
@@ -674,36 +674,36 @@
 							</div>
 						</g:if>
 					</td>
-					<td width="134" align="center" valign="middle">
+					<td width="140" align="center" valign="middle">
 						
 					</td>
 				</tr>
 
 				<tr valign="top">
-					<td width="134" align="center" class="copy">
+					<td width="140" align="center" class="copy">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
 				</tr>
 				<tr valign="top">
-					<td width="134" align="center" class="copy">
+					<td width="140" align="center" class="copy">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
-					<td width="134" align="center">
+					<td width="140" align="center">
 						 
 					</td>
 				</tr>

@@ -6,7 +6,8 @@
 	<g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}"/>
 	<g:render template="/global/javascript/accordionJS" model="[accordionID: 'accordion']"/>
 	<g:render template="/global/css/accordionCSS"/>
-	<wm_photo_album:gallery_resources />
+	<wm_photo_album:gallery_resources useCustomGalleryJS="true"/>
+	<script type="text/javascript" src="${resource(dir: '/js/highslide', file: 'gallery.js')}"></script>
 	<style type="text/css">
 	.ui-accordion .ui-accordion-header .ui-icon {
 		margin-top: -8px;
