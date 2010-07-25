@@ -75,6 +75,10 @@ photo_album.picture.show.option.reduce.red.eyes = true
 photo_album.picture.show.option.reset = true
 photo_album.picture.show.option.crop = true
 
+photo_album.default.thumbnail.width=140
+photo_album.default.thumbnail.height=140
+
+
 fckeditor
 {
     upload
