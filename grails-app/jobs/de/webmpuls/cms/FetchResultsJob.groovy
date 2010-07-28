@@ -26,7 +26,9 @@ class FetchResultsJob
 
     def execute()
 	{
-        GregorianCalendar gregorianCalendarInSomeDays = new GregorianCalendar()
+        GregorianCalendar gregorianCalendarNow = new GregorianCalendar()
+
+		GregorianCalendar gregorianCalendarInSomeDays = new GregorianCalendar()
 		gregorianCalendarInSomeDays.add(GregorianCalendar.DAY_OF_WEEK, TabelleHelper.FETCH_DAYS_OF_PLAY_FORWARD)
 
 		GregorianCalendar gregorianCalendarSomeDaysAgo = new GregorianCalendar()
@@ -35,7 +37,7 @@ class FetchResultsJob
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy")
 
 		String datumVon = simpleDateFormat.format(gregorianCalendarSomeDaysAgo.getTime())
-		String datumBis = simpleDateFormat.format(gregorianCalendarInSomeDays.getTime())
+		String datumBis = simpleDateFormat.format(gregorianCalendarNow.getTime())
 
 		println("Datum vor 7 Tagen -> ${datumVon}")
 		println("Aktuelles Datum -> ${datumBis}")

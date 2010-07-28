@@ -55,8 +55,15 @@
 							</td>
 						</tr>
 						<tr>
-							<td valign="bottom" bordercolor="#999999" class="copy">Bild
-							1 von ${size}</td>
+							<td valign="bottom" bordercolor="#999999" class="copy">
+								<g:if test="${size > 1}">
+									Bild 1 von ${size}
+								</g:if>
+								<shiro:hasRole name="${ShiroRole.BENUTZER}">
+									<br />
+									<g:link controller="bericht" action="bilderUpload" params="['bericht.id': item.id]">Bilder hinzufügen</g:link>
+								</shiro:hasRole>
+							</td>
 							<td valign="bottom" bordercolor="#999999" class="copy">
 								<div align="right">
 									<a class="highslide" href="${wm_photo_album.pathToImage(picture: bild, size: MediaUtils.BIG)}" onclick="expand(this);">

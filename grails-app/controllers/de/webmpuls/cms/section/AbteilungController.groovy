@@ -372,10 +372,10 @@ class AbteilungController {
 						ergebnisse.addAll(resultService.fetchResultsForAbteilung(unterAbteilung))
 						vorschau.addAll(spielplanService.fetchPlayDaysForAbteilung(unterAbteilung))
 
-						for(Bericht bericht in unterAbteilung.berichte)
+						/*for(Bericht bericht in unterAbteilung.berichte)
 						{
 							abteilungBerichte.add(bericht)
-						}
+						}*/
 					}
 				}
 				else
