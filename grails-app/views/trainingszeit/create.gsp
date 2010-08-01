@@ -29,10 +29,10 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="name"><g:message code="trainingszeit.name.label" default="Name" /></label>
+                                    <label for="bezeichnung"><g:message code="trainingszeit.bezeichnung.label" default="Bezeichnung" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: trainingszeitInstance, field: 'name', 'errors')}">
-                                    <g:textField name="name" value="${trainingszeitInstance?.name}" />
+                                <td valign="top" class="value ${hasErrors(bean: trainingszeitInstance, field: 'bezeichnung', 'errors')}">
+                                    <g:textField name="bezeichnung" value="${trainingszeitInstance?.bezeichnung}" />
                                 </td>
                             </tr>
                         

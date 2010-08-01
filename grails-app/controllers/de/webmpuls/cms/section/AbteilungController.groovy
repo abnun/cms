@@ -455,7 +455,7 @@ class AbteilungController {
 		}
 		else
 		{
-			return [abteilungInstance: abteilungInstance, trainingszeiten: abteilungInstance.trainingszeiten]
+			return [abteilungInstance: abteilungInstance, trainingszeiten: abteilungInstance.trainingszeiten.sort{ Trainingszeit a, Trainingszeit b -> a.bezeichnung <=> b.bezeichnung }]
 		}
 	}
 

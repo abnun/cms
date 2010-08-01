@@ -4,18 +4,18 @@ class Trainingszeit
 {
 	static hasMany = [trainingstage: Trainingstag]
 
-	String name = "Trainingszeiten"
+	String bezeichnung
 
 	String ort
 
     static constraints =
 	{
-		name(blank: false)
+		bezeichnung(nullable: false, blank: false)
 		ort(nullable: true, blank: true)
     }
 
 	def String toString()
 	{
-		return "${name} | ${trainingstage?.iterator()?.next()?.tag ?: ''} | ${trainingstage?.iterator()?.next()?.uhrzeiten ?: ''} | ${ort ?: ''}"
+		return "${bezeichnung} | ${trainingstage?.iterator()?.next()?.tag ?: ''} | ${trainingstage?.iterator()?.next()?.uhrzeiten ?: ''} | ${ort ?: ''}"
 	}
 }

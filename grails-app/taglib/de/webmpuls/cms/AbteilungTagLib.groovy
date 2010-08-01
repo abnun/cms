@@ -63,18 +63,8 @@ class AbteilungTagLib
 		Abteilung section = attrs['section']
 		Trainingszeit trainingszeit = attrs['trainingszeit']
 
-		out << "<div class=\"box\" id=\"identifier\" style=\"width: 130px; margin-top: 20px; margin-left: 10px; float: left;\">"
-
-		String header = trainingszeit.name
-
-		out << render(template: '/global/ui/box/boxHeader', model: [header: header])
-
 		String boxBody = render(template: '/global/section/trainingszeitenBody', model: [trainingszeit: trainingszeit])
 		out << render(template: '/global/ui/box/boxBody', model: [body: boxBody])
-
-		out << render(template: '/global/ui/box/boxFooter')
-
-		out << "</div>"
 
 		return out
 	}

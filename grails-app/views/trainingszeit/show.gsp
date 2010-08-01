@@ -30,9 +30,9 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="trainingszeit.name.label" default="Name" /></td>
+                            <td valign="top" class="name"><g:message code="trainingszeit.bezeichnung.label" default="Bezeichnung" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: trainingszeitInstance, field: "name")}</td>
+                            <td valign="top" class="value">${fieldValue(bean: trainingszeitInstance, field: "bezeichnung")}</td>
                             
                         </tr>
                     
