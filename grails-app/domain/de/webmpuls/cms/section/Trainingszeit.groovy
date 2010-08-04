@@ -10,7 +10,7 @@ class Trainingszeit
 
     static constraints =
 	{
-		bezeichnung(nullable: false, blank: false)
+		bezeichnung(nullable: true, blank: true)
 		ort(nullable: true, blank: true)
     }
 

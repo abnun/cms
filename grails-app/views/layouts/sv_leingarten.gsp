@@ -48,6 +48,7 @@
 	%{--<g:javascript library="jquery" />--}%
 
 	<script type="text/javascript" src="${resource(dir: 'js/jquery/', file: 'jquery-1.4.2.min.js')}"></script>
+	<script type="text/javascript" src="${resource(dir: 'js/jquery/', file: 'jquery.cycle.lite.min.js')}"></script>
 
 	<g:render template="/global/javascript/jQueryUIJS" />
 

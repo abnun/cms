@@ -15,12 +15,22 @@ class SecurityFilters {
 				}
             }
         }
-        user(controller: 'anzeigen|news|aktuelles|abteilung|funktion|person|tabelle|termin', action: 'edit|create|list|update|save|delete') {
+        user(controller: 'anzeigen|news|aktuelles|funktion|person|tabelle|termin', action: 'edit|create|list|update|save|delete') {
             before = {
                 // Access control by convention.
                 accessControl()
 				{
 					role(ShiroRole.BENUTZER)
+				}
+            }
+        }
+
+		user(controller: 'abteilung', action: 'edit|create|list|update|save|delete') {
+            before = {
+                // Access control by convention.
+                accessControl()
+				{
+					role(ShiroRole.FUSSBALL_JUGEND)
 				}
             }
         }

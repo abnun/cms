@@ -5,6 +5,8 @@ import org.apache.shiro.authc.AuthenticationException
 import org.apache.shiro.authc.UsernamePasswordToken
 import org.apache.shiro.web.SavedRequest
 import org.apache.shiro.web.WebUtils
+import de.webmpuls.cms.people.ShiroUser
+import de.webmpuls.cms.section.AbteilungHelper
 
 class AuthController {
     def shiroSecurityManager
@@ -27,7 +29,12 @@ class AuthController {
         // If a controller redirected to this page, redirect back
         // to it. Otherwise redirect to the root URI.
         def targetUri = params.targetUri ?: "/"
-        
+
+		if(params.username == ShiroUser.FUSSBALL_JUGEND)
+		{
+			targetUri = createLink(controller: 'abteilung', action: 'aktuelles', params: [code: AbteilungHelper.CODE_FUSSBALL_JUGEND], mapping: 'abteilungAktuelles').toString().substring(request.contextPath.length())
+		}
+
         // Handle requests saved by Shiro filters.
         def savedRequest = WebUtils.getSavedRequest(request)
         if (savedRequest) {

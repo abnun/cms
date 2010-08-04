@@ -6,6 +6,7 @@ class ShiroUser {
 	static final String ADMINISTRATOR = "administrator"
 	static final String TEST = "test"
 	static final String WEBMASTER = "webmaster"
+	static final String FUSSBALL_JUGEND = "fussball_jugend"
 
     static hasMany = [ roles: ShiroRole, permissions: String ]
 

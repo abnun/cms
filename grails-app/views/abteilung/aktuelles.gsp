@@ -13,6 +13,63 @@
 		margin-top: -8px;
 	}
 	</style>
+
+	<jq:jquery>
+		var personArray = [${pBuilder}];
+			$('#person').autocomplete({
+				source: personArray
+			});
+
+			var funktionArray = [${fBuilder}];
+			$('#funktion').autocomplete({
+				source: funktionArray
+			});
+	</jq:jquery>
+
+	<jq:jquery>
+
+		$('#dialog').dialog( {
+					title: 'Zuordnung-Dialog',
+					bgiframe: true,
+					autoOpen: false,
+					closeOnEscape: true,
+					modal: true,
+					resizable: false,
+					hide: 'explode',
+					width: 760,
+					buttons: {
+						"Zuordnung erstellen": function() {
+							var pValue = $("input[name='person']").val();
+							var fValue = $("input[name='funktion']").val();
+
+							if(pValue != "" && fValue != "")
+							{
+								$("input[name='personen']").val(pValue);
+								$("input[name='funktionen']").val(fValue);
+								$("#PersonenZuordnungForm").submit();
+							}
+							else
+							{
+								$("#dialog_error").slideDown("slow");
+							}
+
+				},
+				"abbrechen": function() {
+					$(this).dialog('close');
+				}
+			}
+		});
+	</jq:jquery>
+
+	<g:render template="/global/javascript/buttonJS"/>
+
+	<g:render template="/global/css/buttonCSS"/>
+
+	<style type="text/css">
+	.ui-autocomplete {
+		width: 200px;
+	}
+	</style>
 </head>
 <body>
 
@@ -61,8 +118,17 @@
 		<td width="130"><!-- InstanceBeginEditable name="info" -->
 		<g:include controller="abteilung" action="abteilungsLeiter" id="${abteilungInstance.id}"/>
 
-		<g:include controller="abteilung" action="trainingszeiten" id="${abteilungInstance.id}"/>
-			<p>&nbsp;</p>
+		%{--<g:include controller="abteilung" action="trainingszeiten" id="${abteilungInstance.id}"/>--}%
+			<p style="clear:both;">&nbsp;</p>
+
+			<shiro:hasRole name="${ShiroRole.BENUTZER}">
+
+			<g:if test="${abteilungInstance.personen.isEmpty()}">
+			<a href="javascript: void(0);" id="dialog_link" class="ui-state-default ui-corner-all" style="border: 1px solid #AED0EA; color: #2779AA; font-weight:bold; background: url('${resource(dir: 'css/jquery/themes/cupertino/images', file: 'ui-bg_glass_80_d7ebf9_1x400.png')}') repeat-x scroll 50% 50% #D7EBF9;">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Abteilungsleiter&nbsp;hinzufügen</a>
+			</g:if>
+
+			<g:render template="/abteilung/personenZuordnungDialog" model="[abteilungInstance: abteilungInstance]" />
+			</shiro:hasRole>
 		<!-- InstanceEndEditable --></td>
 	</tr>
 </table>

@@ -13,12 +13,98 @@
 		margin-top: -8px;
 	}
 	</style>
+
+	<jq:jquery>
+
+		$('#sp_dialog').dialog( {
+								title: 'Spielplan-Dialog',
+								bgiframe: true,
+								autoOpen: ${spielplanInhalt ? 'true' : 'false'},
+								closeOnEscape: true,
+								modal: true,
+								resizable: false,
+								hide: 'explode',
+								width: 760,
+								buttons: {
+									"Spielplan erstellen": function() {
+										var iValue = $("textarea[name='inhalt']").val();
+
+										if(iValue != "")
+										{
+											$("#SpielplanForm").submit();
+										}
+										else
+										{
+											$("#sp_dialog_error").slideDown("slow");
+										}
+
+							},
+							"abbrechen": function() {
+								$(this).dialog('close');
+							}
+						}
+				});
+
+		$('#tz_dialog').dialog( {
+								title: 'Trainingszeiten-Dialog',
+								bgiframe: true,
+								autoOpen: false,
+								closeOnEscape: true,
+								modal: true,
+								resizable: false,
+								hide: 'explode',
+								width: 760,
+								buttons: {
+									"Trainingszeiten zuweisen": function() {
+										var nValue = $("input[name='bezeichnung']").val();
+										var tValue = $("input[name='tag']").val();
+										var uvValue = $("input[name='von']").val();
+										var ubValue = $("input[name='bis']").val();
+
+										if(nValue != "" && tValue != "" && uvValue != "" && ubValue != "")
+										{
+											$("#TrainingszeitForm").submit();
+										}
+										else
+										{
+											$("#tz_dialog_error").slideDown("slow");
+										}
+
+							},
+							"abbrechen": function() {
+								$(this).dialog('close');
+							}
+						}
+				});
+
+		if(${spielplanInhalt ? 'true' : 'false'})
+		{
+			$("#sp_dialog_error2").slideDown("slow");
+		}
+	</jq:jquery>
+
+	<g:render template="/global/javascript/buttonJS" model="[dialogLinkId: 'sp_dialog_link', dialogId: 'sp_dialog']" />
+
+	<g:render template="/global/javascript/buttonJS" model="[dialogLinkId: 'tz_dialog_link', dialogId: 'tz_dialog']" />
+
+	<g:render template="/global/css/buttonCSS" model="[dialogLinkId: 'sp_dialog_link']" />
+
+	<g:render template="/global/css/buttonCSS" model="[dialogLinkId: 'tz_dialog_link']" />
+
+	<g:render template="/global/css/buttonCSS" model="[dialogLinkId: 'b_dialog_link']" />
+
+	<style type="text/css">
+	.ui-autocomplete {
+		width: 200px;
+	}
+	</style>
+
 </head>
 <body>
 <table width="695" border="0" cellpadding="0" cellspacing="0">
 	<tr align="left" valign="top">
 		<td><!-- InstanceBeginEditable name="Text" -->
-			<table width="614" border="0" align="left" cellspacing="10" style="width: 614px;">
+			<table width="695" border="0" align="left" cellspacing="10" style="width: 695px;">
 				<tr>
 					<td valign="top" class="copy">
 						<table border="0" align="left" cellspacing="10">
@@ -42,14 +128,16 @@
 						<table border="0" align="right" cellspacing="3">
 							<tr valign="middle">
 								<td class="copy">Berichte</td>
+								<g:if test="${showPortraits}">
 								<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
 								<td class="rubrik_grau"><a href="${createLink(controller: 'abteilung', action: 'portraits', params: [code: abteilungInstance?.code], mapping: 'abteilungPortraits')}">Portraits</a></td>
+								</g:if>
 								<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
 								<td class="rubrik_grau"><a href="${createLink(controller: 'abteilung', action: 'spielplan', params: [code: abteilungInstance?.code], mapping: 'abteilungSpielplan')}">Spielplan</a></td>
 								<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
-								<td><a href="${createLink(controller: 'abteilung', action: 'tabelle', params: [code: abteilungInstance?.code], mapping: 'abteilungTabelle')}" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_table.jpg')}" width="26" height="26" border="0"></a></td>
+								<td><a href="${createLink(controller: 'abteilung', action: 'tabelle', params: [code: abteilungInstance?.code], mapping: 'abteilungTabelle')}" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_table.jpg')}" width="26" height="26" border="0" alt="Tabelle" title="Tabelle"></a></td>
 								<td><img src="${resource(dir: 'bilder/divers', file: 'trenn_grau.png')}" width="3" height="20"></td>
-								<td><a href="${createLink(controller: 'abteilung', action: 'team', params: [code: abteilungInstance?.code], mapping: 'abteilungTeam')}" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_team.jpg')}" width="27" height="26" border="0"></a></td>
+								<td><a href="${createLink(controller: 'abteilung', action: 'team', params: [code: abteilungInstance?.code], mapping: 'abteilungTeam')}" class="rubrik_grau"><img src="${resource(dir: 'bilder/divers', file: 'icon_team.jpg')}" width="27" height="26" border="0" alt="Team" title="Team"></a></td>
 							</tr>
 						</table>
 					</td>
@@ -61,7 +149,7 @@
 		<td height="227">
 			<table width="695" border="0" align="left" cellspacing="10" style="width: 695px;">
 				<tr>
-					<td colspan="2" valign="top" class="copy">
+					<td colspan="2" valign="top">
 						<br>
 						<g:if test="${berichte}">
 							<div id="accordion">
@@ -73,9 +161,10 @@
 						<shiro:hasRole name="${ShiroRole.BENUTZER}">
 							<br/>
 							<span>
-								<g:link controller="bericht" action="create" params="[abteilungId: abteilungInstance?.id]">
-									<img src="${resource(dir: '/images/skin', file: 'database_add.png')}" alt="Neuer Bericht" border="0"/>&nbsp;Neuer Bericht
-								</g:link>
+								%{--<g:link controller="bericht" action="create" params="[abteilungId: abteilungInstance?.id]">--}%
+								<g:link controller="bericht" action="create" params="[abteilungId: abteilungInstance?.id]" elementId="b_dialog_link" class="ui-state-default ui-corner-all" style="border: 1px solid #AED0EA; color: #2779AA; font-weight:bold; background: url('${resource(dir: 'css/jquery/themes/cupertino/images', file: 'ui-bg_glass_80_d7ebf9_1x400.png')}') repeat-x scroll 50% 50% #D7EBF9;">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Bericht hinzufügen
+									%{--<img src="${resource(dir: '/images/skin', file: 'database_add.png')}" alt="Neuer Bericht" border="0"/>&nbsp;Neuer Bericht--}%
+									</g:link>
 							</span>
 						</shiro:hasRole>
 					</td>
@@ -91,10 +180,20 @@
 			</table>
 			<!-- InstanceEndEditable --></td>
 		<td width="130"><!-- InstanceBeginEditable name="info" -->
-		<g:include controller="abteilung" action="abteilungsLeiter" id="${abteilungInstance.id}"/>
+		%{--<g:include controller="abteilung" action="abteilungsLeiter" id="${abteilungInstance.id}"/>--}%
 
 		<g:include controller="abteilung" action="trainingszeiten" id="${abteilungInstance.id}"/>
-			<p>&nbsp;</p>
+			<p style="clear:both;">&nbsp;</p>
+
+			<shiro:hasRole name="${ShiroRole.BENUTZER}">
+			<a href="javascript: void(0);" id="sp_dialog_link" class="ui-state-default ui-corner-all" style="border: 1px solid #AED0EA; color: #2779AA; font-weight:bold; background: url('${resource(dir: 'css/jquery/themes/cupertino/images', file: 'ui-bg_glass_80_d7ebf9_1x400.png')}') repeat-x scroll 50% 50% #D7EBF9;">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Spielplan&nbsp;hinzufügen</a>
+			<br/>
+			<br/>
+			<a href="javascript: void(0);" id="tz_dialog_link" class="ui-state-default ui-corner-all" style="border: 1px solid #AED0EA; color: #2779AA; font-weight:bold; background: url('${resource(dir: 'css/jquery/themes/cupertino/images', file: 'ui-bg_glass_80_d7ebf9_1x400.png')}') repeat-x scroll 50% 50% #D7EBF9;">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Trainingszeiten&nbsp;hinzufügen</a>
+
+			<g:render template="/abteilung/spielplanZuordnungDialog" model="[abteilungInstance: abteilungInstance, spielplanInhalt: spielplanInhalt]" />
+			<g:render template="/abteilung/trainingszeitenZuordnungDialog" model="[abteilungInstance: abteilungInstance]" />
+			</shiro:hasRole>
 			<!-- InstanceEndEditable --></td>
 	</tr>
 </table>

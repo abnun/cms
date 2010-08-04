@@ -59,7 +59,11 @@ class AbteilungController {
 			ArrayList abteilungBerichte = new ArrayList()
 			abteilungBerichte.addAll(abteilungInstance.berichte)
 
-			return [abteilungInstance: abteilungInstance, berichte: abteilungBerichte.sort{Bericht a, Bericht b -> a.ueberschrift.toLowerCase() <=> b.ueberschrift.toLowerCase()}]
+			String spielplanInhalt = params['spielplan.inhalt']
+
+			boolean showPortraits = !abteilungInstance.code.startsWith(AbteilungHelper.CODE_FUSSBALL_JUGEND)
+
+			return [abteilungInstance: abteilungInstance, berichte: abteilungBerichte.sort{Bericht a, Bericht b -> a.ueberschrift.toLowerCase() <=> b.ueberschrift.toLowerCase()}, spielplanInhalt: spielplanInhalt, showPortraits: showPortraits]
 		}
     }
 
@@ -385,7 +389,43 @@ class AbteilungController {
 					abteilungBerichte.addAll(abteilungInstance.berichte)
 				}
 
-				return [abteilungInstance: abteilungInstance, ergebnisse: ergebnisse, vorschau: vorschau, berichte: abteilungBerichte.sort{Bericht a, Bericht b -> a.ueberschrift.toLowerCase() <=> b.ueberschrift.toLowerCase()}]
+				def funktionList = de.webmpuls.cms.people.Funktion.normaleFunktionen().list([cache: true])
+
+			StringBuilder fBuilder = new StringBuilder()
+			for (de.webmpuls.cms.people.Funktion funktion: funktionList)
+			{
+				//if(!abteilungInstance.mitarbeiterfunktionen.contains(funktion))
+				//{
+					if (fBuilder.length() == 0)
+					{
+						fBuilder.append("\"${funktion.name}\"")
+					}
+					else
+					{
+						fBuilder.append(",\"${funktion.name}\"")
+					}
+				//}
+			}
+
+			def personList = de.webmpuls.cms.people.Person.list([cache: true])
+
+			StringBuilder pBuilder = new StringBuilder()
+			for (Person person: personList)
+			{
+				//if(!abteilungInstance.personen.contains(person))
+				//{
+					if (pBuilder.length() == 0)
+					{
+						pBuilder.append("\"${person.vorname} ${person.nachname}\"")
+					}
+					else
+					{
+						pBuilder.append(",\"${person.vorname} ${person.nachname}\"")
+					}
+				//}
+			}
+
+				return [abteilungInstance: abteilungInstance, ergebnisse: ergebnisse, vorschau: vorschau, berichte: abteilungBerichte.sort{Bericht a, Bericht b -> a.ueberschrift.toLowerCase() <=> b.ueberschrift.toLowerCase()}, fBuilder: fBuilder.toString(), pBuilder: pBuilder.toString()]
 			}
 		}
 	}
@@ -490,8 +530,9 @@ class AbteilungController {
 
 		if(abteilungInstance)
 		{
+			boolean showPortraits = !abteilungInstance.code.startsWith(AbteilungHelper.CODE_FUSSBALL_JUGEND)
 
-			return [abteilungInstance: abteilungInstance]
+			return [abteilungInstance: abteilungInstance, showPortraits: showPortraits]
 		}
 		else
 		{
@@ -511,8 +552,9 @@ class AbteilungController {
 
 		if(abteilungInstance)
 		{
+			boolean showPortraits = !abteilungInstance.code.startsWith(AbteilungHelper.CODE_FUSSBALL_JUGEND)
 
-			return [abteilungInstance: abteilungInstance]
+			return [abteilungInstance: abteilungInstance, showPortraits: showPortraits]
 		}
 		else
 		{
@@ -532,8 +574,9 @@ class AbteilungController {
 
 		if(abteilungInstance)
 		{
+			boolean showPortraits = !abteilungInstance.code.startsWith(AbteilungHelper.CODE_FUSSBALL_JUGEND)
 
-			return [abteilungInstance: abteilungInstance]
+			return [abteilungInstance: abteilungInstance, showPortraits: showPortraits]
 		}
 		else
 		{

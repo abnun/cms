@@ -149,7 +149,12 @@
 			primary: 'ui-icon-arrowthick-1-e'
 		}
 	}).click(function() {
-		window.location.href = '${createLink(action: 'berichte', params: ['code': abteilungInstance.code], mapping: 'abteilungShow')}';
+		<g:if test="${abteilungInstance.hasUnterAbteilungen()}">
+			window.location.href = '${createLink(action: 'aktuelles', params: ['code': abteilungInstance.code], mapping: 'abteilungAktuelles')}';
+		</g:if>
+		<g:else>
+			window.location.href = '${createLink(action: 'berichte', params: ['code': abteilungInstance.code], mapping: 'abteilungShow')}';
+		</g:else>
 	});
 </jq:jquery>
 <button id="showAbteilungButton" style="margin-left: 10px;"><g:message code="abteilung.show" /></button>
@@ -225,7 +230,7 @@
 						<label for="oberAbteilung"><g:message code="abteilung.oberAbteilung.label" default="Oberabteilung"/></label>
 					</td>
 					<td valign="top" class="value ${hasErrors(bean: abteilungInstance, field: 'oberAbteilung', 'errors')}">
-						<g:select name="oberAbteilung.id" from="${de.webmpuls.cms.section.Abteilung.hauptAbteilungen().listOrderByName([cache: true])}" optionKey="id" value="${abteilungInstance?.oberAbteilung?.id}" noSelection="['null': '']" />
+						<g:select name="oberAbteilung.id" from="${de.webmpuls.cms.section.Abteilung.listOrderByName([cache: true])}" optionKey="id" value="${abteilungInstance?.oberAbteilung?.id}" noSelection="['null': '']" />
 					</td>
 				</tr>
 
@@ -419,149 +424,10 @@
             </g:form>
         </div>
 
-		<div id="dialog" style="width: 750px">
-			<table style="width: 750px">
-				<tr>
-					<td valign="top" align="left">
-						<label for="person">Person:</label>
-					</td>
-					<td valign="top" align="left">
-						<g:textField name="person" id="person" style="width: 200px;"/>
-					</td>
-					<td valign="top" align="left">
-						<label for="funktion">Funktion:</label>
-					</td>
-					<td valign="top" align="left">
-						<g:textField name="funktion" id="funktion" style="width: 200px;"/>
-					</td>
-				</tr>
-			</table>
-			<br/>
-			<div id="dialog_error" class="ui-widget" style="display: none;">
-				<div style="padding: 0pt 0.7em;" class="ui-state-error ui-corner-all">
-					<p><span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
-						<strong>Fehler:</strong> Es muss sowohl eine Person als auch eine Funktion gewählt sein!</p>
-				</div>
-			</div>
-		</div>
 
-		<div id="sp_dialog" style="width: 750px">
-			<g:form controller="spielplan" action="createSpielplanFromAbteilung" method="post" name="SpielplanForm">
-				<table style="width: 750px">
-					<tr>
-						<td valign="top" align="left">
-							<label for="inhalt">Spielplan:</label>
-						</td>
-						<td valign="top" align="left">
-							<g:textArea name="inhalt" id="inhalt" style="width: 400px;"  value="${spielplanInhalt}"/>
-						</td>
-					</tr>
-				</table>
-				<br />
-				<p>
-					Bsp.: <b>F_D 10.09.2010 TGV Dürrenzimmern - SV Leingarten 19.30</b>
-					<br/>
-					<br/>
-					Mehrere Spielpl&auml;ne mit Enter/Return am Ende eingeben. Auf unn&ouml;tige Leerzeichen am Ende der Zeile achten!
-				</p>
-				<g:hiddenField name="abteilung.id" value="${abteilungInstance.id}" />
-			</g:form>
-			<br/>
-			<div id="sp_dialog_error" class="ui-widget" style="display: none;">
-				<div style="padding: 0pt 0.7em;" class="ui-state-error ui-corner-all">
-					<p><span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
-						<strong>Fehler:</strong> Es muss mindestens ein vollständiger Spielplan-Eintrag eingegeben werden!</p>
-				</div>
-			</div>
-			<div id="sp_dialog_error2" class="ui-widget" style="display: none;">
-				<div style="padding: 0pt 0.7em;" class="ui-state-error ui-corner-all">
-					<p><span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
-						<strong>Fehler:</strong> Ungültige Eingabe, bitte Eingabe auf überflüssige Leerzeichen überprüfen!</p>
-				</div>
-			</div>
-		</div>
+		<g:render template="/abteilung/personenZuordnungDialog" /> 
+		<g:render template="/abteilung/spielplanZuordnungDialog" model="[abteilungInstance: abteilungInstance, spielplanInhalt: spielplanInhalt]" />
+		<g:render template="/abteilung/trainingszeitenZuordnungDialog" model="[abteilungInstance: abteilungInstance]" />
 
-		<div id="tz_dialog" style="width: 750px">
-			<g:form controller="trainingszeit" action="createTrainingszeitFromAbteilung" method="post" name="TrainingszeitForm">
-				<table style="width: 750px">
-					<tr>
-						<td valign="middle" align="left">
-							<label for="bezeichnung">Bezeichnung:</label>
-						</td>
-						<td valign="middle" align="left">
-							<g:textField name="bezeichnung" id="bezeichnung" />
-						</td>
-						<td>
-							(z.B. Erwachsene)
-						</td>
-					</tr>
-					<tr>
-						<td valign="middle" align="left">
-							<label for="tag">Tag:</label>
-						</td>
-						<td colspan="2" valign="middle" align="left">
-							<g:select name="tag" from="${de.webmpuls.cms.section.Tag?.values()}" />
-						</td>
-					</tr>
-					<tr>
-						<td align="left">Uhrzeiten</td>
-					</tr>
-					<tr>
-						<td colspan="2">
-							<table cellspacing="5" cellpadding="5">
-								<tr>
-									<td valign="middle" align="left">
-										<label for="von">Von:</label>
-									</td>
-									<td valign="middle" align="left">
-										<g:textField name="von" id="von" style="width: 60px;"/>&nbsp;Uhr
-									</td>
-									<td valign="middle" align="left">
-										<label for="bis">Bis:</label>
-									</td>
-									<td valign="middle" align="left">
-										<g:textField name="bis" id="bis" style="width: 60px;"/>&nbsp;Uhr
-									</td>
-								</tr>
-							</table>
-						</td>
-						<td>
-							(z.B. 13.30 bis 15.00)
-						</td>
-					</tr>
-					<tr>
-						<td valign="top" align="left">
-							<label for="ort">Ort:</label>
-						</td>
-						<td colspan="2" valign="top" align="left">
-							<select name="ort" size="1">
-								<option value="">Auswählen</option>
-								<option>am Beachfeld</option>
-								<option>in der Eichbotthalle</option>
-								<option>in der Festhalle</option>
-								<option>im Freibad</option>
-								<option>im Gymnastikraum</option>
-								<option>im Hallenbad</option>
-								<option>im Heuchelbergstadion</option>
-								<option>im SVL-Sportheim</option>
-								<option>im SVS-Sportheim</option>
-								<option>am SVS-Sportplatz</option>
-								<option>in der Tennisanlage</option>
-								<option>am Trim-Dich-Pfad</option>
-								<option>an der Reitanlage</option>
-							</select>
-						</td>
-					</tr>
-				</table>
-				<g:hiddenField name="abteilung.id" value="${abteilungInstance.id}"/>
-			</g:form>
-			<br/>
-			<div id="tz_dialog_error" class="ui-widget" style="display: none;">
-				<div style="padding: 0pt 0.7em;" class="ui-state-error ui-corner-all">
-					<p><span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
-						<strong>Fehler:</strong> Es muss mindestens ein vollständiger Trainingszeiten-Eintrag (Bezeichnung, Tag und Uhrzeiten) eingegeben werden!</p>
-				</div>
-			</div>
-		</div>
     </body>
 </html>
