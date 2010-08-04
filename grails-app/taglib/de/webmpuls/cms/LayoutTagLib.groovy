@@ -34,7 +34,7 @@ class LayoutTagLib
 
 			if (abteilungFile)
 			{
-				def abteilungCodes = Abteilung.list([cache: true])*.code
+				def abteilungCodes = Abteilung.listOrderByCode([cache: true])*.code
 				for (String aCode in abteilungCodes)
 				{
 					if (abteilungFile.contains(aCode))
@@ -64,6 +64,10 @@ class LayoutTagLib
 			{
 				out << ""
 			}
+		}
+		else if(requestURI.contains("sponsoren"))
+		{
+			out << "<img src=\"${resource(dir: dir, file: 'sponsoren.jpg')}\" width=\"690\" height=\"88\">"
 		}
 		else if(controllerName == 'person' && (actionName == 'vorstand' || actionName == "jugend_vorstand" || actionName == "delegierte"))
 		{

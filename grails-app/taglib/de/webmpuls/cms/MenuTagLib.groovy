@@ -138,22 +138,22 @@ class MenuTagLib
 						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'aktuelles', params:[code: AbteilungHelper.CODE_FUSSBALL_JUGEND], mapping: 'abteilungAktuelles')}\">Aktuelles</a></td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
 						out << "<td class=\"rubrikactiv\">&Uuml;ber uns</td>"
-						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufukids','','show','jufugirls','','hide', 'jufujungs','','hide');\" href=\"#\">Kinderfußball (m/w)</a></td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
+						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufukids','','show','jufugirls','','hide', 'jufujungs','','hide');\" href=\"#\">Kinderfußball (m/w)</a></td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
 						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufujungs','','show','jufugirls','','hide', 'jufukids', '', 'hide');\" href=\"#\">Junioren</a></td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
 						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufugirls','','show','jufujungs','','hide', 'jufukids', '', 'hide');\" href=\"#\">Juniorinnen</a></td>"
 					}
-					else if(abteilungFile.startsWith("fussball_-_jugend_m_w"))
+					else if(abteilungFile.startsWith(AbteilungHelper.CODE_FUSSBALL_JUGEND_M_W) || abteilungFile.startsWith(AbteilungHelper.CODE_FUSSBALL_JUGEND_BAMBINI))
 					{
 						out << "<td class=\"rubrik\"><a href=\"${createLink(controller: 'abteilung', action: 'aktuelles', params:[code: AbteilungHelper.CODE_FUSSBALL_JUGEND], mapping: 'abteilungAktuelles')}\">Aktuelles</a></td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
 						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_-_jugend_wir.gsp\">&Uuml;ber uns</a></td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
-						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufukids','','show','jufugirls','','hide', 'jufujungs','','hide');\" href=\"#\">Kinderfußball (m/w)</a></td>"
+						out << "<td class=\"rubrikactiv\"><a onmouseover=\"MM_showHideLayers('jufukids','','show','jufugirls','','hide', 'jufujungs','','hide');\" href=\"#\">Kinderfußball (m/w)</a></td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
-						out << "<td class=\"rubrikactiv\" onmouseover=\"MM_showHideLayers('jufujungs','','show','jufugirls','','hide', 'jufukids', '', 'hide');\">Junioren</td>"
+						out << "<td class=\"rubrik\" onmouseover=\"MM_showHideLayers('jufujungs','','show','jufugirls','','hide', 'jufukids', '', 'hide');\">Junioren</td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
 						out << "<td class=\"rubrik\"><a onmouseover=\"MM_showHideLayers('jufugirls','','show','jufujungs','','hide', 'jufukids', '', 'hide');\" href=\"#\">Juniorinnen</a></td>"
 					}

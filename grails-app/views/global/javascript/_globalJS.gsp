@@ -37,14 +37,11 @@
 	}
 </script>
 <jq:jquery>
-  $(function(){
-	   $('.fadein img:gt(0)').hide();
-	   setInterval(function() {
-	   $('.fadein :first-child').fadeOut(2500)
-	   .next('img').fadeIn(2750)
-	   .end().appendTo('.fadein');},
-	   5000);
-   });
+  $(function() {
+	   $('.fadein').cycle({
+		fx: 'fade'
+		});
+	});
 
   $(".fadein img[rel!='']").mouseover(function () {
 		  $(this).css("cursor","pointer");
