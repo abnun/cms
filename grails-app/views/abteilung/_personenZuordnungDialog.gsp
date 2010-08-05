@@ -19,7 +19,7 @@
 			<g:hiddenField name="funktion" id="funktion" value="${Funktion.findByCode(Funktion.ABTEILUNGSLEITER)?.name}" />
 		</tr>
 		<tr>
-			<td>
+			<td colspan="2">
 				Bereits beim Tippen macht das System Vorschläge für Personen, die in der Datenbank gespeichert sind. 
 			</td>
 		</tr>
