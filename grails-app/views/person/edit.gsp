@@ -1,5 +1,5 @@
 
-<%@ page import="de.webmpuls.photo_album.util.MediaUtils; de.webmpuls.cms.media.MediaHelper; de.webmpuls.cms.people.Funktion; de.webmpuls.photo_album.Album; de.webmpuls.cms.people.Person" %>
+<%@ page import="de.webmpuls.cms.people.ShiroRole; de.webmpuls.photo_album.util.MediaUtils; de.webmpuls.cms.media.MediaHelper; de.webmpuls.cms.people.Funktion; de.webmpuls.photo_album.Album; de.webmpuls.cms.people.Person" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -10,10 +10,12 @@
 		<wm_photo_album:gallery_resources noGallery="true" />
     </head>
     <body>
-        <g:render template="/global/javascript/createButtonJS" />
+        <shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+		<g:render template="/global/javascript/createButtonJS" />
 		<button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]" /></button>
 		<g:render template="/global/javascript/backToListButtonJS" />
 		<button id="backToListButton" style="margin-left: 10px;"><g:message code="default.back.to.list" /></button>
+		</shiro:hasRole>
         <hr />
 		<div class="body">
             %{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
