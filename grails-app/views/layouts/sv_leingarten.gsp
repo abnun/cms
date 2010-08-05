@@ -79,12 +79,14 @@
 					<td class="copy">
 						Eingeloggter User: <shiro:principal/>&nbsp;
 					</td>
+					<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
 					<td>
 						<img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"/>
 					</td>
 					<td class="copy">
 						&nbsp;<g:link controller="admin" style="color: white;"><g:message code="admin.home.link.lable" default="Dashboard"/></g:link>&nbsp;
 					</td>
+					</shiro:hasRole>
 					<td>
 						<img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="20"/>
 					</td>

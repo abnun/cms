@@ -1,4 +1,4 @@
-<%@ page import="de.webmpuls.cms.section.Spielplan; de.webmpuls.cms.people.Funktion; de.webmpuls.cms.people.Person; de.webmpuls.cms.section.Abteilung" %>
+<%@ page import="de.webmpuls.cms.people.ShiroRole; de.webmpuls.cms.section.Spielplan; de.webmpuls.cms.people.Funktion; de.webmpuls.cms.people.Person; de.webmpuls.cms.section.Abteilung" %>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -139,10 +139,13 @@
 	</style>
 </head>
 <body>
+<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
 <g:render template="/global/javascript/createButtonJS"/>
 <button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]"/></button>
+
 <g:render template="/global/javascript/backToListButtonJS" />
 <button id="backToListButton" style="margin-left: 10px;"><g:message code="default.back.to.list" /></button>
+</shiro:hasRole>
 <jq:jquery>
 	$("#showAbteilungButton").button({
 		icons: {

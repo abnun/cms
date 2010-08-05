@@ -29,7 +29,7 @@
 	<jq:jquery>
 
 		$('#dialog').dialog( {
-					title: 'Zuordnung-Dialog',
+					title: 'Abteilungsleiter zuordnen',
 					bgiframe: true,
 					autoOpen: false,
 					closeOnEscape: true,
@@ -38,7 +38,7 @@
 					hide: 'explode',
 					width: 760,
 					buttons: {
-						"Zuordnung erstellen": function() {
+						"speichern": function() {
 							var pValue = $("input[name='person']").val();
 							var fValue = $("input[name='funktion']").val();
 

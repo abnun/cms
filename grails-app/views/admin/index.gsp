@@ -45,7 +45,7 @@
 				</ul>
 			</td>
 		</tr>
-		</shiro:hasRole>
+
 		<tr>
 			<td>&nbsp;</td>
 		</tr>
@@ -80,6 +80,7 @@
 				</ul>
 			</td>
 		</tr>
+		</shiro:hasRole>
 		<tr>
 			<td>&nbsp;</td>
 		</tr>
