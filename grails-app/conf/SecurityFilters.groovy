@@ -74,5 +74,15 @@ class SecurityFilters {
 				}
             }
         }
+
+		adminShiro(controller: 'shiroUser|shiroRole', action: '*') {
+			before = {
+                // Access control by convention.
+                accessControl()
+				{
+					role(ShiroRole.ADMINISTRATOR)
+				}
+            }
+		}
     }
 }

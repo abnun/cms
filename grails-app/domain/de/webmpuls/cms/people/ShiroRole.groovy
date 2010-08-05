@@ -12,4 +12,9 @@ class ShiroRole {
     static constraints = {
         name(nullable: false, blank: false, unique: true)
     }
+
+	def String toString()
+	{
+		return name
+	}
 }
