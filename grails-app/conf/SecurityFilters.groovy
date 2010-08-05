@@ -25,7 +25,7 @@ class SecurityFilters {
             }
         }
 
-		user(controller: 'abteilung', action: 'edit|create|list|update|save|delete') {
+		abteilungUser(controller: 'abteilung', action: 'edit|create|list|update|save|delete') {
             before = {
                 // Access control by convention.
                 accessControl()
@@ -34,6 +34,26 @@ class SecurityFilters {
 				}
             }
         }
+
+		berichtUser(controller: 'bericht', action: '*') {
+			before = {
+                // Access control by convention.
+                accessControl()
+				{
+					role(ShiroRole.BENUTZER)
+				}
+            }
+		}
+
+		pictureUser(controller: 'picture', action: '*') {
+			before = {
+                // Access control by convention.
+                accessControl()
+				{
+					role(ShiroRole.BENUTZER)
+				}
+            }
+		}
 
 		adminAlbum(controller: 'album', action: '*') {
             before = {

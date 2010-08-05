@@ -82,14 +82,19 @@
 						<br/>
 
 						<jq:jquery>
-	$("#showAbteilungButton").button({
-		icons: {
-			primary: 'ui-icon-arrowthick-1-e'
-		}
-	}).click(function() {
-		window.location.href = '${createLink(action: 'berichte', params: ['code': bericht?.abteilung?.code], mapping: 'abteilungShow')}';
-	});
-</jq:jquery>
+							$("#showAbteilungButton").button({
+								icons: {
+									primary: 'ui-icon-arrowthick-1-e'
+								}
+							}).click(function() {
+								<g:if test="${bericht?.abteilung?.hasUnterAbteilungen()}">
+									window.location.href = '${createLink(action: 'aktuelles', params: ['code': bericht?.abteilung?.code], mapping: 'abteilungAktuelles')}';
+								</g:if>
+								<g:else>
+									window.location.href = '${createLink(action: 'berichte', params: ['code': bericht?.abteilung?.code], mapping: 'abteilungShow')}';
+								</g:else>
+							});
+						</jq:jquery>
 
 					</td>
 				</tr>

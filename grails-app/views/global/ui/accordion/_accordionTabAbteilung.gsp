@@ -6,7 +6,7 @@
 			<g:render template="/global/ui/accordion/accordionHeaderAbteilung" model="[abteilung: abteilung, accordionTabUeberschrift1: accordionTabUeberschrift1, accordionTabUeberschrift2: accordionTabUeberschrift2, datum: datum]"/>
 		</a>
 	</h3>
-	<div style="width: 695px;">
+	<div style="width: 695px; font-size: ${abteilung.hasUnterAbteilungen() ? '100' : '75'}%;">
 		<g:if test="${isEditable}">
 
 			<shiro:hasRole name="${ShiroRole.BENUTZER}">

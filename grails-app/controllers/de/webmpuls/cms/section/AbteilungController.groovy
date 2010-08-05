@@ -396,7 +396,6 @@ class AbteilungController {
 			{
 				ArrayList ergebnisse = []
 				ArrayList vorschau = []
-				ArrayList abteilungBerichte = []
 
 				if(abteilungInstance.hasUnterAbteilungen())
 				{
@@ -415,7 +414,6 @@ class AbteilungController {
 				{
 					ergebnisse.addAll(resultService.fetchResultsForAbteilung(abteilungInstance))
 					vorschau.addAll(spielplanService.fetchPlayDaysForAbteilung(abteilungInstance))
-					abteilungBerichte.addAll(abteilungInstance.berichte)
 				}
 
 				def funktionList = de.webmpuls.cms.people.Funktion.normaleFunktionen().list([cache: true])
@@ -454,7 +452,7 @@ class AbteilungController {
 				//}
 			}
 
-				return [abteilungInstance: abteilungInstance, ergebnisse: ergebnisse, vorschau: vorschau, berichte: abteilungBerichte.sort{Bericht a, Bericht b -> a.ueberschrift.toLowerCase() <=> b.ueberschrift.toLowerCase()}, fBuilder: fBuilder.toString(), pBuilder: pBuilder.toString()]
+				return [abteilungInstance: abteilungInstance, ergebnisse: ergebnisse, vorschau: vorschau, berichte: abteilungInstance.berichte.sort{Bericht a, Bericht b -> a.ueberschrift.toLowerCase() <=> b.ueberschrift.toLowerCase()}, fBuilder: fBuilder.toString(), pBuilder: pBuilder.toString()]
 			}
 		}
 	}

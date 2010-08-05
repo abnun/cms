@@ -65,6 +65,8 @@
 
 	<g:render template="/global/css/buttonCSS"/>
 
+	<g:render template="/global/css/buttonCSS" model="[dialogLinkId: 'b_dialog_link']" />
+
 	<style type="text/css">
 	.ui-autocomplete {
 		width: 200px;
@@ -72,6 +74,35 @@
 	</style>
 </head>
 <body>
+
+<g:if test="${flash.message}">
+	<div class="ui-widget">
+		<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+			<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+				${flash.message}
+			</p>
+		</div>
+	</div>
+</g:if>
+<g:if test="${flash.error}">
+	<div class="ui-widget">
+		<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+			<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+				<strong><g:message code="default.error"/>:</strong>&nbsp;${flash.error}
+			</p>
+		</div>
+	</div>
+</g:if>
+<g:hasErrors bean="${abteilungInstance}">
+	<div class="ui-widget">
+		<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+			<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+				<strong><g:message code="default.error"/>:</strong>
+				<br/>
+				<g:renderErrors bean="${abteilungInstance}" as="list"/>
+		</div>
+	</div>
+</g:hasErrors>
 
 <table width="695" border="0" cellpadding="0" cellspacing="0">
 	<tr align="left" valign="top">
@@ -99,9 +130,10 @@
 						<shiro:hasRole name="${ShiroRole.BENUTZER}">
 							<br/>
 							<span>
-								<g:link controller="bericht" action="create" params="[abteilungId: abteilungInstance?.id]">
-									<img src="${resource(dir: '/images/skin', file: 'database_add.png')}" alt="Neuer Bericht" border="0"/>&nbsp;Neuer Bericht
-								</g:link>
+								%{--<g:link controller="bericht" action="create" params="[abteilungId: abteilungInstance?.id]">--}%
+								<g:link controller="bericht" action="create" params="[abteilungId: abteilungInstance?.id]" elementId="b_dialog_link" class="ui-state-default ui-corner-all" style="border: 1px solid #AED0EA; color: #2779AA; font-weight: bold; font-size: 100%; background: url('${resource(dir: 'css/jquery/themes/cupertino/images', file: 'ui-bg_glass_80_d7ebf9_1x400.png')}') repeat-x scroll 50% 50% #D7EBF9;">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Bericht hinzufügen
+									%{--<img src="${resource(dir: '/images/skin', file: 'database_add.png')}" alt="Neuer Bericht" border="0"/>&nbsp;Neuer Bericht--}%
+									</g:link>
 							</span>
 						</shiro:hasRole>
 					</td>

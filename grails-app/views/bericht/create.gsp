@@ -1,5 +1,5 @@
 
-<%@ page import="de.webmpuls.cms.section.Bericht" %>
+<%@ page import="de.webmpuls.cms.section.Abteilung; de.webmpuls.cms.people.ShiroRole; de.webmpuls.cms.section.Bericht" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -8,10 +8,29 @@
         %{--<title><g:message code="default.create.label" args="[entityName]" /></title>--}%
     </head>
     <body>
-        <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
-            <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
-        </div>
+		<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+        <g:render template="/global/javascript/backToListButtonJS" />
+		<button id="backToListButton" style="margin-left: 10px;"><g:message code="default.back.to.list" /></button>
+		</shiro:hasRole>
+		<%
+		    Abteilung tmpAbteilung = Abteilung.get(params.abteilungId)
+		%>
+		<jq:jquery>
+			$("#showAbteilungButton").button({
+				icons: {
+					primary: 'ui-icon-arrowthick-1-e'
+				}
+			}).click(function() {
+				<g:if test="${tmpAbteilung.hasUnterAbteilungen()}">
+					window.location.href = '${createLink(action: 'aktuelles', params: ['code': tmpAbteilung.code], mapping: 'abteilungAktuelles')}';
+				</g:if>
+				<g:else>
+					window.location.href = '${createLink(action: 'berichte', params: ['code': tmpAbteilung.code], mapping: 'abteilungShow')}';
+				</g:else>
+			});
+		</jq:jquery>
+		<button id="showAbteilungButton" style="margin-left: 10px;"><g:message code="default.back" /></button>
+		<hr />
         <div class="body">
 		%{--<h1><g:message code="default.create.label" args="[entityName]" /></h1>--}%
 			<g:if test="${flash.message}">
