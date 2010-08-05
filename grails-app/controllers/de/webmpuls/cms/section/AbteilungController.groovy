@@ -213,7 +213,7 @@ class AbteilungController {
             }
             catch (org.springframework.dao.DataIntegrityViolationException e) {
                 flash.message = "${message(code: 'default.not.deleted.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), params.id])}"
-                redirect(action: "show", id: params.id)
+                redirect(action: "edit", id: params.id)
             }
         }
         else {
@@ -294,6 +294,35 @@ class AbteilungController {
 			}
 		}
 
+	}
+
+	def removeUnterAbteilung =
+	{
+		println("params -> $params")
+
+		String id = params.id
+		String idToRemove = params["abteilung.id"]
+
+		if(id)
+		{
+			Abteilung abteilung = Abteilung.get(id)
+
+			if(abteilung)
+			{
+				Abteilung removeAbteilung = Abteilung.get(idToRemove)
+
+				if (removeAbteilung)
+				{
+					abteilung.removeFromUnterabteilungen(removeAbteilung)
+
+					if (!abteilung.hasErrors() && abteilung.save(flush: true))
+					{
+						flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilung.id])}"
+						redirect(action: "edit", id: abteilung.id)
+					}
+				}
+			}
+		}
 	}
 
 	def removeSpielplan =
