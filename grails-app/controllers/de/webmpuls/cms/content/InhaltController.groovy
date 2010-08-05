@@ -19,7 +19,7 @@ class InhaltController
 
 		for(News tmpNews in newsList)
 		{
-			String abteilungId = tmpNews.abteilung.id
+			String abteilungId = tmpNews.abteilung.oberAbteilung == null ? tmpNews.abteilung.id : tmpNews.abteilung.oberAbteilung.id
 			ArrayList tmpList = newsMap.get(abteilungId)
 			if(!tmpList)
 			{

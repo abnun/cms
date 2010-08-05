@@ -45,15 +45,17 @@ class SecurityFilters {
             }
 		}
 
-		pictureUser(controller: 'picture', action: '*') {
+		/*pictureUser(controller: 'picture', action: '*') {
 			before = {
-                // Access control by convention.
+
+				log.debug("intercepting PictureController")
+				// Access control by convention.
                 accessControl()
 				{
 					role(ShiroRole.BENUTZER)
 				}
             }
-		}
+		}*/
 
 		adminAlbum(controller: 'album', action: '*') {
             before = {

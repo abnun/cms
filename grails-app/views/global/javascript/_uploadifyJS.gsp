@@ -16,6 +16,6 @@ $('#albumFotos').uploadify({
 			'folder'    		: '/${de.webmpuls.photo_album.util.MediaUtils.DEFAULT_FOLDER}_${album.toString()}_${albumDate}',
 		%{--'onComplete'		: function (evt, queueID, fileObj, response, data) { alert("Response: "+response);},--}%
 				'onAllComplete'	: function(event, uploadObj) { alert(uploadObj.filesUploaded + ' Bild(er) hochgeladen. Anzahl der Fehler: ' + uploadObj.errors); $('#dialog').dialog('close'); location.reload();},
-		   	'onError'			: function(event, ID, fileObj, errorObj) { alert("Fehler: "+errorObj.info);}
+		   	'onError'			: function(event, ID, fileObj, errorObj) { alert("Fehler: "+errorObj.type + " " + errorObj.info + ": " + errorObj.text);}
 });
 </jq:jquery>
