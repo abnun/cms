@@ -26,7 +26,11 @@
 
 				if(tmpAlbum && tmpAlbum.getPictures())
 				{
-					bild = tmpAlbum.getPictures()?.iterator()?.next()
+					bild = tmpAlbum.getPictures()?.find { Picture p -> p.coverPicture == true}
+					if(!bild)
+					{
+						bild = tmpAlbum.getPictures()?.iterator()?.next()
+					}
 					size = tmpAlbum.getPictures()?.size()
 				}
 			%>
@@ -34,27 +38,47 @@
 				<span style="display: block; margin-left: 10px; margin-right: 10px; width: 140px; min-width: 140px; max-width: 140px; float: right;">
 					<table width="140" border="0" cellpadding="3" bordercolor="#93C9FF">
 						<tr>
-							<td style="width: 140px; height: 140px; border: 1px solid #999999;" colspan="2" class="infohead">
-								<div class="highslide-gallery" style="margin: auto">
-									<a class="highslide" href="${wm_photo_album.pathToImage(picture: bild, size: MediaUtils.BIG)}" onclick="return hs.expand(this, {slideshowGroup: 'group_${tmpAlbum.id}'});">
-										<img alt="" style="border: none;" border="0" src="${wm_photo_album.pathToImage(picture: bild, size: MediaUtils.THUMBNAIL)}"/>
-									</a>
+							<td style="width: 140px; height: 140px;" colspan="2" class="infohead">
 
-									<div class="hidden-container">
-										<g:each status="i" var="pic" in="${tmpAlbum.getPictures()}">
-											<g:if test="${i == 0}">
-												%{-- nuescht ausgeben --}%
+								<div class="box" id="identifier" style="width: 140px; float: left;">
+									<g:render template="/global/ui/box/boxHeader" model="[header: '', isWhite: true]"/>
+
+									<div class="bd">
+										<div class="c">
+											<div class="highslide-gallery" style="margin: auto">
+												<a title="Klicken um Album zu öffnen" class="highslide" href="${wm_photo_album.pathToImage(picture: bild, size: MediaUtils.BIG)}" onclick="return hs.expand(this, {slideshowGroup: 'group_${tmpAlbum.id}'});">
+													<img alt="${bild.caption}" style="border: none;" border="0" src="${wm_photo_album.pathToImage(picture: bild, size: MediaUtils.THUMBNAIL)}"/>
+												</a>
+
+												<div class="hidden-container">
+													<g:each status="i" var="pic" in="${tmpAlbum.getPictures()}">
+														<g:if test="${i == 0}">
+														%{-- nuescht ausgeben --}%
+														</g:if>
+														<g:else>
+															<a href="${wm_photo_album.pathToImage(picture: pic, size: MediaUtils.BIG)}" class="highslide" onclick="return hs.expand(this, {slideshowGroup: 'group_${tmpAlbum.id}'});"></a>
+														</g:else>
+													</g:each>
+												</div>
+
+											</div>
+											
+											<g:if test="${size > 1}">
+												Bild 1 von ${size}
+												<br/>
 											</g:if>
-											<g:else>
-												<a href="${wm_photo_album.pathToImage(picture: pic, size: MediaUtils.BIG)}" class="highslide" onclick="return hs.expand(this, {slideshowGroup: 'group_${tmpAlbum.id}'});"></a>
-											</g:else>
-										</g:each>
+											<shiro:hasRole name="${ShiroRole.BENUTZER}">
+												<g:link controller="bericht" action="bilderUpload" params="['bericht.id': item.id]">Bilder hinzufügen</g:link>
+											</shiro:hasRole>
+										</div>
 									</div>
 
+									<g:render template="/global/ui/box/boxFooter" />
 								</div>
+
 							</td>
 						</tr>
-						<tr>
+						%{--<tr>
 							<td valign="bottom" bordercolor="#999999" class="copy">
 								<g:if test="${size > 1}">
 									Bild 1 von ${size}
@@ -71,7 +95,7 @@
 									</a>
 								</div>
 							</td>
-						</tr>
+						</tr>--}%
 					</table>
 				</span>
 			</g:if>
@@ -80,10 +104,21 @@
 					<span style="display: block; margin-left: 10px; margin-right: 10px; width: 140px; min-width: 140px; max-width: 140px; float: right;">
 						<table width="140" border="0" cellpadding="3" bordercolor="#93C9FF">
 							<tr>
-								<td style="width: 140px; height: 140px; border: 1px solid #999999;" class="infohead"><img alt="" border="0" src="${resource(dir: 'images', file: 'nopicavailable.gif', plugin: 'photo-album')}" /></td>
-							</tr>
-							<tr>
-								<td colspan="2" valign="bottom" bordercolor="#999999" class="copy"><g:link controller="bericht" action="bilderUpload" params="['bericht.id': item.id]">Bilder hinzufügen</g:link></td>
+								<td style="width: 140px; height: 140px;" class="infohead">
+									<div class="box" id="identifier" style="width: 140px; float: left;">
+									<g:render template="/global/ui/box/boxHeader" model="[header: '', isWhite: true]"/>
+
+									<div class="bd">
+										<div class="c">
+											<img alt="" border="0" src="${resource(dir: 'images', file: 'nopicavailable.gif', plugin: 'photo-album')}" />
+											<br />
+											<g:link style="align: left" controller="bericht" action="bilderUpload" params="['bericht.id': item.id]">Bilder hinzufügen</g:link>
+										</div>
+									</div>
+
+									<g:render template="/global/ui/box/boxFooter" />
+								</div>
+								</td>
 							</tr>
 						</table>
 					</span>

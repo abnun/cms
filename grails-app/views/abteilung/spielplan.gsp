@@ -42,7 +42,7 @@
 						<td colspan="2" valign="top" class="copy">
 							<g:each in="${abteilungInstance.spielplaene.sort{ Spielplan a, Spielplan b -> a.anstoss <=> b.anstoss } }" var="sp">
 								<p>
-									<g:formatDate date="${sp?.spieldatum}" format="dd.MM.yyyy" />:&nbsp;${sp?.heimmannschaft}&nbsp;${sp?.gastmannschaft}&nbsp;${sp?.anstoss}
+									<g:formatDate date="${sp?.spieldatum}" format="dd.MM.yyyy" />:&nbsp;${sp?.heimmannschaft}&nbsp;-&nbsp;${sp?.gastmannschaft}&nbsp;&gt;&nbsp;${sp?.anstoss}
 								</p>
 							</g:each>
 						</td>

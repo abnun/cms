@@ -16,6 +16,11 @@
 .box .hd {
 	background: transparent url(../bilder/boxes/box_svl.png) no-repeat left top;
 }
+
+.box .hd_neutral {
+	background: transparent url(../bilder/boxes/box_svl_neutral.png) no-repeat left top;
+}
+
 .ibox .hd {
 	background: transparent url(../bilder/boxes/ibox.png) no-repeat left top;
 }
@@ -28,6 +33,17 @@
 	text-align: left;
 	color: #FFFFFF;
 }
+
+.box .hd_neutral .c, .box .ibox .hd_neutral .c {
+	background: transparent url(../bilder/boxes/box_svl_neutral.png) no-repeat top right;
+	font: bold 12px/13px Arial, Helvetica, sans-serif;
+	/*min-height: 15px;*/
+	padding: 0px 20px 7px 0px;
+	margin-left: 10px;
+	text-align: left;
+	color: #FFFFFF;
+}
+
 .box .ibox .hd .c {
 	font: bold 13px/20px Arial, Helvetica, sans-serif;
 	background: transparent url(../bilder/boxes/ibox.png) no-repeat top right;

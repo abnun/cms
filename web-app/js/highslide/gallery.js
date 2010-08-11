@@ -6,12 +6,13 @@ jQuery.preloadImages = function()
   }
 }
 
+hs.captionEval = 'this.thumb.alt';
 hs.align = 'center';
 hs.transitions = ['expand', 'crossfade'];
 hs.fadeInOut = true;
 hs.dimmingOpacity = 0.8;
 hs.outlineType = 'rounded-white';
-hs.wrapperClassName = 'outer-glow';
+//hs.wrapperClassName = 'outer-glow';
 hs.showCredits = false;
 hs.marginBottom = 100 // make room for the thumbstrip and the controls
 // hs.numberPosition = 'caption';

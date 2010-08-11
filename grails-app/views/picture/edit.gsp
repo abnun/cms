@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="main" />
+        <meta name="layout" content="sv_leingarten" />
         <g:set var="entityName" value="${message(code: 'picture.label', default: 'Picture')}" />
         <title><g:message code="default.edit.label" args="[entityName]" /></title>
 		<wm_photo_album:image_processing_resources />
@@ -25,8 +25,12 @@
     </head>
     <body>
         <jq:jquery>
-			$("#showAbteilungButton").click(function() {
-				window.location.href = "${createLink(controller: 'bericht', action: 'bilderUpload', params: ['bericht.id': params.berichtId])}";
+			$("#showAbteilungButton").button({
+				icons: {
+					primary: 'ui-icon-arrowthick-1-e'
+				}
+			}).click(function() {
+				window.location.href = "${createLink(controller: 'bericht', action: 'bilderUpload', params: ['bericht.id': params['bericht.id']])}";
 			});
 		</jq:jquery>
 		<button id="showAbteilungButton" style="margin-left: 10px;"><g:message code="default.back" /></button>
@@ -91,12 +95,13 @@
 					<g:if test="${ConfigurationHolder.getConfig().flatten().get('photo_album.picture.show.option.crop') != null && Boolean.valueOf(ConfigurationHolder.getConfig().flatten().get('photo_album.picture.show.option.crop'))}">
 						<br/>
 						<br/>
-						<g:link action="resetPhoto" id="${pictureInstance.id}">Foto zurücksetzen</g:link>
+						<g:link action="resetPhoto" params="[id: pictureInstance.id, 'bericht.id': params['bericht.id']]">Foto zurücksetzen</g:link>
 					</g:if>
 				</g:if>
 				<br/>
 				<br/>
 				<g:submitButton name="alterSubmit" value="${g.message(code: 'picture.alter.submit', default: 'Anwenden')}"/>
+				<g:hiddenField name="bericht.id" value="${params['bericht.id']}" />
 			</g:form>
 			<br />
 			<hr />
@@ -151,6 +156,7 @@
                     <span class="button"><g:actionSubmit class="save" action="update" value="${message(code: 'default.button.update.label', default: 'Update')}" /></span>
                     <span class="button"><g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" /></span>
                 </div>
+				<g:hiddenField name="bericht.id" value="${params['bericht.id']}" />
             </g:form>
         </div>
     </body>
