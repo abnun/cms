@@ -53,7 +53,7 @@
 													<tr>
 														<shiro:hasRole name="${ShiroRole.BENUTZER}">
 															<td>
-																<g:link controller="picture" action="edit" params="[id: pictureInstance.id, albumId: album.id]"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Termin ändern" title="Termin ändern" border="0"/></g:link>
+																<g:link controller="picture" action="edit" params="[id: pictureInstance.id, albumId: album.id, berichtId: bericht.id]"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Termin ändern" title="Termin ändern" border="0"/></g:link>
 																<jq:jquery>
 																		$("#picture_del_${pictureInstance.id}").click(function () {
 																			if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
