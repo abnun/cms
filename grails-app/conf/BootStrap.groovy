@@ -527,19 +527,19 @@ class BootStrap
 			}
 
 			// A
-			Abteilung fussball_jugend_f_a = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_A)
+			/*Abteilung fussball_jugend_f_a = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F_A)
 			if (!fussball_jugend_f_a)
 			{
 				fussball_jugend_f_a = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F_A, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F_A, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F_A, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_F_A)
 				fussball_jugend_f_a.save()
-			}
+			}*/
 
 			Abteilung fussball_jugend_f = Abteilung.findByCode(AbteilungHelper.CODE_FUSSBALL_JUGEND_F)
 			if (!fussball_jugend_f)
 			{
 				fussball_jugend_f = new Abteilung(name: AbteilungHelper.NAME_FUSSBALL_JUGEND_F, code: AbteilungHelper.CODE_FUSSBALL_JUGEND_F, kuerzel: AbteilungHelper.TOKEN_FUSSBALL_JUGEND_F, oberAbteilung: fussball_jugend, anzeigeImMenu: false, anzeigeName: AbteilungHelper.DISPLAY_NAME_FUSSBALL_JUGEND_F)
 
-				fussball_jugend_f.addToUnterabteilungen(fussball_jugend_f_a)
+//				fussball_jugend_f.addToUnterabteilungen(fussball_jugend_f_a)
 				fussball_jugend_f.addToUnterabteilungen(fussball_jugend_f_b)
 				fussball_jugend_f.addToUnterabteilungen(fussball_jugend_f_c)
 //				fussball_jugend_f.addToUnterabteilungen(fussball_jugend_f_c_1)

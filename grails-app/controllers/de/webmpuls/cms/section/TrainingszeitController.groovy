@@ -106,50 +106,59 @@ class TrainingszeitController {
 
 		if(abteilungId)
 		{
-			Abteilung abteilung = Abteilung.get(abteilungId)
-
-			if(abteilung)
+			try
 			{
-				String bezeichnung = params.bezeichnung
-				String ort = params.ort
+				Abteilung abteilung = Abteilung.get(abteilungId)
 
-				def tag = params.tag
-				String uhrzeiten = params.von?.trim() + " - " + params.bis?.trim()
-
-				if(tag && uhrzeiten)
+				if(abteilung)
 				{
-					Trainingstag trainingstag = Trainingstag.findByTagAndUhrzeiten(tag, uhrzeiten)
+					String bezeichnung = params.bezeichnung
+					String ort = params.ort
 
-					if(!trainingstag)
+					def tag = params.tag
+					String uhrzeiten = params.von?.trim() + " - " + params.bis?.trim()
+
+					if(tag && uhrzeiten)
 					{
-						trainingstag = new Trainingstag(tag: tag, uhrzeiten: uhrzeiten)
-					}
+						Trainingstag trainingstag = Trainingstag.findByTagAndUhrzeiten(tag, uhrzeiten)
 
-					if(trainingstag.save())
-					{
-						Trainingszeit trainingszeit = Trainingszeit.findByBezeichnung(bezeichnung)
-
-						if(!trainingszeit)
+						if(!trainingstag)
 						{
-							trainingszeit = new Trainingszeit(bezeichnung: bezeichnung)
+							trainingstag = new Trainingstag(tag: tag, uhrzeiten: uhrzeiten)
 						}
 
-						if(trainingszeit)
+						if(trainingstag.save())
 						{
+							Trainingszeit trainingszeit = Trainingszeit.findByBezeichnung(bezeichnung)
 
-							if(ort)
+							if(!trainingszeit)
 							{
-								trainingszeit.ort = ort
+								trainingszeit = new Trainingszeit(bezeichnung: bezeichnung)
 							}
-
-							trainingszeit.addToTrainingstage(trainingstag)
-							if(trainingszeit.save())
+	
+							if(trainingszeit)
 							{
-								abteilung.addToTrainingszeiten(trainingszeit)
-								abteilung.save()
-								flash.message = "${message(code: 'default.created.message', args: [message(code: 'trainingszeit.label', default: 'Trainingszeit'), trainingszeit.bezeichnung])}"
-								redirect(controller: 'abteilung', action: 'edit', id: abteilung.id)
-								return false
+
+								if(ort)
+								{
+									trainingszeit.ort = ort
+								}
+
+								trainingszeit.addToTrainingstage(trainingstag)
+								if(trainingszeit.save())
+								{
+									abteilung.addToTrainingszeiten(trainingszeit)
+									abteilung.save()
+									flash.message = "${message(code: 'default.created.message', args: [message(code: 'trainingszeit.label', default: 'Trainingszeit'), trainingszeit.bezeichnung])}"
+									redirect(controller: 'abteilung', action: 'edit', id: abteilung.id)
+									return false
+								}
+								else
+								{
+									flash.error = "${message(code: 'default.save.not.possible', args: [message(code: 'abteilung.label', default: 'Abteilung')])}"
+									redirect(controller: 'abteilung', action: 'list')
+									return false
+								}
 							}
 							else
 							{
@@ -160,19 +169,19 @@ class TrainingszeitController {
 						}
 						else
 						{
-							flash.error = "${message(code: 'default.save.not.possible', args: [message(code: 'abteilung.label', default: 'Abteilung')])}"
+							trainingstag.errors.allErrors.each
+							{
+								println it
+							}
+
+							flash.error = "${message(code: 'default.save.not.possible', args: [message(code: 'trainingstag.label', default: 'Trainingstag')])}"
 							redirect(controller: 'abteilung', action: 'list')
 							return false
 						}
 					}
 					else
 					{
-						trainingstag.errors.allErrors.each
-						{
-							println it
-						}
-
-						flash.error = "${message(code: 'default.save.not.possible', args: [message(code: 'trainingstag.label', default: 'Trainingstag')])}"
+						flash.error = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilungId])}"
 						redirect(controller: 'abteilung', action: 'list')
 						return false
 					}
@@ -184,10 +193,12 @@ class TrainingszeitController {
 					return false
 				}
 			}
-			else
+			catch(Exception e)
 			{
-				flash.error = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilungId])}"
-				redirect(controller: 'abteilung', action: 'list')
+				e.printStackTrace()
+
+				flash.error = "${message(code: 'default.save.not.possible', args: [message(code: 'abteilung.label', default: 'Abteilung')])}"
+				redirect(controller: 'abteilung', action: 'edit', id: abteilung.id)
 				return false
 			}
 		}
