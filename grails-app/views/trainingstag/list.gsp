@@ -28,6 +28,8 @@
                         
                             <g:sortableColumn property="uhrzeiten" title="${message(code: 'trainingstag.uhrzeiten.label', default: 'Uhrzeiten')}" />
                         
+                            <th><g:message code="trainingstag.trainingszeit.label" default="Trainingszeit" /></th>
+                   	    
 							<th>&nbsp;</th>
                         </tr>
                     </thead>
@@ -40,6 +42,8 @@
                             <td>${fieldValue(bean: trainingstagInstance, field: "tag")}</td>
                         
                             <td>${fieldValue(bean: trainingstagInstance, field: "uhrzeiten")}</td>
+                        
+                            <td>${fieldValue(bean: trainingstagInstance, field: "trainingszeit")}</td>
                         
 							<td><g:link action="edit" id="${trainingstagInstance.id}"><g:message code="trainingstag.edit" default="Bearbeiten" /></g:link></td>
                         </tr>

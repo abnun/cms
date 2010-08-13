@@ -40,7 +40,7 @@
 					</tr>
 					<tr>
 						<td colspan="2" valign="top" class="copy">
-							<g:each in="${abteilungInstance.spielplaene.sort{ Spielplan a, Spielplan b -> a.anstoss <=> b.anstoss } }" var="sp">
+							<g:each in="${abteilungInstance.spielplaene.sort{ Spielplan a, Spielplan b -> a.spieldatum <=> b.spieldatum } }" var="sp">
 								<p>
 									<g:formatDate date="${sp?.spieldatum}" format="dd.MM.yyyy" />:&nbsp;${sp?.heimmannschaft}&nbsp;-&nbsp;${sp?.gastmannschaft}&nbsp;&gt;&nbsp;${sp?.anstoss}
 								</p>
@@ -59,7 +59,7 @@
 			<td width="130"><!-- InstanceBeginEditable name="info" -->
 			%{--<g:include controller="abteilung" action="abteilungsLeiter" id="${abteilungInstance.id}"/>--}%
 
-			<g:include controller="abteilung" action="trainingszeiten" id="${abteilungInstance.id}"/>
+			%{--<g:include controller="abteilung" action="trainingszeiten" id="${abteilungInstance.id}"/>--}%
 			<p>&nbsp;</p>
 			<!-- InstanceEndEditable --></td>
 		</tr>

@@ -1,10 +1,10 @@
 
-<%@ page import="de.webmpuls.cms.section.Trainingstag" %>
+<%@ page import="de.webmpuls.cms.section.InfoBox" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
-        <g:set var="entityName" value="${message(code: 'trainingstag.label', default: 'Trainingstag')}" />
+        <g:set var="entityName" value="${message(code: 'infoBox.label', default: 'InfoBox')}" />
         %{--<title><g:message code="default.show.label" args="[entityName]" /></title>--}%
     </head>
     <body>
@@ -23,30 +23,30 @@
                     <tbody>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="trainingstag.id.label" default="Id" /></td>
+                            <td valign="top" class="name"><g:message code="infoBox.id.label" default="Id" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: trainingstagInstance, field: "id")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="trainingstag.tag.label" default="Tag" /></td>
-                            
-                            <td valign="top" class="value">${trainingstagInstance?.tag?.encodeAsHTML()}</td>
+                            <td valign="top" class="value">${fieldValue(bean: infoBoxInstance, field: "id")}</td>
                             
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="trainingstag.uhrzeiten.label" default="Uhrzeiten" /></td>
+                            <td valign="top" class="name"><g:message code="infoBox.ueberschrift.label" default="Ueberschrift" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: trainingstagInstance, field: "uhrzeiten")}</td>
+                            <td valign="top" class="value">${fieldValue(bean: infoBoxInstance, field: "ueberschrift")}</td>
                             
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="trainingstag.trainingszeit.label" default="Trainingszeit" /></td>
+                            <td valign="top" class="name"><g:message code="infoBox.inhalt.label" default="Inhalt" /></td>
                             
-                            <td valign="top" class="value"><g:link controller="trainingszeit" action="show" id="${trainingstagInstance?.trainingszeit?.id}">${trainingstagInstance?.trainingszeit?.encodeAsHTML()}</g:link></td>
+                            <td valign="top" class="value">${fieldValue(bean: infoBoxInstance, field: "inhalt")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="infoBox.position.label" default="Position" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: infoBoxInstance, field: "position")}</td>
                             
                         </tr>
                     
@@ -55,7 +55,7 @@
             </div>
             <div class="buttons">
                 <g:form>
-                    <g:hiddenField name="id" value="${trainingstagInstance?.id}" />
+                    <g:hiddenField name="id" value="${infoBoxInstance?.id}" />
                     <span class="button"><g:actionSubmit class="edit" action="edit" value="${message(code: 'default.button.edit.label', default: 'Edit')}" /></span>
                     <span class="button"><g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" /></span>
                 </g:form>

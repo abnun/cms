@@ -242,7 +242,7 @@ class SpielplanController {
 				return false
 			}
 		}
-		redirect(uri: "/")
+		redirect(controller: 'abteilung', action: 'edit', id: params.abteilung.id, params: ['spielplan.inhalt': params.inhalt])
 		return false
 	}
 }

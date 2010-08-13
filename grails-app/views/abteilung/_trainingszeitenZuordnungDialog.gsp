@@ -63,7 +63,7 @@
 						<option>im Heuchelbergstadion</option>
 						<option>im SVL-Sportheim</option>
 						<option>im SVS-Sportheim</option>
-						<option>am SVS-Sportplatz</option>
+						<option>im Leintalstadion</option>
 						<option>in der Tennisanlage</option>
 						<option>am Trim-Dich-Pfad</option>
 						<option>an der Reitanlage</option>

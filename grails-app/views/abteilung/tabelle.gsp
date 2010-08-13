@@ -72,7 +72,7 @@
 		<td width="130"><!-- InstanceBeginEditable name="info" -->
 		<g:include controller="abteilung" action="abteilungsLeiter" id="${abteilungInstance.id}"/>
 
-		<g:include controller="abteilung" action="trainingszeiten" id="${abteilungInstance.id}"/>
+		%{--<g:include controller="abteilung" action="trainingszeiten" id="${abteilungInstance.id}"/>--}%
 			<p>&nbsp;</p>
 			<!-- InstanceEndEditable --></td>
 	</tr>

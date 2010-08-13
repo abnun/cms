@@ -1,10 +1,10 @@
 
-<%@ page import="de.webmpuls.cms.section.Trainingstag" %>
+<%@ page import="de.webmpuls.cms.section.InfoBox" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="sv_leingarten" />
-        <g:set var="entityName" value="${message(code: 'trainingstag.label', default: 'Trainingstag')}" />
+        <g:set var="entityName" value="${message(code: 'infoBox.label', default: 'InfoBox')}" />
         %{--<title><g:message code="default.edit.label" args="[entityName]" /></title>--}%
     </head>
     <body>
@@ -18,42 +18,42 @@
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
-            <g:hasErrors bean="${trainingstagInstance}">
+            <g:hasErrors bean="${infoBoxInstance}">
             <div class="errors">
-                <g:renderErrors bean="${trainingstagInstance}" as="list" />
+                <g:renderErrors bean="${infoBoxInstance}" as="list" />
             </div>
             </g:hasErrors>
             <g:form method="post" >
-                <g:hiddenField name="id" value="${trainingstagInstance?.id}" />
-                <g:hiddenField name="version" value="${trainingstagInstance?.version}" />
+                <g:hiddenField name="id" value="${infoBoxInstance?.id}" />
+                <g:hiddenField name="version" value="${infoBoxInstance?.version}" />
                 <div class="dialog">
                     <table>
                         <tbody>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="tag"><g:message code="trainingstag.tag.label" default="Tag" /></label>
+                                  <label for="ueberschrift"><g:message code="infoBox.ueberschrift.label" default="Ueberschrift" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: trainingstagInstance, field: 'tag', 'errors')}">
-                                    <g:select name="tag" from="${de.webmpuls.cms.section.Tag?.values()}" value="${trainingstagInstance?.tag}"  />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                  <label for="uhrzeiten"><g:message code="trainingstag.uhrzeiten.label" default="Uhrzeiten" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: trainingstagInstance, field: 'uhrzeiten', 'errors')}">
-                                    <g:textField name="uhrzeiten" value="${trainingstagInstance?.uhrzeiten}" />
+                                <td valign="top" class="value ${hasErrors(bean: infoBoxInstance, field: 'ueberschrift', 'errors')}">
+                                    <g:textField name="ueberschrift" value="${infoBoxInstance?.ueberschrift}" />
                                 </td>
                             </tr>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="trainingszeit"><g:message code="trainingstag.trainingszeit.label" default="Trainingszeit" /></label>
+                                  <label for="inhalt"><g:message code="infoBox.inhalt.label" default="Inhalt" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: trainingstagInstance, field: 'trainingszeit', 'errors')}">
-                                    <g:select name="trainingszeit.id" from="${de.webmpuls.cms.section.Trainingszeit.list()}" optionKey="id" value="${trainingstagInstance?.trainingszeit?.id}"  />
+                                <td valign="top" class="value ${hasErrors(bean: infoBoxInstance, field: 'inhalt', 'errors')}">
+                                    <g:textField name="inhalt" value="${infoBoxInstance?.inhalt}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="position"><g:message code="infoBox.position.label" default="Position" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: infoBoxInstance, field: 'position', 'errors')}">
+                                    <g:textField name="position" value="${fieldValue(bean: infoBoxInstance, field: 'position')}" />
                                 </td>
                             </tr>
                         

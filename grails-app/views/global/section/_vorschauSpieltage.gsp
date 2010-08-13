@@ -7,7 +7,7 @@
 		<g:if test="${i > 0}">
 			<br/>
 		</g:if>
-		<b><g:formatDate date="${vorschau.spieldatum}" format="dd.MM.yyyy"/></b>: ${vorschau.heimmannschaft} - ${vorschau.gastmannschaft}
+		<b><g:formatDate date="${vorschau.spieldatum}" format="dd.MM.yyyy"/></b>:&nbsp;${vorschau.heimmannschaft}&nbsp;-&nbsp;${vorschau.gastmannschaft}&nbsp;&gt;&nbsp;${vorschau?.anstoss}
 	</g:each>
 </g:if>
 <g:else>

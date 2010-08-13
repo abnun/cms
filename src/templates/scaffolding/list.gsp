@@ -51,7 +51,21 @@
                         <%          } else { %>
                             <td>\${fieldValue(bean: ${propertyName}, field: "${p.name}")}</td>
                         <%  }   }   } %>
-							<td><g:link action="edit" id="\${${propertyName}.id}"><g:message code="${domainClass.propertyName}.edit" default="Bearbeiten" /></g:link></td>
+							<td>
+								<g:link action="edit" id="\${${propertyName}.id}"><g:message code="${domainClass.propertyName}.edit" default="Bearbeiten" /></g:link>
+								&nbsp;|&nbsp;
+								<g:link action="delete" id="\${${propertyName}.id}"><g:message code="${domainClass.propertyName}.delete" default="Löschen" /></g:link>
+								<jq:jquery>
+										\$("#del_\${fieldValue(bean: ${propertyName}, field: "id")}").click(function () {
+											if(confirm("><g:message code="default.button.delete.confirm.message" default="Are you sure?" />'))
+											{
+												document.forms.DeleteForm_\${fieldValue(bean: ${propertyName}, field: "id")}.submit();
+											}
+										});
+								</jq:jquery>
+								<a href="javascript: void(0);" id="del_\${fieldValue(bean: ${propertyName}, field: 'id')}"><g:message code="${domainClass.propertyName}.delete" default="Löschen" /></a>
+								<g:form name="DeleteForm_\${fieldValue(bean: ${propertyName}, field: 'id')}" method="post" url="\${createLink(action: 'delete', id: fieldValue(bean: ${propertyName}, field: 'id'))}"></g:form>
+						</td>
                         </tr>
                     </g:each>
                     </tbody>

@@ -17,7 +17,7 @@
 	<jq:jquery>
 
 		$('#sp_dialog').dialog( {
-								title: 'Spielplan-Dialog',
+								title: 'Spielplan',
 								bgiframe: true,
 								autoOpen: ${spielplanInhalt ? 'true' : 'false'},
 								closeOnEscape: true,
@@ -46,7 +46,7 @@
 				});
 
 		$('#tz_dialog').dialog( {
-								title: 'Trainingszeiten-Dialog',
+								title: 'Trainingszeiten',
 								bgiframe: true,
 								autoOpen: false,
 								closeOnEscape: true,
@@ -77,9 +77,45 @@
 						}
 				});
 
+				$('#ib_dialog').dialog( {
+								title: 'Sonstiges',
+								bgiframe: true,
+								autoOpen: false,
+								closeOnEscape: true,
+								modal: true,
+								resizable: false,
+								hide: 'explode',
+								width: 760,
+								buttons: {
+									"erstellen": function() {
+										var iValue = $("textarea[name='infoBox_inhalt']").val();
+										var ueValue = $("input[name='infoBox_ueberschrift']").val();
+										var pValue = $("input[name='infoBox_position']").val();
+
+										if(iValue != "" && ueValue != "" && pValue != "")
+										{
+											$("#InfoBoxZuordnungForm").submit();
+										}
+										else
+										{
+											$("#ib_dialog_error").slideDown("slow");
+										}
+
+							},
+							"abbrechen": function() {
+								$(this).dialog('close');
+							}
+						}
+				});
+
 		if(${spielplanInhalt ? 'true' : 'false'})
 		{
 			$("#sp_dialog_error2").slideDown("slow");
+		}
+
+		if(${infoBoxInhalt ? 'true' : 'false'})
+		{
+			$("#ib_dialog_error").slideDown("slow");
 		}
 	</jq:jquery>
 
@@ -87,11 +123,15 @@
 
 	<g:render template="/global/javascript/buttonJS" model="[dialogLinkId: 'tz_dialog_link', dialogId: 'tz_dialog']" />
 
+	<g:render template="/global/javascript/buttonJS" model="[dialogLinkId: 'ib_dialog_link', dialogId: 'ib_dialog']" />
+
 	<g:render template="/global/css/buttonCSS" model="[dialogLinkId: 'sp_dialog_link']" />
 
 	<g:render template="/global/css/buttonCSS" model="[dialogLinkId: 'tz_dialog_link']" />
 
 	<g:render template="/global/css/buttonCSS" model="[dialogLinkId: 'b_dialog_link']" />
+
+	<g:render template="/global/css/buttonCSS" model="[dialogLinkId: 'ib_dialog_link']" />
 
 	<style type="text/css">
 	.ui-autocomplete {
@@ -213,6 +253,7 @@
 		%{--<g:include controller="abteilung" action="abteilungsLeiter" id="${abteilungInstance.id}"/>--}%
 
 		<g:include controller="abteilung" action="trainingszeiten" id="${abteilungInstance.id}"/>
+		<g:include controller="abteilung" action="infoBox" id="${abteilungInstance.id}"/>
 			<p style="clear:both;">&nbsp;</p>
 
 			<shiro:hasRole name="${ShiroRole.BENUTZER}">
@@ -221,8 +262,13 @@
 			<br/>
 			<a href="javascript: void(0);" id="tz_dialog_link" class="ui-state-default ui-corner-all" style="border: 1px solid #AED0EA; color: #2779AA; font-weight:bold; background: url('${resource(dir: 'css/jquery/themes/cupertino/images', file: 'ui-bg_glass_80_d7ebf9_1x400.png')}') repeat-x scroll 50% 50% #D7EBF9;">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Trainingszeiten&nbsp;hinzufügen</a>
 
+			<br/>
+			<br/>
+			<a href="javascript: void(0);" id="ib_dialog_link" class="ui-state-default ui-corner-all" style="border: 1px solid #AED0EA; color: #2779AA; font-weight:bold; background: url('${resource(dir: 'css/jquery/themes/cupertino/images', file: 'ui-bg_glass_80_d7ebf9_1x400.png')}') repeat-x scroll 50% 50% #D7EBF9;">%{--<span class="ui-icon ui-icon-newwin"></span>--}%Sonstiges&nbsp;hinzufügen</a>
+
 			<g:render template="/abteilung/spielplanZuordnungDialog" model="[abteilungInstance: abteilungInstance, spielplanInhalt: spielplanInhalt]" />
 			<g:render template="/abteilung/trainingszeitenZuordnungDialog" model="[abteilungInstance: abteilungInstance]" />
+			<g:render template="/abteilung/infoBoxZuordnungDialog" model="[abteilungInstance: abteilungInstance, infoBoxInhalt: infoBoxInhalt]" />
 			</shiro:hasRole>
 			<!-- InstanceEndEditable --></td>
 	</tr>

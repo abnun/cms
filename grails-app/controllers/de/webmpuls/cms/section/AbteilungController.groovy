@@ -113,8 +113,9 @@ class AbteilungController {
 			}
 
 			String spielplanInhalt = params['spielplan.inhalt']
+			String infoBoxInhalt = params['infoBox.inhalt']
 
-            return [abteilungInstance: abteilungInstance, fBuilder: fBuilder.toString(), pBuilder: pBuilder.toString(), spielplanInhalt: spielplanInhalt]
+            return [abteilungInstance: abteilungInstance, fBuilder: fBuilder.toString(), pBuilder: pBuilder.toString(), spielplanInhalt: spielplanInhalt, infoBoxInhalt: infoBoxInhalt]
         }
     }
 
@@ -349,6 +350,7 @@ class AbteilungController {
 
 						if (!abteilung.hasErrors() && abteilung.save(flush: true))
 						{
+							tmpSpielplan.delete()
 							flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilung.id])}"
 							redirect(action: "edit", id: abteilung.id)
 						}
@@ -517,12 +519,31 @@ class AbteilungController {
 
 		if (!abteilungInstance)
 		{
-			flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), params.id])}"
+			flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), params.id ?: params.code])}"
 			redirect(uri: "/")
 		}
 		else
 		{
 			return [abteilungInstance: abteilungInstance, trainingszeiten: abteilungInstance.trainingszeiten.sort{ Trainingszeit a, Trainingszeit b -> a.bezeichnung <=> b.bezeichnung }]
+		}
+	}
+
+	def infoBox =
+	{
+		def abteilungInstance = Abteilung.get(params.id)
+		if (!abteilungInstance)
+		{
+			abteilungInstance = Abteilung.findByCode(params.code)
+		}
+
+		if (!abteilungInstance)
+		{
+			flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), params.id ?: params.code])}"
+			redirect(uri: "/")
+		}
+		else
+		{
+			return [abteilungInstance: abteilungInstance, infoBoxen: abteilungInstance.infoBoxen.sort{ InfoBox a, InfoBox b -> a.position <=> b.position }]
 		}
 	}
 

@@ -5,7 +5,7 @@ import de.webmpuls.cms.people.Funktion
 
 class Abteilung
 {
-	static hasMany = [mitarbeiterfunktionen: Funktion, unterabteilungen: Abteilung, personen: Person, trainingszeiten: Trainingszeit, berichte: Bericht, spielplaene: Spielplan]
+	static hasMany = [mitarbeiterfunktionen: Funktion, unterabteilungen: Abteilung, personen: Person, trainingszeiten: Trainingszeit, berichte: Bericht, spielplaene: Spielplan, infoBoxen: InfoBox]
 
 	String name
 	String anzeigeName
