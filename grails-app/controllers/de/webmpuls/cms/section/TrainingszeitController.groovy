@@ -145,6 +145,7 @@ class TrainingszeitController {
 								}*/
 
 								trainingszeit.addToTrainingstage(trainingstag)
+								trainingstag.trainingszeit = trainingszeit
 								if(trainingszeit.save())
 								{
 									abteilung.addToTrainingszeiten(trainingszeit)
@@ -198,7 +199,7 @@ class TrainingszeitController {
 				e.printStackTrace()
 
 				flash.error = "${message(code: 'default.save.not.possible', args: [message(code: 'abteilung.label', default: 'Abteilung')])}"
-				redirect(controller: 'abteilung', action: 'edit', id: abteilung.id)
+				redirect(controller: 'abteilung', action: 'edit', id: abteilungId)
 				return false
 			}
 		}
