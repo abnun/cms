@@ -127,39 +127,30 @@ class TrainingszeitController {
 							trainingstag = new Trainingstag(tag: tag, uhrzeiten: uhrzeiten, ort: ort)
 						}
 
-						if(trainingstag.save())
+						Trainingszeit trainingszeit = Trainingszeit.findByBezeichnung(bezeichnung)
+
+						if(!trainingszeit)
 						{
-							Trainingszeit trainingszeit = Trainingszeit.findByBezeichnung(bezeichnung)
+							trainingszeit = new Trainingszeit(bezeichnung: bezeichnung)
+						}
 
-							if(!trainingszeit)
+						if(trainingszeit)
+						{
+
+							/*(ort)
 							{
-								trainingszeit = new Trainingszeit(bezeichnung: bezeichnung)
-							}
-	
-							if(trainingszeit)
+								trainingszeit.ort = ort
+							}*/
+
+							trainingszeit.addToTrainingstage(trainingstag)
+							trainingstag.trainingszeit = trainingszeit
+							if(trainingszeit.save())
 							{
-
-								/*(ort)
-								{
-									trainingszeit.ort = ort
-								}*/
-
-								trainingszeit.addToTrainingstage(trainingstag)
-								trainingstag.trainingszeit = trainingszeit
-								if(trainingszeit.save())
-								{
-									abteilung.addToTrainingszeiten(trainingszeit)
-									abteilung.save()
-									flash.message = "${message(code: 'default.created.message', args: [message(code: 'trainingszeit.label', default: 'Trainingszeit'), trainingszeit.bezeichnung])}"
-									redirect(controller: 'abteilung', action: 'edit', id: abteilung.id)
-									return false
-								}
-								else
-								{
-									flash.error = "${message(code: 'default.save.not.possible', args: [message(code: 'abteilung.label', default: 'Abteilung')])}"
-									redirect(controller: 'abteilung', action: 'list')
-									return false
-								}
+								abteilung.addToTrainingszeiten(trainingszeit)
+								abteilung.save()
+								flash.message = "${message(code: 'default.created.message', args: [message(code: 'trainingszeit.label', default: 'Trainingszeit'), trainingszeit.bezeichnung])}"
+								redirect(controller: 'abteilung', action: 'edit', id: abteilung.id)
+								return false
 							}
 							else
 							{
@@ -170,19 +161,19 @@ class TrainingszeitController {
 						}
 						else
 						{
-							trainingstag.errors.allErrors.each
-							{
-								println it
-							}
-
-							flash.error = "${message(code: 'default.save.not.possible', args: [message(code: 'trainingstag.label', default: 'Trainingstag')])}"
+							flash.error = "${message(code: 'default.save.not.possible', args: [message(code: 'abteilung.label', default: 'Abteilung')])}"
 							redirect(controller: 'abteilung', action: 'list')
 							return false
 						}
 					}
 					else
 					{
-						flash.error = "${message(code: 'default.not.found.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilungId])}"
+						trainingstag.errors.allErrors.each
+						{
+							println it
+						}
+
+						flash.error = "${message(code: 'default.save.not.possible', args: [message(code: 'trainingstag.label', default: 'Trainingstag')])}"
 						redirect(controller: 'abteilung', action: 'list')
 						return false
 					}
