@@ -6,16 +6,13 @@ class Trainingszeit
 
 	String bezeichnung
 
-	String ort
-
     static constraints =
 	{
 		bezeichnung(nullable: true, blank: true)
-		ort(nullable: true, blank: true)
     }
 
 	def String toString()
 	{
-		return "${bezeichnung} | ${trainingstage?.iterator()?.next()?.tag ?: ''} | ${trainingstage?.iterator()?.next()?.uhrzeiten ?: ''} | ${ort ?: ''}"
+		return "${bezeichnung} | ${trainingstage?.iterator()?.next()?.tag ?: ''} | ${trainingstage?.iterator()?.next()?.uhrzeiten ?: ''} | ${trainingstage?.iterator()?.next()?.ort ?: ''}"
 	}
 }

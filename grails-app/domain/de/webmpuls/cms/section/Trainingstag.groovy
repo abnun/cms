@@ -7,10 +7,13 @@ class Trainingstag
 	Tag tag
 	String uhrzeiten
 
+	String ort
+
 	static constraints =
 	{
 		tag()
 		uhrzeiten()
+		ort(nullable: true, blank: true)
     }
 
 	static mapping =
@@ -21,6 +24,6 @@ class Trainingstag
 
 	def String toString()
 	{
-		return "$tag | $uhrzeiten"
+		return "$tag | $uhrzeiten | $ort"
 	}
 }

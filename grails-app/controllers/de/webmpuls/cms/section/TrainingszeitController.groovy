@@ -124,7 +124,7 @@ class TrainingszeitController {
 
 						if(!trainingstag)
 						{
-							trainingstag = new Trainingstag(tag: tag, uhrzeiten: uhrzeiten)
+							trainingstag = new Trainingstag(tag: tag, uhrzeiten: uhrzeiten, ort: ort)
 						}
 
 						if(trainingstag.save())
@@ -139,10 +139,10 @@ class TrainingszeitController {
 							if(trainingszeit)
 							{
 
-								if(ort)
+								/*(ort)
 								{
 									trainingszeit.ort = ort
-								}
+								}*/
 
 								trainingszeit.addToTrainingstage(trainingstag)
 								if(trainingszeit.save())

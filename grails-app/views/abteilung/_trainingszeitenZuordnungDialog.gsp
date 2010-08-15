@@ -4,7 +4,7 @@
 		<table style="width: 750px">
 			<tr>
 				<td valign="middle" align="left">
-					<label for="bezeichnung">Bezeichnung:</label>
+					<label for="bezeichnung"><g:message code="trainingszeit.bezeichnung.label" default="Bezeichnung" />:</label>
 				</td>
 				<td valign="middle" align="left">
 					<g:textField name="bezeichnung" id="bezeichnung"/>
