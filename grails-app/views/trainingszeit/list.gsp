@@ -26,7 +26,7 @@
                         
                             <g:sortableColumn property="bezeichnung" title="${message(code: 'trainingszeit.bezeichnung.label', default: 'Bezeichnung')}" />
                         
-                            <g:sortableColumn property="ort" title="${message(code: 'trainingszeit.ort.label', default: 'Ort')}" />
+                            %{--<g:sortableColumn property="ort" title="${message(code: 'trainingszeit.ort.label', default: 'Ort')}" />--}%
                         
 							<th>&nbsp;</th>
                         </tr>
@@ -39,7 +39,7 @@
                         
                             <td>${fieldValue(bean: trainingszeitInstance, field: "bezeichnung")}</td>
                         
-                            <td>${fieldValue(bean: trainingszeitInstance, field: "ort")}</td>
+                            %{--<td>${fieldValue(bean: trainingszeitInstance, field: "ort")}</td>--}%
                         
 							<td><g:link action="edit" id="${trainingszeitInstance.id}"><g:message code="trainingszeit.edit" default="Bearbeiten" /></g:link></td>
                         </tr>

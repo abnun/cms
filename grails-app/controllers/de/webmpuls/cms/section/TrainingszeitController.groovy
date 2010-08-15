@@ -257,7 +257,7 @@ class TrainingszeitController {
 
 					if (!trainingstag)
 					{
-						trainingstag = new Trainingstag(tag: tag, uhrzeiten: uhrzeiten)
+						trainingstag = new Trainingstag(tag: tag, uhrzeiten: uhrzeiten, trainingszeit: trainingszeit)
 					}
 
 					if (trainingstag.save())

@@ -79,14 +79,14 @@
                                 </td>
                             </tr>
                         
-                            <tr class="prop">
+                            %{--<tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="ort"><g:message code="trainingszeit.ort.label" default="Ort" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: trainingszeitInstance, field: 'ort', 'errors')}">
                                     <g:textField name="ort" value="${trainingszeitInstance?.ort}" />
                                 </td>
-                            </tr>
+                            </tr>--}%
 
 
 
@@ -176,6 +176,30 @@
 				<td>
 					(z.B. 13.30 bis 15.00)
 				</td>
+			</tr>
+			<tr>
+				<td valign="middle" align="left">
+					<label for="ort">Ort:</label>
+				</td>
+				<td valign="middle" align="left">
+					<select name="ort" size="1">
+						<option value="">Auswählen</option>
+						<option>am Beachfeld</option>
+						<option>in der Eichbotthalle</option>
+						<option>in der Festhalle</option>
+						<option>im Freibad</option>
+						<option>im Gymnastikraum</option>
+						<option>im Hallenbad</option>
+						<option>im Heuchelbergstadion</option>
+						<option>im SVL-Sportheim</option>
+						<option>im SVS-Sportheim</option>
+						<option>im Leintalstadion</option>
+						<option>in der Tennisanlage</option>
+						<option>am Trim-Dich-Pfad</option>
+						<option>an der Reitanlage</option>
+					</select>
+				</td>
+				<td></td>
 			</tr>
 		</table>
 			<g:hiddenField name="trainingszeit.id" value="${trainingszeitInstance.id}"/>
