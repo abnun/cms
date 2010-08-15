@@ -249,6 +249,7 @@ class TrainingszeitController {
 			if (trainingszeit)
 			{
 				def tag = params.tag
+				def ort = params.ort
 				String uhrzeiten = params.von?.trim() + " - " + params.bis?.trim()
 
 				if (tag && uhrzeiten)
@@ -257,7 +258,7 @@ class TrainingszeitController {
 
 					if (!trainingstag)
 					{
-						trainingstag = new Trainingstag(tag: tag, uhrzeiten: uhrzeiten, trainingszeit: trainingszeit)
+						trainingstag = new Trainingstag(tag: tag, uhrzeiten: uhrzeiten, ort: ort, trainingszeit: trainingszeit)
 					}
 
 					if (trainingstag.save())
