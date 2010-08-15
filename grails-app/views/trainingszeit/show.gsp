@@ -36,12 +36,12 @@
                             
                         </tr>
                     
-                        <tr class="prop">
+                        %{--<tr class="prop">
                             <td valign="top" class="name"><g:message code="trainingszeit.ort.label" default="Ort" /></td>
                             
                             <td valign="top" class="value">${fieldValue(bean: trainingszeitInstance, field: "ort")}</td>
                             
-                        </tr>
+                        </tr>--}%
                     
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="trainingszeit.trainingstage.label" default="Trainingstage" /></td>
