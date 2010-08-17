@@ -2,10 +2,6 @@ package de.webmpuls.cms.section
 
 import de.webmpuls.cms.people.Funktion
 import de.webmpuls.cms.people.Person
-import de.webmpuls.cms.result.Tabelle
-import de.webmpuls.cms.result.TabelleHelper
-import de.webmpuls.cms.media.MediaHelper
-import de.webmpuls.photo_album.Album
 
 class AbteilungController {
 
@@ -351,6 +347,41 @@ class AbteilungController {
 						if (!abteilung.hasErrors() && abteilung.save(flush: true))
 						{
 							tmpSpielplan.delete()
+							flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilung.id])}"
+							redirect(action: "edit", id: abteilung.id)
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	def removeTrainingszeit =
+	{
+		println("params -> $params")
+
+		String id = params.id
+
+		if(id)
+		{
+			Abteilung abteilung = Abteilung.get(id)
+
+			if(abteilung)
+			{
+				String trainingszeitId = params['spielplan.id']
+
+				if(trainingszeitId)
+				{
+					Trainingszeit tmpTrainingszeit = Trainingszeit.get(trainingszeitId)
+
+					if(tmpTrainingszeit)
+					{
+						abteilung.removeFromTrainingszeiten(tmpTrainingszeit)
+
+						if (!abteilung.hasErrors() && abteilung.save(flush: true))
+						{
+							tmpTrainingszeit.delete()
 							flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilung.id])}"
 							redirect(action: "edit", id: abteilung.id)
 						}

@@ -424,7 +424,7 @@
 																<table>
 																	<tr>
 																		<td valign="top" align="left" width="300">
-																			<g:link controller="trainingszeit" action="edit" id="${tz.id}">${tz?.encodeAsHTML()}</g:link>
+																			<g:link controller="trainingszeit" action="edit" id="${tz.id}">${tz?.bezeichnung?.encodeAsHTML()}</g:link>
 																		</td>
 																		<td valign="top" align="left">
 																			<g:link controller="trainingszeit" action="removeTrainingszeit" params="['trainingszeit.id': tz.id, 'id': abteilungInstance.id]" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');"><span class="ui-icon ui-icon-circle-minus" title="${tz?.encodeAsHTML()} löschen"></span></g:link>

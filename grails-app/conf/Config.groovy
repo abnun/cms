@@ -42,6 +42,9 @@ grails.logging.jul.usebridge = true
 // packages to include in Spring bean scanning
 grails.spring.bean.packages = []
 
+// Mit der nachfolgenden Anweisung werden GSP auch im Produktiv-Modus bei Aenderung nachgeladen
+grails.gsp.enable.reload=true
+
 // set per-environment serverURL stem for creating absolute links
 environments {
     production {
