@@ -77,7 +77,7 @@
 	<div id="tz_dialog_error" class="ui-widget" style="display: none;">
 		<div style="padding: 0pt 0.7em;" class="ui-state-error ui-corner-all">
 			<p><span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
-				<strong>Fehler:</strong> Es muss mindestens ein vollständiger Trainingszeiten-Eintrag (Bezeichnung, Tag und Uhrzeiten) eingegeben werden!</p>
+				<strong>Fehler:</strong> Es muss mindestens ein vollständiger Trainingszeiten-Eintrag (Tag und Uhrzeiten) eingegeben werden!</p>
 		</div>
 	</div>
 </div>

@@ -52,7 +52,7 @@
 							}
 						}
 				});
-
+				
 		$('#sp_dialog').dialog( {
 								title: 'Spielplan',
 								bgiframe: true,
@@ -64,7 +64,7 @@
 								width: 760,
 								buttons: {
 									"Spielplan erstellen": function() {
-										var iValue = $("textarea[name='inhalt']").val();
+										var iValue = $("textarea[id='inhalt']").val();
 
 										if(iValue != "")
 										{
@@ -98,7 +98,7 @@
 										var uvValue = $("input[name='von']").val();
 										var ubValue = $("input[name='bis']").val();
 
-										if(nValue != "" && tValue != "" && uvValue != "" && ubValue != "")
+										if(tValue != "" && uvValue != "" && ubValue != "")
 										{
 											$("#TrainingszeitForm").submit();
 										}
@@ -114,7 +114,7 @@
 						}
 				});
 
-		$('#ib_dialog').dialog( {
+				$('#ib_dialog').dialog( {
 								title: 'Sonstiges',
 								bgiframe: true,
 								autoOpen: false,
@@ -125,9 +125,9 @@
 								width: 760,
 								buttons: {
 									"erstellen": function() {
-										var iValue = $("textarea[name='infoBox_inhalt']").val();
-										var ueValue = $("input[name='infoBox_ueberschrift']").val();
-										var pValue = $("input[name='infoBox_position']").val();
+										var iValue = $("textarea[id='infoBox_inhalt']").val();
+										var ueValue = $("input[id='infoBox_ueberschrift']").val();
+										var pValue = $("input[id='infoBox_position']").val();
 
 										if(iValue != "" && ueValue != "" && pValue != "")
 										{

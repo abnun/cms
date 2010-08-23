@@ -1,4 +1,4 @@
-<%@ page import="de.webmpuls.cms.people.ShiroRole" contentType="text/html;charset=UTF-8" %>
+<%@ page import="de.webmpuls.cms.section.AbteilungHelper; de.webmpuls.cms.people.ShiroRole" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -75,6 +75,11 @@
 					<li>
 						<a href="${createLink(controller: 'tabelle')}">
 							Fussballergebnis-Tabellen verwalten
+						</a>
+					</li>
+					<li>
+						<a href="${createLink(controller: 'spielplan', action: 'custom_list', params: [code: AbteilungHelper.CODE_FUSSBALL_JUGEND])}">
+							Jufu-Spieltage
 						</a>
 					</li>
 				</ul>

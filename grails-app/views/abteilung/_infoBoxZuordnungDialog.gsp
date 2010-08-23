@@ -30,7 +30,10 @@
 		<tr>
 			<td colspan="2">
 				<br />
-				TODO: Beispiel
+				Die Position muss eingegeben werden, damit bei mehreren Boxen die Reihenfolge bestimmt werden kann.
+				<br />
+				<br />
+				Bsp.: Trainer/Betreuer
 			</td>
 		</tr>
 	</table>
@@ -40,7 +43,7 @@
 	<div id="ib_dialog_error" class="ui-widget" style="display: none;">
 		<div style="padding: 0pt 0.7em;" class="ui-state-error ui-corner-all">
 			<p><span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
-				<strong>Fehler:</strong> Es muss sowohl eine Überschrift als auch ein Inhalt eingegeben werden!</p>
+				<strong>Fehler:</strong> Es müssen alle Felder (Überschrfit, Inhalt, Position) eingegeben werden!</p>
 		</div>
 	</div>
 </div>

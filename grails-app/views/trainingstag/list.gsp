@@ -28,6 +28,8 @@
                         
                             <g:sortableColumn property="uhrzeiten" title="${message(code: 'trainingstag.uhrzeiten.label', default: 'Uhrzeiten')}" />
                         
+                            <g:sortableColumn property="ort" title="${message(code: 'trainingstag.ort.label', default: 'Ort')}" />
+                        
                             <th><g:message code="trainingstag.trainingszeit.label" default="Trainingszeit" /></th>
                    	    
 							<th>&nbsp;</th>
@@ -43,9 +45,25 @@
                         
                             <td>${fieldValue(bean: trainingstagInstance, field: "uhrzeiten")}</td>
                         
+                            <td>${fieldValue(bean: trainingstagInstance, field: "ort")}</td>
+                        
                             <td>${fieldValue(bean: trainingstagInstance, field: "trainingszeit")}</td>
                         
-							<td><g:link action="edit" id="${trainingstagInstance.id}"><g:message code="trainingstag.edit" default="Bearbeiten" /></g:link></td>
+							<td>
+								<g:link action="edit" id="${trainingstagInstance.id}"><g:message code="trainingstag.edit" default="Bearbeiten" /></g:link>
+								&nbsp;|&nbsp;
+								<g:link action="delete" id="${trainingstagInstance.id}"><g:message code="trainingstag.delete" default="Löschen" /></g:link>
+								<jq:jquery>
+										$("#del_${fieldValue(bean: trainingstagInstance, field: "id")}").click(function () {
+											if(confirm("><g:message code="default.button.delete.confirm.message" default="Are you sure?" />'))
+											{
+												document.forms.DeleteForm_${fieldValue(bean: trainingstagInstance, field: "id")}.submit();
+											}
+										});
+								</jq:jquery>
+								<a href="javascript: void(0);" id="del_${fieldValue(bean: trainingstagInstance, field: 'id')}"><g:message code="trainingstag.delete" default="Löschen" /></a>
+								<g:form name="DeleteForm_${fieldValue(bean: trainingstagInstance, field: 'id')}" method="post" url="${createLink(action: 'delete', id: fieldValue(bean: trainingstagInstance, field: 'id'))}"></g:form>
+						</td>
                         </tr>
                     </g:each>
                     </tbody>

@@ -101,6 +101,52 @@ class SpielplanController {
         }
     }
 
+	def custom_list =
+	{
+		log.debug("params -> $params")
+
+		Abteilung abteilung = Abteilung.findByCode(params.code)
+
+		if(abteilung)
+		{
+			def spielplanList = [] as HashSet
+			if(abteilung.hasUnterAbteilungen())
+			{
+				for(Abteilung tmpAbteilung in abteilung.unterabteilungen)
+				{
+					if(!spielplanList.contains(tmpAbteilung))
+					{
+						log.debug("Spieltage fuer Abteilung ${tmpAbteilung} hinzufuegen ... ")
+						spielplanList.addAll(tmpAbteilung.spielplaene)
+					}
+
+					for (Abteilung tmpAbteilung0 in tmpAbteilung.unterabteilungen)
+					{
+						if (!spielplanList.contains(tmpAbteilung0))
+						{
+							log.debug("Spieltage fuer Abteilung ${tmpAbteilung0} hinzufuegen ... ")
+							spielplanList.addAll(tmpAbteilung0.spielplaene)
+						}
+
+						for (Abteilung tmpAbteilung1 in tmpAbteilung0.unterabteilungen)
+						{
+							if (!spielplanList.contains(tmpAbteilung1))
+							{
+								log.debug("Spieltage fuer Abteilung ${tmpAbteilung1} hinzufuegen ... ")
+								spielplanList.addAll(tmpAbteilung1.spielplaene)
+							}
+						}
+					}
+				}
+			}
+			else
+			{
+				spielplanList.addAll(abteilung.spielplaene)
+			}
+			render(view: "${params.code}", model: [spielplanInstanceList: spielplanList.sort {Spielplan a, Spielplan b -> a.abteilungKuerzel <=> b.abteilungKuerzel} ])
+		}
+	}
+
 	def createSpielplanFromAbteilung =
 	{
 		println params

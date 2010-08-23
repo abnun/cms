@@ -50,6 +50,15 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="ort"><g:message code="trainingstag.ort.label" default="Ort" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: trainingstagInstance, field: 'ort', 'errors')}">
+                                    <g:textField name="ort" value="${trainingstagInstance?.ort}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="trainingszeit"><g:message code="trainingstag.trainingszeit.label" default="Trainingszeit" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: trainingstagInstance, field: 'trainingszeit', 'errors')}">

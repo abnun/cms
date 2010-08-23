@@ -44,6 +44,13 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="trainingstag.ort.label" default="Ort" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: trainingstagInstance, field: "ort")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="trainingstag.trainingszeit.label" default="Trainingszeit" /></td>
                             
                             <td valign="top" class="value"><g:link controller="trainingszeit" action="show" id="${trainingstagInstance?.trainingszeit?.id}">${trainingstagInstance?.trainingszeit?.encodeAsHTML()}</g:link></td>
