@@ -110,7 +110,7 @@ class BerichtController {
 					tmpAbteilung.save()
 
 					flash.message = "${message(code: 'default.updated.message', args: [message(code: 'bericht.label', default: 'Bericht'), berichtInstance?.ueberschrift ?: berichtInstance?.abteilung?.name])}"
-					redirect(controller: 'abteilung', action: "show", id: tmpAbteilung.id)
+					redirect(controller: 'abteilung', action: "berichte", id: tmpAbteilung.id)
 					return false
 				}
 			}

@@ -83,9 +83,65 @@ class TrainingszeitController {
         def trainingszeitInstance = Trainingszeit.get(params.id)
         if (trainingszeitInstance) {
             try {
+
+				Long abteilungId = params.long('abteilung.id')
+				Abteilung tmpAbteilung = null
+				if(abteilungId)
+				{
+					tmpAbteilung = Abteilung.get(abteilungId)
+
+					if(tmpAbteilung.trainingszeiten*.id.contains(trainingszeitInstance.id))
+					{
+						tmpAbteilung.removeFromTrainingszeiten(trainingszeitInstance)
+						if (flash.message)
+						{
+							flash.message += "<br />Trainingszeiten-Zuordnung '${trainingszeitInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+						}
+						else
+						{
+							flash.message = "Trainingszeiten-Zuordnung '${trainingszeitInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+						}
+					}
+				}
+				else
+				{
+					def abteilungList = Abteilung.list([cache: true])
+					for(Abteilung tmpAbteilung0 in abteilungList)
+					{
+						if(tmpAbteilung.trainingszeiten*.id.contains(trainingszeitInstance.id))
+						{
+							tmpAbteilung.removeFromTrainingszeiten(trainingszeitInstance)
+							if(flash.message)
+							{
+								flash.message += "<br />Trainingszeiten-Zuordnung '${trainingszeitInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+							}
+							else
+							{
+								flash.message = "Trainingszeiten-Zuordnung '${trainingszeitInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+							}
+						}
+					}
+				}
+
                 trainingszeitInstance.delete(flush: true)
-                flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'trainingszeit.label', default: 'Trainingszeit'), params.id])}"
-                redirect(action: "list")
+				if (flash.message)
+				{
+					flash.message += "<br />${message(code: 'default.deleted.message', args: [message(code: 'trainingszeit.label', default: 'Trainingszeit'), params.id])}"
+				}
+				else
+				{
+					flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'trainingszeit.label', default: 'Trainingszeit'), params.id])}"
+				}
+				if(abteilungId)
+				{
+					redirect(controller: 'abteilung', action: "berichte", params: [code: tmpAbteilung.code])
+					return false
+				}
+				else
+				{
+					redirect(action: "list")
+					return false
+				}
             }
             catch (org.springframework.dao.DataIntegrityViolationException e) {
                 flash.message = "${message(code: 'default.not.deleted.message', args: [message(code: 'trainingszeit.label', default: 'Trainingszeit'), params.id])}"
@@ -149,7 +205,7 @@ class TrainingszeitController {
 								abteilung.addToTrainingszeiten(trainingszeit)
 								abteilung.save()
 								flash.message = "${message(code: 'default.created.message', args: [message(code: 'trainingszeit.label', default: 'Trainingszeit'), trainingszeit.bezeichnung])}"
-								redirect(controller: 'abteilung', action: 'edit', id: abteilung.id)
+								redirect(controller: 'abteilung', action: 'berichte', params: [code: abteilung.code])
 								return false
 							}
 							else
@@ -214,15 +270,16 @@ class TrainingszeitController {
 
 			if(trainingszeit)
 			{
-				String trainingszeitId = params['trainingszeit.id']
+				Long trainingstagId = params.long('trainingstag.id')
 
-				if(trainingszeitId)
+				if(trainingstagId)
 				{
-					Trainingstag tmpTrainingstag = Trainingstag.get(trainingszeitId)
+					Trainingstag tmpTrainingstag = Trainingstag.get(trainingstagId)
 
 					if(tmpTrainingstag)
 					{
 						trainingszeit.removeFromTrainingstage(tmpTrainingstag)
+						tmpTrainingstag.delete()
 
 						if (!trainingszeit.hasErrors() && trainingszeit.save(flush: true))
 						{

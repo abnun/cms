@@ -649,14 +649,27 @@
 						</g:if>
 					</td>
 					<td width="140" align="center" valign="middle">
-						<g:if test="${beisitzerPerson}">
+						<g:if test="${beisitzer1Person}">
 							<div align="center">
 								<span class="titel">
 									${beisitzer}
 								</span>
 								<br/>
 								<span class="copy">
-									${beisitzerPerson?.vorname} ${beisitzerPerson?.nachname}
+									${beisitzer1Person?.vorname} ${beisitzer1Person?.nachname}
+								</span>
+							</div>
+						</g:if>
+					</td>
+					<td width="140" align="center" valign="middle">
+						<g:if test="${beisitzer2Person}">
+							<div align="center">
+								<span class="titel">
+									${beisitzer}
+								</span>
+								<br/>
+								<span class="copy">
+									${beisitzer2Person?.vorname} ${beisitzer2Person?.nachname}
 								</span>
 							</div>
 						</g:if>

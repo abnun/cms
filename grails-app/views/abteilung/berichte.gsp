@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>${abteilungInstance.oberAbteilung ? abteilungInstance.oberAbteilung.toString() + ' | ' : ''}${abteilungInstance?.anzeigeName ?: abteilungInstance?.name} | Berichte</title>
 	<meta name="layout" content="sv_leingarten"/>
 	<g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}"/>
 	<g:render template="/global/javascript/accordionJS" model="[accordionID: 'accordion']"/>

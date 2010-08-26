@@ -220,7 +220,6 @@ class BootStrap
 
 			Bericht tmpBericht = new Bericht(ueberschrift: 'Spieltag in Stetten', inhalt: tmpInhalt, abteilung: fussball_damen)
 			//tmpBericht.save()
-			fussball_damen.addToBerichte(tmpBericht)
 
 			String tmpInhalt2 = """Auch dieses Jahr war die Fußballabteilung auf dem Gassenfest vertreten.
 			Bei typischen Gassenfest-Wetter wurden unsere Nerven beim Aufbauen einmal mehr strapaziert,
@@ -228,12 +227,13 @@ class BootStrap
 			uns bei allen Helfern die das Fest wieder zu einem Erfolg gemacht haben."""
 			Bericht tmpBericht2 = new Bericht(ueberschrift: 'Rückblick Gassenfest 2009', inhalt: tmpInhalt2, abteilung: fussball_damen)
 			//tmpBericht2.save()
-			fussball_damen.addToBerichte(tmpBericht2)
 
 			if(Environment.isDevelopmentMode())
 			{
-				fussball_damen.save()
+				fussball_damen.addToBerichte(tmpBericht)
+				fussball_damen.addToBerichte(tmpBericht2)
 			}
+			fussball_damen.save()
 		}
 
 

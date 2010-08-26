@@ -42,11 +42,11 @@ class MenuTagLib
 				}
 				else if(abteilungFile == AbteilungHelper.CODE_FUSSBALL_DAMEN || abteilungFile.contains(AbteilungHelper.CODE_FUSSBALL_DAMEN))
 				{
-					if(abteilungFile != "fussball_-_damen_team.gsp")
+					if(abteilungFile != "fussball_-_frauen_team.gsp")
 					{
 						out << "<td class=\"rubrikactiv\">Aktuelles</td>"
 						out << "<td><img width=\"1\" height=\"20\" src=\"${resource(dir: 'bilder/divers', file: 'trenn.gif')}\"></td>"
-						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_-_damen_team.gsp\">Das Team</a></td>"
+						out << "<td class=\"rubrik\"><a href=\"${contextPath}/sites/abteilungen/fussball_-_frauen_team.gsp\">Das Team</a></td>"
 					}
 					else
 					{

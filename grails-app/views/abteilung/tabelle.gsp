@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>${abteilungInstance.oberAbteilung ? abteilungInstance.oberAbteilung.toString() + ' | ' : ''}${abteilungInstance?.anzeigeName ?: abteilungInstance?.name} | Tabelle</title>
 	<meta name="layout" content="sv_leingarten"/>
 	<g:set var="entityName" value="${message(code: 'abteilung.label', default: 'Abteilung')}"/>
 	<g:render template="/global/javascript/accordionJS" model="[accordionID: 'accordion']"/>
@@ -22,7 +23,14 @@
 						<table border="0" align="left" cellspacing="10">
 							<tr>
 								<td></td>
-								<td><span class="headline_dunkel">Tabelle</span></td>
+								<td>
+									<span class="headline_dunkel">${abteilungInstance?.anzeigeName ?: abteilungInstance?.name}</span>
+									<shiro:hasRole name="${ShiroRole.BENUTZER}">
+										<span>
+											<g:link controller="abteilung" action="edit" id="${abteilungInstance.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Abteilung ändern" title="Abteilung ändern" border="0"/></g:link>
+										</span>
+									</shiro:hasRole>
+								</td>
 								<td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="26"></td>
 								<td class="copy">%{--Landesstaffel 1 Bezirk Nord--}%&nbsp;</td>
 							</tr>

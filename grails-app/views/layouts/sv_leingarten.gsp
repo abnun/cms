@@ -6,7 +6,10 @@
 <html><!-- InstanceBegin template="/Templates/svlmaster.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 	<!-- TemplateBeginEditable name="doctitle" -->
-	<title><g:layoutTitle default="(( (  Sportverein Leingarten  ) ))" /></title>
+	<%
+	    def title = pageProperty(name: 'title')
+	%>
+	<title>${title.size() > 0 ? 'Sportverein Leingarten | ' + title : 'Sportverein Leingarten'}</title>
 	<!-- TemplateEndEditable -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="Cache-control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">

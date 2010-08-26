@@ -100,14 +100,14 @@ class InfoBoxController {
 
 	def createInfoBoxFromAbteilung =
 	{
-		println params
-		String inhalt = params.ueberschrift
-		String ueberschrift = params.inhalt
+		println "params -> $params"
+		String inhalt = params['inhalt']
+		String ueberschrift = params.ueberschrift
 		Integer position = params.int('position')
 
-		if(inhalt && ueberschrift && position)
+		if(inhalt && ueberschrift && position != null)
 		{
-			Abteilung abteilung = Abteilung.get(params.abteilung.id)
+			Abteilung abteilung = Abteilung.get(params['abteilung.id'])
 
 			InfoBox infoBox = new InfoBox(ueberschrift: ueberschrift, inhalt: inhalt.trim(), position: position)
 
@@ -134,7 +134,7 @@ class InfoBoxController {
 								flash.message = "Neue Infobox '$infoBox' gespeichert."
 							}
 
-							redirect(controller: 'abteilung', action: 'edit', id: params.abteilung.id)
+							redirect(controller: 'abteilung', action: 'berichte', id: params['abteilung.id'])
 							return false
 						}
 						else
@@ -165,11 +165,11 @@ class InfoBoxController {
 				{
 					if (flash.message)
 					{
-						flash.message += "<br />Abteilung mit ID '${params.abteilung.id}' konnte nicht gefunden werden."
+						flash.message += "<br />Abteilung mit ID '${params['abteilung.id']}' konnte nicht gefunden werden."
 					}
 					else
 					{
-						flash.message = "Abteilung mit ID '${params.abteilung.id}' konnte nicht gefunden werden."
+						flash.message = "Abteilung mit ID '${params['abteilung.id']}' konnte nicht gefunden werden."
 					}
 				}
 			}
@@ -178,7 +178,7 @@ class InfoBoxController {
 				e.printStackTrace()
 			}
 		}
-		redirect(controller: 'abteilung', action: 'edit', id: params.abteilung.id, params: ['infoBox.inhalt': params.inhalt])
+		redirect(controller: 'abteilung', action: 'berichte', id: params['abteilung.id'], params: ['infoBox.inhalt': params.inhalt])
 		return false
 	}
 }

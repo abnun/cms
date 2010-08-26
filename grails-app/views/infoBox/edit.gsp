@@ -44,7 +44,7 @@
                                   <label for="inhalt"><g:message code="infoBox.inhalt.label" default="Inhalt" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: infoBoxInstance, field: 'inhalt', 'errors')}">
-                                    <g:textField name="inhalt" value="${infoBoxInstance?.inhalt}" />
+                                    <g:textArea name="inhalt" cols="40" rows="5" value="${infoBoxInstance?.inhalt}" />
                                 </td>
                             </tr>
                         

@@ -86,12 +86,66 @@ class SpielplanController {
         def spielplanInstance = Spielplan.get(params.id)
         if (spielplanInstance) {
             try {
-                spielplanInstance.delete(flush: true)
-                flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'spielplan.label', default: 'Spielplan'), params.id])}"
-                redirect(action: "list")
+				Long abteilungId = params.long('abteilung.id')
+				Abteilung tmpAbteilung = null
+				if(abteilungId)
+				{
+					tmpAbteilung = Abteilung.get(abteilungId)
+
+					if(tmpAbteilung.spielplaene*.id.contains(spielplanInstance.id))
+					{
+						tmpAbteilung.removeFromSpielplaene(spielplanInstance)
+						if (flash.message)
+						{
+							flash.message += "<br />Spieltag-Zuordnung '${spielplanInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+						}
+						else
+						{
+							flash.message = "Spieltag-Zuordnung '${spielplanInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+						}
+					}
+				}
+				else
+				{
+					def abteilungList = Abteilung.list([cache: true])
+					for(Abteilung tmpAbteilung0 in abteilungList)
+					{
+						if(tmpAbteilung.spielplaene*.id.contains(spielplanInstance.id))
+						{
+							tmpAbteilung.removeFromSpielplaene(spielplanInstance)
+							if(flash.message)
+							{
+								flash.message += "<br />Spieltag-Zuordnung '${spielplanInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+							}
+							else
+							{
+								flash.message = "Spieltag-Zuordnung '${spielplanInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+							}
+						}
+					}
+				}
+				spielplanInstance.delete(flush: true)
+				if (flash.message)
+				{
+					flash.message += "<br />${message(code: 'default.deleted.message', args: [message(code: 'spielplan.label', default: 'Spielplan'), params.id])}"
+				}
+				else
+				{
+					flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'spielplan.label', default: 'Spielplan'), params.id])}"
+				}
+				if(abteilungId)
+				{
+					redirect(controller: 'abteilung', action: "berichte", params: [code: tmpAbteilung.code])
+					return false
+				}
+				else
+				{
+					redirect(action: "list")
+					return false
+				}
             }
             catch (org.springframework.dao.DataIntegrityViolationException e) {
-                flash.message = "${message(code: 'default.not.deleted.message', args: [message(code: 'spielplan.label', default: 'Spielplan'), params.id])}"
+                flash.message += "${message(code: 'default.not.deleted.message', args: [message(code: 'spielplan.label', default: 'Spielplan'), params.id])}"
                 redirect(action: "show", id: params.id)
             }
         }
@@ -216,7 +270,7 @@ class SpielplanController {
 
 			if(isInvalid)	
 			{
-				redirect(controller: 'abteilung', action: 'edit', id: params.abteilung.id, params: ['spielplan.inhalt': params.inhalt])
+				redirect(controller: 'abteilung', action: 'berichte', id: params.abteilung.id, params: ['spielplan.inhalt': params.inhalt])
 				return false;
 			}
 
@@ -284,11 +338,11 @@ class SpielplanController {
 						}
 					}
 				}
-				redirect(controller: 'abteilung', action: 'edit', id: abteilung.id)
+				redirect(controller: 'abteilung', action: 'berichte', params: [code: abteilung.code])
 				return false
 			}
 		}
-		redirect(controller: 'abteilung', action: 'edit', id: params.abteilung.id, params: ['spielplan.inhalt': params.inhalt])
+		redirect(controller: 'abteilung', action: 'berichte', id: params.abteilung.id, params: ['spielplan.inhalt': params.inhalt])
 		return false
 	}
 }

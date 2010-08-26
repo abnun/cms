@@ -10,7 +10,7 @@ hibernate {
     cache.provider_class='net.sf.ehcache.hibernate.EhCacheProvider'
 }
 // environment specific settings
-environments {
+/*environments {
 	development {
 		dataSource {
 			dbCreate = "create-drop" // one of 'create', 'create-drop','update'
@@ -27,9 +27,9 @@ environments {
 		}
 	}
 	production {
-		dataSource {
+		*/dataSource {
 			dbCreate = "update"
 			url = "jdbc:hsqldb:file:prodDbSVLeingarten;shutdown=true"
 		}
-	}
-}
+	//}
+//}

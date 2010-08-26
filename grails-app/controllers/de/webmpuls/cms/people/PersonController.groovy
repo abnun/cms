@@ -220,7 +220,11 @@ class PersonController {
 		Person vorsitzender1Person = vorsitzender1.personen ? vorsitzender1.personen.iterator().next() : null
 		Person vorsitzender2Person = vorsitzender2.personen ? vorsitzender2.personen.iterator().next() : null
 		Person vorsitzender3Person = vorsitzender3.personen ? vorsitzender3.personen.iterator().next() : null
-		Person beisitzerPerson = beisitzer.personen ? beisitzer.personen.iterator().next() : null
+
+		Iterator beisitzerPersonIterator = beisitzer.personen ? beisitzer.personen.iterator() : null
+		Person beisitzer1Person = beisitzerPersonIterator?.hasNext() ? beisitzerPersonIterator?.next() : null
+		Person beisitzer2Person = beisitzerPersonIterator?.hasNext() ? beisitzerPersonIterator?.next() : null
+
 		Person webmasterPerson = webmaster.personen ? webmaster.personen.iterator().next() : null
 		Person referentPerson = referent.personen ? referent.personen.iterator().next() : null
 
@@ -256,7 +260,8 @@ class PersonController {
 				vorsitzender2Person: vorsitzender2Person,
 				vorsitzender3Person: vorsitzender3Person,
 				kassiererPerson: kassiererPerson,
-				beisitzerPerson: beisitzerPerson,
+				beisitzer1Person: beisitzer1Person,
+				beisitzer2Person: beisitzer2Person,
 				webmasterPerson: webmasterPerson,
 				referentPerson: referentPerson,
 				geschaeftsstellePerson1: geschaeftsstellePerson1,

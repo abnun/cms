@@ -63,7 +63,7 @@ class AbteilungTagLib
 		Abteilung section = attrs['section']
 		Trainingszeit trainingszeit = attrs['trainingszeit']
 
-		String boxBody = render(template: '/global/section/trainingszeitenBody', model: [trainingszeit: trainingszeit])
+		String boxBody = render(template: '/global/section/trainingszeitenBody', model: [trainingszeit: trainingszeit, abteilungInstance: section])
 		out << render(template: '/global/ui/box/boxBody', model: [body: boxBody])
 
 		return out

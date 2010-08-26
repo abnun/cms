@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>${abteilungInstance.oberAbteilung ? abteilungInstance.oberAbteilung.toString() + ' | ' : ''}${abteilungInstance?.anzeigeName ?: abteilungInstance?.name} | Spielplan</title>
 	<meta name="layout" content="sv_leingarten"/>
 </head>
 <body>
@@ -14,7 +15,14 @@
 							<table border="0" cellpadding="0" cellspacing="10">
 								<tr>
 									<td></td>
-									<td><span class="headline_dunkel">Spielplan</span></td>
+									<td>
+										<span class="headline_dunkel">${abteilungInstance?.anzeigeName ?: abteilungInstance?.name}</span>
+										<shiro:hasRole name="${ShiroRole.BENUTZER}">
+											<span>
+												<g:link controller="abteilung" action="edit" id="${abteilungInstance.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Abteilung ändern" title="Abteilung ändern" border="0"/></g:link>
+											</span>
+										</shiro:hasRole>
+									</td>
 									<td><img src="${resource(dir: 'bilder/divers', file: 'trenn.gif')}" width="1" height="26"></td>
 									<td class="copy">%{--Landesstaffel 1 Bezirk Nord--}%</td>
 								</tr>
@@ -43,6 +51,23 @@
 							<g:each in="${abteilungInstance.spielplaene.sort{ Spielplan a, Spielplan b -> a.spieldatum <=> b.spieldatum } }" var="sp">
 								<p>
 									<g:formatDate date="${sp?.spieldatum}" format="dd.MM.yyyy" />:&nbsp;${sp?.heimmannschaft}&nbsp;-&nbsp;${sp?.gastmannschaft}&nbsp;&gt;&nbsp;${sp?.anstoss}
+									<shiro:hasRole name="${ShiroRole.BENUTZER}">
+										<span>
+											<g:link controller="spielplan" action="edit" id="${sp?.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Spieltag ändern" title="Spieltag ändern" border="0"/></g:link>
+											<jq:jquery>
+												$("#spielplan_del_${sp?.id}").click(function () {
+													if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+													{
+														document.forms.SpielplanDeleteForm_${sp?.id}.submit();
+													}
+												});
+											</jq:jquery>
+											<a href="javascript: void(0);" id="spielplan_del_${sp?.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Spieltag löschen" title="Spieltag löschen" border="0"/></a>
+											<g:form action="delete" controller="spielplan" id="${sp?.id}" name="SpielplanDeleteForm_${sp?.id}" method="post" style="height: 0px; line-height: 0px;">
+												<g:hiddenField name="abteilung.id" value="${abteilungInstance.id}" />
+											</g:form>
+										</span>
+									</shiro:hasRole>
 								</p>
 							</g:each>
 						</td>

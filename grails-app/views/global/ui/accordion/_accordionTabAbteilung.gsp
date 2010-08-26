@@ -1,12 +1,26 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
-<%@ page import="de.webmpuls.photo_album.util.MediaUtils; de.webmpuls.photo_album.Album; de.webmpuls.photo_album.Picture; de.webmpuls.cms.people.ShiroRole" %>
+<%@ page import="org.apache.shiro.SecurityUtils; de.webmpuls.photo_album.util.MediaUtils; de.webmpuls.photo_album.Album; de.webmpuls.photo_album.Picture; de.webmpuls.cms.people.ShiroRole" %>
 <div style="width: 695px;">
 	<h3>
 		<a name="bericht_${item.id}" href="javascript: void(0);">
 			<g:render template="/global/ui/accordion/accordionHeaderAbteilung" model="[abteilung: abteilung, accordionTabUeberschrift1: accordionTabUeberschrift1, accordionTabUeberschrift2: accordionTabUeberschrift2, datum: datum]"/>
 		</a>
 	</h3>
-	<div style="width: 695px; font-size: ${abteilung.hasUnterAbteilungen() ? '100' : '75'}%;">
+	<%
+	    String fontSize = "75"
+		if(SecurityUtils.subject.authenticated)
+		{
+			if(abteilung.hasUnterAbteilungen())
+			{
+				fontSize = "100"
+			}
+		}
+		else if(abteilung.hasUnterAbteilungen())
+		{
+			fontSize = "100"
+		}
+	%>
+	<div style="width: 695px; font-size: ${fontSize}%;">
 		<g:if test="${isEditable}">
 
 			<shiro:hasRole name="${ShiroRole.BENUTZER}">

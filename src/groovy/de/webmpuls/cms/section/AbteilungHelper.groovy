@@ -19,7 +19,7 @@ public class AbteilungHelper
 	static final String CODE_BADMINTON = "badminton"
 	static final String CODE_BASKETBALL = "basketball"
 	static final String CODE_FUSSBALL_AH = "fussball_-_ah"
-	static final String CODE_FUSSBALL_DAMEN = "fussball_-_damen"
+	static final String CODE_FUSSBALL_DAMEN = "fussball_-_frauen"
 
 	// Herren
 	static final String CODE_FUSSBALL_HERREN = "fussball_-_herren"
@@ -107,7 +107,7 @@ public class AbteilungHelper
 	static final String NAME_BADMINTON = "Badminton"
 	static final String NAME_BASKETBALL = "Basketball"
 	static final String NAME_FUSSBALL_AH = "Fußball - AH"
-	static final String NAME_FUSSBALL_DAMEN = "Fußball - Damen"
+	static final String NAME_FUSSBALL_DAMEN = "Fußball - Frauen"
 
 	// Herren
 	static final String NAME_FUSSBALL_HERREN = "Fußball - Herren"
@@ -283,7 +283,7 @@ public class AbteilungHelper
 	static final String TOKEN_FUSSBALL_AH = "F_AH"
 
 	// Frauen
-	static final String TOKEN_FUSSBALL_DAMEN = "F_D"
+	static final String TOKEN_FUSSBALL_DAMEN = "F_F"
 
 	// Herren
 	static final String TOKEN_FUSSBALL_HERREN_1_MANNSCHAFT = "F_H1"

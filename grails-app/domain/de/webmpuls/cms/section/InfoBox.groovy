@@ -18,7 +18,7 @@ class InfoBox
     static constraints =
 	{
 		ueberschrift()
-		inhalt()
+		inhalt(widget: 'textarea')
 		position(unique: true)
     }
 

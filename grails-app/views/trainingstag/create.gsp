@@ -8,10 +8,11 @@
         %{--<title><g:message code="default.create.label" args="[entityName]" /></title>--}%
     </head>
     <body>
-        <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
-            <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
-        </div>
+        <shiro:hasRole name="administrator">
+		<g:render template="/global/javascript/backToListButtonJS" />
+		<button id="backToListButton" style="margin-left: 10px;"><g:message code="default.back.to.list" /></button>
+		<hr/>
+		</shiro:hasRole>
         <div class="body">
             %{--<h1><g:message code="default.create.label" args="[entityName]" /></h1>--}%
             <g:if test="${flash.message}">

@@ -123,8 +123,8 @@ class AbteilungController {
                 def version = params.version.toLong()
                 if (abteilungInstance.version > version) {
                     
-                    abteilungInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'abteilung.label', default: 'Abteilung')], "Another user has updated this Abteilung while you were editing")
-                    render(view: "edit", model: [abteilungInstance: abteilungInstance])
+                    abteilungInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'abteilung.label', default: 'Abteilung')] as String[], "Another user has updated this Abteilung while you were editing")
+                    redirect(action: "berichte", params: [code: abteilungInstance.code])
                     return
                 }
             }
@@ -188,10 +188,10 @@ class AbteilungController {
 			}
             if (!abteilungInstance.hasErrors() && abteilungInstance.save(flush: true)) {
                 flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilungInstance.name])}"
-                redirect(action: "edit", id: abteilungInstance.id)
+                redirect(action: "berichte", params: [code: abteilungInstance.code])
             }
             else {
-                render(view: "edit", model: [abteilungInstance: abteilungInstance])
+                redirect(action: "berichte", params: [code: abteilungInstance.code])
             }
         }
         else {
@@ -210,7 +210,7 @@ class AbteilungController {
             }
             catch (org.springframework.dao.DataIntegrityViolationException e) {
                 flash.message = "${message(code: 'default.not.deleted.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), params.id])}"
-                redirect(action: "edit", id: params.id)
+                redirect(action: "berichte", id: params.id)
             }
         }
         else {
@@ -270,7 +270,10 @@ class AbteilungController {
 
 						for(Funktion tmpFunktion in funktionenToDelete)
 						{
-							tmpPerson.removeFromFunktionen(tmpFunktion)
+							if(tmpPerson.abteilungen.size() == 1)
+							{
+								tmpPerson.removeFromFunktionen(tmpFunktion)
+							}
 
 							if (tmpPerson.hasErrors() && !tmpPerson.save(flush: true))
 							{
@@ -284,7 +287,7 @@ class AbteilungController {
 						if (!abteilung.hasErrors() && abteilung.save(flush: true))
 						{
 							flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilung.id])}"
-							redirect(action: "edit", id: abteilung.id)
+							redirect(action: "berichte", params: [code: abteilung.code])
 						}
 					}
 				}
@@ -315,7 +318,7 @@ class AbteilungController {
 					if (!abteilung.hasErrors() && abteilung.save(flush: true))
 					{
 						flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilung.id])}"
-						redirect(action: "edit", id: abteilung.id)
+						redirect(action: "berichte", id: abteilung.id)
 					}
 				}
 			}
@@ -348,7 +351,7 @@ class AbteilungController {
 						{
 							tmpSpielplan.delete()
 							flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilung.id])}"
-							redirect(action: "edit", id: abteilung.id)
+							redirect(action: "berichte", id: abteilung.id)
 						}
 					}
 				}
@@ -383,7 +386,7 @@ class AbteilungController {
 						{
 							tmpTrainingszeit.delete()
 							flash.message = "${message(code: 'default.updated.message', args: [message(code: 'abteilung.label', default: 'Abteilung'), abteilung.id])}"
-							redirect(action: "edit", id: abteilung.id)
+							redirect(action: "berichte", id: abteilung.id)
 						}
 					}
 				}
@@ -534,6 +537,11 @@ class AbteilungController {
 			if (abteilungsLeiterCollection)
 			{
 				abteilungsLeiterCollection = abteilungsLeiterCollection.sort {a, b -> a.nachname <=> b.nachname}
+
+				abteilungsLeiterCollection.each
+				{
+					println it
+				}
 			}
 
 			return [abteilungInstance: abteilungInstance, abteilungsLeiterCollection: abteilungsLeiterCollection]

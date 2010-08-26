@@ -48,7 +48,6 @@
 							<td>
 								<g:link action="edit" id="${infoBoxInstance.id}"><g:message code="infoBox.edit" default="Bearbeiten" /></g:link>
 								&nbsp;|&nbsp;
-								<g:link action="delete" id="${infoBoxInstance.id}"><g:message code="infoBox.delete" default="Löschen" /></g:link>
 								<jq:jquery>
 										$("#del_${fieldValue(bean: infoBoxInstance, field: "id")}").click(function () {
 											if(confirm("><g:message code="default.button.delete.confirm.message" default="Are you sure?" />'))
