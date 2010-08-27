@@ -65,9 +65,10 @@ class InfoBoxController {
                 }
             }
             infoBoxInstance.properties = params
-            if (!infoBoxInstance.hasErrors() && infoBoxInstance.save(flush: true)) {
+            if (!infoBoxInstance.hasErrors() && infoBoxInstance.save([flush: true, failOnError: false])) 
+			{
                 flash.message = "${message(code: 'default.updated.message', args: [message(code: 'infoBox.label', default: 'InfoBox'), infoBoxInstance.id])}"
-                redirect(action: "list")
+                render(view: "edit", model: [infoBoxInstance: infoBoxInstance])
             }
             else {
                 render(view: "edit", model: [infoBoxInstance: infoBoxInstance])
@@ -83,9 +84,63 @@ class InfoBoxController {
         def infoBoxInstance = InfoBox.get(params.id)
         if (infoBoxInstance) {
             try {
+				Long abteilungId = params.long('abteilung.id')
+				Abteilung tmpAbteilung = null
+				if(abteilungId)
+				{
+					tmpAbteilung = Abteilung.get(abteilungId)
+
+					if(tmpAbteilung.infoBoxen*.id.contains(infoBoxInstance.id))
+					{
+						tmpAbteilung.removeFromInfoBoxen(infoBoxInstance)
+						if (flash.message)
+						{
+							flash.message += "<br />Infobox-Zuordnung '${infoBoxInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+						}
+						else
+						{
+							flash.message = "Infobox-Zuordnung '${infoBoxInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+						}
+					}
+				}
+				else
+				{
+					def abteilungList = Abteilung.list([cache: true])
+					for(Abteilung tmpAbteilung0 in abteilungList)
+					{
+						if(tmpAbteilung.infoBoxen*.id.contains(infoBoxInstance.id))
+						{
+							tmpAbteilung.removeFromInfoBoxen(infoBoxInstance)
+							if(flash.message)
+							{
+								flash.message += "<br />Infobox-Zuordnung '${infoBoxInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+							}
+							else
+							{
+								flash.message = "Infobox-Zuordnung '${infoBoxInstance}' von Abteilung '${tmpAbteilung}' entfernt."
+							}
+						}
+					}
+				}
                 infoBoxInstance.delete(flush: true)
-                flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'infoBox.label', default: 'InfoBox'), params.id])}"
-                redirect(action: "list")
+				if (flash.message)
+				{
+					flash.message += "<br />${message(code: 'default.deleted.message', args: [message(code: 'infoBox.label', default: 'InfoBox'), params.id])}"
+				}
+				else
+				{
+					flash.message = "${message(code: 'default.deleted.message', args: [message(code: 'infoBox.label', default: 'InfoBox'), params.id])}"
+				}
+				if(abteilungId)
+				{
+					redirect(controller: 'abteilung', action: "berichte", params: [code: tmpAbteilung.code])
+					return false
+				}
+				else
+				{
+					redirect(action: "list")
+					return false
+				}
             }
             catch (org.springframework.dao.DataIntegrityViolationException e) {
                 flash.message = "${message(code: 'default.not.deleted.message', args: [message(code: 'infoBox.label', default: 'InfoBox'), params.id])}"
@@ -107,7 +162,7 @@ class InfoBoxController {
 
 		if(inhalt && ueberschrift && position != null)
 		{
-			Abteilung abteilung = Abteilung.get(params['abteilung.id'])
+			Abteilung abteilung = Abteilung.get(params.long('abteilung.id'))
 
 			InfoBox infoBox = new InfoBox(ueberschrift: ueberschrift, inhalt: inhalt.trim(), position: position)
 
@@ -134,7 +189,7 @@ class InfoBoxController {
 								flash.message = "Neue Infobox '$infoBox' gespeichert."
 							}
 
-							redirect(controller: 'abteilung', action: 'berichte', id: params['abteilung.id'])
+							redirect(controller: 'abteilung', action: 'berichte', params: [code: abteilung.code])
 							return false
 						}
 						else

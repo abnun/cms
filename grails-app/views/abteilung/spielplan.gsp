@@ -50,7 +50,7 @@
 						<td colspan="2" valign="top" class="copy">
 							<g:each in="${abteilungInstance.spielplaene.sort{ Spielplan a, Spielplan b -> a.spieldatum <=> b.spieldatum } }" var="sp">
 								<p>
-									<g:formatDate date="${sp?.spieldatum}" format="dd.MM.yyyy" />:&nbsp;${sp?.heimmannschaft}&nbsp;-&nbsp;${sp?.gastmannschaft}&nbsp;&gt;&nbsp;${sp?.anstoss}
+									<g:formatDate date="${sp?.spieldatum}" format="dd.MM.yyyy" />:&nbsp;${sp?.heimmannschaft}&nbsp;-&nbsp;${sp?.gastmannschaft}&nbsp;&gt;&nbsp;${sp?.anstoss}&nbsp;${sp?.vermerk}
 									<shiro:hasRole name="${ShiroRole.BENUTZER}">
 										<span>
 											<g:link controller="spielplan" action="edit" id="${sp?.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Spieltag ändern" title="Spieltag ändern" border="0"/></g:link>

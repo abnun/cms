@@ -8,21 +8,51 @@
         %{--<title><g:message code="default.edit.label" args="[entityName]" /></title>--}%
     </head>
     <body>
-        <div class="nav">
+        %{--<div class="nav">
             <span class="menuButton"><a class="home" href="${createLink(uri: '/')}">Home</a></span>
             <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-        </div>
+        </div>--}%
+		<shiro:hasRole name="administrator">
+		<g:render template="/global/javascript/createButtonJS"/>
+		<button id="createButton" style="margin-left: 10px;"><g:message code="default.new.label" args="[entityName]"/></button>
+
+		<g:render template="/global/javascript/backToListButtonJS" />
+		<button id="backToListButton" style="margin-left: 10px;"><g:message code="default.back.to.list" /></button>
+		<hr/>
+		</shiro:hasRole>
         <div class="body">
             %{--<h1><g:message code="default.edit.label" args="[entityName]" /></h1>--}%
             <g:if test="${flash.message}">
-            <div class="message">${flash.message}</div>
-            </g:if>
-            <g:hasErrors bean="${spielplanInstance}">
-            <div class="errors">
-                <g:renderErrors bean="${spielplanInstance}" as="list" />
-            </div>
-            </g:hasErrors>
+				<div class="ui-widget">
+					<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+						<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+							${flash.message}
+						</p>
+					</div>
+				</div>
+				<br />
+			</g:if>
+			<g:if test="${flash.error}">
+				<div class="ui-widget">
+					<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+						<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+							<strong><g:message code="default.error"/>:<br /><br /></strong>${flash.error}
+						</p>
+					</div>
+				</div>
+				<br />
+			</g:if>
+			<g:hasErrors bean="${spielplanInstance}">
+				<div class="ui-widget">
+					<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+						<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+							<strong><g:message code="default.error"/>:</strong>
+							<br/>
+							<g:renderErrors bean="${spielplanInstance}" as="list"/>
+					</div>
+				</div>
+			</g:hasErrors>
             <g:form method="post" >
                 <g:hiddenField name="id" value="${spielplanInstance?.id}" />
                 <g:hiddenField name="version" value="${spielplanInstance?.version}" />
@@ -72,6 +102,15 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: spielplanInstance, field: 'anstoss', 'errors')}">
                                     <g:textField name="anstoss" value="${spielplanInstance?.anstoss}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="vermerk"><g:message code="spielplan.vermerk.label" default="Vermerk" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: spielplanInstance, field: 'vermerk', 'errors')}">
+                                    <g:textField name="vermerk" value="${spielplanInstance?.vermerk}" />
                                 </td>
                             </tr>
                         

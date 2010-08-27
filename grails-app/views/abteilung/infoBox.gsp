@@ -13,7 +13,19 @@
 
 						<shiro:hasRole name="${ShiroRole.BENUTZER}">
 							<span>
-								<g:link controller="infoBox" action="edit" id="${infoBox.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="InfoBox ändern" title="InfoBox ändern" border="0"/></g:link>
+								<g:link controller="infoBox" action="edit" id="${infoBox.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Infobox ändern" title="Infobox ändern" border="0"/></g:link>
+								<jq:jquery>
+									$("#infoBox_del_${infoBox?.id}").click(function () {
+										if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+										{
+											document.forms.InfoBoxDeleteForm_${infoBox?.id}.submit();
+										}
+									});
+								</jq:jquery>
+								<a href="javascript: void(0);" id="infoBox_del_${infoBox?.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Infobox löschen" title="Infobox löschen" border="0"/></a>
+								<g:form action="delete" controller="infoBox" id="${infoBox?.id}" name="InfoBoxDeleteForm_${infoBox?.id}" method="post" style="height: 0px; line-height: 0px;">
+									<g:hiddenField name="abteilung.id" value="${abteilungInstance.id}" />
+								</g:form>
 							</span>
 						</shiro:hasRole>
 					</p>

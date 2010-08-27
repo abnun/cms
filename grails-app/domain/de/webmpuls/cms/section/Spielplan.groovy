@@ -9,6 +9,7 @@ class Spielplan
 	String heimmannschaft
 	String gastmannschaft
 	String anstoss
+	String vermerk
 
 	static mapping =
 	{
@@ -23,10 +24,11 @@ class Spielplan
 		heimmannschaft(blank: false)
 		gastmannschaft(blank: false)
 		anstoss(nullable: true, blank: true)
+		vermerk(nullable: true, blank: true)
     }
 
 	def String toString()
 	{
-		return "${abteilungKuerzel} ${new SimpleDateFormat("dd.MM.yyyy").format(spieldatum)} ${heimmannschaft} ${gastmannschaft} ${anstoss}"
+		return "${abteilungKuerzel} ${new SimpleDateFormat("dd.MM.yyyy").format(spieldatum)} ${heimmannschaft} - ${gastmannschaft} ${anstoss}"
 	}
 }

@@ -572,11 +572,11 @@
 						</g:if>
 					</td>
 					<td width="140" align="center" valign="middle">
-						<g:if test="${beisitzerPerson}">
-							<g:if test="${beisitzerPerson.bild}">
+						<g:if test="${beisitzer1Person}">
+							<g:if test="${beisitzer1Person.bild}">
 								<p>
-									<a href="mailto:${beisitzerPerson.email}">
-										<img src="${wm_photo_album.pathToImage(picture: beisitzerPerson.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
+									<a href="mailto:${beisitzer1Person.email}">
+										<img src="${wm_photo_album.pathToImage(picture: beisitzer1Person.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
 									</a>
 								</p>
 							</g:if>
@@ -587,17 +587,47 @@
 							</g:else>
 							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
 
-									<g:link controller="person" action="edit" id="${beisitzerPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<g:link controller="person" action="edit" id="${beisitzer1Person.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
 									<jq:jquery>
-										$("#person_del_${beisitzerPerson.id}").click(function () {
+										$("#person_del_${beisitzer1Person.id}").click(function () {
 											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
 											{
-												document.forms.PersonDeleteForm_${beisitzerPerson.id}.submit();
+												document.forms.PersonDeleteForm_${beisitzer1Person.id}.submit();
 											}
 										});
 									</jq:jquery>
-									<a href="javascript: void(0);" id="person_del_${beisitzerPerson.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
-									<g:form action="delete" controller="person" id="${beisitzerPerson.id}" name="PersonDeleteForm_${beisitzerPerson.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+									<a href="javascript: void(0);" id="person_del_${beisitzer1Person.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${beisitzer1Person.id}" name="PersonDeleteForm_${beisitzer1Person.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
+							</shiro:hasRole>
+						</g:if>
+					</td>
+					<td width="140" align="center" valign="middle">
+						<g:if test="${beisitzer2Person}">
+							<g:if test="${beisitzer2Person.bild}">
+								<p>
+									<a href="mailto:${beisitzer2Person.email}">
+										<img src="${wm_photo_album.pathToImage(picture: beisitzer2Person.bild, size: MediaUtils.THUMBNAIL)}" border="0"/>
+									</a>
+								</p>
+							</g:if>
+							<g:else>
+								<p align="center" class="unwichtig">
+									Bild folgt
+								</p>
+							</g:else>
+							<shiro:hasRole name="${ShiroRole.ADMINISTRATOR}">
+
+									<g:link controller="person" action="edit" id="${beisitzer2Person.id}"><img src="${resource(dir: '/images/skin', file: 'database_edit.png')}" alt="Person ändern" title="Person ändern" border="0"/></g:link>
+									<jq:jquery>
+										$("#person_del_${beisitzer2Person.id}").click(function () {
+											if(confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}'))
+											{
+												document.forms.PersonDeleteForm_${beisitzer2Person.id}.submit();
+											}
+										});
+									</jq:jquery>
+									<a href="javascript: void(0);" id="person_del_${beisitzer2Person.id}"><img src="${resource(dir: '/images/skin', file: 'database_delete.png')}" alt="Person löschen" title="Person löschen" border="0"/></a>
+									<g:form action="delete" controller="person" id="${beisitzer2Person.id}" name="PersonDeleteForm_${beisitzer2Person.id}" method="post" style="height: 0px; line-height: 0px;"></g:form>
 							</shiro:hasRole>
 						</g:if>
 					</td>

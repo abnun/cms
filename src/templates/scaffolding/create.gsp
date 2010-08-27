@@ -16,13 +16,35 @@
         <div class="body">
             %{--<h1><g:message code="default.create.label" args="[entityName]" /></h1>--}%
             <g:if test="\${flash.message}">
-            <div class="message">\${flash.message}</div>
-            </g:if>
-            <g:hasErrors bean="\${${propertyName}}">
-            <div class="errors">
-                <g:renderErrors bean="\${${propertyName}}" as="list" />
-            </div>
-            </g:hasErrors>
+				<div class="ui-widget">
+					<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+						<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+							\${flash.message}
+						</p>
+					</div>
+				</div>
+				<br />
+			</g:if>
+			<g:if test="\${flash.error}">
+				<div class="ui-widget">
+					<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+						<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+							<strong><g:message code="default.error"/>:<br /><br /></strong>\${flash.error}
+						</p>
+					</div>
+				</div>
+				<br />
+			</g:if>
+			<g:hasErrors bean="\${propertyName}">
+				<div class="ui-widget">
+					<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+						<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+							<strong><g:message code="default.error"/>:</strong>
+							<br/>
+							<g:renderErrors bean="\${propertyName}" as="list"/>
+					</div>
+				</div>
+			</g:hasErrors>
             <g:form action="save" method="post" <%= multiPart ? ' enctype="multipart/form-data"' : '' %>>
                 <div class="dialog">
                     <table>

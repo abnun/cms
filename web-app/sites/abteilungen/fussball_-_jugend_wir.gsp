@@ -987,7 +987,7 @@
         </p>
       </td>
       <td width="120">
-        <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
+        %{--<table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
           <tbody>
             <tr>
               <td height="20" bgcolor="#93BEEE" class="infohead">
@@ -1003,29 +1003,8 @@
               </td>
             </tr>
           </tbody>
-        </table>
-        <table width="120" border="0" cellpadding="3" bordercolor="#93C9FF">
-          <tbody>
-            <tr>
-              <td height="20" bgcolor="#93BEEE" class="infohead">
-                Jugendleiter
-              </td>
-            </tr>
-            <tr>
-              <td valign="bottom" bgcolor="#D2DFFF" class="copy">
-                <img src="${resource(dir: 'bilder/abteilungen/fussball_-_jugend', file: 'jf_gernot.jpg')}" width="110" height="155"/>
-                <br/>
-                Gernot Hagen
-                <br/>
-                Tel. 0171 / 559 22 42
-                <br/>
-                <a href="mailto:gernot-hagen@versanet.de">
-                  gernot-hagen@versanet.de
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        </table>--}%
+        <g:include controller="abteilung" action="abteilungsLeiter" params="[code: ((String)params.id).substring(0, ((String)params.id).lastIndexOf('_wir.gsp'))]"/>
       </td>
     </tr>
   </tbody>
