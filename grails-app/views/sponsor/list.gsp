@@ -22,7 +22,7 @@
 						<g:if test="${i == 0}">
 							<tr>
 						</g:if>
-						<g:if test="${i > 1 && i % 3 == 0}">
+						<g:if test="${i > 1 && i % 4 == 0}">
 							</tr>
 							<tr>
 						</g:if>
