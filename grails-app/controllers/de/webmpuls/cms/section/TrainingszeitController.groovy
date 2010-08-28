@@ -311,7 +311,7 @@ class TrainingszeitController {
 
 				if (tag && uhrzeiten)
 				{
-					Trainingstag trainingstag = Trainingstag.findByTagAndUhrzeiten(tag, uhrzeiten)
+					Trainingstag trainingstag = null//Trainingstag.findByTagAndUhrzeiten(tag, uhrzeiten)
 
 					if (!trainingstag)
 					{

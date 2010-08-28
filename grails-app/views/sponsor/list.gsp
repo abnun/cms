@@ -19,15 +19,16 @@
 			<table width="100%" cellspacing="0" border="0">
 				<g:if test="${sponsorInstanceList}">
 					<g:each status="i" var="sponsor" in="${sponsorInstanceList}">
-						<g:if test="${i % 3 == 0}">
+						<g:if test="${i == 0}">
+							<tr>
+						</g:if>
+						<g:if test="${i > 1 && i % 3 == 0}">
+							</tr>
 							<tr>
 						</g:if>
 						<td valign="top">
 							<g:render template="show" model="['sponsor': sponsor]"/>
 						</td>
-						<g:if test="${i > 1 && i % 3 == 0}">						
-							</tr>
-						</g:if>
 						</g:each>
 				</g:if>
 				<tr>

@@ -54,11 +54,14 @@
 				</tr>--}%
 			</g:else>
 			<tr valign="top" class="copy">
-				<g:if test="${((Date)termin.startDatum).equals((Date)termin.endDatum)}">
+				<g:if test="${termin.startDatum == termin.endDatum}">
 					<td class="copy"><g:formatDate date="${termin.startDatum}" format="dd. MMMMM"/></td>
 				</g:if>
+				<g:elseif test="${termin.endDatum == termin.startDatum.next()}">
+					<td class="copy"><g:formatDate date="${termin.startDatum}" format="dd."/>/<g:formatDate date="${termin.endDatum}" format="dd."/><br /><g:formatDate date="${termin.endDatum}" format="MMMMM"/></td>
+				</g:elseif>
 				<g:else>
-					<td class="copy"><g:formatDate date="${termin.startDatum}" format="dd. MMMMM"/> - <g:formatDate date="${termin.endDatum}" format="dd. MMMMM"/></td>
+					<td class="copy"><g:formatDate date="${termin.startDatum}" format="dd."/> - <g:formatDate date="${termin.endDatum}" format="dd."/><br /><g:formatDate date="${termin.endDatum}" format="MMMMM"/></td>
 				</g:else>
 				<td><span class="wichtig"><g:if test="${!termin.findetStatt}"><s></g:if>${termin.inhalt}<g:if test="${!termin.findetStatt}"></s></g:if><br/></span><span class="copy">
 				<g:if test="${termin.abteilung}">(${termin.abteilung})<br/></g:if></span><g:if test="${!termin.findetStatt}"><span class="copy">${termin.zusatzinfo ?: message(code: 'termin.canceled.text')}</span></g:if></td>
